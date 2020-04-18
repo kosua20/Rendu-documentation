@@ -139,14 +139,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7851feb09dcfc5652185d034e68cbe83"><td class="memItemLeft" align="right" valign="top"><a id="a7851feb09dcfc5652185d034e68cbe83"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setScene</b> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
+<tr class="memitem:a7851feb09dcfc5652185d034e68cbe83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_editor.html#a7851feb09dcfc5652185d034e68cbe83">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
 <tr class="separator:a7851feb09dcfc5652185d034e68cbe83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a263d39a0f400dac698ca4a4a0740915b"><td class="memItemLeft" align="right" valign="top"><a id="a263d39a0f400dac698ca4a4a0740915b"></a>
-<a class="el" href="class_editor_renderer.html">EditorRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_renderer</b></td></tr>
+<a class="el" href="class_editor_renderer.html">EditorRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_editor.html#a263d39a0f400dac698ca4a4a0740915b">_renderer</a></td></tr>
+<tr class="memdesc:a263d39a0f400dac698ca4a4a0740915b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> renderer. <br /></td></tr>
 <tr class="separator:a263d39a0f400dac698ca4a4a0740915b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb54d382fa2708e9149141f882c7e0e"><td class="memItemLeft" align="right" valign="top"><a id="a3fb54d382fa2708e9149141f882c7e0e"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_editor.html#a3fb54d382fa2708e9149141f882c7e0e">_passthrough</a></td></tr>
@@ -161,7 +161,8 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <tr class="memdesc:af8f27fe6970e677b4d5f69d9a81bb042"><td class="mdescLeft">&#160;</td><td class="mdescRight">The associated scene names. <br /></td></tr>
 <tr class="separator:af8f27fe6970e677b4d5f69d9a81bb042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a2d8453c05bf81ae7090f189c4a744"><td class="memItemLeft" align="right" valign="top"><a id="ad6a2d8453c05bf81ae7090f189c4a744"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_selectedObject</b> = -1</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_editor.html#ad6a2d8453c05bf81ae7090f189c4a744">_selectedObject</a> = -1</td></tr>
+<tr class="memdesc:ad6a2d8453c05bf81ae7090f189c4a744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected object. <br /></td></tr>
 <tr class="separator:ad6a2d8453c05bf81ae7090f189c4a744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334f9d8f7c9ddc453b856847f9a26edd"><td class="memItemLeft" align="right" valign="top"><a id="a334f9d8f7c9ddc453b856847f9a26edd"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_editor.html#a334f9d8f7c9ddc453b856847f9a26edd">_currentScene</a> = 0</td></tr>
@@ -357,6 +358,38 @@ Additional Inherited Members</h2></td></tr>
 <p>Handle a window resize event. </p>
 
 <p>Implements <a class="el" href="class_application.html#aee06db38c716c4ddb8e4b1523d959266">Application</a>.</p>
+
+</div>
+</div>
+<a id="a7851feb09dcfc5652185d034e68cbe83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7851feb09dcfc5652185d034e68cbe83">&#9670;&nbsp;</a></span>setScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneEditor::setScene </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the scene to display. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>the new scene </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
