@@ -109,8 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e0acc981e61b656917f2eef42426509"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a3e0acc981e61b656917f2eef42426509">Game</a> (<a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;config)</td></tr>
-<tr class="separator:a3e0acc981e61b656917f2eef42426509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f622db61fee2b095e961c0d548c330"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae8f622db61fee2b095e961c0d548c330">Game</a> (<a class="el" href="class_game_config.html">GameConfig</a> &amp;config)</td></tr>
+<tr class="separator:ae8f622db61fee2b095e961c0d548c330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d54497ce3a66f6dd45eacfdccc8d0bd"><td class="memItemLeft" align="right" valign="top"><a id="a6d54497ce3a66f6dd45eacfdccc8d0bd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd">draw</a> ()</td></tr>
 <tr class="memdesc:a6d54497ce3a66f6dd45eacfdccc8d0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the game. <br /></td></tr>
@@ -137,7 +137,7 @@ Private Types</h2></td></tr>
 &#160;&#160;<b>OPTIONS</b>
 <br />
  }</td></tr>
-<tr class="memdesc:a9981f5cf5c8aeb6eb9cc0d798ab6b37a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game.html" title="Handles communication between the different game components (renderers, player, menus) and the player...">Game</a> satte: either a specific menu or in-game. <br /></td></tr>
+<tr class="memdesc:a9981f5cf5c8aeb6eb9cc0d798ab6b37a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game.html" title="Handles communication between the different game components (renderers, player, menus) and the player...">Game</a> state: either a specific menu or in-game. <br /></td></tr>
 <tr class="separator:a9981f5cf5c8aeb6eb9cc0d798ab6b37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2999de25fbbb113485295c51b3b47646"><td class="memItemLeft" align="right" valign="top"><a id="a2999de25fbbb113485295c51b3b47646"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a2999de25fbbb113485295c51b3b47646">ButtonAction</a> : int { <br />
 &#160;&#160;<b>NEWGAME</b>, 
@@ -150,7 +150,8 @@ Private Types</h2></td></tr>
 <b>BACKTOMENU</b>, 
 <b>OPTION_FULLSCREEN</b>, 
 <br />
-&#160;&#160;<b>OPTION_VSYNC</b>
+&#160;&#160;<b>OPTION_VSYNC</b>, 
+<b>OPTION_HALFRES</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a2999de25fbbb113485295c51b3b47646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action that can be performed by pressing a button or a key. <br /></td></tr>
@@ -163,10 +164,10 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7bc3bac199304a3aadc3aaff80fdb9d3"><td class="memItemLeft" align="right" valign="top"><a id="a7bc3bac199304a3aadc3aaff80fdb9d3"></a>
-<a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a7bc3bac199304a3aadc3aaff80fdb9d3">_config</a></td></tr>
-<tr class="memdesc:a7bc3bac199304a3aadc3aaff80fdb9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the shared game configuration. <br /></td></tr>
-<tr class="separator:a7bc3bac199304a3aadc3aaff80fdb9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb64f91a1a39f819304659c7abf09494"><td class="memItemLeft" align="right" valign="top"><a id="aeb64f91a1a39f819304659c7abf09494"></a>
+<a class="el" href="class_game_config.html">GameConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aeb64f91a1a39f819304659c7abf09494">_config</a></td></tr>
+<tr class="memdesc:aeb64f91a1a39f819304659c7abf09494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the shared game configuration. <br /></td></tr>
+<tr class="separator:aeb64f91a1a39f819304659c7abf09494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e83cedabc67bfa5dda08d8b980bea3"><td class="memItemLeft" align="right" valign="top"><a id="ab9e83cedabc67bfa5dda08d8b980bea3"></a>
 std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ab9e83cedabc67bfa5dda08d8b980bea3">_player</a></td></tr>
 <tr class="memdesc:ab9e83cedabc67bfa5dda08d8b980bea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player state. <br /></td></tr>
@@ -183,6 +184,10 @@ std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;
 std::unique_ptr&lt; <a class="el" href="class_gaussian_blur.html">GaussianBlur</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a49d353d230d80cc48551909da4031c26">_bgBlur</a></td></tr>
 <tr class="memdesc:a49d353d230d80cc48551909da4031c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blurring pass for the paused/dead menus background. <br /></td></tr>
 <tr class="separator:a49d353d230d80cc48551909da4031c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b5aefadcb28661ccf82cac94537c4c"><td class="memItemLeft" align="right" valign="top"><a id="a84b5aefadcb28661ccf82cac94537c4c"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a84b5aefadcb28661ccf82cac94537c4c">_gameFramebuffer</a></td></tr>
+<tr class="memdesc:a84b5aefadcb28661ccf82cac94537c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game.html" title="Handles communication between the different game components (renderers, player, menus) and the player...">Game</a> scene framebuffer. <br /></td></tr>
+<tr class="separator:a84b5aefadcb28661ccf82cac94537c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd430caf35e721a319310ce53b8f76e"><td class="memItemLeft" align="right" valign="top"><a id="a2bd430caf35e721a319310ce53b8f76e"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a2bd430caf35e721a319310ce53b8f76e">_finalProgram</a></td></tr>
 <tr class="memdesc:a2bd430caf35e721a319310ce53b8f76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final upscaling program. <br /></td></tr>
@@ -207,8 +212,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles communication between the different game components (renderers, player, menus) and the player actions. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3e0acc981e61b656917f2eef42426509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e0acc981e61b656917f2eef42426509">&#9670;&nbsp;</a></span>Game()</h2>
+<a id="ae8f622db61fee2b095e961c0d548c330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f622db61fee2b095e961c0d548c330">&#9670;&nbsp;</a></span>Game()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +224,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">Game::Game </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_game_config.html">GameConfig</a> &amp;&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>

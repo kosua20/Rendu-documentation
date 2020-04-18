@@ -328,9 +328,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_laplacian_integrator.html#ad76eca5de2ffd4698c5f991efacf37f9">LaplacianIntegrator</a>
 , <a class="el" href="class_poisson_filler.html#aecb541f5fe85dc5e75ef9c418512ae17">PoissonFiller</a>
 </li>
-<li>_compoFramebuffer
-: <a class="el" href="class_forward_renderer.html#a161a07d3ed9b36fac98a8aa94e8fa61f">ForwardRenderer</a>
-</li>
 <li>_composite
 : <a class="el" href="class_laplacian_integrator.html#a3c9efd65352fd3527a59a32d2931a8da">LaplacianIntegrator</a>
 , <a class="el" href="class_poisson_filler.html#a14bc85bb9bd4b4d94840a66aa04260b5">PoissonFiller</a>
@@ -353,7 +350,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_config
 : <a class="el" href="class_application.html#af541550220e4c88083326b77626f957a">Application</a>
-, <a class="el" href="class_game.html#a7bc3bac199304a3aadc3aaff80fdb9d3">Game</a>
+, <a class="el" href="class_game.html#aeb64f91a1a39f819304659c7abf09494">Game</a>
 , <a class="el" href="class_window.html#acbc1f01467b672b975e0b93cce5d89d9">Window</a>
 </li>
 <li>_controllers
@@ -473,6 +470,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_game.html#a2bd430caf35e721a319310ce53b8f76e">Game</a>
 , <a class="el" href="class_p_b_r_demo.html#a533fccefa46c7bcefd3614b131740595">PBRDemo</a>
 </li>
+<li>_finalRender
+: <a class="el" href="class_p_b_r_demo.html#aa3e29dc66556d4072301aa1dc69048a8">PBRDemo</a>
+</li>
 <li>_finalTexture
 : <a class="el" href="class_blur.html#a46e673f6915f98f2cd0d7339ef246e63">Blur</a>
 </li>
@@ -526,18 +526,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_fullTime
 : <a class="el" href="class_camera_app.html#a0794dd9a3f84b7ec59a95f7a1b8835d5">CameraApp</a>
 </li>
-<li>_fxaaBuffer
-: <a class="el" href="class_post_process_stack.html#a45bd6bdd36af41d636afb6f7a9d24f12">PostProcessStack</a>
-</li>
-<li>_fxaaFramebuffer
-: <a class="el" href="class_game_renderer.html#a809f03319a74b29be81649e7f10a36b1">GameRenderer</a>
-</li>
 <li>_fxaaProgram
 : <a class="el" href="class_game_renderer.html#aff47ba361dca79c553e17e93f5c7dc94">GameRenderer</a>
 , <a class="el" href="class_post_process_stack.html#a1d965a475f87dd809f0d68805aaf8166">PostProcessStack</a>
 </li>
 <li>_g
 : <a class="el" href="class_convolution_pyramid.html#a1df912891ff95b4888e0c02b26cc4737">ConvolutionPyramid</a>
+</li>
+<li>_gameFramebuffer
+: <a class="el" href="class_game.html#a84b5aefadcb28661ccf82cac94537c4c">Game</a>
 </li>
 <li>_gaussianBlur
 : <a class="el" href="class_filtering_app.html#af7dc1d32528e0e95fb804e4b79284f95">FilteringApp</a>
@@ -793,6 +790,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_scene.html#afbb5064e07cb2904ecd2cfb0096a00c9">Scene</a>
 , <a class="el" href="class_texture.html#a87db50703e8979fa48484dd8aa3bb474">Texture</a>
 </li>
+<li>_needsDepth
+: <a class="el" href="class_renderer.html#ac08de38100d9a4af84fe6a360083f19e">Renderer</a>
+</li>
 <li>_noiseTextureID
 : <a class="el" href="class_s_s_a_o.html#a552a1546e8722fc65c95be533693b88b">SSAO</a>
 </li>
@@ -881,6 +881,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_preferRawControllers
 : <a class="el" href="class_input.html#a460b2652dbbae8e77d4116e2819f0d45">Input</a>
+</li>
+<li>_preferredFormat
+: <a class="el" href="class_renderer.html#ad2c3e3fdebfcdd025bebd4bbdd1eb61f">Renderer</a>
 </li>
 <li>_prepare
 : <a class="el" href="class_laplacian_integrator.html#afe05086908916c54befd9940952c3bc9">LaplacianIntegrator</a>
@@ -971,12 +974,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_rendererTime
 : <a class="el" href="class_p_b_r_demo.html#a0fe13c2773058f81cf8150274406f0be">PBRDemo</a>
 </li>
-<li>_renderResolution
-: <a class="el" href="class_renderer.html#ac7f0e2e982c72a5b8695db2db6c17dc1">Renderer</a>
-</li>
-<li>_renderResult
-: <a class="el" href="class_renderer.html#a5246ef05c005ea22ce00edead719f2ef">Renderer</a>
-</li>
 <li>_renderTex
 : <a class="el" href="class_path_tracer_app.html#a3950234558dc33b021da8ec4b216cde4">PathTracerApp</a>
 </li>
@@ -1018,10 +1015,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_sceneFramebuffer
 : <a class="el" href="class_b_v_h_renderer.html#a7d52e4202a6aa96dae2a980863df0cc0">BVHRenderer</a>
-, <a class="el" href="class_deferred_renderer.html#a9db3f26eedf90890f57371fdaa255911">DeferredRenderer</a>
-, <a class="el" href="class_editor_renderer.html#a109a6331af018da7e75da2a64523c50a">EditorRenderer</a>
 , <a class="el" href="class_forward_renderer.html#ad90c77a569205156f39df2b1771b60bb">ForwardRenderer</a>
 , <a class="el" href="class_game_renderer.html#a78eeb88da81d1773634e47b6d4a143fb">GameRenderer</a>
+, <a class="el" href="class_path_tracer_app.html#ab811b106a65fcdf27111df12b91f1f09">PathTracerApp</a>
+, <a class="el" href="class_scene_editor.html#a9378509162dc3defc0a2f24f6fe2937f">SceneEditor</a>
 </li>
 <li>_sceneModel
 : <a class="el" href="class_scene.html#ad39d09d56e7760faa4dee966251193ce">Scene</a>

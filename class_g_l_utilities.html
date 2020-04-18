@@ -159,6 +159,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae72f02514a4353ad7676fc214c5edae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244d3e72767fc0e2e968667557c4e2f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a244d3e72767fc0e2e968667557c4e2f4">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:a244d3e72767fc0e2e968667557c4e2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f3a0c4ed04a5fa5208f8b89cc18d7d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a83f3a0c4ed04a5fa5208f8b89cc18d7d">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, size_t lSrc, size_t lDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
+<tr class="separator:a83f3a0c4ed04a5fa5208f8b89cc18d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b2819871c9109d85167fec31de67df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ad1b2819871c9109d85167fec31de67df">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_texture.html">Texture</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:ad1b2819871c9109d85167fec31de67df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -365,7 +367,7 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a244d3e72767fc0e2e968667557c4e2f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,8 +416,72 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a83f3a0c4ed04a5fa5208f8b89cc18d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f3a0c4ed04a5fa5208f8b89cc18d7d">&#9670;&nbsp;</a></span>blit() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::blit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>lSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>lDst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a>&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Blit the content of a framebuffer into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">lSrc</td><td>the src layer to copy </td></tr>
+    <tr><td class="paramname">lDst</td><td>the dst layer to copy to </td></tr>
+    <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad1b2819871c9109d85167fec31de67df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b2819871c9109d85167fec31de67df">&#9670;&nbsp;</a></span>blit() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b2819871c9109d85167fec31de67df">&#9670;&nbsp;</a></span>blit() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

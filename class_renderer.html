@@ -96,11 +96,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_renderer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Renderer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___renderers.html">Renderers</a></div></div>  </div>
+<div class="title">Renderer Class Reference<div class="ingroups"><a class="el" href="group___renderers.html">Renderers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Base structure of a renderer. The result of the renderer is available through <a class="el" href="class_renderer.html#a9c9052933b0507d8dec3ac8e66c649b4">result()</a>.  
+<p>Base structure of a renderer. The result of the renderer is available through result().  
  <a href="class_renderer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>&gt;</code></p>
@@ -109,18 +109,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4dddd75ab18573a3686f90225f3f03d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a4dddd75ab18573a3686f90225f3f03d4">Renderer</a> ()=default</td></tr>
 <tr class="separator:a4dddd75ab18573a3686f90225f3f03d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea4161c30ac6d6ef2aa44c84b1fed6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a5ea4161c30ac6d6ef2aa44c84b1fed6a">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera)</td></tr>
-<tr class="separator:a5ea4161c30ac6d6ef2aa44c84b1fed6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae62dcc5b792a30b25f9bfd9b8ab3464c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae62dcc5b792a30b25f9bfd9b8ab3464c">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture)</td></tr>
-<tr class="separator:ae62dcc5b792a30b25f9bfd9b8ab3464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7414d81fe2cb69f61c19622862f4530e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a7414d81fe2cb69f61c19622862f4530e">clean</a> ()=0</td></tr>
-<tr class="separator:a7414d81fe2cb69f61c19622862f4530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13b36196c806bd3e227abbfc58c3e62"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ad13b36196c806bd3e227abbfc58c3e62">resize</a> (unsigned int width, unsigned int height)=0</td></tr>
-<tr class="separator:ad13b36196c806bd3e227abbfc58c3e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2cd6a1dd4aedde45617e1f95aca73ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ad2cd6a1dd4aedde45617e1f95aca73ef">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0)</td></tr>
+<tr class="separator:ad2cd6a1dd4aedde45617e1f95aca73ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123d18e7db3c2d178100f765de0c024d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a123d18e7db3c2d178100f765de0c024d">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0)</td></tr>
+<tr class="separator:a123d18e7db3c2d178100f765de0c024d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609184e9e7ed6bf88448458ffc229981"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a609184e9e7ed6bf88448458ffc229981">clean</a> ()</td></tr>
+<tr class="separator:a609184e9e7ed6bf88448458ffc229981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade00d55b9186cbc9b9fa5e5732f76c8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ade00d55b9186cbc9b9fa5e5732f76c8b">resize</a> (unsigned int width, unsigned int height)</td></tr>
+<tr class="separator:ade00d55b9186cbc9b9fa5e5732f76c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292491f31d71c939e4a097493068c4c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a292491f31d71c939e4a097493068c4c1">interface</a> ()</td></tr>
 <tr class="separator:a292491f31d71c939e4a097493068c4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c9052933b0507d8dec3ac8e66c649b4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a9c9052933b0507d8dec3ac8e66c649b4">result</a> ()</td></tr>
-<tr class="separator:a9c9052933b0507d8dec3ac8e66c649b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31f687a8a86ed26c10d4afe962a3630"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae31f687a8a86ed26c10d4afe962a3630">createOutput</a> (uint width, uint height) const</td></tr>
+<tr class="separator:ae31f687a8a86ed26c10d4afe962a3630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec8ffb15c069e43f0dd01919adb1ed9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a7ec8ffb15c069e43f0dd01919adb1ed9">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth) const</td></tr>
+<tr class="separator:a7ec8ffb15c069e43f0dd01919adb1ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2012f269f157754034e7b5475a8927"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#add2012f269f157754034e7b5475a8927">~Renderer</a> ()=default</td></tr>
 <tr class="separator:add2012f269f157754034e7b5475a8927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6e15f666cb188a936004add75e6c6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a8c6e15f666cb188a936004add75e6c6b">Renderer</a> (const <a class="el" href="class_renderer.html">Renderer</a> &amp;)=delete</td></tr>
@@ -134,17 +136,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ac7f0e2e982c72a5b8695db2db6c17dc1"><td class="memItemLeft" align="right" valign="top"><a id="ac7f0e2e982c72a5b8695db2db6c17dc1"></a>
-glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ac7f0e2e982c72a5b8695db2db6c17dc1">_renderResolution</a> = glm::vec2(0.0f,0.0f)</td></tr>
-<tr class="memdesc:ac7f0e2e982c72a5b8695db2db6c17dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The internal resolution. <br /></td></tr>
-<tr class="separator:ac7f0e2e982c72a5b8695db2db6c17dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5246ef05c005ea22ce00edead719f2ef"><td class="memItemLeft" align="right" valign="top"><a id="a5246ef05c005ea22ce00edead719f2ef"></a>
-const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a5246ef05c005ea22ce00edead719f2ef">_renderResult</a> = nullptr</td></tr>
-<tr class="memdesc:a5246ef05c005ea22ce00edead719f2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture containing the result. <br /></td></tr>
-<tr class="separator:a5246ef05c005ea22ce00edead719f2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c3e3fdebfcdd025bebd4bbdd1eb61f"><td class="memItemLeft" align="right" valign="top"><a id="ad2c3e3fdebfcdd025bebd4bbdd1eb61f"></a>
+std::vector&lt; <a class="el" href="class_descriptor.html">Descriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ad2c3e3fdebfcdd025bebd4bbdd1eb61f">_preferredFormat</a></td></tr>
+<tr class="memdesc:ad2c3e3fdebfcdd025bebd4bbdd1eb61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred output format for a given renderer. <br /></td></tr>
+<tr class="separator:ad2c3e3fdebfcdd025bebd4bbdd1eb61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08de38100d9a4af84fe6a360083f19e"><td class="memItemLeft" align="right" valign="top"><a id="ac08de38100d9a4af84fe6a360083f19e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ac08de38100d9a4af84fe6a360083f19e">_needsDepth</a> = false</td></tr>
+<tr class="memdesc:ac08de38100d9a4af84fe6a360083f19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the output needs a depth buffer or not. <br /></td></tr>
+<tr class="separator:ac08de38100d9a4af84fe6a360083f19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base structure of a renderer. The result of the renderer is available through <a class="el" href="class_renderer.html#a9c9052933b0507d8dec3ac8e66c649b4">result()</a>. </p>
+<div class="textblock"><p>Base structure of a renderer. The result of the renderer is available through result(). </p>
 </div>
 <p>Inherited by <a class="el" href="class_b_v_h_renderer.html">BVHRenderer</a>, <a class="el" href="class_deferred_renderer.html">DeferredRenderer</a>, <a class="el" href="class_editor_renderer.html">EditorRenderer</a>, <a class="el" href="class_forward_renderer.html">ForwardRenderer</a>, <a class="el" href="class_game_menu_renderer.html">GameMenuRenderer</a>, <a class="el" href="class_game_renderer.html">GameRenderer</a>, and <a class="el" href="class_post_process_stack.html">PostProcessStack</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -255,8 +257,8 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7414d81fe2cb69f61c19622862f4530e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7414d81fe2cb69f61c19622862f4530e">&#9670;&nbsp;</a></span>clean()</h2>
+<a id="a609184e9e7ed6bf88448458ffc229981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609184e9e7ed6bf88448458ffc229981">&#9670;&nbsp;</a></span>clean()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +267,7 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Renderer::clean </td>
+          <td class="memname">void Renderer::clean </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -273,18 +275,104 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Clean internal resources. </p>
 
-<p>Implemented in <a class="el" href="class_deferred_renderer.html#acd37a714f41e2918a1af765bb32ab5bb">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a8cee27beddc9b13cb47945b87a240112">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#aa7843a8c6bc6ebd9c62e764886afa8ac">ForwardRenderer</a>, <a class="el" href="class_game_menu_renderer.html#a28e02b0137f5ccdbc6c8bd91e54440ac">GameMenuRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#aad30525ee58321b5c18a4586beed3b63">BVHRenderer</a>, <a class="el" href="class_editor_renderer.html#a356b8fd88962af18d1688ea5823a3cd9">EditorRenderer</a>, and <a class="el" href="class_game_renderer.html#a86e7880a11bc4ea68e6ffd8d4968d4ea">GameRenderer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#acd37a714f41e2918a1af765bb32ab5bb">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a8cee27beddc9b13cb47945b87a240112">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#aa7843a8c6bc6ebd9c62e764886afa8ac">ForwardRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#aad30525ee58321b5c18a4586beed3b63">BVHRenderer</a>, and <a class="el" href="class_game_renderer.html#a86e7880a11bc4ea68e6ffd8d4968d4ea">GameRenderer</a>.</p>
 
 </div>
 </div>
-<a id="a5ea4161c30ac6d6ef2aa44c84b1fed6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ea4161c30ac6d6ef2aa44c84b1fed6a">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a7ec8ffb15c069e43f0dd01919adb1ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec8ffb15c069e43f0dd01919adb1ed9">&#9670;&nbsp;</a></span>createOutput() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt; Renderer::createOutput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a>&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a framebuffer with the recommended settings for it to be used as the output of this renderer when calling process/draw. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>the framebuffer texture shape </td></tr>
+    <tr><td class="paramname">width</td><td>the framebuffer width </td></tr>
+    <tr><td class="paramname">height</td><td>the framebuffer height </td></tr>
+    <tr><td class="paramname">depth</td><td>the framebuffer depth </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the allocated framebuffer </dd></dl>
+
+</div>
+</div>
+<a id="ae31f687a8a86ed26c10d4afe962a3630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31f687a8a86ed26c10d4afe962a3630">&#9670;&nbsp;</a></span>createOutput() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt; Renderer::createOutput </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a 2D framebuffer with the recommended settings for it to be used as the output of this renderer when calling process/draw. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>the framebuffer width </td></tr>
+    <tr><td class="paramname">height</td><td>the framebuffer height </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the allocated framebuffer </dd></dl>
+
+</div>
+</div>
+<a id="ad2cd6a1dd4aedde45617e1f95aca73ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2cd6a1dd4aedde45617e1f95aca73ef">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,8 +384,24 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
           <td class="memname">void Renderer::draw </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_camera.html">Camera</a> &amp;&#160;</td>
-          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>framebuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>layer</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -309,11 +413,13 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
 <p>Draw from a given viewpoint. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">camera</td><td>the rendering viewpoint </td></tr>
+    <tr><td class="paramname">framebuffer</td><td>the destination target </td></tr>
+    <tr><td class="paramname">layer</td><td>the layer to write to in the target </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a049715e3a06f8a790603ad449c703554">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#af4a63bff7c1e206d04270618377e485d">ForwardRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#a0408d3e07de03dd5701f9fbfb82fc0e7">BVHRenderer</a>, and <a class="el" href="class_editor_renderer.html#abd2eba6e6082ad2902a34bd04b751b1c">EditorRenderer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a5fa3c57855cf21289018e4271f7eb60c">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#a20ad1097fa9d4314f72a1a152c08fd76">ForwardRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#a664389620c89f874989b624179034dcb">BVHRenderer</a>, and <a class="el" href="class_editor_renderer.html#ab8608d08974bc19bd5433fc939d54d89">EditorRenderer</a>.</p>
 
 </div>
 </div>
@@ -399,8 +505,8 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
 
 </div>
 </div>
-<a id="ae62dcc5b792a30b25f9bfd9b8ab3464c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae62dcc5b792a30b25f9bfd9b8ab3464c">&#9670;&nbsp;</a></span>process()</h2>
+<a id="a123d18e7db3c2d178100f765de0c024d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123d18e7db3c2d178100f765de0c024d">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,8 +518,24 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
           <td class="memname">void Renderer::process </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>framebuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>layer</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -424,17 +546,19 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
 </div><div class="memdoc">
 <p>Process a given input texture. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">texture</td><td>the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> ID of the texture </td></tr>
+    <tr><td class="paramname">texture</td><td>the texture to process </td></tr>
+    <tr><td class="paramname">framebuffer</td><td>the destination target </td></tr>
+    <tr><td class="paramname">layer</td><td>the layer to write to in the target </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_post_process_stack.html#ad6c94d97a377c81e337ceaff34af090c">PostProcessStack</a>.</p>
+<p>Reimplemented in <a class="el" href="class_post_process_stack.html#a582359414dae9283f84a0d4fd705f620">PostProcessStack</a>.</p>
 
 </div>
 </div>
-<a id="ad13b36196c806bd3e227abbfc58c3e62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13b36196c806bd3e227abbfc58c3e62">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="ade00d55b9186cbc9b9fa5e5732f76c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade00d55b9186cbc9b9fa5e5732f76c8b">&#9670;&nbsp;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,7 +567,7 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Renderer::resize </td>
+          <td class="memname">void Renderer::resize </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
@@ -462,7 +586,7 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -474,33 +598,7 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_deferred_renderer.html#a3f027feece0a1e14e4f995a1a450dd16">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a659e82c405706ae4914363422f15d48b">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#a1db334206d064f5419361121487d3d1c">ForwardRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#a9c403344c512c9411ee1ed4ffc069d7b">BVHRenderer</a>, <a class="el" href="class_editor_renderer.html#ab6745f047990439f71ec5335aa045891">EditorRenderer</a>, <a class="el" href="class_game_menu_renderer.html#a9f524f0197b417740cfe6539f66445dc">GameMenuRenderer</a>, and <a class="el" href="class_game_renderer.html#a46ff565c2e188426cd9ad9f529f4a080">GameRenderer</a>.</p>
-
-</div>
-</div>
-<a id="a9c9052933b0507d8dec3ac8e66c649b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c9052933b0507d8dec3ac8e66c649b4">&#9670;&nbsp;</a></span>result()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_texture.html">Texture</a>* Renderer::result </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Contains the result of the rendering. </p><dl class="section return"><dt>Returns</dt><dd>the result texture </dd></dl>
+<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a3f027feece0a1e14e4f995a1a450dd16">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a659e82c405706ae4914363422f15d48b">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#a1db334206d064f5419361121487d3d1c">ForwardRenderer</a>, and <a class="el" href="class_game_renderer.html#a46ff565c2e188426cd9ad9f529f4a080">GameRenderer</a>.</p>
 
 </div>
 </div>
