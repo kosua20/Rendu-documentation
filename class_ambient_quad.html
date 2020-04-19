@@ -109,10 +109,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a17ed2c4a215567b12942225cb5af15ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ambient_quad.html#a17ed2c4a215567b12942225cb5af15ad">AmbientQuad</a> (const <a class="el" href="class_texture.html">Texture</a> *texAlbedo, const <a class="el" href="class_texture.html">Texture</a> *texNormals, const <a class="el" href="class_texture.html">Texture</a> *texEffects, const <a class="el" href="class_texture.html">Texture</a> *texDepth, const <a class="el" href="class_texture.html">Texture</a> *texSSAO)</td></tr>
 <tr class="separator:a17ed2c4a215567b12942225cb5af15ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91cbe3d5c6a6d555cdb6c42a071cc1b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ambient_quad.html#a91cbe3d5c6a6d555cdb6c42a071cc1b8">setSceneParameters</a> (const <a class="el" href="class_texture.html">Texture</a> *reflectionMap, const std::vector&lt; glm::vec3 &gt; &amp;irradiance)</td></tr>
-<tr class="separator:a91cbe3d5c6a6d555cdb6c42a071cc1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ace67ca9c6dd2e7e8e76fa148dfe7b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ambient_quad.html#a4ace67ca9c6dd2e7e8e76fa148dfe7b8">draw</a> (const glm::mat4 &amp;viewMatrix, const glm::mat4 &amp;projectionMatrix) const</td></tr>
-<tr class="separator:a4ace67ca9c6dd2e7e8e76fa148dfe7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64944dbbeff3b47a7c4be0aa781e6fdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ambient_quad.html#a64944dbbeff3b47a7c4be0aa781e6fdd">setSceneParameters</a> (const std::vector&lt; glm::vec3 &gt; &amp;irradiance)</td></tr>
+<tr class="separator:a64944dbbeff3b47a7c4be0aa781e6fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05a30cb6711d559a73e38d2e482654c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ambient_quad.html#ad05a30cb6711d559a73e38d2e482654c">draw</a> (const glm::mat4 &amp;viewMatrix, const glm::mat4 &amp;projectionMatrix, const <a class="el" href="class_texture.html">Texture</a> *envmap)</td></tr>
+<tr class="separator:ad05a30cb6711d559a73e38d2e482654c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -186,8 +186,8 @@ std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt;
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4ace67ca9c6dd2e7e8e76fa148dfe7b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ace67ca9c6dd2e7e8e76fa148dfe7b8">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="ad05a30cb6711d559a73e38d2e482654c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05a30cb6711d559a73e38d2e482654c">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,42 +202,13 @@ std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt;
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const glm::mat4 &amp;&#160;</td>
-          <td class="paramname"><em>projectionMatrix</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Draw the ambient lighting contribution to the scene. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">viewMatrix</td><td>the current camera view matrix </td></tr>
-    <tr><td class="paramname">projectionMatrix</td><td>the current camera projection matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a91cbe3d5c6a6d555cdb6c42a071cc1b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91cbe3d5c6a6d555cdb6c42a071cc1b8">&#9670;&nbsp;</a></span>setSceneParameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AmbientQuad::setSceneParameters </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
-          <td class="paramname"><em>reflectionMap</em>, </td>
+          <td class="paramname"><em>projectionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; glm::vec3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>irradiance</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>envmap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -246,9 +217,34 @@ std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt;
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Draw the ambient lighting contribution to the scene. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewMatrix</td><td>the current camera view matrix </td></tr>
+    <tr><td class="paramname">projectionMatrix</td><td>the current camera projection matrix </td></tr>
+    <tr><td class="paramname">envmap</td><td>the environment cubemap (ideally containing radiance convolved with increasing roughness lobes in the mipmap levels) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64944dbbeff3b47a7c4be0aa781e6fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64944dbbeff3b47a7c4be0aa781e6fdd">&#9670;&nbsp;</a></span>setSceneParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AmbientQuad::setSceneParameters </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; glm::vec3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>irradiance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <p>Register the scene-specific lighting informations. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reflectionMap</td><td>the ID of the background cubemap, containing radiance convolved with increasing roughness lobes in the mipmap levels </td></tr>
     <tr><td class="paramname">irradiance</td><td>the SH coefficients of the background irradiance </td></tr>
   </table>
   </dd>

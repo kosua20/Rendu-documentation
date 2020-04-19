@@ -166,6 +166,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_angularSpeed
 : <a class="el" href="class_controllable_camera.html#afb10609c6d02ed0c9e7835758de5a38a">ControllableCamera</a>
 </li>
+<li>_animated
+: <a class="el" href="class_scene.html#adb18c4ad7bdac735ed210d85e6bb7c5b">Scene</a>
+</li>
 <li>_animations
 : <a class="el" href="class_light.html#a9a531ea8567af033989e972d7ebfecc2">Light</a>
 , <a class="el" href="class_object.html#a311ce9dd3d37059d727b6711da42d628">Object</a>
@@ -296,6 +299,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_path_tracer_app.html#abfe719bfd497bd3298e3b368dfc2905b">PathTracerApp</a>
 , <a class="el" href="class_p_b_r_demo.html#a17c23259eac9e92a02b1c89b91252c6f">PBRDemo</a>
 , <a class="el" href="class_scene_editor.html#a753263e32f0789c36b9c9e9d34189670">SceneEditor</a>
+</li>
+<li>_cameras
+: <a class="el" href="class_probe.html#aa023fafbebe29047832fa25c49917d5f">Probe</a>
 </li>
 <li>_canvas
 : <a class="el" href="class_painting_tool.html#a0baec59e2072f9237b0652784748e064">PaintingTool</a>
@@ -433,6 +439,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_deferred_renderer.html#ae829ac1ed424b299f6d4d440a05a4038">DeferredRenderer</a>
 , <a class="el" href="class_forward_renderer.html#ae3d9063f541913c633e27e37bf2a09d1">ForwardRenderer</a>
 </li>
+<li>_envmap
+: <a class="el" href="class_light_probe.html#a01eb3dce2fa112f9e2c0b08a4f5c82c6">LightProbe</a>
+</li>
 <li>_extract
 : <a class="el" href="class_flood_filler.html#abef5e5101c471631d2eb6da76c9a7b35">FloodFiller</a>
 </li>
@@ -505,6 +514,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_frame
 : <a class="el" href="class_animation.html#acdfc50c3f47f828f00b3d6763c2c809a">Animation</a>
+</li>
+<li>_framebuffer
+: <a class="el" href="class_probe.html#afa175f407cd1aafb5253839dc0c8d0fd">Probe</a>
 </li>
 <li>_frameBuffers
 : <a class="el" href="class_gaussian_blur.html#aa6cb3eec89f9f551fdcc73b3e3474d61">GaussianBlur</a>
@@ -665,6 +677,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_light
 : <a class="el" href="class_variance_shadow_map2_d.html#a67d0ef434e386cb0cfef10f789508107">VarianceShadowMap2D</a>
 , <a class="el" href="class_variance_shadow_map_cube.html#ab921fee4ffb54611da8bb39a46ca60c3">VarianceShadowMapCube</a>
+</li>
+<li>_lightBuffer
+: <a class="el" href="class_deferred_renderer.html#acd2c80f89492bc6132cdc558cee0ea90">DeferredRenderer</a>
 </li>
 <li>_lightDebugRenderer
 : <a class="el" href="class_deferred_renderer.html#a88386c5a5369d77d33ca9ecaf1903dbc">DeferredRenderer</a>
@@ -865,7 +880,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_flood_filler.html#a454bb503593f2789f48b4e5f5e6af070">FloodFiller</a>
 </li>
 <li>_position
-: <a class="el" href="class_player.html#a5f4fa7c7130d77f681ec69c0062fb3b8">Player</a>
+: <a class="el" href="class_light_probe.html#a036cf8c147450c19821cd62d1a91d846">LightProbe</a>
+, <a class="el" href="class_player.html#a5f4fa7c7130d77f681ec69c0062fb3b8">Player</a>
+, <a class="el" href="class_probe.html#a801cce22febac018fe14e4ae313c33f0">Probe</a>
 </li>
 <li>_positions
 : <a class="el" href="class_player.html#aca33f16b3367cfeab8ee8c26548475d7">Player</a>
@@ -895,6 +912,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_previousAbscisse
 : <a class="el" href="class_back_and_forth.html#a796fc4a9a673ebc57695481b842e4503">BackAndForth</a>
+</li>
+<li>_probes
+: <a class="el" href="class_p_b_r_demo.html#ad739d940dba7d0190ad783945957a0f9">PBRDemo</a>
+</li>
+<li>_probesRenderer
+: <a class="el" href="class_p_b_r_demo.html#aa4d83524a674baf6d99323d192a4257d">PBRDemo</a>
+</li>
+<li>_probesTime
+: <a class="el" href="class_p_b_r_demo.html#abfae0c2bf4486e96f860b0cf9c48035d">PBRDemo</a>
 </li>
 <li>_program
 : <a class="el" href="class_ambient_quad.html#a34069306847fb0a346e35e344fde7d62">AmbientQuad</a>
@@ -969,7 +995,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_camera_app.html#a3a46bee9c6e60448d7173faf9b4e839f">CameraApp</a>
 </li>
 <li>_renderer
-: <a class="el" href="class_scene_editor.html#a263d39a0f400dac698ca4a4a0740915b">SceneEditor</a>
+: <a class="el" href="class_probe.html#ad9b7ce299495b6d1ebeeef1ecf047389">Probe</a>
+, <a class="el" href="class_scene_editor.html#a263d39a0f400dac698ca4a4a0740915b">SceneEditor</a>
 </li>
 <li>_rendererTime
 : <a class="el" href="class_p_b_r_demo.html#a0fe13c2773058f81cf8150274406f0be">PBRDemo</a>
@@ -1174,6 +1201,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_twoSided
 : <a class="el" href="class_object.html#a11405dbba0db9f76f2f3fde4ce3209b6">Object</a>
+</li>
+<li>_type
+: <a class="el" href="class_light_probe.html#a5eb105dd2b7fe3d033a1890b99707759">LightProbe</a>
 </li>
 <li>_typedFormat
 : <a class="el" href="class_descriptor.html#aa62f22e2329bee6536535a2cce96c81b">Descriptor</a>

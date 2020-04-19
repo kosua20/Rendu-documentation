@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a26401d28a1bf3a253cb668f235ed3aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5107d9e6a5de7ca66e5f7d5eeafdc55e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a5107d9e6a5de7ca66e5f7d5eeafdc55e">setViewpoint</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;cam)</td></tr>
 <tr class="separator:a5107d9e6a5de7ca66e5f7d5eeafdc55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4710975da15a4fdf8951ee844a720b90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a4710975da15a4fdf8951ee844a720b90">animated</a> () const</td></tr>
+<tr class="separator:a4710975da15a4fdf8951ee844a720b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817e38149ed312f00941b7fbb28a4fcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a817e38149ed312f00941b7fbb28a4fcb">Scene</a> (const <a class="el" href="class_scene.html">Scene</a> &amp;)=delete</td></tr>
 <tr class="separator:a817e38149ed312f00941b7fbb28a4fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8d2978197a3cd67a4203ab6c7425e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene.html">Scene</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a9e8d2978197a3cd67a4203ab6c7425e7">operator=</a> (const <a class="el" href="class_scene.html">Scene</a> &amp;)=delete</td></tr>
@@ -168,10 +170,10 @@ std::unique_ptr&lt; <a class="el" href="class_object.html">Object</a> &gt;&#160;
 <tr class="memitem:a97cff53657acc24d38b147edd9fb59de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; glm::vec3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a97cff53657acc24d38b147edd9fb59de">backgroundIrradiance</a></td></tr>
 <tr class="memdesc:a97cff53657acc24d38b147edd9fb59de"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB SH-coefficients of the background irradiance, computed using SHExtractor.  <a href="class_scene.html#a97cff53657acc24d38b147edd9fb59de">More...</a><br /></td></tr>
 <tr class="separator:a97cff53657acc24d38b147edd9fb59de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335ee317fdbf08368fece3f29202b6cd"><td class="memItemLeft" align="right" valign="top"><a id="a335ee317fdbf08368fece3f29202b6cd"></a>
-const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a335ee317fdbf08368fece3f29202b6cd">backgroundReflection</a> = nullptr</td></tr>
-<tr class="memdesc:a335ee317fdbf08368fece3f29202b6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cubemap texture ID of the background radiance. <br /></td></tr>
-<tr class="separator:a335ee317fdbf08368fece3f29202b6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5c42f8232fa8ff133180226e8575e1"><td class="memItemLeft" align="right" valign="top"><a id="acc5c42f8232fa8ff133180226e8575e1"></a>
+<a class="el" href="class_light_probe.html">LightProbe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#acc5c42f8232fa8ff133180226e8575e1">environment</a></td></tr>
+<tr class="memdesc:acc5c42f8232fa8ff133180226e8575e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflection probe. <br /></td></tr>
+<tr class="separator:acc5c42f8232fa8ff133180226e8575e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -210,6 +212,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a034abef276d1f2801e1ff13a5f3d30d0">_loaded</a> = false</td></tr>
 <tr class="memdesc:a034abef276d1f2801e1ff13a5f3d30d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the scene already been loaded from disk. <br /></td></tr>
 <tr class="separator:a034abef276d1f2801e1ff13a5f3d30d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb18c4ad7bdac735ed210d85e6bb7c5b"><td class="memItemLeft" align="right" valign="top"><a id="adb18c4ad7bdac735ed210d85e6bb7c5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#adb18c4ad7bdac735ed210d85e6bb7c5b">_animated</a> = false</td></tr>
+<tr class="memdesc:adb18c4ad7bdac735ed210d85e6bb7c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the scene using animations. <br /></td></tr>
+<tr class="separator:adb18c4ad7bdac735ed210d85e6bb7c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a 3D environment composed of objects, a background and additional environment lighting informations, along with serialization support. </p>
@@ -336,6 +342,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4710975da15a4fdf8951ee844a720b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4710975da15a4fdf8951ee844a720b90">&#9670;&nbsp;</a></span>animated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene::animated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the scene contains animations </dd></dl>
+
+</div>
+</div>
 <a id="aa17a72d4ca35662c2e390508e6dcc7fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa17a72d4ca35662c2e390508e6dcc7fc">&#9670;&nbsp;</a></span>boundingBox()</h2>
 

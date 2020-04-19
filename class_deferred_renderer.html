@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a29d1b6cb09a8143a08f6cc7d9f63029d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a29d1b6cb09a8143a08f6cc7d9f63029d">DeferredRenderer</a> (const glm::vec2 &amp;resolution)</td></tr>
-<tr class="separator:a29d1b6cb09a8143a08f6cc7d9f63029d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5959fb4470612bf095f96d632584b884"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a5959fb4470612bf095f96d632584b884">DeferredRenderer</a> (const glm::vec2 &amp;resolution, <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode, bool ssao)</td></tr>
+<tr class="separator:a5959fb4470612bf095f96d632584b884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d85b987d0d1c4ed44091df02c0e4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a31d85b987d0d1c4ed44091df02c0e4fa">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
 <tr class="separator:a31d85b987d0d1c4ed44091df02c0e4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa3c57855cf21289018e4271f7eb60c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a5fa3c57855cf21289018e4271f7eb60c">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0) override</td></tr>
@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a123d18e7db3c2d178100f765de0c024d inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31f687a8a86ed26c10d4afe962a3630 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae31f687a8a86ed26c10d4afe962a3630">createOutput</a> (uint width, uint height) const</td></tr>
 <tr class="separator:ae31f687a8a86ed26c10d4afe962a3630 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec8ffb15c069e43f0dd01919adb1ed9 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a7ec8ffb15c069e43f0dd01919adb1ed9">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth) const</td></tr>
-<tr class="separator:a7ec8ffb15c069e43f0dd01919adb1ed9 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac977c960eee57059a34285b52b5b7a04 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ac977c960eee57059a34285b52b5b7a04">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth, uint mips) const</td></tr>
+<tr class="separator:ac977c960eee57059a34285b52b5b7a04 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2012f269f157754034e7b5475a8927 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#add2012f269f157754034e7b5475a8927">~Renderer</a> ()=default</td></tr>
 <tr class="separator:add2012f269f157754034e7b5475a8927 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6e15f666cb188a936004add75e6c6b inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a8c6e15f666cb188a936004add75e6c6b">Renderer</a> (const <a class="el" href="class_renderer.html">Renderer</a> &amp;)=delete</td></tr>
@@ -153,6 +153,10 @@ Private Attributes</h2></td></tr>
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a7631e608ef531703325bbb042089a9fb">_gbuffer</a></td></tr>
 <tr class="memdesc:a7631e608ef531703325bbb042089a9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">G-buffer. <br /></td></tr>
 <tr class="separator:a7631e608ef531703325bbb042089a9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2c80f89492bc6132cdc558cee0ea90"><td class="memItemLeft" align="right" valign="top"><a id="acd2c80f89492bc6132cdc558cee0ea90"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#acd2c80f89492bc6132cdc558cee0ea90">_lightBuffer</a></td></tr>
+<tr class="memdesc:acd2c80f89492bc6132cdc558cee0ea90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lighting accumulation. <br /></td></tr>
+<tr class="separator:acd2c80f89492bc6132cdc558cee0ea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8554b34a4eddba4c675a057de5aa5778"><td class="memItemLeft" align="right" valign="top"><a id="a8554b34a4eddba4c675a057de5aa5778"></a>
 std::unique_ptr&lt; <a class="el" href="class_s_s_a_o.html">SSAO</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a8554b34a4eddba4c675a057de5aa5778">_ssaoPass</a></td></tr>
 <tr class="memdesc:a8554b34a4eddba4c675a057de5aa5778"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> processing. <br /></td></tr>
@@ -240,8 +244,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 <p>Inherits <a class="el" href="class_renderer.html">Renderer</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a29d1b6cb09a8143a08f6cc7d9f63029d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29d1b6cb09a8143a08f6cc7d9f63029d">&#9670;&nbsp;</a></span>DeferredRenderer()</h2>
+<a id="a5959fb4470612bf095f96d632584b884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5959fb4470612bf095f96d632584b884">&#9670;&nbsp;</a></span>DeferredRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,8 +257,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="memname">DeferredRenderer::DeferredRenderer </td>
           <td>(</td>
           <td class="paramtype">const glm::vec2 &amp;&#160;</td>
-          <td class="paramname"><em>resolution</em></td><td>)</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ssao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -266,6 +286,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resolution</td><td>the initial rendering resolution </td></tr>
+    <tr><td class="paramname">mode</td><td>the shadow rendering algorithm </td></tr>
+    <tr><td class="paramname">ssao</td><td>should screen space ambient occlusion be computed </td></tr>
   </table>
   </dd>
 </dl>
