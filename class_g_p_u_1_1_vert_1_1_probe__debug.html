@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rendu: GPU::Frag::Bloom_composite Class Reference</title>
+<title>Rendu: GPU::Vert::Probe_debug Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,55 +91,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_g_p_u.html">GPU</a></li><li class="navelem"><a class="el" href="namespace_g_p_u_1_1_frag.html">Frag</a></li><li class="navelem"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html">Bloom_composite</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_g_p_u.html">GPU</a></li><li class="navelem"><a class="el" href="namespace_g_p_u_1_1_vert.html">Vert</a></li><li class="navelem"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html">Probe_debug</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="class_g_p_u_1_1_frag_1_1_bloom__composite-members.html">List of all members</a>  </div>
+<a href="class_g_p_u_1_1_vert_1_1_probe__debug-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GPU::Frag::Bloom_composite Class Reference<div class="ingroups"><a class="el" href="group___shaders.html">Shaders</a></div></div>  </div>
+<div class="title">GPU::Vert::Probe_debug Class Reference<div class="ingroups"><a class="el" href="group___shaders.html">Shaders</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom.html" title="Bloom fragment shader.">Bloom</a> composite fragment shader.  
- <a href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#details">More...</a></p>
+<p><a class="el" href="class_probe.html" title="A probe can be used to capture the appareance of a scene at a given location as a 360° cubemap....">Probe</a> debug vertex shader.  
+ <a href="class_g_p_u_1_1_vert_1_1_probe__debug.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b8741ae238f6968472dc8ff9084f3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#a3b8741ae238f6968472dc8ff9084f3a5">main</a> ()</td></tr>
-<tr class="separator:a3b8741ae238f6968472dc8ff9084f3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558b32f28850d959f875be929e2dc693"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#a558b32f28850d959f875be929e2dc693">main</a> ()</td></tr>
+<tr class="separator:a558b32f28850d959f875be929e2dc693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab75f9a36740d4579e8bc332e77246df2"><td class="memItemLeft" align="right" valign="top"><a id="ab75f9a36740d4579e8bc332e77246df2"></a>
-in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#ab75f9a36740d4579e8bc332e77246df2">uv</a></td></tr>
-<tr class="memdesc:ab75f9a36740d4579e8bc332e77246df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
-<tr class="separator:ab75f9a36740d4579e8bc332e77246df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de7ecf07b05c27a9103cc3540d554f8"><td class="memItemLeft" align="right" valign="top"><a id="a9de7ecf07b05c27a9103cc3540d554f8"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#a9de7ecf07b05c27a9103cc3540d554f8">sceneTexture</a></td></tr>
-<tr class="memdesc:a9de7ecf07b05c27a9103cc3540d554f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> texture. <br /></td></tr>
-<tr class="separator:a9de7ecf07b05c27a9103cc3540d554f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b275cc71388798c8eb8c424c5f61cf"><td class="memItemLeft" align="right" valign="top"><a id="a59b275cc71388798c8eb8c424c5f61cf"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#a59b275cc71388798c8eb8c424c5f61cf">bloomTexture</a></td></tr>
-<tr class="memdesc:a59b275cc71388798c8eb8c424c5f61cf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom.html" title="Bloom fragment shader.">Bloom</a> texture. <br /></td></tr>
-<tr class="separator:a59b275cc71388798c8eb8c424c5f61cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9e0659ad40d476e0356fab1abcfb3e"><td class="memItemLeft" align="right" valign="top"><a id="aba9e0659ad40d476e0356fab1abcfb3e"></a>
-uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#aba9e0659ad40d476e0356fab1abcfb3e">mixFactor</a> = 1.0</td></tr>
-<tr class="memdesc:aba9e0659ad40d476e0356fab1abcfb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend factor when compositing. <br /></td></tr>
-<tr class="separator:aba9e0659ad40d476e0356fab1abcfb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a648bb8175db72d9590c93a2a60ce0"><td class="memItemLeft" align="right" valign="top"><a id="ab7a648bb8175db72d9590c93a2a60ce0"></a>
-out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#ab7a648bb8175db72d9590c93a2a60ce0">fragColor</a></td></tr>
-<tr class="memdesc:ab7a648bb8175db72d9590c93a2a60ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> color. <br /></td></tr>
-<tr class="separator:ab7a648bb8175db72d9590c93a2a60ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a49eecdb5b471852b7697db01cb644"><td class="memItemLeft" align="right" valign="top"><a id="a36a49eecdb5b471852b7697db01cb644"></a>
+in vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#a36a49eecdb5b471852b7697db01cb644">v</a></td></tr>
+<tr class="memdesc:a36a49eecdb5b471852b7697db01cb644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position. <br /></td></tr>
+<tr class="separator:a36a49eecdb5b471852b7697db01cb644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0aeebfbf8a883188ad5b9e2d7ae8760"><td class="memItemLeft" align="right" valign="top"><a id="ab0aeebfbf8a883188ad5b9e2d7ae8760"></a>
+uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#ab0aeebfbf8a883188ad5b9e2d7ae8760">mvp</a></td></tr>
+<tr class="memdesc:ab0aeebfbf8a883188ad5b9e2d7ae8760"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transformation matrix. <br /></td></tr>
+<tr class="separator:ab0aeebfbf8a883188ad5b9e2d7ae8760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1588e5fffcb278e680ef40b0e91f4356"><td class="memItemLeft" align="right" valign="top"><a id="a1588e5fffcb278e680ef40b0e91f4356"></a>
+uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#a1588e5fffcb278e680ef40b0e91f4356">m</a></td></tr>
+<tr class="memdesc:a1588e5fffcb278e680ef40b0e91f4356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model transformation matrix. <br /></td></tr>
+<tr class="separator:a1588e5fffcb278e680ef40b0e91f4356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a35ddb291ef3c0a077bbc554b644bb"><td class="memItemLeft" align="right" valign="top"><a id="a57a35ddb291ef3c0a077bbc554b644bb"></a>
+uniform mat3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#a57a35ddb291ef3c0a077bbc554b644bb">normalMatrix</a></td></tr>
+<tr class="memdesc:a57a35ddb291ef3c0a077bbc554b644bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal transformation matrix. <br /></td></tr>
+<tr class="separator:a57a35ddb291ef3c0a077bbc554b644bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade57605b2f721695b3b7edce3c5bcce6"><td class="memItemLeft" align="right" valign="top"><a id="ade57605b2f721695b3b7edce3c5bcce6"></a>
+out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#ade57605b2f721695b3b7edce3c5bcce6">pos</a></td></tr>
+<tr class="memdesc:ade57605b2f721695b3b7edce3c5bcce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">World space position. <br /></td></tr>
+<tr class="separator:ade57605b2f721695b3b7edce3c5bcce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797e398abec825b1f05776c36401befc"><td class="memItemLeft" align="right" valign="top"><a id="a797e398abec825b1f05776c36401befc"></a>
+out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_vert_1_1_probe__debug.html#a797e398abec825b1f05776c36401befc">nor</a></td></tr>
+<tr class="memdesc:a797e398abec825b1f05776c36401befc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal in world space. <br /></td></tr>
+<tr class="separator:a797e398abec825b1f05776c36401befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_g_p_u_1_1_frag_1_1_bloom.html" title="Bloom fragment shader.">Bloom</a> composite fragment shader. </p>
+<div class="textblock"><p><a class="el" href="class_probe.html" title="A probe can be used to capture the appareance of a scene at a given location as a 360° cubemap....">Probe</a> debug vertex shader. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3b8741ae238f6968472dc8ff9084f3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b8741ae238f6968472dc8ff9084f3a5">&#9670;&nbsp;</a></span>main()</h2>
+<a id="a558b32f28850d959f875be929e2dc693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558b32f28850d959f875be929e2dc693">&#9670;&nbsp;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +152,7 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GPU::Frag::Bloom_composite::main </td>
+          <td class="memname">void GPU::Vert::Probe_debug::main </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -160,12 +164,12 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overlay the bloom result over the current content of the destination. </p>
+<p>Apply the MVP transformation to the input vertex. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>resources/common/shaders/screens/bloom-composite.frag</li>
+<li>resources/common/shaders/background/probe_debug.vert</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

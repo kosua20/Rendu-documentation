@@ -146,10 +146,9 @@ uniform sampler2DArray&#160;</td><td class="memItemRight" valign="bottom"><a cla
 uniform samplerCubeArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_object__no__uv__forward.html#a89be3676cb69ad01baf7dd53e5f55420">shadowMapsCube</a></td></tr>
 <tr class="memdesc:a89be3676cb69ad01baf7dd53e5f55420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow cubemaps array. <br /></td></tr>
 <tr class="separator:a89be3676cb69ad01baf7dd53e5f55420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc28166dfb6dd7079724c89d113fe23b"><td class="memItemLeft" align="right" valign="top"><a id="adc28166dfb6dd7079724c89d113fe23b"></a>
-uniform vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_object__no__uv__forward.html#adc28166dfb6dd7079724c89d113fe23b">shCoeffs</a> [9]</td></tr>
-<tr class="memdesc:adc28166dfb6dd7079724c89d113fe23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance. <br /></td></tr>
-<tr class="separator:adc28166dfb6dd7079724c89d113fe23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ed4e076c980a12bd58d4fc5330425e"><td class="memItemLeft" align="right" valign="top">uniform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_object__no__uv__forward.html#a26ed4e076c980a12bd58d4fc5330425e">SHCoeffs</a></td></tr>
+<tr class="memdesc:a26ed4e076c980a12bd58d4fc5330425e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance (UBO).  <a href="class_g_p_u_1_1_frag_1_1_object__no__uv__forward.html#a26ed4e076c980a12bd58d4fc5330425e">More...</a><br /></td></tr>
+<tr class="separator:a26ed4e076c980a12bd58d4fc5330425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59c9a4b09ff70f2eee139d62db16f38"><td class="memItemLeft" align="right" valign="top"><a id="ae59c9a4b09ff70f2eee139d62db16f38"></a>
 uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_object__no__uv__forward.html#ae59c9a4b09ff70f2eee139d62db16f38">inverseV</a></td></tr>
 <tr class="memdesc:ae59c9a4b09ff70f2eee139d62db16f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view to world transformation matrix. <br /></td></tr>
@@ -237,6 +236,24 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
       </table>
 </div><div class="memdoc">
 <p>Number of active lights. </p>
+
+</div>
+</div>
+<a id="a26ed4e076c980a12bd58d4fc5330425e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ed4e076c980a12bd58d4fc5330425e">&#9670;&nbsp;</a></span>SHCoeffs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform GPU::Frag::Object_no_uv_forward::SHCoeffs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    vec4 shCoeffs[9]</div>
+</div><!-- fragment -->
+<p>SH approximation of the environment irradiance (UBO). </p>
 
 </div>
 </div>

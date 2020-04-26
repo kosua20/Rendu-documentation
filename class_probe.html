@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_probe-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -100,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper to apply a renderer to a cubemap, for instance to render a reflection probe.  
+<p>A probe can be used to capture the appareance of a scene at a given location as a 360° cubemap. This is often used to render realistic real-time reflections and global illumination effects. It is recommended to split the rendering, radiance precomputation for GGX shading and irradiance SH decomposition over multiple frames as those steps are costly. Additional synchronization constraints are described for each function below.  
  <a href="class_probe.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_probe_8hpp_source.html">Probe.hpp</a>&gt;</code></p>
@@ -111,10 +112,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab2d19839f75b071dd1ca35ff27afa294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1732d34c1e5b02e12b7ec405d144190f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a1732d34c1e5b02e12b7ec405d144190f">draw</a> ()</td></tr>
 <tr class="separator:a1732d34c1e5b02e12b7ec405d144190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a88dc072dc4a562918b12807db619c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a8a88dc072dc4a562918b12807db619c6">convolveRadiance</a> (float clamp, size_t first, size_t count)</td></tr>
+<tr class="separator:a8a88dc072dc4a562918b12807db619c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bd705664a3c8964378f534213bfce4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a44bd705664a3c8964378f534213bfce4">prepareIrradiance</a> ()</td></tr>
+<tr class="separator:a44bd705664a3c8964378f534213bfce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9b129a7ddf15f810b38358a67bf768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a6f9b129a7ddf15f810b38358a67bf768">estimateIrradiance</a> (float clamp)</td></tr>
+<tr class="separator:a6f9b129a7ddf15f810b38358a67bf768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f20c2108aa284bd0d9778f09b425055"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a5f20c2108aa284bd0d9778f09b425055">clean</a> ()</td></tr>
 <tr class="separator:a5f20c2108aa284bd0d9778f09b425055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa16ca6b12b551ffb35f399220816322b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#aa16ca6b12b551ffb35f399220816322b">textureId</a> () const</td></tr>
-<tr class="separator:aa16ca6b12b551ffb35f399220816322b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3d64199caf7c16792e5f68a48a9494"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a3f3d64199caf7c16792e5f68a48a9494">texture</a> () const</td></tr>
+<tr class="separator:a3f3d64199caf7c16792e5f68a48a9494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a1493eee9109d362f90b062cb4249f"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a>&lt; glm::vec4 &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a02a1493eee9109d362f90b062cb4249f">shCoeffs</a> () const</td></tr>
+<tr class="separator:a02a1493eee9109d362f90b062cb4249f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8fdab26f0c37bc847a3f446b7dd376"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a8d8fdab26f0c37bc847a3f446b7dd376">position</a> () const</td></tr>
 <tr class="separator:a8d8fdab26f0c37bc847a3f446b7dd376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7823436d27cab402bc7e8d6783b5a54c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_probe.html">Probe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a7823436d27cab402bc7e8d6783b5a54c">operator=</a> (const <a class="el" href="class_probe.html">Probe</a> &amp;)=delete</td></tr>
@@ -126,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5cbb1199bf7b5cf34701620124229e45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a5cbb1199bf7b5cf34701620124229e45">Probe</a> (<a class="el" href="class_probe.html">Probe</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a5cbb1199bf7b5cf34701620124229e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a06b63735d84823f528f7808f855c3838"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a06b63735d84823f528f7808f855c3838">extractIrradianceSHCoeffs</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;cubemap, float clamp, std::vector&lt; glm::vec3 &gt; &amp;<a class="el" href="class_probe.html#a02a1493eee9109d362f90b062cb4249f">shCoeffs</a>)</td></tr>
+<tr class="memdesc:a06b63735d84823f528f7808f855c3838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompose an existing cubemap irradiance onto the nine first elements of the spherical harmonic basis.  <a href="class_probe.html#a06b63735d84823f528f7808f855c3838">More...</a><br /></td></tr>
+<tr class="separator:a06b63735d84823f528f7808f855c3838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:afa175f407cd1aafb5253839dc0c8d0fd"><td class="memItemLeft" align="right" valign="top"><a id="afa175f407cd1aafb5253839dc0c8d0fd"></a>
@@ -136,6 +151,14 @@ std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> 
 std::shared_ptr&lt; <a class="el" href="class_renderer.html">Renderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#ad9b7ce299495b6d1ebeeef1ecf047389">_renderer</a></td></tr>
 <tr class="memdesc:ad9b7ce299495b6d1ebeeef1ecf047389"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renderer to use. <br /></td></tr>
 <tr class="separator:ad9b7ce299495b6d1ebeeef1ecf047389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa96754e82dc8f7ddd233521f50bb6a1"><td class="memItemLeft" align="right" valign="top"><a id="aaa96754e82dc8f7ddd233521f50bb6a1"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#aaa96754e82dc8f7ddd233521f50bb6a1">_copy</a></td></tr>
+<tr class="memdesc:aaa96754e82dc8f7ddd233521f50bb6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downscaled copy of the cubemap content. <br /></td></tr>
+<tr class="separator:aaa96754e82dc8f7ddd233521f50bb6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8086e9a506ee172ce35bb4d4de312e7"><td class="memItemLeft" align="right" valign="top"><a id="ac8086e9a506ee172ce35bb4d4de312e7"></a>
+std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a>&lt; glm::vec4 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#ac8086e9a506ee172ce35bb4d4de312e7">_shCoeffs</a></td></tr>
+<tr class="memdesc:ac8086e9a506ee172ce35bb4d4de312e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH representation of the cubemap irradiance. <br /></td></tr>
+<tr class="separator:ac8086e9a506ee172ce35bb4d4de312e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa023fafbebe29047832fa25c49917d5f"><td class="memItemLeft" align="right" valign="top"><a id="aa023fafbebe29047832fa25c49917d5f"></a>
 std::array&lt; <a class="el" href="class_camera.html">Camera</a>, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#aa023fafbebe29047832fa25c49917d5f">_cameras</a></td></tr>
 <tr class="memdesc:aa023fafbebe29047832fa25c49917d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_camera.html" title="This class represents a camera as used in real-time rendering APIs. It provides a view and projection...">Camera</a> for each face. <br /></td></tr>
@@ -144,9 +167,17 @@ std::array&lt; <a class="el" href="class_camera.html">Camera</a>, 6 &gt;&#160;</
 glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#a801cce22febac018fe14e4ae313c33f0">_position</a></td></tr>
 <tr class="memdesc:a801cce22febac018fe14e4ae313c33f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probe location. <br /></td></tr>
 <tr class="separator:a801cce22febac018fe14e4ae313c33f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e983a3b73cdba5824d5b8aaf8bc900"><td class="memItemLeft" align="right" valign="top"><a id="ac0e983a3b73cdba5824d5b8aaf8bc900"></a>
+const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#ac0e983a3b73cdba5824d5b8aaf8bc900">_integration</a></td></tr>
+<tr class="memdesc:ac0e983a3b73cdba5824d5b8aaf8bc900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radiance preconvolution shader. <br /></td></tr>
+<tr class="separator:ac0e983a3b73cdba5824d5b8aaf8bc900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a2cf178e2898fd5cb4de8f6c0679c0"><td class="memItemLeft" align="right" valign="top"><a id="ab8a2cf178e2898fd5cb4de8f6c0679c0"></a>
+const <a class="el" href="class_mesh.html">Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_probe.html#ab8a2cf178e2898fd5cb4de8f6c0679c0">_cube</a></td></tr>
+<tr class="memdesc:ab8a2cf178e2898fd5cb4de8f6c0679c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skybox cube. <br /></td></tr>
+<tr class="separator:ab8a2cf178e2898fd5cb4de8f6c0679c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrapper to apply a renderer to a cubemap, for instance to render a reflection probe. </p>
+<div class="textblock"><p>A probe can be used to capture the appareance of a scene at a given location as a 360° cubemap. This is often used to render realistic real-time reflections and global illumination effects. It is recommended to split the rendering, radiance precomputation for GGX shading and irradiance SH decomposition over multiple frames as those steps are costly. Additional synchronization constraints are described for each function below. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab2d19839f75b071dd1ca35ff27afa294"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2d19839f75b071dd1ca35ff27afa294">&#9670;&nbsp;</a></span>Probe() <span class="overload">[1/3]</span></h2>
@@ -201,7 +232,7 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>If the renderer is using the output of the probe, be careful to note use it in the last rendering step. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the renderer is using the output of the probe, be careful to not use the probe content in the last rendering step. </dd></dl>
 
 </div>
 </div>
@@ -278,6 +309,48 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 </div>
 </div>
+<a id="a8a88dc072dc4a562918b12807db619c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a88dc072dc4a562918b12807db619c6">&#9670;&nbsp;</a></span>convolveRadiance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Probe::convolveRadiance </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>clamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform BRDF pre-integration of the probe radiance for increasing roughness and store them in the mip levels. This also copies a downscaled version of the radiance for future SH computations. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clamp</td><td>maximum intensity value, useful to avoid ringing artifacts </td></tr>
+    <tr><td class="paramname">first</td><td>first layer to process (in 1, mip count - 1) </td></tr>
+    <tr><td class="paramname">count</td><td>the number of layers to process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1732d34c1e5b02e12b7ec405d144190f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1732d34c1e5b02e12b7ec405d144190f">&#9670;&nbsp;</a></span>draw()</h2>
 
@@ -293,6 +366,82 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
       </table>
 </div><div class="memdoc">
 <p>Update the content of the cubemap. </p>
+
+</div>
+</div>
+<a id="a6f9b129a7ddf15f810b38358a67bf768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9b129a7ddf15f810b38358a67bf768">&#9670;&nbsp;</a></span>estimateIrradiance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Probe::estimateIrradiance </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>clamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estimate the SH representation of the cubemap irradiance. The estimation is done on the CPU, and relies on downlaoding a (downscaled) copy of the cubemap content. For synchronization reasons, it is recommended to only update irradiance every other frame, and to trigger the copy (performed by prepareIrradiance) after the coeffs update. This will introduce a latency but will avoid any stalls. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clamp</td><td>maximum intensity value, useful to avoid temporal instabilities </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06b63735d84823f528f7808f855c3838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b63735d84823f528f7808f855c3838">&#9670;&nbsp;</a></span>extractIrradianceSHCoeffs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Probe::extractIrradianceSHCoeffs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>cubemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>clamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; glm::vec3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shCoeffs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decompose an existing cubemap irradiance onto the nine first elements of the spherical harmonic basis. </p>
+<p>Perform approximated convolution as described in Ramamoorthi, Ravi, and Pat Hanrahan. "An efficient representation for irradiance environment maps.", Proceedings of the 28th annual conference on Computer graphics and interactive techniques. ACM, 2001. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cubemap</td><td>the cubemap to extract SH coefficients from </td></tr>
+    <tr><td class="paramname">clamp</td><td>maximum intensity value, useful to avoid temporal instabilities </td></tr>
+    <tr><td class="paramname">shCoeffs</td><td>will contain the irradiance SH representation </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -376,8 +525,26 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 </div>
 </div>
-<a id="aa16ca6b12b551ffb35f399220816322b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa16ca6b12b551ffb35f399220816322b">&#9670;&nbsp;</a></span>textureId()</h2>
+<a id="a44bd705664a3c8964378f534213bfce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bd705664a3c8964378f534213bfce4">&#9670;&nbsp;</a></span>prepareIrradiance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Probe::prepareIrradiance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Downscale radiance cubemap info for future irradiance estimation. </p>
+
+</div>
+</div>
+<a id="a02a1493eee9109d362f90b062cb4249f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a1493eee9109d362f90b062cb4249f">&#9670;&nbsp;</a></span>shCoeffs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +553,7 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_texture.html">Texture</a>* Probe::textureId </td>
+          <td class="memname">const std::shared_ptr&lt;<a class="el" href="class_buffer.html">Buffer</a>&lt;glm::vec4&gt; &gt;&amp; Probe::shCoeffs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -398,7 +565,33 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the cubemap texture </dd></dl>
+<p>The cubemap irradiance SH representation, if estimateIrradiance has been called. </p><dl class="section return"><dt>Returns</dt><dd>the irradiance SH coefficients </dd></dl>
+
+</div>
+</div>
+<a id="a3f3d64199caf7c16792e5f68a48a9494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3d64199caf7c16792e5f68a48a9494">&#9670;&nbsp;</a></span>texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_texture.html">Texture</a>* Probe::texture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The cubemap containing the rendering. Its mip levels will store the preconvolved radiance if convolveRadiance has been called </p><dl class="section return"><dt>Returns</dt><dd>the cubemap texture </dd></dl>
 
 </div>
 </div>

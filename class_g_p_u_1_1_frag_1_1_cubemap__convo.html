@@ -128,10 +128,14 @@ uniform int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 uniform samplerCube&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_cubemap__convo.html#a652228125ada9c73488151fa655cc16f">texture0</a></td></tr>
 <tr class="memdesc:a652228125ada9c73488151fa655cc16f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_input.html" title="The input manager is responsible for updating the internal input states (keyboard,...">Input</a> cubemap to process. <br /></td></tr>
 <tr class="separator:a652228125ada9c73488151fa655cc16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba6240bb2c4d91f2b4f7d33056d91ad"><td class="memItemLeft" align="right" valign="top"><a id="adba6240bb2c4d91f2b4f7d33056d91ad"></a>
-uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_cubemap__convo.html#adba6240bb2c4d91f2b4f7d33056d91ad">mimapRoughness</a></td></tr>
-<tr class="memdesc:adba6240bb2c4d91f2b4f7d33056d91ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The roughness to use for the convolution lobe. <br /></td></tr>
-<tr class="separator:adba6240bb2c4d91f2b4f7d33056d91ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefd7dc5506ec8341bc5cab2b3fe6604"><td class="memItemLeft" align="right" valign="top"><a id="aaefd7dc5506ec8341bc5cab2b3fe6604"></a>
+uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_cubemap__convo.html#aaefd7dc5506ec8341bc5cab2b3fe6604">mipmapRoughness</a></td></tr>
+<tr class="memdesc:aaefd7dc5506ec8341bc5cab2b3fe6604"><td class="mdescLeft">&#160;</td><td class="mdescRight">The roughness to use for the convolution lobe. <br /></td></tr>
+<tr class="separator:aaefd7dc5506ec8341bc5cab2b3fe6604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466c1aee737fc2efe5e00eeafcc36345"><td class="memItemLeft" align="right" valign="top"><a id="a466c1aee737fc2efe5e00eeafcc36345"></a>
+uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_cubemap__convo.html#a466c1aee737fc2efe5e00eeafcc36345">clampMax</a> = 100000.0</td></tr>
+<tr class="memdesc:a466c1aee737fc2efe5e00eeafcc36345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp input HDR values to avoid artefacts. <br /></td></tr>
+<tr class="separator:a466c1aee737fc2efe5e00eeafcc36345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a129f24a9ca204be05d871e676fb2e842"><td class="memItemLeft" align="right" valign="top"><a id="a129f24a9ca204be05d871e676fb2e842"></a>
 out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_cubemap__convo.html#a129f24a9ca204be05d871e676fb2e842">fragColor</a></td></tr>
 <tr class="memdesc:a129f24a9ca204be05d871e676fb2e842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color. <br /></td></tr>
@@ -139,7 +143,7 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Cubemap convo fragment shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPU::Common::Common_pbr</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPU::Common::Common_pbr</a>, <a class="el" href="class_g_p_u_1_1_common_1_1_utils.html" title="Utils general shader.">GPU::Common::Utils</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2910a0ef309479531c44b348265a4f18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2910a0ef309479531c44b348265a4f18">&#9670;&nbsp;</a></span>convo()</h2>

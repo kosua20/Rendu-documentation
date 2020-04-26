@@ -109,10 +109,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a490ca369d5ea408bb7b7260c20482da9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html#a490ca369d5ea408bb7b7260c20482da9">linearizeDepth</a> (float depth)</td></tr>
-<tr class="separator:a490ca369d5ea408bb7b7260c20482da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ebcf41bf0273f211709ef93914d5e6"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html#a45ebcf41bf0273f211709ef93914d5e6">positionFromUV</a> (vec2 <a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html#ae1fa99ee9b0796423523dfe5e01dc836">uv</a>)</td></tr>
-<tr class="separator:a45ebcf41bf0273f211709ef93914d5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a9c6a0923c94c88f9eb29384a7122e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html#aa4a9c6a0923c94c88f9eb29384a7122e">main</a> ()</td></tr>
 <tr class="separator:aa4a9c6a0923c94c88f9eb29384a7122e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,40 +149,8 @@ out float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html" title="Ssao fragment shader.">Ssao</a> fragment shader. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_utils.html" title="Utils general shader.">GPU::Common::Utils</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a490ca369d5ea408bb7b7260c20482da9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a490ca369d5ea408bb7b7260c20482da9">&#9670;&nbsp;</a></span>linearizeDepth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float GPU::Frag::Ssao::linearizeDepth </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>depth</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Linearize a NDC space to view space using the camera projection parameters. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>the non-linear depth </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the linear depth </dd></dl>
-
-</div>
-</div>
 <a id="aa4a9c6a0923c94c88f9eb29384a7122e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4a9c6a0923c94c88f9eb29384a7122e">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -210,39 +174,6 @@ out float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table>
 </div><div class="memdoc">
 <p>Estimate the screen space ambient occlusion in the scene. </p>
-
-</div>
-</div>
-<a id="a45ebcf41bf0273f211709ef93914d5e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45ebcf41bf0273f211709ef93914d5e6">&#9670;&nbsp;</a></span>positionFromUV()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vec3 GPU::Frag::Ssao::positionFromUV </td>
-          <td>(</td>
-          <td class="paramtype">vec2&#160;</td>
-          <td class="paramname"><em>uv</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Estimate the view space position of a given fragment. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uv</td><td>The texture coordinates of the fragment </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the view space position </dd></dl>
 
 </div>
 </div>

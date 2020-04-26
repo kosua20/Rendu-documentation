@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_s_s_a_o-members.html">List of all members</a>  </div>
@@ -105,22 +106,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_s_s_a_o_8hpp_source.html">SSAO.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a22b441e6d1ceb79a2535212f19d9d3be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be">Quality</a> : int { <a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3bea41bc94cbd8eebea13ce0491b2ac11b88">Quality::LOW</a> = 0, 
+<a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3beac87f3be66ffc3c0d4249f1c2cc5f3cce">Quality::MEDIUM</a> = 1, 
+<a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3beab89de3b4b81c4facfac906edf29aec8c">Quality::HIGH</a> = 2
+ }</td></tr>
+<tr class="separator:a22b441e6d1ceb79a2535212f19d9d3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a94cb12811078a9d1fda8c5e355bba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a4a94cb12811078a9d1fda8c5e355bba4">SSAO</a> (unsigned int width, unsigned int height, float <a class="el" href="class_s_s_a_o.html#a834b90c1e0a1b1fe7cc3ab1fb0413948">radius</a>)</td></tr>
-<tr class="separator:a4a94cb12811078a9d1fda8c5e355bba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8933a3ca66808cbab8977dd79031c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a9d8933a3ca66808cbab8977dd79031c4">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> *depthTex, const <a class="el" href="class_texture.html">Texture</a> *normalTex) const</td></tr>
-<tr class="separator:a9d8933a3ca66808cbab8977dd79031c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9107e679b589a976dd58d021ebf15aba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a9107e679b589a976dd58d021ebf15aba">SSAO</a> (uint width, uint height, uint downscale, float <a class="el" href="class_s_s_a_o.html#a834b90c1e0a1b1fe7cc3ab1fb0413948">radius</a>)</td></tr>
+<tr class="separator:a9107e679b589a976dd58d021ebf15aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43f1226659e2f0dd9cb820be397b54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#ac43f1226659e2f0dd9cb820be397b54a">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> *depthTex, const <a class="el" href="class_texture.html">Texture</a> *normalTex)</td></tr>
+<tr class="separator:ac43f1226659e2f0dd9cb820be397b54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cdabcd042504ec1e752cd144be9029a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a9cdabcd042504ec1e752cd144be9029a">clean</a> () const</td></tr>
 <tr class="separator:a9cdabcd042504ec1e752cd144be9029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21514be4194d1a52319a0e2c397f7c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a21514be4194d1a52319a0e2c397f7c36">resize</a> (unsigned int width, unsigned int height) const</td></tr>
-<tr class="separator:a21514be4194d1a52319a0e2c397f7c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4a64c9cb9b1151dd97bbf871605b48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#aff4a64c9cb9b1151dd97bbf871605b48">resize</a> (uint width, uint height) const</td></tr>
+<tr class="separator:aff4a64c9cb9b1151dd97bbf871605b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a904d27f81f24f8ac29ca84aa85ed64e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a904d27f81f24f8ac29ca84aa85ed64e1">clear</a> () const</td></tr>
 <tr class="separator:a904d27f81f24f8ac29ca84aa85ed64e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79d02b61b207ca3d44656b57f6f710e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#af79d02b61b207ca3d44656b57f6f710e">textureId</a> () const</td></tr>
-<tr class="separator:af79d02b61b207ca3d44656b57f6f710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8c7015b1da0943f20d6cd026ca0aa4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#aca8c7015b1da0943f20d6cd026ca0aa4">texture</a> () const</td></tr>
+<tr class="separator:aca8c7015b1da0943f20d6cd026ca0aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834b90c1e0a1b1fe7cc3ab1fb0413948"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a834b90c1e0a1b1fe7cc3ab1fb0413948">radius</a> ()</td></tr>
 <tr class="separator:a834b90c1e0a1b1fe7cc3ab1fb0413948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f13c22cb2cd98af9df24b661db78392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be">Quality</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a5f13c22cb2cd98af9df24b661db78392">quality</a> ()</td></tr>
+<tr class="separator:a5f13c22cb2cd98af9df24b661db78392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -128,29 +139,77 @@ Private Attributes</h2></td></tr>
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#aa64fb0e86c4b86a83f749ce9b1c0f5da">_ssaoFramebuffer</a></td></tr>
 <tr class="memdesc:aa64fb0e86c4b86a83f749ce9b1c0f5da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> framebuffer. <br /></td></tr>
 <tr class="separator:aa64fb0e86c4b86a83f749ce9b1c0f5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad33051de2d050a0ab9042220d89b8249"><td class="memItemLeft" align="right" valign="top"><a id="ad33051de2d050a0ab9042220d89b8249"></a>
-std::unique_ptr&lt; <a class="el" href="class_box_blur.html">BoxBlur</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#ad33051de2d050a0ab9042220d89b8249">_blurSSAOBuffer</a></td></tr>
-<tr class="memdesc:ad33051de2d050a0ab9042220d89b8249"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> blur processing. <br /></td></tr>
-<tr class="separator:ad33051de2d050a0ab9042220d89b8249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac3c506b988476931aac853bb60bdc7"><td class="memItemLeft" align="right" valign="top"><a id="a6ac3c506b988476931aac853bb60bdc7"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a6ac3c506b988476931aac853bb60bdc7">_finalFramebuffer</a></td></tr>
+<tr class="memdesc:a6ac3c506b988476931aac853bb60bdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> framebuffer. <br /></td></tr>
+<tr class="separator:a6ac3c506b988476931aac853bb60bdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46824de11068e2d750256e15e40bb63a"><td class="memItemLeft" align="right" valign="top"><a id="a46824de11068e2d750256e15e40bb63a"></a>
+<a class="el" href="class_bilateral_blur.html">BilateralBlur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a46824de11068e2d750256e15e40bb63a">_highBlur</a></td></tr>
+<tr class="memdesc:a46824de11068e2d750256e15e40bb63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">High quality blur. <br /></td></tr>
+<tr class="separator:a46824de11068e2d750256e15e40bb63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182f702e489ec005d93220a017c2b340"><td class="memItemLeft" align="right" valign="top"><a id="a182f702e489ec005d93220a017c2b340"></a>
+<a class="el" href="class_box_blur.html">BoxBlur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a182f702e489ec005d93220a017c2b340">_mediumBlur</a></td></tr>
+<tr class="memdesc:a182f702e489ec005d93220a017c2b340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Medium quality blur. <br /></td></tr>
+<tr class="separator:a182f702e489ec005d93220a017c2b340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a085f1da242d6607df6809fcda9e4f9ef"><td class="memItemLeft" align="right" valign="top"><a id="a085f1da242d6607df6809fcda9e4f9ef"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a085f1da242d6607df6809fcda9e4f9ef">_programSSAO</a></td></tr>
 <tr class="memdesc:a085f1da242d6607df6809fcda9e4f9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> program. <br /></td></tr>
 <tr class="separator:a085f1da242d6607df6809fcda9e4f9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b6260bc5c38b2df8a20b5ffb62ff3a"><td class="memItemLeft" align="right" valign="top"><a id="a27b6260bc5c38b2df8a20b5ffb62ff3a"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a27b6260bc5c38b2df8a20b5ffb62ff3a">_noisetexture</a></td></tr>
+<tr class="memdesc:a27b6260bc5c38b2df8a20b5ffb62ff3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_random.html" title="Generate seedable random numbers of various types and in multiple intervals. Handles per-thread rando...">Random</a> noise texture. <br /></td></tr>
+<tr class="separator:a27b6260bc5c38b2df8a20b5ffb62ff3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1082049d6d47a087ceb1026ab5dce1"><td class="memItemLeft" align="right" valign="top"><a id="a5d1082049d6d47a087ceb1026ab5dce1"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a5d1082049d6d47a087ceb1026ab5dce1">_radius</a> = 0.5f</td></tr>
 <tr class="memdesc:a5d1082049d6d47a087ceb1026ab5dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> intersection test radius. <br /></td></tr>
 <tr class="separator:a5d1082049d6d47a087ceb1026ab5dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552a1546e8722fc65c95be533693b88b"><td class="memItemLeft" align="right" valign="top"><a id="a552a1546e8722fc65c95be533693b88b"></a>
-<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a552a1546e8722fc65c95be533693b88b">_noiseTextureID</a></td></tr>
-<tr class="memdesc:a552a1546e8722fc65c95be533693b88b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_random.html" title="Generate seedable random numbers of various types and in multiple intervals. Handles per-thread rando...">Random</a> noise texture. <br /></td></tr>
-<tr class="separator:a552a1546e8722fc65c95be533693b88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf288d49fc51660ae947960d96362b9c"><td class="memItemLeft" align="right" valign="top"><a id="adf288d49fc51660ae947960d96362b9c"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#adf288d49fc51660ae947960d96362b9c">_downscale</a> = 1</td></tr>
+<tr class="memdesc:adf288d49fc51660ae947960d96362b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> internal resolution downscaling. <br /></td></tr>
+<tr class="separator:adf288d49fc51660ae947960d96362b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7204df2abe583775eb63ebbec190b1"><td class="memItemLeft" align="right" valign="top"><a id="a7e7204df2abe583775eb63ebbec190b1"></a>
+<a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be">Quality</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a7e7204df2abe583775eb63ebbec190b1">_quality</a> = <a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3beac87f3be66ffc3c0d4249f1c2cc5f3cce">Quality::MEDIUM</a></td></tr>
+<tr class="memdesc:a7e7204df2abe583775eb63ebbec190b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quality of the upscaling/blurring. <br /></td></tr>
+<tr class="separator:a7e7204df2abe583775eb63ebbec190b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,1]). </p>
 <dl class="section see"><dt>See also</dt><dd>GPU::Frag::SSAO </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4a94cb12811078a9d1fda8c5e355bba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a94cb12811078a9d1fda8c5e355bba4">&#9670;&nbsp;</a></span>SSAO()</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a22b441e6d1ceb79a2535212f19d9d3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b441e6d1ceb79a2535212f19d9d3be">&#9670;&nbsp;</a></span>Quality</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be">SSAO::Quality</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> upscaling/blurring algorithm. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22b441e6d1ceb79a2535212f19d9d3bea41bc94cbd8eebea13ce0491b2ac11b88"></a>LOW&#160;</td><td class="fielddoc"><p>Bilinear upscaling. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22b441e6d1ceb79a2535212f19d9d3beac87f3be66ffc3c0d4249f1c2cc5f3cce"></a>MEDIUM&#160;</td><td class="fielddoc"><p>Approximate box blur and bilinear upscaling. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22b441e6d1ceb79a2535212f19d9d3beab89de3b4b81c4facfac906edf29aec8c"></a>HIGH&#160;</td><td class="fielddoc"><p>Bilateral blur. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9107e679b589a976dd58d021ebf15aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9107e679b589a976dd58d021ebf15aba">&#9670;&nbsp;</a></span>SSAO()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,14 +217,20 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">SSAO::SSAO </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>downscale</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -184,6 +249,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   <table class="params">
     <tr><td class="paramname">width</td><td>the internal resolution width </td></tr>
     <tr><td class="paramname">height</td><td>the internal resolution height </td></tr>
+    <tr><td class="paramname">downscale</td><td>the downscaling factor for the resolution when computing AO </td></tr>
     <tr><td class="paramname">radius</td><td>the <a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> intersection test radius </td></tr>
   </table>
   </dd>
@@ -228,8 +294,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a9d8933a3ca66808cbab8977dd79031c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d8933a3ca66808cbab8977dd79031c4">&#9670;&nbsp;</a></span>process()</h2>
+<a id="ac43f1226659e2f0dd9cb820be397b54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43f1226659e2f0dd9cb820be397b54a">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +321,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -267,6 +333,24 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5f13c22cb2cd98af9df24b661db78392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f13c22cb2cd98af9df24b661db78392">&#9670;&nbsp;</a></span>quality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be">SSAO::Quality</a> &amp; SSAO::quality </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Quality of the blur applied to the <a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> result. </p><dl class="section return"><dt>Returns</dt><dd>a reference to the option </dd></dl>
 
 </div>
 </div>
@@ -284,12 +368,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query the <a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> radius (should be larger for larger scene with large planar surfaces). </p><dl class="section return"><dt>Returns</dt><dd>a reference to the radius parameter </dd></dl>
+<p><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the <a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> radius (should be larger for larger scene with large planar surfaces). </p><dl class="section return"><dt>Returns</dt><dd>a reference to the radius parameter </dd></dl>
 
 </div>
 </div>
-<a id="a21514be4194d1a52319a0e2c397f7c36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21514be4194d1a52319a0e2c397f7c36">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="aff4a64c9cb9b1151dd97bbf871605b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4a64c9cb9b1151dd97bbf871605b48">&#9670;&nbsp;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,13 +381,13 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void SSAO::resize </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
@@ -323,21 +407,21 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="af79d02b61b207ca3d44656b57f6f710e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af79d02b61b207ca3d44656b57f6f710e">&#9670;&nbsp;</a></span>textureId()</h2>
+<a id="aca8c7015b1da0943f20d6cd026ca0aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8c7015b1da0943f20d6cd026ca0aa4">&#9670;&nbsp;</a></span>texture()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_texture.html">Texture</a> * SSAO::textureId </td>
+          <td class="memname">const <a class="el" href="class_texture.html">Texture</a> * SSAO::texture </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query the texture containing the result of the SSAO+blur pass. </p><dl class="section return"><dt>Returns</dt><dd>the texture </dd></dl>
+<p><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the texture containing the result of the SSAO+blur pass. </p><dl class="section return"><dt>Returns</dt><dd>the texture </dd></dl>
 
 </div>
 </div>

@@ -167,9 +167,6 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 std::unique_ptr&lt; <a class="el" href="class_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a34e4ae6640964bbf379157beaad5a25a">background</a></td></tr>
 <tr class="memdesc:a34e4ae6640964bbf379157beaad5a25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background object, containing the geometry and optional textures to use. <br /></td></tr>
 <tr class="separator:a34e4ae6640964bbf379157beaad5a25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97cff53657acc24d38b147edd9fb59de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; glm::vec3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a97cff53657acc24d38b147edd9fb59de">backgroundIrradiance</a></td></tr>
-<tr class="memdesc:a97cff53657acc24d38b147edd9fb59de"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB SH-coefficients of the background irradiance, computed using SHExtractor.  <a href="class_scene.html#a97cff53657acc24d38b147edd9fb59de">More...</a><br /></td></tr>
-<tr class="separator:a97cff53657acc24d38b147edd9fb59de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5c42f8232fa8ff133180226e8575e1"><td class="memItemLeft" align="right" valign="top"><a id="acc5c42f8232fa8ff133180226e8575e1"></a>
 <a class="el" href="class_light_probe.html">LightProbe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#acc5c42f8232fa8ff133180226e8575e1">environment</a></td></tr>
 <tr class="memdesc:acc5c42f8232fa8ff133180226e8575e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflection probe. <br /></td></tr>
@@ -185,6 +182,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aae82791bde3a8c0befe52cda445e0198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b0745b3b51c99799e68ce47f61e47c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a19b0745b3b51c99799e68ce47f61e47c">loadBackground</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
 <tr class="separator:a19b0745b3b51c99799e68ce47f61e47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5608d5df478947fc06ecb2ff5e6523f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a5608d5df478947fc06ecb2ff5e6523f4">loadProbe</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
+<tr class="separator:a5608d5df478947fc06ecb2ff5e6523f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af07df160cf79432f4637c23bf83f0c8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#af07df160cf79432f4637c23bf83f0c8c">loadScene</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
 <tr class="separator:af07df160cf79432f4637c23bf83f0c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d001285074df11eaa60c1a8d449f708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a7d001285074df11eaa60c1a8d449f708">computeBoundingBox</a> (bool onlyShadowCasters=false)</td></tr>
@@ -641,6 +640,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a5608d5df478947fc06ecb2ff5e6523f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5608d5df478947fc06ecb2ff5e6523f4">&#9670;&nbsp;</a></span>loadProbe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::loadProbe </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Load the scene environment informations from its serialized representation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>the probe parameters </td></tr>
+    <tr><td class="paramname">options</td><td>data loading and storage options </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af07df160cf79432f4637c23bf83f0c8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af07df160cf79432f4637c23bf83f0c8c">&#9670;&nbsp;</a></span>loadScene()</h2>
 
@@ -828,24 +870,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 <p>Get the initial viewpoint on the scene. </p><dl class="section return"><dt>Returns</dt><dd>the viewpoint camera </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a97cff53657acc24d38b147edd9fb59de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97cff53657acc24d38b147edd9fb59de">&#9670;&nbsp;</a></span>backgroundIrradiance</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;glm::vec3&gt; Scene::backgroundIrradiance</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>RGB SH-coefficients of the background irradiance, computed using SHExtractor. </p>
-<dl class="section see"><dt>See also</dt><dd>SphericalHarmonics </dd></dl>
 
 </div>
 </div>

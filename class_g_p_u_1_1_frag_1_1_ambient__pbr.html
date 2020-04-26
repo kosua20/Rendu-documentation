@@ -146,10 +146,9 @@ uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 uniform samplerCube&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ambient__pbr.html#ac0ea0c011e24db8c2a0dd218190a01c8">textureCubeMap</a></td></tr>
 <tr class="memdesc:ac0ea0c011e24db8c2a0dd218190a01c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background environment cubemap (with preconvoluted versions of increasing roughness in mipmap levels). <br /></td></tr>
 <tr class="separator:ac0ea0c011e24db8c2a0dd218190a01c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e5f37495bed29017c7f175c543e34e"><td class="memItemLeft" align="right" valign="top"><a id="a33e5f37495bed29017c7f175c543e34e"></a>
-uniform vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ambient__pbr.html#a33e5f37495bed29017c7f175c543e34e">shCoeffs</a> [9]</td></tr>
-<tr class="memdesc:a33e5f37495bed29017c7f175c543e34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance. <br /></td></tr>
-<tr class="separator:a33e5f37495bed29017c7f175c543e34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccf57454c0dc756ccf80c649adfe3dd"><td class="memItemLeft" align="right" valign="top">uniform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ambient__pbr.html#a4ccf57454c0dc756ccf80c649adfe3dd">SHCoeffs</a></td></tr>
+<tr class="memdesc:a4ccf57454c0dc756ccf80c649adfe3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance (UBO).  <a href="class_g_p_u_1_1_frag_1_1_ambient__pbr.html#a4ccf57454c0dc756ccf80c649adfe3dd">More...</a><br /></td></tr>
+<tr class="separator:a4ccf57454c0dc756ccf80c649adfe3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d0bdeea8255b78c03a2ef78df8ae4a8"><td class="memItemLeft" align="right" valign="top"><a id="a6d0bdeea8255b78c03a2ef78df8ae4a8"></a>
 uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_ambient__pbr.html#a6d0bdeea8255b78c03a2ef78df8ae4a8">inverseV</a></td></tr>
 <tr class="memdesc:a6d0bdeea8255b78c03a2ef78df8ae4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view to world transformation matrix. <br /></td></tr>
@@ -169,7 +168,7 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Ambient pbr fragment shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPU::Common::Common_pbr</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPU::Common::Common_pbr</a>, <a class="el" href="class_g_p_u_1_1_common_1_1_utils.html" title="Utils general shader.">GPU::Common::Utils</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a04303a5f15773076dba6aa06d4e91470"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04303a5f15773076dba6aa06d4e91470">&#9670;&nbsp;</a></span>main()</h2>
@@ -194,6 +193,25 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 </div><div class="memdoc">
 <p>Compute the environment ambient lighting contribution on the scene. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4ccf57454c0dc756ccf80c649adfe3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccf57454c0dc756ccf80c649adfe3dd">&#9670;&nbsp;</a></span>SHCoeffs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform GPU::Frag::Ambient_pbr::SHCoeffs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    vec4 shCoeffs[9]</div>
+</div><!-- fragment -->
+<p>SH approximation of the environment irradiance (UBO). </p>
 
 </div>
 </div>

@@ -103,13 +103,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_g_p_u_1_1_common_1_1_common.html" title="Common general shader.">Common</a> pbr general shader.  
+<p><a class="el" href="namespace_g_p_u_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader.  
  <a href="class_g_p_u_1_1_common_1_1_common__pbr.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a667998a725696c4aa63a42a6bce12510"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a667998a725696c4aa63a42a6bce12510">positionFromDepth</a> (float depth, vec2 uv, vec4 projMat)</td></tr>
-<tr class="separator:a667998a725696c4aa63a42a6bce12510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d7805fd0c755434cf7ef3d7d1fc4e6"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#ae6d7805fd0c755434cf7ef3d7d1fc4e6">F</a> (vec3 F0, float VdotH)</td></tr>
 <tr class="separator:ae6d7805fd0c755434cf7ef3d7d1fc4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd6f88e480c3018fdbe2e6f20b87dd68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#afd6f88e480c3018fdbe2e6f20b87dd68">D</a> (float NdotH, float alpha)</td></tr>
@@ -120,20 +118,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3faca149acd36d1676e5f4ade98851de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da0944caa18cc4fdf677a5b9b711a62"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a3da0944caa18cc4fdf677a5b9b711a62">ggx</a> (vec3 n, vec3 v, vec3 l, vec3 F0, float roughness)</td></tr>
 <tr class="separator:a3da0944caa18cc4fdf677a5b9b711a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab578d52233ff16305e2519e38339a8df"><td class="memItemLeft" align="right" valign="top">vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#ab578d52233ff16305e2519e38339a8df">hammersleySample</a> (uint i, int scount)</td></tr>
-<tr class="separator:ab578d52233ff16305e2519e38339a8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33fb0c1c9a3e04923ab35b4fdd4d01ef"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a33fb0c1c9a3e04923ab35b4fdd4d01ef">radiance</a> (vec3 n, vec3 v, float roughness, mat4 inverseV, samplerCube cubeMap, float upLod)</td></tr>
 <tr class="separator:a33fb0c1c9a3e04923ab35b4fdd4d01ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeacc56c6209b5d587216b8a0f6d7221"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#abeacc56c6209b5d587216b8a0f6d7221">applySH</a> (vec3 wn, vec3 coeffs[9])</td></tr>
-<tr class="separator:abeacc56c6209b5d587216b8a0f6d7221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45307a481acb9979f98d35354e6a8845"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a45307a481acb9979f98d35354e6a8845">applySH</a> (vec3 wn, vec4 coeffs[9])</td></tr>
+<tr class="separator:a45307a481acb9979f98d35354e6a8845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdeee6f0b132ccc32aea913403b70c9d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#abdeee6f0b132ccc32aea913403b70c9d">approximateSpecularAO</a> (float diffuseAO, float NdotV, float roughness)</td></tr>
 <tr class="separator:abdeee6f0b132ccc32aea913403b70c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea40b0597d5bbe6af84d0cb549a247b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#aea40b0597d5bbe6af84d0cb549a247b0">ambientBrdf</a> (vec3 baseColor, float metallic, float roughness, float NdotV, sampler2D brdfCoeffs, out vec3 diffuse, out vec3 specular)</td></tr>
 <tr class="separator:aea40b0597d5bbe6af84d0cb549a247b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_g_p_u_1_1_common_1_1_common.html" title="Common general shader.">Common</a> pbr general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_common.html" title="Common general shader.">GPU::Common::Common</a> </dd></dl>
+<div class="textblock"><p><a class="el" href="namespace_g_p_u_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aea40b0597d5bbe6af84d0cb549a247b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea40b0597d5bbe6af84d0cb549a247b0">&#9670;&nbsp;</a></span>ambientBrdf()</h2>
@@ -213,8 +209,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abeacc56c6209b5d587216b8a0f6d7221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeacc56c6209b5d587216b8a0f6d7221">&#9670;&nbsp;</a></span>applySH()</h2>
+<a id="a45307a481acb9979f98d35354e6a8845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45307a481acb9979f98d35354e6a8845">&#9670;&nbsp;</a></span>applySH()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +227,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vec3&#160;</td>
+          <td class="paramtype">vec4&#160;</td>
           <td class="paramname"><em>coeffs</em>[9]&#160;</td>
         </tr>
         <tr>
@@ -458,101 +454,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the BRDF value </dd></dl>
-
-</div>
-</div>
-<a id="ab578d52233ff16305e2519e38339a8df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab578d52233ff16305e2519e38339a8df">&#9670;&nbsp;</a></span>hammersleySample()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vec2 GPU::Common::Common_pbr::hammersleySample </td>
-          <td>(</td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>scount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Compute an arbitrary sample of the 2D Hammersley sequence. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>the index in the hammersley sequence </td></tr>
-    <tr><td class="paramname">scount</td><td>the total number of samples </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the i-th 2D sample </dd></dl>
-
-</div>
-</div>
-<a id="a667998a725696c4aa63a42a6bce12510"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a667998a725696c4aa63a42a6bce12510">&#9670;&nbsp;</a></span>positionFromDepth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vec3 GPU::Common::Common_pbr::positionFromDepth </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec2&#160;</td>
-          <td class="paramname"><em>uv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec4&#160;</td>
-          <td class="paramname"><em>projMat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Estimate the position of the current fragment in view space based on its depth and camera parameters. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>the depth of the fragment </td></tr>
-    <tr><td class="paramname">uv</td><td>the input uv </td></tr>
-    <tr><td class="paramname">projMat</td><td>the non trivial coefficients of the projection matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the view space position </dd></dl>
 
 </div>
 </div>

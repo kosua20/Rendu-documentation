@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['_7eanimation_1997',['~Animation',['../class_animation.html#a962b2db20cb469a9dcd183267ff4f4b7',1,'Animation']]],
-  ['_7eapplication_1998',['~Application',['../class_application.html#af9f376dd545ef51cb33615312a39ca18',1,'Application']]],
-  ['_7ecamera_1999',['~Camera',['../class_camera.html#ad3ed0c5e02c46f73ba92673598e40514',1,'Camera']]],
-  ['_7econtroller_2000',['~Controller',['../class_controller.html#a8d16a7a97c266dc0d5aa5685c4dcdd89',1,'Controller']]],
-  ['_7einput_2001',['~Input',['../class_input.html#ade7428e932177ef33fa8195f073e5a41',1,'Input']]],
-  ['_7elight_2002',['~Light',['../class_light.html#ae3e3209d4b97d0bbbd614ded5e1213d9',1,'Light']]],
-  ['_7eobject_2003',['~Object',['../class_object.html#a226f2ae2af766b77d83c09a4d766b725',1,'Object']]],
-  ['_7erenderer_2004',['~Renderer',['../class_renderer.html#add2012f269f157754034e7b5475a8927',1,'Renderer']]],
-  ['_7eresources_2005',['~Resources',['../class_resources.html#a2dc4fc89bca20b909efff9c090177bdc',1,'Resources']]],
-  ['_7eshadowmap_2006',['~ShadowMap',['../class_shadow_map.html#ac7fc35350c3ada18f9ab556419e00405',1,'ShadowMap']]]
+  ['warning_2114',['Warning',['../class_log.html#a893ebadffc21742a0efe3b9eac59051e',1,'Log']]],
+  ['weightedcolor_2115',['weightedColor',['../class_g_p_u_1_1_frag_1_1_bilateral.html#ae8dd4b9f1aa8aad8b79ea594000917d5',1,'GPU::Frag::Bilateral']]],
+  ['widen_2116',['widen',['../class_system.html#a21f2a6c7f6896ca3e0fce0d47d6b2704',1,'System']]],
+  ['width_2117',['width',['../class_framebuffer.html#a6821df6939025473cf9e2529d4ee8a61',1,'Framebuffer::width()'],['../class_convolution_pyramid.html#af06e84b4d06212473532a881f914c37d',1,'ConvolutionPyramid::width()']]],
+  ['window_2118',['Window',['../class_window.html#aee42a2fdbdab8e53d4e4e5238e736723',1,'Window::Window(const std::string &amp;name, RenderingConfig &amp;config, bool escapeQuit=true, bool hidden=false)'],['../class_window.html#ac877b031e11ba0b517a8b1db3c315175',1,'Window::Window(const Window &amp;)=delete'],['../class_window.html#a2ab0651c103c184420629c76344e4a20',1,'Window::Window(Window &amp;&amp;)=delete']]],
+  ['wrapping_2119',['wrapping',['../class_descriptor.html#a9a37781de237fefec6948bfca0a38f85',1,'Descriptor']]]
 ];

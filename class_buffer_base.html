@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c44817dcdf8f8c5e58d2e33ca7fa7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae123300bf6adc4ce167fbd4b2c866061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#ae123300bf6adc4ce167fbd4b2c866061">upload</a> (size_t sizeInBytes, unsigned char *data, size_t offset)</td></tr>
 <tr class="separator:ae123300bf6adc4ce167fbd4b2c866061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529d5a9d9a5a169498c6ccdfc53c8c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#a529d5a9d9a5a169498c6ccdfc53c8c98">download</a> (size_t sizeInBytes, unsigned char *data, size_t offset)</td></tr>
+<tr class="separator:a529d5a9d9a5a169498c6ccdfc53c8c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92f80d7f7d83ee7f3f35cc7964b6cb2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#a92f80d7f7d83ee7f3f35cc7964b6cb2c">clean</a> ()</td></tr>
 <tr class="separator:a92f80d7f7d83ee7f3f35cc7964b6cb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6ff5b08320809f92be0275fd49c3df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_buffer_base.html">BufferBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#afa6ff5b08320809f92be0275fd49c3df">operator=</a> (const <a class="el" href="class_buffer_base.html">BufferBase</a> &amp;)=delete</td></tr>
@@ -127,10 +129,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae1f6ab71ab323337b4157fda1ee17d4e"><td class="memItemLeft" align="right" valign="top"><a id="ae1f6ab71ab323337b4157fda1ee17d4e"></a>
-const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#ae1f6ab71ab323337b4157fda1ee17d4e">size</a></td></tr>
-<tr class="memdesc:ae1f6ab71ab323337b4157fda1ee17d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_buffer.html" title="Represents a buffer containing arbitrary data, stored on the CPU and/or GPU.">Buffer</a> size. <br /></td></tr>
-<tr class="separator:ae1f6ab71ab323337b4157fda1ee17d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1648c7f9b8f3a7ddeb566114d7be1fb"><td class="memItemLeft" align="right" valign="top"><a id="af1648c7f9b8f3a7ddeb566114d7be1fb"></a>
+const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#af1648c7f9b8f3a7ddeb566114d7be1fb">sizeMax</a></td></tr>
+<tr class="memdesc:af1648c7f9b8f3a7ddeb566114d7be1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_buffer.html" title="Represents a buffer containing arbitrary data, stored on the CPU and/or GPU.">Buffer</a> size in bytes. <br /></td></tr>
+<tr class="separator:af1648c7f9b8f3a7ddeb566114d7be1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ef357588ebafcda14c8d2752741b08"><td class="memItemLeft" align="right" valign="top"><a id="a85ef357588ebafcda14c8d2752741b08"></a>
 const <a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html#a85ef357588ebafcda14c8d2752741b08">type</a></td></tr>
 <tr class="memdesc:a85ef357588ebafcda14c8d2752741b08"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_buffer.html" title="Represents a buffer containing arbitrary data, stored on the CPU and/or GPU.">Buffer</a> type. <br /></td></tr>
@@ -262,6 +264,48 @@ GPUObject only stores ID and enums" approach followed by <a class="el" href="cla
       </table>
 </div><div class="memdoc">
 <p>Cleanup all data. </p>
+
+</div>
+</div>
+<a id="a529d5a9d9a5a169498c6ccdfc53c8c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529d5a9d9a5a169498c6ccdfc53c8c98">&#9670;&nbsp;</a></span>download()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BufferBase::download </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sizeInBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Download data from the buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeInBytes</td><td>the size of the data to download, in bytes </td></tr>
+    <tr><td class="paramname">data</td><td>the storage to download to </td></tr>
+    <tr><td class="paramname">offset</td><td>offset in the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

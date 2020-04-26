@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['varianceshadowmap2d_1510',['VarianceShadowMap2D',['../class_variance_shadow_map2_d.html',1,'']]],
-  ['varianceshadowmap2darray_1511',['VarianceShadowMap2DArray',['../class_variance_shadow_map2_d_array.html',1,'']]],
-  ['varianceshadowmapcube_1512',['VarianceShadowMapCube',['../class_variance_shadow_map_cube.html',1,'']]],
-  ['varianceshadowmapcubearray_1513',['VarianceShadowMapCubeArray',['../class_variance_shadow_map_cube_array.html',1,'']]]
+  ['upscale_1616',['Upscale',['../class_g_p_u_1_1_frag_1_1_upscale.html',1,'GPU::Frag']]],
+  ['utils_1617',['Utils',['../class_g_p_u_1_1_common_1_1_utils.html',1,'GPU::Common']]]
 ];

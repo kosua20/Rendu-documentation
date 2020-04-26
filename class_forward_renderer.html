@@ -120,11 +120,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1db334206d064f5419361121487d3d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d4f4eb84f25bab516ec68865e2cb1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a0d4f4eb84f25bab516ec68865e2cb1ad">interface</a> () override</td></tr>
 <tr class="separator:a0d4f4eb84f25bab516ec68865e2cb1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091f02c33e4c544db8f57bfac439c5b9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a091f02c33e4c544db8f57bfac439c5b9">depthFramebuffer</a> () const</td></tr>
+<tr class="separator:a091f02c33e4c544db8f57bfac439c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_renderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_renderer.html">Renderer</a></td></tr>
 <tr class="memitem:a4dddd75ab18573a3686f90225f3f03d4 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a4dddd75ab18573a3686f90225f3f03d4">Renderer</a> ()=default</td></tr>
 <tr class="separator:a4dddd75ab18573a3686f90225f3f03d4 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123d18e7db3c2d178100f765de0c024d inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a123d18e7db3c2d178100f765de0c024d">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0)</td></tr>
-<tr class="separator:a123d18e7db3c2d178100f765de0c024d inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31f687a8a86ed26c10d4afe962a3630 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae31f687a8a86ed26c10d4afe962a3630">createOutput</a> (uint width, uint height) const</td></tr>
 <tr class="separator:ae31f687a8a86ed26c10d4afe962a3630 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac977c960eee57059a34285b52b5b7a04 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ac977c960eee57059a34285b52b5b7a04">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth, uint mips) const</td></tr>
@@ -161,10 +161,6 @@ std::unique_ptr&lt; <a class="el" href="class_s_s_a_o.html">SSAO</a> &gt;&#160;<
 std::unique_ptr&lt; <a class="el" href="class_forward_light.html">ForwardLight</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a024c6225271d4cfd2682c7747f81715a">_lightsGPU</a></td></tr>
 <tr class="memdesc:a024c6225271d4cfd2682c7747f81715a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lights renderer. <br /></td></tr>
 <tr class="separator:a024c6225271d4cfd2682c7747f81715a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff30a2ed22612f3fc80131a3ed01d24e"><td class="memItemLeft" align="right" valign="top"><a id="aff30a2ed22612f3fc80131a3ed01d24e"></a>
-<a class="el" href="class_debug_light_renderer.html">DebugLightRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#aff30a2ed22612f3fc80131a3ed01d24e">_lightDebugRenderer</a></td></tr>
-<tr class="memdesc:aff30a2ed22612f3fc80131a3ed01d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lights debug renderer. <br /></td></tr>
-<tr class="separator:aff30a2ed22612f3fc80131a3ed01d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d2cfc24b55ce7e260986002beebdc9"><td class="memItemLeft" align="right" valign="top"><a id="a96d2cfc24b55ce7e260986002beebdc9"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a96d2cfc24b55ce7e260986002beebdc9">_objectProgram</a></td></tr>
 <tr class="memdesc:a96d2cfc24b55ce7e260986002beebdc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic PBR program. <br /></td></tr>
@@ -183,7 +179,7 @@ std::unique_ptr&lt; <a class="el" href="class_forward_light.html">ForwardLight</
 <tr class="separator:ae3d9063f541913c633e27e37bf2a09d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9844748e78a5f3eb5f1d2f7491110ba2"><td class="memItemLeft" align="right" valign="top"><a id="a9844748e78a5f3eb5f1d2f7491110ba2"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a9844748e78a5f3eb5f1d2f7491110ba2">_compProgram</a></td></tr>
-<tr class="memdesc:a9844748e78a5f3eb5f1d2f7491110ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final ambeint qnd direct compositing. <br /></td></tr>
+<tr class="memdesc:a9844748e78a5f3eb5f1d2f7491110ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final ambient qnd direct compositing. <br /></td></tr>
 <tr class="separator:a9844748e78a5f3eb5f1d2f7491110ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3919de49512224f81d0a03aeee159ee2"><td class="memItemLeft" align="right" valign="top"><a id="a3919de49512224f81d0a03aeee159ee2"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a3919de49512224f81d0a03aeee159ee2">_skyboxProgram</a></td></tr>
@@ -205,10 +201,6 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
 std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a84790a2232dbfddb77cb99f0d6d914a5">_scene</a></td></tr>
 <tr class="memdesc:a84790a2232dbfddb77cb99f0d6d914a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene to render. <br /></td></tr>
 <tr class="separator:a84790a2232dbfddb77cb99f0d6d914a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ce6c272a69ff3ecb36c8594802b4cb"><td class="memItemLeft" align="right" valign="top"><a id="a38ce6c272a69ff3ecb36c8594802b4cb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a38ce6c272a69ff3ecb36c8594802b4cb">_debugVisualization</a> = false</td></tr>
-<tr class="memdesc:a38ce6c272a69ff3ecb36c8594802b4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the rendering of debug informations in the scene. <br /></td></tr>
-<tr class="separator:a38ce6c272a69ff3ecb36c8594802b4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a363c0ef5d18189a6e005c918cadc0bd3"><td class="memItemLeft" align="right" valign="top"><a id="a363c0ef5d18189a6e005c918cadc0bd3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a363c0ef5d18189a6e005c918cadc0bd3">_applySSAO</a> = true</td></tr>
 <tr class="memdesc:a363c0ef5d18189a6e005c918cadc0bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen space ambient occlusion. <br /></td></tr>
@@ -323,6 +315,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Clean internal resources. </p>
 
 <p>Reimplemented from <a class="el" href="class_renderer.html#a609184e9e7ed6bf88448458ffc229981">Renderer</a>.</p>
+
+</div>
+</div>
+<a id="a091f02c33e4c544db8f57bfac439c5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091f02c33e4c544db8f57bfac439c5b9">&#9670;&nbsp;</a></span>depthFramebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_framebuffer.html">Framebuffer</a>&amp; ForwardRenderer::depthFramebuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the framebuffer containing the scene depth information </dd></dl>
 
 </div>
 </div>

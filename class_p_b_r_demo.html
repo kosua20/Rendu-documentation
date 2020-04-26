@@ -178,6 +178,10 @@ std::unique_ptr&lt; <a class="el" href="class_post_process_stack.html">PostProce
 std::shared_ptr&lt; <a class="el" href="class_deferred_renderer.html">DeferredRenderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aa4d83524a674baf6d99323d192a4257d">_probesRenderer</a></td></tr>
 <tr class="memdesc:aa4d83524a674baf6d99323d192a4257d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_renderer.html" title="Base structure of a renderer. The result of the renderer is available through result().">Renderer</a> for the light probes. <br /></td></tr>
 <tr class="separator:aa4d83524a674baf6d99323d192a4257d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01e929d2cf5ff715587fe47b4009951"><td class="memItemLeft" align="right" valign="top"><a id="af01e929d2cf5ff715587fe47b4009951"></a>
+std::unique_ptr&lt; <a class="el" href="class_debug_renderer.html">DebugRenderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#af01e929d2cf5ff715587fe47b4009951">_debugRenderer</a></td></tr>
+<tr class="memdesc:af01e929d2cf5ff715587fe47b4009951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward PBR renderer. <br /></td></tr>
+<tr class="separator:af01e929d2cf5ff715587fe47b4009951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e29dc66556d4072301aa1dc69048a8"><td class="memItemLeft" align="right" valign="top"><a id="aa3e29dc66556d4072301aa1dc69048a8"></a>
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aa3e29dc66556d4072301aa1dc69048a8">_finalRender</a></td></tr>
 <tr class="memdesc:aa3e29dc66556d4072301aa1dc69048a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final framebuffer. <br /></td></tr>
@@ -195,21 +199,33 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <tr class="memdesc:a125fde83df6303385b4452aaf941b3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The associated scene names. <br /></td></tr>
 <tr class="separator:a125fde83df6303385b4452aaf941b3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bfb3b51725e5f22a6ec13afc7806829"><td class="memItemLeft" align="right" valign="top"><a id="a8bfb3b51725e5f22a6ec13afc7806829"></a>
-<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a8bfb3b51725e5f22a6ec13afc7806829">_shadowTime</a> = <a class="el" href="class_g_p_u_query.html">GPUQuery</a>(<a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6">GPUQuery::Type::TIME_ELAPSED</a>)</td></tr>
+<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a8bfb3b51725e5f22a6ec13afc7806829">_shadowTime</a></td></tr>
 <tr class="memdesc:a8bfb3b51725e5f22a6ec13afc7806829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timing for the shadow mapping. <br /></td></tr>
 <tr class="separator:a8bfb3b51725e5f22a6ec13afc7806829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfae0c2bf4486e96f860b0cf9c48035d"><td class="memItemLeft" align="right" valign="top"><a id="abfae0c2bf4486e96f860b0cf9c48035d"></a>
-<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#abfae0c2bf4486e96f860b0cf9c48035d">_probesTime</a> = <a class="el" href="class_g_p_u_query.html">GPUQuery</a>(<a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6">GPUQuery::Type::TIME_ELAPSED</a>)</td></tr>
+<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#abfae0c2bf4486e96f860b0cf9c48035d">_probesTime</a></td></tr>
 <tr class="memdesc:abfae0c2bf4486e96f860b0cf9c48035d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timing for the probe rendering. <br /></td></tr>
 <tr class="separator:abfae0c2bf4486e96f860b0cf9c48035d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa443109d2c76121bc4677e5193ca9729"><td class="memItemLeft" align="right" valign="top"><a id="aa443109d2c76121bc4677e5193ca9729"></a>
+<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aa443109d2c76121bc4677e5193ca9729">_inteTime</a></td></tr>
+<tr class="memdesc:aa443109d2c76121bc4677e5193ca9729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timing for the probe preconvolution. <br /></td></tr>
+<tr class="separator:aa443109d2c76121bc4677e5193ca9729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61d2661d021c6a402dd2470a51fcba1"><td class="memItemLeft" align="right" valign="top"><a id="ac61d2661d021c6a402dd2470a51fcba1"></a>
+<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#ac61d2661d021c6a402dd2470a51fcba1">_copyTime</a></td></tr>
+<tr class="memdesc:ac61d2661d021c6a402dd2470a51fcba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timing for the probe irradiance SH coeffs. <br /></td></tr>
+<tr class="separator:ac61d2661d021c6a402dd2470a51fcba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe13c2773058f81cf8150274406f0be"><td class="memItemLeft" align="right" valign="top"><a id="a0fe13c2773058f81cf8150274406f0be"></a>
-<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a0fe13c2773058f81cf8150274406f0be">_rendererTime</a> = <a class="el" href="class_g_p_u_query.html">GPUQuery</a>(<a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6">GPUQuery::Type::TIME_ELAPSED</a>)</td></tr>
+<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a0fe13c2773058f81cf8150274406f0be">_rendererTime</a></td></tr>
 <tr class="memdesc:a0fe13c2773058f81cf8150274406f0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timing for the scene rendering. <br /></td></tr>
 <tr class="separator:a0fe13c2773058f81cf8150274406f0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb816040176ccb52e67d63314a0c0e9"><td class="memItemLeft" align="right" valign="top"><a id="aabb816040176ccb52e67d63314a0c0e9"></a>
-<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aabb816040176ccb52e67d63314a0c0e9">_postprocessTime</a> = <a class="el" href="class_g_p_u_query.html">GPUQuery</a>(<a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6">GPUQuery::Type::TIME_ELAPSED</a>)</td></tr>
+<a class="el" href="class_g_p_u_query.html">GPUQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aabb816040176ccb52e67d63314a0c0e9">_postprocessTime</a></td></tr>
 <tr class="memdesc:aabb816040176ccb52e67d63314a0c0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timing for the postprocessing. <br /></td></tr>
 <tr class="separator:aabb816040176ccb52e67d63314a0c0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6bc2906a1fa384762a85c5e91cbcecd"><td class="memItemLeft" align="right" valign="top"><a id="aa6bc2906a1fa384762a85c5e91cbcecd"></a>
+<a class="el" href="class_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aa6bc2906a1fa384762a85c5e91cbcecd">_copyTimeCPU</a></td></tr>
+<tr class="memdesc:aa6bc2906a1fa384762a85c5e91cbcecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU timing for the probe irradiance SH coeffs. <br /></td></tr>
+<tr class="separator:aa6bc2906a1fa384762a85c5e91cbcecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611d6e0d95209b0eb87e00d81884b403"><td class="memItemLeft" align="right" valign="top"><a id="a611d6e0d95209b0eb87e00d81884b403"></a>
 <a class="el" href="class_p_b_r_demo.html#a14428f2ddc07cb31891eeaaad23c90bb">RendererMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a611d6e0d95209b0eb87e00d81884b403">_mode</a> = RendererMode::DEFERRED</td></tr>
 <tr class="memdesc:a611d6e0d95209b0eb87e00d81884b403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active renderer. <br /></td></tr>
@@ -226,14 +242,22 @@ glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a17c23259eac9e92a02b1c89b91252c6f">_cameraFOV</a> = 50.0f</td></tr>
 <tr class="memdesc:a17c23259eac9e92a02b1c89b91252c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_camera.html" title="This class represents a camera as used in real-time rendering APIs. It provides a view and projection...">Camera</a> field of view in degrees. <br /></td></tr>
 <tr class="separator:a17c23259eac9e92a02b1c89b91252c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa460af9dbdc4c876927497c5a98a0f49"><td class="memItemLeft" align="right" valign="top"><a id="aa460af9dbdc4c876927497c5a98a0f49"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#aa460af9dbdc4c876927497c5a98a0f49">_frameCount</a> = 3</td></tr>
+<tr class="memdesc:aa460af9dbdc4c876927497c5a98a0f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of frames to count before looping. <br /></td></tr>
+<tr class="separator:aa460af9dbdc4c876927497c5a98a0f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87241a1fe9a78cd17477cb6668ef9102"><td class="memItemLeft" align="right" valign="top"><a id="a87241a1fe9a78cd17477cb6668ef9102"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a87241a1fe9a78cd17477cb6668ef9102">_frameID</a> = 0</td></tr>
+<tr class="memdesc:a87241a1fe9a78cd17477cb6668ef9102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current frame count (will loop) <br /></td></tr>
+<tr class="separator:a87241a1fe9a78cd17477cb6668ef9102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ced17e70a397fef200095ceb0026a2"><td class="memItemLeft" align="right" valign="top"><a id="a39ced17e70a397fef200095ceb0026a2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a39ced17e70a397fef200095ceb0026a2">_paused</a> = false</td></tr>
 <tr class="memdesc:a39ced17e70a397fef200095ceb0026a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause animations. <br /></td></tr>
 <tr class="separator:a39ced17e70a397fef200095ceb0026a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae62f5b6ea348cc92ce3c0dfe9e690aba"><td class="memItemLeft" align="right" valign="top"><a id="ae62f5b6ea348cc92ce3c0dfe9e690aba"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#ae62f5b6ea348cc92ce3c0dfe9e690aba">_updateShadows</a> = true</td></tr>
-<tr class="memdesc:ae62f5b6ea348cc92ce3c0dfe9e690aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the shadow maps. <br /></td></tr>
-<tr class="separator:ae62f5b6ea348cc92ce3c0dfe9e690aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd81fba635c4bb35b9e0341f32f4e87"><td class="memItemLeft" align="right" valign="top"><a id="afbd81fba635c4bb35b9e0341f32f4e87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#afbd81fba635c4bb35b9e0341f32f4e87">_showDebug</a> = false</td></tr>
+<tr class="memdesc:afbd81fba635c4bb35b9e0341f32f4e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug scene objects. <br /></td></tr>
+<tr class="separator:afbd81fba635c4bb35b9e0341f32f4e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

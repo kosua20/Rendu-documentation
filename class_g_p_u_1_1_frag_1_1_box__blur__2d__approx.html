@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rendu: GPU::Frag::Box_blur_array_2d Class Reference</title>
+<title>Rendu: GPU::Frag::Box_blur_2d_approx Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,51 +91,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_g_p_u.html">GPU</a></li><li class="navelem"><a class="el" href="namespace_g_p_u_1_1_frag.html">Frag</a></li><li class="navelem"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html">Box_blur_array_2d</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_g_p_u.html">GPU</a></li><li class="navelem"><a class="el" href="namespace_g_p_u_1_1_frag.html">Frag</a></li><li class="navelem"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html">Box_blur_2d_approx</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d-members.html">List of all members</a>  </div>
+<a href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GPU::Frag::Box_blur_array_2d Class Reference<div class="ingroups"><a class="el" href="group___shaders.html">Shaders</a></div></div>  </div>
+<div class="title">GPU::Frag::Box_blur_2d_approx Class Reference<div class="ingroups"><a class="el" href="group___shaders.html">Shaders</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Box blur array 2d fragment shader.  
- <a href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#details">More...</a></p>
+<p>Box blur 2d approx fragment shader.  
+ <a href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c8a085fac7cc36c5928c8f00ad12301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#a7c8a085fac7cc36c5928c8f00ad12301">main</a> ()</td></tr>
-<tr class="separator:a7c8a085fac7cc36c5928c8f00ad12301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ff6940ef1236d2028609e7365d118c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html#a03ff6940ef1236d2028609e7365d118c">main</a> ()</td></tr>
+<tr class="separator:a03ff6940ef1236d2028609e7365d118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad33f62a21d612dd1462e3295e38e44a6"><td class="memItemLeft" align="right" valign="top"><a id="ad33f62a21d612dd1462e3295e38e44a6"></a>
-in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#ad33f62a21d612dd1462e3295e38e44a6">uv</a></td></tr>
-<tr class="memdesc:ad33f62a21d612dd1462e3295e38e44a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
-<tr class="separator:ad33f62a21d612dd1462e3295e38e44a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf68d7a059457334bda9721e919be77f"><td class="memItemLeft" align="right" valign="top"><a id="abf68d7a059457334bda9721e919be77f"></a>
-uniform sampler2DArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#abf68d7a059457334bda9721e919be77f">screenTexture</a></td></tr>
-<tr class="memdesc:abf68d7a059457334bda9721e919be77f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> to blur. <br /></td></tr>
-<tr class="separator:abf68d7a059457334bda9721e919be77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfe4dfaf03b8f0447ae29b2adb7fc7f9"><td class="memItemLeft" align="right" valign="top"><a id="acfe4dfaf03b8f0447ae29b2adb7fc7f9"></a>
-uniform int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#acfe4dfaf03b8f0447ae29b2adb7fc7f9">layer</a></td></tr>
-<tr class="memdesc:acfe4dfaf03b8f0447ae29b2adb7fc7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array layer to sample. <br /></td></tr>
-<tr class="separator:acfe4dfaf03b8f0447ae29b2adb7fc7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a1fb649a25a364631aea6407941224"><td class="memItemLeft" align="right" valign="top"><a id="a95a1fb649a25a364631aea6407941224"></a>
-out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#a95a1fb649a25a364631aea6407941224">fragColor</a></td></tr>
-<tr class="memdesc:a95a1fb649a25a364631aea6407941224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color. <br /></td></tr>
-<tr class="separator:a95a1fb649a25a364631aea6407941224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4144eb2d32cc9d9e29bd38005a55609"><td class="memItemLeft" align="right" valign="top"><a id="ae4144eb2d32cc9d9e29bd38005a55609"></a>
+in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html#ae4144eb2d32cc9d9e29bd38005a55609">uv</a></td></tr>
+<tr class="memdesc:ae4144eb2d32cc9d9e29bd38005a55609"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
+<tr class="separator:ae4144eb2d32cc9d9e29bd38005a55609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74bc93527f737c2481718a2ca7c2445"><td class="memItemLeft" align="right" valign="top"><a id="ac74bc93527f737c2481718a2ca7c2445"></a>
+uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html#ac74bc93527f737c2481718a2ca7c2445">screenTexture</a></td></tr>
+<tr class="memdesc:ac74bc93527f737c2481718a2ca7c2445"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> to blur. <br /></td></tr>
+<tr class="separator:ac74bc93527f737c2481718a2ca7c2445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3350c303db9f8f04c8a4e6b40e9ca3ef"><td class="memItemLeft" align="right" valign="top"><a id="a3350c303db9f8f04c8a4e6b40e9ca3ef"></a>
+out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html#a3350c303db9f8f04c8a4e6b40e9ca3ef">fragColor</a></td></tr>
+<tr class="memdesc:a3350c303db9f8f04c8a4e6b40e9ca3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color. <br /></td></tr>
+<tr class="separator:a3350c303db9f8f04c8a4e6b40e9ca3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Box blur array 2d fragment shader. </p>
+<div class="textblock"><p>Box blur 2d approx fragment shader. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7c8a085fac7cc36c5928c8f00ad12301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8a085fac7cc36c5928c8f00ad12301">&#9670;&nbsp;</a></span>main()</h2>
+<a id="a03ff6940ef1236d2028609e7365d118c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ff6940ef1236d2028609e7365d118c">&#9670;&nbsp;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,7 +140,7 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GPU::Frag::Box_blur_array_2d::main </td>
+          <td class="memname">void GPU::Frag::Box_blur_2d_approx::main </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -156,12 +152,12 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Perform a 5x5 box blur on the input image. </p>
+<p>Perform aan approximate 5x5 box blur using only 13 samples in a checkerboard pattern. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>resources/common/shaders/screens/box-blur/box-blur-array-2d.frag</li>
+<li>resources/common/shaders/screens/box-blur/box-blur-2d-approx.frag</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

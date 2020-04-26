@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['renderermode_2676',['RendererMode',['../class_p_b_r_demo.html#a14428f2ddc07cb31891eeaaad23c90bb',1,'PBRDemo']]]
+  ['quality_2864',['Quality',['../class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be',1,'SSAO']]]
 ];

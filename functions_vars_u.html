@@ -80,6 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
@@ -141,6 +142,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>unknownCoord
 : <a class="el" href="class_g_p_u_1_1_frag_1_1_extract__seeds.html#a78f54be6e520cd14360006d48033ea28">GPU::Frag::Extract_seeds</a>
 </li>
+<li>up
+: <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__cube.html#a6e8afbc2a28f36ee879843ab63d86101">GPU::Frag::Box_blur_cube</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__cube__approx.html#ad3f451110fe969137e473f592b5b89c0">GPU::Frag::Box_blur_cube_approx</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__cube__array.html#af4572ef2bcd9cb8010f43fbc53c8256c">GPU::Frag::Box_blur_cube_array</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__cube__array__approx.html#ac40951b65b96325527226a7b783ac1ca">GPU::Frag::Box_blur_cube_array_approx</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_box__blur__cube.html#a86aa18fcda05bcdb3e496e135021634c">GPU::Vert::Box_blur_cube</a>
+</li>
 <li>usage
 : <a class="el" href="class_buffer_base.html#a98e15291e130b79fabcf88a74aa6187a">BufferBase</a>
 , <a class="el" href="class_g_p_u_buffer.html#a3b27d1c0714c9607c5285857bfd3befb">GPUBuffer</a>
@@ -159,20 +167,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_background__forward.html#a2a24ac22a150ca8e59872f59f82f7e09">GPU::Frag::Background_forward</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_background__gbuffer.html#ac40a5668c84c530b043f91772fa1d43e">GPU::Frag::Background_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_background__infinity.html#a0ef88919cc626ce1060e2528b3b0f290">GPU::Frag::Background_infinity</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_bilateral.html#a255a7e1a0dd75075b851b6544ae0e2f6">GPU::Frag::Bilateral</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_bloom.html#ab50ff273ac5d3e98757669ee62fb4b17">GPU::Frag::Bloom</a>
-, <a class="el" href="class_g_p_u_1_1_frag_1_1_bloom__composite.html#ab75f9a36740d4579e8bc332e77246df2">GPU::Frag::Bloom_composite</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_blur__dual__filter__down.html#a4661ae0238cc34c2c263e72fa7d41836">GPU::Frag::Blur_dual_filter_down</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_blur__dual__filter__up.html#a9ff8622dbc8bffefcf9272621877186e">GPU::Frag::Blur_dual_filter_up</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_blur__gaussian.html#aa63e7530b97a2c3e63f39ab8b8f1138a">GPU::Frag::Blur_gaussian</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d.html#aa1932679ed983b0ce147b7bcd0469283">GPU::Frag::Box_blur_2d</a>
-, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__approx__2d.html#a7ca6137369bb8e23daeca5eff4648f0b">GPU::Frag::Box_blur_approx_2d</a>
-, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__approx__array__2d.html#a6f43683c4bf7aa5fcfe34726f6867f4e">GPU::Frag::Box_blur_approx_array_2d</a>
-, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__array__2d.html#ad33f62a21d612dd1462e3295e38e44a6">GPU::Frag::Box_blur_array_2d</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__approx.html#ae4144eb2d32cc9d9e29bd38005a55609">GPU::Frag::Box_blur_2d_approx</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__array.html#ac38a6d55a4a9d33de39c87da3fafe6e5">GPU::Frag::Box_blur_2d_array</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_box__blur__2d__array__approx.html#a454aadf6802d628fed606f0d254f6883">GPU::Frag::Box_blur_2d_array_approx</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_brdf__sampler.html#ae9c99768472eb39e560ec0128c014304">GPU::Frag::Brdf_sampler</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_color__seeds.html#a0adbfcf1aa7b708d5fbae1486e8b0fd5">GPU::Frag::Color_seeds</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_composite__forward.html#a7894f1bdd751eeb60da65ea45fc24d58">GPU::Frag::Composite_forward</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_directional__light__pbr.html#a7161108602308b8b097aa17335674e22">GPU::Frag::Directional_light_pbr</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_distance__seeds.html#a9d999df3a8e6398706dea061f524d892">GPU::Frag::Distance_seeds</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_dof__coc.html#ad4b13d50f4634b8384d5c7861153574d">GPU::Frag::Dof_coc</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_dof__composite.html#a8cb84da004c98f7333f61506aad8ec7d">GPU::Frag::Dof_composite</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_dof__gather.html#aa9125841a1d084b0e81475873d4dd8f3">GPU::Frag::Dof_gather</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_downscale.html#ac11041743308945197ee8663715d3095">GPU::Frag::Downscale</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_extract__seeds.html#a0f13c5183c432c1c538cc2c1875c1338">GPU::Frag::Extract_seeds</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_fill__boundary.html#a85617303c8a2a49a714d0e01c5e36faa">GPU::Frag::Fill_boundary</a>
@@ -198,24 +209,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_passthrough.html#ab0d01b219a70395326ce76d0a7b14b07">GPU::Frag::Passthrough</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_passthrough__pixelperfect.html#ad33a77fde1b7ae6ff11cbf72a2b761e6">GPU::Frag::Passthrough_pixelperfect</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_passthrough__shift.html#a93e09313c17d3161908a1713a979cf45">GPU::Frag::Passthrough_shift</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_scale__texture.html#a900c96d5b42f8504d8db081f3a65370c">GPU::Frag::Scale_texture</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_sharpening.html#a7ef212c1b866866a95a0294504b4e82a">GPU::Frag::Sharpening</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html#ae1fa99ee9b0796423523dfe5e01dc836">GPU::Frag::Ssao</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_tonemap.html#ada6d627afa6301928b782869d87ae597">GPU::Frag::Tonemap</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_upscale.html#a3a09d10ef789f3ff02ab57b4d0fe1f36">GPU::Frag::Upscale</a>
-, <a class="el" href="class_g_p_u_1_1_geom_1_1_object__layer.html#a93e046fb133058fd610ac39caf89801b">GPU::Geom::Object_layer</a>
+, <a class="el" href="class_g_p_u_1_1_geom_1_1_object__layer.html#ac9ec2f51d3d1cfd4d71e5c867a76c844">GPU::Geom::Object_layer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_background__infinity.html#a007885a108a3a11432e3e3f9f5c239ef">GPU::Vert::Background_infinity</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_font__sdf.html#a4b52fa26f11a2aa7fb8e60d506d1d671">GPU::Vert::Font_sdf</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_image__display.html#ad4cce92a456c6c54a70a130a8b50008b">GPU::Vert::Image_display</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_light__shadow__linear__vertex.html#aae51781d1419abd7025736d0cfab7e23">GPU::Vert::Light_shadow_linear_vertex</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_light__shadow__linear__vertex.html#a50f8acafe0a9c857b83f79ee0c56d96d">GPU::Vert::Light_shadow_linear_vertex</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_light__shadow__vertex.html#ad626e3201c8ab255490980058ac8a432">GPU::Vert::Light_shadow_vertex</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_menu__image.html#ab9fcd3a0154f9e343056505a0c23894e">GPU::Vert::Menu_image</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__lit__texture.html#a7a9f372bc796b5ddb76a31af27e530c3">GPU::Vert::Object_basic_lit_texture</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__texture.html#aed0672e0dd2073303bfb8e9e90e64940">GPU::Vert::Object_basic_texture</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__texture.html#a42e4082e8255409ff0644e02fdac52f0">GPU::Vert::Object_basic_texture</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__emissive__forward.html#af79d86696ee3eb68e4092d12b1d50895">GPU::Vert::Object_emissive_forward</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__emissive__gbuffer.html#a02a08fe365298f266b1b0500805c8460">GPU::Vert::Object_emissive_gbuffer</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__emissive__gbuffer.html#a495f4fb796bd5d49fad0bce96c910864">GPU::Vert::Object_emissive_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__forward.html#ae0494c4f2abe99f3b7f8729f1ab1ad88">GPU::Vert::Object_forward</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__gbuffer.html#acae008b86a032a793abc1960e15c1bb1">GPU::Vert::Object_gbuffer</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__layer.html#a470569618313b0461f4c967e3d3e7067">GPU::Vert::Object_layer</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__gbuffer.html#a55f6c24c03f42d2634f9b809a830c958">GPU::Vert::Object_gbuffer</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__layer.html#abd84499fd773e65437da8b2a8133a7bc">GPU::Vert::Object_layer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__parallax__forward.html#ac010329b4a7b6ec3c58037c3be7c86a7">GPU::Vert::Object_parallax_forward</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__parallax__gbuffer.html#ae0a3a3a1339275963d5607ba1b220334">GPU::Vert::Object_parallax_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_passthrough.html#ab3aa275d275b8c621b4f2a164d9c25ab">GPU::Vert::Passthrough</a>

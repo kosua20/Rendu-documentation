@@ -111,8 +111,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4dddd75ab18573a3686f90225f3f03d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2cd6a1dd4aedde45617e1f95aca73ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ad2cd6a1dd4aedde45617e1f95aca73ef">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0)</td></tr>
 <tr class="separator:ad2cd6a1dd4aedde45617e1f95aca73ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123d18e7db3c2d178100f765de0c024d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a123d18e7db3c2d178100f765de0c024d">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0)</td></tr>
-<tr class="separator:a123d18e7db3c2d178100f765de0c024d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a609184e9e7ed6bf88448458ffc229981"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a609184e9e7ed6bf88448458ffc229981">clean</a> ()</td></tr>
 <tr class="separator:a609184e9e7ed6bf88448458ffc229981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade00d55b9186cbc9b9fa5e5732f76c8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ade00d55b9186cbc9b9fa5e5732f76c8b">resize</a> (unsigned int width, unsigned int height)</td></tr>
@@ -148,7 +146,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base structure of a renderer. The result of the renderer is available through result(). </p>
 </div>
-<p>Inherited by <a class="el" href="class_b_v_h_renderer.html">BVHRenderer</a>, <a class="el" href="class_deferred_renderer.html">DeferredRenderer</a>, <a class="el" href="class_editor_renderer.html">EditorRenderer</a>, <a class="el" href="class_forward_renderer.html">ForwardRenderer</a>, <a class="el" href="class_game_menu_renderer.html">GameMenuRenderer</a>, <a class="el" href="class_game_renderer.html">GameRenderer</a>, and <a class="el" href="class_post_process_stack.html">PostProcessStack</a>.</p>
+<p>Inherited by <a class="el" href="class_b_v_h_renderer.html">BVHRenderer</a>, <a class="el" href="class_debug_renderer.html">DebugRenderer</a>, <a class="el" href="class_deferred_renderer.html">DeferredRenderer</a>, <a class="el" href="class_editor_renderer.html">EditorRenderer</a>, <a class="el" href="class_forward_renderer.html">ForwardRenderer</a>, <a class="el" href="class_game_menu_renderer.html">GameMenuRenderer</a>, <a class="el" href="class_game_renderer.html">GameRenderer</a>, and <a class="el" href="class_post_process_stack.html">PostProcessStack</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4dddd75ab18573a3686f90225f3f03d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dddd75ab18573a3686f90225f3f03d4">&#9670;&nbsp;</a></span>Renderer() <span class="overload">[1/3]</span></h2>
@@ -281,7 +279,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Clean internal resources. </p>
 
-<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#acd37a714f41e2918a1af765bb32ab5bb">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a8cee27beddc9b13cb47945b87a240112">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#aa7843a8c6bc6ebd9c62e764886afa8ac">ForwardRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#aad30525ee58321b5c18a4586beed3b63">BVHRenderer</a>, and <a class="el" href="class_game_renderer.html#a86e7880a11bc4ea68e6ffd8d4968d4ea">GameRenderer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_post_process_stack.html#a8cee27beddc9b13cb47945b87a240112">PostProcessStack</a>, <a class="el" href="class_deferred_renderer.html#acd37a714f41e2918a1af765bb32ab5bb">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#aa7843a8c6bc6ebd9c62e764886afa8ac">ForwardRenderer</a>, <a class="el" href="class_debug_renderer.html#ae65a04d182ce994eca0c557734e7d457">DebugRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#aad30525ee58321b5c18a4586beed3b63">BVHRenderer</a>, and <a class="el" href="class_game_renderer.html#a86e7880a11bc4ea68e6ffd8d4968d4ea">GameRenderer</a>.</p>
 
 </div>
 </div>
@@ -426,7 +424,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a5fa3c57855cf21289018e4271f7eb60c">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#a20ad1097fa9d4314f72a1a152c08fd76">ForwardRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#a664389620c89f874989b624179034dcb">BVHRenderer</a>, and <a class="el" href="class_editor_renderer.html#ab8608d08974bc19bd5433fc939d54d89">EditorRenderer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a5fa3c57855cf21289018e4271f7eb60c">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#a20ad1097fa9d4314f72a1a152c08fd76">ForwardRenderer</a>, <a class="el" href="class_debug_renderer.html#aa18d17e9897072b77465183a85b2b21e">DebugRenderer</a>, <a class="el" href="class_b_v_h_renderer.html#a664389620c89f874989b624179034dcb">BVHRenderer</a>, and <a class="el" href="class_editor_renderer.html#ab8608d08974bc19bd5433fc939d54d89">EditorRenderer</a>.</p>
 
 </div>
 </div>
@@ -454,7 +452,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Display GUI exposing renderer options. </p><dl class="section note"><dt>Note</dt><dd>The renderer can assume that a GUI window is currently open. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a8bfa497e98da59ba6f142be3c1d9b8a2">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#a0d4f4eb84f25bab516ec68865e2cb1ad">ForwardRenderer</a>, and <a class="el" href="class_post_process_stack.html#a4df7950864ba700d49ddfd45bba6c133">PostProcessStack</a>.</p>
+<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a8bfa497e98da59ba6f142be3c1d9b8a2">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a4df7950864ba700d49ddfd45bba6c133">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#a0d4f4eb84f25bab516ec68865e2cb1ad">ForwardRenderer</a>, and <a class="el" href="class_debug_renderer.html#a7bcec3bc1fabea9a9eaabebd3bb77168">DebugRenderer</a>.</p>
 
 </div>
 </div>
@@ -512,58 +510,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a123d18e7db3c2d178100f765de0c024d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a123d18e7db3c2d178100f765de0c024d">&#9670;&nbsp;</a></span>process()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Renderer::process </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>layer</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process a given input texture. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">texture</td><td>the texture to process </td></tr>
-    <tr><td class="paramname">framebuffer</td><td>the destination target </td></tr>
-    <tr><td class="paramname">layer</td><td>the layer to write to in the target </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="class_post_process_stack.html#a582359414dae9283f84a0d4fd705f620">PostProcessStack</a>.</p>
-
-</div>
-</div>
 <a id="ade00d55b9186cbc9b9fa5e5732f76c8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade00d55b9186cbc9b9fa5e5732f76c8b">&#9670;&nbsp;</a></span>resize()</h2>
 
@@ -605,7 +551,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_deferred_renderer.html#a3f027feece0a1e14e4f995a1a450dd16">DeferredRenderer</a>, <a class="el" href="class_post_process_stack.html#a659e82c405706ae4914363422f15d48b">PostProcessStack</a>, <a class="el" href="class_forward_renderer.html#a1db334206d064f5419361121487d3d1c">ForwardRenderer</a>, and <a class="el" href="class_game_renderer.html#a46ff565c2e188426cd9ad9f529f4a080">GameRenderer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_post_process_stack.html#a659e82c405706ae4914363422f15d48b">PostProcessStack</a>, <a class="el" href="class_deferred_renderer.html#a3f027feece0a1e14e4f995a1a450dd16">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html#a1db334206d064f5419361121487d3d1c">ForwardRenderer</a>, and <a class="el" href="class_game_renderer.html#a46ff565c2e188426cd9ad9f529f4a080">GameRenderer</a>.</p>
 
 </div>
 </div>

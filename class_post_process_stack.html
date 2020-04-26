@@ -117,8 +117,8 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4d21a864449687e019f925faf97b863"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#ab4d21a864449687e019f925faf97b863">PostProcessStack</a> (const glm::vec2 &amp;resolution)</td></tr>
 <tr class="separator:ab4d21a864449687e019f925faf97b863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a582359414dae9283f84a0d4fd705f620"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a582359414dae9283f84a0d4fd705f620">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0) override</td></tr>
-<tr class="separator:a582359414dae9283f84a0d4fd705f620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5095f21dce8f0faafcddc27be61ef1cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a5095f21dce8f0faafcddc27be61ef1cf">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, const glm::mat4 &amp;proj, const <a class="el" href="class_texture.html">Texture</a> *depth, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0)</td></tr>
+<tr class="separator:a5095f21dce8f0faafcddc27be61ef1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df7950864ba700d49ddfd45bba6c133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a4df7950864ba700d49ddfd45bba6c133">interface</a> () override</td></tr>
 <tr class="separator:a4df7950864ba700d49ddfd45bba6c133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cee27beddc9b13cb47945b87a240112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a8cee27beddc9b13cb47945b87a240112">clean</a> () override</td></tr>
@@ -162,22 +162,46 @@ std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> 
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a546afd572603f334db9f891186b2d08d">_toneMapBuffer</a></td></tr>
 <tr class="memdesc:a546afd572603f334db9f891186b2d08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tonemapping framebuffer. <br /></td></tr>
 <tr class="separator:a546afd572603f334db9f891186b2d08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7641df6a28f185d183cce04e69af67"><td class="memItemLeft" align="right" valign="top"><a id="ace7641df6a28f185d183cce04e69af67"></a>
-std::unique_ptr&lt; <a class="el" href="class_gaussian_blur.html">GaussianBlur</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#ace7641df6a28f185d183cce04e69af67">_blurBuffer</a></td></tr>
-<tr class="memdesc:ace7641df6a28f185d183cce04e69af67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloom blur processing. <br /></td></tr>
-<tr class="separator:ace7641df6a28f185d183cce04e69af67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927c50916d8269e595fa4eef9aef14ee"><td class="memItemLeft" align="right" valign="top"><a id="a927c50916d8269e595fa4eef9aef14ee"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a927c50916d8269e595fa4eef9aef14ee">_dofCocBuffer</a></td></tr>
+<tr class="memdesc:a927c50916d8269e595fa4eef9aef14ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">DoF CoC framebuffer. <br /></td></tr>
+<tr class="separator:a927c50916d8269e595fa4eef9aef14ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c3fbde22406f897c9f5e20211edde1"><td class="memItemLeft" align="right" valign="top"><a id="a28c3fbde22406f897c9f5e20211edde1"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a28c3fbde22406f897c9f5e20211edde1">_dofGatherBuffer</a></td></tr>
+<tr class="memdesc:a28c3fbde22406f897c9f5e20211edde1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DoF gathering framebuffer. <br /></td></tr>
+<tr class="separator:a28c3fbde22406f897c9f5e20211edde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bea8ea3eb0f0ab9298316e1fda7e6b9"><td class="memItemLeft" align="right" valign="top"><a id="a3bea8ea3eb0f0ab9298316e1fda7e6b9"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a3bea8ea3eb0f0ab9298316e1fda7e6b9">_resultFramebuffer</a></td></tr>
+<tr class="memdesc:a3bea8ea3eb0f0ab9298316e1fda7e6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-progress result of the stack. <br /></td></tr>
+<tr class="separator:a3bea8ea3eb0f0ab9298316e1fda7e6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa514c7fec29b031d2036a271cbfa021b"><td class="memItemLeft" align="right" valign="top"><a id="aa514c7fec29b031d2036a271cbfa021b"></a>
+std::unique_ptr&lt; <a class="el" href="class_gaussian_blur.html">GaussianBlur</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#aa514c7fec29b031d2036a271cbfa021b">_blur</a></td></tr>
+<tr class="memdesc:aa514c7fec29b031d2036a271cbfa021b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloom blur processing. <br /></td></tr>
+<tr class="separator:aa514c7fec29b031d2036a271cbfa021b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a789b7def382e7950b99c0a2ba127b2ff"><td class="memItemLeft" align="right" valign="top"><a id="a789b7def382e7950b99c0a2ba127b2ff"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a789b7def382e7950b99c0a2ba127b2ff">_bloomProgram</a></td></tr>
 <tr class="memdesc:a789b7def382e7950b99c0a2ba127b2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloom program. <br /></td></tr>
 <tr class="separator:a789b7def382e7950b99c0a2ba127b2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fcb2ff552b4c965331fe3349e681fbf"><td class="memItemLeft" align="right" valign="top"><a id="a6fcb2ff552b4c965331fe3349e681fbf"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a6fcb2ff552b4c965331fe3349e681fbf">_bloomCompositeProgram</a></td></tr>
-<tr class="memdesc:a6fcb2ff552b4c965331fe3349e681fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloom compositing program. <br /></td></tr>
-<tr class="separator:a6fcb2ff552b4c965331fe3349e681fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f595bad859be56409d7f1eb99fc420e"><td class="memItemLeft" align="right" valign="top"><a id="a0f595bad859be56409d7f1eb99fc420e"></a>
+const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a0f595bad859be56409d7f1eb99fc420e">_bloomComposite</a></td></tr>
+<tr class="memdesc:a0f595bad859be56409d7f1eb99fc420e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloom compositing program. <br /></td></tr>
+<tr class="separator:a0f595bad859be56409d7f1eb99fc420e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fdb4c5595cffcb527d7ac3f79e0afe6"><td class="memItemLeft" align="right" valign="top"><a id="a2fdb4c5595cffcb527d7ac3f79e0afe6"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a2fdb4c5595cffcb527d7ac3f79e0afe6">_toneMappingProgram</a></td></tr>
 <tr class="memdesc:a2fdb4c5595cffcb527d7ac3f79e0afe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tonemapping program. <br /></td></tr>
 <tr class="separator:a2fdb4c5595cffcb527d7ac3f79e0afe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f97482582c2f501861ab3cad226a0b"><td class="memItemLeft" align="right" valign="top"><a id="af7f97482582c2f501861ab3cad226a0b"></a>
+const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#af7f97482582c2f501861ab3cad226a0b">_dofCocProgram</a></td></tr>
+<tr class="memdesc:af7f97482582c2f501861ab3cad226a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CoC computation. <br /></td></tr>
+<tr class="separator:af7f97482582c2f501861ab3cad226a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7467d3159b59fde949c6a4b6a8b01c"><td class="memItemLeft" align="right" valign="top"><a id="a7a7467d3159b59fde949c6a4b6a8b01c"></a>
+const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a7a7467d3159b59fde949c6a4b6a8b01c">_dofGatherProgram</a></td></tr>
+<tr class="memdesc:a7a7467d3159b59fde949c6a4b6a8b01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DoF gathering step. <br /></td></tr>
+<tr class="separator:a7a7467d3159b59fde949c6a4b6a8b01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade556c214eb2461518746f1068dbd135"><td class="memItemLeft" align="right" valign="top"><a id="ade556c214eb2461518746f1068dbd135"></a>
+const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#ade556c214eb2461518746f1068dbd135">_dofCompositeProgram</a></td></tr>
+<tr class="memdesc:ade556c214eb2461518746f1068dbd135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite DoF and input. <br /></td></tr>
+<tr class="separator:ade556c214eb2461518746f1068dbd135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d965a475f87dd809f0d68805aaf8166"><td class="memItemLeft" align="right" valign="top"><a id="a1d965a475f87dd809f0d68805aaf8166"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_post_process_stack.html#a1d965a475f87dd809f0d68805aaf8166">_fxaaProgram</a></td></tr>
 <tr class="memdesc:a1d965a475f87dd809f0d68805aaf8166"><td class="mdescLeft">&#160;</td><td class="mdescRight">FXAA program. <br /></td></tr>
@@ -201,6 +225,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Apply post process effects to a HDR rendering of a scene. </p>
+<p>The effects currently provided are:</p><ul>
+<li>depth of field (scatter-as-you-gather approach (as described by Dennis Gustafsson in "Bokeh depth of field in a single pass")</li>
+<li>bloom (thresholding and blurring bright spots)</li>
+<li>tonemapping (basic Reinhardt operator)</li>
+<li>antialiasing (using FXXA) </li>
+</ul>
 </div>
 <p>Inherits <a class="el" href="class_renderer.html">Renderer</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -297,20 +327,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a582359414dae9283f84a0d4fd705f620"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a582359414dae9283f84a0d4fd705f620">&#9670;&nbsp;</a></span>process()</h2>
+<a id="a5095f21dce8f0faafcddc27be61ef1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5095f21dce8f0faafcddc27be61ef1cf">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PostProcessStack::process </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
           <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;&#160;</td>
+          <td class="paramname"><em>proj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -330,22 +369,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Apply post processing to the scene. You can assume that there will be at least one operation applied so the same texture can be used as input and output. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">texture</td><td>the texture to process </td></tr>
+    <tr><td class="paramname">proj</td><td>the projection matrix (for DoF) </td></tr>
+    <tr><td class="paramname">depth</td><td>the scene depth buffer (for DoF) </td></tr>
     <tr><td class="paramname">framebuffer</td><td>the destination framebuffer </td></tr>
     <tr><td class="paramname">layer</td><td>the layer of the destination to write to </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented from <a class="el" href="class_renderer.html#a123d18e7db3c2d178100f765de0c024d">Renderer</a>.</p>
 
 </div>
 </div>

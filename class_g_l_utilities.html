@@ -92,6 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_g_l_utilities-members.html">List of all members</a>  </div>
@@ -105,14 +107,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_g_l_utilities_8hpp_source.html">GLUtilities.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_l_utilities_1_1_binding.html">Binding</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aaa6ff04e4bade29d1b7eeb481bc17376"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aaa6ff04e4bade29d1b7eeb481bc17376">BindingType</a> : uint { <b>TEXTURE</b>, 
+<b>UNIFORM_BUFFER</b>
+ }</td></tr>
+<tr class="separator:aaa6ff04e4bade29d1b7eeb481bc17376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c36abadc13d0c12fcf0371855b7f5f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> = std::map&lt; std::string, <a class="el" href="struct_g_l_utilities_1_1_binding.html">Binding</a> &gt;</td></tr>
+<tr class="separator:a8c36abadc13d0c12fcf0371855b7f5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a81a8d12b50ca376e06e5330f6f26e948"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a81a8d12b50ca376e06e5330f6f26e948">setup</a> ()</td></tr>
 <tr class="separator:a81a8d12b50ca376e06e5330f6f26e948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da6e0de0463c97589fd80c5c1cd9a37"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6da6e0de0463c97589fd80c5c1cd9a37">loadShader</a> (const std::string &amp;prog, GLuint type, std::map&lt; std::string, int &gt; &amp;bindings, std::string &amp;finalLog)</td></tr>
-<tr class="separator:a6da6e0de0463c97589fd80c5c1cd9a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa010f6c9e5a656f43e4405440ebd9c1"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aaa010f6c9e5a656f43e4405440ebd9c1">createProgram</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, std::map&lt; std::string, int &gt; &amp;bindings, const std::string &amp;debugInfos)</td></tr>
-<tr class="separator:aaa010f6c9e5a656f43e4405440ebd9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0904bfdf35a7e153621008451b510a3b"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a0904bfdf35a7e153621008451b510a3b">loadShader</a> (const std::string &amp;prog, GLuint type, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, std::string &amp;finalLog)</td></tr>
+<tr class="separator:a0904bfdf35a7e153621008451b510a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643963484b5fa7b447c3d00cd00023f3"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a643963484b5fa7b447c3d00cd00023f3">createProgram</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, const std::string &amp;debugInfos)</td></tr>
+<tr class="separator:a643963484b5fa7b447c3d00cd00023f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8356140c2bd751f94408f6a1b122d002"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8356140c2bd751f94408f6a1b122d002">saveFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, unsigned int width, unsigned int height, const std::string &amp;path, bool flip=true, bool ignoreAlpha=false)</td></tr>
 <tr class="separator:a8356140c2bd751f94408f6a1b122d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f4da13d9acd3a8d99c426e9d7575c14"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6f4da13d9acd3a8d99c426e9d7575c14">bindTexture</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, size_t slot)</td></tr>
@@ -127,6 +143,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2b64c9ebb7f30c5d7973ddbcbe7178c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708d9c01930870d22c4d5420bab2af57"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a708d9c01930870d22c4d5420bab2af57">downloadTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture)</td></tr>
 <tr class="separator:a708d9c01930870d22c4d5420bab2af57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d978e80f5ea2e67c5a9969f5cad3129"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a7d978e80f5ea2e67c5a9969f5cad3129">downloadTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture, int level)</td></tr>
+<tr class="separator:a7d978e80f5ea2e67c5a9969f5cad3129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7be58d24fe0bf5c4f37c5161c47671"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8b7be58d24fe0bf5c4f37c5161c47671">generateMipMaps</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture)</td></tr>
 <tr class="separator:a8b7be58d24fe0bf5c4f37c5161c47671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2533dfb720036ad6dc5c6898fadef463"><td class="memItemLeft" align="right" valign="top">static GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a2533dfb720036ad6dc5c6898fadef463">targetFromShape</a> (const <a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> &amp;shape)</td></tr>
@@ -139,6 +157,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac94b2b266f36db9e0b0713433613b7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6b39b08f41c4faab85decbeee961cb3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ad6b39b08f41c4faab85decbeee961cb3">uploadBuffer</a> (const <a class="el" href="class_buffer_base.html">BufferBase</a> &amp;buffer, size_t size, unsigned char *data, size_t offset=0)</td></tr>
 <tr class="separator:ad6b39b08f41c4faab85decbeee961cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e3be3416a7aec7d912e9ae7f84d369"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ae7e3be3416a7aec7d912e9ae7f84d369">downloadBuffer</a> (const <a class="el" href="class_buffer_base.html">BufferBase</a> &amp;buffer, size_t size, unsigned char *data, size_t offset=0)</td></tr>
+<tr class="separator:ae7e3be3416a7aec7d912e9ae7f84d369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86d4734b1495621d01debc7b96c5e448"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a86d4734b1495621d01debc7b96c5e448">setupMesh</a> (<a class="el" href="class_mesh.html">Mesh</a> &amp;mesh)</td></tr>
 <tr class="separator:a86d4734b1495621d01debc7b96c5e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ce92e4a9daf800176434f152a2bca8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a42ce92e4a9daf800176434f152a2bca8">drawMesh</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;mesh)</td></tr>
@@ -171,10 +191,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2691fd2c771e4567583ceb20d29f3f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7369e719a61bd8a98eaabf7d6bb7c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aff7369e719a61bd8a98eaabf7d6bb7c7">setPolygonState</a> (<a class="el" href="group___resources.html#ga6c3cfb97e5733ddd4f243683fd7b4a14">PolygonMode</a> mode, <a class="el" href="group___resources.html#gaea884fb4f26a1750573b7a3ae6074fdf">Faces</a> selectedFaces)</td></tr>
 <tr class="separator:aff7369e719a61bd8a98eaabf7d6bb7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8616e00560347a36f373325050cd4939"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8616e00560347a36f373325050cd4939">blitDepth</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst)</td></tr>
+<tr class="separator:a8616e00560347a36f373325050cd4939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244d3e72767fc0e2e968667557c4e2f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a244d3e72767fc0e2e968667557c4e2f4">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:a244d3e72767fc0e2e968667557c4e2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f3a0c4ed04a5fa5208f8b89cc18d7d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a83f3a0c4ed04a5fa5208f8b89cc18d7d">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, size_t lSrc, size_t lDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:a83f3a0c4ed04a5fa5208f8b89cc18d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbf557cbb5b7a5c1e591f50f155c54a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6cbf557cbb5b7a5c1e591f50f155c54a">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, size_t lSrc, size_t lDst, size_t mipSrc, size_t mipDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
+<tr class="separator:a6cbf557cbb5b7a5c1e591f50f155c54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b2819871c9109d85167fec31de67df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ad1b2819871c9109d85167fec31de67df">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_texture.html">Texture</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:ad1b2819871c9109d85167fec31de67df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -185,7 +209,47 @@ Static Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provide utility functions to communicate with the driver and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8c36abadc13d0c12fcf0371855b7f5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c36abadc13d0c12fcf0371855b7f5f3">&#9670;&nbsp;</a></span>Bindings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">GLUtilities::Bindings</a> =  std::map&lt;std::string, <a class="el" href="struct_g_l_utilities_1_1_binding.html">Binding</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bindings list </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aaa6ff04e4bade29d1b7eeb481bc17376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6ff04e4bade29d1b7eeb481bc17376">&#9670;&nbsp;</a></span>BindingType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_g_l_utilities.html#aaa6ff04e4bade29d1b7eeb481bc17376">GLUtilities::BindingType</a> : uint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Type of shader uniform binding </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac94b2b266f36db9e0b0713433613b7f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac94b2b266f36db9e0b0713433613b7f3">&#9670;&nbsp;</a></span>allocateBuffer()</h2>
 
@@ -381,7 +445,7 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a244d3e72767fc0e2e968667557c4e2f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,11 +491,12 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>Warning</dt><dd>Only the first color attachment will be blit. </dd></dl>
 
 </div>
 </div>
 <a id="a83f3a0c4ed04a5fa5208f8b89cc18d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f3a0c4ed04a5fa5208f8b89cc18d7d">&#9670;&nbsp;</a></span>blit() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f3a0c4ed04a5fa5208f8b89cc18d7d">&#9670;&nbsp;</a></span>blit() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -494,8 +559,86 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6cbf557cbb5b7a5c1e591f50f155c54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbf557cbb5b7a5c1e591f50f155c54a">&#9670;&nbsp;</a></span>blit() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::blit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>lSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>lDst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mipSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mipDst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a>&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Blit the content of a framebuffer into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">lSrc</td><td>the src layer to copy </td></tr>
+    <tr><td class="paramname">lDst</td><td>the dst layer to copy to </td></tr>
+    <tr><td class="paramname">mipSrc</td><td>the src mip level to copy </td></tr>
+    <tr><td class="paramname">mipDst</td><td>the dst mip level to copy to </td></tr>
+    <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad1b2819871c9109d85167fec31de67df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b2819871c9109d85167fec31de67df">&#9670;&nbsp;</a></span>blit() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b2819871c9109d85167fec31de67df">&#9670;&nbsp;</a></span>blit() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,6 +684,51 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8616e00560347a36f373325050cd4939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8616e00560347a36f373325050cd4939">&#9670;&nbsp;</a></span>blitDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::blitDepth </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Blit the content of a depthbuffer into another one. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Depth is necessarily filtered using nearest neighbour. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This treat the current depth buffer setup as a 2D texture. </dd></dl>
 
 </div>
 </div>
@@ -651,8 +839,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa010f6c9e5a656f43e4405440ebd9c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa010f6c9e5a656f43e4405440ebd9c1">&#9670;&nbsp;</a></span>createProgram()</h2>
+<a id="a643963484b5fa7b447c3d00cd00023f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643963484b5fa7b447c3d00cd00023f3">&#9670;&nbsp;</a></span>createProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +869,7 @@ Static Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;&#160;</td>
           <td class="paramname"><em>bindings</em>, </td>
         </tr>
         <tr>
@@ -738,7 +926,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Query the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> supported extensions. </p><dl class="section return"><dt>Returns</dt><dd>a list of extensions names </dd></dl>
+<p><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> supported extensions. </p><dl class="section return"><dt>Returns</dt><dd>a list of extensions names </dd></dl>
 
 </div>
 </div>
@@ -787,7 +975,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Query the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> driver and API infos. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> driver and API infos. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vendor</td><td>will contain the vendor name </td></tr>
     <tr><td class="paramname">renderer</td><td>will contain the renderer name </td></tr>
@@ -799,8 +987,65 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae7e3be3416a7aec7d912e9ae7f84d369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e3be3416a7aec7d912e9ae7f84d369">&#9670;&nbsp;</a></span>downloadBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::downloadBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_buffer_base.html">BufferBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Download data from a buffer on the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. It's possible to download a subrange of the buffer data store. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>the buffer to download from </td></tr>
+    <tr><td class="paramname">size</td><td>the amount of data to download, in bytes </td></tr>
+    <tr><td class="paramname">data</td><td>pointer to the storage destination </td></tr>
+    <tr><td class="paramname">offset</td><td>optional offset in the buffer store </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a708d9c01930870d22c4d5420bab2af57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a708d9c01930870d22c4d5420bab2af57">&#9670;&nbsp;</a></span>downloadTexture()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a708d9c01930870d22c4d5420bab2af57">&#9670;&nbsp;</a></span>downloadTexture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -825,6 +1070,50 @@ Static Private Member Functions</h2></td></tr>
 <p>Download a texture images data from the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">texture</td><td>the texture to download </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>The CPU images of the texture will be overwritten. </dd></dl>
+
+</div>
+</div>
+<a id="a7d978e80f5ea2e67c5a9969f5cad3129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d978e80f5ea2e67c5a9969f5cad3129">&#9670;&nbsp;</a></span>downloadTexture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::downloadTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Download a texture images data from the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to download </td></tr>
+    <tr><td class="paramname">level</td><td>the specific mip level to download </td></tr>
   </table>
   </dd>
 </dl>
@@ -897,8 +1186,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6da6e0de0463c97589fd80c5c1cd9a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6da6e0de0463c97589fd80c5c1cd9a37">&#9670;&nbsp;</a></span>loadShader()</h2>
+<a id="a0904bfdf35a7e153621008451b510a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0904bfdf35a7e153621008451b510a3b">&#9670;&nbsp;</a></span>loadShader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -921,7 +1210,7 @@ Static Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;&#160;</td>
           <td class="paramname"><em>bindings</em>, </td>
         </tr>
         <tr>
@@ -946,7 +1235,7 @@ Static Private Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">prog</td><td>the content of the shader </td></tr>
     <tr><td class="paramname">type</td><td>the type of shader (GL_VERTEX_SHADER,...) </td></tr>
-    <tr><td class="paramname">bindings</td><td>will be filled with the samplers present in the shader and their user-defined locations </td></tr>
+    <tr><td class="paramname">bindings</td><td>will be filled with the samplers/buffers present in the shader and their user-defined locations </td></tr>
     <tr><td class="paramname">finalLog</td><td>will contain the compilation log of the shader </td></tr>
   </table>
   </dd>

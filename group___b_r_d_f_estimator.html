@@ -104,9 +104,6 @@ DeferredRendering </dd></dl>
 Functions</h2></td></tr>
 <tr class="memitem:ga01e39e3f18539cc8bf8a3f844f6ae532"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_r_d_f_estimator.html#ga01e39e3f18539cc8bf8a3f844f6ae532">loadCubemap</a> (const std::string &amp;inputPath, <a class="el" href="class_texture.html">Texture</a> &amp;cubemapInfos)</td></tr>
 <tr class="separator:ga01e39e3f18539cc8bf8a3f844f6ae532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4857febc224b23898e52b8c3e43524d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; glm::vec3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_r_d_f_estimator.html#gaf4857febc224b23898e52b8c3e43524d">computeSHCoeffs</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;cubemap)</td></tr>
-<tr class="memdesc:gaf4857febc224b23898e52b8c3e43524d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompose an existing cubemap irradiance onto the nine first elements of the spherical harmonic basis.  <a href="group___b_r_d_f_estimator.html#gaf4857febc224b23898e52b8c3e43524d">More...</a><br /></td></tr>
-<tr class="separator:gaf4857febc224b23898e52b8c3e43524d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga23457022b378179392250281e696f53e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_r_d_f_estimator.html#ga23457022b378179392250281e696f53e">computeCubemapConvolution</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;cubemapInfos, int levelsCount, int outputSide, int samplesCount, std::vector&lt; <a class="el" href="class_texture.html">Texture</a> &gt; &amp;cubeLevels)</td></tr>
 <tr class="separator:ga23457022b378179392250281e696f53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab36530070ec4d11604b2d118e692e8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_r_d_f_estimator.html#gab36530070ec4d11604b2d118e692e8dd">exportCubemapConvolution</a> (std::vector&lt; <a class="el" href="class_texture.html">Texture</a> &gt; &amp;cubeLevels, const std::string &amp;outputPath)</td></tr>
@@ -206,33 +203,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="gaf4857febc224b23898e52b8c3e43524d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf4857febc224b23898e52b8c3e43524d">&#9670;&nbsp;</a></span>computeSHCoeffs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;glm::vec3&gt; computeSHCoeffs </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>cubemap</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Decompose an existing cubemap irradiance onto the nine first elements of the spherical harmonic basis. </p>
-<p>Perform approximated convolution as described in Ramamoorthi, Ravi, and Pat Hanrahan. "An efficient representation for irradiance environment maps.", Proceedings of the 28th annual conference on Computer graphics and interactive techniques. ACM, 2001. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cubemap</td><td>the cubemap to extract SH coefficients from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the 9 RGB coefficients of the SH decomposition </dd></dl>
 
 </div>
 </div>
