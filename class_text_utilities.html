@@ -108,8 +108,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b4ed6b60c557e2fb40e27a9ce9d4991"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_utilities.html#a8b4ed6b60c557e2fb40e27a9ce9d4991">trim</a> (const std::string &amp;str, const std::string &amp;del)</td></tr>
 <tr class="separator:a8b4ed6b60c557e2fb40e27a9ce9d4991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109f8946c5c8b5b7980ef16b222cb2e4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_utilities.html#a109f8946c5c8b5b7980ef16b222cb2e4">removeExtension</a> (std::string &amp;str)</td></tr>
-<tr class="separator:a109f8946c5c8b5b7980ef16b222cb2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271c656ea1da4612894175c183b12900"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_utilities.html#a271c656ea1da4612894175c183b12900">splitExtension</a> (std::string &amp;str)</td></tr>
+<tr class="separator:a271c656ea1da4612894175c183b12900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7488546e83228e9242f114c49b73bbf"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_utilities.html#aa7488546e83228e9242f114c49b73bbf">extractFilename</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:aa7488546e83228e9242f114c49b73bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5cc5b9fb2df80b191cc5b7023d85a70"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_utilities.html#ab5cc5b9fb2df80b191cc5b7023d85a70">replace</a> (std::string &amp;source, const std::string &amp;fromString, const std::string &amp;toString)</td></tr>
 <tr class="separator:ab5cc5b9fb2df80b191cc5b7023d85a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e4a1fe458b3e46bd23ed15d9e002f8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_utilities.html#a17e4a1fe458b3e46bd23ed15d9e002f8">hasPrefix</a> (const std::string &amp;source, const std::string &amp;prefix)</td></tr>
@@ -126,6 +128,39 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides utilities process strings. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa7488546e83228e9242f114c49b73bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7488546e83228e9242f114c49b73bbf">&#9670;&nbsp;</a></span>extractFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TextUtilities::extractFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Extract the filename from the end of a string (extension will be included). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>the string to extract the filename from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the filename string </dd></dl>
+
+</div>
+</div>
 <a id="a17e4a1fe458b3e46bd23ed15d9e002f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17e4a1fe458b3e46bd23ed15d9e002f8">&#9670;&nbsp;</a></span>hasPrefix()</h2>
 
@@ -258,39 +293,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a109f8946c5c8b5b7980ef16b222cb2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a109f8946c5c8b5b7980ef16b222cb2e4">&#9670;&nbsp;</a></span>removeExtension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string TextUtilities::removeExtension </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Remove file extension from the end of a string. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string to remove the extension from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the extension string </dd></dl>
-
-</div>
-</div>
 <a id="ab5cc5b9fb2df80b191cc5b7023d85a70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5cc5b9fb2df80b191cc5b7023d85a70">&#9670;&nbsp;</a></span>replace()</h2>
 
@@ -389,6 +391,39 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a list of tokens </dd></dl>
+
+</div>
+</div>
+<a id="a271c656ea1da4612894175c183b12900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271c656ea1da4612894175c183b12900">&#9670;&nbsp;</a></span>splitExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TextUtilities::splitExtension </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove file extension from the end of a string and extract it. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>the string to remove the extension from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the extension string </dd></dl>
 
 </div>
 </div>

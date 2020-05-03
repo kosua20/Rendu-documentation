@@ -145,6 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>radius
 : <a class="el" href="class_bounding_sphere.html#a569e503fe2d0d2ffbb220cf443b8b9fb">BoundingSphere</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_bilateral.html#a03a28849bdc0839ae1658a119a398354">GPU::Frag::Bilateral</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_shaderbench.html#a3c1e9c7dfa42a7ff398ea37e2d771202">GPU::Frag::Shaderbench</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_ssao.html#a3fd2f4a219d39b9e94697ed18c9c2b49">GPU::Frag::Ssao</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_brush__color.html#a5bee66fad9227a76b02c5b5928e782d6">GPU::Vert::Brush_color</a>
 , <a class="el" href="class_point_light.html#ab6f33ac38107e2bf60a1d4300ca40acc">PointLight</a>
@@ -161,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_rendering_config.html#a47e018ee5781d67cd2ceeee2d5b2c394">RenderingConfig</a>
 </li>
 <li>ratio()
-: <a class="el" href="class_camera.html#a96e87214a83a0f2a9ff647901e2fffda">Camera</a>
+: <a class="el" href="class_camera.html#a7fe84d89e0b3a5cbb02779ba7461eede">Camera</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_font__sdf.html#a649454ddac1b3c6e9f169564f27736bf">GPU::Vert::Font_sdf</a>
 </li>
 <li>Ray()
@@ -180,6 +181,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>rayleighPhase()
 : <a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a17c8e4dae894a67e8e8b16a39b0b96bc">GPU::Common::Atmosphere</a>
+, <a class="el" href="class_material_sky.html#a6902b2f841481a63c7c9658a314fb337">MaterialSky</a>
+</li>
+<li>raymarch()
+: <a class="el" href="class_g_p_u_1_1_frag_1_1_shaderbench.html#a4f8b7fe01b454e4556185dce92864b09">GPU::Frag::Shaderbench</a>
 </li>
 <li>read()
 : <a class="el" href="class_framebuffer.html#a70300f58cd9fc4490c3e17e5c231055f">Framebuffer</a>
@@ -203,11 +208,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_input.html#a7d637c608560f19f81dab8741ccbc701">Input</a>
 </li>
 <li>reload()
-: <a class="el" href="class_program.html#a411b7a7dd9686f6b7c386364fa89c91b">Program</a>
+: <a class="el" href="class_program.html#a44588972a00dcaa17cd06071f0f81d62">Program</a>
 , <a class="el" href="class_resources.html#a140d1c8b99049181e45b6a4232dbd426">Resources</a>
-</li>
-<li>removeExtension()
-: <a class="el" href="class_text_utilities.html#a109f8946c5c8b5b7980ef16b222cb2e4">TextUtilities</a>
+, <a class="el" href="class_shader_editor.html#acb6500761bdcc6fe9fd45cb3154ed27d">ShaderEditor</a>
 </li>
 <li>render()
 : <a class="el" href="class_path_tracer.html#a2987a50049d82d89c6f4dc86d648ca33">PathTracer</a>
@@ -263,6 +266,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_post_process_stack.html#a659e82c405706ae4914363422f15d48b">PostProcessStack</a>
 , <a class="el" href="class_renderer.html#ade00d55b9186cbc9b9fa5e5732f76c8b">Renderer</a>
 , <a class="el" href="class_scene_editor.html#a05992c3957cd35f8aecf173ecf835873">SceneEditor</a>
+, <a class="el" href="class_shader_editor.html#add082997185e6b843f52528236eff479">ShaderEditor</a>
 , <a class="el" href="class_s_s_a_o.html#aff4a64c9cb9b1151dd97bbf871605b48">SSAO</a>
 </li>
 <li>resized()
@@ -275,7 +279,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_atmospheric_scattering_config.html#a7ea4f058b83d0d75978593a8402cce72">AtmosphericScatteringConfig</a>
 </li>
 <li>Resources()
-: <a class="el" href="class_resources.html#ae58d9971a831a3d4a54b7a3c11a2bcee">Resources</a>
+: <a class="el" href="class_resources.html#a84e18c6a837932fc2963f1e523698016">Resources</a>
+</li>
+<li>resourcesPath
+: <a class="el" href="class_rendering_config.html#a3d205c9c6d454bab4a97a6c99186fdae">RenderingConfig</a>
+</li>
+<li>restoreUniforms()
+: <a class="el" href="class_shader_editor.html#a6ebf53a76acb1a1b5fb15c197e10252e">ShaderEditor</a>
 </li>
 <li>rgb()
 : <a class="el" href="class_image.html#a244ed98b7e6968e4eb3b399876580295">Image</a>
@@ -284,7 +294,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_g_p_u_1_1_frag_1_1_fxaa.html#a2d1c8aadf8ed36ed0ad66f05a7944978">GPU::Frag::Fxaa</a>
 </li>
 <li>rgba()
-: <a class="el" href="class_image.html#a8fa1136895fe2c266f8690eba491f581">Image</a>
+: <a class="el" href="class_image.html#aa38f1be5b9307280260f946736995629">Image</a>
 </li>
 <li>rgbal()
 : <a class="el" href="class_image.html#a566294ee9c96dbfd14a90576d8a7d4a4">Image</a>
@@ -304,7 +314,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="struct_raycaster_1_1_node.html#ab19074c5a2d1cbf8416d3b9425c3300f">Raycaster::Node</a>
 </li>
 <li>Rotation()
-: <a class="el" href="class_rotation.html#a5eda2d2860ac74a84bb022ef031c8780">Rotation</a>
+: <a class="el" href="class_rotation.html#a4c4a21cf1b9a7af223c21fd4c9d2f1de">Rotation</a>
 </li>
 <li>rough
 : <a class="el" href="struct_composite_obj_1_1_material.html#ad493237a0b673d034d7a01736ab7c692">CompositeObj::Material</a>

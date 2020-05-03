@@ -109,8 +109,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a86ff45e12a92da7f417ca5f0b16df0e4"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#a86ff45e12a92da7f417ca5f0b16df0e4">applySH</a> (vec3 wn)</td></tr>
-<tr class="separator:a86ff45e12a92da7f417ca5f0b16df0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2a8387f14ad2beed1bb650cce34af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#afa2a8387f14ad2beed1bb650cce34af3">main</a> ()</td></tr>
 <tr class="separator:afa2a8387f14ad2beed1bb650cce34af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,10 +118,9 @@ Public Attributes</h2></td></tr>
 in vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#ab2dc4ffee1597666e26584135b815189">pos</a></td></tr>
 <tr class="memdesc:ab2dc4ffee1597666e26584135b815189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position in model space. <br /></td></tr>
 <tr class="separator:ab2dc4ffee1597666e26584135b815189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09ac66eac16193c5a42b402e124f6314"><td class="memItemLeft" align="right" valign="top"><a id="a09ac66eac16193c5a42b402e124f6314"></a>
-uniform vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#a09ac66eac16193c5a42b402e124f6314">shCoeffs</a> [9]</td></tr>
-<tr class="memdesc:a09ac66eac16193c5a42b402e124f6314"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance. <br /></td></tr>
-<tr class="separator:a09ac66eac16193c5a42b402e124f6314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae707ed1617fcdd4832ef5e1e6c057d1d"><td class="memItemLeft" align="right" valign="top">uniform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#ae707ed1617fcdd4832ef5e1e6c057d1d">SHCoeffs</a></td></tr>
+<tr class="memdesc:ae707ed1617fcdd4832ef5e1e6c057d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance (UBO).  <a href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#ae707ed1617fcdd4832ef5e1e6c057d1d">More...</a><br /></td></tr>
+<tr class="separator:ae707ed1617fcdd4832ef5e1e6c057d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a02b0db2c5ef4f59ec972b57a22c87"><td class="memItemLeft" align="right" valign="top"><a id="ab7a02b0db2c5ef4f59ec972b57a22c87"></a>
 out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html#ab7a02b0db2c5ef4f59ec972b57a22c87">fragColor</a></td></tr>
 <tr class="memdesc:ab7a02b0db2c5ef4f59ec972b57a22c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color. <br /></td></tr>
@@ -131,40 +128,8 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Skybox shcoeffs fragment shader. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPU::Common::Common_pbr</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a86ff45e12a92da7f417ca5f0b16df0e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86ff45e12a92da7f417ca5f0b16df0e4">&#9670;&nbsp;</a></span>applySH()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vec3 GPU::Frag::Skybox_shcoeffs::applySH </td>
-          <td>(</td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>wn</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Evaluate the ambient irradiance (as SH coefficients) in a given direction. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wn</td><td>the direction (normalized) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the ambient irradiance </dd></dl>
-
-</div>
-</div>
 <a id="afa2a8387f14ad2beed1bb650cce34af3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa2a8387f14ad2beed1bb650cce34af3">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -188,6 +153,25 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 </div><div class="memdoc">
 <p>Compute the environment ambient lighting contribution on the scene. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae707ed1617fcdd4832ef5e1e6c057d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae707ed1617fcdd4832ef5e1e6c057d1d">&#9670;&nbsp;</a></span>SHCoeffs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform GPU::Frag::Skybox_shcoeffs::SHCoeffs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    vec4 shCoeffs[9]</div>
+</div><!-- fragment -->
+<p>SH approximation of the environment irradiance (UBO). </p>
 
 </div>
 </div>

@@ -101,6 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Represent a 3D frustum, volume defined by the intersection of six planes.  
+ <a href="class_frustum.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_bounds_8hpp_source.html">Bounds.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -129,11 +132,11 @@ Private Types</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a00167532df41037b064cda8507efa278"><td class="memItemLeft" align="right" valign="top"><a id="a00167532df41037b064cda8507efa278"></a>
 std::array&lt; glm::vec4, FrustumPlane::COUNT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frustum.html#a00167532df41037b064cda8507efa278">_planes</a></td></tr>
-<tr class="memdesc:a00167532df41037b064cda8507efa278"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_frustum.html">Frustum</a> hyperplane coefficients. <br /></td></tr>
+<tr class="memdesc:a00167532df41037b064cda8507efa278"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_frustum.html" title="Represent a 3D frustum, volume defined by the intersection of six planes.">Frustum</a> hyperplane coefficients. <br /></td></tr>
 <tr class="separator:a00167532df41037b064cda8507efa278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099d12147884c8a5f566c130d889e387"><td class="memItemLeft" align="right" valign="top"><a id="a099d12147884c8a5f566c130d889e387"></a>
 std::array&lt; glm::vec3, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frustum.html#a099d12147884c8a5f566c130d889e387">_corners</a></td></tr>
-<tr class="memdesc:a099d12147884c8a5f566c130d889e387"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_frustum.html">Frustum</a> corners. <br /></td></tr>
+<tr class="memdesc:a099d12147884c8a5f566c130d889e387"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_frustum.html" title="Represent a 3D frustum, volume defined by the intersection of six planes.">Frustum</a> corners. <br /></td></tr>
 <tr class="separator:a099d12147884c8a5f566c130d889e387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -210,7 +213,7 @@ std::array&lt; glm::vec3, 8 &gt;&#160;</td><td class="memItemRight" valign="bott
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the bounding box intersects the frustum. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Implement frustum corner checks to weed out more false positives. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Implement frustum corner checks to weed out more false positives. </dd></dl>
 
 </div>
 </div>

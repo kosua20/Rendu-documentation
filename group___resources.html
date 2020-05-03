@@ -104,24 +104,25 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent the smallest axis-aligne box containing a given object or region of space.  <a href="class_bounding_box.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frustum.html">Frustum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a 3D frustum, volume defined by the intersection of six planes.  <a href="class_frustum.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html">BufferBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose GPU/CPU buffer, without a CPU backing store. This allows the class to be template-free (to avoid exposing GLUtilities/GPUObjects details in headers), while preserving the "pass general Object to GLUtilities for setup/upload &amp;
-GPUObject only stores ID and enums" approach followed by <a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> and <a class="el" href="class_mesh.html" title="Represents a geometric mesh composed of vertices and triangles. For now, material information and ele...">Mesh</a>. In practice you will want to use <a class="el" href="class_buffer.html" title="Represents a buffer containing arbitrary data, stored on the CPU and/or GPU.">Buffer</a> to benefit from CPU storage and simplified upload.  <a href="class_buffer_base.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose GPU/CPU buffer, without a CPU backing store.  <a href="class_buffer_base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer.html">Buffer&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a buffer containing arbitrary data, stored on the CPU and/or <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>.  <a href="class_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html">Font</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_font.html" title="Font loading and storage: texture atlas, codepoints supported, dimensions of each glyph....">Font</a> loading and storage: texture atlas, codepoints supported, dimensions of each glyph. Assumes that the supported codepoints form a continuous range.  <a href="class_font.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_font.html" title="Font loading and storage: texture atlas, codepoints supported, dimensions of each glyph.">Font</a> loading and storage: texture atlas, codepoints supported, dimensions of each glyph.  <a href="class_font.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html">Image</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities, for both LDR and HDR images.  <a href="class_image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library.html">Library</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The library provides a few commonly-used resources without having to set them up or query them from the resources manager.  <a href="class_library.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html">Mesh</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a geometric mesh composed of vertices and triangles. For now, material information and elements/groups are not represented. Can store both the CPU and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> representations. Provides utilities to load and process geometric meshes.  <a href="class_mesh.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a geometric mesh composed of vertices, other attributes and triangles.  <a href="class_mesh.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html">Resources</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_resources.html" title="The Resources manager is responsible for all resources loading and setup.">Resources</a> manager is responsible for all resources loading and setup.  <a href="class_resources.html#details">More...</a><br /></td></tr>
@@ -132,6 +133,12 @@ GPUObject only stores ID and enums" approach followed by <a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga4c5eb974d58c8e94fc312569207f065b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> : uint { <a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba0c3e47aef93a7f244f41ab309a33634b">ShaderType::VERTEX</a>, 
+<a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba7345a249ed5c2f850d85dc1727c24716">ShaderType::FRAGMENT</a>, 
+<a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065bab22957ad8078e8d73de61aef53d13a74">ShaderType::GEOMETRY</a>
+ }</td></tr>
+<tr class="memdesc:ga4c5eb974d58c8e94fc312569207f065b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of a shader.  <a href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">More...</a><br /></td></tr>
+<tr class="separator:ga4c5eb974d58c8e94fc312569207f065b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4f774584b0b53a5c0a654709438271bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a> : uint { <a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda0c3e47aef93a7f244f41ab309a33634b">BufferType::VERTEX</a>, 
 <a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bdacb4ae3b37047fb4b2c0d16f8bf84f076">BufferType::INDEX</a>, 
 <a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda891f35a29c3d51d02ffd42dd6dcc69b2">BufferType::UNIFORM</a>
@@ -599,6 +606,38 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="gga6c3cfb97e5733ddd4f243683fd7b4a14a17b8ef2c330f1430e00c9de5469fc7e7"></a>LINE&#160;</td><td class="fielddoc"><p>As wireframe edges. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga6c3cfb97e5733ddd4f243683fd7b4a14aaebdbcb765394d25d6a604589a890f82"></a>POINT&#160;</td><td class="fielddoc"><p>As vertex points. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga4c5eb974d58c8e94fc312569207f065b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c5eb974d58c8e94fc312569207f065b">&#9670;&nbsp;</a></span>ShaderType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> : uint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The type of a shader. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4c5eb974d58c8e94fc312569207f065ba0c3e47aef93a7f244f41ab309a33634b"></a>VERTEX&#160;</td><td class="fielddoc"><p>Vertex shader. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4c5eb974d58c8e94fc312569207f065ba7345a249ed5c2f850d85dc1727c24716"></a>FRAGMENT&#160;</td><td class="fielddoc"><p>Fragment shader. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4c5eb974d58c8e94fc312569207f065bab22957ad8078e8d73de61aef53d13a74"></a>GEOMETRY&#160;</td><td class="fielddoc"><p>Geometry shader. </p>
 </td></tr>
 </table>
 

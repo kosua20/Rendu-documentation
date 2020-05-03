@@ -239,8 +239,11 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Setup the probe parameters from a list of key-value tuples. The following representations are possible: either: </p><pre class="fragment">probe: texturetype: ...
-</pre><p> for a static environment map or </p><pre class="fragment">probe: position: X,Y,Z
+<p>Setup the probe parameters from a list of key-value tuples. The following representations are possible: either: </p><pre class="fragment">* probe:
+   radiance: texturetype: ...
+   irradiance: shcoeffs_filename
+</pre><p> for a static environment map or </p><pre class="fragment">* probe:
+   position: X,Y,Z
 </pre><p> for a probe renderered on the fly at the given location </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>the parameters tuple </td></tr>

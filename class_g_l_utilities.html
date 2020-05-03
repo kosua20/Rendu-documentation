@@ -125,8 +125,8 @@ Public Types</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a81a8d12b50ca376e06e5330f6f26e948"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a81a8d12b50ca376e06e5330f6f26e948">setup</a> ()</td></tr>
 <tr class="separator:a81a8d12b50ca376e06e5330f6f26e948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0904bfdf35a7e153621008451b510a3b"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a0904bfdf35a7e153621008451b510a3b">loadShader</a> (const std::string &amp;prog, GLuint type, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, std::string &amp;finalLog)</td></tr>
-<tr class="separator:a0904bfdf35a7e153621008451b510a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5357f70ec812d72232c3a82d0ccd8f48"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a5357f70ec812d72232c3a82d0ccd8f48">loadShader</a> (const std::string &amp;prog, <a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> type, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, std::string &amp;finalLog)</td></tr>
+<tr class="separator:a5357f70ec812d72232c3a82d0ccd8f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a643963484b5fa7b447c3d00cd00023f3"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a643963484b5fa7b447c3d00cd00023f3">createProgram</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, const std::string &amp;debugInfos)</td></tr>
 <tr class="separator:a643963484b5fa7b447c3d00cd00023f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8356140c2bd751f94408f6a1b122d002"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8356140c2bd751f94408f6a1b122d002">saveFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, unsigned int width, unsigned int height, const std::string &amp;path, bool flip=true, bool ignoreAlpha=false)</td></tr>
@@ -1186,8 +1186,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0904bfdf35a7e153621008451b510a3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0904bfdf35a7e153621008451b510a3b">&#9670;&nbsp;</a></span>loadShader()</h2>
+<a id="a5357f70ec812d72232c3a82d0ccd8f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5357f70ec812d72232c3a82d0ccd8f48">&#9670;&nbsp;</a></span>loadShader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1204,7 +1204,7 @@ Static Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -1234,7 +1234,7 @@ Static Private Member Functions</h2></td></tr>
 <p>Create a shader of a given type from a string. Extract additional informations from the shader. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">prog</td><td>the content of the shader </td></tr>
-    <tr><td class="paramname">type</td><td>the type of shader (GL_VERTEX_SHADER,...) </td></tr>
+    <tr><td class="paramname">type</td><td>the type of shader (vertex, fragment,...) </td></tr>
     <tr><td class="paramname">bindings</td><td>will be filled with the samplers/buffers present in the shader and their user-defined locations </td></tr>
     <tr><td class="paramname">finalLog</td><td>will contain the compilation log of the shader </td></tr>
   </table>
@@ -1773,7 +1773,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_mesh.html" title="Represents a geometric mesh composed of vertices and triangles. For now, material information and ele...">Mesh</a> loading: send a mesh data to the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> and set the input mesh <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> infos accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><a class="el" href="class_mesh.html" title="Represents a geometric mesh composed of vertices, other attributes and triangles.">Mesh</a> loading: send a mesh data to the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> and set the input mesh <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> infos accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mesh</td><td>the mesh to upload </td></tr>
   </table>
