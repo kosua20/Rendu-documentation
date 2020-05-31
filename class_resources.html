@@ -142,8 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abbe21300477d617f5c4b7b3798c171e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799441fb3d432a1ba426fafa70c2e5cf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a799441fb3d432a1ba426fafa70c2e5cf">getTexture</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a799441fb3d432a1ba426fafa70c2e5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b2142ed0b1f4db4822403ff20a0bac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a97b2142ed0b1f4db4822403ff20a0bac">getProgram</a> (const std::string &amp;name, const std::string &amp;vertexName=&quot;&quot;, const std::string &amp;fragmentName=&quot;&quot;, const std::string &amp;geometryName=&quot;&quot;)</td></tr>
-<tr class="separator:a97b2142ed0b1f4db4822403ff20a0bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9b234fe1ddc86779b41be4f6124507"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aaf9b234fe1ddc86779b41be4f6124507">getProgram</a> (const std::string &amp;name, const std::string &amp;vertexName=&quot;&quot;, const std::string &amp;fragmentName=&quot;&quot;, const std::string &amp;geometryName=&quot;&quot;, const std::string &amp;tessControlName=&quot;&quot;, const std::string &amp;tessEvalName=&quot;&quot;)</td></tr>
+<tr class="separator:aaf9b234fe1ddc86779b41be4f6124507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ba04529751b4c6affb28e0f96ce175"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a38ba04529751b4c6affb28e0f96ce175">getProgram2D</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a38ba04529751b4c6affb28e0f96ce175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade47f4489fcb4c702b62271f145ef1a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_font.html">Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ade47f4489fcb4c702b62271f145ef1a1">getFont</a> (const std::string &amp;name)</td></tr>
@@ -178,6 +178,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ac94af076a0c4c2fa3916f03c51fadc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8a644422a5c758124e7f2bc6fbf367"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a0d8a644422a5c758124e7f2bc6fbf367">getCubemapPaths</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a0d8a644422a5c758124e7f2bc6fbf367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75adaaacfaa44ac5e6be4a2322bd2f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aa75adaaacfaa44ac5e6be4a2322bd2f9">getLayeredPaths</a> (const std::string &amp;name, const std::string &amp;suffix)</td></tr>
+<tr class="separator:aa75adaaacfaa44ac5e6be4a2322bd2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2aaed46f5a049f007a290b14af9fcb1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ab2aaed46f5a049f007a290b14af9fcb1">getRawData</a> (const std::string &amp;path, size_t &amp;size)</td></tr>
 <tr class="separator:ab2aaed46f5a049f007a290b14af9fcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dc4fc89bca20b909efff9c090177bdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a2dc4fc89bca20b909efff9c090177bdc">~Resources</a> ()=default</td></tr>
@@ -529,6 +531,50 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="aa75adaaacfaa44ac5e6be4a2322bd2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75adaaacfaa44ac5e6be4a2322bd2f9">&#9670;&nbsp;</a></span>getLayeredPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Resources::getLayeredPaths </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>suffix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Expand a multi-layer image (array or 3D depending on the suffix) name in its slices path, testing all possibles extensions. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the layered image </td></tr>
+    <tr><td class="paramname">suffix</td><td>the suffix to append before the layer number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of the image paths </dd></dl>
+
+</div>
+</div>
 <a id="a5119d42981f426da73f7c56d0ba1548b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5119d42981f426da73f7c56d0ba1548b">&#9670;&nbsp;</a></span>getMesh()</h2>
 
@@ -565,8 +611,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a97b2142ed0b1f4db4822403ff20a0bac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b2142ed0b1f4db4822403ff20a0bac">&#9670;&nbsp;</a></span>getProgram()</h2>
+<a id="aaf9b234fe1ddc86779b41be4f6124507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9b234fe1ddc86779b41be4f6124507">&#9670;&nbsp;</a></span>getProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +639,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>geometryName</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>geometryName</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tessControlName</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tessEvalName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -608,6 +666,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
     <tr><td class="paramname">vertexName</td><td>the name of the vertex shader </td></tr>
     <tr><td class="paramname">fragmentName</td><td>the name of the fragment shader </td></tr>
     <tr><td class="paramname">geometryName</td><td>the name of the optional geometry shader </td></tr>
+    <tr><td class="paramname">tessControlName</td><td>the name of the optional tessellation control shader </td></tr>
+    <tr><td class="paramname">tessEvalName</td><td>the name of the optional tessellation evaluation shader </td></tr>
   </table>
   </dd>
 </dl>
@@ -786,7 +846,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get an existing 2D texture resource. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get an existing texture resource. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the texture base name </td></tr>
   </table>
@@ -833,7 +893,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a 2D texture resource. Automatically handle custom mipmaps if present. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a texture resource. Automatically handle custom mipmaps if present. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the texture base name </td></tr>
     <tr><td class="paramname">descriptor</td><td>the texture layout to use </td></tr>
@@ -843,7 +903,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the texture informations </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the name is the string representation of an RGB(A) color ("1.0,0.0,1.0" for instance), a constant color 2D texture will be allocated using the passed descriptor. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the name is the string representation of an RGB(A) color ("1.0,0.0,1.0" for instance), a constant color 2D texture will be allocated using the passed descriptor. </dd>
+<dd>
+Cubemaps will be automatically detected using suffixes _nx, _ny, _nz, _px, _py, _pz. </dd>
+<dd>
+2D arrays will be automatically detected using suffix _sX where X=0,1..., 3D textures using suffix _zX where X=0,1... </dd></dl>
 
 </div>
 </div>

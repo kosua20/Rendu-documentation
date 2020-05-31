@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_library-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +105,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_library_8hpp_source.html">Library.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1907cb4ef6db38c72c6c412e6f09f00c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mesh.html">Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library.html#a1907cb4ef6db38c72c6c412e6f09f00c">generateGrid</a> (uint resolution, float scale)</td></tr>
+<tr class="separator:a1907cb4ef6db38c72c6c412e6f09f00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae532ba01e8d26bfee41a314fe990e4a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mesh.html">Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library.html#ae532ba01e8d26bfee41a314fe990e4a8">generateCylinder</a> (uint resolution, float radius, float height)</td></tr>
+<tr class="separator:ae532ba01e8d26bfee41a314fe990e4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a053b8e2030e36a31f545add2182e021f"><td class="memItemLeft" align="right" valign="top">static const std::array&lt; glm::vec3, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library.html#a053b8e2030e36a31f545add2182e021f">boxUps</a></td></tr>
@@ -124,7 +132,103 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The library provides a few commonly-used resources without having to set them up or query them from the resources manager. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae532ba01e8d26bfee41a314fe990e4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae532ba01e8d26bfee41a314fe990e4a8">&#9670;&nbsp;</a></span>generateCylinder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mesh.html">Mesh</a> Library::generateCylinder </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate a Y-axis cylinder mesh. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>the number of faces </td></tr>
+    <tr><td class="paramname">radius</td><td>the cylinder radius </td></tr>
+    <tr><td class="paramname">height</td><td>the cylinder height </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the mesh </dd></dl>
+
+</div>
+</div>
+<a id="a1907cb4ef6db38c72c6c412e6f09f00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1907cb4ef6db38c72c6c412e6f09f00c">&#9670;&nbsp;</a></span>generateGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mesh.html">Mesh</a> Library::generateGrid </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate a XZ planar grid mesh. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>number of cells on each axis </td></tr>
+    <tr><td class="paramname">scale</td><td>dimension of each cell </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the mesh </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a43b82fc96d81e966e8a50dcfc0ed8d72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43b82fc96d81e966e8a50dcfc0ed8d72">&#9670;&nbsp;</a></span>boxCenters</h2>
 

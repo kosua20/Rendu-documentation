@@ -127,12 +127,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a81a8d12b50ca376e06e5330f6f26e948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5357f70ec812d72232c3a82d0ccd8f48"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a5357f70ec812d72232c3a82d0ccd8f48">loadShader</a> (const std::string &amp;prog, <a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> type, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, std::string &amp;finalLog)</td></tr>
 <tr class="separator:a5357f70ec812d72232c3a82d0ccd8f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a643963484b5fa7b447c3d00cd00023f3"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a643963484b5fa7b447c3d00cd00023f3">createProgram</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, const std::string &amp;debugInfos)</td></tr>
-<tr class="separator:a643963484b5fa7b447c3d00cd00023f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b13a234d93aefdc6dac4be466ef4740"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6b13a234d93aefdc6dac4be466ef4740">createProgram</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, const std::string &amp;tessControlContent, const std::string &amp;tessEvalContent, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, const std::string &amp;debugInfos)</td></tr>
+<tr class="separator:a6b13a234d93aefdc6dac4be466ef4740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8356140c2bd751f94408f6a1b122d002"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8356140c2bd751f94408f6a1b122d002">saveFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, unsigned int width, unsigned int height, const std::string &amp;path, bool flip=true, bool ignoreAlpha=false)</td></tr>
 <tr class="separator:a8356140c2bd751f94408f6a1b122d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f4da13d9acd3a8d99c426e9d7575c14"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6f4da13d9acd3a8d99c426e9d7575c14">bindTexture</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, size_t slot)</td></tr>
 <tr class="separator:a6f4da13d9acd3a8d99c426e9d7575c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb2fecc71adae531131d97d8d884c09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aafb2fecc71adae531131d97d8d884c09">bindTexture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, size_t slot)</td></tr>
+<tr class="separator:aafb2fecc71adae531131d97d8d884c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f3d6239e367552ac21761fab5213aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a46f3d6239e367552ac21761fab5213aa">bindTextures</a> (const std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt; &amp;textures, size_t startingSlot=0)</td></tr>
 <tr class="separator:a46f3d6239e367552ac21761fab5213aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cfc201808f15135d37a4f0c83f834f5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a3cfc201808f15135d37a4f0c83f834f5">setupTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture, const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;descriptor)</td></tr>
@@ -163,6 +165,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a86d4734b1495621d01debc7b96c5e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ce92e4a9daf800176434f152a2bca8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a42ce92e4a9daf800176434f152a2bca8">drawMesh</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;mesh)</td></tr>
 <tr class="separator:a42ce92e4a9daf800176434f152a2bca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa663cce2de2e4a55fe5aff42086fe549"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aa663cce2de2e4a55fe5aff42086fe549">drawTesselatedMesh</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;mesh, uint patchSize)</td></tr>
+<tr class="separator:aa663cce2de2e4a55fe5aff42086fe549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d9ff7c6840abf4de120b3241e69cc6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a89d9ff7c6840abf4de120b3241e69cc6">sync</a> ()</td></tr>
 <tr class="separator:a89d9ff7c6840abf4de120b3241e69cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729a8bcadf17440fd0757d2b05c7b241"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a729a8bcadf17440fd0757d2b05c7b241">deviceInfos</a> (std::string &amp;vendor, std::string &amp;renderer, std::string &amp;version, std::string &amp;shaderVersion)</td></tr>
@@ -179,8 +183,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae72f02514a4353ad7676fc214c5edae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdda3872bfde962d3fc5f3f46736b41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a4cdda3872bfde962d3fc5f3f46736b41">setDepthState</a> (bool test)</td></tr>
 <tr class="separator:a4cdda3872bfde962d3fc5f3f46736b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf87a82a9c22edf3eaa603eb2e37a8c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6bf87a82a9c22edf3eaa603eb2e37a8c">setDepthState</a> (bool test, <a class="el" href="group___resources.html#ga4144e5bae086836c0cbb1689d2f1c349">DepthEquation</a> equation, bool write=false)</td></tr>
-<tr class="separator:a6bf87a82a9c22edf3eaa603eb2e37a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e6dd24d5f2ba300c47dc83f034daaf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a41e6dd24d5f2ba300c47dc83f034daaf">setDepthState</a> (bool test, <a class="el" href="group___resources.html#ga4144e5bae086836c0cbb1689d2f1c349">DepthEquation</a> equation, bool write)</td></tr>
+<tr class="separator:a41e6dd24d5f2ba300c47dc83f034daaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4383b1b0c0b7a128bd77e7d0f0932a05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a4383b1b0c0b7a128bd77e7d0f0932a05">setBlendState</a> (bool test)</td></tr>
 <tr class="separator:a4383b1b0c0b7a128bd77e7d0f0932a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66fe035039da9093c93029d77178baef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a66fe035039da9093c93029d77178baef">setBlendState</a> (bool test, <a class="el" href="group___resources.html#ga0b5a5136bfbfae2a7b34d21044dd00ab">BlendEquation</a> equation, <a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a> src, <a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a> dst)</td></tr>
@@ -201,6 +205,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6cbf557cbb5b7a5c1e591f50f155c54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b2819871c9109d85167fec31de67df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ad1b2819871c9109d85167fec31de67df">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_texture.html">Texture</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:ad1b2819871c9109d85167fec31de67df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334e9494f00fd7cfe8dcc3b5468a6661"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a334e9494f00fd7cfe8dcc3b5468a6661">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
+<tr class="separator:a334e9494f00fd7cfe8dcc3b5468a6661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -358,8 +364,51 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aafb2fecc71adae531131d97d8d884c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb2fecc71adae531131d97d8d884c09">&#9670;&nbsp;</a></span>bindTexture() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::bindTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bind a texture to some texture slot. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the infos of the texture to bind </td></tr>
+    <tr><td class="paramname">slot</td><td>the binding slot </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6f4da13d9acd3a8d99c426e9d7575c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f4da13d9acd3a8d99c426e9d7575c14">&#9670;&nbsp;</a></span>bindTexture()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4da13d9acd3a8d99c426e9d7575c14">&#9670;&nbsp;</a></span>bindTexture() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +494,7 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a244d3e72767fc0e2e968667557c4e2f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +545,7 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a83f3a0c4ed04a5fa5208f8b89cc18d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f3a0c4ed04a5fa5208f8b89cc18d7d">&#9670;&nbsp;</a></span>blit() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f3a0c4ed04a5fa5208f8b89cc18d7d">&#9670;&nbsp;</a></span>blit() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,7 +609,7 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6cbf557cbb5b7a5c1e591f50f155c54a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cbf557cbb5b7a5c1e591f50f155c54a">&#9670;&nbsp;</a></span>blit() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbf557cbb5b7a5c1e591f50f155c54a">&#9670;&nbsp;</a></span>blit() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -637,8 +686,59 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a334e9494f00fd7cfe8dcc3b5468a6661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334e9494f00fd7cfe8dcc3b5468a6661">&#9670;&nbsp;</a></span>blit() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::blit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a>&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Blit the content of a texture into a framebuffer first attachment, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>the source texture </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This can be used to easily blit a color attachment that is not the first one. </dd></dl>
+
+</div>
+</div>
 <a id="ad1b2819871c9109d85167fec31de67df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b2819871c9109d85167fec31de67df">&#9670;&nbsp;</a></span>blit() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b2819871c9109d85167fec31de67df">&#9670;&nbsp;</a></span>blit() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,8 +939,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a643963484b5fa7b447c3d00cd00023f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a643963484b5fa7b447c3d00cd00023f3">&#9670;&nbsp;</a></span>createProgram()</h2>
+<a id="a6b13a234d93aefdc6dac4be466ef4740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b13a234d93aefdc6dac4be466ef4740">&#9670;&nbsp;</a></span>createProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -865,6 +965,18 @@ Static Private Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>geometryContent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tessControlContent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tessEvalContent</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -895,6 +1007,8 @@ Static Private Member Functions</h2></td></tr>
     <tr><td class="paramname">vertexContent</td><td>the vertex shader string </td></tr>
     <tr><td class="paramname">fragmentContent</td><td>the fragment shader string </td></tr>
     <tr><td class="paramname">geometryContent</td><td>the optional geometry shader string </td></tr>
+    <tr><td class="paramname">tessControlContent</td><td>the optional tesselation control shader string </td></tr>
+    <tr><td class="paramname">tessEvalContent</td><td>the optional tesselation evaluation shader string </td></tr>
     <tr><td class="paramname">bindings</td><td>will be filled with the samplers present in the shaders and their user-defined locations </td></tr>
     <tr><td class="paramname">debugInfos</td><td>the name of the program, or any custom debug infos that will be logged. </td></tr>
   </table>
@@ -1147,6 +1261,49 @@ Static Private Member Functions</h2></td></tr>
 <p>Draw indexed geometry. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mesh</td><td>the mesh to draw </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa663cce2de2e4a55fe5aff42086fe549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa663cce2de2e4a55fe5aff42086fe549">&#9670;&nbsp;</a></span>drawTesselatedMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::drawTesselatedMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mesh.html">Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>patchSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw tessellated geometry. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>the mesh to tessellate and render </td></tr>
+    <tr><td class="paramname">patchSize</td><td>number of vertices to use in a patch </td></tr>
   </table>
   </dd>
 </dl>
@@ -1599,8 +1756,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6bf87a82a9c22edf3eaa603eb2e37a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bf87a82a9c22edf3eaa603eb2e37a8c">&#9670;&nbsp;</a></span>setDepthState() <span class="overload">[2/2]</span></h2>
+<a id="a41e6dd24d5f2ba300c47dc83f034daaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e6dd24d5f2ba300c47dc83f034daaf">&#9670;&nbsp;</a></span>setDepthState() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1624,7 +1781,7 @@ Static Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>write</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>write</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

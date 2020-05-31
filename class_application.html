@@ -94,6 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_application-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Application Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___engine.html">Engine</a></div></div>  </div>
@@ -117,6 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c5bd91a6adfd9288c60060428540baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee06db38c716c4ddb8e4b1523d959266"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aee06db38c716c4ddb8e4b1523d959266">resize</a> ()=0</td></tr>
 <tr class="separator:aee06db38c716c4ddb8e4b1523d959266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee274e0852f4b354493b65755edbb7a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aee274e0852f4b354493b65755edbb7a2">timeElapsed</a> ()</td></tr>
+<tr class="separator:aee274e0852f4b354493b65755edbb7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac93f89fa620b3688318e2ca7fac1e9a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aac93f89fa620b3688318e2ca7fac1e9a">frameTime</a> ()</td></tr>
+<tr class="separator:aac93f89fa620b3688318e2ca7fac1e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae272c55ac940a82b53d1ad52db9098a9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#ae272c55ac940a82b53d1ad52db9098a9">frameRate</a> ()</td></tr>
+<tr class="separator:ae272c55ac940a82b53d1ad52db9098a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f376dd545ef51cb33615312a39ca18"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#af9f376dd545ef51cb33615312a39ca18">~Application</a> ()=default</td></tr>
 <tr class="separator:af9f376dd545ef51cb33615312a39ca18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaeec66a8591b6d88049b260133d13fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#afaeec66a8591b6d88049b260133d13fc">Application</a> (const <a class="el" href="class_application.html">Application</a> &amp;)=delete</td></tr>
@@ -134,6 +142,36 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#af541550220e4c88083326b77626f957a">_config</a></td></tr>
 <tr class="memdesc:af541550220e4c88083326b77626f957a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current configuration. <br /></td></tr>
 <tr class="separator:af541550220e4c88083326b77626f957a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a740a5c4dff7d503cd9652045d8a8e2ee"><td class="memItemLeft" align="right" valign="top"><a id="a740a5c4dff7d503cd9652045d8a8e2ee"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a740a5c4dff7d503cd9652045d8a8e2ee">_timer</a> = 0.0</td></tr>
+<tr class="memdesc:a740a5c4dff7d503cd9652045d8a8e2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute timer. <br /></td></tr>
+<tr class="separator:a740a5c4dff7d503cd9652045d8a8e2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206330fed749dce6e69f7c5856a9ac3f"><td class="memItemLeft" align="right" valign="top"><a id="a206330fed749dce6e69f7c5856a9ac3f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a206330fed749dce6e69f7c5856a9ac3f">_startTime</a> = 0.0</td></tr>
+<tr class="memdesc:a206330fed749dce6e69f7c5856a9ac3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">TImer value at app start. <br /></td></tr>
+<tr class="separator:a206330fed749dce6e69f7c5856a9ac3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781552ca655a3397814ee21f0df7fd84"><td class="memItemLeft" align="right" valign="top"><a id="a781552ca655a3397814ee21f0df7fd84"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a781552ca655a3397814ee21f0df7fd84">_frameTime</a> = 0.0</td></tr>
+<tr class="memdesc:a781552ca655a3397814ee21f0df7fd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last frame duration. <br /></td></tr>
+<tr class="separator:a781552ca655a3397814ee21f0df7fd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada2c3d462a32d8af8931f2dd6a338b3"><td class="memItemLeft" align="right" valign="top"><a id="aada2c3d462a32d8af8931f2dd6a338b3"></a>
+std::array&lt; double, _framesCount &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_frameTimes</b></td></tr>
+<tr class="separator:aada2c3d462a32d8af8931f2dd6a338b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590764798bd79840e43d86c5f20047e6"><td class="memItemLeft" align="right" valign="top"><a id="a590764798bd79840e43d86c5f20047e6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>_smoothTime</b> = 0.0</td></tr>
+<tr class="separator:a590764798bd79840e43d86c5f20047e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff6235958371d9808f61746025c2dab"><td class="memItemLeft" align="right" valign="top"><a id="a6ff6235958371d9808f61746025c2dab"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_currFrame</b> = 0</td></tr>
+<tr class="separator:a6ff6235958371d9808f61746025c2dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a1b59c9813add57bf65d26ee5a5d3c2fb"><td class="memItemLeft" align="right" valign="top"><a id="a1b59c9813add57bf65d26ee5a5d3c2fb"></a>
+static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_framesCount</b> = 30</td></tr>
+<tr class="separator:a1b59c9813add57bf65d26ee5a5d3c2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base structure of an application. </p>
@@ -277,7 +315,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Clean internal resources. </p>
 
-<p>Implemented in <a class="el" href="class_atmosphere_app.html#a2e2a36176e4d6ca37a8d25ee8d424df4">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#aa0bd0d8c6d94b4a33935b2656b49df93">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a03524b43a2f5a358328938e29ad47831">PBRDemo</a>, <a class="el" href="class_path_tracer_app.html#a053835bfa2270db1d2a61d22883823d8">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#a7455492dc13e32354a9d2e8de494d307">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#acfce6c7b2daff716bf59bb71b192cca8">SceneEditor</a>.</p>
+<p>Implemented in <a class="el" href="class_atmosphere_app.html#a2e2a36176e4d6ca37a8d25ee8d424df4">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#aa0bd0d8c6d94b4a33935b2656b49df93">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a03524b43a2f5a358328938e29ad47831">PBRDemo</a>, <a class="el" href="class_island_app.html#aa288bd14b3cf6c773fbb4601c01c6dd9">IslandApp</a>, <a class="el" href="class_path_tracer_app.html#a053835bfa2270db1d2a61d22883823d8">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#a7455492dc13e32354a9d2e8de494d307">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#acfce6c7b2daff716bf59bb71b192cca8">SceneEditor</a>.</p>
 
 </div>
 </div>
@@ -305,7 +343,43 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw call. </p>
 
-<p>Implemented in <a class="el" href="class_atmosphere_app.html#a691c66d6712d444dd0a478a2405bf448">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#a748eaeb2c35c05ebbee84933319a8ef2">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a939c2c5b149e2956e7a3a781eca99d51">PBRDemo</a>, <a class="el" href="class_path_tracer_app.html#a1f3622da6dcf17a4e94fb279f760252e">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#a76d46581056681454b0ee6cd2e2cc636">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#a4e4e2488e0bbe08dfe54cffa70d477be">SceneEditor</a>.</p>
+<p>Implemented in <a class="el" href="class_atmosphere_app.html#a691c66d6712d444dd0a478a2405bf448">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#a748eaeb2c35c05ebbee84933319a8ef2">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a939c2c5b149e2956e7a3a781eca99d51">PBRDemo</a>, <a class="el" href="class_island_app.html#af0aa9bc190124f8a6bb2ceb8be63c70d">IslandApp</a>, <a class="el" href="class_path_tracer_app.html#a1f3622da6dcf17a4e94fb279f760252e">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#a76d46581056681454b0ee6cd2e2cc636">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#a4e4e2488e0bbe08dfe54cffa70d477be">SceneEditor</a>.</p>
+
+</div>
+</div>
+<a id="ae272c55ac940a82b53d1ad52db9098a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae272c55ac940a82b53d1ad52db9098a9">&#9670;&nbsp;</a></span>frameRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Application::frameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the frame rate, smoothed over the last 30 frames. </dd></dl>
+
+</div>
+</div>
+<a id="aac93f89fa620b3688318e2ca7fac1e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac93f89fa620b3688318e2ca7fac1e9a">&#9670;&nbsp;</a></span>frameTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Application::frameTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the last frame time </dd></dl>
 
 </div>
 </div>
@@ -387,7 +461,25 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Handle a window resize event, the configuration has been updated with the new size. </p>
 
-<p>Implemented in <a class="el" href="class_atmosphere_app.html#a77d1eca9176abff9581a85bf93ec3625">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#a2016aebcd55d6c2459a5c05b7dc71ce5">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a7f7a23c6ffe1c3aec4a64d2d30339079">PBRDemo</a>, <a class="el" href="class_path_tracer_app.html#ac143283265b40f2125512508851a9b58">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#add082997185e6b843f52528236eff479">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#a05992c3957cd35f8aecf173ecf835873">SceneEditor</a>.</p>
+<p>Implemented in <a class="el" href="class_atmosphere_app.html#a77d1eca9176abff9581a85bf93ec3625">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#a2016aebcd55d6c2459a5c05b7dc71ce5">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a7f7a23c6ffe1c3aec4a64d2d30339079">PBRDemo</a>, <a class="el" href="class_path_tracer_app.html#ac143283265b40f2125512508851a9b58">PathTracerApp</a>, <a class="el" href="class_island_app.html#a2827998681ff4da2856ca475e64a9e54">IslandApp</a>, <a class="el" href="class_shader_editor.html#add082997185e6b843f52528236eff479">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#a05992c3957cd35f8aecf173ecf835873">SceneEditor</a>.</p>
+
+</div>
+</div>
+<a id="aee274e0852f4b354493b65755edbb7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee274e0852f4b354493b65755edbb7a2">&#9670;&nbsp;</a></span>timeElapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Application::timeElapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the time elapsed since launch </dd></dl>
 
 </div>
 </div>
@@ -415,7 +507,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Interactions call. </p>
 
-<p>Reimplemented in <a class="el" href="class_atmosphere_app.html#aa6f85cada76d185960063e00090c6832">AtmosphereApp</a>, <a class="el" href="class_camera_app.html#ace499b2d33b8e54adeeced15f44fd4a9">CameraApp</a>, <a class="el" href="class_filtering_app.html#a80865a9a5002c1d6f9030cf6bfa07b01">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#abd6f59fdbf707c6deae2515369faaaff">PBRDemo</a>, <a class="el" href="class_path_tracer_app.html#aa223b7a804d66230cba88f7be4ff8aed">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#aa2d2f0f6d830c9be813a48e82aefebaf">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#a526d8e4105880b2cbd12ff972fbdb3e8">SceneEditor</a>.</p>
+<p>Reimplemented in <a class="el" href="class_camera_app.html#ace499b2d33b8e54adeeced15f44fd4a9">CameraApp</a>, <a class="el" href="class_atmosphere_app.html#aa6f85cada76d185960063e00090c6832">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#a80865a9a5002c1d6f9030cf6bfa07b01">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#abd6f59fdbf707c6deae2515369faaaff">PBRDemo</a>, <a class="el" href="class_island_app.html#a5d102ae4f30baef30daae1856b392f4a">IslandApp</a>, <a class="el" href="class_path_tracer_app.html#aa223b7a804d66230cba88f7be4ff8aed">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#aa2d2f0f6d830c9be813a48e82aefebaf">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#a526d8e4105880b2cbd12ff972fbdb3e8">SceneEditor</a>.</p>
 
 </div>
 </div>

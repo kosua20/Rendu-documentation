@@ -109,6 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4323fc64a71cee220dac92746a2bfe5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a4323fc64a71cee220dac92746a2bfe5e">BoundingBox</a> ()=default</td></tr>
 <tr class="separator:a4323fc64a71cee220dac92746a2bfe5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8989b79a94183367f1e7b38b905076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a2c8989b79a94183367f1e7b38b905076">BoundingBox</a> (const glm::vec3 &amp;v0, const glm::vec3 &amp;v1)</td></tr>
+<tr class="separator:a2c8989b79a94183367f1e7b38b905076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6b82ffe222a863fbc482a8cb2fd1f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a6f6b82ffe222a863fbc482a8cb2fd1f9">BoundingBox</a> (const glm::vec3 &amp;v0, const glm::vec3 &amp;v1, const glm::vec3 &amp;v2)</td></tr>
 <tr class="separator:a6f6b82ffe222a863fbc482a8cb2fd1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c95d9b0c6a7122cabfe19ae51e2d4cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a2c95d9b0c6a7122cabfe19ae51e2d4cd">merge</a> (const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
@@ -145,7 +147,7 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div class="textblock"><p>Represent the smallest axis-aligne box containing a given object or region of space. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4323fc64a71cee220dac92746a2bfe5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4323fc64a71cee220dac92746a2bfe5e">&#9670;&nbsp;</a></span>BoundingBox() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4323fc64a71cee220dac92746a2bfe5e">&#9670;&nbsp;</a></span>BoundingBox() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,8 +172,43 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 </div>
 </div>
+<a id="a2c8989b79a94183367f1e7b38b905076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8989b79a94183367f1e7b38b905076">&#9670;&nbsp;</a></span>BoundingBox() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoundingBox::BoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Corner-based box constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v0</td><td>first corner </td></tr>
+    <tr><td class="paramname">v1</td><td>second corner </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6f6b82ffe222a863fbc482a8cb2fd1f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f6b82ffe222a863fbc482a8cb2fd1f9">&#9670;&nbsp;</a></span>BoundingBox() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6b82ffe222a863fbc482a8cb2fd1f9">&#9670;&nbsp;</a></span>BoundingBox() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
