@@ -123,6 +123,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>generateMesh</b> ()</
 <tr class="memitem:a272236a837cbc85b3731d1449f703f17"><td class="memItemLeft" align="right" valign="top"><a id="a272236a837cbc85b3731d1449f703f17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>generateMap</b> ()</td></tr>
 <tr class="separator:a272236a837cbc85b3731d1449f703f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb61a58244a8893747c804da587229ce"><td class="memItemLeft" align="right" valign="top"><a id="adb61a58244a8893747c804da587229ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>generateShadowMap</b> (const glm::vec3 &amp;lightDir)</td></tr>
+<tr class="separator:adb61a58244a8893747c804da587229ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8e77177eab5bf7cb14851740189e8d"><td class="memItemLeft" align="right" valign="top"><a id="a3e8e77177eab5bf7cb14851740189e8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>interface</b> ()</td></tr>
 <tr class="separator:a3e8e77177eab5bf7cb14851740189e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +144,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>meshSize</b> () cons
 <tr class="memitem:ac11f384754fbf494af7ab0615d8c6b36"><td class="memItemLeft" align="right" valign="top"><a id="ac11f384754fbf494af7ab0615d8c6b36"></a>
 const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>map</b> () const</td></tr>
 <tr class="separator:ac11f384754fbf494af7ab0615d8c6b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f3209d1c2fa7caa4a0453924c06435"><td class="memItemLeft" align="right" valign="top"><a id="ac1f3209d1c2fa7caa4a0453924c06435"></a>
+const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>shadowMap</b> () const</td></tr>
+<tr class="separator:ac1f3209d1c2fa7caa4a0453924c06435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3cec8f1f81ee2fc81879e731cd526c5"><td class="memItemLeft" align="right" valign="top"><a id="af3cec8f1f81ee2fc81879e731cd526c5"></a>
 const std::vector&lt; <a class="el" href="struct_terrain_1_1_cell.html">Cell</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cells</b> () const</td></tr>
 <tr class="separator:af3cec8f1f81ee2fc81879e731cd526c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +171,15 @@ std::vector&lt; <a class="el" href="struct_terrain_1_1_cell.html">Cell</a> &gt;&
 <tr class="memitem:acb91619991fd50e8ce57fa856f156d24"><td class="memItemLeft" align="right" valign="top"><a id="acb91619991fd50e8ce57fa856f156d24"></a>
 <a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
 <tr class="separator:acb91619991fd50e8ce57fa856f156d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917244f04e88881fd8817d7f03f266a8"><td class="memItemLeft" align="right" valign="top"><a id="a917244f04e88881fd8817d7f03f266a8"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_mapLowRes</b></td></tr>
+<tr class="separator:a917244f04e88881fd8817d7f03f266a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920f3ce37ccb888dd5940a89ad50bceb"><td class="memItemLeft" align="right" valign="top"><a id="a920f3ce37ccb888dd5940a89ad50bceb"></a>
+std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_shadowBuffer</b></td></tr>
+<tr class="separator:a920f3ce37ccb888dd5940a89ad50bceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d12e85072c1ae09bd6732edf2851bfb"><td class="memItemLeft" align="right" valign="top"><a id="a6d12e85072c1ae09bd6732edf2851bfb"></a>
+<a class="el" href="class_gaussian_blur.html">GaussianBlur</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_gaussBlur</b></td></tr>
+<tr class="separator:a6d12e85072c1ae09bd6732edf2851bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71e5b87faf0f78ed6cd561840b79b54"><td class="memItemLeft" align="right" valign="top"><a id="ab71e5b87faf0f78ed6cd561840b79b54"></a>
 <a class="el" href="struct_terrain_1_1_generation_settings.html">GenerationSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_genOpts</b></td></tr>
 <tr class="separator:ab71e5b87faf0f78ed6cd561840b79b54"><td class="memSeparator" colspan="2">&#160;</td></tr>

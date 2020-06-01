@@ -123,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8fa1136895fe2c266f8690eba491f581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244ed98b7e6968e4eb3b399876580295"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a244ed98b7e6968e4eb3b399876580295">rgb</a> (int x, int y) const</td></tr>
 <tr class="separator:a244ed98b7e6968e4eb3b399876580295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb64a50f57e82c374235eb2703e43c82"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#acb64a50f57e82c374235eb2703e43c82">r</a> (int x, int y) const</td></tr>
+<tr class="separator:acb64a50f57e82c374235eb2703e43c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2059bc934f02428cc30cc4eafb76b9"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#acc2059bc934f02428cc30cc4eafb76b9">rgbl</a> (float x, float y) const</td></tr>
 <tr class="separator:acc2059bc934f02428cc30cc4eafb76b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af9fd95ddbbb88f5e11325d9a552431"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a2af9fd95ddbbb88f5e11325d9a552431">rgbn</a> (float x, float y) const</td></tr>
@@ -565,7 +567,7 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a18bdc396f50c0d2112f3964009e3e965"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18bdc396f50c0d2112f3964009e3e965">&#9670;&nbsp;</a></span>r()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bdc396f50c0d2112f3964009e3e965">&#9670;&nbsp;</a></span>r() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,6 +592,43 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Accessor to the red/first component of a pixel </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>horizontal coordinate </td></tr>
+    <tr><td class="paramname">y</td><td>vertical coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to the given pixel first component </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>no access or component check is done </dd></dl>
+
+</div>
+</div>
+<a id="acb64a50f57e82c374235eb2703e43c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb64a50f57e82c374235eb2703e43c82">&#9670;&nbsp;</a></span>r() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float &amp; Image::r </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Const accessor to the red/first component of a pixel </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>horizontal coordinate </td></tr>
     <tr><td class="paramname">y</td><td>vertical coordinate </td></tr>
