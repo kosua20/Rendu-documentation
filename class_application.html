@@ -115,8 +115,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad11a344e0f03f1389b10cd6cff430219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051023103d00b96b1e5e7437fd8e2e7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a051023103d00b96b1e5e7437fd8e2e7c">update</a> ()</td></tr>
 <tr class="separator:a051023103d00b96b1e5e7437fd8e2e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c5bd91a6adfd9288c60060428540baf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a5c5bd91a6adfd9288c60060428540baf">clean</a> ()=0</td></tr>
-<tr class="separator:a5c5bd91a6adfd9288c60060428540baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee06db38c716c4ddb8e4b1523d959266"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aee06db38c716c4ddb8e4b1523d959266">resize</a> ()=0</td></tr>
 <tr class="separator:aee06db38c716c4ddb8e4b1523d959266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee274e0852f4b354493b65755edbb7a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aee274e0852f4b354493b65755edbb7a2">timeElapsed</a> ()</td></tr>
@@ -142,6 +140,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#af541550220e4c88083326b77626f957a">_config</a></td></tr>
 <tr class="memdesc:af541550220e4c88083326b77626f957a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current configuration. <br /></td></tr>
 <tr class="separator:af541550220e4c88083326b77626f957a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe037812376f6c2c51557cd487379f38"><td class="memItemLeft" align="right" valign="top"><a id="abe037812376f6c2c51557cd487379f38"></a>
+std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#abe037812376f6c2c51557cd487379f38">_debug</a></td></tr>
+<tr class="memdesc:abe037812376f6c2c51557cd487379f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug viewer. <br /></td></tr>
+<tr class="separator:abe037812376f6c2c51557cd487379f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -158,19 +160,27 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="memdesc:a781552ca655a3397814ee21f0df7fd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last frame duration. <br /></td></tr>
 <tr class="separator:a781552ca655a3397814ee21f0df7fd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada2c3d462a32d8af8931f2dd6a338b3"><td class="memItemLeft" align="right" valign="top"><a id="aada2c3d462a32d8af8931f2dd6a338b3"></a>
-std::array&lt; double, _framesCount &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_frameTimes</b></td></tr>
+std::array&lt; double, <a class="el" href="class_application.html#a1b59c9813add57bf65d26ee5a5d3c2fb">_framesCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aada2c3d462a32d8af8931f2dd6a338b3">_frameTimes</a></td></tr>
+<tr class="memdesc:aada2c3d462a32d8af8931f2dd6a338b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last N frame times. <br /></td></tr>
 <tr class="separator:aada2c3d462a32d8af8931f2dd6a338b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a590764798bd79840e43d86c5f20047e6"><td class="memItemLeft" align="right" valign="top"><a id="a590764798bd79840e43d86c5f20047e6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>_smoothTime</b> = 0.0</td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a590764798bd79840e43d86c5f20047e6">_smoothTime</a> = 0.0</td></tr>
+<tr class="memdesc:a590764798bd79840e43d86c5f20047e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time elapsed over the last N frames. <br /></td></tr>
 <tr class="separator:a590764798bd79840e43d86c5f20047e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff6235958371d9808f61746025c2dab"><td class="memItemLeft" align="right" valign="top"><a id="a6ff6235958371d9808f61746025c2dab"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_currFrame</b> = 0</td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a6ff6235958371d9808f61746025c2dab">_currFrame</a> = 0</td></tr>
+<tr class="memdesc:a6ff6235958371d9808f61746025c2dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current frame index for smoothing. <br /></td></tr>
 <tr class="separator:a6ff6235958371d9808f61746025c2dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad269f33ac523550247a71ad3184694b4"><td class="memItemLeft" align="right" valign="top"><a id="ad269f33ac523550247a71ad3184694b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#ad269f33ac523550247a71ad3184694b4">_showDebug</a> = false</td></tr>
+<tr class="memdesc:ad269f33ac523550247a71ad3184694b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show debug viewer. <br /></td></tr>
+<tr class="separator:ad269f33ac523550247a71ad3184694b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a1b59c9813add57bf65d26ee5a5d3c2fb"><td class="memItemLeft" align="right" valign="top"><a id="a1b59c9813add57bf65d26ee5a5d3c2fb"></a>
-static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_framesCount</b> = 30</td></tr>
+static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#a1b59c9813add57bf65d26ee5a5d3c2fb">_framesCount</a> = 30</td></tr>
+<tr class="memdesc:a1b59c9813add57bf65d26ee5a5d3c2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames to average over for FPS display. <br /></td></tr>
 <tr class="separator:a1b59c9813add57bf65d26ee5a5d3c2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -291,34 +301,6 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_frame
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5c5bd91a6adfd9288c60060428540baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c5bd91a6adfd9288c60060428540baf">&#9670;&nbsp;</a></span>clean()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Application::clean </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Clean internal resources. </p>
-
-<p>Implemented in <a class="el" href="class_atmosphere_app.html#a2e2a36176e4d6ca37a8d25ee8d424df4">AtmosphereApp</a>, <a class="el" href="class_filtering_app.html#aa0bd0d8c6d94b4a33935b2656b49df93">FilteringApp</a>, <a class="el" href="class_p_b_r_demo.html#a03524b43a2f5a358328938e29ad47831">PBRDemo</a>, <a class="el" href="class_island_app.html#aa288bd14b3cf6c773fbb4601c01c6dd9">IslandApp</a>, <a class="el" href="class_path_tracer_app.html#a053835bfa2270db1d2a61d22883823d8">PathTracerApp</a>, <a class="el" href="class_shader_editor.html#a7455492dc13e32354a9d2e8de494d307">ShaderEditor</a>, and <a class="el" href="class_scene_editor.html#acfce6c7b2daff716bf59bb71b192cca8">SceneEditor</a>.</p>
-
-</div>
-</div>
 <a id="ad11a344e0f03f1389b10cd6cff430219"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad11a344e0f03f1389b10cd6cff430219">&#9670;&nbsp;</a></span>draw()</h2>
 
