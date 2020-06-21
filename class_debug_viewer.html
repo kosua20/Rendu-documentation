@@ -115,6 +115,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_infos.html">Infos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -124,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6280b03f6e27af19ef36dd852bba97dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0428c2e5b78a302ee9f7f4590bbdea92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0428c2e5b78a302ee9f7f4590bbdea92">track</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
 <tr class="separator:a0428c2e5b78a302ee9f7f4590bbdea92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d268c19bb06be46038ecf2d8b0e44f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a53d268c19bb06be46038ecf2d8b0e44f">trackState</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a53d268c19bb06be46038ecf2d8b0e44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137c3f270615c93c69a500799f1897c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a137c3f270615c93c69a500799f1897c3">untrack</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a137c3f270615c93c69a500799f1897c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7077a46c665a7a5c3ec19fa87813bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aae7077a46c665a7a5c3ec19fa87813bd">untrack</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
@@ -156,6 +160,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a3daf28f109b780a4a740115cb224082f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a3daf28f109b780a4a740115cb224082f">displayState</a> (const std::string &amp;name, <a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &amp;infos)</td></tr>
+<tr class="separator:a3daf28f109b780a4a740115cb224082f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e155a1d2a33882bb74b1446b5cd3ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a80e155a1d2a33882bb74b1446b5cd3ad">registerTexture</a> (const std::string &amp;name, const <a class="el" href="class_texture.html">Texture</a> *tex, <a class="el" href="struct_debug_viewer_1_1_infos.html">Infos</a> &amp;infos)</td></tr>
 <tr class="separator:a80e155a1d2a33882bb74b1446b5cd3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fade9151bd2bf955bda4f58d53cd35a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a9fade9151bd2bf955bda4f58d53cd35a">displayTexture</a> (<a class="el" href="struct_debug_viewer_1_1_infos.html">Infos</a> &amp;tex, const std::string &amp;prefix)</td></tr>
@@ -173,6 +179,10 @@ std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_infos.html">Infos</a
 std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_framebuffer_infos.html">FramebufferInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a788033984daba6be95983b1cd5817b19">_framebuffers</a></td></tr>
 <tr class="memdesc:a788033984daba6be95983b1cd5817b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered framebuffers. <br /></td></tr>
 <tr class="separator:a788033984daba6be95983b1cd5817b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb991698a5bd07ef0576dcfa97764f1"><td class="memItemLeft" align="right" valign="top"><a id="aceb991698a5bd07ef0576dcfa97764f1"></a>
+std::map&lt; std::string, <a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aceb991698a5bd07ef0576dcfa97764f1">_states</a></td></tr>
+<tr class="memdesc:aceb991698a5bd07ef0576dcfa97764f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> states currently tracked. <br /></td></tr>
+<tr class="separator:aceb991698a5bd07ef0576dcfa97764f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a326317bfbd1f2330eb3ac5ea0edcfe37"><td class="memItemLeft" align="right" valign="top"><a id="a326317bfbd1f2330eb3ac5ea0edcfe37"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a326317bfbd1f2330eb3ac5ea0edcfe37">_texDisplay</a></td></tr>
 <tr class="memdesc:a326317bfbd1f2330eb3ac5ea0edcfe37"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> display shader. <br /></td></tr>
@@ -317,6 +327,49 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3daf28f109b780a4a740115cb224082f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3daf28f109b780a4a740115cb224082f">&#9670;&nbsp;</a></span>displayState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::displayState </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &amp;&#160;</td>
+          <td class="paramname"><em>infos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Display <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state in a panel. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of the state </td></tr>
+    <tr><td class="paramname">infos</td><td>the state to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9fade9151bd2bf955bda4f58d53cd35a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fade9151bd2bf955bda4f58d53cd35a">&#9670;&nbsp;</a></span>displayTexture()</h2>
 
@@ -505,7 +558,12 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Register a default debug viewer. </p>
+<p>Register a default debug viewer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewer</td><td>the viewer to use as default </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -615,6 +673,30 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 <p>Register a texture for debug. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tex</td><td>the texture to monitor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53d268c19bb06be46038ecf2d8b0e44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d268c19bb06be46038ecf2d8b0e44f">&#9670;&nbsp;</a></span>trackState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::trackState </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Track the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state at the moment of the call. Can be called at each frame to track varying state. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the display name of the state </td></tr>
   </table>
   </dd>
 </dl>

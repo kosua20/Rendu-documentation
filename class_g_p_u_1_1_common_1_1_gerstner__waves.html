@@ -114,16 +114,199 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa15b82cb00b4f201bf5a988e402acb80"><td class="memItemLeft" align="right" valign="top"><a id="aa15b82cb00b4f201bf5a988e402acb80"></a>
-vec3&#160;</td><td class="memItemRight" valign="bottom"><b>gerstner</b> (<a class="el" href="struct_g_p_u_1_1_common_1_1_gerstner__waves_1_1_wave.html">Wave</a> gw, vec2 p, float t)</td></tr>
+<tr class="memitem:aa15b82cb00b4f201bf5a988e402acb80"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_gerstner__waves.html#aa15b82cb00b4f201bf5a988e402acb80">gerstner</a> (<a class="el" href="struct_g_p_u_1_1_common_1_1_gerstner__waves_1_1_wave.html">Wave</a> gw, vec2 p, float t)</td></tr>
 <tr class="separator:aa15b82cb00b4f201bf5a988e402acb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebeb0177140759c6097255ff6b54fa3b"><td class="memItemLeft" align="right" valign="top"><a id="aebeb0177140759c6097255ff6b54fa3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gerstnerFrame</b> (<a class="el" href="struct_g_p_u_1_1_common_1_1_gerstner__waves_1_1_wave.html">Wave</a> gw, vec3 pos, float t, inout vec3 tn, inout vec3 bn, inout vec3 nn, float distWeight)</td></tr>
+<tr class="memitem:aebeb0177140759c6097255ff6b54fa3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_gerstner__waves.html#aebeb0177140759c6097255ff6b54fa3b">gerstnerFrame</a> (<a class="el" href="struct_g_p_u_1_1_common_1_1_gerstner__waves_1_1_wave.html">Wave</a> gw, vec3 pos, float t, inout vec3 tn, inout vec3 bn, inout vec3 nn, float distWeight)</td></tr>
 <tr class="separator:aebeb0177140759c6097255ff6b54fa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1e0795edd87ee98d1e49752d4589cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_gerstner__waves.html#aff1e0795edd87ee98d1e49752d4589cd">gerstnerFrameFinalize</a> (inout vec3 tn, inout vec3 bn, inout vec3 nn)</td></tr>
+<tr class="separator:aff1e0795edd87ee98d1e49752d4589cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Gerstner waves general shader. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa15b82cb00b4f201bf5a988e402acb80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15b82cb00b4f201bf5a988e402acb80">&#9670;&nbsp;</a></span>gerstner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPU::Common::Gerstner_waves::gerstner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_1_1_common_1_1_gerstner__waves_1_1_wave.html">Wave</a>&#160;</td>
+          <td class="paramname"><em>gw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec2&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Apply a Gerstner wave to a given location in the plane. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gw</td><td>the wave parameters </td></tr>
+    <tr><td class="paramname">p</td><td>the 2D position to evaluate the wave at </td></tr>
+    <tr><td class="paramname">t</td><td>the current time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the shifted 3D wave position </dd></dl>
+
+</div>
+</div>
+<a id="aebeb0177140759c6097255ff6b54fa3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebeb0177140759c6097255ff6b54fa3b">&#9670;&nbsp;</a></span>gerstnerFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::Common::Gerstner_waves::gerstnerFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_1_1_common_1_1_gerstner__waves_1_1_wave.html">Wave</a>&#160;</td>
+          <td class="paramname"><em>gw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inout vec3&#160;</td>
+          <td class="paramname"><em>tn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inout vec3&#160;</td>
+          <td class="paramname"><em>bn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inout vec3&#160;</td>
+          <td class="paramname"><em>nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>distWeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the normal and tangent frame information associated to a given wave. </p><dl class="section note"><dt>Note</dt><dd>Multiple waves can be applied sequentially, call gerstnerFrameFinalize at the end. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gw</td><td>the wave parameters </td></tr>
+    <tr><td class="paramname">pos</td><td>the 3D wave position </td></tr>
+    <tr><td class="paramname">t</td><td>the current time </td></tr>
+    <tr><td class="paramname">tn</td><td>will contain accumulated tangent information </td></tr>
+    <tr><td class="paramname">bn</td><td>will contain accumulated bitangent information </td></tr>
+    <tr><td class="paramname">nn</td><td>will contain accumulated normal information </td></tr>
+    <tr><td class="paramname">distWeight</td><td>wave attenuation factor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the shifted 3D wave position </dd></dl>
+
+</div>
+</div>
+<a id="aff1e0795edd87ee98d1e49752d4589cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1e0795edd87ee98d1e49752d4589cd">&#9670;&nbsp;</a></span>gerstnerFrameFinalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::Common::Gerstner_waves::gerstnerFrameFinalize </td>
+          <td>(</td>
+          <td class="paramtype">inout vec3&#160;</td>
+          <td class="paramname"><em>tn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inout vec3&#160;</td>
+          <td class="paramname"><em>bn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inout vec3&#160;</td>
+          <td class="paramname"><em>nn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Finalize the local tangent frame for a point on the surface. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tn</td><td>accumulated tangent information </td></tr>
+    <tr><td class="paramname">bn</td><td>accumulated bitangent information </td></tr>
+    <tr><td class="paramname">nn</td><td>accumulated normal information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Inputs will be updated and normalized. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>resources/island/shaders/gerstner_waves.glsl</li>
 </ul>
 </div><!-- contents -->
