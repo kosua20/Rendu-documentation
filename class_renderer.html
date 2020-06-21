@@ -115,10 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade00d55b9186cbc9b9fa5e5732f76c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292491f31d71c939e4a097493068c4c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a292491f31d71c939e4a097493068c4c1">interface</a> ()</td></tr>
 <tr class="separator:a292491f31d71c939e4a097493068c4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31f687a8a86ed26c10d4afe962a3630"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae31f687a8a86ed26c10d4afe962a3630">createOutput</a> (uint width, uint height) const</td></tr>
-<tr class="separator:ae31f687a8a86ed26c10d4afe962a3630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac977c960eee57059a34285b52b5b7a04"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ac977c960eee57059a34285b52b5b7a04">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth, uint mips) const</td></tr>
-<tr class="separator:ac977c960eee57059a34285b52b5b7a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4447fce4864a7f658a520b71735ac2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a2b4447fce4864a7f658a520b71735ac2">createOutput</a> (uint width, uint height, const std::string &amp;name) const</td></tr>
+<tr class="separator:a2b4447fce4864a7f658a520b71735ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca9d39f6d8f84245e1d65b89ae4b371"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a0ca9d39f6d8f84245e1d65b89ae4b371">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth, uint mips, const std::string &amp;name) const</td></tr>
+<tr class="separator:a0ca9d39f6d8f84245e1d65b89ae4b371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2012f269f157754034e7b5475a8927"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#add2012f269f157754034e7b5475a8927">~Renderer</a> ()=default</td></tr>
 <tr class="separator:add2012f269f157754034e7b5475a8927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6e15f666cb188a936004add75e6c6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a8c6e15f666cb188a936004add75e6c6b">Renderer</a> (const <a class="el" href="class_renderer.html">Renderer</a> &amp;)=delete</td></tr>
@@ -253,8 +253,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac977c960eee57059a34285b52b5b7a04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac977c960eee57059a34285b52b5b7a04">&#9670;&nbsp;</a></span>createOutput() <span class="overload">[1/2]</span></h2>
+<a id="a0ca9d39f6d8f84245e1d65b89ae4b371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca9d39f6d8f84245e1d65b89ae4b371">&#9670;&nbsp;</a></span>createOutput() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +287,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>mips</em>&#160;</td>
+          <td class="paramname"><em>mips</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -303,6 +309,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">height</td><td>the framebuffer height </td></tr>
     <tr><td class="paramname">depth</td><td>the framebuffer depth </td></tr>
     <tr><td class="paramname">mips</td><td>the number of mip levels for the framebuffer </td></tr>
+    <tr><td class="paramname">name</td><td>the framebuffer name </td></tr>
   </table>
   </dd>
 </dl>
@@ -310,8 +317,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ae31f687a8a86ed26c10d4afe962a3630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae31f687a8a86ed26c10d4afe962a3630">&#9670;&nbsp;</a></span>createOutput() <span class="overload">[2/2]</span></h2>
+<a id="a2b4447fce4864a7f658a520b71735ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4447fce4864a7f658a520b71735ac2">&#9670;&nbsp;</a></span>createOutput() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,7 +333,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -339,6 +352,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <table class="params">
     <tr><td class="paramname">width</td><td>the framebuffer width </td></tr>
     <tr><td class="paramname">height</td><td>the framebuffer height </td></tr>
+    <tr><td class="paramname">name</td><td>the framebuffer name </td></tr>
   </table>
   </dd>
 </dl>
