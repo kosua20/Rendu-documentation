@@ -118,10 +118,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa200b9e345e84f759c60c97d1ea97059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#aa200b9e345e84f759c60c97d1ea97059">Mesh</a> (const std::string &amp;<a class="el" href="class_mesh.html#a511a9c4441ce4d4310aa748f523959ad">name</a>)</td></tr>
+<tr class="separator:aa200b9e345e84f759c60c97d1ea97059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3aa861bcfdabaf582dd67738479529"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a6d3aa861bcfdabaf582dd67738479529">Mesh</a> (std::istream &amp;in, <a class="el" href="class_mesh.html#aaee8acdbda278ad977aa4e6bf379ac56">Load</a> mode, const std::string &amp;<a class="el" href="class_mesh.html#a511a9c4441ce4d4310aa748f523959ad">name</a>)</td></tr>
 <tr class="separator:a6d3aa861bcfdabaf582dd67738479529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b6c56f0ebfa2f6b2b10d25a835c865"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#ae6b6c56f0ebfa2f6b2b10d25a835c865">Mesh</a> ()=default</td></tr>
-<tr class="separator:ae6b6c56f0ebfa2f6b2b10d25a835c865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db5ef1b45eef404d46169c4034ec5ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a9db5ef1b45eef404d46169c4034ec5ff">upload</a> ()</td></tr>
 <tr class="separator:a9db5ef1b45eef404d46169c4034ec5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f53f5b1ea374096e87549bb34527627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a1f53f5b1ea374096e87549bb34527627">clearGeometry</a> ()</td></tr>
@@ -232,8 +232,32 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa200b9e345e84f759c60c97d1ea97059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa200b9e345e84f759c60c97d1ea97059">&#9670;&nbsp;</a></span>Mesh() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::Mesh </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the mesh identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6d3aa861bcfdabaf582dd67738479529"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d3aa861bcfdabaf582dd67738479529">&#9670;&nbsp;</a></span>Mesh() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3aa861bcfdabaf582dd67738479529">&#9670;&nbsp;</a></span>Mesh() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,36 +291,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <table class="params">
     <tr><td class="paramname">in</td><td>the input string stream from which the geometry will be loaded </td></tr>
     <tr><td class="paramname">mode</td><td>the preprocessing mode </td></tr>
-    <tr><td class="paramname">name</td><td>the identifier </td></tr>
+    <tr><td class="paramname">name</td><td>the mesh identifier </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ae6b6c56f0ebfa2f6b2b10d25a835c865"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b6c56f0ebfa2f6b2b10d25a835c865">&#9670;&nbsp;</a></span>Mesh() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mesh::Mesh </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Default constructor. </p>
 
 </div>
 </div>
