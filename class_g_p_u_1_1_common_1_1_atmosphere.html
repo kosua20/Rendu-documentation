@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a17c8e4dae894a67e8e8b16a39b0b96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ddc151802792d9fefce2b6d7d38d436"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a4ddc151802792d9fefce2b6d7d38d436">miePhase</a> (float cosAngle)</td></tr>
 <tr class="separator:a4ddc151802792d9fefce2b6d7d38d436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08aba2a5ab746ab8675fedc01c4be07e"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a08aba2a5ab746ab8675fedc01c4be07e">computeAtmosphereRadiance</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, sampler2D scatterTable)</td></tr>
-<tr class="separator:a08aba2a5ab746ab8675fedc01c4be07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d53c5b03d99d56827bea6ecd34cabf7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a9d53c5b03d99d56827bea6ecd34cabf7">computeAtmosphereRadiance</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, vec3 sunColor, sampler2D scatterTable)</td></tr>
+<tr class="separator:a9d53c5b03d99d56827bea6ecd34cabf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -132,10 +132,10 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a4f98428d5c1e247069599e714dc41370">sunIntensity</a> = 20.0</td></tr>
 <tr class="memdesc:a4f98428d5c1e247069599e714dc41370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun intensity. <br /></td></tr>
 <tr class="separator:a4f98428d5c1e247069599e714dc41370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2345681cfe2843851973b18b03fa91b1"><td class="memItemLeft" align="right" valign="top"><a id="a2345681cfe2843851973b18b03fa91b1"></a>
-const vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a2345681cfe2843851973b18b03fa91b1">sunColor</a> = vec3(1.474, 1.8504, 1.91198)</td></tr>
-<tr class="memdesc:a2345681cfe2843851973b18b03fa91b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun direct color. <br /></td></tr>
-<tr class="separator:a2345681cfe2843851973b18b03fa91b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db3de94eb3de94d605977269000b029"><td class="memItemLeft" align="right" valign="top"><a id="a0db3de94eb3de94d605977269000b029"></a>
+const vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a0db3de94eb3de94d605977269000b029">defaultSunColor</a> = vec3(1.474, 1.8504, 1.91198)</td></tr>
+<tr class="memdesc:a0db3de94eb3de94d605977269000b029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun direct color. <br /></td></tr>
+<tr class="separator:a0db3de94eb3de94d605977269000b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b33ebbe1e2b6126dfdda45425409088"><td class="memItemLeft" align="right" valign="top"><a id="a3b33ebbe1e2b6126dfdda45425409088"></a>
 const vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a3b33ebbe1e2b6126dfdda45425409088">kRayleigh</a> = vec3(5.5e-6, 13.0e-6, 22.4e-6)</td></tr>
 <tr class="memdesc:a3b33ebbe1e2b6126dfdda45425409088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rayleigh coefficients. <br /></td></tr>
@@ -169,8 +169,8 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div class="textblock"><p><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html" title="Atmosphere general shader.">Atmosphere</a> general shader. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a08aba2a5ab746ab8675fedc01c4be07e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08aba2a5ab746ab8675fedc01c4be07e">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
+<a id="a9d53c5b03d99d56827bea6ecd34cabf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d53c5b03d99d56827bea6ecd34cabf7">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,6 +199,12 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>sunColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">sampler2D&#160;</td>
           <td class="paramname"><em>scatterTable</em>&#160;</td>
         </tr>
@@ -219,6 +225,7 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
     <tr><td class="paramname">rayOrigin</td><td>the ray origin </td></tr>
     <tr><td class="paramname">rayDir</td><td>the ray direction </td></tr>
     <tr><td class="paramname">sunDir</td><td>the light direction </td></tr>
+    <tr><td class="paramname">sunColor</td><td>the color of the sun disk itself </td></tr>
     <tr><td class="paramname">scatterTable</td><td>the precomputed secondary scattering lookup table </td></tr>
   </table>
   </dd>

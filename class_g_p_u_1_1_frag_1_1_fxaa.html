@@ -109,8 +109,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d1c8aadf8ed36ed0ad66f05a7944978"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_fxaa.html#a2d1c8aadf8ed36ed0ad66f05a7944978">rgb2luma</a> (vec3 rgb)</td></tr>
-<tr class="separator:a2d1c8aadf8ed36ed0ad66f05a7944978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86da95f84be7f012c200e47ac1a159c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_fxaa.html#a86da95f84be7f012c200e47ac1a159c4">main</a> ()</td></tr>
 <tr class="separator:a86da95f84be7f012c200e47ac1a159c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,6 +133,7 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_1_1_frag_1_1_fxaa.html" title="Fxaa fragment shader.">Fxaa</a> fragment shader. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_colors.html" title="Colors general shader.">GPU::Common::Colors</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a86da95f84be7f012c200e47ac1a159c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86da95f84be7f012c200e47ac1a159c4">&#9670;&nbsp;</a></span>main()</h2>
@@ -159,39 +158,6 @@ out vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 </div><div class="memdoc">
 <p>Performs FXAA post-process anti-aliasing as described in the Nvidia FXAA white paper and the associated shader code. </p>
-
-</div>
-</div>
-<a id="a2d1c8aadf8ed36ed0ad66f05a7944978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d1c8aadf8ed36ed0ad66f05a7944978">&#9670;&nbsp;</a></span>rgb2luma()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float GPU::Frag::Fxaa::rgb2luma </td>
-          <td>(</td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>rgb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Evalute the luma value in perceptual space for a given RGB color in linear space. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rgb</td><td>the input RGB color </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the perceptual luma </dd></dl>
 
 </div>
 </div>

@@ -118,8 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1db334206d064f5419361121487d3d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d4f4eb84f25bab516ec68865e2cb1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a0d4f4eb84f25bab516ec68865e2cb1ad">interface</a> () override</td></tr>
 <tr class="separator:a0d4f4eb84f25bab516ec68865e2cb1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a091f02c33e4c544db8f57bfac439c5b9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a091f02c33e4c544db8f57bfac439c5b9">depthFramebuffer</a> () const</td></tr>
-<tr class="separator:a091f02c33e4c544db8f57bfac439c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a040714c6a4586e9cbd9ad23d17053a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a9a040714c6a4586e9cbd9ad23d17053a">sceneDepth</a> () const</td></tr>
+<tr class="separator:a9a040714c6a4586e9cbd9ad23d17053a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc592cbcb65a2f5911297c127bac57e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a3fc592cbcb65a2f5911297c127bac57e">sceneNormal</a> () const</td></tr>
+<tr class="separator:a3fc592cbcb65a2f5911297c127bac57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_renderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_renderer.html">Renderer</a></td></tr>
 <tr class="memitem:a4dddd75ab18573a3686f90225f3f03d4 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a4dddd75ab18573a3686f90225f3f03d4">Renderer</a> ()=default</td></tr>
 <tr class="separator:a4dddd75ab18573a3686f90225f3f03d4 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,32 +288,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a091f02c33e4c544db8f57bfac439c5b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a091f02c33e4c544db8f57bfac439c5b9">&#9670;&nbsp;</a></span>depthFramebuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_framebuffer.html">Framebuffer</a>&amp; ForwardRenderer::depthFramebuffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the framebuffer containing the scene depth information </dd></dl>
-
-</div>
-</div>
 <a id="a20ad1097fa9d4314f72a1a152c08fd76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20ad1097fa9d4314f72a1a152c08fd76">&#9670;&nbsp;</a></span>draw()</h2>
 
@@ -540,6 +516,42 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 
 <p>Reimplemented from <a class="el" href="class_renderer.html#ade00d55b9186cbc9b9fa5e5732f76c8b">Renderer</a>.</p>
+
+</div>
+</div>
+<a id="a9a040714c6a4586e9cbd9ad23d17053a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a040714c6a4586e9cbd9ad23d17053a">&#9670;&nbsp;</a></span>sceneDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_framebuffer.html">Framebuffer</a> * ForwardRenderer::sceneDepth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the framebuffer containing the scene depth information </dd></dl>
+
+</div>
+</div>
+<a id="a3fc592cbcb65a2f5911297c127bac57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc592cbcb65a2f5911297c127bac57e">&#9670;&nbsp;</a></span>sceneNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_texture.html">Texture</a> * ForwardRenderer::sceneNormal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the texture containing the scene normal information </dd></dl>
 
 </div>
 </div>
