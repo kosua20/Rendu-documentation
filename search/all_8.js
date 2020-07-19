@@ -23,7 +23,6 @@ var searchData=
   ['heightrayleigh_988',['heightRayleigh',['../struct_material_sky_1_1_sky_parameters.html#a42051cb711251384b00ba2c30c47b69f',1,'MaterialSky::SkyParameters::heightRayleigh()'],['../class_g_p_u_1_1_common_1_1_atmosphere.html#a9970fefc7c6e0b768d73500078ae1e29',1,'GPU::Common::Atmosphere::heightRayleigh()']]],
   ['high_989',['HIGH',['../class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3beab89de3b4b81c4facfac906edf29aec8c',1,'SSAO']]],
   ['hit_990',['Hit',['../struct_raycaster_1_1_hit.html',1,'Raycaster::Hit'],['../struct_raycaster_1_1_hit.html#a3a034607ecd472875b66c87c3fd768fe',1,'Raycaster::Hit::hit()'],['../struct_raycaster_1_1_hit.html#ad956f6ddddc99c4376c93352394c6f6e',1,'Raycaster::Hit::Hit()'],['../struct_raycaster_1_1_hit.html#ac1c9ae8c42ac702e5a52508974d581aa',1,'Raycaster::Hit::Hit(float distance, float uu, float vv, unsigned long lid, unsigned long mid)']]],
-  ['horiz_991',['horiz',['../class_g_p_u_1_1_frag_1_1_shadow__island.html#a1955d3fa78c370552b72595224fec929',1,'GPU::Frag::Shadow_island']]],
-  ['horizontal_992',['HORIZONTAL',['../class_shader_editor.html#ada7e9082e2da193931d0e37c258842b2a86e5d0d8407ce71f7e2004ef3949894e',1,'ShaderEditor']]],
-  ['hsvtorgb_993',['hsvToRgb',['../class_g_p_u_1_1_common_1_1_colors.html#a6937c12b232bec32d0f767e33e117720',1,'GPU::Common::Colors']]]
+  ['horizontal_991',['HORIZONTAL',['../class_shader_editor.html#ada7e9082e2da193931d0e37c258842b2a86e5d0d8407ce71f7e2004ef3949894e',1,'ShaderEditor']]],
+  ['hsvtorgb_992',['hsvToRgb',['../class_g_p_u_1_1_common_1_1_colors.html#a6937c12b232bec32d0f767e33e117720',1,'GPU::Common::Colors']]]
 ];
