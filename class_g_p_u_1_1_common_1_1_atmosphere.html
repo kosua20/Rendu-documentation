@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_g_p_u_1_1_common_1_1_atmosphere-members.html">List of all members</a>  </div>
@@ -107,70 +108,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html" title="Atmosphere general shader.">Atmosphere</a> general shader.  
  <a href="class_g_p_u_1_1_common_1_1_atmosphere.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a90497e767935296be855cf09d3ec87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a1a90497e767935296be855cf09d3ec87">intersects</a> (vec3 rayOrigin, vec3 rayDir, float radius, out vec2 roots)</td></tr>
 <tr class="separator:a1a90497e767935296be855cf09d3ec87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c8e4dae894a67e8e8b16a39b0b96bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a17c8e4dae894a67e8e8b16a39b0b96bc">rayleighPhase</a> (float cosAngle)</td></tr>
 <tr class="separator:a17c8e4dae894a67e8e8b16a39b0b96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddc151802792d9fefce2b6d7d38d436"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a4ddc151802792d9fefce2b6d7d38d436">miePhase</a> (float cosAngle)</td></tr>
-<tr class="separator:a4ddc151802792d9fefce2b6d7d38d436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d53c5b03d99d56827bea6ecd34cabf7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a9d53c5b03d99d56827bea6ecd34cabf7">computeAtmosphereRadiance</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, vec3 sunColor, sampler2D scatterTable)</td></tr>
-<tr class="separator:a9d53c5b03d99d56827bea6ecd34cabf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8483d6c0f56fa319f718b3717b3727"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#abd8483d6c0f56fa319f718b3717b3727">miePhase</a> (float cosAngle, float gMie)</td></tr>
+<tr class="separator:abd8483d6c0f56fa319f718b3717b3727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8640c2774cbbe9d2981469a7970eb227"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a8640c2774cbbe9d2981469a7970eb227">computeAtmosphereRadiance</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, sampler2D scatterTable, <a class="el" href="struct_g_p_u_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a> params)</td></tr>
+<tr class="separator:a8640c2774cbbe9d2981469a7970eb227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aae55694bee291b9a4cb84211449f19df"><td class="memItemLeft" align="right" valign="top"><a id="aae55694bee291b9a4cb84211449f19df"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#aae55694bee291b9a4cb84211449f19df">atmosphereGroundRadius</a> = 6371e3</td></tr>
-<tr class="memdesc:aae55694bee291b9a4cb84211449f19df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the planet. <br /></td></tr>
-<tr class="separator:aae55694bee291b9a4cb84211449f19df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92fe792eb0bb1770618826be6cf9857b"><td class="memItemLeft" align="right" valign="top"><a id="a92fe792eb0bb1770618826be6cf9857b"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a92fe792eb0bb1770618826be6cf9857b">atmosphereTopRadius</a> = 6471e3</td></tr>
-<tr class="memdesc:a92fe792eb0bb1770618826be6cf9857b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the atmosphere. <br /></td></tr>
-<tr class="separator:a92fe792eb0bb1770618826be6cf9857b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f98428d5c1e247069599e714dc41370"><td class="memItemLeft" align="right" valign="top"><a id="a4f98428d5c1e247069599e714dc41370"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a4f98428d5c1e247069599e714dc41370">sunIntensity</a> = 20.0</td></tr>
-<tr class="memdesc:a4f98428d5c1e247069599e714dc41370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun intensity. <br /></td></tr>
-<tr class="separator:a4f98428d5c1e247069599e714dc41370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db3de94eb3de94d605977269000b029"><td class="memItemLeft" align="right" valign="top"><a id="a0db3de94eb3de94d605977269000b029"></a>
-const vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a0db3de94eb3de94d605977269000b029">defaultSunColor</a> = vec3(1.474, 1.8504, 1.91198)</td></tr>
-<tr class="memdesc:a0db3de94eb3de94d605977269000b029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun direct color. <br /></td></tr>
-<tr class="separator:a0db3de94eb3de94d605977269000b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b33ebbe1e2b6126dfdda45425409088"><td class="memItemLeft" align="right" valign="top"><a id="a3b33ebbe1e2b6126dfdda45425409088"></a>
-const vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a3b33ebbe1e2b6126dfdda45425409088">kRayleigh</a> = vec3(5.5e-6, 13.0e-6, 22.4e-6)</td></tr>
-<tr class="memdesc:a3b33ebbe1e2b6126dfdda45425409088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rayleigh coefficients. <br /></td></tr>
-<tr class="separator:a3b33ebbe1e2b6126dfdda45425409088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66be535c82e806bcdb6346f819d66b41"><td class="memItemLeft" align="right" valign="top"><a id="a66be535c82e806bcdb6346f819d66b41"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a66be535c82e806bcdb6346f819d66b41">kMie</a> = 21e-6</td></tr>
-<tr class="memdesc:a66be535c82e806bcdb6346f819d66b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mie coefficients. <br /></td></tr>
-<tr class="separator:a66be535c82e806bcdb6346f819d66b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9970fefc7c6e0b768d73500078ae1e29"><td class="memItemLeft" align="right" valign="top"><a id="a9970fefc7c6e0b768d73500078ae1e29"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a9970fefc7c6e0b768d73500078ae1e29">heightRayleigh</a> = 8000.0</td></tr>
-<tr class="memdesc:a9970fefc7c6e0b768d73500078ae1e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mie characteristic height. <br /></td></tr>
-<tr class="separator:a9970fefc7c6e0b768d73500078ae1e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a604c581464a4ef0d337e128fc2bf1f2c"><td class="memItemLeft" align="right" valign="top"><a id="a604c581464a4ef0d337e128fc2bf1f2c"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a604c581464a4ef0d337e128fc2bf1f2c">heightMie</a> = 1200.0</td></tr>
-<tr class="memdesc:a604c581464a4ef0d337e128fc2bf1f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mie characteristic height. <br /></td></tr>
-<tr class="separator:a604c581464a4ef0d337e128fc2bf1f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb09a570e81794ce4341121fe9b36e47"><td class="memItemLeft" align="right" valign="top"><a id="acb09a570e81794ce4341121fe9b36e47"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#acb09a570e81794ce4341121fe9b36e47">gMie</a> = 0.758</td></tr>
-<tr class="memdesc:acb09a570e81794ce4341121fe9b36e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mie g constant. <br /></td></tr>
-<tr class="separator:acb09a570e81794ce4341121fe9b36e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa942070b3930e86d43a504cdf34fdd8d"><td class="memItemLeft" align="right" valign="top"><a id="aa942070b3930e86d43a504cdf34fdd8d"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#aa942070b3930e86d43a504cdf34fdd8d">sunAngularRadius</a> = 0.04675</td></tr>
-<tr class="memdesc:aa942070b3930e86d43a504cdf34fdd8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun angular radius. <br /></td></tr>
-<tr class="separator:aa942070b3930e86d43a504cdf34fdd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff76069c8d71ea9de4535ca0236d77b"><td class="memItemLeft" align="right" valign="top"><a id="a3ff76069c8d71ea9de4535ca0236d77b"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a3ff76069c8d71ea9de4535ca0236d77b">sunAngularRadiusCos</a> = 0.998</td></tr>
-<tr class="memdesc:a3ff76069c8d71ea9de4535ca0236d77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cosine of the sun angular radius. <br /></td></tr>
-<tr class="separator:a3ff76069c8d71ea9de4535ca0236d77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af0b14336a51f66d2e8318d15d4d69d"><td class="memItemLeft" align="right" valign="top"><a id="a6af0b14336a51f66d2e8318d15d4d69d"></a>
+<a class="el" href="struct_g_p_u_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>defaultAtmosphere</b> = <a class="el" href="struct_g_p_u_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a>(vec3(1.474, 1.8504, 1.91198), vec3(5.5e-6, 13.0e-6, 22.4e-6), 6371e3, 6471e3, 20.0, 21e-6, 8000.0, 1200.0, 0.758, 0.04675, 0.998)</td></tr>
+<tr class="separator:a6af0b14336a51f66d2e8318d15d4d69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html" title="Atmosphere general shader.">Atmosphere</a> general shader. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9d53c5b03d99d56827bea6ecd34cabf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d53c5b03d99d56827bea6ecd34cabf7">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
+<a id="a8640c2774cbbe9d2981469a7970eb227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8640c2774cbbe9d2981469a7970eb227">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,14 +164,14 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>sunColor</em>, </td>
+          <td class="paramtype">sampler2D&#160;</td>
+          <td class="paramname"><em>scatterTable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sampler2D&#160;</td>
-          <td class="paramname"><em>scatterTable</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a>&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,11 +187,11 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 <p>Compute the radiance for a given ray, based on the atmosphere scattering model. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rayOrigin</td><td>the ray origin </td></tr>
+    <tr><td class="paramname">rayOrigin</td><td>the ray origin in ground space </td></tr>
     <tr><td class="paramname">rayDir</td><td>the ray direction </td></tr>
     <tr><td class="paramname">sunDir</td><td>the light direction </td></tr>
-    <tr><td class="paramname">sunColor</td><td>the color of the sun disk itself </td></tr>
     <tr><td class="paramname">scatterTable</td><td>the precomputed secondary scattering lookup table </td></tr>
+    <tr><td class="paramname">params</td><td>atmosphere physics parameters </td></tr>
   </table>
   </dd>
 </dl>
@@ -293,8 +258,8 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="a4ddc151802792d9fefce2b6d7d38d436"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ddc151802792d9fefce2b6d7d38d436">&#9670;&nbsp;</a></span>miePhase()</h2>
+<a id="abd8483d6c0f56fa319f718b3717b3727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8483d6c0f56fa319f718b3717b3727">&#9670;&nbsp;</a></span>miePhase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,8 +271,18 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="memname">float GPU::Common::Atmosphere::miePhase </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>cosAngle</em></td><td>)</td>
+          <td class="paramname"><em>cosAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gMie</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -319,6 +294,7 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>Compute the Mie phase. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cosAngle</td><td>Cosine of the angle between the ray and the light directions </td></tr>
+    <tr><td class="paramname">gMie</td><td>the Mie atmosphere parameter </td></tr>
   </table>
   </dd>
 </dl>

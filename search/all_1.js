@@ -56,10 +56,9 @@ var searchData=
   ['atmosphere_5fgbuffer_509',['Atmosphere_gbuffer',['../class_g_p_u_1_1_frag_1_1_atmosphere__gbuffer.html',1,'GPU::Frag']]],
   ['atmosphere_5fisland_510',['Atmosphere_island',['../class_g_p_u_1_1_frag_1_1_atmosphere__island.html',1,'GPU::Frag']]],
   ['atmosphereapp_511',['AtmosphereApp',['../class_atmosphere_app.html',1,'AtmosphereApp'],['../class_atmosphere_app.html#a931bc7ed5b43dbe2f2d9271d92487492',1,'AtmosphereApp::AtmosphereApp()']]],
-  ['atmospheregroundradius_512',['atmosphereGroundRadius',['../class_g_p_u_1_1_common_1_1_atmosphere.html#aae55694bee291b9a4cb84211449f19df',1,'GPU::Common::Atmosphere']]],
-  ['atmospheretopradius_513',['atmosphereTopRadius',['../class_g_p_u_1_1_common_1_1_atmosphere.html#a92fe792eb0bb1770618826be6cf9857b',1,'GPU::Common::Atmosphere']]],
-  ['atmospheric_20scattering_514',['Atmospheric scattering',['../group___atmospheric_scattering.html',1,'']]],
-  ['atmosphericscatteringconfig_515',['AtmosphericScatteringConfig',['../class_atmospheric_scattering_config.html',1,'AtmosphericScatteringConfig'],['../class_atmospheric_scattering_config.html#a1490c8e23fa9fabaf1561ca6b5111400',1,'AtmosphericScatteringConfig::AtmosphericScatteringConfig()']]],
-  ['attachments_516',['attachments',['../struct_debug_viewer_1_1_framebuffer_infos.html#a0c1bc1caf035c6650d5b7cdbaca9aa34',1,'DebugViewer::FramebufferInfos::attachments()'],['../class_framebuffer.html#aa968ec8577d731a3887bdabc2396e2a4',1,'Framebuffer::attachments()']]],
-  ['axis_517',['axis',['../class_g_p_u_1_1_frag_1_1_bilateral.html#a3864c02a9cfecc6754ade5df48eea564',1,'GPU::Frag::Bilateral::axis()'],['../class_controller.html#afa4f1947611eb6c0a6b5c0591bab22d5',1,'Controller::axis()']]]
+  ['atmosphereparameters_512',['AtmosphereParameters',['../struct_g_p_u_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html',1,'GPU::Common::Atmosphere']]],
+  ['atmospheric_20scattering_513',['Atmospheric scattering',['../group___atmospheric_scattering.html',1,'']]],
+  ['atmosphericscatteringconfig_514',['AtmosphericScatteringConfig',['../class_atmospheric_scattering_config.html',1,'AtmosphericScatteringConfig'],['../class_atmospheric_scattering_config.html#a1490c8e23fa9fabaf1561ca6b5111400',1,'AtmosphericScatteringConfig::AtmosphericScatteringConfig()']]],
+  ['attachments_515',['attachments',['../struct_debug_viewer_1_1_framebuffer_infos.html#a0c1bc1caf035c6650d5b7cdbaca9aa34',1,'DebugViewer::FramebufferInfos::attachments()'],['../class_framebuffer.html#aa968ec8577d731a3887bdabc2396e2a4',1,'Framebuffer::attachments()']]],
+  ['axis_516',['axis',['../class_g_p_u_1_1_frag_1_1_bilateral.html#a3864c02a9cfecc6754ade5df48eea564',1,'GPU::Frag::Bilateral::axis()'],['../class_controller.html#afa4f1947611eb6c0a6b5c0591bab22d5',1,'Controller::axis()']]]
 ];

@@ -109,8 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae000a564cb5d48636ac6e09ebe08c9e7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__debug.html#ae000a564cb5d48636ac6e09ebe08c9e7">computeEstimate</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, vec3 sunColor)</td></tr>
-<tr class="separator:ae000a564cb5d48636ac6e09ebe08c9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5f1ff72413889e985b655c340b72c7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__debug.html#a1e5f1ff72413889e985b655c340b72c7">computeEstimate</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, AtmosphereParameters params)</td></tr>
+<tr class="separator:a1e5f1ff72413889e985b655c340b72c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5e1a85b7e31266f5a48655ba7d9d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__debug.html#a3d5e1a85b7e31266f5a48655ba7d9d2e">main</a> ()</td></tr>
 <tr class="separator:a3d5e1a85b7e31266f5a48655ba7d9d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -141,8 +141,8 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div class="textblock"><p>Atmosphere debug fragment shader. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html" title="Atmosphere general shader.">GPU::Common::Atmosphere</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae000a564cb5d48636ac6e09ebe08c9e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae000a564cb5d48636ac6e09ebe08c9e7">&#9670;&nbsp;</a></span>computeEstimate()</h2>
+<a id="a1e5f1ff72413889e985b655c340b72c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5f1ff72413889e985b655c340b72c7">&#9670;&nbsp;</a></span>computeEstimate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,8 +171,8 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>sunColor</em>&#160;</td>
+          <td class="paramtype">AtmosphereParameters&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,7 +191,7 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
     <tr><td class="paramname">rayOrigin</td><td>the ray origin </td></tr>
     <tr><td class="paramname">rayDir</td><td>the ray direction </td></tr>
     <tr><td class="paramname">sunDir</td><td>the light direction </td></tr>
-    <tr><td class="paramname">sunColor</td><td>the sun color </td></tr>
+    <tr><td class="paramname">params</td><td>the atmosphere parameters </td></tr>
   </table>
   </dd>
 </dl>
