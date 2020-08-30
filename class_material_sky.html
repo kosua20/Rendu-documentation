@@ -92,7 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
@@ -108,12 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_material_sky_8hpp_source.html">MaterialSky.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_material_sky_1_1_sky_parameters.html">SkyParameters</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atmosphere parameters.  <a href="struct_material_sky_1_1_sky_parameters.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e04fdbf26901f5b7fffda5c5fd33503"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#a5e04fdbf26901f5b7fffda5c5fd33503">MaterialSky</a> ()=delete</td></tr>
@@ -126,8 +119,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a8f910d3cd5879dc9059b20c6a0e96eb3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#a8f910d3cd5879dc9059b20c6a0e96eb3">intersects</a> (const glm::vec3 &amp;rayOrigin, const glm::vec3 &amp;rayDir, float radius, glm::vec2 &amp;roots)</td></tr>
-<tr class="separator:a8f910d3cd5879dc9059b20c6a0e96eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6902b2f841481a63c7c9658a314fb337"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#a6902b2f841481a63c7c9658a314fb337">rayleighPhase</a> (float cosAngle)</td></tr>
 <tr class="separator:a6902b2f841481a63c7c9658a314fb337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc8812227394674043a01555c87a665"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#a0fc8812227394674043a01555c87a665">miePhase</a> (float cosAngle)</td></tr>
@@ -135,10 +126,14 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a8ea68801acf6d24e16a6a79de7ea6efe"><td class="memItemLeft" align="right" valign="top"><a id="a8ea68801acf6d24e16a6a79de7ea6efe"></a>
-static const <a class="el" href="struct_material_sky_1_1_sky_parameters.html">SkyParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#a8ea68801acf6d24e16a6a79de7ea6efe">sky</a></td></tr>
-<tr class="memdesc:a8ea68801acf6d24e16a6a79de7ea6efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Earth-like atmosphere parameters. <br /></td></tr>
-<tr class="separator:a8ea68801acf6d24e16a6a79de7ea6efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6a27eed87fe05d16a6772a18c1264f"><td class="memItemLeft" align="right" valign="top"><a id="adc6a27eed87fe05d16a6772a18c1264f"></a>
+static const <a class="el" href="struct_sky_1_1_atmosphere_parameters.html">Sky::AtmosphereParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#adc6a27eed87fe05d16a6772a18c1264f">sky</a></td></tr>
+<tr class="memdesc:adc6a27eed87fe05d16a6772a18c1264f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Earth-like atmosphere parameters. <br /></td></tr>
+<tr class="separator:adc6a27eed87fe05d16a6772a18c1264f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc6d5e1eb07f33fd8e8e62662a72e13"><td class="memItemLeft" align="right" valign="top"><a id="a8bc6d5e1eb07f33fd8e8e62662a72e13"></a>
+static const uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material_sky.html#a8bc6d5e1eb07f33fd8e8e62662a72e13">samplesCount</a> = 16</td></tr>
+<tr class="memdesc:a8bc6d5e1eb07f33fd8e8e62662a72e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples to evaluate along the ray. <br /></td></tr>
+<tr class="separator:a8bc6d5e1eb07f33fd8e8e62662a72e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CPU methods for evaluating the atmospheric scattering model used by the sky background. </p>
@@ -218,65 +213,6 @@ static const <a class="el" href="struct_material_sky_1_1_sky_parameters.html">Sk
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the estimated radiance </dd></dl>
-
-</div>
-</div>
-<a id="a8f910d3cd5879dc9059b20c6a0e96eb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f910d3cd5879dc9059b20c6a0e96eb3">&#9670;&nbsp;</a></span>intersects()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MaterialSky::intersects </td>
-          <td>(</td>
-          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
-          <td class="paramname"><em>rayOrigin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
-          <td class="paramname"><em>rayDir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">glm::vec2 &amp;&#160;</td>
-          <td class="paramname"><em>roots</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check if a sphere of a given radius is intersected by a ray defined by an origin wrt to the sphere center and a normalized direction. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rayOrigin</td><td>the origin of the ray </td></tr>
-    <tr><td class="paramname">rayDir</td><td>the direction of the ray (normalized) </td></tr>
-    <tr><td class="paramname">radius</td><td>the radius of the sphere to intersect </td></tr>
-    <tr><td class="paramname">roots</td><td>will contain the two roots of the associated polynomial, ordered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is intersection. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The intersection can be in the negative direction along the ray. Check the sign of the roots to know. </dd></dl>
 
 </div>
 </div>

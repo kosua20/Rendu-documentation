@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_g_p_u_1_1_frag_1_1_upscale.html#ab37afbdc67cf30b1cb93a1dfdb118657">GPU::Frag::Upscale</a>
 </li>
 <li>uniform()
-: <a class="el" href="class_program.html#a55f59191e90dbb5fa0772fdb099ea58f">Program</a>
+: <a class="el" href="class_program.html#a53f19a3e60817cdb3e86fc9e0d8d1538">Program</a>
 </li>
 <li>Uniform()
 : <a class="el" href="struct_program_1_1_uniform.html#a0b5dcd35eec16179f75bfd0e5e50b544">Program::Uniform</a>
@@ -244,6 +244,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_deferred_light.html#a94f154d401ecded8bdd993ef59b2d720">DeferredLight</a>
 , <a class="el" href="class_forward_light.html#a778c37ac32b4f5fc4a78d65d21d72b0d">ForwardLight</a>
 </li>
+<li>updateSky()
+: <a class="el" href="class_atmosphere_app.html#a8642dde0bce49c6d235a500ade5c4939">AtmosphereApp</a>
+</li>
 <li>updateUsingJoystick()
 : <a class="el" href="class_controllable_camera.html#a215b4d747eb50ba062416eff194de361">ControllableCamera</a>
 </li>
@@ -285,11 +288,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>uv
 : <a class="el" href="class_g_p_u_1_1_frag_1_1_ambient__pbr.html#a07e18113ef498dd88faa45c12cc64d85">GPU::Frag::Ambient_pbr</a>
-, <a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__basic.html#ac6f736c32d5592282f053ce73730c623">GPU::Frag::Atmosphere_basic</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__debug.html#ae84bb29ba0ed92ff965521a07ff85b45">GPU::Frag::Atmosphere_debug</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__forward.html#a5fedd2e31e2516454d9869ce231da62d">GPU::Frag::Atmosphere_forward</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__gbuffer.html#aacf4683e857eb79931a81d4e933598cf">GPU::Frag::Atmosphere_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__island.html#a739c1d246f2f41c82e294145ede36097">GPU::Frag::Atmosphere_island</a>
+, <a class="el" href="class_g_p_u_1_1_frag_1_1_atmosphere__params.html#a175701822e8d253c6fd290b2225ab8b7">GPU::Frag::Atmosphere_params</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_background__forward.html#a2a24ac22a150ca8e59872f59f82f7e09">GPU::Frag::Background_forward</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_background__gbuffer.html#ac40a5668c84c530b043f91772fa1d43e">GPU::Frag::Background_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_frag_1_1_background__infinity.html#a0ef88919cc626ce1060e2528b3b0f290">GPU::Frag::Background_infinity</a>
@@ -352,17 +355,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_ground__island.html#afd30902fdf08cd3389ce41da46dfaa5b">GPU::Vert::Ground_island</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_image__display.html#ad4cce92a456c6c54a70a130a8b50008b">GPU::Vert::Image_display</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_light__shadow__linear__vertex.html#a50f8acafe0a9c857b83f79ee0c56d96d">GPU::Vert::Light_shadow_linear_vertex</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_light__shadow__vertex.html#a9070dece48b56d9b155dfd06c25c4994">GPU::Vert::Light_shadow_vertex</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_light__shadow__vertex.html#ad626e3201c8ab255490980058ac8a432">GPU::Vert::Light_shadow_vertex</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_menu__image.html#ab9fcd3a0154f9e343056505a0c23894e">GPU::Vert::Menu_image</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__lit__texture.html#a7a9f372bc796b5ddb76a31af27e530c3">GPU::Vert::Object_basic_lit_texture</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__texture.html#a42e4082e8255409ff0644e02fdac52f0">GPU::Vert::Object_basic_texture</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__lit__texture.html#a8739821274c0422858f716899b2761c4">GPU::Vert::Object_basic_lit_texture</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__basic__texture.html#aed0672e0dd2073303bfb8e9e90e64940">GPU::Vert::Object_basic_texture</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__emissive__forward.html#acc12024080db63b59fdef54e12a405d8">GPU::Vert::Object_emissive_forward</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__emissive__gbuffer.html#a495f4fb796bd5d49fad0bce96c910864">GPU::Vert::Object_emissive_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__forward.html#a261f22806881eb73050f1bc89d122356">GPU::Vert::Object_forward</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__gbuffer.html#acae008b86a032a793abc1960e15c1bb1">GPU::Vert::Object_gbuffer</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__gbuffer.html#a55f6c24c03f42d2634f9b809a830c958">GPU::Vert::Object_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__layer.html#abd84499fd773e65437da8b2a8133a7bc">GPU::Vert::Object_layer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_object__parallax__forward.html#ac010329b4a7b6ec3c58037c3be7c86a7">GPU::Vert::Object_parallax_forward</a>
-, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__parallax__gbuffer.html#ae6294aa7d98998e50ba7ed3b234cde5f">GPU::Vert::Object_parallax_gbuffer</a>
+, <a class="el" href="class_g_p_u_1_1_vert_1_1_object__parallax__gbuffer.html#ae0a3a3a1339275963d5607ba1b220334">GPU::Vert::Object_parallax_gbuffer</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_passthrough.html#ab3aa275d275b8c621b4f2a164d9c25ab">GPU::Vert::Passthrough</a>
 , <a class="el" href="class_g_p_u_1_1_vert_1_1_shaderbench.html#a95fe0f5200e15c77ebb4973dd140a27f">GPU::Vert::Shaderbench</a>
 </li>

@@ -93,6 +93,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_atmosphere_app-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -100,8 +102,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Demo application for the atmospheric scattering shader.  
+<p>Demo application for the atmospheric scattering shader. Demonstrate real-time approximate atmospheric scattering simulation. Based on Precomputed Atmospheric Scattering, E. Bruneton, F. Neyret, EGSR 2008.  
  <a href="class_atmosphere_app.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_atmosphere_app_8hpp_source.html">AtmosphereApp.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -138,6 +142,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa06e552982a09037f136b2139f78bbe8 inherit pub_methods_class_application"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_application.html">Application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_application.html#aa06e552982a09037f136b2139f78bbe8">operator=</a> (<a class="el" href="class_application.html">Application</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:aa06e552982a09037f136b2139f78bbe8 inherit pub_methods_class_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abf18410595018a42d17e14bf9faf45ac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#abf18410595018a42d17e14bf9faf45ac">precomputeTable</a> (const <a class="el" href="struct_sky_1_1_atmosphere_parameters.html">Sky::AtmosphereParameters</a> &amp;params, uint samples, <a class="el" href="class_image.html">Image</a> &amp;table)</td></tr>
+<tr class="separator:abf18410595018a42d17e14bf9faf45ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8642dde0bce49c6d235a500ade5c4939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a8642dde0bce49c6d235a500ade5c4939">updateSky</a> ()</td></tr>
+<tr class="separator:a8642dde0bce49c6d235a500ade5c4939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acdb6dd1a9afac39efa0b745c4e0f3052"><td class="memItemLeft" align="right" valign="top"><a id="acdb6dd1a9afac39efa0b745c4e0f3052"></a>
@@ -152,14 +166,34 @@ const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class=
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a9a04c07c2f5ad4b6b8de38e2358e8921">_tonemap</a></td></tr>
 <tr class="memdesc:a9a04c07c2f5ad4b6b8de38e2358e8921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tonemapping shader. <br /></td></tr>
 <tr class="separator:a9a04c07c2f5ad4b6b8de38e2358e8921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867787d7141a48ab13355db44a347644"><td class="memItemLeft" align="right" valign="top"><a id="a867787d7141a48ab13355db44a347644"></a>
-const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a867787d7141a48ab13355db44a347644">_precomputedScattering</a></td></tr>
-<tr class="memdesc:a867787d7141a48ab13355db44a347644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputed lookup table. <br /></td></tr>
-<tr class="separator:a867787d7141a48ab13355db44a347644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5421c70dab86d30d3e3fbb2cecf246"><td class="memItemLeft" align="right" valign="top"><a id="a3b5421c70dab86d30d3e3fbb2cecf246"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a3b5421c70dab86d30d3e3fbb2cecf246">_scattering</a></td></tr>
+<tr class="memdesc:a3b5421c70dab86d30d3e3fbb2cecf246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scattering lookup table. <br /></td></tr>
+<tr class="separator:a3b5421c70dab86d30d3e3fbb2cecf246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3202b1a4608285d12b94f64691874a24"><td class="memItemLeft" align="right" valign="top"><a id="a3202b1a4608285d12b94f64691874a24"></a>
+<a class="el" href="struct_sky_1_1_atmosphere_parameters.html">Sky::AtmosphereParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a3202b1a4608285d12b94f64691874a24">_atmoParams</a></td></tr>
+<tr class="memdesc:a3202b1a4608285d12b94f64691874a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atmosphere parameters. <br /></td></tr>
+<tr class="separator:a3202b1a4608285d12b94f64691874a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae796b29e5f4f45acecd7e02452d9708a"><td class="memItemLeft" align="right" valign="top"><a id="ae796b29e5f4f45acecd7e02452d9708a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#ae796b29e5f4f45acecd7e02452d9708a">_tableRes</a> = 256</td></tr>
+<tr class="memdesc:ae796b29e5f4f45acecd7e02452d9708a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scattering table resolution. <br /></td></tr>
+<tr class="separator:ae796b29e5f4f45acecd7e02452d9708a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf680f5713eb96a0794e7958d5ef84b2"><td class="memItemLeft" align="right" valign="top"><a id="aaf680f5713eb96a0794e7958d5ef84b2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#aaf680f5713eb96a0794e7958d5ef84b2">_tableSamples</a> = 64</td></tr>
+<tr class="memdesc:aaf680f5713eb96a0794e7958d5ef84b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scattering table sample count. <br /></td></tr>
+<tr class="separator:aaf680f5713eb96a0794e7958d5ef84b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6f343b38a4109789eb0353311ab17e1"><td class="memItemLeft" align="right" valign="top"><a id="ac6f343b38a4109789eb0353311ab17e1"></a>
 glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#ac6f343b38a4109789eb0353311ab17e1">_lightDirection</a></td></tr>
 <tr class="memdesc:ac6f343b38a4109789eb0353311ab17e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun light direction. <br /></td></tr>
 <tr class="separator:ac6f343b38a4109789eb0353311ab17e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295b4b1ee1ecbd3e112bd24302dd12e0"><td class="memItemLeft" align="right" valign="top"><a id="a295b4b1ee1ecbd3e112bd24302dd12e0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a295b4b1ee1ecbd3e112bd24302dd12e0">_lightElevation</a> = 10.0f</td></tr>
+<tr class="memdesc:a295b4b1ee1ecbd3e112bd24302dd12e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun vertical angular elevation. <br /></td></tr>
+<tr class="separator:a295b4b1ee1ecbd3e112bd24302dd12e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb419e5fb6490b4a9a3959bf19999f1b"><td class="memItemLeft" align="right" valign="top"><a id="abb419e5fb6490b4a9a3959bf19999f1b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#abb419e5fb6490b4a9a3959bf19999f1b">_lightAzimuth</a> = 290.0f</td></tr>
+<tr class="memdesc:abb419e5fb6490b4a9a3959bf19999f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun horizontal orientation. <br /></td></tr>
+<tr class="separator:abb419e5fb6490b4a9a3959bf19999f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6df9b5d74bb7ae243a778cefeb095327"><td class="memItemLeft" align="right" valign="top"><a id="a6df9b5d74bb7ae243a778cefeb095327"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atmosphere_app.html#a6df9b5d74bb7ae243a778cefeb095327">_altitude</a> = 1.0f</td></tr>
 <tr class="memdesc:a6df9b5d74bb7ae243a778cefeb095327"><td class="mdescLeft">&#160;</td><td class="mdescRight">View altitude above the planet surface. <br /></td></tr>
@@ -186,7 +220,7 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
 <tr class="separator:abe037812376f6c2c51557cd487379f38 inherit pro_attribs_class_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Demo application for the atmospheric scattering shader. </p>
+<div class="textblock"><p>Demo application for the atmospheric scattering shader. Demonstrate real-time approximate atmospheric scattering simulation. Based on Precomputed Atmospheric Scattering, E. Bruneton, F. Neyret, EGSR 2008. </p>
 </div>
 <p>Inherits <a class="el" href="class_camera_app.html">CameraApp</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -195,9 +229,6 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">AtmosphereApp::AtmosphereApp </td>
@@ -207,11 +238,6 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -241,7 +267,7 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -250,6 +276,56 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
 <p>Draw call. </p>
 
 <p>Implements <a class="el" href="class_application.html#ad11a344e0f03f1389b10cd6cff430219">Application</a>.</p>
+
+</div>
+</div>
+<a id="abf18410595018a42d17e14bf9faf45ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf18410595018a42d17e14bf9faf45ac">&#9670;&nbsp;</a></span>precomputeTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AtmosphereApp::precomputeTable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_sky_1_1_atmosphere_parameters.html">Sky::AtmosphereParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute a scattering lookup table for real-time atmosphere rendering. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>the atmosphere parameters </td></tr>
+    <tr><td class="paramname">samples</td><td>number of samples along a ray </td></tr>
+    <tr><td class="paramname">table</td><td>the image to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -271,7 +347,7 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -301,7 +377,7 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -313,8 +389,35 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/apps/atmosphere/main.cpp</li>
+<a id="a8642dde0bce49c6d235a500ade5c4939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8642dde0bce49c6d235a500ade5c4939">&#9670;&nbsp;</a></span>updateSky()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AtmosphereApp::updateSky </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the lookup table based on internal atmosphere parameters. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/apps/atmosphere/<a class="el" href="_atmosphere_app_8hpp_source.html">AtmosphereApp.hpp</a></li>
+<li>src/apps/atmosphere/AtmosphereApp.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
