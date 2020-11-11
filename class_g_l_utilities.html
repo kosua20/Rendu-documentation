@@ -129,8 +129,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a5357f70ec812d72232c3a82d0ccd8f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b13a234d93aefdc6dac4be466ef4740"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6b13a234d93aefdc6dac4be466ef4740">createProgram</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, const std::string &amp;tessControlContent, const std::string &amp;tessEvalContent, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, const std::string &amp;debugInfos)</td></tr>
 <tr class="separator:a6b13a234d93aefdc6dac4be466ef4740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8356140c2bd751f94408f6a1b122d002"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8356140c2bd751f94408f6a1b122d002">saveFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, unsigned int width, unsigned int height, const std::string &amp;path, bool flip=true, bool ignoreAlpha=false)</td></tr>
-<tr class="separator:a8356140c2bd751f94408f6a1b122d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef2900aed27844e9ac535557b40a1d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8ef2900aed27844e9ac535557b40a1d6">saveFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, const std::string &amp;path, bool flip=true, bool ignoreAlpha=false)</td></tr>
+<tr class="separator:a8ef2900aed27844e9ac535557b40a1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f4da13d9acd3a8d99c426e9d7575c14"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a6f4da13d9acd3a8d99c426e9d7575c14">bindTexture</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, size_t slot)</td></tr>
 <tr class="separator:a6f4da13d9acd3a8d99c426e9d7575c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb2fecc71adae531131d97d8d884c09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aafb2fecc71adae531131d97d8d884c09">bindTexture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, size_t slot)</td></tr>
@@ -179,12 +179,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a38a3178f0c08d14f402ba5921c88a8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10754be58f14727520751c9d566d58b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a10754be58f14727520751c9d566d58b4">clearDepth</a> (float depth)</td></tr>
 <tr class="separator:a10754be58f14727520751c9d566d58b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6b88d5d5562869b93e3b04298cbca8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aee6b88d5d5562869b93e3b04298cbca8">clearStencil</a> (uchar stencil)</td></tr>
+<tr class="separator:aee6b88d5d5562869b93e3b04298cbca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae72f02514a4353ad7676fc214c5edae4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ae72f02514a4353ad7676fc214c5edae4">clearColorAndDepth</a> (const glm::vec4 &amp;color, float depth)</td></tr>
 <tr class="separator:ae72f02514a4353ad7676fc214c5edae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43c0fc3c5e0254a15a350bb3c2cba8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#af43c0fc3c5e0254a15a350bb3c2cba8d">clearColorDepthStencil</a> (const glm::vec4 &amp;color, float depth, uchar stencil)</td></tr>
+<tr class="separator:af43c0fc3c5e0254a15a350bb3c2cba8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdda3872bfde962d3fc5f3f46736b41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a4cdda3872bfde962d3fc5f3f46736b41">setDepthState</a> (bool test)</td></tr>
 <tr class="separator:a4cdda3872bfde962d3fc5f3f46736b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e6dd24d5f2ba300c47dc83f034daaf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a41e6dd24d5f2ba300c47dc83f034daaf">setDepthState</a> (bool test, <a class="el" href="group___resources.html#ga4144e5bae086836c0cbb1689d2f1c349">DepthEquation</a> equation, bool write)</td></tr>
-<tr class="separator:a41e6dd24d5f2ba300c47dc83f034daaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9041817f6f0dfc9f66b51c081c161de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ae9041817f6f0dfc9f66b51c081c161de">setDepthState</a> (bool test, <a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a> function, bool write)</td></tr>
+<tr class="separator:ae9041817f6f0dfc9f66b51c081c161de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23fb03142c04442eaca84b224780d41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ae23fb03142c04442eaca84b224780d41">setStencilState</a> (bool test, bool write)</td></tr>
+<tr class="separator:ae23fb03142c04442eaca84b224780d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f51dfe4e61cf40aa896e9c65ad729b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a5f51dfe4e61cf40aa896e9c65ad729b3">setStencilState</a> (bool test, <a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a> function, <a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a> fail, <a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a> pass, <a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a> depthFail, uchar value)</td></tr>
+<tr class="separator:a5f51dfe4e61cf40aa896e9c65ad729b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4383b1b0c0b7a128bd77e7d0f0932a05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a4383b1b0c0b7a128bd77e7d0f0932a05">setBlendState</a> (bool test)</td></tr>
 <tr class="separator:a4383b1b0c0b7a128bd77e7d0f0932a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66fe035039da9093c93029d77178baef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a66fe035039da9093c93029d77178baef">setBlendState</a> (bool test, <a class="el" href="group___resources.html#ga0b5a5136bfbfae2a7b34d21044dd00ab">BlendEquation</a> equation, <a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a> src, <a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a> dst)</td></tr>
@@ -195,6 +203,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2691fd2c771e4567583ceb20d29f3f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7369e719a61bd8a98eaabf7d6bb7c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aff7369e719a61bd8a98eaabf7d6bb7c7">setPolygonState</a> (<a class="el" href="group___resources.html#ga6c3cfb97e5733ddd4f243683fd7b4a14">PolygonMode</a> mode, <a class="el" href="group___resources.html#gaea884fb4f26a1750573b7a3ae6074fdf">Faces</a> selectedFaces)</td></tr>
 <tr class="separator:aff7369e719a61bd8a98eaabf7d6bb7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f3fceb95090841847c69b208d3023e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ab0f3fceb95090841847c69b208d3023e">setColorState</a> (bool writeRed, bool writeGreen, bool writeBlue, bool writeAlpha)</td></tr>
+<tr class="separator:ab0f3fceb95090841847c69b208d3023e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28cad0ce1c6bd86589e10cbdc2139eb1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a28cad0ce1c6bd86589e10cbdc2139eb1">getState</a> (<a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
 <tr class="separator:a28cad0ce1c6bd86589e10cbdc2139eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8616e00560347a36f373325050cd4939"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8616e00560347a36f373325050cd4939">blitDepth</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst)</td></tr>
@@ -909,6 +919,56 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af43c0fc3c5e0254a15a350bb3c2cba8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43c0fc3c5e0254a15a350bb3c2cba8d">&#9670;&nbsp;</a></span>clearColorDepthStencil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::clearColorDepthStencil </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uchar&#160;</td>
+          <td class="paramname"><em>stencil</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear color depth and stencil for the current framebuffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>the RGBA float clear color </td></tr>
+    <tr><td class="paramname">depth</td><td>the depth clear </td></tr>
+    <tr><td class="paramname">stencil</td><td>the stencil clear </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a10754be58f14727520751c9d566d58b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10754be58f14727520751c9d566d58b4">&#9670;&nbsp;</a></span>clearDepth()</h2>
 
@@ -935,6 +995,38 @@ Static Private Member Functions</h2></td></tr>
 <p>Clear depth for the current framebuffer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">depth</td><td>the depth clear </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee6b88d5d5562869b93e3b04298cbca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6b88d5d5562869b93e3b04298cbca8">&#9670;&nbsp;</a></span>clearStencil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::clearStencil </td>
+          <td>(</td>
+          <td class="paramtype">uchar&#160;</td>
+          <td class="paramname"><em>stencil</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear stencil for the current framebuffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stencil</td><td>the stencil clear </td></tr>
   </table>
   </dd>
 </dl>
@@ -1435,8 +1527,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8356140c2bd751f94408f6a1b122d002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8356140c2bd751f94408f6a1b122d002">&#9670;&nbsp;</a></span>saveFramebuffer()</h2>
+<a id="a8ef2900aed27844e9ac535557b40a1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef2900aed27844e9ac535557b40a1d6">&#9670;&nbsp;</a></span>saveFramebuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1449,18 +1541,6 @@ Static Private Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
           <td class="paramname"><em>framebuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1495,8 +1575,6 @@ Static Private Member Functions</h2></td></tr>
 <p>Save a given framebuffer content to the disk. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">framebuffer</td><td>the framebuffer to save </td></tr>
-    <tr><td class="paramname">width</td><td>the width of the region to save </td></tr>
-    <tr><td class="paramname">height</td><td>the height of the region to save </td></tr>
     <tr><td class="paramname">path</td><td>the output image path </td></tr>
     <tr><td class="paramname">flip</td><td>should the image be vertically fliped before saving </td></tr>
     <tr><td class="paramname">ignoreAlpha</td><td>should the alpha channel be ignored if it exists </td></tr>
@@ -1581,8 +1659,8 @@ Static Private Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">type</td><td>the type of the framebuffer </td></tr>
     <tr><td class="paramname">format</td><td>the format of the framebuffer </td></tr>
-    <tr><td class="paramname">width</td><td>the width of the framebuffer </td></tr>
-    <tr><td class="paramname">height</td><td>the height of the framebuffer </td></tr>
+    <tr><td class="paramname">width</td><td>the width of the region to save </td></tr>
+    <tr><td class="paramname">height</td><td>the height of the region to save </td></tr>
     <tr><td class="paramname">components</td><td>the number of components of the framebuffer </td></tr>
     <tr><td class="paramname">path</td><td>the output image path </td></tr>
     <tr><td class="paramname">flip</td><td>should the image be vertically fliped before saving </td></tr>
@@ -1677,6 +1755,63 @@ Static Private Member Functions</h2></td></tr>
     <tr><td class="paramname">equation</td><td>the blending equation </td></tr>
     <tr><td class="paramname">src</td><td>the blending value to use for the source </td></tr>
     <tr><td class="paramname">dst</td><td>the blending value to use for the destination </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab0f3fceb95090841847c69b208d3023e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f3fceb95090841847c69b208d3023e">&#9670;&nbsp;</a></span>setColorState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::setColorState </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>writeRed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>writeGreen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>writeBlue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>writeAlpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the color write mask. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writeRed</td><td>allow writes to the red channel </td></tr>
+    <tr><td class="paramname">writeGreen</td><td>allow writes to the green channel </td></tr>
+    <tr><td class="paramname">writeBlue</td><td>allow writes to the blue channel </td></tr>
+    <tr><td class="paramname">writeAlpha</td><td>allow writes to the alpha channel </td></tr>
   </table>
   </dd>
 </dl>
@@ -1790,8 +1925,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a41e6dd24d5f2ba300c47dc83f034daaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41e6dd24d5f2ba300c47dc83f034daaf">&#9670;&nbsp;</a></span>setDepthState() <span class="overload">[2/2]</span></h2>
+<a id="ae9041817f6f0dfc9f66b51c081c161de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9041817f6f0dfc9f66b51c081c161de">&#9670;&nbsp;</a></span>setDepthState() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1808,8 +1943,8 @@ Static Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___resources.html#ga4144e5bae086836c0cbb1689d2f1c349">DepthEquation</a>&#160;</td>
-          <td class="paramname"><em>equation</em>, </td>
+          <td class="paramtype"><a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a>&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1832,7 +1967,7 @@ Static Private Member Functions</h2></td></tr>
 <p>Configure depth testing. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">test</td><td>should depth test be performed </td></tr>
-    <tr><td class="paramname">equation</td><td>the test equation </td></tr>
+    <tr><td class="paramname">function</td><td>the test function </td></tr>
     <tr><td class="paramname">write</td><td>should the depth be written to the depth buffer </td></tr>
   </table>
   </dd>
@@ -1880,6 +2015,121 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae23fb03142c04442eaca84b224780d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23fb03142c04442eaca84b224780d41">&#9670;&nbsp;</a></span>setStencilState() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::setStencilState </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>write</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable or disable the stencil test. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">test</td><td>should stencil test be performed </td></tr>
+    <tr><td class="paramname">write</td><td>should the stencil be written to the stencil buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5f51dfe4e61cf40aa896e9c65ad729b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f51dfe4e61cf40aa896e9c65ad729b3">&#9670;&nbsp;</a></span>setStencilState() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::setStencilState </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a>&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td>
+          <td class="paramname"><em>fail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td>
+          <td class="paramname"><em>depthFail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uchar&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configure stencil testing. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">test</td><td>should stencil test be performed </td></tr>
+    <tr><td class="paramname">function</td><td>the test function </td></tr>
+    <tr><td class="paramname">fail</td><td>operation to perform if the stencil test fails </td></tr>
+    <tr><td class="paramname">pass</td><td>operation to perform if the stencil and depth tests succeed, or if the stencil test is disabled </td></tr>
+    <tr><td class="paramname">depthFail</td><td>operation to perform if the stencil test succeeds but not the depth test </td></tr>
+    <tr><td class="paramname">value</td><td>reference value used for comparison </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>Stencil writing still happens even if testing is disabled. </dd></dl>
 
 </div>
 </div>

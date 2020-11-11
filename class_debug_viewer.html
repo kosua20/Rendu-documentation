@@ -161,6 +161,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad85a869490784240e3889b9c89fff0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa304417d32c3ef238a16653ccaa8a987"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aa304417d32c3ef238a16653ccaa8a987">trackDefault</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:aa304417d32c3ef238a16653ccaa8a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0417a111203cdc7a83f3eb7adb3d1414"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0417a111203cdc7a83f3eb7adb3d1414">trackStateDefault</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a0417a111203cdc7a83f3eb7adb3d1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331dcffa6dc7f92bb8e06c54ad258a9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a331dcffa6dc7f92bb8e06c54ad258a9d">untrackDefault</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a331dcffa6dc7f92bb8e06c54ad258a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbf1f0f76b626e84be2260d8552ff4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a3fbf1f0f76b626e84be2260d8552ff4f">untrackDefault</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
@@ -805,6 +807,38 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 <p>Track the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state at the moment of the call. Can be called at each frame to track varying state. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the display name of the state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0417a111203cdc7a83f3eb7adb3d1414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0417a111203cdc7a83f3eb7adb3d1414">&#9670;&nbsp;</a></span>trackStateDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::trackStateDefault </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Register current <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state for debug; </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>how to name the state in the list </td></tr>
   </table>
   </dd>
 </dl>

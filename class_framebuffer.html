@@ -180,6 +180,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aead51ca1fcb23f592b340dee22aad5db"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#aead51ca1fcb23f592b340dee22aad5db">backbuffer</a> ()</td></tr>
 <tr class="separator:aead51ca1fcb23f592b340dee22aad5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b30b041ac238d0fac9f7f45d15feff8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a1b30b041ac238d0fac9f7f45d15feff8">backbufferResized</a> (uint w, uint h)</td></tr>
+<tr class="separator:a1b30b041ac238d0fac9f7f45d15feff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -616,6 +618,50 @@ static <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td><
 </div><div class="memdoc">
 <p><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the window backbuffer infos. </p><dl class="section return"><dt>Returns</dt><dd>a reference to a placeholder representing the backbuffer </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Can be used in conjonction with saveFramebuffer() to save the content of the window. </dd></dl>
+
+</div>
+</div>
+<a id="a1b30b041ac238d0fac9f7f45d15feff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b30b041ac238d0fac9f7f45d15feff8">&#9670;&nbsp;</a></span>backbufferResized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Framebuffer::backbufferResized </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the stored resolution of the backbuffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>the width </td></tr>
+    <tr><td class="paramname">h</td><td>the height </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This will not resize the backbuffer, only update the stored dimensions. </dd></dl>
 
 </div>
 </div>
