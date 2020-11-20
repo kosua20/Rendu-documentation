@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3faca149acd36d1676e5f4ade98851de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da0944caa18cc4fdf677a5b9b711a62"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a3da0944caa18cc4fdf677a5b9b711a62">ggx</a> (vec3 n, vec3 v, vec3 l, vec3 F0, float roughness)</td></tr>
 <tr class="separator:a3da0944caa18cc4fdf677a5b9b711a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33fb0c1c9a3e04923ab35b4fdd4d01ef"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a33fb0c1c9a3e04923ab35b4fdd4d01ef">radiance</a> (vec3 n, vec3 v, float roughness, mat4 inverseV, samplerCube cubeMap, float upLod)</td></tr>
-<tr class="separator:a33fb0c1c9a3e04923ab35b4fdd4d01ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad64ac5368ac9a2a6583fe92ce556b2"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a3ad64ac5368ac9a2a6583fe92ce556b2">radiance</a> (vec3 n, vec3 v, vec3 p, float roughness, samplerCube cubeMap, vec3 cubePos, vec3 cubeCenter, vec3 cubeExtent, vec2 cubeRotCosSin, float upLod)</td></tr>
+<tr class="separator:a3ad64ac5368ac9a2a6583fe92ce556b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45307a481acb9979f98d35354e6a8845"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#a45307a481acb9979f98d35354e6a8845">applySH</a> (vec3 wn, vec4 coeffs[9])</td></tr>
 <tr class="separator:a45307a481acb9979f98d35354e6a8845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdeee6f0b132ccc32aea913403b70c9d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_common__pbr.html#abdeee6f0b132ccc32aea913403b70c9d">approximateSpecularAO</a> (float diffuseAO, float NdotV, float roughness)</td></tr>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_g_p_u_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a>, <a class="el" href="class_g_p_u_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPU::Common::Geometry</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aea40b0597d5bbe6af84d0cb549a247b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea40b0597d5bbe6af84d0cb549a247b0">&#9670;&nbsp;</a></span>ambientBrdf()</h2>
@@ -457,8 +457,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a33fb0c1c9a3e04923ab35b4fdd4d01ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33fb0c1c9a3e04923ab35b4fdd4d01ef">&#9670;&nbsp;</a></span>radiance()</h2>
+<a id="a3ad64ac5368ac9a2a6583fe92ce556b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad64ac5368ac9a2a6583fe92ce556b2">&#9670;&nbsp;</a></span>radiance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,20 +481,44 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>roughness</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mat4&#160;</td>
-          <td class="paramname"><em>inverseV</em>, </td>
+          <td class="paramtype">samplerCube&#160;</td>
+          <td class="paramname"><em>cubeMap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">samplerCube&#160;</td>
-          <td class="paramname"><em>cubeMap</em>, </td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>cubePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>cubeCenter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>cubeExtent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec2&#160;</td>
+          <td class="paramname"><em>cubeRotCosSin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -514,13 +538,17 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the (pre-convolved) radiance for a given normal, view direction and material parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Return the (pre-convolved) radiance for a given normal, view direction and material parameters. Directions are in world space. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">n</td><td>the surface normal </td></tr>
-    <tr><td class="paramname">v</td><td>the view direction </td></tr>
-    <tr><td class="paramname">inverseV</td><td>inverse view direction </td></tr>
+    <tr><td class="paramname">n</td><td>the surface normal (world space) </td></tr>
+    <tr><td class="paramname">v</td><td>the view direction (world space) </td></tr>
+    <tr><td class="paramname">p</td><td>the surface position (world space) </td></tr>
     <tr><td class="paramname">roughness</td><td>the surface roughness </td></tr>
     <tr><td class="paramname">cubeMap</td><td>the environment map texture </td></tr>
+    <tr><td class="paramname">cubePos</td><td>position of the cubemap </td></tr>
+    <tr><td class="paramname">cubeCenter</td><td>center of the parallax correction box </td></tr>
+    <tr><td class="paramname">cubeExtent</td><td>half size of the parallax correction box (infinity if &lt; 0.0) </td></tr>
+    <tr><td class="paramname">cubeRotCosSin</td><td>precomputed cos/sin of the parallax correction box orientation </td></tr>
     <tr><td class="paramname">upLod</td><td>the maximal mip level to fetch </td></tr>
   </table>
   </dd>

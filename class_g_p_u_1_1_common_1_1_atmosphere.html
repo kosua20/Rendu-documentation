@@ -115,8 +115,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a90497e767935296be855cf09d3ec87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a1a90497e767935296be855cf09d3ec87">intersects</a> (vec3 rayOrigin, vec3 rayDir, float radius, out vec2 roots)</td></tr>
-<tr class="separator:a1a90497e767935296be855cf09d3ec87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c8e4dae894a67e8e8b16a39b0b96bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#a17c8e4dae894a67e8e8b16a39b0b96bc">rayleighPhase</a> (float cosAngle)</td></tr>
 <tr class="separator:a17c8e4dae894a67e8e8b16a39b0b96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd8483d6c0f56fa319f718b3717b3727"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html#abd8483d6c0f56fa319f718b3717b3727">miePhase</a> (float cosAngle, float gMie)</td></tr>
@@ -131,7 +129,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_1_1_common_1_1_atmosphere.html" title="Atmosphere general shader.">Atmosphere</a> general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_common_1_1_constants.html" title="Constants general shader.">GPU::Common::Constants</a>, <a class="el" href="class_g_p_u_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPU::Common::Geometry</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8640c2774cbbe9d2981469a7970eb227"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8640c2774cbbe9d2981469a7970eb227">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
@@ -195,65 +193,6 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the estimated radiance </dd></dl>
-
-</div>
-</div>
-<a id="a1a90497e767935296be855cf09d3ec87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a90497e767935296be855cf09d3ec87">&#9670;&nbsp;</a></span>intersects()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool GPU::Common::Atmosphere::intersects </td>
-          <td>(</td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>rayOrigin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>rayDir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out vec2&#160;</td>
-          <td class="paramname"><em>roots</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check if a sphere of a given radius is intersected by a ray defined by an origin wrt to the sphere center and a normalized direction. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rayOrigin</td><td>the origin of the ray </td></tr>
-    <tr><td class="paramname">rayDir</td><td>the direction of the ray (normalized) </td></tr>
-    <tr><td class="paramname">radius</td><td>the radius of the sphere to intersect </td></tr>
-    <tr><td class="paramname">roots</td><td>will contain the two roots of the associated polynomial, ordered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is intersection. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The intersection can be in the negative direction along the ray. Check the sign of the roots to know. </dd></dl>
 
 </div>
 </div>
