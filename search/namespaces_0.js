@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['compositeobj_2043',['CompositeObj',['../namespace_composite_obj.html',1,'']]]
+  ['compositeobj',['CompositeObj',['../namespace_composite_obj.html',1,'']]]
 ];
