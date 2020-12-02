@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['samples',['samples',['../class_atmosphere_config.html#a6453748c1d49c543faa0f276e5d56fff',1,'AtmosphereConfig::samples()'],['../class_path_tracer_config.html#aebfb0351b09dd16bc6e2aec18ce5d97b',1,'PathTracerConfig::samples()'],['../class_g_p_u_1_1_frag_1_1_ssao.html#a430cbb669c058a9a34fe4d0493b19745',1,'GPU::Frag::Ssao::Samples()']]],
+  ['samples',['Samples',['../class_g_p_u_1_1_frag_1_1_ssao.html#a430cbb669c058a9a34fe4d0493b19745',1,'GPU::Frag::Ssao::Samples()'],['../class_atmosphere_config.html#a6453748c1d49c543faa0f276e5d56fff',1,'AtmosphereConfig::samples()'],['../class_path_tracer_config.html#aebfb0351b09dd16bc6e2aec18ce5d97b',1,'PathTracerConfig::samples()']]],
   ['samplescount',['samplesCount',['../class_material_sky.html#a8bc6d5e1eb07f33fd8e8e62662a72e13',1,'MaterialSky::samplesCount()'],['../class_g_p_u_1_1_frag_1_1_cubemap__convo.html#a6a3915ed390ad54d3f37e8a6e6deb31c',1,'GPU::Frag::Cubemap_convo::samplesCount()']]],
   ['sandmapflat',['sandMapFlat',['../class_g_p_u_1_1_frag_1_1_ground__island.html#a23cf8b43ac84ec7c962bf1bd038897c6',1,'GPU::Frag::Ground_island']]],
   ['sandmapsteep',['sandMapSteep',['../class_g_p_u_1_1_frag_1_1_ground__island.html#ad23ce650de9e6c5c2f477c4ce42136c6',1,'GPU::Frag::Ground_island']]],

@@ -43,6 +43,6 @@ var searchData=
   ['rgbn',['rgbn',['../class_image.html#a2af9fd95ddbbb88f5e11325d9a552431',1,'Image']]],
   ['rgbtohsv',['rgbToHsv',['../class_g_p_u_1_1_common_1_1_colors.html#a5ddb6ee0a4067d0d61c65685f0b6fca3',1,'GPU::Common::Colors']]],
   ['rotatey',['rotateY',['../class_g_p_u_1_1_common_1_1_geometry.html#ae963c9e34b772797cbdecd9708c1dc3f',1,'GPU::Common::Geometry']]],
-  ['rotation',['rotation',['../class_light_probe.html#a00183ecdfbebe7a15c06e6fb9d740282',1,'LightProbe::rotation()'],['../class_rotation.html#a4c4a21cf1b9a7af223c21fd4c9d2f1de',1,'Rotation::Rotation()=default'],['../class_rotation.html#a5eda2d2860ac74a84bb022ef031c8780',1,'Rotation::Rotation(const glm::vec3 &amp;axis, float speed, Frame frame)']]],
+  ['rotation',['Rotation',['../class_rotation.html#a4c4a21cf1b9a7af223c21fd4c9d2f1de',1,'Rotation::Rotation()=default'],['../class_rotation.html#a5eda2d2860ac74a84bb022ef031c8780',1,'Rotation::Rotation(const glm::vec3 &amp;axis, float speed, Frame frame)'],['../class_light_probe.html#a00183ecdfbebe7a15c06e6fb9d740282',1,'LightProbe::rotation()']]],
   ['rotationcossin',['rotationCosSin',['../class_light_probe.html#abeff13caa7fad560a675fdcaea0abe52',1,'LightProbe']]]
 ];

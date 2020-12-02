@@ -13,6 +13,7 @@ var searchData=
   ['decodetransformation',['decodeTransformation',['../class_codable.html#ad4e2612d16d7ad3b7a9ee7f1a3700749',1,'Codable']]],
   ['decodevec2',['decodeVec2',['../class_codable.html#a104ccb16d30802fc69b810db7d0afcee',1,'Codable']]],
   ['decodevec3',['decodeVec3',['../class_codable.html#a9c46bacd5c98a3efac31e10374ef8647',1,'Codable']]],
+  ['decodevec4',['decodeVec4',['../class_codable.html#af69d4da2556b27e52553d1a1589c26cb',1,'Codable']]],
   ['deferredlight',['DeferredLight',['../class_deferred_light.html#a755b4548b2e283772bf071dce27dc645',1,'DeferredLight']]],
   ['deferredrenderer',['DeferredRenderer',['../class_deferred_renderer.html#a5959fb4470612bf095f96d632584b884',1,'DeferredRenderer']]],
   ['density',['density',['../class_input.html#afd3deba17b875e62f2462093bf1920d7',1,'Input']]],

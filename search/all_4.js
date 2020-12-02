@@ -20,6 +20,7 @@ var searchData=
   ['decodetransformation',['decodeTransformation',['../class_codable.html#ad4e2612d16d7ad3b7a9ee7f1a3700749',1,'Codable']]],
   ['decodevec2',['decodeVec2',['../class_codable.html#a104ccb16d30802fc69b810db7d0afcee',1,'Codable']]],
   ['decodevec3',['decodeVec3',['../class_codable.html#a9c46bacd5c98a3efac31e10374ef8647',1,'Codable']]],
+  ['decodevec4',['decodeVec4',['../class_codable.html#af69d4da2556b27e52553d1a1589c26cb',1,'Codable']]],
   ['decr',['DECR',['../group___resources.html#gga54a0249f5262587373e2da1a252a3f02ac121b991572aba8a5789d08d7e9cf76e',1,'GPUObjects.hpp']]],
   ['decrwrap',['DECRWRAP',['../group___resources.html#gga54a0249f5262587373e2da1a252a3f02a7cfc5491ad9a0495fabfe294001e37da',1,'GPUObjects.hpp']]],
   ['default',['DEFAULT',['../class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6a5b39c8b553c821e7cddc6da64b5bd2ee',1,'LightProbe']]],
