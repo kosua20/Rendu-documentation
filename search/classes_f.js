@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['query',['Query',['../class_query.html',1,'']]]
+  ['query_1992',['Query',['../class_query.html',1,'']]]
 ];
