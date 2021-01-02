@@ -96,8 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_g_l_utilities-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GLUtilities Class Reference<div class="ingroups"><a class="el" href="group___graphics.html">Graphics</a></div></div>  </div>
@@ -113,6 +113,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_l_utilities_1_1_binding.html">Binding</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_l_utilities_1_1_metrics.html">Metrics</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -125,6 +127,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2dc2a10a0e9c2b14333a5b95a30ba992"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a2dc2a10a0e9c2b14333a5b95a30ba992">checkError</a> (const char *file, int line, const std::string &amp;infos)</td></tr>
+<tr class="separator:a2dc2a10a0e9c2b14333a5b95a30ba992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00d785f477f7e30dc5fb01730fd398c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#ab00d785f477f7e30dc5fb01730fd398c">checkFramebufferStatus</a> ()</td></tr>
+<tr class="separator:ab00d785f477f7e30dc5fb01730fd398c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81a8d12b50ca376e06e5330f6f26e948"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a81a8d12b50ca376e06e5330f6f26e948">setup</a> ()</td></tr>
 <tr class="separator:a81a8d12b50ca376e06e5330f6f26e948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5357f70ec812d72232c3a82d0ccd8f48"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a5357f70ec812d72232c3a82d0ccd8f48">loadShader</a> (const std::string &amp;prog, <a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> type, <a class="el" href="class_g_l_utilities.html#a8c36abadc13d0c12fcf0371855b7f5f3">Bindings</a> &amp;bindings, std::string &amp;finalLog)</td></tr>
@@ -175,8 +181,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a42ce92e4a9daf800176434f152a2bca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa663cce2de2e4a55fe5aff42086fe549"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aa663cce2de2e4a55fe5aff42086fe549">drawTesselatedMesh</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;mesh, uint patchSize)</td></tr>
 <tr class="separator:aa663cce2de2e4a55fe5aff42086fe549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c7776210ccd84fc42c1ddf77907d7d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a40c7776210ccd84fc42c1ddf77907d7d">drawQuad</a> ()</td></tr>
+<tr class="separator:a40c7776210ccd84fc42c1ddf77907d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d9ff7c6840abf4de120b3241e69cc6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a89d9ff7c6840abf4de120b3241e69cc6">sync</a> ()</td></tr>
 <tr class="separator:a89d9ff7c6840abf4de120b3241e69cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a31ebb2027365ba327edc448bcb60f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a29a31ebb2027365ba327edc448bcb60f">nextFrame</a> ()</td></tr>
+<tr class="separator:a29a31ebb2027365ba327edc448bcb60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729a8bcadf17440fd0757d2b05c7b241"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a729a8bcadf17440fd0757d2b05c7b241">deviceInfos</a> (std::string &amp;vendor, std::string &amp;renderer, std::string &amp;version, std::string &amp;shaderVersion)</td></tr>
 <tr class="separator:a729a8bcadf17440fd0757d2b05c7b241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35df8414f4201f959b28313f0917782"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#af35df8414f4201f959b28313f0917782">deviceExtensions</a> ()</td></tr>
@@ -217,6 +227,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a8f4a0556ed1152030127ebbd259f01dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28cad0ce1c6bd86589e10cbdc2139eb1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a28cad0ce1c6bd86589e10cbdc2139eb1">getState</a> (<a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
 <tr class="separator:a28cad0ce1c6bd86589e10cbdc2139eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ffd39a9777ab0f38c4cffd973f18dd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="struct_g_l_utilities_1_1_metrics.html">Metrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a57ffd39a9777ab0f38c4cffd973f18dd">getMetrics</a> ()</td></tr>
+<tr class="separator:a57ffd39a9777ab0f38c4cffd973f18dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8616e00560347a36f373325050cd4939"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a8616e00560347a36f373325050cd4939">blitDepth</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst)</td></tr>
 <tr class="separator:a8616e00560347a36f373325050cd4939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244d3e72767fc0e2e968667557c4e2f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a244d3e72767fc0e2e968667557c4e2f4">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
@@ -236,8 +248,6 @@ Static Private Member Functions</h2></td></tr>
 <tr class="separator:a5a06dd42d149506813a002d45a8c04e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d68d7051042e346846ecc654472dfc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a97d68d7051042e346846ecc654472dfc">restoreTexture</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape)</td></tr>
 <tr class="separator:a97d68d7051042e346846ecc654472dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736000ce4964ad21c121a874089b732a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a736000ce4964ad21c121a874089b732a">bindVertexArray</a> (GLuint vao)</td></tr>
-<tr class="separator:a736000ce4964ad21c121a874089b732a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f68bc460311b9eabfee04e08dc8cb99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a2f68bc460311b9eabfee04e08dc8cb99">deleted</a> (<a class="el" href="class_g_p_u_texture.html">GPUTexture</a> &amp;tex)</td></tr>
 <tr class="separator:a2f68bc460311b9eabfee04e08dc8cb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1834e405e6d16a3f6b493e5876dd71a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a1834e405e6d16a3f6b493e5876dd71a9">deleted</a> (<a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer)</td></tr>
@@ -245,30 +255,47 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a417bc30ab4741d0597454f618d89db00"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a417bc30ab4741d0597454f618d89db00">deleted</a> (<a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> &amp;mesh)</td></tr>
 <tr class="separator:a417bc30ab4741d0597454f618d89db00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a46e11418e92e5c817a820fc780c12604"><td class="memItemLeft" align="right" valign="top"><a id="a46e11418e92e5c817a820fc780c12604"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>GPUTexture</b></td></tr>
-<tr class="separator:a46e11418e92e5c817a820fc780c12604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa62330116e22970992a8bdae59e0f5f3"><td class="memItemLeft" align="right" valign="top"><a id="aa62330116e22970992a8bdae59e0f5f3"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>GPUBuffer</b></td></tr>
-<tr class="separator:aa62330116e22970992a8bdae59e0f5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3a145c6faab5306edad3ff713eb337"><td class="memItemLeft" align="right" valign="top"><a id="a5b3a145c6faab5306edad3ff713eb337"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>GPUMesh</b></td></tr>
-<tr class="separator:a5b3a145c6faab5306edad3ff713eb337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae02fcb369ee3a73acd5b794d2a262eaf"><td class="memItemLeft" align="right" valign="top"><a id="ae02fcb369ee3a73acd5b794d2a262eaf"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>Framebuffer</b></td></tr>
-<tr class="separator:ae02fcb369ee3a73acd5b794d2a262eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc20112b0881eec37a94dc062ee3622f"><td class="memItemLeft" align="right" valign="top"><a id="abc20112b0881eec37a94dc062ee3622f"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>ScreenQuad</b></td></tr>
-<tr class="separator:abc20112b0881eec37a94dc062ee3622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a13d099a71c8dd444660712e32d2c2d81"><td class="memItemLeft" align="right" valign="top"><a id="a13d099a71c8dd444660712e32d2c2d81"></a>
 static <a class="el" href="class_g_p_u_state.html">GPUState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a13d099a71c8dd444660712e32d2c2d81">_state</a></td></tr>
 <tr class="memdesc:a13d099a71c8dd444660712e32d2c2d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state for caching. <br /></td></tr>
 <tr class="separator:a13d099a71c8dd444660712e32d2c2d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5900aa248ad12a618c4f080d1e6942d4"><td class="memItemLeft" align="right" valign="top"><a id="a5900aa248ad12a618c4f080d1e6942d4"></a>
+static <a class="el" href="struct_g_l_utilities_1_1_metrics.html">Metrics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a5900aa248ad12a618c4f080d1e6942d4">_metrics</a></td></tr>
+<tr class="memdesc:a5900aa248ad12a618c4f080d1e6942d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal metrics (draw count, state changes,...). <br /></td></tr>
+<tr class="separator:a5900aa248ad12a618c4f080d1e6942d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca0707cc9d0d7d3cc6a21a77d38cbe0"><td class="memItemLeft" align="right" valign="top"><a id="a2ca0707cc9d0d7d3cc6a21a77d38cbe0"></a>
+static <a class="el" href="struct_g_l_utilities_1_1_metrics.html">Metrics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a2ca0707cc9d0d7d3cc6a21a77d38cbe0">_metricsPrevious</a></td></tr>
+<tr class="memdesc:a2ca0707cc9d0d7d3cc6a21a77d38cbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal metrics for the last completed frame. <br /></td></tr>
+<tr class="separator:a2ca0707cc9d0d7d3cc6a21a77d38cbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7465a28f1dfc1bf343532863035ada"><td class="memItemLeft" align="right" valign="top"><a id="a1d7465a28f1dfc1bf343532863035ada"></a>
+static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a1d7465a28f1dfc1bf343532863035ada">_vao</a> = 0</td></tr>
+<tr class="memdesc:a1d7465a28f1dfc1bf343532863035ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique empty screenquad VAO. <br /></td></tr>
+<tr class="separator:a1d7465a28f1dfc1bf343532863035ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aec0cac2dbe1266a90e726667e2d8ad15"><td class="memItemLeft" align="right" valign="top"><a id="aec0cac2dbe1266a90e726667e2d8ad15"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#aec0cac2dbe1266a90e726667e2d8ad15">GPUTexture</a></td></tr>
+<tr class="memdesc:aec0cac2dbe1266a90e726667e2d8ad15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to deletion notifier for cached state update. <br /></td></tr>
+<tr class="separator:aec0cac2dbe1266a90e726667e2d8ad15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7889eb255b90a0d93342a8012b1bd1e9"><td class="memItemLeft" align="right" valign="top"><a id="a7889eb255b90a0d93342a8012b1bd1e9"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a7889eb255b90a0d93342a8012b1bd1e9">GPUBuffer</a></td></tr>
+<tr class="memdesc:a7889eb255b90a0d93342a8012b1bd1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to deletion notifier for cached state update. <br /></td></tr>
+<tr class="separator:a7889eb255b90a0d93342a8012b1bd1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c70b528d2e39343a66789ec43abfde"><td class="memItemLeft" align="right" valign="top"><a id="a80c70b528d2e39343a66789ec43abfde"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a80c70b528d2e39343a66789ec43abfde">GPUMesh</a></td></tr>
+<tr class="memdesc:a80c70b528d2e39343a66789ec43abfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to deletion notifier for cached state update. <br /></td></tr>
+<tr class="separator:a80c70b528d2e39343a66789ec43abfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88df80064068d454e05a22e38842d1d2"><td class="memItemLeft" align="right" valign="top"><a id="a88df80064068d454e05a22e38842d1d2"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a88df80064068d454e05a22e38842d1d2">Framebuffer</a></td></tr>
+<tr class="memdesc:a88df80064068d454e05a22e38842d1d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to deletion notifier for cached state update. <br /></td></tr>
+<tr class="separator:a88df80064068d454e05a22e38842d1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0432bf4ab621f4098afac914ccb5371e"><td class="memItemLeft" align="right" valign="top"><a id="a0432bf4ab621f4098afac914ccb5371e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_l_utilities.html#a0432bf4ab621f4098afac914ccb5371e">Program</a></td></tr>
+<tr class="memdesc:a0432bf4ab621f4098afac914ccb5371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to metrics. <br /></td></tr>
+<tr class="separator:a0432bf4ab621f4098afac914ccb5371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provide utility functions to communicate with the driver and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p>
@@ -657,39 +684,6 @@ static <a class="el" href="class_g_p_u_state.html">GPUState</a>&#160;</td><td cl
 
 </div>
 </div>
-<a id="a736000ce4964ad21c121a874089b732a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a736000ce4964ad21c121a874089b732a">&#9670;&nbsp;</a></span>bindVertexArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GLUtilities::bindVertexArray </td>
-          <td>(</td>
-          <td class="paramtype">GLuint&#160;</td>
-          <td class="paramname"><em>vao</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Register and perform vertex array binding </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vao</td><td>the vertex array to bind </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>For Screenquad only </dd></dl>
-
-</div>
-</div>
 <a id="a244d3e72767fc0e2e968667557c4e2f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a244d3e72767fc0e2e968667557c4e2f4">&#9670;&nbsp;</a></span>blit() <span class="overload">[1/5]</span></h2>
 
@@ -1026,6 +1020,83 @@ static <a class="el" href="class_g_p_u_state.html">GPUState</a>&#160;</td><td cl
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Depth is necessarily filtered using nearest neighbour. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This treat the current depth buffer setup as a 2D texture. </dd></dl>
+
+</div>
+</div>
+<a id="a2dc2a10a0e9c2b14333a5b95a30ba992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc2a10a0e9c2b14333a5b95a30ba992">&#9670;&nbsp;</a></span>checkError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GLUtilities::checkError </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>infos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if any OpenGL error has been detected and log it. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>the current file </td></tr>
+    <tr><td class="paramname">line</td><td>the current line </td></tr>
+    <tr><td class="paramname">infos</td><td>additional user info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non zero if an error was encountered </dd></dl>
+
+</div>
+</div>
+<a id="ab00d785f477f7e30dc5fb01730fd398c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00d785f477f7e30dc5fb01730fd398c">&#9670;&nbsp;</a></span>checkFramebufferStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GLUtilities::checkFramebufferStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if any OpenGL has been detected after setting up a framebuffer. </p><dl class="section return"><dt>Returns</dt><dd>non zero if an error was encountered </dd></dl>
 
 </div>
 </div>
@@ -1645,6 +1716,32 @@ static <a class="el" href="class_g_p_u_state.html">GPUState</a>&#160;</td><td cl
 
 </div>
 </div>
+<a id="a40c7776210ccd84fc42c1ddf77907d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c7776210ccd84fc42c1ddf77907d7d">&#9670;&nbsp;</a></span>drawQuad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::drawQuad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw a fullscreen quad. </p>
+
+</div>
+</div>
 <a id="aa663cce2de2e4a55fe5aff42086fe549"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa663cce2de2e4a55fe5aff42086fe549">&#9670;&nbsp;</a></span>drawTesselatedMesh()</h2>
 
@@ -1718,6 +1815,32 @@ static <a class="el" href="class_g_p_u_state.html">GPUState</a>&#160;</td><td cl
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This will set the number of levels to 1000. </dd></dl>
+
+</div>
+</div>
+<a id="a57ffd39a9777ab0f38c4cffd973f18dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ffd39a9777ab0f38c4cffd973f18dd">&#9670;&nbsp;</a></span>getMetrics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_g_l_utilities_1_1_metrics.html">GLUtilities::Metrics</a> &amp; GLUtilities::getMetrics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>internal metrics for the current frame </dd></dl>
 
 </div>
 </div>
@@ -1808,6 +1931,32 @@ static <a class="el" href="class_g_p_u_state.html">GPUState</a>&#160;</td><td cl
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the OpenGL ID of the shader object </dd></dl>
+
+</div>
+</div>
+<a id="a29a31ebb2027365ba327edc448bcb60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a31ebb2027365ba327edc448bcb60f">&#9670;&nbsp;</a></span>nextFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLUtilities::nextFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prepare <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> for next frame. </p>
 
 </div>
 </div>

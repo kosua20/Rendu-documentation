@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y_3604',['y',['../struct_input_1_1_mouse_cursor.html#a4e343d8995595643230c801bbe552c88',1,'Input::MouseCursor']]],
-  ['y0_3605',['y0',['../struct_input_1_1_mouse_button.html#a0ff3ecf7adefc05ada5f7d58fd77bfa9',1,'Input::MouseButton']]],
-  ['y1_3606',['y1',['../struct_input_1_1_mouse_button.html#ab07099a286b0028f69b703c07eb05c4e',1,'Input::MouseButton']]]
+  ['x_3675',['x',['../struct_input_1_1_mouse_cursor.html#af17785b7ba0a2090bef442a066f72315',1,'Input::MouseCursor']]],
+  ['x0_3676',['x0',['../struct_input_1_1_mouse_button.html#abf2049fd594fed771502b77cfbb1d298',1,'Input::MouseButton']]],
+  ['x1_3677',['x1',['../struct_input_1_1_mouse_button.html#a27d929eb4959aa941cfb96b12318f403',1,'Input::MouseButton']]]
 ];

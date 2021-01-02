@@ -86,8 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Graphics</div>  </div>
 </div><!--header-->
@@ -132,83 +131,14 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga75f201b0e53e68726854997957322b8d"><td class="memItemLeft" align="right" valign="top"><a id="ga75f201b0e53e68726854997957322b8d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#ga75f201b0e53e68726854997957322b8d">checkGLError</a>()&#160;&#160;&#160;<a class="el" href="group___graphics.html#ga0e355454ad2ba7f71b5134e1243b02f5">_checkGLError</a>(__FILE__, __LINE__, &quot;&quot;)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#ga75f201b0e53e68726854997957322b8d">checkGLError</a>()&#160;&#160;&#160;<a class="el" href="class_g_l_utilities.html#a2dc2a10a0e9c2b14333a5b95a30ba992">GLUtilities::checkError</a>(__FILE__, __LINE__, &quot;&quot;);</td></tr>
 <tr class="memdesc:ga75f201b0e53e68726854997957322b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro is used to check for OpenGL errors with access to the file and line number where the error is detected. <br /></td></tr>
 <tr class="separator:ga75f201b0e53e68726854997957322b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaca65bbe50a0ed6411359608eb49b9c5a"><td class="memItemLeft" align="right" valign="top"><a id="gaca65bbe50a0ed6411359608eb49b9c5a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#gaca65bbe50a0ed6411359608eb49b9c5a">checkGLErrorInfos</a>(infos)&#160;&#160;&#160;<a class="el" href="group___graphics.html#ga0e355454ad2ba7f71b5134e1243b02f5">_checkGLError</a>(__FILE__, __LINE__, infos)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#gaca65bbe50a0ed6411359608eb49b9c5a">checkGLErrorInfos</a>(infos)&#160;&#160;&#160;<a class="el" href="class_g_l_utilities.html#a2dc2a10a0e9c2b14333a5b95a30ba992">GLUtilities::checkError</a>(__FILE__, __LINE__, infos);</td></tr>
 <tr class="memdesc:gaca65bbe50a0ed6411359608eb49b9c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro is used to check for OpenGL errors with access to the file and line number where the error is detected, along with additional user informations. <br /></td></tr>
 <tr class="separator:gaca65bbe50a0ed6411359608eb49b9c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga0e355454ad2ba7f71b5134e1243b02f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#ga0e355454ad2ba7f71b5134e1243b02f5">_checkGLError</a> (const char *file, int line, const std::string &amp;infos)</td></tr>
-<tr class="separator:ga0e355454ad2ba7f71b5134e1243b02f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga01f5ea155b0740dc232f1083c7c0be0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#ga01f5ea155b0740dc232f1083c7c0be0c">checkGLFramebufferError</a> ()</td></tr>
-<tr class="separator:ga01f5ea155b0740dc232f1083c7c0be0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga0e355454ad2ba7f71b5134e1243b02f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0e355454ad2ba7f71b5134e1243b02f5">&#9670;&nbsp;</a></span>_checkGLError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _checkGLError </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>infos</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if any OpenGL error has been detected and log it. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>the current file </td></tr>
-    <tr><td class="paramname">line</td><td>the current line </td></tr>
-    <tr><td class="paramname">infos</td><td>additional user info </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>non zero if an error was encountered </dd></dl>
-
-</div>
-</div>
-<a id="ga01f5ea155b0740dc232f1083c7c0be0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga01f5ea155b0740dc232f1083c7c0be0c">&#9670;&nbsp;</a></span>checkGLFramebufferError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int checkGLFramebufferError </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if any OpenGL has been detected after setting up a framebuffer. </p><dl class="section return"><dt>Returns</dt><dd>non zero if an error was encountered </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->

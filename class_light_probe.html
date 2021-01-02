@@ -294,7 +294,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
    irradiance: shcoeffs_filename
 </pre><p> for a static environment map or </p><pre class="fragment">* probe:
    position: X,Y,Z
-</pre><p> for a probe renderered on the fly at the given location </p><dl class="params"><dt>Parameters</dt><dd>
+   center: X,Y,Z
+   extent: W,H,D
+   rotation: angle
+</pre><p> for a probe renderered on the fly at the given location. center, extent and rotation are used to define an oriented box used as a local scene proxy. If extent is negative, the environment is assumed to be at infinity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>the parameters tuple </td></tr>
     <tr><td class="paramname">options</td><td>data loading and storage options </td></tr>

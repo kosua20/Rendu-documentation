@@ -109,12 +109,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a2e34d8d662b907a9e859b73311d84a0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">Type</a> : int { <br />
-&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca36dcc47244c3044036021a814602a3a9">Common</a> = 0, 
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0cad3787b48eed2e837901c27c326fe368e">PBRRegular</a>, 
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca3285326d869ef94f2c18ae60ceef3f2d">PBRParallax</a>, 
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0caa24de97e6768002462f71fc4bed64158">PBRNoUVs</a>, 
+&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca06e42d8a5e8d7ac97059a02bf51f45cd">None</a> = 0, 
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0cac04b66057198bcaa3be6b5a61385908e">Regular</a>, 
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0cac06815ac7ebba4c30493c11b422c0111">Parallax</a>, 
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca0ffef84cbb54dfce7b8366fac3515e27">Emissive</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca0ffef84cbb54dfce7b8366fac3515e27">Emissive</a>
+&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca38a83ef3d9b76c32074c20ea6ba98e45">Transparent</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a2e34d8d662b907a9e859b73311d84a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of shading/effects.  <a href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">More...</a><br /></td></tr>
@@ -150,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a315a712b4b6c7470769c1ac97557842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3836cae8a26f09628b0d6b18e466d7d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a3836cae8a26f09628b0d6b18e466d7d2">masked</a> () const</td></tr>
 <tr class="separator:a3836cae8a26f09628b0d6b18e466d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf8e64c31d3b7e9bac51fd99568f1e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aeaf8e64c31d3b7e9bac51fd99568f1e6">useTexCoords</a> () const</td></tr>
+<tr class="separator:aeaf8e64c31d3b7e9bac51fd99568f1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a462af1bd55b4da1fbc9c4760ee1dd9b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a462af1bd55b4da1fbc9c4760ee1dd9b0">animated</a> () const</td></tr>
 <tr class="separator:a462af1bd55b4da1fbc9c4760ee1dd9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a807fcc54c2313e05b9e05007b23279e7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a807fcc54c2313e05b9e05007b23279e7">decode</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
@@ -190,7 +192,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_animation.html">An
 <tr class="memdesc:a2c1005e4f08e313d14b72518a5d4b5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The world space object bounding box. <br /></td></tr>
 <tr class="separator:a2c1005e4f08e313d14b72518a5d4b5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87ac38368246581d03c8c8df531b2ed"><td class="memItemLeft" align="right" valign="top"><a id="aa87ac38368246581d03c8c8df531b2ed"></a>
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aa87ac38368246581d03c8c8df531b2ed">_material</a> = Type::Common</td></tr>
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aa87ac38368246581d03c8c8df531b2ed">_material</a> = Type::None</td></tr>
 <tr class="memdesc:aa87ac38368246581d03c8c8df531b2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material type. <br /></td></tr>
 <tr class="separator:aa87ac38368246581d03c8c8df531b2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd69fd796f180e9ea454ed12151e8e99"><td class="memItemLeft" align="right" valign="top"><a id="abd69fd796f180e9ea454ed12151e8e99"></a>
@@ -205,6 +207,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ad02ef2726779806fcb176e3e4156a656">_masked</a> = false</td></tr>
 <tr class="memdesc:ad02ef2726779806fcb176e3e4156a656"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object RGB texture has a non-empty alpha channel. <br /></td></tr>
 <tr class="separator:ad02ef2726779806fcb176e3e4156a656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70674bd694908fb3fcedf05007bd676"><td class="memItemLeft" align="right" valign="top"><a id="ae70674bd694908fb3fcedf05007bd676"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ae70674bd694908fb3fcedf05007bd676">_skipUVs</a> = false</td></tr>
+<tr class="memdesc:ae70674bd694908fb3fcedf05007bd676"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object doesn't use UV coordinates. <br /></td></tr>
+<tr class="separator:ae70674bd694908fb3fcedf05007bd676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb1837b0f6cd474d0104c3d7e787724"><td class="memItemLeft" align="right" valign="top"><a id="a7cb1837b0f6cd474d0104c3d7e787724"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7cb1837b0f6cd474d0104c3d7e787724">_dirtyBbox</a> = true</td></tr>
 <tr class="memdesc:a7cb1837b0f6cd474d0104c3d7e787724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the bounding box been updated following an animation update. <br /></td></tr>
@@ -229,17 +235,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Type of shading/effects. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0ca36dcc47244c3044036021a814602a3a9"></a>Common&#160;</td><td class="fielddoc"><p>Any type of shading. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0ca06e42d8a5e8d7ac97059a02bf51f45cd"></a>None&#160;</td><td class="fielddoc"><p>Any type of shading. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0cad3787b48eed2e837901c27c326fe368e"></a>PBRRegular&#160;</td><td class="fielddoc"><p>PBR shading. </p>
+<tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0cac04b66057198bcaa3be6b5a61385908e"></a>Regular&#160;</td><td class="fielddoc"><p>PBR shading. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_vert_1_1_object__gbuffer.html" title="Object gbuffer vertex shader.">GPU::Vert::Object_gbuffer</a>, <a class="el" href="class_g_p_u_1_1_frag_1_1_object__gbuffer.html" title="Object gbuffer fragment shader.">GPU::Frag::Object_gbuffer</a> </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0ca3285326d869ef94f2c18ae60ceef3f2d"></a>PBRParallax&#160;</td><td class="fielddoc"><p>PBR with parallax mapping. </p>
+<tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0cac06815ac7ebba4c30493c11b422c0111"></a>Parallax&#160;</td><td class="fielddoc"><p>PBR with parallax mapping. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_vert_1_1_object__parallax__gbuffer.html" title="Object parallax gbuffer vertex shader.">GPU::Vert::Object_parallax_gbuffer</a>, <a class="el" href="class_g_p_u_1_1_frag_1_1_object__parallax__gbuffer.html" title="Object parallax gbuffer fragment shader.">GPU::Frag::Object_parallax_gbuffer</a> </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0caa24de97e6768002462f71fc4bed64158"></a>PBRNoUVs&#160;</td><td class="fielddoc"><p>PBR for objects with no UVs. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0ca0ffef84cbb54dfce7b8366fac3515e27"></a>Emissive&#160;</td><td class="fielddoc"><p>Emissive objects (no shading, pure emitter) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2e34d8d662b907a9e859b73311d84a0ca38a83ef3d9b76c32074c20ea6ba98e45"></a>Transparent&#160;</td><td class="fielddoc"><p>Transparent object. </p>
 </td></tr>
 </table>
 
@@ -554,6 +560,7 @@ scaling: scale
 orientation: axisX,axisY,axisZ angle
 shadows: bool
 twosided: bool
+skipuvs: bool
 masked: bool
 textures:
     - texturetype: ...
@@ -878,6 +885,32 @@ animations:
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_sky.html#a81146de75649204b9da9c1e1333a0a3d">Sky</a>.</p>
+
+</div>
+</div>
+<a id="aeaf8e64c31d3b7e9bac51fd99568f1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf8e64c31d3b7e9bac51fd99568f1e6">&#9670;&nbsp;</a></span>useTexCoords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Object::useTexCoords </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Should the object use its texture coordinates (if they exist) </p><dl class="section return"><dt>Returns</dt><dd>a boolean denoting if the UV should be used </dd></dl>
 
 </div>
 </div>

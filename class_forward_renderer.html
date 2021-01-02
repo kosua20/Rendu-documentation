@@ -142,8 +142,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a2bbc41b1501ed0ecb6ada29f470344c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a2bbc41b1501ed0ecb6ada29f470344c2">renderScene</a> (const glm::mat4 &amp;view, const glm::mat4 &amp;proj, const glm::vec3 &amp;pos)</td></tr>
-<tr class="separator:a2bbc41b1501ed0ecb6ada29f470344c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2a2de97835382f7469f23481512573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#aac2a2de97835382f7469f23481512573">renderDepth</a> (const <a class="el" href="class_culler.html#a1169c1e3d1bd58238dc24b24d0e6f441">Culler::List</a> &amp;visibles, const glm::mat4 &amp;view, const glm::mat4 &amp;proj)</td></tr>
+<tr class="separator:aac2a2de97835382f7469f23481512573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea73796864ecfddb5ce92290a3d099a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a8ea73796864ecfddb5ce92290a3d099a">renderOpaque</a> (const <a class="el" href="class_culler.html#a1169c1e3d1bd58238dc24b24d0e6f441">Culler::List</a> &amp;visibles, const glm::mat4 &amp;view, const glm::mat4 &amp;proj)</td></tr>
+<tr class="separator:a8ea73796864ecfddb5ce92290a3d099a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138dc96994bcfcc8db6c75e42e41f6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a138dc96994bcfcc8db6c75e42e41f6dd">renderTransparent</a> (const <a class="el" href="class_culler.html#a1169c1e3d1bd58238dc24b24d0e6f441">Culler::List</a> &amp;visibles, const glm::mat4 &amp;view, const glm::mat4 &amp;proj)</td></tr>
+<tr class="separator:a138dc96994bcfcc8db6c75e42e41f6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa68df08743662db255cf9f585f321b66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#aa68df08743662db255cf9f585f321b66">renderBackground</a> (const glm::mat4 &amp;view, const glm::mat4 &amp;proj, const glm::vec3 &amp;pos)</td></tr>
 <tr class="separator:aa68df08743662db255cf9f585f321b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,6 +177,10 @@ std::unique_ptr&lt; <a class="el" href="class_forward_light.html">ForwardLight</
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#ae3d9063f541913c633e27e37bf2a09d1">_emissiveProgram</a></td></tr>
 <tr class="memdesc:ae3d9063f541913c633e27e37bf2a09d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallax mapping PBR program. <br /></td></tr>
 <tr class="separator:ae3d9063f541913c633e27e37bf2a09d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb97a1aae865ca8c038d2dd56fef9b18"><td class="memItemLeft" align="right" valign="top"><a id="aeb97a1aae865ca8c038d2dd56fef9b18"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#aeb97a1aae865ca8c038d2dd56fef9b18">_transparentProgram</a></td></tr>
+<tr class="memdesc:aeb97a1aae865ca8c038d2dd56fef9b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transparent PBR program. <br /></td></tr>
+<tr class="separator:aeb97a1aae865ca8c038d2dd56fef9b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b0545593d06ba08f0bfebc4f4eb87a3"><td class="memItemLeft" align="right" valign="top"><a id="a9b0545593d06ba08f0bfebc4f4eb87a3"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a9b0545593d06ba08f0bfebc4f4eb87a3">_depthPrepass</a></td></tr>
 <tr class="memdesc:a9b0545593d06ba08f0bfebc4f4eb87a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth prepass program. <br /></td></tr>
@@ -197,6 +205,10 @@ const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class=
 std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a84790a2232dbfddb77cb99f0d6d914a5">_scene</a></td></tr>
 <tr class="memdesc:a84790a2232dbfddb77cb99f0d6d914a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene to render. <br /></td></tr>
 <tr class="separator:a84790a2232dbfddb77cb99f0d6d914a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312cc88f18696d921ed6f82ddf81c92d"><td class="memItemLeft" align="right" valign="top"><a id="a312cc88f18696d921ed6f82ddf81c92d"></a>
+std::unique_ptr&lt; <a class="el" href="class_culler.html">Culler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a312cc88f18696d921ed6f82ddf81c92d">_culler</a></td></tr>
+<tr class="memdesc:a312cc88f18696d921ed6f82ddf81c92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objects culler. <br /></td></tr>
+<tr class="separator:a312cc88f18696d921ed6f82ddf81c92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a363c0ef5d18189a6e005c918cadc0bd3"><td class="memItemLeft" align="right" valign="top"><a id="a363c0ef5d18189a6e005c918cadc0bd3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a363c0ef5d18189a6e005c918cadc0bd3">_applySSAO</a> = true</td></tr>
 <tr class="memdesc:a363c0ef5d18189a6e005c918cadc0bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen space ambient occlusion. <br /></td></tr>
@@ -205,14 +217,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a9ec9582200a5993aa792d71512f29d63">_shadowMode</a> = <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde">ShadowMode::VARIANCE</a></td></tr>
 <tr class="memdesc:a9ec9582200a5993aa792d71512f29d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow mapping technique to use. <br /></td></tr>
 <tr class="separator:a9ec9582200a5993aa792d71512f29d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f6994fedea60447f50ecff3fa8981d"><td class="memItemLeft" align="right" valign="top"><a id="a52f6994fedea60447f50ecff3fa8981d"></a>
-glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a52f6994fedea60447f50ecff3fa8981d">_frustumMat</a> = glm::mat4(1.0f)</td></tr>
-<tr class="memdesc:a52f6994fedea60447f50ecff3fa8981d"><td class="mdescLeft">&#160;</td><td class="mdescRight">View projection matrix backup. <br /></td></tr>
-<tr class="separator:a52f6994fedea60447f50ecff3fa8981d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af83fcbb59569620b7564a4202e031f80"><td class="memItemLeft" align="right" valign="top"><a id="af83fcbb59569620b7564a4202e031f80"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#af83fcbb59569620b7564a4202e031f80">_freezeFrustum</a> = false</td></tr>
-<tr class="memdesc:af83fcbb59569620b7564a4202e031f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeze the frustum used for culling. <br /></td></tr>
-<tr class="separator:af83fcbb59569620b7564a4202e031f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -407,7 +411,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Render the scene background to the G-buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Render the scene background. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">view</td><td>the camera view matrix </td></tr>
     <tr><td class="paramname">proj</td><td>the camera projection matrix </td></tr>
@@ -418,8 +422,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a2bbc41b1501ed0ecb6ada29f470344c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bbc41b1501ed0ecb6ada29f470344c2">&#9670;&nbsp;</a></span>renderScene()</h2>
+<a id="aac2a2de97835382f7469f23481512573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2a2de97835382f7469f23481512573">&#9670;&nbsp;</a></span>renderDepth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,8 +432,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ForwardRenderer::renderScene </td>
+          <td class="memname">void ForwardRenderer::renderDepth </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_culler.html#a1169c1e3d1bd58238dc24b24d0e6f441">Culler::List</a> &amp;&#160;</td>
+          <td class="paramname"><em>visibles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const glm::mat4 &amp;&#160;</td>
           <td class="paramname"><em>view</em>, </td>
         </tr>
@@ -437,13 +447,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const glm::mat4 &amp;&#160;</td>
-          <td class="paramname"><em>proj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
-          <td class="paramname"><em>pos</em>&#160;</td>
+          <td class="paramname"><em>proj</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -457,11 +461,112 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Render the scene objects to the G-buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Render the scene object depth (prepass). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">visibles</td><td>list of indices of visible objects </td></tr>
     <tr><td class="paramname">view</td><td>the camera view matrix </td></tr>
     <tr><td class="paramname">proj</td><td>the camera projection matrix </td></tr>
-    <tr><td class="paramname">pos</td><td>the camera position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Transparent and parallax objects will be skipped. </dd></dl>
+
+</div>
+</div>
+<a id="a8ea73796864ecfddb5ce92290a3d099a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea73796864ecfddb5ce92290a3d099a">&#9670;&nbsp;</a></span>renderOpaque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ForwardRenderer::renderOpaque </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_culler.html#a1169c1e3d1bd58238dc24b24d0e6f441">Culler::List</a> &amp;&#160;</td>
+          <td class="paramname"><em>visibles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;&#160;</td>
+          <td class="paramname"><em>proj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Render the scene opaque objects. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visibles</td><td>list of indices of visible objects </td></tr>
+    <tr><td class="paramname">view</td><td>the camera view matrix </td></tr>
+    <tr><td class="paramname">proj</td><td>the camera projection matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a138dc96994bcfcc8db6c75e42e41f6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138dc96994bcfcc8db6c75e42e41f6dd">&#9670;&nbsp;</a></span>renderTransparent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ForwardRenderer::renderTransparent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_culler.html#a1169c1e3d1bd58238dc24b24d0e6f441">Culler::List</a> &amp;&#160;</td>
+          <td class="paramname"><em>visibles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4 &amp;&#160;</td>
+          <td class="paramname"><em>proj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Render the scene transparent objects. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visibles</td><td>list of indices of visible objects </td></tr>
+    <tr><td class="paramname">view</td><td>the camera view matrix </td></tr>
+    <tr><td class="paramname">proj</td><td>the camera projection matrix </td></tr>
   </table>
   </dd>
 </dl>

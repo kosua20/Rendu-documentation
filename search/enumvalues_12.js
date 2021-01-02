@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['tesscontrol_3749',['TESSCONTROL',['../group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba46501e52c3411c5c5879a8fe4432d885',1,'GPUObjects.hpp']]],
-  ['tesseval_3750',['TESSEVAL',['../group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba1094991cfaebfc09516e6eee108f83d2',1,'GPUObjects.hpp']]],
-  ['time_5felapsed_3751',['TIME_ELAPSED',['../class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6',1,'GPUQuery']]]
+  ['tesscontrol_3826',['TESSCONTROL',['../group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba46501e52c3411c5c5879a8fe4432d885',1,'GPUObjects.hpp']]],
+  ['tesseval_3827',['TESSEVAL',['../group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba1094991cfaebfc09516e6eee108f83d2',1,'GPUObjects.hpp']]],
+  ['time_5felapsed_3828',['TIME_ELAPSED',['../class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6',1,'GPUQuery']]],
+  ['transparent_3829',['Transparent',['../class_object.html#a2e34d8d662b907a9e859b73311d84a0ca38a83ef3d9b76c32074c20ea6ba98e45',1,'Object']]]
 ];

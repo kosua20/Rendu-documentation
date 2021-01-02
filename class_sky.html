@@ -151,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a315a712b4b6c7470769c1ac97557842f inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3836cae8a26f09628b0d6b18e466d7d2 inherit pub_methods_class_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a3836cae8a26f09628b0d6b18e466d7d2">masked</a> () const</td></tr>
 <tr class="separator:a3836cae8a26f09628b0d6b18e466d7d2 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf8e64c31d3b7e9bac51fd99568f1e6 inherit pub_methods_class_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aeaf8e64c31d3b7e9bac51fd99568f1e6">useTexCoords</a> () const</td></tr>
+<tr class="separator:aeaf8e64c31d3b7e9bac51fd99568f1e6 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a462af1bd55b4da1fbc9c4760ee1dd9b0 inherit pub_methods_class_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a462af1bd55b4da1fbc9c4760ee1dd9b0">animated</a> () const</td></tr>
 <tr class="separator:a462af1bd55b4da1fbc9c4760ee1dd9b0 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226f2ae2af766b77d83c09a4d766b725 inherit pub_methods_class_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a226f2ae2af766b77d83c09a4d766b725">~Object</a> ()=default</td></tr>
@@ -175,12 +177,12 @@ Private Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_object.html">Object</a></td></tr>
 <tr class="memitem:a2e34d8d662b907a9e859b73311d84a0c inherit pub_types_class_object"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">Type</a> : int { <br />
-&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca36dcc47244c3044036021a814602a3a9">Common</a> = 0, 
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0cad3787b48eed2e837901c27c326fe368e">PBRRegular</a>, 
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca3285326d869ef94f2c18ae60ceef3f2d">PBRParallax</a>, 
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0caa24de97e6768002462f71fc4bed64158">PBRNoUVs</a>, 
+&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca06e42d8a5e8d7ac97059a02bf51f45cd">None</a> = 0, 
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0cac04b66057198bcaa3be6b5a61385908e">Regular</a>, 
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0cac06815ac7ebba4c30493c11b422c0111">Parallax</a>, 
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca0ffef84cbb54dfce7b8366fac3515e27">Emissive</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca0ffef84cbb54dfce7b8366fac3515e27">Emissive</a>
+&#160;&#160;<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0ca38a83ef3d9b76c32074c20ea6ba98e45">Transparent</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a2e34d8d662b907a9e859b73311d84a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of shading/effects.  <a href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">More...</a><br /></td></tr>
@@ -207,7 +209,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_animation.html">An
 <tr class="memdesc:a2c1005e4f08e313d14b72518a5d4b5da inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The world space object bounding box. <br /></td></tr>
 <tr class="separator:a2c1005e4f08e313d14b72518a5d4b5da inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87ac38368246581d03c8c8df531b2ed inherit pro_attribs_class_object"><td class="memItemLeft" align="right" valign="top"><a id="aa87ac38368246581d03c8c8df531b2ed"></a>
-<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aa87ac38368246581d03c8c8df531b2ed">_material</a> = Type::Common</td></tr>
+<a class="el" href="class_object.html#a2e34d8d662b907a9e859b73311d84a0c">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aa87ac38368246581d03c8c8df531b2ed">_material</a> = Type::None</td></tr>
 <tr class="memdesc:aa87ac38368246581d03c8c8df531b2ed inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material type. <br /></td></tr>
 <tr class="separator:aa87ac38368246581d03c8c8df531b2ed inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd69fd796f180e9ea454ed12151e8e99 inherit pro_attribs_class_object"><td class="memItemLeft" align="right" valign="top"><a id="abd69fd796f180e9ea454ed12151e8e99"></a>
@@ -222,6 +224,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ad02ef2726779806fcb176e3e4156a656">_masked</a> = false</td></tr>
 <tr class="memdesc:ad02ef2726779806fcb176e3e4156a656 inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object RGB texture has a non-empty alpha channel. <br /></td></tr>
 <tr class="separator:ad02ef2726779806fcb176e3e4156a656 inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70674bd694908fb3fcedf05007bd676 inherit pro_attribs_class_object"><td class="memItemLeft" align="right" valign="top"><a id="ae70674bd694908fb3fcedf05007bd676"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ae70674bd694908fb3fcedf05007bd676">_skipUVs</a> = false</td></tr>
+<tr class="memdesc:ae70674bd694908fb3fcedf05007bd676 inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object doesn't use UV coordinates. <br /></td></tr>
+<tr class="separator:ae70674bd694908fb3fcedf05007bd676 inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb1837b0f6cd474d0104c3d7e787724 inherit pro_attribs_class_object"><td class="memItemLeft" align="right" valign="top"><a id="a7cb1837b0f6cd474d0104c3d7e787724"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7cb1837b0f6cd474d0104c3d7e787724">_dirtyBbox</a> = true</td></tr>
 <tr class="memdesc:a7cb1837b0f6cd474d0104c3d7e787724 inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the bounding box been updated following an animation update. <br /></td></tr>
