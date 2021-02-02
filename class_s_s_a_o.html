@@ -116,8 +116,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9107e679b589a976dd58d021ebf15aba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a9107e679b589a976dd58d021ebf15aba">SSAO</a> (uint width, uint height, uint downscale, float <a class="el" href="class_s_s_a_o.html#a834b90c1e0a1b1fe7cc3ab1fb0413948">radius</a>)</td></tr>
-<tr class="separator:a9107e679b589a976dd58d021ebf15aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3420c41d16766399278ee2aa54796973"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a3420c41d16766399278ee2aa54796973">SSAO</a> (uint width, uint height, uint downscale, float <a class="el" href="class_s_s_a_o.html#a834b90c1e0a1b1fe7cc3ab1fb0413948">radius</a>, const std::string &amp;name)</td></tr>
+<tr class="separator:a3420c41d16766399278ee2aa54796973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43f1226659e2f0dd9cb820be397b54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#ac43f1226659e2f0dd9cb820be397b54a">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> *depthTex, const <a class="el" href="class_texture.html">Texture</a> *normalTex)</td></tr>
 <tr class="separator:ac43f1226659e2f0dd9cb820be397b54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4a64c9cb9b1151dd97bbf871605b48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#aff4a64c9cb9b1151dd97bbf871605b48">resize</a> (uint width, uint height) const</td></tr>
@@ -212,8 +212,8 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9107e679b589a976dd58d021ebf15aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9107e679b589a976dd58d021ebf15aba">&#9670;&nbsp;</a></span>SSAO()</h2>
+<a id="a3420c41d16766399278ee2aa54796973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3420c41d16766399278ee2aa54796973">&#9670;&nbsp;</a></span>SSAO()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,13 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>radius</em>&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -255,6 +261,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">height</td><td>the internal resolution height </td></tr>
     <tr><td class="paramname">downscale</td><td>the downscaling factor for the resolution when computing AO </td></tr>
     <tr><td class="paramname">radius</td><td>the <a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> intersection test radius </td></tr>
+    <tr><td class="paramname">name</td><td>the debug name for internal buffers </td></tr>
   </table>
   </dd>
 </dl>

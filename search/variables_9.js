@@ -13,7 +13,7 @@ var searchData=
   ['in_3375',['in',['../class_g_p_u_1_1_geom_1_1_object__layer.html#a1f6ca9b01e2cd977a0b4027747b41b98',1,'GPU::Geom::Object_layer::in()'],['../class_g_p_u_1_1_tess_eval_1_1_ocean__island.html#a3c5787e5079bf5d695bdcc67688e2c61',1,'GPU::TessEval::Ocean_island::in()']]],
   ['index_3376',['index',['../class_composite_obj_1_1_object_material_use.html#a39f5819a7446c6b603be4f947703b369',1,'CompositeObj::ObjectMaterialUse']]],
   ['indexbuffer_3377',['indexBuffer',['../class_g_p_u_mesh.html#a66b97af22b79848d069f8e98328bedc9',1,'GPUMesh']]],
-  ['indices_3378',['indices',['../class_mesh.html#a26632e27b772f24b069a738e7983b9da',1,'Mesh']]],
+  ['indices_3378',['indices',['../struct_mesh_1_1_metrics.html#a02d4fd5f5809854574560c973abc3fd7',1,'Mesh::Metrics::indices()'],['../class_mesh.html#a26632e27b772f24b069a738e7983b9da',1,'Mesh::indices()']]],
   ['inertia_3379',['inertia',['../struct_terrain_1_1_erosion_settings.html#a637f99dfda66651a15707690fe8a2c96',1,'Terrain::ErosionSettings']]],
   ['initialheight_3380',['initialHeight',['../class_rendering_config.html#aee5692361ef57a8ce8d31022488fb1f3',1,'RenderingConfig']]],
   ['initialwidth_3381',['initialWidth',['../class_rendering_config.html#acd1b583d436a3cb8c618b916e83f3535',1,'RenderingConfig']]],

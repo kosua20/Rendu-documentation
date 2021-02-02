@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae41d8e18c9b54c743d5910daf3dfcd07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#ae41d8e18c9b54c743d5910daf3dfcd07">GaussianBlur</a> (uint radius, uint downscale)</td></tr>
-<tr class="separator:ae41d8e18c9b54c743d5910daf3dfcd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29654561f3b3e8c11010437e756c49bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#a29654561f3b3e8c11010437e756c49bd">GaussianBlur</a> (uint radius, uint downscale, const std::string &amp;name)</td></tr>
+<tr class="separator:a29654561f3b3e8c11010437e756c49bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af863f7251b4956dfa970bbcbacc65cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#af863f7251b4956dfa970bbcbacc65cd6">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer)</td></tr>
 <tr class="separator:af863f7251b4956dfa970bbcbacc65cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -136,6 +136,10 @@ const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class=
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#aa6cb3eec89f9f551fdcc73b3e3474d61">_frameBuffers</a></td></tr>
 <tr class="memdesc:aa6cb3eec89f9f551fdcc73b3e3474d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downscaled pyramid framebuffers. <br /></td></tr>
 <tr class="separator:aa6cb3eec89f9f551fdcc73b3e3474d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ea710e39077bf12f062c763dc3b247"><td class="memItemLeft" align="right" valign="top"><a id="a66ea710e39077bf12f062c763dc3b247"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#a66ea710e39077bf12f062c763dc3b247">_name</a></td></tr>
+<tr class="memdesc:a66ea710e39077bf12f062c763dc3b247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug name. <br /></td></tr>
+<tr class="separator:a66ea710e39077bf12f062c763dc3b247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8510268d4eeb4cda4eb8f62a9ff57d5b"><td class="memItemLeft" align="right" valign="top"><a id="a8510268d4eeb4cda4eb8f62a9ff57d5b"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#a8510268d4eeb4cda4eb8f62a9ff57d5b">_downscale</a> = 1</td></tr>
 <tr class="memdesc:a8510268d4eeb4cda4eb8f62a9ff57d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial downscaling factor. <br /></td></tr>
@@ -146,8 +150,8 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Use a downscaled pyramid approach to approximate a gaussian blur with a large radius. The input texture is downscaled a number of times, using a custom filter as described by Marius Bjørge in the 'Bandwidth-Efficient Rendering' presentation, Siggraph 2015 (<a href="https://community.arm.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-20-66/siggraph2015_2D00_mmg_2D00_marius_2D00_slides.pdf">https://community.arm.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-20-66/siggraph2015_2D00_mmg_2D00_marius_2D00_slides.pdf</a>). The image is then upscaled again with a second custom filter.</p>
 <dl class="section see"><dt>See also</dt><dd>GPU::Frag::Blur-dual-filter-down, GPU::Frag::Blur-dual-filter-up </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae41d8e18c9b54c743d5910daf3dfcd07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae41d8e18c9b54c743d5910daf3dfcd07">&#9670;&nbsp;</a></span>GaussianBlur()</h2>
+<a id="a29654561f3b3e8c11010437e756c49bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29654561f3b3e8c11010437e756c49bd">&#9670;&nbsp;</a></span>GaussianBlur()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +166,13 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>downscale</em>&#160;</td>
+          <td class="paramname"><em>downscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -175,6 +185,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <table class="params">
     <tr><td class="paramname">radius</td><td>the number of levels in the downscaling pyramid </td></tr>
     <tr><td class="paramname">downscale</td><td>work at a lower resolution than the target framebuffer </td></tr>
+    <tr><td class="paramname">name</td><td>debug name for internal buffers </td></tr>
   </table>
   </dd>
 </dl>

@@ -18,7 +18,7 @@ var searchData=
   ['colorandbias_3245',['colorAndBias',['../struct_forward_light_1_1_g_p_u_light.html#a221bb16b74b2392bc08aec919336b968',1,'ForwardLight::GPULight::colorAndBias()'],['../struct_g_p_u_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html#a5197a65855132f2481b154983b6ec7f3',1,'GPU::Common::Forward_lights::GPULight::colorAndBias()']]],
   ['colorclearvalue_3246',['colorClearValue',['../class_g_p_u_state.html#a2aba23642d7e2ceda29644c4e403cb6f',1,'GPUState']]],
   ['colorname_3247',['colorName',['../struct_scene_export_1_1_material.html#a98aa6434007f8372ed14dfa7f01a7a30',1,'SceneExport::Material']]],
-  ['colors_3248',['colors',['../class_mesh.html#a484b6f05575dbac43b3f5de817f90069',1,'Mesh']]],
+  ['colors_3248',['colors',['../struct_mesh_1_1_metrics.html#a36b2f64c5de6dcd3d782f5239bfc87c5',1,'Mesh::Metrics::colors()'],['../class_mesh.html#a484b6f05575dbac43b3f5de817f90069',1,'Mesh::colors()']]],
   ['colorscene_3249',['colorScene',['../class_g_p_u_1_1_frag_1_1_dof__coc.html#acf2ac888bd93bc47c4a0c9e7b7e662d8',1,'GPU::Frag::Dof_coc']]],
   ['colortexture_3250',['colorTexture',['../class_g_p_u_1_1_frag_1_1_water__copy.html#a87e22b93f8fb866661e61d25b3f298b1',1,'GPU::Frag::Water_copy']]],
   ['colortexturepath_3251',['colorTexturePath',['../struct_composite_obj_1_1_material.html#a499883bbca746cf9e1266ff8d7f5fde5',1,'CompositeObj::Material']]],

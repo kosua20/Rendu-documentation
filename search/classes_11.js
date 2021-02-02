@@ -19,7 +19,7 @@ var searchData=
   ['skybox_5fshcoeffs_2060',['Skybox_shcoeffs',['../class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html',1,'GPU::Frag']]],
   ['spot_5flight_5fpbr_2061',['Spot_light_pbr',['../class_g_p_u_1_1_frag_1_1_spot__light__pbr.html',1,'GPU::Frag']]],
   ['spotlight_2062',['SpotLight',['../class_spot_light.html',1,'']]],
-  ['ssao_2063',['Ssao',['../class_g_p_u_1_1_frag_1_1_ssao.html',1,'GPU::Frag::Ssao'],['../class_s_s_a_o.html',1,'SSAO']]],
+  ['ssao_2063',['SSAO',['../class_s_s_a_o.html',1,'SSAO'],['../class_g_p_u_1_1_frag_1_1_ssao.html',1,'GPU::Frag::Ssao']]],
   ['stateinfos_2064',['StateInfos',['../struct_debug_viewer_1_1_state_infos.html',1,'DebugViewer']]],
   ['stenciledapp_2065',['StenciledApp',['../class_stenciled_app.html',1,'']]],
   ['stenciledrenderer_2066',['StenciledRenderer',['../class_stenciled_renderer.html',1,'']]],

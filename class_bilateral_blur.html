@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac101bdb7be82e3dacbf2850825a08541"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#ac101bdb7be82e3dacbf2850825a08541">BilateralBlur</a> ()</td></tr>
-<tr class="separator:ac101bdb7be82e3dacbf2850825a08541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a750d46c718bd72685fbc8f174ddf302a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a750d46c718bd72685fbc8f174ddf302a">BilateralBlur</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a750d46c718bd72685fbc8f174ddf302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a951cccd08126554ebe77798d46b5c89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a951cccd08126554ebe77798d46b5c89a">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> *texture, const <a class="el" href="class_texture.html">Texture</a> *depthTex, const <a class="el" href="class_texture.html">Texture</a> *normalTex, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer)</td></tr>
 <tr class="separator:a951cccd08126554ebe77798d46b5c89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,14 +126,18 @@ std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> 
 <tr class="separator:ab9ab1d2b0a3e203517a2fe3d909cfeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc639ee3fb5a5d1aaa9f4e6d3c4998a"><td class="memItemLeft" align="right" valign="top"><a id="a1bc639ee3fb5a5d1aaa9f4e6d3c4998a"></a>
 const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a1bc639ee3fb5a5d1aaa9f4e6d3c4998a">_filter</a></td></tr>
-<tr class="memdesc:a1bc639ee3fb5a5d1aaa9f4e6d3c4998a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bialteral hader. <br /></td></tr>
+<tr class="memdesc:a1bc639ee3fb5a5d1aaa9f4e6d3c4998a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bilateral hader. <br /></td></tr>
 <tr class="separator:a1bc639ee3fb5a5d1aaa9f4e6d3c4998a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51239eef4a77d50a84d8d8a24738184"><td class="memItemLeft" align="right" valign="top"><a id="ae51239eef4a77d50a84d8d8a24738184"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#ae51239eef4a77d50a84d8d8a24738184">_name</a></td></tr>
+<tr class="memdesc:ae51239eef4a77d50a84d8d8a24738184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug name. <br /></td></tr>
+<tr class="separator:ae51239eef4a77d50a84d8d8a24738184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Apply an approximate bilateral blur to a texture. This can be used to blur while preserving edges, or even to upscale and blur a small texture. The approximate implementation in Rendu is based on the one demonstrated in G3D (McGuire M., Mara M., Majercik Z., <a href="http://casual-effects.com/g3d,">http://casual-effects.com/g3d,</a> 2017), and relies on a separable Gaussian blur with adjusted weights and an extra step distance. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac101bdb7be82e3dacbf2850825a08541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac101bdb7be82e3dacbf2850825a08541">&#9670;&nbsp;</a></span>BilateralBlur()</h2>
+<a id="a750d46c718bd72685fbc8f174ddf302a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750d46c718bd72685fbc8f174ddf302a">&#9670;&nbsp;</a></span>BilateralBlur()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,12 +145,18 @@ const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class=
         <tr>
           <td class="memname">BilateralBlur::BilateralBlur </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor. </p>
+<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>debug name for internal buffers </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

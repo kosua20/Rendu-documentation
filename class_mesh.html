@@ -92,9 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,6 +109,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_mesh_8hpp_source.html">Mesh.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mesh_1_1_metrics.html">Metrics</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information on a geometric mesh.  <a href="struct_mesh_1_1_metrics.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aaee8acdbda278ad977aa4e6bf379ac56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#aaee8acdbda278ad977aa4e6bf379ac56">Load</a> { <a class="el" href="class_mesh.html#aaee8acdbda278ad977aa4e6bf379ac56a63f6baf1d88963b8c8210751c8530e94">Load::Expanded</a>, 
@@ -130,8 +138,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a35964e73990850fba5ace8c0f85bf6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b3033f5d848f22f863cb3f99171978"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a06b3033f5d848f22f863cb3f99171978">computeBoundingBox</a> ()</td></tr>
 <tr class="separator:a06b3033f5d848f22f863cb3f99171978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6066cbcb431e13b1e580e4cb83bc6a2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a6066cbcb431e13b1e580e4cb83bc6a2f">centerAndUnit</a> ()</td></tr>
-<tr class="separator:a6066cbcb431e13b1e580e4cb83bc6a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa365461672f50bdcfbc8801d81a13114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#aa365461672f50bdcfbc8801d81a13114">computeNormals</a> ()</td></tr>
 <tr class="separator:aa365461672f50bdcfbc8801d81a13114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd80b6d8d6fc53269fdc0ccd287225d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#acd80b6d8d6fc53269fdc0ccd287225d6">computeTangentsAndBinormals</a> (bool force)</td></tr>
@@ -146,6 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe7f712e4cd4271d281f873fad768270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a525d49c0c9b14d840422fbfe3550345c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a525d49c0c9b14d840422fbfe3550345c">hadColors</a> () const</td></tr>
 <tr class="separator:a525d49c0c9b14d840422fbfe3550345c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bd489a3cf69098ce702acb2d4987f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_mesh_1_1_metrics.html">Metrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a16bd489a3cf69098ce702acb2d4987f3">metrics</a> () const</td></tr>
+<tr class="separator:a16bd489a3cf69098ce702acb2d4987f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a413bc011045c95d449569666639b7389"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a413bc011045c95d449569666639b7389">operator=</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;)=delete</td></tr>
 <tr class="separator:a413bc011045c95d449569666639b7389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adecf9ab32fac64e846ad6b7753e8996b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#adecf9ab32fac64e846ad6b7753e8996b">Mesh</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;)=delete</td></tr>
@@ -194,24 +202,21 @@ std::unique_ptr&lt; <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> &gt;&
 <tr class="memdesc:a4276378fa775036ed8e064f2ec1fe981"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> buffers infos (optional). <br /></td></tr>
 <tr class="separator:a4276378fa775036ed8e064f2ec1fe981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a753112c7106a9f51b6075838108b87dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a753112c7106a9f51b6075838108b87dd">updateMetrics</a> ()</td></tr>
+<tr class="separator:a753112c7106a9f51b6075838108b87dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ae05eb589d45fb322dc8110755d9ec058"><td class="memItemLeft" align="right" valign="top"><a id="ae05eb589d45fb322dc8110755d9ec058"></a>
+<a class="el" href="struct_mesh_1_1_metrics.html">Metrics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#ae05eb589d45fb322dc8110755d9ec058">_metrics</a></td></tr>
+<tr class="memdesc:ae05eb589d45fb322dc8110755d9ec058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource stats. <br /></td></tr>
+<tr class="separator:ae05eb589d45fb322dc8110755d9ec058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a556913beae21d0427bd8353815cf439e"><td class="memItemLeft" align="right" valign="top"><a id="a556913beae21d0427bd8353815cf439e"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a556913beae21d0427bd8353815cf439e">_name</a></td></tr>
 <tr class="memdesc:a556913beae21d0427bd8353815cf439e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource name. <br /></td></tr>
 <tr class="separator:a556913beae21d0427bd8353815cf439e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22d455fbc2fd2b6d348eec1781061f36"><td class="memItemLeft" align="right" valign="top"><a id="a22d455fbc2fd2b6d348eec1781061f36"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a22d455fbc2fd2b6d348eec1781061f36">_hasTexcoords</a> = false</td></tr>
-<tr class="memdesc:a22d455fbc2fd2b6d348eec1781061f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Did the loaded mesh had texcoords. <br /></td></tr>
-<tr class="separator:a22d455fbc2fd2b6d348eec1781061f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf3e9332b3a6124344597a1539dbd8c"><td class="memItemLeft" align="right" valign="top"><a id="acdf3e9332b3a6124344597a1539dbd8c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#acdf3e9332b3a6124344597a1539dbd8c">_hasNormals</a> = false</td></tr>
-<tr class="memdesc:acdf3e9332b3a6124344597a1539dbd8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Did the loaded mesh had normals. <br /></td></tr>
-<tr class="separator:acdf3e9332b3a6124344597a1539dbd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b155df9edffb8c6f9f4bd2459bb182d"><td class="memItemLeft" align="right" valign="top"><a id="a6b155df9edffb8c6f9f4bd2459bb182d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a6b155df9edffb8c6f9f4bd2459bb182d">_hasColors</a> = false</td></tr>
-<tr class="memdesc:a6b155df9edffb8c6f9f4bd2459bb182d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Did the loaded mesh had colors. <br /></td></tr>
-<tr class="separator:a6b155df9edffb8c6f9f4bd2459bb182d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a geometric mesh composed of vertices, other attributes and triangles. </p>
@@ -371,24 +376,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6066cbcb431e13b1e580e4cb83bc6a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6066cbcb431e13b1e580e4cb83bc6a2f">&#9670;&nbsp;</a></span>centerAndUnit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mesh::centerAndUnit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Center a mesh and scale it to fit in a sphere of radius 1.0. </p>
-
-</div>
-</div>
 <a id="a35964e73990850fba5ace8c0f85bf6eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35964e73990850fba5ace8c0f85bf6eb">&#9670;&nbsp;</a></span>clean()</h2>
 
@@ -539,6 +526,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a16bd489a3cf69098ce702acb2d4987f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bd489a3cf69098ce702acb2d4987f3">&#9670;&nbsp;</a></span>metrics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_mesh_1_1_metrics.html">Mesh::Metrics</a> &amp; Mesh::metrics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the mesh current metrics (vertex count,...) </dd></dl>
+
+</div>
+</div>
 <a id="a511a9c4441ce4d4310aa748f523959ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a511a9c4441ce4d4310aa748f523959ad">&#9670;&nbsp;</a></span>name()</h2>
 
@@ -644,6 +649,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a success/error flag </dd></dl>
+
+</div>
+</div>
+<a id="a753112c7106a9f51b6075838108b87dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a753112c7106a9f51b6075838108b87dd">&#9670;&nbsp;</a></span>updateMetrics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesh::updateMetrics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update mesh metrics based on the current CPU content. </p>
 
 </div>
 </div>

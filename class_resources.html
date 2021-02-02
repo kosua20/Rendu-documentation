@@ -148,6 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38ba04529751b4c6affb28e0f96ce175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade47f4489fcb4c702b62271f145ef1a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_font.html">Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ade47f4489fcb4c702b62271f145ef1a1">getFont</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:ade47f4489fcb4c702b62271f145ef1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf417d329b2bf27766662aef2e18038"><td class="memItemLeft" align="right" valign="top">const Data *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aeaf417d329b2bf27766662aef2e18038">getData</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:aeaf417d329b2bf27766662aef2e18038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e63d1ba182da12950b3ecd11d2e4a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a82e63d1ba182da12950b3ecd11d2e4a9">getFiles</a> (const std::string &amp;extension, std::map&lt; std::string, std::string &gt; &amp;files) const</td></tr>
 <tr class="separator:a82e63d1ba182da12950b3ecd11d2e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -203,6 +205,10 @@ std::map&lt; std::string, <a class="el" href="class_mesh.html">Mesh</a> &gt;&#16
 std::map&lt; std::string, <a class="el" href="class_font.html">Font</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ad54cd7dfe72e155f71e422f7ff708e63">_fonts</a></td></tr>
 <tr class="memdesc:ad54cd7dfe72e155f71e422f7ff708e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded font infos, identified by name. <br /></td></tr>
 <tr class="separator:ad54cd7dfe72e155f71e422f7ff708e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa8efd0daf1673cce692f2eb5dda192"><td class="memItemLeft" align="right" valign="top"><a id="a9fa8efd0daf1673cce692f2eb5dda192"></a>
+std::map&lt; std::string, Data &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a9fa8efd0daf1673cce692f2eb5dda192">_blobs</a></td></tr>
+<tr class="memdesc:a9fa8efd0daf1673cce692f2eb5dda192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded binary blobs, identified by name. <br /></td></tr>
+<tr class="separator:a9fa8efd0daf1673cce692f2eb5dda192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b702d0b2d7ac84312d67d1b5c4214ee"><td class="memItemLeft" align="right" valign="top"><a id="a8b702d0b2d7ac84312d67d1b5c4214ee"></a>
 std::map&lt; std::string, <a class="el" href="class_program.html">Program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a8b702d0b2d7ac84312d67d1b5c4214ee">_programs</a></td></tr>
 <tr class="memdesc:a8b702d0b2d7ac84312d67d1b5c4214ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded shader programs, identified by name. <br /></td></tr>
@@ -435,6 +441,31 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a list of each face path </dd></dl>
+
+</div>
+</div>
+<a id="aeaf417d329b2bf27766662aef2e18038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf417d329b2bf27766662aef2e18038">&#9670;&nbsp;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Data * Resources::getData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load arbitrary data from the resources. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the data file base name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the data (internally managed) </dd></dl>
 
 </div>
 </div>
