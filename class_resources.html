@@ -111,6 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_resources_1_1_file_infos.html">FileInfos</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties of a resource file.  <a href="struct_resources_1_1_file_infos.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_resources_1_1_program_infos.html">ProgramInfos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -142,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abbe21300477d617f5c4b7b3798c171e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799441fb3d432a1ba426fafa70c2e5cf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a799441fb3d432a1ba426fafa70c2e5cf">getTexture</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a799441fb3d432a1ba426fafa70c2e5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58a9d89f3b603e5ab175937580f87f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ac58a9d89f3b603e5ab175937580f87f2">getDefaultTexture</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape)</td></tr>
+<tr class="separator:ac58a9d89f3b603e5ab175937580f87f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf9b234fe1ddc86779b41be4f6124507"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aaf9b234fe1ddc86779b41be4f6124507">getProgram</a> (const std::string &amp;name, const std::string &amp;vertexName=&quot;&quot;, const std::string &amp;fragmentName=&quot;&quot;, const std::string &amp;geometryName=&quot;&quot;, const std::string &amp;tessControlName=&quot;&quot;, const std::string &amp;tessEvalName=&quot;&quot;)</td></tr>
 <tr class="separator:aaf9b234fe1ddc86779b41be4f6124507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ba04529751b4c6affb28e0f96ce175"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a38ba04529751b4c6affb28e0f96ce175">getProgram2D</a> (const std::string &amp;name)</td></tr>
@@ -150,8 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade47f4489fcb4c702b62271f145ef1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaf417d329b2bf27766662aef2e18038"><td class="memItemLeft" align="right" valign="top">const Data *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aeaf417d329b2bf27766662aef2e18038">getData</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:aeaf417d329b2bf27766662aef2e18038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82e63d1ba182da12950b3ecd11d2e4a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a82e63d1ba182da12950b3ecd11d2e4a9">getFiles</a> (const std::string &amp;extension, std::map&lt; std::string, std::string &gt; &amp;files) const</td></tr>
-<tr class="separator:a82e63d1ba182da12950b3ecd11d2e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6907b6245319a3c937738bc671b18d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a6907b6245319a3c937738bc671b18d2f">getFiles</a> (const std::string &amp;extension, std::vector&lt; <a class="el" href="struct_resources_1_1_file_infos.html">FileInfos</a> &gt; &amp;files) const</td></tr>
+<tr class="separator:a6907b6245319a3c937738bc671b18d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -189,34 +194,34 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae2705b9c2bd3bfccccdf6a3e1ed015ee"><td class="memItemLeft" align="right" valign="top"><a id="ae2705b9c2bd3bfccccdf6a3e1ed015ee"></a>
-std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ae2705b9c2bd3bfccccdf6a3e1ed015ee">_files</a></td></tr>
-<tr class="memdesc:ae2705b9c2bd3bfccccdf6a3e1ed015ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listing of available files and their paths. <br /></td></tr>
-<tr class="separator:ae2705b9c2bd3bfccccdf6a3e1ed015ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42cf265b5ebf0a7485de5237426dd955"><td class="memItemLeft" align="right" valign="top"><a id="a42cf265b5ebf0a7485de5237426dd955"></a>
-std::map&lt; std::string, <a class="el" href="class_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a42cf265b5ebf0a7485de5237426dd955">_textures</a></td></tr>
-<tr class="memdesc:a42cf265b5ebf0a7485de5237426dd955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded textures, identified by name. <br /></td></tr>
-<tr class="separator:a42cf265b5ebf0a7485de5237426dd955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c81d7678f3bf3f11d7aa7a51e428a67"><td class="memItemLeft" align="right" valign="top"><a id="a6c81d7678f3bf3f11d7aa7a51e428a67"></a>
-std::map&lt; std::string, <a class="el" href="class_mesh.html">Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a6c81d7678f3bf3f11d7aa7a51e428a67">_meshes</a></td></tr>
-<tr class="memdesc:a6c81d7678f3bf3f11d7aa7a51e428a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded meshes, identified by name. <br /></td></tr>
-<tr class="separator:a6c81d7678f3bf3f11d7aa7a51e428a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54cd7dfe72e155f71e422f7ff708e63"><td class="memItemLeft" align="right" valign="top"><a id="ad54cd7dfe72e155f71e422f7ff708e63"></a>
-std::map&lt; std::string, <a class="el" href="class_font.html">Font</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ad54cd7dfe72e155f71e422f7ff708e63">_fonts</a></td></tr>
-<tr class="memdesc:ad54cd7dfe72e155f71e422f7ff708e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded font infos, identified by name. <br /></td></tr>
-<tr class="separator:ad54cd7dfe72e155f71e422f7ff708e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa8efd0daf1673cce692f2eb5dda192"><td class="memItemLeft" align="right" valign="top"><a id="a9fa8efd0daf1673cce692f2eb5dda192"></a>
-std::map&lt; std::string, Data &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a9fa8efd0daf1673cce692f2eb5dda192">_blobs</a></td></tr>
-<tr class="memdesc:a9fa8efd0daf1673cce692f2eb5dda192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded binary blobs, identified by name. <br /></td></tr>
-<tr class="separator:a9fa8efd0daf1673cce692f2eb5dda192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b702d0b2d7ac84312d67d1b5c4214ee"><td class="memItemLeft" align="right" valign="top"><a id="a8b702d0b2d7ac84312d67d1b5c4214ee"></a>
-std::map&lt; std::string, <a class="el" href="class_program.html">Program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a8b702d0b2d7ac84312d67d1b5c4214ee">_programs</a></td></tr>
-<tr class="memdesc:a8b702d0b2d7ac84312d67d1b5c4214ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded shader programs, identified by name. <br /></td></tr>
-<tr class="separator:a8b702d0b2d7ac84312d67d1b5c4214ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af32b8a926b8b1c760ff609584ee7d9bc"><td class="memItemLeft" align="right" valign="top"><a id="af32b8a926b8b1c760ff609584ee7d9bc"></a>
-std::map&lt; std::string, <a class="el" href="struct_resources_1_1_program_infos.html">ProgramInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#af32b8a926b8b1c760ff609584ee7d9bc">_progInfos</a></td></tr>
-<tr class="memdesc:af32b8a926b8b1c760ff609584ee7d9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional info to support shader reloading. <br /></td></tr>
-<tr class="separator:af32b8a926b8b1c760ff609584ee7d9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa57c6dc24e2033d0f385a9ad40f482"><td class="memItemLeft" align="right" valign="top"><a id="abaa57c6dc24e2033d0f385a9ad40f482"></a>
+std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#abaa57c6dc24e2033d0f385a9ad40f482">_files</a></td></tr>
+<tr class="memdesc:abaa57c6dc24e2033d0f385a9ad40f482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listing of available files and their paths. <br /></td></tr>
+<tr class="separator:abaa57c6dc24e2033d0f385a9ad40f482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d76c353fb0ff22807b91e8448e9f548"><td class="memItemLeft" align="right" valign="top"><a id="a0d76c353fb0ff22807b91e8448e9f548"></a>
+std::unordered_map&lt; std::string, <a class="el" href="class_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a0d76c353fb0ff22807b91e8448e9f548">_textures</a></td></tr>
+<tr class="memdesc:a0d76c353fb0ff22807b91e8448e9f548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded textures, identified by name. <br /></td></tr>
+<tr class="separator:a0d76c353fb0ff22807b91e8448e9f548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80479222fa5a9f2e7a3190cd26fc54fd"><td class="memItemLeft" align="right" valign="top"><a id="a80479222fa5a9f2e7a3190cd26fc54fd"></a>
+std::unordered_map&lt; std::string, <a class="el" href="class_mesh.html">Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a80479222fa5a9f2e7a3190cd26fc54fd">_meshes</a></td></tr>
+<tr class="memdesc:a80479222fa5a9f2e7a3190cd26fc54fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded meshes, identified by name. <br /></td></tr>
+<tr class="separator:a80479222fa5a9f2e7a3190cd26fc54fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9d0a46d89cf1ce821631723225f61d"><td class="memItemLeft" align="right" valign="top"><a id="a9b9d0a46d89cf1ce821631723225f61d"></a>
+std::unordered_map&lt; std::string, <a class="el" href="class_font.html">Font</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a9b9d0a46d89cf1ce821631723225f61d">_fonts</a></td></tr>
+<tr class="memdesc:a9b9d0a46d89cf1ce821631723225f61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded font infos, identified by name. <br /></td></tr>
+<tr class="separator:a9b9d0a46d89cf1ce821631723225f61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0ce48575b93e4ecc8ca940d11e2901"><td class="memItemLeft" align="right" valign="top"><a id="a9f0ce48575b93e4ecc8ca940d11e2901"></a>
+std::unordered_map&lt; std::string, Data &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a9f0ce48575b93e4ecc8ca940d11e2901">_blobs</a></td></tr>
+<tr class="memdesc:a9f0ce48575b93e4ecc8ca940d11e2901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded binary blobs, identified by name. <br /></td></tr>
+<tr class="separator:a9f0ce48575b93e4ecc8ca940d11e2901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f5afa49468c3289570d838f0508a8f"><td class="memItemLeft" align="right" valign="top"><a id="a11f5afa49468c3289570d838f0508a8f"></a>
+std::unordered_map&lt; std::string, <a class="el" href="class_program.html">Program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a11f5afa49468c3289570d838f0508a8f">_programs</a></td></tr>
+<tr class="memdesc:a11f5afa49468c3289570d838f0508a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loaded shader programs, identified by name. <br /></td></tr>
+<tr class="separator:a11f5afa49468c3289570d838f0508a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dacb0db26f7e253c90f0b0cc92fd984"><td class="memItemLeft" align="right" valign="top"><a id="a8dacb0db26f7e253c90f0b0cc92fd984"></a>
+std::unordered_map&lt; std::string, <a class="el" href="struct_resources_1_1_program_infos.html">ProgramInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a8dacb0db26f7e253c90f0b0cc92fd984">_progInfos</a></td></tr>
+<tr class="memdesc:a8dacb0db26f7e253c90f0b0cc92fd984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional info to support shader reloading. <br /></td></tr>
+<tr class="separator:a8dacb0db26f7e253c90f0b0cc92fd984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -374,7 +379,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clean all loaded resources, both CPU and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> side. </p>
+<p>Clean all loaded resources, both CPU and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> side. </p>
 
 </div>
 </div>
@@ -469,8 +474,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a82e63d1ba182da12950b3ecd11d2e4a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82e63d1ba182da12950b3ecd11d2e4a9">&#9670;&nbsp;</a></span>getFiles()</h2>
+<a id="ac58a9d89f3b603e5ab175937580f87f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58a9d89f3b603e5ab175937580f87f2">&#9670;&nbsp;</a></span>getDefaultTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_texture.html">Texture</a> * Resources::getDefaultTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a>&#160;</td>
+          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a default, empty texture of a given shape. This is useful for filling optional texture slots. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>the texture shape </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the texture information </dd></dl>
+
+</div>
+</div>
+<a id="a6907b6245319a3c937738bc671b18d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6907b6245319a3c937738bc671b18d2f">&#9670;&nbsp;</a></span>getFiles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,7 +514,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_resources_1_1_file_infos.html">FileInfos</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>files</em>&#160;</td>
         </tr>
         <tr>
@@ -691,7 +721,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get an OpenGL program resource. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> program resource. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the name to represent the program </td></tr>
     <tr><td class="paramname">vertexName</td><td>the name of the vertex shader </td></tr>
@@ -721,14 +751,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get an OpenGL program resource for 2D screen processing. It will use <a class="el" href="class_g_p_u_1_1_vert_1_1_passthrough.html" title="Passthrough vertex shader.">GPU::Vert::Passthrough</a> as a vertex shader. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> program resource for 2D screen processing. It will use GPU::Vert::Passthrough as a vertex shader. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the name of the fragment shader </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the program informations </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_vert_1_1_passthrough.html" title="Passthrough vertex shader.">GPU::Vert::Passthrough</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GPU::Vert::Passthrough </dd></dl>
 
 </div>
 </div>
@@ -816,7 +846,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a text file resource, following #include directives. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a text file resource, following include directives. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>the file name </td></tr>
   </table>
@@ -851,7 +881,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a text file resource, following #include directives. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a text file resource, following include directives. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>the file name </td></tr>
     <tr><td class="paramname">names</td><td>will contain the included file names </td></tr>

@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a texture containing one or more images, stored on the CPU and/or <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>.  
+<p>Represents a texture containing one or more images, stored on the CPU and/or <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>.  
  <a href="class_texture.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_texture_8hpp_source.html">Texture.hpp</a>&gt;</code></p>
@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5982601424fb87f9cf494e3b6fa2cc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b0dad27376cff468804d4f6f5bb868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#aa7b0dad27376cff468804d4f6f5bb868">clearImages</a> ()</td></tr>
 <tr class="separator:aa7b0dad27376cff468804d4f6f5bb868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4485b65b40b3f7461ed125d3e81297e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#ae4485b65b40b3f7461ed125d3e81297e">allocateImages</a> (uint channels, uint firstMip=0, uint mipCount=0xFFFFFFFF)</td></tr>
+<tr class="separator:ae4485b65b40b3f7461ed125d3e81297e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d0283525256389a133f23d0933e207e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a2d0283525256389a133f23d0933e207e">clean</a> ()</td></tr>
 <tr class="separator:a2d0283525256389a133f23d0933e207e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2339f5584c1b39ba39766d95c152969d"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a2339f5584c1b39ba39766d95c152969d">sampleCubemap</a> (const glm::vec3 &amp;dir) const</td></tr>
@@ -128,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f37ee9dc7bb5e960660df07200de426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e1d5344d24e0ee9a0ef4a9e876b97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a612e1d5344d24e0ee9a0ef4a9e876b97">operator=</a> (<a class="el" href="class_texture.html">Texture</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a612e1d5344d24e0ee9a0ef4a9e876b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a004dd9bd404d90c4be569497aa5540e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a004dd9bd404d90c4be569497aa5540e1">Texture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a004dd9bd404d90c4be569497aa5540e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ca92adefa409cc2889de643d00f6f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#af8ca92adefa409cc2889de643d00f6f2">Texture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;&amp;)</td></tr>
+<tr class="separator:af8ca92adefa409cc2889de643d00f6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -139,24 +141,24 @@ std::vector&lt; <a class="el" href="class_image.html">Image</a> &gt;&#160;</td><
 <tr class="separator:a8cc5491a0a8eaf5f3625939148051425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaae08e2bd905e6c760600b92206cf79"><td class="memItemLeft" align="right" valign="top"><a id="abaae08e2bd905e6c760600b92206cf79"></a>
 std::unique_ptr&lt; <a class="el" href="class_g_p_u_texture.html">GPUTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#abaae08e2bd905e6c760600b92206cf79">gpu</a></td></tr>
-<tr class="memdesc:abaae08e2bd905e6c760600b92206cf79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> data (optional). <br /></td></tr>
+<tr class="memdesc:abaae08e2bd905e6c760600b92206cf79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> data (optional). <br /></td></tr>
 <tr class="separator:abaae08e2bd905e6c760600b92206cf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d81cb05821b158ded3d5a46a4cd8f5a"><td class="memItemLeft" align="right" valign="top"><a id="a5d81cb05821b158ded3d5a46a4cd8f5a"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a5d81cb05821b158ded3d5a46a4cd8f5a">width</a> = 0</td></tr>
-<tr class="memdesc:a5d81cb05821b158ded3d5a46a4cd8f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture width. <br /></td></tr>
-<tr class="separator:a5d81cb05821b158ded3d5a46a4cd8f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4b01ae73439cbcc210a5977e227a880"><td class="memItemLeft" align="right" valign="top"><a id="ab4b01ae73439cbcc210a5977e227a880"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#ab4b01ae73439cbcc210a5977e227a880">height</a> = 0</td></tr>
-<tr class="memdesc:ab4b01ae73439cbcc210a5977e227a880"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture height. <br /></td></tr>
-<tr class="separator:ab4b01ae73439cbcc210a5977e227a880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0fa5e2ea07deed0cc7ce4afa19c439e"><td class="memItemLeft" align="right" valign="top"><a id="ad0fa5e2ea07deed0cc7ce4afa19c439e"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#ad0fa5e2ea07deed0cc7ce4afa19c439e">depth</a> = 1</td></tr>
-<tr class="memdesc:ad0fa5e2ea07deed0cc7ce4afa19c439e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture depth. <br /></td></tr>
-<tr class="separator:ad0fa5e2ea07deed0cc7ce4afa19c439e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2ad5b6f6d84d3940ea0d73f8a901b7"><td class="memItemLeft" align="right" valign="top"><a id="a3b2ad5b6f6d84d3940ea0d73f8a901b7"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a3b2ad5b6f6d84d3940ea0d73f8a901b7">levels</a> = 1</td></tr>
-<tr class="memdesc:a3b2ad5b6f6d84d3940ea0d73f8a901b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mipmap count. <br /></td></tr>
-<tr class="separator:a3b2ad5b6f6d84d3940ea0d73f8a901b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652ce77f6ee4f566606e7479c49b46a2"><td class="memItemLeft" align="right" valign="top"><a id="a652ce77f6ee4f566606e7479c49b46a2"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a652ce77f6ee4f566606e7479c49b46a2">width</a> = 0</td></tr>
+<tr class="memdesc:a652ce77f6ee4f566606e7479c49b46a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture width. <br /></td></tr>
+<tr class="separator:a652ce77f6ee4f566606e7479c49b46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75688df6f895e414d1b0ed7abc2aa83"><td class="memItemLeft" align="right" valign="top"><a id="ae75688df6f895e414d1b0ed7abc2aa83"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#ae75688df6f895e414d1b0ed7abc2aa83">height</a> = 0</td></tr>
+<tr class="memdesc:ae75688df6f895e414d1b0ed7abc2aa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture height. <br /></td></tr>
+<tr class="separator:ae75688df6f895e414d1b0ed7abc2aa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c033ab57e546a8bc6bcc85f13fbdf03"><td class="memItemLeft" align="right" valign="top"><a id="a4c033ab57e546a8bc6bcc85f13fbdf03"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a4c033ab57e546a8bc6bcc85f13fbdf03">depth</a> = 1</td></tr>
+<tr class="memdesc:a4c033ab57e546a8bc6bcc85f13fbdf03"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture depth. <br /></td></tr>
+<tr class="separator:a4c033ab57e546a8bc6bcc85f13fbdf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098e64f43475df2920284d6393a8bb10"><td class="memItemLeft" align="right" valign="top"><a id="a098e64f43475df2920284d6393a8bb10"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a098e64f43475df2920284d6393a8bb10">levels</a> = 1</td></tr>
+<tr class="memdesc:a098e64f43475df2920284d6393a8bb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mipmap count. <br /></td></tr>
+<tr class="separator:a098e64f43475df2920284d6393a8bb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1baf826bbc3b30b9801cd9619aea05bf"><td class="memItemLeft" align="right" valign="top"><a id="a1baf826bbc3b30b9801cd9619aea05bf"></a>
 <a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html#a1baf826bbc3b30b9801cd9619aea05bf">shape</a> = <a class="el" href="group___resources.html#gga3fb1e3ce7a7253e364b016dd40f5efd6ac4d62b6dcca08e5caf06c01889282859">TextureShape::D2</a></td></tr>
 <tr class="memdesc:a1baf826bbc3b30b9801cd9619aea05bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texure type. <br /></td></tr>
@@ -170,7 +172,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a87db50703e8979fa48484dd8aa3bb474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a texture containing one or more images, stored on the CPU and/or <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p>
+<div class="textblock"><p>Represents a texture containing one or more images, stored on the CPU and/or <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a23a5db9257ff41b2a4f47f83d232a2c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23a5db9257ff41b2a4f47f83d232a2c5">&#9670;&nbsp;</a></span>Texture() <span class="overload">[1/3]</span></h2>
@@ -223,8 +225,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="a004dd9bd404d90c4be569497aa5540e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a004dd9bd404d90c4be569497aa5540e1">&#9670;&nbsp;</a></span>Texture() <span class="overload">[3/3]</span></h2>
+<a id="af8ca92adefa409cc2889de643d00f6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ca92adefa409cc2889de643d00f6f2">&#9670;&nbsp;</a></span>Texture() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,6 +253,48 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae4485b65b40b3f7461ed125d3e81297e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4485b65b40b3f7461ed125d3e81297e">&#9670;&nbsp;</a></span>allocateImages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Texture::allocateImages </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>firstMip</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>mipCount</em> = <code>0xFFFFFFFF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocate the CPU images in the mip range defined as input. Images outside the given range will be left untouched if present, or created empty if not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channels</td><td>the number of channels for each image </td></tr>
+    <tr><td class="paramname">firstMip</td><td>the first mip to allocate images for </td></tr>
+    <tr><td class="paramname">mipCount</td><td>the number of mip to allocate, up to the texture level count </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2d0283525256389a133f23d0933e207e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d0283525256389a133f23d0933e207e">&#9670;&nbsp;</a></span>clean()</h2>
 
@@ -427,7 +471,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send to the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">layout</td><td>the data layout and type to use for the texture </td></tr>
     <tr><td class="paramname">updateMipmaps</td><td>generate the mipmaps automatically </td></tr>

@@ -122,16 +122,16 @@ Functions</h2></td></tr>
 <tr class="separator:a5b5bf9a9afe884f9c6018b469be8ce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367c9c01711cd669ab2cd75b324ca375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_composite_obj.html#a367c9c01711cd669ab2cd75b324ca375">populateMesh</a> (const <a class="el" href="class_composite_obj_1_1_raw_geometry.html">RawGeometry</a> &amp;geom, size_t lowerBound, size_t upperBound, <a class="el" href="class_mesh.html">Mesh</a> &amp;mesh)</td></tr>
 <tr class="separator:a367c9c01711cd669ab2cd75b324ca375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a940c28d669c31751e5ec86ec403d8fa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_composite_obj.html#a940c28d669c31751e5ec86ec403d8fa5">parseMtlFile</a> (std::istream &amp;inMat, const std::string &amp;rootPath, std::map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;materials)</td></tr>
-<tr class="separator:a940c28d669c31751e5ec86ec403d8fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af032efd5f84184f4e6ead643b5abe13a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_composite_obj.html#af032efd5f84184f4e6ead643b5abe13a">load</a> (const std::string &amp;filePath, std::vector&lt; <a class="el" href="struct_composite_obj_1_1_object.html">Object</a> &gt; &amp;objects, std::map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;materials)</td></tr>
-<tr class="separator:af032efd5f84184f4e6ead643b5abe13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88823ccfddf8e5d14b582241e562b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_composite_obj.html#aa88823ccfddf8e5d14b582241e562b24">parseMtlFile</a> (std::istream &amp;inMat, const std::string &amp;rootPath, std::unordered_map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;materials)</td></tr>
+<tr class="separator:aa88823ccfddf8e5d14b582241e562b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7b92b37b5970410425c19fa3e7ea56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_composite_obj.html#a8d7b92b37b5970410425c19fa3e7ea56">load</a> (const std::string &amp;filePath, std::vector&lt; <a class="el" href="struct_composite_obj_1_1_object.html">Object</a> &gt; &amp;objects, std::unordered_map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;materials)</td></tr>
+<tr class="separator:a8d7b92b37b5970410425c19fa3e7ea56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Commposite OBJ files loading. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af032efd5f84184f4e6ead643b5abe13a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af032efd5f84184f4e6ead643b5abe13a">&#9670;&nbsp;</a></span>load()</h2>
+<a id="a8d7b92b37b5970410425c19fa3e7ea56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d7b92b37b5970410425c19fa3e7ea56">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::unordered_map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>materials</em>&#160;</td>
         </tr>
         <tr>
@@ -173,8 +173,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a940c28d669c31751e5ec86ec403d8fa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a940c28d669c31751e5ec86ec403d8fa5">&#9670;&nbsp;</a></span>parseMtlFile()</h2>
+<a id="aa88823ccfddf8e5d14b582241e562b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88823ccfddf8e5d14b582241e562b24">&#9670;&nbsp;</a></span>parseMtlFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::unordered_map&lt; std::string, <a class="el" href="struct_composite_obj_1_1_material.html">Material</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>materials</em>&#160;</td>
         </tr>
         <tr>

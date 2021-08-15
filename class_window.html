@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Window Class Reference<div class="ingroups"><a class="el" href="group___system.html">System</a></div></div>  </div>
@@ -118,8 +119,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13d5ec9064c0c95f6a3c3675b2a779a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#a13d5ec9064c0c95f6a3c3675b2a779a5">Window</a> (const std::string &amp;name, <a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;config, bool convertToSRGB, bool escapeQuit=true, bool hidden=false)</td></tr>
-<tr class="separator:a13d5ec9064c0c95f6a3c3675b2a779a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee42a2fdbdab8e53d4e4e5238e736723"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#aee42a2fdbdab8e53d4e4e5238e736723">Window</a> (const std::string &amp;name, <a class="el" href="class_rendering_config.html">RenderingConfig</a> &amp;config, bool escapeQuit=true, bool hidden=false)</td></tr>
+<tr class="separator:aee42a2fdbdab8e53d4e4e5238e736723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b9daf7673eae6946bb995066d4fc32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#ac6b9daf7673eae6946bb995066d4fc32">perform</a> (<a class="el" href="class_window.html#a23db6c08edfd162f98d7ce8a3257e4a6">Action</a> action)</td></tr>
 <tr class="separator:ac6b9daf7673eae6946bb995066d4fc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb456c6b3d55cc3fd66841999b03ec4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#afb456c6b3d55cc3fd66841999b03ec4f">nextFrame</a> ()</td></tr>
@@ -150,6 +151,14 @@ Private Attributes</h2></td></tr>
 GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#ad46f7d2b73772b479eaac49b267c2141">_window</a> = nullptr</td></tr>
 <tr class="memdesc:ad46f7d2b73772b479eaac49b267c2141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal window handle. <br /></td></tr>
 <tr class="separator:ad46f7d2b73772b479eaac49b267c2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44078ded9c414898fb64168e3cec2c84"><td class="memItemLeft" align="right" valign="top"><a id="a44078ded9c414898fb64168e3cec2c84"></a>
+std::unique_ptr&lt; <a class="el" href="class_swapchain.html">Swapchain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#a44078ded9c414898fb64168e3cec2c84">_swapchain</a></td></tr>
+<tr class="memdesc:a44078ded9c414898fb64168e3cec2c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The swapchain displaying backbuffers. <br /></td></tr>
+<tr class="separator:a44078ded9c414898fb64168e3cec2c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee417b2c8c3e1663c99de49448784d5"><td class="memItemLeft" align="right" valign="top"><a id="a5ee417b2c8c3e1663c99de49448784d5"></a>
+ImGui_ImplVulkan_InitInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#a5ee417b2c8c3e1663c99de49448784d5">_imgui</a> = nullptr</td></tr>
+<tr class="memdesc:a5ee417b2c8c3e1663c99de49448784d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ImGui setup information. <br /></td></tr>
+<tr class="separator:a5ee417b2c8c3e1663c99de49448784d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889360c6b4e0934576a313aaf1a6cc9b"><td class="memItemLeft" align="right" valign="top"><a id="a889360c6b4e0934576a313aaf1a6cc9b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#a889360c6b4e0934576a313aaf1a6cc9b">_frameStarted</a> = false</td></tr>
 <tr class="memdesc:a889360c6b4e0934576a313aaf1a6cc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has a frame been started. <br /></td></tr>
@@ -158,10 +167,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#ab036d617b0061d245888fc8e40f5e7af">_allowEscape</a> = false</td></tr>
 <tr class="memdesc:ab036d617b0061d245888fc8e40f5e7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the window be closed by pressing escape. <br /></td></tr>
 <tr class="separator:ab036d617b0061d245888fc8e40f5e7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc6fee3d4793b4578d6a336b41dd439"><td class="memItemLeft" align="right" valign="top"><a id="adcc6fee3d4793b4578d6a336b41dd439"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#adcc6fee3d4793b4578d6a336b41dd439">_convertToSRGB</a> = false</td></tr>
-<tr class="memdesc:adcc6fee3d4793b4578d6a336b41dd439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should writes to the backbuffer be considered linear. <br /></td></tr>
-<tr class="separator:adcc6fee3d4793b4578d6a336b41dd439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ab538784ac98715df6b95da3be67e8e1a"><td class="memItemLeft" align="right" valign="top"><a id="ab538784ac98715df6b95da3be67e8e1a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>GPU</b></td></tr>
+<tr class="separator:ab538784ac98715df6b95da3be67e8e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represent an OS window and its associated rendering context. </p>
@@ -200,8 +211,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a13d5ec9064c0c95f6a3c3675b2a779a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13d5ec9064c0c95f6a3c3675b2a779a5">&#9670;&nbsp;</a></span>Window() <span class="overload">[1/3]</span></h2>
+<a id="aee42a2fdbdab8e53d4e4e5238e736723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee42a2fdbdab8e53d4e4e5238e736723">&#9670;&nbsp;</a></span>Window() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,12 +233,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>convertToSRGB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>escapeQuit</em> = <code>true</code>, </td>
         </tr>
         <tr>
@@ -243,11 +248,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a new window backed by an OpenGL context. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create a new window backed by a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the name of the window </td></tr>
     <tr><td class="paramname">config</td><td>the configuration to use (additional info will be added to it) </td></tr>
-    <tr><td class="paramname">convertToSRGB</td><td>should writes to the backbuffer be considered linear </td></tr>
     <tr><td class="paramname">escapeQuit</td><td>allows the user to close the window by pressing escape </td></tr>
     <tr><td class="paramname">hidden</td><td>should the window be hidden (for preprocess for instance) </td></tr>
   </table>

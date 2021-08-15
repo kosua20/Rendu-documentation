@@ -95,23 +95,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_g_p_u_query-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GPUQuery Class Reference<div class="ingroups"><a class="el" href="group___graphics.html">Graphics</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represent a <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> query, automatically buffered and retrieved.  
+<p>Represent a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> query, automatically buffered and retrieved.  
  <a href="class_g_p_u_query.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_g_p_u_objects_8hpp_source.html">GPUObjects.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_g_p_u_types_8hpp_source.html">GPUTypes.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a2091234124d8f43dcdcec8e077dea0c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">Type</a> : uint { <a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6">Type::TIME_ELAPSED</a>, 
 <a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7abe3be42814f8b68ce104abfb9807d0bc">Type::SAMPLES_DRAWN</a>, 
-<a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7a4789bf5e22ded4f8a428ec7a6b5b05cb">Type::PRIMITIVES_GENERATED</a>, 
 <a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7a7809db700022be07619d63e607f84ec9">Type::ANY_DRAWN</a>
  }</td></tr>
 <tr class="separator:a2091234124d8f43dcdcec8e077dea0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,32 +127,29 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9d4416f973aaeef3bf4dae4e0c2ba04f"><td class="memItemLeft" align="right" valign="top"><a id="a9d4416f973aaeef3bf4dae4e0c2ba04f"></a>
-GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a9d4416f973aaeef3bf4dae4e0c2ba04f">_internalType</a></td></tr>
-<tr class="memdesc:a9d4416f973aaeef3bf4dae4e0c2ba04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL query type. <br /></td></tr>
-<tr class="separator:a9d4416f973aaeef3bf4dae4e0c2ba04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ad473cad501985c7d5a2061407dce7"><td class="memItemLeft" align="right" valign="top"><a id="a10ad473cad501985c7d5a2061407dce7"></a>
-std::array&lt; GLuint, <a class="el" href="class_g_p_u_query.html#ad9aae39fb9f593ad5887b2abcb75584d">bufferCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a10ad473cad501985c7d5a2061407dce7">_ids</a></td></tr>
-<tr class="memdesc:a10ad473cad501985c7d5a2061407dce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL query object IDs. <br /></td></tr>
-<tr class="separator:a10ad473cad501985c7d5a2061407dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10cf4cf1bf7ea2d4021b0968615bf3b9"><td class="memItemLeft" align="right" valign="top"><a id="a10cf4cf1bf7ea2d4021b0968615bf3b9"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a10cf4cf1bf7ea2d4021b0968615bf3b9">_current</a> = 0</td></tr>
-<tr class="memdesc:a10cf4cf1bf7ea2d4021b0968615bf3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current query in use. <br /></td></tr>
-<tr class="separator:a10cf4cf1bf7ea2d4021b0968615bf3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1d794cedc6c98baec0725bbc4bf772"><td class="memItemLeft" align="right" valign="top"><a id="a1f1d794cedc6c98baec0725bbc4bf772"></a>
+<a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a1f1d794cedc6c98baec0725bbc4bf772">_type</a> = <a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6">GPUQuery::Type::TIME_ELAPSED</a></td></tr>
+<tr class="memdesc:a1f1d794cedc6c98baec0725bbc4bf772"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of query. <br /></td></tr>
+<tr class="separator:a1f1d794cedc6c98baec0725bbc4bf772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9c444b50b60710d16e0d2ea8575b11"><td class="memItemLeft" align="right" valign="top"><a id="a1f9c444b50b60710d16e0d2ea8575b11"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a1f9c444b50b60710d16e0d2ea8575b11">_count</a> = 2</td></tr>
+<tr class="memdesc:a1f9c444b50b60710d16e0d2ea8575b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of queries used internally (two for duration queries) <br /></td></tr>
+<tr class="separator:a1f9c444b50b60710d16e0d2ea8575b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88ce057377740e550f0fd983a93121f"><td class="memItemLeft" align="right" valign="top"><a id="ae88ce057377740e550f0fd983a93121f"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#ae88ce057377740e550f0fd983a93121f">_offset</a> = 0</td></tr>
+<tr class="memdesc:ae88ce057377740e550f0fd983a93121f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of the first query in the query pools. <br /></td></tr>
+<tr class="separator:ae88ce057377740e550f0fd983a93121f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e545668756197708666fd8544de9c0"><td class="memItemLeft" align="right" valign="top"><a id="a74e545668756197708666fd8544de9c0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a74e545668756197708666fd8544de9c0">_ranThisFrame</a> = false</td></tr>
+<tr class="memdesc:a74e545668756197708666fd8544de9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the query been run this frame (else we won't fetch its value). <br /></td></tr>
+<tr class="separator:a74e545668756197708666fd8544de9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7814f64bdd9fdc4a33ce46b651499273"><td class="memItemLeft" align="right" valign="top"><a id="a7814f64bdd9fdc4a33ce46b651499273"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#a7814f64bdd9fdc4a33ce46b651499273">_running</a> = false</td></tr>
 <tr class="memdesc:a7814f64bdd9fdc4a33ce46b651499273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a measurement currently taking place. <br /></td></tr>
 <tr class="separator:a7814f64bdd9fdc4a33ce46b651499273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:ad9aae39fb9f593ad5887b2abcb75584d"><td class="memItemLeft" align="right" valign="top"><a id="ad9aae39fb9f593ad5887b2abcb75584d"></a>
-static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_query.html#ad9aae39fb9f593ad5887b2abcb75584d">bufferCount</a> = 3</td></tr>
-<tr class="memdesc:ad9aae39fb9f593ad5887b2abcb75584d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of internal buffered queries. <br /></td></tr>
-<tr class="separator:ad9aae39fb9f593ad5887b2abcb75584d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represent a <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> query, automatically buffered and retrieved. </p>
+<div class="textblock"><p>Represent a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> query, automatically buffered and retrieved. </p>
 <dl class="section warning"><dt>Warning</dt><dd>You cannot have multiple queries of the same type running at the same time. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a2091234124d8f43dcdcec8e077dea0c7"></a>
@@ -178,11 +173,9 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div><div class="memdoc">
 <p>Type for query to perform. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6"></a>TIME_ELAPSED&#160;</td><td class="fielddoc"><p>Time taken by <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> operations between the beginning and end of the query. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2091234124d8f43dcdcec8e077dea0c7ad5f46bafe1a49552a956a0cf6a921af6"></a>TIME_ELAPSED&#160;</td><td class="fielddoc"><p>Time taken by <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> operations between the beginning and end of the query. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2091234124d8f43dcdcec8e077dea0c7abe3be42814f8b68ce104abfb9807d0bc"></a>SAMPLES_DRAWN&#160;</td><td class="fielddoc"><p>Number of samples passing the tests while the query is active. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2091234124d8f43dcdcec8e077dea0c7a4789bf5e22ded4f8a428ec7a6b5b05cb"></a>PRIMITIVES_GENERATED&#160;</td><td class="fielddoc"><p>Number of primitives generated by tesselation or geometry shaders. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2091234124d8f43dcdcec8e077dea0c7a7809db700022be07619d63e607f84ec9"></a>ANY_DRAWN&#160;</td><td class="fielddoc"><p>Was any sample drawn while the query was active. </p>
 </td></tr>
@@ -271,8 +264,8 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/engine/graphics/<a class="el" href="_g_p_u_objects_8hpp_source.html">GPUObjects.hpp</a></li>
-<li>src/engine/graphics/GPUObjects.cpp</li>
+<li>src/engine/graphics/<a class="el" href="_g_p_u_types_8hpp_source.html">GPUTypes.hpp</a></li>
+<li>src/engine/graphics/GPUTypes.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

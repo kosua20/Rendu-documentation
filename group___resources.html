@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <p>Handle resource loading/saving tasks. </p>
-<p>The <a class="el" href="class_resources.html" title="The Resources manager is responsible for all resources loading and setup.">Resources</a> manager is sole responsible for allocation/deallocation of resources loaded from the disk directory hierarchy or from an archive. Images and meshes can be sent to the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> as textures and meshes. Storage settings (CPU/GPU, layout in memory, format) are specified at first use of a resource. </p>
+<p>The <a class="el" href="class_resources.html" title="The Resources manager is responsible for all resources loading and setup.">Resources</a> manager is sole responsible for allocation/deallocation of resources loaded from the disk directory hierarchy or from an archive. Images and meshes can be sent to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> as textures and meshes. Storage settings (CPU/GPU, layout in memory, format) are specified at first use of a resource. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -107,10 +107,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a 3D frustum, volume defined by the intersection of six planes.  <a href="class_frustum.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer_base.html">BufferBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose GPU/CPU buffer, without a CPU backing store.  <a href="class_buffer_base.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> buffer, capable of handling different update frequency. The internal <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> buffer might be large enough to contain multiple copies of the buffer while respecting alignment constraints.  <a href="class_buffer_base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buffer.html">Buffer&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a buffer containing arbitrary data, stored on the CPU and/or <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>.  <a href="class_buffer.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transfer_buffer.html">TransferBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer used to transfer data from the CPU to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> or vice-versa, and to store static data such as vertex/index buffers.  <a href="class_transfer_buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_buffer_base.html">UniformBufferBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform buffer exposed to all shader stages, that can be updated at varying frequencies. Multiple instances of the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> data will be maintained internally.  <a href="class_uniform_buffer_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_buffer.html">UniformBuffer&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a buffer containing uniform data, stored on the CPU and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. Depending on the update frequency of the CPU data, the buffer will maintain one or multiple copies of the data on the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>.  <a href="class_uniform_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html">Font</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_font.html" title="Font loading and storage: texture atlas, codepoints supported, dimensions of each glyph.">Font</a> loading and storage: texture atlas, codepoints supported, dimensions of each glyph.  <a href="class_font.html#details">More...</a><br /></td></tr>
@@ -128,7 +134,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_resources.html" title="The Resources manager is responsible for all resources loading and setup.">Resources</a> manager is responsible for all resources loading and setup.  <a href="class_resources.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture.html">Texture</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a texture containing one or more images, stored on the CPU and/or <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>.  <a href="class_texture.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a texture containing one or more images, stored on the CPU and/or <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>.  <a href="class_texture.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -139,18 +145,25 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065bab22957ad8078e8d73de61aef53d13a74">ShaderType::GEOMETRY</a>, 
 <a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba46501e52c3411c5c5879a8fe4432d885">ShaderType::TESSCONTROL</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba1094991cfaebfc09516e6eee108f83d2">ShaderType::TESSEVAL</a>
+&#160;&#160;<a class="el" href="group___resources.html#gga4c5eb974d58c8e94fc312569207f065ba1094991cfaebfc09516e6eee108f83d2">ShaderType::TESSEVAL</a>, 
+<b>COUNT</b>
 <br />
  }</td></tr>
 <tr class="memdesc:ga4c5eb974d58c8e94fc312569207f065b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of a shader.  <a href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">More...</a><br /></td></tr>
 <tr class="separator:ga4c5eb974d58c8e94fc312569207f065b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f774584b0b53a5c0a654709438271bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a> : uint { <a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda0c3e47aef93a7f244f41ab309a33634b">BufferType::VERTEX</a>, 
+<tr class="memitem:ga4f774584b0b53a5c0a654709438271bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a> : uint { <br />
+&#160;&#160;<a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda0c3e47aef93a7f244f41ab309a33634b">BufferType::VERTEX</a>, 
 <a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bdacb4ae3b37047fb4b2c0d16f8bf84f076">BufferType::INDEX</a>, 
-<a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda891f35a29c3d51d02ffd42dd6dcc69b2">BufferType::UNIFORM</a>
+<a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda891f35a29c3d51d02ffd42dd6dcc69b2">BufferType::UNIFORM</a>, 
+<a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bdaeba40e2dc61ff166157262b974e307cf">BufferType::CPUTOGPU</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___resources.html#gga4f774584b0b53a5c0a654709438271bda711dd5bc7ad4e7db6dcd423665cf1cd4">BufferType::GPUTOCPU</a>
+<br />
  }</td></tr>
 <tr class="memdesc:ga4f774584b0b53a5c0a654709438271bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of data a buffer is storing, determining its use.  <a href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">More...</a><br /></td></tr>
 <tr class="separator:ga4f774584b0b53a5c0a654709438271bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4942c3554a6e6d12b22458c949de4d68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resources.html#ga4942c3554a6e6d12b22458c949de4d68">DataUse</a> : uint { <a class="el" href="group___resources.html#gga4942c3554a6e6d12b22458c949de4d68afe6f99ef1ec99efbdc19a9786cf1facc">DataUse::STATIC</a>, 
+<a class="el" href="group___resources.html#gga4942c3554a6e6d12b22458c949de4d68ac57e921596445b99ab85558984966184">DataUse::FRAME</a>, 
 <a class="el" href="group___resources.html#gga4942c3554a6e6d12b22458c949de4d68a0fcc90da4811c877ba9f9c12f7d60bc9">DataUse::DYNAMIC</a>
  }</td></tr>
 <tr class="memdesc:ga4942c3554a6e6d12b22458c949de4d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frequency at which a resources might be updated.  <a href="group___resources.html#ga4942c3554a6e6d12b22458c949de4d68">More...</a><br /></td></tr>
@@ -258,37 +271,32 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ga9db33ebfe0dbf694fe056e626988b728"><td class="memItemLeft" align="right" valign="top"><a id="ga9db33ebfe0dbf694fe056e626988b728"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> : uint { <br />
 &#160;&#160;<b>R8</b>, 
 <b>RG8</b>, 
-<b>RGB8</b>, 
 <b>RGBA8</b>, 
-<br />
-&#160;&#160;<b>SRGB8</b>, 
 <b>SRGB8_ALPHA8</b>, 
+<br />
+&#160;&#160;<b>BGRA8</b>, 
+<b>SBGR8_ALPHA8</b>, 
 <b>R16</b>, 
 <b>RG16</b>, 
 <br />
 &#160;&#160;<b>RGBA16</b>, 
 <b>R8_SNORM</b>, 
 <b>RG8_SNORM</b>, 
-<b>RGB8_SNORM</b>, 
+<b>RGBA8_SNORM</b>, 
 <br />
-&#160;&#160;<b>RGBA8_SNORM</b>, 
-<b>R16_SNORM</b>, 
+&#160;&#160;<b>R16_SNORM</b>, 
 <b>RG16_SNORM</b>, 
-<b>RGB16_SNORM</b>, 
-<br />
-&#160;&#160;<b>R16F</b>, 
+<b>R16F</b>, 
 <b>RG16F</b>, 
-<b>RGB16F</b>, 
-<b>RGBA16F</b>, 
 <br />
-&#160;&#160;<b>R32F</b>, 
+&#160;&#160;<b>RGBA16F</b>, 
+<b>R32F</b>, 
 <b>RG32F</b>, 
-<b>RGB32F</b>, 
 <b>RGBA32F</b>, 
 <br />
 &#160;&#160;<b>RGB5_A1</b>, 
-<b>RGB10_A2</b>, 
-<b>R11F_G11F_B10F</b>, 
+<b>A2_BGR10</b>, 
+<b>A2_RGB10</b>, 
 <b>DEPTH_COMPONENT32F</b>, 
 <br />
 &#160;&#160;<b>DEPTH24_STENCIL8</b>, 
@@ -309,21 +317,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>RG16UI</b>, 
 <b>RG32I</b>, 
 <b>RG32UI</b>, 
-<b>RGB8I</b>, 
-<br />
-&#160;&#160;<b>RGB8UI</b>, 
-<b>RGB16I</b>, 
-<b>RGB16UI</b>, 
-<b>RGB32I</b>, 
-<br />
-&#160;&#160;<b>RGB32UI</b>, 
 <b>RGBA8I</b>, 
-<b>RGBA8UI</b>, 
-<b>RGBA16I</b>, 
 <br />
-&#160;&#160;<b>RGBA16UI</b>, 
+&#160;&#160;<b>RGBA8UI</b>, 
+<b>RGBA16I</b>, 
+<b>RGBA16UI</b>, 
 <b>RGBA32I</b>, 
-<b>RGBA32UI</b>
+<br />
+&#160;&#160;<b>RGBA32UI</b>
 <br />
  }</td></tr>
 <tr class="memdesc:ga9db33ebfe0dbf694fe056e626988b728"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layout of a texture: components count and type. <br /></td></tr>
@@ -451,6 +452,10 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4f774584b0b53a5c0a654709438271bda891f35a29c3d51d02ffd42dd6dcc69b2"></a>UNIFORM&#160;</td><td class="fielddoc"><p>Uniform data. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga4f774584b0b53a5c0a654709438271bdaeba40e2dc61ff166157262b974e307cf"></a>CPUTOGPU&#160;</td><td class="fielddoc"><p>Transfer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4f774584b0b53a5c0a654709438271bda711dd5bc7ad4e7db6dcd423665cf1cd4"></a>GPUTOCPU&#160;</td><td class="fielddoc"><p>Transfer. </p>
+</td></tr>
 </table>
 
 </div>
@@ -479,7 +484,9 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4942c3554a6e6d12b22458c949de4d68afe6f99ef1ec99efbdc19a9786cf1facc"></a>STATIC&#160;</td><td class="fielddoc"><p>Data won't be updated after upload. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4942c3554a6e6d12b22458c949de4d68a0fcc90da4811c877ba9f9c12f7d60bc9"></a>DYNAMIC&#160;</td><td class="fielddoc"><p>Data will be updated many times. </p>
+<tr><td class="fieldname"><a id="gga4942c3554a6e6d12b22458c949de4d68ac57e921596445b99ab85558984966184"></a>FRAME&#160;</td><td class="fielddoc"><p>Data will be updated at most once per frame. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4942c3554a6e6d12b22458c949de4d68a0fcc90da4811c877ba9f9c12f7d60bc9"></a>DYNAMIC&#160;</td><td class="fielddoc"><p>Data will be updated many times per frame. </p>
 </td></tr>
 </table>
 
@@ -687,11 +694,11 @@ Enumerations</h2></td></tr>
 
 <p>Storage and loading options. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa9f7226fdc21094a152870ec1872f744a52f9ec21735243ad9917cda3ca077d32"></a>GPU&#160;</td><td class="fielddoc"><p>Store on the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa9f7226fdc21094a152870ec1872f744a52f9ec21735243ad9917cda3ca077d32"></a>GPU&#160;</td><td class="fielddoc"><p>Store on the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa9f7226fdc21094a152870ec1872f744a2b55387dd066c5bac646ac61543d152d"></a>CPU&#160;</td><td class="fielddoc"><p>Store on the CPU. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaa9f7226fdc21094a152870ec1872f744a6328e5e3186c227a021ef2ff77e40197"></a>BOTH&#160;</td><td class="fielddoc"><p>Store on both the CPU and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p>
+<tr><td class="fieldname"><a id="ggaa9f7226fdc21094a152870ec1872f744a6328e5e3186c227a021ef2ff77e40197"></a>BOTH&#160;</td><td class="fielddoc"><p>Store on both the CPU and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa9f7226fdc21094a152870ec1872f744a2d7812591e175ddfcd7eb91b10d14b81"></a>FORCE_FRAME&#160;</td><td class="fielddoc"><p>For meshes, force computation of a local frame. </p>
 </td></tr>

@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_g_p_u_state-members.html">List of all members</a>  </div>
@@ -101,24 +101,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Internal <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state ; not all API options are exposed, only these that can be toggled in Rendu.  
+<p>Internal <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state ; not all API options are exposed, only these that can be toggled in Rendu.  
  <a href="class_g_p_u_state.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_g_p_u_objects_8hpp_source.html">GPUObjects.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_g_p_u_types_8hpp_source.html">GPUTypes.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a0bcf83d416ce7a37b49465e709242118"><td class="memItemLeft" align="right" valign="top"><a id="a0bcf83d416ce7a37b49465e709242118"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a0bcf83d416ce7a37b49465e709242118">TextureBindings</a> = std::unordered_map&lt; GLenum, GLuint &gt;</td></tr>
-<tr class="memdesc:a0bcf83d416ce7a37b49465e709242118"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of texture shapes and handles. <br /></td></tr>
-<tr class="separator:a0bcf83d416ce7a37b49465e709242118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_state_1_1_framebuffer_infos.html">FramebufferInfos</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current framebuffer information.  <a href="struct_g_p_u_state_1_1_framebuffer_infos.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a74716e2f7c4f3a3fcac162da5537829d"><td class="memItemLeft" align="right" valign="top"><a id="a74716e2f7c4f3a3fcac162da5537829d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a74716e2f7c4f3a3fcac162da5537829d">GPUState</a> ()</td></tr>
-<tr class="memdesc:a74716e2f7c4f3a3fcac162da5537829d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a74716e2f7c4f3a3fcac162da5537829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c828a0ff236bf7eb5936c32069d76b6"><td class="memItemLeft" align="right" valign="top"><a id="a1c828a0ff236bf7eb5936c32069d76b6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a1c828a0ff236bf7eb5936c32069d76b6">GPUState</a> ()=default</td></tr>
+<tr class="memdesc:a1c828a0ff236bf7eb5936c32069d76b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a1c828a0ff236bf7eb5936c32069d76b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a4d7de3689a34409c940ae8dbaa64e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ab5a4d7de3689a34409c940ae8dbaa64e">isEquivalent</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;other) const</td></tr>
+<tr class="separator:ab5a4d7de3689a34409c940ae8dbaa64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -126,126 +127,70 @@ Public Attributes</h2></td></tr>
 glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a7375b2f3593ded3588ac16b79c5fa33a">blendColor</a> {0.0f}</td></tr>
 <tr class="memdesc:a7375b2f3593ded3588ac16b79c5fa33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend color for constant blend mode. <br /></td></tr>
 <tr class="separator:a7375b2f3593ded3588ac16b79c5fa33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397faeb74baebb74c80df32b5bd6e740"><td class="memItemLeft" align="right" valign="top"><a id="a397faeb74baebb74c80df32b5bd6e740"></a>
+glm::bvec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a397faeb74baebb74c80df32b5bd6e740">colorWriteMask</a> {true}</td></tr>
+<tr class="memdesc:a397faeb74baebb74c80df32b5bd6e740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which channels should be written to when rendering. <br /></td></tr>
+<tr class="separator:a397faeb74baebb74c80df32b5bd6e740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622a592ea8006e1feb31f9db7544b45c"><td class="memItemLeft" align="right" valign="top"><a id="a622a592ea8006e1feb31f9db7544b45c"></a>
-<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a622a592ea8006e1feb31f9db7544b45c">blendSrcRGB</a></td></tr>
+<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a622a592ea8006e1feb31f9db7544b45c">blendSrcRGB</a> = <a class="el" href="group___resources.html#gga093fb90ad4f9c612554bcb681b0367d0abc21e6484530fc9d0313cb816b733396">BlendFunction::ONE</a></td></tr>
 <tr class="memdesc:a622a592ea8006e1feb31f9db7544b45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending source type for RGB channels. <br /></td></tr>
 <tr class="separator:a622a592ea8006e1feb31f9db7544b45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a427429a8914d1166568f303c424301"><td class="memItemLeft" align="right" valign="top"><a id="a5a427429a8914d1166568f303c424301"></a>
-<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a5a427429a8914d1166568f303c424301">blendSrcAlpha</a></td></tr>
+<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a5a427429a8914d1166568f303c424301">blendSrcAlpha</a> = <a class="el" href="group___resources.html#gga093fb90ad4f9c612554bcb681b0367d0abc21e6484530fc9d0313cb816b733396">BlendFunction::ONE</a></td></tr>
 <tr class="memdesc:a5a427429a8914d1166568f303c424301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending source type for alpha channel. <br /></td></tr>
 <tr class="separator:a5a427429a8914d1166568f303c424301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264dcde51505f8553e34ef3eafaedb92"><td class="memItemLeft" align="right" valign="top"><a id="a264dcde51505f8553e34ef3eafaedb92"></a>
-<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a264dcde51505f8553e34ef3eafaedb92">blendDstRGB</a></td></tr>
+<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a264dcde51505f8553e34ef3eafaedb92">blendDstRGB</a> = <a class="el" href="group___resources.html#gga093fb90ad4f9c612554bcb681b0367d0abc21e6484530fc9d0313cb816b733396">BlendFunction::ONE</a></td></tr>
 <tr class="memdesc:a264dcde51505f8553e34ef3eafaedb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending destination type for RGB channels. <br /></td></tr>
 <tr class="separator:a264dcde51505f8553e34ef3eafaedb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df8cb1612990171b1435e6bd82cb3e3"><td class="memItemLeft" align="right" valign="top"><a id="a9df8cb1612990171b1435e6bd82cb3e3"></a>
-<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9df8cb1612990171b1435e6bd82cb3e3">blendDstAlpha</a></td></tr>
+<a class="el" href="group___resources.html#ga093fb90ad4f9c612554bcb681b0367d0">BlendFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9df8cb1612990171b1435e6bd82cb3e3">blendDstAlpha</a> = <a class="el" href="group___resources.html#gga093fb90ad4f9c612554bcb681b0367d0abc21e6484530fc9d0313cb816b733396">BlendFunction::ONE</a></td></tr>
 <tr class="memdesc:a9df8cb1612990171b1435e6bd82cb3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending destination type for alpha channel. <br /></td></tr>
 <tr class="separator:a9df8cb1612990171b1435e6bd82cb3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9509af49ce5cd58defbc731d583f9095"><td class="memItemLeft" align="right" valign="top"><a id="a9509af49ce5cd58defbc731d583f9095"></a>
-<a class="el" href="group___resources.html#ga0b5a5136bfbfae2a7b34d21044dd00ab">BlendEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9509af49ce5cd58defbc731d583f9095">blendEquationRGB</a></td></tr>
+<a class="el" href="group___resources.html#ga0b5a5136bfbfae2a7b34d21044dd00ab">BlendEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9509af49ce5cd58defbc731d583f9095">blendEquationRGB</a> = <a class="el" href="group___resources.html#gga0b5a5136bfbfae2a7b34d21044dd00aba9eeb52badb613229884838847294b90d">BlendEquation::ADD</a></td></tr>
 <tr class="memdesc:a9509af49ce5cd58defbc731d583f9095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending equation for RGB channels. <br /></td></tr>
 <tr class="separator:a9509af49ce5cd58defbc731d583f9095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e53e09217b0c7ef951012d25df99fa9"><td class="memItemLeft" align="right" valign="top"><a id="a6e53e09217b0c7ef951012d25df99fa9"></a>
-<a class="el" href="group___resources.html#ga0b5a5136bfbfae2a7b34d21044dd00ab">BlendEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a6e53e09217b0c7ef951012d25df99fa9">blendEquationAlpha</a></td></tr>
+<a class="el" href="group___resources.html#ga0b5a5136bfbfae2a7b34d21044dd00ab">BlendEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a6e53e09217b0c7ef951012d25df99fa9">blendEquationAlpha</a> = <a class="el" href="group___resources.html#gga0b5a5136bfbfae2a7b34d21044dd00aba9eeb52badb613229884838847294b90d">BlendEquation::ADD</a></td></tr>
 <tr class="memdesc:a6e53e09217b0c7ef951012d25df99fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending equation for alpha channel. <br /></td></tr>
 <tr class="separator:a6e53e09217b0c7ef951012d25df99fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccd7ad12eea87b9c2c563d61e9db450"><td class="memItemLeft" align="right" valign="top"><a id="a0ccd7ad12eea87b9c2c563d61e9db450"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a0ccd7ad12eea87b9c2c563d61e9db450">blend</a> = false</td></tr>
-<tr class="memdesc:a0ccd7ad12eea87b9c2c563d61e9db450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending enabled or not. <br /></td></tr>
-<tr class="separator:a0ccd7ad12eea87b9c2c563d61e9db450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aba23642d7e2ceda29644c4e403cb6f"><td class="memItemLeft" align="right" valign="top"><a id="a2aba23642d7e2ceda29644c4e403cb6f"></a>
-glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a2aba23642d7e2ceda29644c4e403cb6f">colorClearValue</a> {0.0f}</td></tr>
-<tr class="memdesc:a2aba23642d7e2ceda29644c4e403cb6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color for clearing framebuffer. <br /></td></tr>
-<tr class="separator:a2aba23642d7e2ceda29644c4e403cb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a397faeb74baebb74c80df32b5bd6e740"><td class="memItemLeft" align="right" valign="top"><a id="a397faeb74baebb74c80df32b5bd6e740"></a>
-glm::bvec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a397faeb74baebb74c80df32b5bd6e740">colorWriteMask</a> {false}</td></tr>
-<tr class="memdesc:a397faeb74baebb74c80df32b5bd6e740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which channels should be written to when rendering. <br /></td></tr>
-<tr class="separator:a397faeb74baebb74c80df32b5bd6e740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021011f4579291001da86da6c2bd08be"><td class="memItemLeft" align="right" valign="top"><a id="a021011f4579291001da86da6c2bd08be"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a021011f4579291001da86da6c2bd08be">framebufferSRGB</a> = false</td></tr>
-<tr class="memdesc:a021011f4579291001da86da6c2bd08be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_framebuffer.html" title="Represent a rendering target, of any size, format and type, backed by an OpenGL framebuffer.">Framebuffer</a> sRGB conversion enabled or not. <br /></td></tr>
-<tr class="separator:a021011f4579291001da86da6c2bd08be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76dcaf90eaa2f12772732e1067f48919"><td class="memItemLeft" align="right" valign="top"><a id="a76dcaf90eaa2f12772732e1067f48919"></a>
-<a class="el" href="group___resources.html#gaea884fb4f26a1750573b7a3ae6074fdf">Faces</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a76dcaf90eaa2f12772732e1067f48919">cullFaceMode</a> = <a class="el" href="group___resources.html#ggaea884fb4f26a1750573b7a3ae6074fdfa5fb1f955b45e38e31789286a1790398d">Faces::ALL</a></td></tr>
+<a class="el" href="group___resources.html#gaea884fb4f26a1750573b7a3ae6074fdf">Faces</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a76dcaf90eaa2f12772732e1067f48919">cullFaceMode</a> = <a class="el" href="group___resources.html#ggaea884fb4f26a1750573b7a3ae6074fdfa1dd26f1f1790f0b56d5752fb0fbecef0">Faces::BACK</a></td></tr>
 <tr class="memdesc:a76dcaf90eaa2f12772732e1067f48919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which faces should be culled. <br /></td></tr>
 <tr class="separator:a76dcaf90eaa2f12772732e1067f48919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f41f68da77362ae2680218486ac81a5"><td class="memItemLeft" align="right" valign="top"><a id="a8f41f68da77362ae2680218486ac81a5"></a>
 <a class="el" href="group___resources.html#ga6c3cfb97e5733ddd4f243683fd7b4a14">PolygonMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a8f41f68da77362ae2680218486ac81a5">polygonMode</a> = <a class="el" href="group___resources.html#gga6c3cfb97e5733ddd4f243683fd7b4a14ae8225b11842409df543692aebed34fd1">PolygonMode::FILL</a></td></tr>
 <tr class="memdesc:a8f41f68da77362ae2680218486ac81a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">How should polygons be processed. <br /></td></tr>
 <tr class="separator:a8f41f68da77362ae2680218486ac81a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62aaf2abaa28898ba9db86fcc7ebba54"><td class="memItemLeft" align="right" valign="top"><a id="a62aaf2abaa28898ba9db86fcc7ebba54"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a62aaf2abaa28898ba9db86fcc7ebba54">polygonOffsetFactor</a> = 0.0f</td></tr>
-<tr class="memdesc:a62aaf2abaa28898ba9db86fcc7ebba54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polygon offset depth scaling. <br /></td></tr>
-<tr class="separator:a62aaf2abaa28898ba9db86fcc7ebba54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac78b5c09265c46001787f46c9e6b1fcc"><td class="memItemLeft" align="right" valign="top"><a id="ac78b5c09265c46001787f46c9e6b1fcc"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ac78b5c09265c46001787f46c9e6b1fcc">polygonOffsetUnits</a> = 0.0f</td></tr>
-<tr class="memdesc:ac78b5c09265c46001787f46c9e6b1fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polygon offset depth shifting. <br /></td></tr>
-<tr class="separator:ac78b5c09265c46001787f46c9e6b1fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e98b65396c7580832373042be09af0a"><td class="memItemLeft" align="right" valign="top"><a id="a9e98b65396c7580832373042be09af0a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9e98b65396c7580832373042be09af0a">polygonOffsetFill</a> = false</td></tr>
-<tr class="memdesc:a9e98b65396c7580832373042be09af0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is polygon offset enabled for points or not. <br /></td></tr>
-<tr class="separator:a9e98b65396c7580832373042be09af0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7372f50ebb65288b851b001de1e77bf"><td class="memItemLeft" align="right" valign="top"><a id="ab7372f50ebb65288b851b001de1e77bf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ab7372f50ebb65288b851b001de1e77bf">polygonOffsetLine</a> = false</td></tr>
-<tr class="memdesc:ab7372f50ebb65288b851b001de1e77bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is polygon offset enabled for lines or not. <br /></td></tr>
-<tr class="separator:ab7372f50ebb65288b851b001de1e77bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a410fabe5b3d7a43f34c55b221c78d58f"><td class="memItemLeft" align="right" valign="top"><a id="a410fabe5b3d7a43f34c55b221c78d58f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a410fabe5b3d7a43f34c55b221c78d58f">polygonOffsetPoint</a> = false</td></tr>
-<tr class="memdesc:a410fabe5b3d7a43f34c55b221c78d58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is polygon offset enabled for faces or not. <br /></td></tr>
-<tr class="separator:a410fabe5b3d7a43f34c55b221c78d58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4da110a2fe6bf765ebb643bb54a0616"><td class="memItemLeft" align="right" valign="top"><a id="ae4da110a2fe6bf765ebb643bb54a0616"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ae4da110a2fe6bf765ebb643bb54a0616">cullFace</a> = false</td></tr>
-<tr class="memdesc:ae4da110a2fe6bf765ebb643bb54a0616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is backface culling enabled or not. <br /></td></tr>
-<tr class="separator:ae4da110a2fe6bf765ebb643bb54a0616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28f5f193aa74fd8df555a108d3b13de7"><td class="memItemLeft" align="right" valign="top"><a id="a28f5f193aa74fd8df555a108d3b13de7"></a>
-glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a28f5f193aa74fd8df555a108d3b13de7">depthRange</a> {0.0f}</td></tr>
-<tr class="memdesc:a28f5f193aa74fd8df555a108d3b13de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth value valid range. <br /></td></tr>
-<tr class="separator:a28f5f193aa74fd8df555a108d3b13de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49bad8b1b6c30b12b3a9284491545514"><td class="memItemLeft" align="right" valign="top"><a id="a49bad8b1b6c30b12b3a9284491545514"></a>
-<a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a49bad8b1b6c30b12b3a9284491545514">depthFunc</a></td></tr>
+<a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a49bad8b1b6c30b12b3a9284491545514">depthFunc</a> = <a class="el" href="group___resources.html#ggaa01a212fe7f4cf214d72c4483d59b4daa1798e8c3621ca53d9e3a80d257306000">TestFunction::LESS</a></td></tr>
 <tr class="memdesc:a49bad8b1b6c30b12b3a9284491545514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth test function. <br /></td></tr>
 <tr class="separator:a49bad8b1b6c30b12b3a9284491545514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad397a784236bee766dcc7457bcab20dd"><td class="memItemLeft" align="right" valign="top"><a id="ad397a784236bee766dcc7457bcab20dd"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ad397a784236bee766dcc7457bcab20dd">depthClearValue</a> = 0.0f</td></tr>
-<tr class="memdesc:ad397a784236bee766dcc7457bcab20dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth for clearing depth buffer. <br /></td></tr>
-<tr class="separator:ad397a784236bee766dcc7457bcab20dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36bbec154fb2d94e7cea770db8c96db"><td class="memItemLeft" align="right" valign="top"><a id="ad36bbec154fb2d94e7cea770db8c96db"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ad36bbec154fb2d94e7cea770db8c96db">depthTest</a> = false</td></tr>
-<tr class="memdesc:ad36bbec154fb2d94e7cea770db8c96db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is depth test enabled or not. <br /></td></tr>
-<tr class="separator:ad36bbec154fb2d94e7cea770db8c96db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab22cb257b9c417acbf271b4140a64412"><td class="memItemLeft" align="right" valign="top"><a id="ab22cb257b9c417acbf271b4140a64412"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ab22cb257b9c417acbf271b4140a64412">depthClamp</a> = false</td></tr>
-<tr class="memdesc:ab22cb257b9c417acbf271b4140a64412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should depth be clamped to the valid range or not. <br /></td></tr>
-<tr class="separator:ab22cb257b9c417acbf271b4140a64412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ad197df43ff5e4e8cd420ea7de570f"><td class="memItemLeft" align="right" valign="top"><a id="a29ad197df43ff5e4e8cd420ea7de570f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a29ad197df43ff5e4e8cd420ea7de570f">depthWriteMask</a> = false</td></tr>
-<tr class="memdesc:a29ad197df43ff5e4e8cd420ea7de570f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should depth be written to the depth buffer or not. <br /></td></tr>
-<tr class="separator:a29ad197df43ff5e4e8cd420ea7de570f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0772bef9242dc8b4103a7fa84c798f5e"><td class="memItemLeft" align="right" valign="top"><a id="a0772bef9242dc8b4103a7fa84c798f5e"></a>
-<a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a0772bef9242dc8b4103a7fa84c798f5e">stencilFunc</a></td></tr>
+<a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a0772bef9242dc8b4103a7fa84c798f5e">stencilFunc</a> = <a class="el" href="group___resources.html#ggaa01a212fe7f4cf214d72c4483d59b4daaf3fc827ade4b968e50406496907ef962">TestFunction::ALWAYS</a></td></tr>
 <tr class="memdesc:a0772bef9242dc8b4103a7fa84c798f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil test function. <br /></td></tr>
 <tr class="separator:a0772bef9242dc8b4103a7fa84c798f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af39ca5e14e4b55b90ea38e608db1efe7"><td class="memItemLeft" align="right" valign="top"><a id="af39ca5e14e4b55b90ea38e608db1efe7"></a>
-<a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#af39ca5e14e4b55b90ea38e608db1efe7">stencilFail</a></td></tr>
+<a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#af39ca5e14e4b55b90ea38e608db1efe7">stencilFail</a> = <a class="el" href="group___resources.html#gga54a0249f5262587373e2da1a252a3f02a60cba2874369bd3790e14ea5f8a7bc58">StencilOp::KEEP</a></td></tr>
 <tr class="memdesc:af39ca5e14e4b55b90ea38e608db1efe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation when the stencil test fails. <br /></td></tr>
 <tr class="separator:af39ca5e14e4b55b90ea38e608db1efe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8246124c26ee31e1ecbfa666adb60b27"><td class="memItemLeft" align="right" valign="top"><a id="a8246124c26ee31e1ecbfa666adb60b27"></a>
-<a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a8246124c26ee31e1ecbfa666adb60b27">stencilPass</a></td></tr>
+<a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a8246124c26ee31e1ecbfa666adb60b27">stencilPass</a> = <a class="el" href="group___resources.html#gga54a0249f5262587373e2da1a252a3f02a60cba2874369bd3790e14ea5f8a7bc58">StencilOp::KEEP</a></td></tr>
 <tr class="memdesc:a8246124c26ee31e1ecbfa666adb60b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation when the stencil test passes but the depth test fails. <br /></td></tr>
 <tr class="separator:a8246124c26ee31e1ecbfa666adb60b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8a044fa2c9582dc5816750eca2940d"><td class="memItemLeft" align="right" valign="top"><a id="a9f8a044fa2c9582dc5816750eca2940d"></a>
-<a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9f8a044fa2c9582dc5816750eca2940d">stencilDepthPass</a></td></tr>
+<a class="el" href="group___resources.html#ga54a0249f5262587373e2da1a252a3f02">StencilOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a9f8a044fa2c9582dc5816750eca2940d">stencilDepthPass</a> = <a class="el" href="group___resources.html#gga54a0249f5262587373e2da1a252a3f02a60cba2874369bd3790e14ea5f8a7bc58">StencilOp::KEEP</a></td></tr>
 <tr class="memdesc:a9f8a044fa2c9582dc5816750eca2940d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation when the stencil and depth tests passes. <br /></td></tr>
 <tr class="separator:a9f8a044fa2c9582dc5816750eca2940d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686ddfbcc22c577224b422cd3fd8ae21"><td class="memItemLeft" align="right" valign="top"><a id="a686ddfbcc22c577224b422cd3fd8ae21"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a686ddfbcc22c577224b422cd3fd8ae21">patchSize</a> = 3</td></tr>
+<tr class="memdesc:a686ddfbcc22c577224b422cd3fd8ae21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tesselation patch size. <br /></td></tr>
+<tr class="separator:a686ddfbcc22c577224b422cd3fd8ae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c475cb01b59b5b352e2160c2a95fbf"><td class="memItemLeft" align="right" valign="top"><a id="aa8c475cb01b59b5b352e2160c2a95fbf"></a>
 uchar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#aa8c475cb01b59b5b352e2160c2a95fbf">stencilValue</a> = 0</td></tr>
 <tr class="memdesc:aa8c475cb01b59b5b352e2160c2a95fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil reference value. <br /></td></tr>
 <tr class="separator:aa8c475cb01b59b5b352e2160c2a95fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12feceb2cf01bac98e94a04b86c277a8"><td class="memItemLeft" align="right" valign="top"><a id="a12feceb2cf01bac98e94a04b86c277a8"></a>
-uchar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a12feceb2cf01bac98e94a04b86c277a8">stencilClearValue</a> = 0</td></tr>
-<tr class="memdesc:a12feceb2cf01bac98e94a04b86c277a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil clear value. <br /></td></tr>
-<tr class="separator:a12feceb2cf01bac98e94a04b86c277a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09c3cef8ded162225aa597cc3e4f3484"><td class="memItemLeft" align="right" valign="top"><a id="a09c3cef8ded162225aa597cc3e4f3484"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a09c3cef8ded162225aa597cc3e4f3484">stencilTest</a> = false</td></tr>
 <tr class="memdesc:a09c3cef8ded162225aa597cc3e4f3484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the stencil test enabled or not. <br /></td></tr>
@@ -254,49 +199,71 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a8850390f6adae48318c91f172943c9b7">stencilWriteMask</a> = true</td></tr>
 <tr class="memdesc:a8850390f6adae48318c91f172943c9b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">should stencil be written to the stencil buffer or not. <br /></td></tr>
 <tr class="separator:a8850390f6adae48318c91f172943c9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dd3d6753ec04247a2d4faafeb8ddc92"><td class="memItemLeft" align="right" valign="top"><a id="a5dd3d6753ec04247a2d4faafeb8ddc92"></a>
-glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a5dd3d6753ec04247a2d4faafeb8ddc92">viewport</a> {0.0f}</td></tr>
-<tr class="memdesc:a5dd3d6753ec04247a2d4faafeb8ddc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current viewport region. <br /></td></tr>
-<tr class="separator:a5dd3d6753ec04247a2d4faafeb8ddc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a042c758e79f9a4a4ead388191d7ec212"><td class="memItemLeft" align="right" valign="top"><a id="a042c758e79f9a4a4ead388191d7ec212"></a>
-glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a042c758e79f9a4a4ead388191d7ec212">scissorBox</a> {0.0f}</td></tr>
-<tr class="memdesc:a042c758e79f9a4a4ead388191d7ec212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current scissor region. <br /></td></tr>
-<tr class="separator:a042c758e79f9a4a4ead388191d7ec212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ec5af4d44ed63e2c4d9770e0bf7d72"><td class="memItemLeft" align="right" valign="top"><a id="a99ec5af4d44ed63e2c4d9770e0bf7d72"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a99ec5af4d44ed63e2c4d9770e0bf7d72">scissorTest</a> = false</td></tr>
-<tr class="memdesc:a99ec5af4d44ed63e2c4d9770e0bf7d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is geometry tested against the scissor region or not. <br /></td></tr>
-<tr class="separator:a99ec5af4d44ed63e2c4d9770e0bf7d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9bfe2e11147fa89241e86215d47eb5"><td class="memItemLeft" align="right" valign="top"><a id="aba9bfe2e11147fa89241e86215d47eb5"></a>
-std::array&lt; <a class="el" href="class_g_p_u_state.html#a0bcf83d416ce7a37b49465e709242118">TextureBindings</a>, 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#aba9bfe2e11147fa89241e86215d47eb5">textures</a></td></tr>
-<tr class="memdesc:aba9bfe2e11147fa89241e86215d47eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Textures bound at each target for each slot. <br /></td></tr>
-<tr class="separator:aba9bfe2e11147fa89241e86215d47eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3ddd06e9d96746aaa856a0490a4218"><td class="memItemLeft" align="right" valign="top"><a id="a5e3ddd06e9d96746aaa856a0490a4218"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a5e3ddd06e9d96746aaa856a0490a4218">readFramebuffer</a> = 0</td></tr>
-<tr class="memdesc:a5e3ddd06e9d96746aaa856a0490a4218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently bound read framebuffer. <br /></td></tr>
-<tr class="separator:a5e3ddd06e9d96746aaa856a0490a4218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58b8a382bfe9c8cf5530588c1654d98"><td class="memItemLeft" align="right" valign="top"><a id="ab58b8a382bfe9c8cf5530588c1654d98"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ab58b8a382bfe9c8cf5530588c1654d98">drawFramebuffer</a> = 0</td></tr>
-<tr class="memdesc:ab58b8a382bfe9c8cf5530588c1654d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently bound draw framebuffer. <br /></td></tr>
-<tr class="separator:ab58b8a382bfe9c8cf5530588c1654d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76111c214ab22b5901c032476660a5de"><td class="memItemLeft" align="right" valign="top"><a id="a76111c214ab22b5901c032476660a5de"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a76111c214ab22b5901c032476660a5de">program</a> = 0</td></tr>
-<tr class="memdesc:a76111c214ab22b5901c032476660a5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently bound shader program. <br /></td></tr>
-<tr class="separator:a76111c214ab22b5901c032476660a5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64805bab65d7781a2bc852ffc55b8748"><td class="memItemLeft" align="right" valign="top"><a id="a64805bab65d7781a2bc852ffc55b8748"></a>
-GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a64805bab65d7781a2bc852ffc55b8748">activeTexture</a> = GL_TEXTURE0</td></tr>
-<tr class="memdesc:a64805bab65d7781a2bc852ffc55b8748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently active texture slot. <br /></td></tr>
-<tr class="separator:a64805bab65d7781a2bc852ffc55b8748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc4d893d5ff2738dab6f6ecd6d1ff6e"><td class="memItemLeft" align="right" valign="top"><a id="a6dc4d893d5ff2738dab6f6ecd6d1ff6e"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a6dc4d893d5ff2738dab6f6ecd6d1ff6e">vertexArray</a> = 0</td></tr>
-<tr class="memdesc:a6dc4d893d5ff2738dab6f6ecd6d1ff6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently bound vertex array. <br /></td></tr>
-<tr class="separator:a6dc4d893d5ff2738dab6f6ecd6d1ff6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36bbec154fb2d94e7cea770db8c96db"><td class="memItemLeft" align="right" valign="top"><a id="ad36bbec154fb2d94e7cea770db8c96db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ad36bbec154fb2d94e7cea770db8c96db">depthTest</a> = false</td></tr>
+<tr class="memdesc:ad36bbec154fb2d94e7cea770db8c96db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is depth test enabled or not. <br /></td></tr>
+<tr class="separator:ad36bbec154fb2d94e7cea770db8c96db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ad197df43ff5e4e8cd420ea7de570f"><td class="memItemLeft" align="right" valign="top"><a id="a29ad197df43ff5e4e8cd420ea7de570f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a29ad197df43ff5e4e8cd420ea7de570f">depthWriteMask</a> = true</td></tr>
+<tr class="memdesc:a29ad197df43ff5e4e8cd420ea7de570f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should depth be written to the depth buffer or not. <br /></td></tr>
+<tr class="separator:a29ad197df43ff5e4e8cd420ea7de570f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4da110a2fe6bf765ebb643bb54a0616"><td class="memItemLeft" align="right" valign="top"><a id="ae4da110a2fe6bf765ebb643bb54a0616"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ae4da110a2fe6bf765ebb643bb54a0616">cullFace</a> = false</td></tr>
+<tr class="memdesc:ae4da110a2fe6bf765ebb643bb54a0616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is backface culling enabled or not. <br /></td></tr>
+<tr class="separator:ae4da110a2fe6bf765ebb643bb54a0616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccd7ad12eea87b9c2c563d61e9db450"><td class="memItemLeft" align="right" valign="top"><a id="a0ccd7ad12eea87b9c2c563d61e9db450"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a0ccd7ad12eea87b9c2c563d61e9db450">blend</a> = false</td></tr>
+<tr class="memdesc:a0ccd7ad12eea87b9c2c563d61e9db450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending enabled or not. <br /></td></tr>
+<tr class="separator:a0ccd7ad12eea87b9c2c563d61e9db450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f66ae59028620021ee55efdbb7aa8d"><td class="memItemLeft" align="right" valign="top"><a id="a51f66ae59028620021ee55efdbb7aa8d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a51f66ae59028620021ee55efdbb7aa8d">sentinel</a> = false</td></tr>
+<tr class="memdesc:a51f66ae59028620021ee55efdbb7aa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to delimit the parameters that can be directly compared in memory. <br /></td></tr>
+<tr class="separator:a51f66ae59028620021ee55efdbb7aa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4fc5a4f0f1b20d2e76aa2dc59142fd"><td class="memItemLeft" align="right" valign="top"><a id="a4f4fc5a4f0f1b20d2e76aa2dc59142fd"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a4f4fc5a4f0f1b20d2e76aa2dc59142fd">program</a> = nullptr</td></tr>
+<tr class="memdesc:a4f4fc5a4f0f1b20d2e76aa2dc59142fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current program. <br /></td></tr>
+<tr class="separator:a4f4fc5a4f0f1b20d2e76aa2dc59142fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f91c0c082f88db3ec298f1e39698a3"><td class="memItemLeft" align="right" valign="top"><a id="a45f91c0c082f88db3ec298f1e39698a3"></a>
+const <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a45f91c0c082f88db3ec298f1e39698a3">mesh</a> = nullptr</td></tr>
+<tr class="memdesc:a45f91c0c082f88db3ec298f1e39698a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current mesh. <br /></td></tr>
+<tr class="separator:a45f91c0c082f88db3ec298f1e39698a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70081b913e77b391fcaa1fc589d76e4a"><td class="memItemLeft" align="right" valign="top"><a id="a70081b913e77b391fcaa1fc589d76e4a"></a>
+<a class="el" href="struct_g_p_u_state_1_1_framebuffer_infos.html">FramebufferInfos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a70081b913e77b391fcaa1fc589d76e4a">pass</a></td></tr>
+<tr class="memdesc:a70081b913e77b391fcaa1fc589d76e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current framebuffer. <br /></td></tr>
+<tr class="separator:a70081b913e77b391fcaa1fc589d76e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Internal <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state ; not all API options are exposed, only these that can be toggled in Rendu. </p>
-<dl class="section note"><dt>Note</dt><dd>This is only provided as a read-only state. Modifying attributes won't affect the current <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state. </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/engine/graphics/<a class="el" href="_g_p_u_objects_8hpp_source.html">GPUObjects.hpp</a></li>
-<li>src/engine/graphics/GPUObjects.cpp</li>
+<div class="textblock"><p>Internal <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state ; not all API options are exposed, only these that can be toggled in Rendu. </p>
+<dl class="section note"><dt>Note</dt><dd>This is only provided as a read-only state. Modifying attributes won't affect the current <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state. </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5a4d7de3689a34409c940ae8dbaa64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a4d7de3689a34409c940ae8dbaa64e">&#9670;&nbsp;</a></span>isEquivalent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPUState::isEquivalent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test if this state is equivalent (in a Vulkan pipeline state sense) to another. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>the state to compare to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if they are compatible </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/engine/graphics/<a class="el" href="_g_p_u_types_8hpp_source.html">GPUTypes.hpp</a></li>
+<li>src/engine/graphics/GPUTypes.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->

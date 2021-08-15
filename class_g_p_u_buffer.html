@@ -100,15 +100,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Store data in a <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> buffer.  
+<p>Store data in a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> buffer.  
  <a href="class_g_p_u_buffer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_g_p_u_objects_8hpp_source.html">GPUObjects.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9dab55ec459952c2b0adb754819a56fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#a9dab55ec459952c2b0adb754819a56fb">GPUBuffer</a> (<a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a> type, <a class="el" href="group___resources.html#ga4942c3554a6e6d12b22458c949de4d68">DataUse</a> use)</td></tr>
-<tr class="separator:a9dab55ec459952c2b0adb754819a56fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0b9235c10b9c6a5dc791226b6eeea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#a4d0b9235c10b9c6a5dc791226b6eeea1">GPUBuffer</a> (<a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a> atype)</td></tr>
+<tr class="separator:a4d0b9235c10b9c6a5dc791226b6eeea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23563ba2854d9180b5f31dfbc14be82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#ab23563ba2854d9180b5f31dfbc14be82">clean</a> ()</td></tr>
 <tr class="separator:ab23563ba2854d9180b5f31dfbc14be82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e20578a6baab4012d3c6804e180806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_p_u_buffer.html">GPUBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#ab9e20578a6baab4012d3c6804e180806">operator=</a> (const <a class="el" href="class_g_p_u_buffer.html">GPUBuffer</a> &amp;)=delete</td></tr>
@@ -122,24 +122,28 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3e40c59e16071784c97b41646b7b4f41"><td class="memItemLeft" align="right" valign="top"><a id="a3e40c59e16071784c97b41646b7b4f41"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#a3e40c59e16071784c97b41646b7b4f41">id</a> = 0</td></tr>
-<tr class="memdesc:a3e40c59e16071784c97b41646b7b4f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer OpenGL ID. <br /></td></tr>
-<tr class="separator:a3e40c59e16071784c97b41646b7b4f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203883dd312f817d7fa2ebdac4b6e1f7"><td class="memItemLeft" align="right" valign="top"><a id="a203883dd312f817d7fa2ebdac4b6e1f7"></a>
-GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#a203883dd312f817d7fa2ebdac4b6e1f7">target</a></td></tr>
-<tr class="memdesc:a203883dd312f817d7fa2ebdac4b6e1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer type. <br /></td></tr>
-<tr class="separator:a203883dd312f817d7fa2ebdac4b6e1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b27d1c0714c9607c5285857bfd3befb"><td class="memItemLeft" align="right" valign="top"><a id="a3b27d1c0714c9607c5285857bfd3befb"></a>
-GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#a3b27d1c0714c9607c5285857bfd3befb">usage</a></td></tr>
-<tr class="memdesc:a3b27d1c0714c9607c5285857bfd3befb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer usage. <br /></td></tr>
-<tr class="separator:a3b27d1c0714c9607c5285857bfd3befb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e2f78a5c1bc6cb09991ee05f263643"><td class="memItemLeft" align="right" valign="top"><a id="ae6e2f78a5c1bc6cb09991ee05f263643"></a>
+VkBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#ae6e2f78a5c1bc6cb09991ee05f263643">buffer</a> = VK_NULL_HANDLE</td></tr>
+<tr class="memdesc:ae6e2f78a5c1bc6cb09991ee05f263643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer native handle. <br /></td></tr>
+<tr class="separator:ae6e2f78a5c1bc6cb09991ee05f263643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8ab3936e96a6bfd0d82093de1ca607"><td class="memItemLeft" align="right" valign="top"><a id="acf8ab3936e96a6bfd0d82093de1ca607"></a>
+VmaAllocation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#acf8ab3936e96a6bfd0d82093de1ca607">data</a> = VK_NULL_HANDLE</td></tr>
+<tr class="memdesc:acf8ab3936e96a6bfd0d82093de1ca607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal allocation. <br /></td></tr>
+<tr class="separator:acf8ab3936e96a6bfd0d82093de1ca607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee93cf8fc462a8b504601e4c944aa09"><td class="memItemLeft" align="right" valign="top"><a id="a6ee93cf8fc462a8b504601e4c944aa09"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#a6ee93cf8fc462a8b504601e4c944aa09">mapped</a> = nullptr</td></tr>
+<tr class="memdesc:a6ee93cf8fc462a8b504601e4c944aa09"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the buffer is CPU-mappable, its CPU address. <br /></td></tr>
+<tr class="separator:a6ee93cf8fc462a8b504601e4c944aa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34d4e5156bae5a60c18614cc93a7a14"><td class="memItemLeft" align="right" valign="top"><a id="ad34d4e5156bae5a60c18614cc93a7a14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_buffer.html#ad34d4e5156bae5a60c18614cc93a7a14">mappable</a> = false</td></tr>
+<tr class="memdesc:ad34d4e5156bae5a60c18614cc93a7a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the buffer mappable on the CPU. <br /></td></tr>
+<tr class="separator:ad34d4e5156bae5a60c18614cc93a7a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Store data in a <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> buffer. </p>
+<div class="textblock"><p>Store data in a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> buffer. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9dab55ec459952c2b0adb754819a56fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dab55ec459952c2b0adb754819a56fb">&#9670;&nbsp;</a></span>GPUBuffer() <span class="overload">[1/3]</span></h2>
+<a id="a4d0b9235c10b9c6a5dc791226b6eeea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d0b9235c10b9c6a5dc791226b6eeea1">&#9670;&nbsp;</a></span>GPUBuffer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,25 +152,14 @@ GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="memname">GPUBuffer::GPUBuffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___resources.html#ga4f774584b0b53a5c0a654709438271bd">BufferType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>atype</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___resources.html#ga4942c3554a6e6d12b22458c949de4d68">DataUse</a>&#160;</td>
-          <td class="paramname"><em>use</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>the type of buffer </td></tr>
-    <tr><td class="paramname">use</td><td>the update frequency </td></tr>
+    <tr><td class="paramname">atype</td><td>the type of buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -242,7 +235,7 @@ GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clean internal <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> buffer. </p>
+<p>Clean internal <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> buffer. </p>
 
 </div>
 </div>

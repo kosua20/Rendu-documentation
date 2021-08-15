@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['quadcalls_1407',['quadCalls',['../struct_g_l_utilities_1_1_metrics.html#aa726a3bb9f6068443d179cdd6843a722',1,'GLUtilities::Metrics']]],
-  ['quality_1408',['quality',['../class_s_s_a_o.html#a5f13c22cb2cd98af9df24b661db78392',1,'SSAO::quality()'],['../class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be',1,'SSAO::Quality()']]],
-  ['query_1409',['Query',['../class_query.html',1,'Query'],['../class_query.html#a4c1633236bdb9fa8d3fd3572a469889d',1,'Query::Query()']]],
-  ['quit_1410',['Quit',['../class_window.html#a23db6c08edfd162f98d7ce8a3257e4a6a0d82790b0612935992bd564a17ce37d6',1,'Window']]]
+  ['quadcalls_1522',['quadCalls',['../struct_g_p_u_1_1_metrics.html#a7cb84d82b257389b58c73770753bacbb',1,'GPU::Metrics']]],
+  ['quality_1523',['quality',['../class_s_s_a_o.html#a5f13c22cb2cd98af9df24b661db78392',1,'SSAO::quality()'],['../class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3be',1,'SSAO::Quality()']]],
+  ['query_1524',['Query',['../class_query.html',1,'Query'],['../class_query.html#a4c1633236bdb9fa8d3fd3572a469889d',1,'Query::Query()']]],
+  ['queryallocator_1525',['QueryAllocator',['../class_query_allocator.html',1,'']]],
+  ['queryallocators_1526',['queryAllocators',['../struct_g_p_u_context.html#ad62a44418b9f53a5d232929da6bad58e',1,'GPUContext']]],
+  ['quit_1527',['Quit',['../class_window.html#a23db6c08edfd162f98d7ce8a3257e4a6a0d82790b0612935992bd564a17ce37d6',1,'Window']]]
 ];

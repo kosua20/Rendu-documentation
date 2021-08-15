@@ -92,11 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <p>Precompute BRDF-related data for real-time rendering. </p>
-<p>Perform cubemap GGX convolution, irradiance SH coefficients computation, and linearized BRDF look-up table precomputation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_1_1_frag_1_1_cubemap__convo.html" title="Cubemap convo fragment shader.">GPU::Frag::Cubemap_convo</a> </dd>
+<p>Perform cubemap GGX convolution, irradiance SH coefficients computation, and linearized BRDF look-up table precomputation. </p><dl class="section see"><dt>See also</dt><dd>GPU::Frag::Cubemap_convo </dd>
 <dd>
-<a class="el" href="class_g_p_u_1_1_frag_1_1_brdf__sampler.html" title="Brdf sampler fragment shader.">GPU::Frag::Brdf_sampler</a> </dd>
+GPU::Frag::Brdf_sampler </dd>
 <dd>
-<a class="el" href="class_g_p_u_1_1_frag_1_1_skybox__shcoeffs.html" title="Skybox shcoeffs fragment shader.">GPU::Frag::Skybox_shcoeffs</a> </dd>
+GPU::Frag::Skybox_shcoeffs </dd>
 <dd>
 DeferredRendering </dd></dl>
 <table class="memberdecls">
@@ -266,10 +266,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load a cubemap on both the CPU and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> from an input path. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Load a cubemap on both the CPU and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> from an input path. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inputPath</td><td>the base path on disk </td></tr>
-    <tr><td class="paramname">cubemapInfos</td><td>will contain the cubemap infos once sent to the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> </td></tr>
+    <tr><td class="paramname">cubemapInfos</td><td>will contain the cubemap infos once sent to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> </td></tr>
   </table>
   </dd>
 </dl>

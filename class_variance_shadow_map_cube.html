@@ -109,8 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4c46eb9789e66c57375e73272a5236d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#ab4c46eb9789e66c57375e73272a5236d">VarianceShadowMapCube</a> (const std::shared_ptr&lt; <a class="el" href="class_point_light.html">PointLight</a> &gt; &amp;light, int side)</td></tr>
 <tr class="separator:ab4c46eb9789e66c57375e73272a5236d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0d7ad5068de9c4987a90bc65d71b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#a6f0d7ad5068de9c4987a90bc65d71b53">draw</a> (const <a class="el" href="class_scene.html">Scene</a> &amp;scene) const override</td></tr>
-<tr class="separator:a6f0d7ad5068de9c4987a90bc65d71b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca93eacc3cb9833cb2274c8d0505f212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#aca93eacc3cb9833cb2274c8d0505f212">draw</a> (const <a class="el" href="class_scene.html">Scene</a> &amp;scene) override</td></tr>
+<tr class="separator:aca93eacc3cb9833cb2274c8d0505f212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_shadow_map"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_shadow_map')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_shadow_map.html">ShadowMap</a></td></tr>
 <tr class="memitem:ae45ce65eaccc2e862aafe4cf970ce15d inherit pub_methods_class_shadow_map"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shadow_map.html#ae45ce65eaccc2e862aafe4cf970ce15d">ShadowMap</a> ()=default</td></tr>
 <tr class="separator:ae45ce65eaccc2e862aafe4cf970ce15d inherit pub_methods_class_shadow_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,10 +131,10 @@ Private Attributes</h2></td></tr>
 std::shared_ptr&lt; <a class="el" href="class_point_light.html">PointLight</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#ab921fee4ffb54611da8bb39a46ca60c3">_light</a></td></tr>
 <tr class="memdesc:ab921fee4ffb54611da8bb39a46ca60c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The associated light. <br /></td></tr>
 <tr class="separator:ab921fee4ffb54611da8bb39a46ca60c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35345fe3146e16a1f2107af00d72c4e"><td class="memItemLeft" align="right" valign="top"><a id="ac35345fe3146e16a1f2107af00d72c4e"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#ac35345fe3146e16a1f2107af00d72c4e">_program</a></td></tr>
-<tr class="memdesc:ac35345fe3146e16a1f2107af00d72c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow program. <br /></td></tr>
-<tr class="separator:ac35345fe3146e16a1f2107af00d72c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91a2b618eb94016dd46d11495f1bfbf"><td class="memItemLeft" align="right" valign="top"><a id="aa91a2b618eb94016dd46d11495f1bfbf"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#aa91a2b618eb94016dd46d11495f1bfbf">_program</a></td></tr>
+<tr class="memdesc:aa91a2b618eb94016dd46d11495f1bfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow program. <br /></td></tr>
+<tr class="separator:aa91a2b618eb94016dd46d11495f1bfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ad132240f787a905225d9556753b11"><td class="memItemLeft" align="right" valign="top"><a id="ac5ad132240f787a905225d9556753b11"></a>
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variance_shadow_map_cube.html#ac5ad132240f787a905225d9556753b11">_map</a></td></tr>
 <tr class="memdesc:ac5ad132240f787a905225d9556753b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw shadow map result. <br /></td></tr>
@@ -193,8 +193,8 @@ std::unique_ptr&lt; <a class="el" href="class_box_blur.html">BoxBlur</a> &gt;&#1
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6f0d7ad5068de9c4987a90bc65d71b53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f0d7ad5068de9c4987a90bc65d71b53">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="aca93eacc3cb9833cb2274c8d0505f212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca93eacc3cb9833cb2274c8d0505f212">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +207,7 @@ std::unique_ptr&lt; <a class="el" href="class_box_blur.html">BoxBlur</a> &gt;&#1
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_scene.html">Scene</a> &amp;&#160;</td>
           <td class="paramname"><em>scene</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -226,7 +226,7 @@ std::unique_ptr&lt; <a class="el" href="class_box_blur.html">BoxBlur</a> &gt;&#1
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_shadow_map.html#a8c8d5f14f8d378b3bc7318a557b91e9b">ShadowMap</a>.</p>
+<p>Implements <a class="el" href="class_shadow_map.html#a49047b98a684eeffe265d917d50034a0">ShadowMap</a>.</p>
 
 </div>
 </div>

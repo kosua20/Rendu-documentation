@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -107,6 +108,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_image_8hpp_source.html">Image.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad53308e297b5608dd19370fe4b471e86"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Save</a> : uint { <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86ab50339a10e1de285ac99d4c3990b8693">Save::NONE</a> = 0, 
+<a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86ac49dea25c71cd4eb6e7930cc908b347d">Save::FLIP</a> = 1 &lt;&lt; 0, 
+<a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86af92011c2f5e6d27fddc3b9b2815be030">Save::IGNORE_ALPHA</a> = 1 &lt;&lt; 1, 
+<a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86a2c8fed31a1e73af84bad27f36a2ac0b5">Save::SRGB_LDR</a> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="memdesc:ad53308e297b5608dd19370fe4b471e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for saving an image to disk.  <a href="class_image.html#ad53308e297b5608dd19370fe4b471e86">More...</a><br /></td></tr>
+<tr class="separator:ad53308e297b5608dd19370fe4b471e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5502e928122744be1d3b89648298e162"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a5502e928122744be1d3b89648298e162">Image</a> ()=default</td></tr>
@@ -133,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a566294ee9c96dbfd14a90576d8a7d4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d6118698e418a311442d42ce582a65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a96d6118698e418a311442d42ce582a65">load</a> (const std::string &amp;path, unsigned int channels, bool flip, bool externalFile)</td></tr>
 <tr class="separator:a96d6118698e418a311442d42ce582a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30ba77df78c823beef52ffb06da7c1b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a30ba77df78c823beef52ffb06da7c1b3">save</a> (const std::string &amp;path, bool flip, bool ignoreAlpha=false)</td></tr>
-<tr class="separator:a30ba77df78c823beef52ffb06da7c1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d7c4cadb431f19ea306237d73ad36a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a12d7c4cadb431f19ea306237d73ad36a">save</a> (const std::string &amp;path, <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Save</a> options) const</td></tr>
+<tr class="separator:a12d7c4cadb431f19ea306237d73ad36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3df00809078cb30ee85a9c8392b752a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#ad3df00809078cb30ee85a9c8392b752a">operator=</a> (const <a class="el" href="class_image.html">Image</a> &amp;)=delete</td></tr>
 <tr class="separator:ad3df00809078cb30ee85a9c8392b752a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20a5cb82bbecd48bdcea519bf53bc051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a20a5cb82bbecd48bdcea519bf53bc051">Image</a> (const <a class="el" href="class_image.html">Image</a> &amp;)=delete</td></tr>
@@ -170,10 +181,10 @@ std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a4a672db816133e0ca2c9ba3533f75cad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a4a672db816133e0ca2c9ba3533f75cad">saveAsLDR</a> (const std::string &amp;path, bool flip, bool ignoreAlpha)</td></tr>
-<tr class="separator:a4a672db816133e0ca2c9ba3533f75cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af476b233083f41dee17fc29fc8bfa757"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#af476b233083f41dee17fc29fc8bfa757">saveAsHDR</a> (const std::string &amp;path, bool flip, bool ignoreAlpha)</td></tr>
-<tr class="separator:af476b233083f41dee17fc29fc8bfa757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af363a9fa1fe32f1a3fe72e57a77b74bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#af363a9fa1fe32f1a3fe72e57a77b74bb">saveAsLDR</a> (const std::string &amp;path, <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Save</a> options) const</td></tr>
+<tr class="separator:af363a9fa1fe32f1a3fe72e57a77b74bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2c7b3ccb4bb31ddaaaee8768c4b854"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#add2c7b3ccb4bb31ddaaaee8768c4b854">saveAsHDR</a> (const std::string &amp;path, <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Save</a> options) const</td></tr>
+<tr class="separator:add2c7b3ccb4bb31ddaaaee8768c4b854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb55abf521d8e9f5df9386bf566cb81a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#adb55abf521d8e9f5df9386bf566cb81a">loadLDR</a> (const std::string &amp;path, unsigned int channels, bool flip, bool externalFile)</td></tr>
 <tr class="separator:adb55abf521d8e9f5df9386bf566cb81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b940f499597f7708e05f2397f0116b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#aa3b940f499597f7708e05f2397f0116b">loadHDR</a> (const std::string &amp;path, unsigned int channels, bool flip, bool externalFile)</td></tr>
@@ -181,7 +192,42 @@ Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities, for both LDR and HDR images. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad53308e297b5608dd19370fe4b471e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53308e297b5608dd19370fe4b471e86">&#9670;&nbsp;</a></span>Save</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a> : uint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Options for saving an image to disk. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad53308e297b5608dd19370fe4b471e86ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"><p>No specific options. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad53308e297b5608dd19370fe4b471e86ac49dea25c71cd4eb6e7930cc908b347d"></a>FLIP&#160;</td><td class="fielddoc"><p>Flip the image vertically. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad53308e297b5608dd19370fe4b471e86af92011c2f5e6d27fddc3b9b2815be030"></a>IGNORE_ALPHA&#160;</td><td class="fielddoc"><p>Force alpha to 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad53308e297b5608dd19370fe4b471e86a2c8fed31a1e73af84bad27f36a2ac0b5"></a>SRGB_LDR&#160;</td><td class="fielddoc"><p>Apply gamma sRGB correction before saving, ignored for HDR images. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5502e928122744be1d3b89648298e162"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5502e928122744be1d3b89648298e162">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/4]</span></h2>
 
@@ -899,8 +945,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a30ba77df78c823beef52ffb06da7c1b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30ba77df78c823beef52ffb06da7c1b3">&#9670;&nbsp;</a></span>save()</h2>
+<a id="a12d7c4cadb431f19ea306237d73ad36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d7c4cadb431f19ea306237d73ad36a">&#9670;&nbsp;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -914,27 +960,20 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>flip</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreAlpha</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Save an image to disk, either in HDR (when using "exr" extension) or in LDR (any other extension). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>the path to the image </td></tr>
-    <tr><td class="paramname">flip</td><td>should the image be vertically flipped </td></tr>
-    <tr><td class="paramname">ignoreAlpha</td><td>if true, the alpha channel will be ignored </td></tr>
+    <tr><td class="paramname">options</td><td>options to use when writing the image on disk </td></tr>
   </table>
   </dd>
 </dl>
@@ -942,8 +981,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af476b233083f41dee17fc29fc8bfa757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af476b233083f41dee17fc29fc8bfa757">&#9670;&nbsp;</a></span>saveAsHDR()</h2>
+<a id="add2c7b3ccb4bb31ddaaaee8768c4b854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2c7b3ccb4bb31ddaaaee8768c4b854">&#9670;&nbsp;</a></span>saveAsHDR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -960,19 +999,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>flip</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreAlpha</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -984,8 +1017,7 @@ Private Member Functions</h2></td></tr>
 <p>Save a HDR image to disk using tiny_exr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>the path to the image </td></tr>
-    <tr><td class="paramname">flip</td><td>should the image be vertically flipped </td></tr>
-    <tr><td class="paramname">ignoreAlpha</td><td>if true, the alpha channel will be ignored </td></tr>
+    <tr><td class="paramname">options</td><td>options to use when writing the image on disk </td></tr>
   </table>
   </dd>
 </dl>
@@ -993,8 +1025,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a672db816133e0ca2c9ba3533f75cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a672db816133e0ca2c9ba3533f75cad">&#9670;&nbsp;</a></span>saveAsLDR()</h2>
+<a id="af363a9fa1fe32f1a3fe72e57a77b74bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af363a9fa1fe32f1a3fe72e57a77b74bb">&#9670;&nbsp;</a></span>saveAsLDR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1011,19 +1043,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>flip</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreAlpha</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1035,8 +1061,7 @@ Private Member Functions</h2></td></tr>
 <p>Save a LDR image to disk using stb_image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>the path to the image </td></tr>
-    <tr><td class="paramname">flip</td><td>should the image be vertically flipped </td></tr>
-    <tr><td class="paramname">ignoreAlpha</td><td>if true, the alpha channel will be ignored </td></tr>
+    <tr><td class="paramname">options</td><td>options to use when writing the image on disk </td></tr>
   </table>
   </dd>
 </dl>

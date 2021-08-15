@@ -122,8 +122,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a51fb0aec444a5f5be025d192717df39d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a51fb0aec444a5f5be025d192717df39d">DebugViewer</a> (bool silent)</td></tr>
-<tr class="separator:a51fb0aec444a5f5be025d192717df39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af581d71d9b8177c8b6e7e559a6b7e27e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#af581d71d9b8177c8b6e7e559a6b7e27e">DebugViewer</a> ()</td></tr>
+<tr class="separator:af581d71d9b8177c8b6e7e559a6b7e27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6280b03f6e27af19ef36dd852bba97dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a6280b03f6e27af19ef36dd852bba97dd">track</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a6280b03f6e27af19ef36dd852bba97dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0428c2e5b78a302ee9f7f4590bbdea92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0428c2e5b78a302ee9f7f4590bbdea92">track</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
@@ -199,18 +199,14 @@ std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_framebuffer_infos.ht
 std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_mesh_infos.html">MeshInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aebef870f741d7f1eea1dffd61e0f28a3">_meshes</a></td></tr>
 <tr class="memdesc:aebef870f741d7f1eea1dffd61e0f28a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered meshes. <br /></td></tr>
 <tr class="separator:aebef870f741d7f1eea1dffd61e0f28a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceb991698a5bd07ef0576dcfa97764f1"><td class="memItemLeft" align="right" valign="top"><a id="aceb991698a5bd07ef0576dcfa97764f1"></a>
-std::map&lt; std::string, <a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aceb991698a5bd07ef0576dcfa97764f1">_states</a></td></tr>
-<tr class="memdesc:aceb991698a5bd07ef0576dcfa97764f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> states currently tracked. <br /></td></tr>
-<tr class="separator:aceb991698a5bd07ef0576dcfa97764f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a326317bfbd1f2330eb3ac5ea0edcfe37"><td class="memItemLeft" align="right" valign="top"><a id="a326317bfbd1f2330eb3ac5ea0edcfe37"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a326317bfbd1f2330eb3ac5ea0edcfe37">_texDisplay</a></td></tr>
-<tr class="memdesc:a326317bfbd1f2330eb3ac5ea0edcfe37"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> display shader. <br /></td></tr>
-<tr class="separator:a326317bfbd1f2330eb3ac5ea0edcfe37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee65a8f319398a75d05cb06f6d14e289"><td class="memItemLeft" align="right" valign="top"><a id="aee65a8f319398a75d05cb06f6d14e289"></a>
-const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aee65a8f319398a75d05cb06f6d14e289">_silent</a></td></tr>
-<tr class="memdesc:aee65a8f319398a75d05cb06f6d14e289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't register or display anything. <br /></td></tr>
-<tr class="separator:aee65a8f319398a75d05cb06f6d14e289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e12bdea3ef15df14129c2ca35ab046"><td class="memItemLeft" align="right" valign="top"><a id="aa1e12bdea3ef15df14129c2ca35ab046"></a>
+std::unordered_map&lt; std::string, <a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aa1e12bdea3ef15df14129c2ca35ab046">_states</a></td></tr>
+<tr class="memdesc:aa1e12bdea3ef15df14129c2ca35ab046"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> states currently tracked. <br /></td></tr>
+<tr class="separator:aa1e12bdea3ef15df14129c2ca35ab046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159a5d0894d65e98dc746198eaaa9a64"><td class="memItemLeft" align="right" valign="top"><a id="a159a5d0894d65e98dc746198eaaa9a64"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a159a5d0894d65e98dc746198eaaa9a64">_texDisplay</a></td></tr>
+<tr class="memdesc:a159a5d0894d65e98dc746198eaaa9a64"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> display shader. <br /></td></tr>
+<tr class="separator:a159a5d0894d65e98dc746198eaaa9a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ccb15a937ec3a1f751794bf2e80b45"><td class="memItemLeft" align="right" valign="top"><a id="ae7ccb15a937ec3a1f751794bf2e80b45"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#ae7ccb15a937ec3a1f751794bf2e80b45">_textureId</a> = 0</td></tr>
 <tr class="memdesc:ae7ccb15a937ec3a1f751794bf2e80b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default texture name counter. <br /></td></tr>
@@ -238,8 +234,8 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provide helper GUI to display the content of texture and framebuffer attachments. This can be useful to validate the content rendered to a specific texture zhen debugging. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a51fb0aec444a5f5be025d192717df39d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51fb0aec444a5f5be025d192717df39d">&#9670;&nbsp;</a></span>DebugViewer() <span class="overload">[1/3]</span></h2>
+<a id="af581d71d9b8177c8b6e7e559a6b7e27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af581d71d9b8177c8b6e7e559a6b7e27e">&#9670;&nbsp;</a></span>DebugViewer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,8 +246,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
         <tr>
           <td class="memname">DebugViewer::DebugViewer </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>silent</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -405,7 +400,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Display <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> metrics for the last completed frame in a panel. </p>
+<p>Display <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> metrics for the last completed frame in a panel. </p>
 
 </div>
 </div>
@@ -442,7 +437,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Display <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state in a panel. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Display <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state in a panel. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>name of the state </td></tr>
     <tr><td class="paramname">infos</td><td>the state to display </td></tr>
@@ -832,7 +827,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Track the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state at the moment of the call. Can be called at each frame to track varying state. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Track the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state at the moment of the call. Can be called at each frame to track varying state. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the display name of the state </td></tr>
   </table>
@@ -864,7 +859,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Register current <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> state for debug; </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Register current <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state for debug; </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>how to name the state in the list </td></tr>
   </table>

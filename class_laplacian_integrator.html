@@ -124,14 +124,14 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_convolution_pyramid.html">ConvolutionPyramid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#ad8ad48225f7787f082cc32a917db396a">_pyramid</a></td></tr>
 <tr class="memdesc:ad8ad48225f7787f082cc32a917db396a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convolution pyramid. <br /></td></tr>
 <tr class="separator:ad8ad48225f7787f082cc32a917db396a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe05086908916c54befd9940952c3bc9"><td class="memItemLeft" align="right" valign="top"><a id="afe05086908916c54befd9940952c3bc9"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#afe05086908916c54befd9940952c3bc9">_prepare</a></td></tr>
-<tr class="memdesc:afe05086908916c54befd9940952c3bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader to compute the laplacian field of a RGB image. <br /></td></tr>
-<tr class="separator:afe05086908916c54befd9940952c3bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9efd65352fd3527a59a32d2931a8da"><td class="memItemLeft" align="right" valign="top"><a id="a3c9efd65352fd3527a59a32d2931a8da"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a3c9efd65352fd3527a59a32d2931a8da">_composite</a></td></tr>
-<tr class="memdesc:a3c9efd65352fd3527a59a32d2931a8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passthrough to output the result. <br /></td></tr>
-<tr class="separator:a3c9efd65352fd3527a59a32d2931a8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb85509a569e4dea7904d97d6c755fa3"><td class="memItemLeft" align="right" valign="top"><a id="abb85509a569e4dea7904d97d6c755fa3"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#abb85509a569e4dea7904d97d6c755fa3">_prepare</a></td></tr>
+<tr class="memdesc:abb85509a569e4dea7904d97d6c755fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader to compute the laplacian field of a RGB image. <br /></td></tr>
+<tr class="separator:abb85509a569e4dea7904d97d6c755fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f18a3825988fca9a20d9938294e8211"><td class="memItemLeft" align="right" valign="top"><a id="a1f18a3825988fca9a20d9938294e8211"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a1f18a3825988fca9a20d9938294e8211">_composite</a></td></tr>
+<tr class="memdesc:a1f18a3825988fca9a20d9938294e8211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passthrough to output the result. <br /></td></tr>
+<tr class="separator:a1f18a3825988fca9a20d9938294e8211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac53ee3c704af8ccc4b76c1f1c61b01df"><td class="memItemLeft" align="right" valign="top"><a id="ac53ee3c704af8ccc4b76c1f1c61b01df"></a>
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#ac53ee3c704af8ccc4b76c1f1c61b01df">_preproc</a></td></tr>
 <tr class="memdesc:ac53ee3c704af8ccc4b76c1f1c61b01df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the computed laplacian field. <br /></td></tr>
@@ -234,7 +234,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>Filter a given input texture, first computing its laplacian field before performing integration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">texture</td><td>the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> ID of the texture </td></tr>
+    <tr><td class="paramname">texture</td><td>the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> ID of the texture </td></tr>
   </table>
   </dd>
 </dl>

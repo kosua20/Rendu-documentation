@@ -124,14 +124,14 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_convolution_pyramid.html">ConvolutionPyramid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_filler.html#aedd1f79665102b87041f49c04975b1c5">_pyramid</a></td></tr>
 <tr class="memdesc:aedd1f79665102b87041f49c04975b1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convolution pyramid. <br /></td></tr>
 <tr class="separator:aedd1f79665102b87041f49c04975b1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0dd0708167a52d188f62970766fee61"><td class="memItemLeft" align="right" valign="top"><a id="ae0dd0708167a52d188f62970766fee61"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_filler.html#ae0dd0708167a52d188f62970766fee61">_prepare</a></td></tr>
-<tr class="memdesc:ae0dd0708167a52d188f62970766fee61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader to compute the colored border of black regions in the input image. <br /></td></tr>
-<tr class="separator:ae0dd0708167a52d188f62970766fee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14bc85bb9bd4b4d94840a66aa04260b5"><td class="memItemLeft" align="right" valign="top"><a id="a14bc85bb9bd4b4d94840a66aa04260b5"></a>
-const <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_filler.html#a14bc85bb9bd4b4d94840a66aa04260b5">_composite</a></td></tr>
-<tr class="memdesc:a14bc85bb9bd4b4d94840a66aa04260b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite the filled field with the input image. <br /></td></tr>
-<tr class="separator:a14bc85bb9bd4b4d94840a66aa04260b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca28144fb6b9120ececb2f7d9b33fc78"><td class="memItemLeft" align="right" valign="top"><a id="aca28144fb6b9120ececb2f7d9b33fc78"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_filler.html#aca28144fb6b9120ececb2f7d9b33fc78">_prepare</a></td></tr>
+<tr class="memdesc:aca28144fb6b9120ececb2f7d9b33fc78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader to compute the colored border of black regions in the input image. <br /></td></tr>
+<tr class="separator:aca28144fb6b9120ececb2f7d9b33fc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7fa3d34953e092f1d5e977088c682f"><td class="memItemLeft" align="right" valign="top"><a id="a5c7fa3d34953e092f1d5e977088c682f"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_filler.html#a5c7fa3d34953e092f1d5e977088c682f">_composite</a></td></tr>
+<tr class="memdesc:a5c7fa3d34953e092f1d5e977088c682f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite the filled field with the input image. <br /></td></tr>
+<tr class="separator:a5c7fa3d34953e092f1d5e977088c682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdc4d0b01687a37caf1980de3bec4fa"><td class="memItemLeft" align="right" valign="top"><a id="acfdc4d0b01687a37caf1980de3bec4fa"></a>
 std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_filler.html#acfdc4d0b01687a37caf1980de3bec4fa">_preproc</a></td></tr>
 <tr class="memdesc:acfdc4d0b01687a37caf1980de3bec4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the computed colored border. <br /></td></tr>
@@ -234,7 +234,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>Fill black regions of an image in a smooth fashion, first computing its border color before performing filling. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">texture</td><td>the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> ID of the texture </td></tr>
+    <tr><td class="paramname">texture</td><td>the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> ID of the texture </td></tr>
   </table>
   </dd>
 </dl>

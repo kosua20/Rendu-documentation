@@ -346,8 +346,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acfeffaf1972f53933520e595570679a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaac8fc5411314c34c8ab4ffe353d336a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#aaac8fc5411314c34c8ab4ffe353d336a">released</a> (const <a class="el" href="class_input.html#a590d47e547a7e4460957d40ea522f77a">Mouse</a> &amp;mouseButton, bool absorb=false)</td></tr>
 <tr class="separator:aaac8fc5411314c34c8ab4ffe353d336a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8061ee67608fdc9add576453aadfa96"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#ac8061ee67608fdc9add576453aadfa96">mouse</a> (bool inFramebuffer=false) const</td></tr>
-<tr class="separator:ac8061ee67608fdc9add576453aadfa96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68acba8df89f49cc58b299f2f5310b6"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#ad68acba8df89f49cc58b299f2f5310b6">mouse</a> () const</td></tr>
+<tr class="separator:ad68acba8df89f49cc58b299f2f5310b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76109e4a409197edcc92c589b24ef7c5"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a76109e4a409197edcc92c589b24ef7c5">moved</a> (const <a class="el" href="class_input.html#a590d47e547a7e4460957d40ea522f77a">Mouse</a> &amp;mouseButton) const</td></tr>
 <tr class="separator:a76109e4a409197edcc92c589b24ef7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae31fa2aeb045e258a4d02677c9cab70"><td class="memItemLeft" align="right" valign="top">glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#aae31fa2aeb045e258a4d02677c9cab70">scroll</a> () const</td></tr>
@@ -809,8 +809,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ac8061ee67608fdc9add576453aadfa96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8061ee67608fdc9add576453aadfa96">&#9670;&nbsp;</a></span>mouse()</h2>
+<a id="ad68acba8df89f49cc58b299f2f5310b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68acba8df89f49cc58b299f2f5310b6">&#9670;&nbsp;</a></span>mouse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -818,20 +818,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">glm::vec2 Input::mouse </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>inFramebuffer</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the current mouse position. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inFramebuffer</td><td>should the position be expressed in an OpenGL compatible fashion </td></tr>
+    <tr><td class="paramname">inFramebuffer</td><td>should the position be expressed in a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> compatible fashion </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the current mouse position in unit coordinates or pixels </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The mouse position will be expressed by default in the [0,1] range, from the bottom left corner. If inFramebuffer is set to true, the position will be expressed in pixels, from the top left corner, clamped to the window size. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the current mouse position in unit coordinates , from the bottom left corner. </dd></dl>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['framebuffer_3857',['Framebuffer',['../class_g_l_utilities.html#a88df80064068d454e05a22e38842d1d2',1,'GLUtilities']]]
+  ['framebuffer_4160',['Framebuffer',['../class_g_p_u.html#a88df80064068d454e05a22e38842d1d2',1,'GPU']]]
 ];

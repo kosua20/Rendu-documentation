@@ -158,10 +158,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a413bc011045c95d449569666639b7389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adecf9ab32fac64e846ad6b7753e8996b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#adecf9ab32fac64e846ad6b7753e8996b">Mesh</a> (const <a class="el" href="class_mesh.html">Mesh</a> &amp;)=delete</td></tr>
 <tr class="separator:adecf9ab32fac64e846ad6b7753e8996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79a428470d24816a0a3bfff72d5231d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#ad79a428470d24816a0a3bfff72d5231d">operator=</a> (<a class="el" href="class_mesh.html">Mesh</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ad79a428470d24816a0a3bfff72d5231d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9320a207f0acff24ba80b6af1cc3d5aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a9320a207f0acff24ba80b6af1cc3d5aa">Mesh</a> (<a class="el" href="class_mesh.html">Mesh</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a9320a207f0acff24ba80b6af1cc3d5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e108069334e832818c0ff01ef184959"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a6e108069334e832818c0ff01ef184959">operator=</a> (<a class="el" href="class_mesh.html">Mesh</a> &amp;&amp;)</td></tr>
+<tr class="separator:a6e108069334e832818c0ff01ef184959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5479f826d09f24ff722bb42dadf518ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a5479f826d09f24ff722bb42dadf518ce">Mesh</a> (<a class="el" href="class_mesh.html">Mesh</a> &amp;&amp;)</td></tr>
+<tr class="separator:a5479f826d09f24ff722bb42dadf518ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -199,7 +199,7 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
 <tr class="separator:a1d4896357bb44f9d0f5c48d80c920827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4276378fa775036ed8e064f2ec1fe981"><td class="memItemLeft" align="right" valign="top"><a id="a4276378fa775036ed8e064f2ec1fe981"></a>
 std::unique_ptr&lt; <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a4276378fa775036ed8e064f2ec1fe981">gpu</a></td></tr>
-<tr class="memdesc:a4276378fa775036ed8e064f2ec1fe981"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> buffers infos (optional). <br /></td></tr>
+<tr class="memdesc:a4276378fa775036ed8e064f2ec1fe981"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> buffers infos (optional). <br /></td></tr>
 <tr class="separator:a4276378fa775036ed8e064f2ec1fe981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -220,7 +220,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a geometric mesh composed of vertices, other attributes and triangles. </p>
-<p>For now, material information and elements/groups are not represented. Can store both the CPU and <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a> representations. Provides utilities to load and process geometric meshes. </p>
+<p>For now, material information and elements/groups are not represented. Can store both the CPU and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> representations. Provides utilities to load and process geometric meshes. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aaee8acdbda278ad977aa4e6bf379ac56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaee8acdbda278ad977aa4e6bf379ac56">&#9670;&nbsp;</a></span>Load</h2>
@@ -348,8 +348,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="a9320a207f0acff24ba80b6af1cc3d5aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9320a207f0acff24ba80b6af1cc3d5aa">&#9670;&nbsp;</a></span>Mesh() <span class="overload">[4/4]</span></h2>
+<a id="a5479f826d09f24ff722bb42dadf518ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5479f826d09f24ff722bb42dadf518ce">&#9670;&nbsp;</a></span>Mesh() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,8 +589,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="ad79a428470d24816a0a3bfff72d5231d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad79a428470d24816a0a3bfff72d5231d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a6e108069334e832818c0ff01ef184959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e108069334e832818c0ff01ef184959">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +599,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_mesh.html">Mesh</a>&amp; Mesh::operator= </td>
+          <td class="memname"><a class="el" href="class_mesh.html">Mesh</a> &amp; Mesh::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_mesh.html">Mesh</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -692,7 +692,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send to the <a class="el" href="namespace_g_p_u.html" title="Contains all shaders.">GPU</a>. </p>
+<p>Send to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>
 
 </div>
 </div>
