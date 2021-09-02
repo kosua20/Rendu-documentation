@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -134,7 +134,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a37743aa6a2f545c5dbb28cc6b511bcb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a37743aa6a2f545c5dbb28cc6b511bcb8">Framebuffer</a> (uint <a class="el" href="class_framebuffer.html#a36d8c18e7b3671a782981971e5c93968">width</a>, uint <a class="el" href="class_framebuffer.html#aa71fe933f2b50fef58e39b8eb81fb181">height</a>, const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;<a class="el" href="class_framebuffer.html#a3cf8cc8b4c265786f7af74dc7d5d7351">descriptor</a>, bool <a class="el" href="class_framebuffer.html#a7098cf6ee3269325c8ff7455ee302831">depthBuffer</a>, const std::string &amp;<a class="el" href="class_framebuffer.html#a79787ee82d021c00bfb15dcc1b26a697">name</a>)</td></tr>
+<tr class="memitem:a37743aa6a2f545c5dbb28cc6b511bcb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a37743aa6a2f545c5dbb28cc6b511bcb8">Framebuffer</a> (uint <a class="el" href="class_framebuffer.html#a36d8c18e7b3671a782981971e5c93968">width</a>, uint <a class="el" href="class_framebuffer.html#aa71fe933f2b50fef58e39b8eb81fb181">height</a>, const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;<a class="el" href="class_framebuffer.html#aded856adc40b7faf107f439328369332">descriptor</a>, bool <a class="el" href="class_framebuffer.html#a7098cf6ee3269325c8ff7455ee302831">depthBuffer</a>, const std::string &amp;<a class="el" href="class_framebuffer.html#a79787ee82d021c00bfb15dcc1b26a697">name</a>)</td></tr>
 <tr class="separator:a37743aa6a2f545c5dbb28cc6b511bcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd47cf8113b0dfe2a6afa15507d5fce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a5bd47cf8113b0dfe2a6afa15507d5fce">Framebuffer</a> (uint <a class="el" href="class_framebuffer.html#a36d8c18e7b3671a782981971e5c93968">width</a>, uint <a class="el" href="class_framebuffer.html#aa71fe933f2b50fef58e39b8eb81fb181">height</a>, const std::vector&lt; <a class="el" href="class_descriptor.html">Descriptor</a> &gt; &amp;descriptors, bool <a class="el" href="class_framebuffer.html#a7098cf6ee3269325c8ff7455ee302831">depthBuffer</a>, const std::string &amp;<a class="el" href="class_framebuffer.html#a79787ee82d021c00bfb15dcc1b26a697">name</a>)</td></tr>
 <tr class="separator:a5bd47cf8113b0dfe2a6afa15507d5fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae7272d67efc89af7be8c2238804e5262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99e9e5c68102184e05bda50678a7de5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a99e9e5c68102184e05bda50678a7de5f">bind</a> (const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;colorOp, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;depthOp={}, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;stencilOp={}) const</td></tr>
 <tr class="separator:a99e9e5c68102184e05bda50678a7de5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad593969f163191cc462420b42c07a18e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#ad593969f163191cc462420b42c07a18e">bind</a> (size_t layer, size_t mip, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;colorOp, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;depthOp={}, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;stencilOp={}) const</td></tr>
-<tr class="separator:ad593969f163191cc462420b42c07a18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea718fb0748eb79b84be3a02d3cad31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a4ea718fb0748eb79b84be3a02d3cad31">bind</a> (uint layer, uint mip, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;colorOp, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;depthOp={}, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;stencilOp={}) const</td></tr>
+<tr class="separator:a4ea718fb0748eb79b84be3a02d3cad31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85562f7213147aa1da63e4ace25be80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a85562f7213147aa1da63e4ace25be80d">setViewport</a> () const</td></tr>
 <tr class="separator:a85562f7213147aa1da63e4ace25be80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9201cf74af786a0e8f1922af5757f62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a9201cf74af786a0e8f1922af5757f62d">resize</a> (uint <a class="el" href="class_framebuffer.html#a36d8c18e7b3671a782981971e5c93968">width</a>, uint <a class="el" href="class_framebuffer.html#aa71fe933f2b50fef58e39b8eb81fb181">height</a>)</td></tr>
@@ -158,12 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a469218870e5352b4755acb62d0091122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68a446bba2a51e522bc56d40343352f"><td class="memItemLeft" align="right" valign="top">glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#ae68a446bba2a51e522bc56d40343352f">read</a> (const glm::uvec2 &amp;pos)</td></tr>
 <tr class="separator:ae68a446bba2a51e522bc56d40343352f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0362326401ed4805eea740e86a8c93f1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a0362326401ed4805eea740e86a8c93f1">texture</a> (unsigned int i=0) const</td></tr>
-<tr class="separator:a0362326401ed4805eea740e86a8c93f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace00df648959dfa0ad2a5afcdcf6f5a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#ace00df648959dfa0ad2a5afcdcf6f5a2">texture</a> (unsigned int i=0)</td></tr>
-<tr class="separator:ace00df648959dfa0ad2a5afcdcf6f5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf8cc8b4c265786f7af74dc7d5d7351"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a3cf8cc8b4c265786f7af74dc7d5d7351">descriptor</a> (unsigned int i=0) const</td></tr>
-<tr class="separator:a3cf8cc8b4c265786f7af74dc7d5d7351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfe9ea415b677bffb2a9b336fae0596"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a3bfe9ea415b677bffb2a9b336fae0596">texture</a> (uint i=0) const</td></tr>
+<tr class="separator:a3bfe9ea415b677bffb2a9b336fae0596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e2f7dc48ece34976aa4f1df225151d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#ab9e2f7dc48ece34976aa4f1df225151d">texture</a> (uint i=0)</td></tr>
+<tr class="separator:ab9e2f7dc48ece34976aa4f1df225151d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded856adc40b7faf107f439328369332"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#aded856adc40b7faf107f439328369332">descriptor</a> (uint i=0) const</td></tr>
+<tr class="separator:aded856adc40b7faf107f439328369332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99aadfe8619e3fbb56df4961e43c4eb3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a99aadfe8619e3fbb56df4961e43c4eb3">shape</a> () const</td></tr>
 <tr class="separator:a99aadfe8619e3fbb56df4961e43c4eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7098cf6ee3269325c8ff7455ee302831"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#a7098cf6ee3269325c8ff7455ee302831">depthBuffer</a> () const</td></tr>
@@ -206,8 +206,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:adecff5da6058d83fd699d11bc9972e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe110cb83329c9651ff269f7056a6420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#abe110cb83329c9651ff269f7056a6420">finalizeFramebuffer</a> ()</td></tr>
 <tr class="separator:abe110cb83329c9651ff269f7056a6420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab65ea2031e1225cbf4c42aa5921f1cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#ab65ea2031e1225cbf4c42aa5921f1cdd">bind</a> (const <a class="el" href="struct_framebuffer_1_1_slice.html">Slice</a> &amp;slice, size_t layer, size_t mip, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;colorOp, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;depthOp, const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;stencilOp) const</td></tr>
-<tr class="separator:ab65ea2031e1225cbf4c42aa5921f1cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc29f6e975a332b84144f4d587daeff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html#afdc29f6e975a332b84144f4d587daeff">Framebuffer</a> ()=default</td></tr>
 <tr class="separator:afdc29f6e975a332b84144f4d587daeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -664,7 +662,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <a id="a99e9e5c68102184e05bda50678a7de5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99e9e5c68102184e05bda50678a7de5f">&#9670;&nbsp;</a></span>bind() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e9e5c68102184e05bda50678a7de5f">&#9670;&nbsp;</a></span>bind() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,80 +703,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="ab65ea2031e1225cbf4c42aa5921f1cdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab65ea2031e1225cbf4c42aa5921f1cdd">&#9670;&nbsp;</a></span>bind() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Framebuffer::bind </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_framebuffer_1_1_slice.html">Slice</a> &amp;&#160;</td>
-          <td class="paramname"><em>slice</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>layer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mip</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;&#160;</td>
-          <td class="paramname"><em>colorOp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;&#160;</td>
-          <td class="paramname"><em>depthOp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_framebuffer_1_1_load_operation.html">LoadOperation</a> &amp;&#160;</td>
-          <td class="paramname"><em>stencilOp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Bind a specific slice of the framebuffer, beginning a new renderpass. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">slice</td><td>the framebuffer slice to bind </td></tr>
-    <tr><td class="paramname">layer</td><td>the layer to bind </td></tr>
-    <tr><td class="paramname">mip</td><td>the mip level to bind </td></tr>
-    <tr><td class="paramname">colorOp</td><td>the operation to perform on the color attachments </td></tr>
-    <tr><td class="paramname">depthOp</td><td>the operation to perform on the depth attachment </td></tr>
-    <tr><td class="paramname">stencilOp</td><td>the operation to perform on the stencil attachment </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Cleanup. </dd></dl>
-
-</div>
-</div>
-<a id="ad593969f163191cc462420b42c07a18e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad593969f163191cc462420b42c07a18e">&#9670;&nbsp;</a></span>bind() <span class="overload">[3/3]</span></h2>
+<a id="a4ea718fb0748eb79b84be3a02d3cad31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea718fb0748eb79b84be3a02d3cad31">&#9670;&nbsp;</a></span>bind() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -786,13 +712,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void Framebuffer::bind </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>layer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>mip</em>, </td>
         </tr>
         <tr>
@@ -978,8 +904,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a3cf8cc8b4c265786f7af74dc7d5d7351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cf8cc8b4c265786f7af74dc7d5d7351">&#9670;&nbsp;</a></span>descriptor()</h2>
+<a id="aded856adc40b7faf107f439328369332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded856adc40b7faf107f439328369332">&#9670;&nbsp;</a></span>descriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -987,7 +913,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">const <a class="el" href="class_descriptor.html">Descriptor</a> &amp; Framebuffer::descriptor </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>i</em> = <code>0</code></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1390,8 +1316,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="ace00df648959dfa0ad2a5afcdcf6f5a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace00df648959dfa0ad2a5afcdcf6f5a2">&#9670;&nbsp;</a></span>texture() <span class="overload">[1/2]</span></h2>
+<a id="ab9e2f7dc48ece34976aa4f1df225151d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e2f7dc48ece34976aa4f1df225151d">&#9670;&nbsp;</a></span>texture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1402,7 +1328,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname"><a class="el" href="class_texture.html">Texture</a>* Framebuffer::texture </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>i</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
@@ -1423,8 +1349,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a0362326401ed4805eea740e86a8c93f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0362326401ed4805eea740e86a8c93f1">&#9670;&nbsp;</a></span>texture() <span class="overload">[2/2]</span></h2>
+<a id="a3bfe9ea415b677bffb2a9b336fae0596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bfe9ea415b677bffb2a9b336fae0596">&#9670;&nbsp;</a></span>texture() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1435,7 +1361,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">const <a class="el" href="class_texture.html">Texture</a>* Framebuffer::texture </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>i</em> = <code>0</code></td><td>)</td>
           <td> const</td>
         </tr>

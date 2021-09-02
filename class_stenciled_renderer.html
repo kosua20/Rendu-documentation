@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -111,10 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc88770778c9b5a6e4645294814e07dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6932e7f6f7586e3272f35fe68d36145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stenciled_renderer.html#ae6932e7f6f7586e3272f35fe68d36145">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
 <tr class="separator:ae6932e7f6f7586e3272f35fe68d36145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79fd47089ad97540c39254b65b07b622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stenciled_renderer.html#a79fd47089ad97540c39254b65b07b622">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer=0) override</td></tr>
-<tr class="separator:a79fd47089ad97540c39254b65b07b622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b2b2bbf023699524a25bec701168afd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stenciled_renderer.html#a4b2b2bbf023699524a25bec701168afd">resize</a> (unsigned int width, unsigned int height) override</td></tr>
-<tr class="separator:a4b2b2bbf023699524a25bec701168afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64be68734c9163ecd52704669af274f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stenciled_renderer.html#ad64be68734c9163ecd52704669af274f">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer=0) override</td></tr>
+<tr class="separator:ad64be68734c9163ecd52704669af274f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470f490f4287d523c4c9344a7b386878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stenciled_renderer.html#a470f490f4287d523c4c9344a7b386878">resize</a> (uint width, uint height) override</td></tr>
+<tr class="separator:a470f490f4287d523c4c9344a7b386878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_renderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_renderer.html">Renderer</a></td></tr>
 <tr class="memitem:a3a0349a345dc1683c047986b79949bd9 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a3a0349a345dc1683c047986b79949bd9">Renderer</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a3a0349a345dc1683c047986b79949bd9 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,8 +208,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79fd47089ad97540c39254b65b07b622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79fd47089ad97540c39254b65b07b622">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="ad64be68734c9163ecd52704669af274f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64be68734c9163ecd52704669af274f">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +232,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>layer</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -258,12 +258,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_renderer.html#ad2cd6a1dd4aedde45617e1f95aca73ef">Renderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_renderer.html#a01f6ced386f3b974d939693fdc1f9c71">Renderer</a>.</p>
 
 </div>
 </div>
-<a id="a4b2b2bbf023699524a25bec701168afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2b2bbf023699524a25bec701168afd">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="a470f490f4287d523c4c9344a7b386878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470f490f4287d523c4c9344a7b386878">&#9670;&nbsp;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,13 +274,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void StenciledRenderer::resize </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
@@ -305,7 +305,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_renderer.html#ade00d55b9186cbc9b9fa5e5732f76c8b">Renderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_renderer.html#a4a1aa401fd746d07de77bd7880cfc670">Renderer</a>.</p>
 
 </div>
 </div>

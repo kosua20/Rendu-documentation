@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -110,8 +110,8 @@ Functions</h2></td></tr>
 <tr class="separator:a92e4a084e899a1fc7a6faad3572cfc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a907fa0e4040eb701ef79bcc4ea04a539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a907fa0e4040eb701ef79bcc4ea04a539">checkDeviceExtensionsSupport</a> (VkPhysicalDevice device, const std::vector&lt; const char * &gt; &amp;requestedExtensions, bool &amp;hasPortability)</td></tr>
 <tr class="separator:a907fa0e4040eb701ef79bcc4ea04a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00971d06cc644a01fc4eea302c56a088"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a00971d06cc644a01fc4eea302c56a088">getQueueFamilies</a> (VkPhysicalDevice device, VkSurfaceKHR surface, uint &amp;graphicsFamily, uint &amp;presentFamily)</td></tr>
-<tr class="separator:a00971d06cc644a01fc4eea302c56a088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1ce16276d05f971afbafae680d406b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a7b1ce16276d05f971afbafae680d406b">getQueueFamilies</a> (VkPhysicalDevice device, VkSurfaceKHR surface, int &amp;graphicsFamily, int &amp;presentFamily)</td></tr>
+<tr class="separator:a7b1ce16276d05f971afbafae680d406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3fd5b46c1344391d7c6b8d4f0a3525"><td class="memItemLeft" align="right" valign="top">VkFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#aaa3fd5b46c1344391d7c6b8d4f0a3525">findSupportedFormat</a> (const VkPhysicalDevice &amp;physicalDevice, const std::vector&lt; VkFormat &gt; &amp;candidates, VkImageTiling tiling, VkFormatFeatureFlags features)</td></tr>
 <tr class="separator:aaa3fd5b46c1344391d7c6b8d4f0a3525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a98850effd068d93377ec9bf5a6a8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#ab4a98850effd068d93377ec9bf5a6a8f">typesFromShape</a> (const <a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> &amp;shape, VkImageType &amp;imgType, VkImageViewType &amp;viewType)</td></tr>
@@ -370,13 +370,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check a Vulkan result (used by ImGui) </p><dl class="params"><dt>Parameters</dt><dd>
+<p><a class="el" href="class_log.html" title="Provides logging utilities, either to the standard/error output or to a file, with multiple criticali...">Log</a> a Vulkan return code as a human-readable string. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>the status to check </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>cleanup </dd></dl>
 
 </div>
 </div>
@@ -689,8 +688,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a00971d06cc644a01fc4eea302c56a088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00971d06cc644a01fc4eea302c56a088">&#9670;&nbsp;</a></span>getQueueFamilies()</h2>
+<a id="a7b1ce16276d05f971afbafae680d406b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1ce16276d05f971afbafae680d406b">&#9670;&nbsp;</a></span>getQueueFamilies()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,13 +709,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramtype">int &amp;&#160;</td>
           <td class="paramname"><em>graphicsFamily</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramtype">int &amp;&#160;</td>
           <td class="paramname"><em>presentFamily</em>&#160;</td>
         </tr>
         <tr>

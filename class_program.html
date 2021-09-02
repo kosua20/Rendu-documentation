@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -145,10 +145,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab34de1ede8cf18d478b01aaee7f4841d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ab34de1ede8cf18d478b01aaee7f4841d">Program</a> (const std::string &amp;<a class="el" href="class_program.html#a34a423e6a571f21a9d447b4598a5d905">name</a>, const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent=&quot;&quot;, const std::string &amp;tessControlContent=&quot;&quot;, const std::string &amp;tessEvalContent=&quot;&quot;)</td></tr>
-<tr class="separator:ab34de1ede8cf18d478b01aaee7f4841d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa11c3dd3c41ebff710bb58295bd127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a9fa11c3dd3c41ebff710bb58295bd127">reload</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, const std::string &amp;tessControlContent=&quot;&quot;, const std::string &amp;tessEvalContent=&quot;&quot;)</td></tr>
-<tr class="separator:a9fa11c3dd3c41ebff710bb58295bd127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a027642513a5dd18b6f35a877734598"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a3a027642513a5dd18b6f35a877734598">Program</a> (const std::string &amp;<a class="el" href="class_program.html#a34a423e6a571f21a9d447b4598a5d905">name</a>, const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;tessControlContent=&quot;&quot;, const std::string &amp;tessEvalContent=&quot;&quot;)</td></tr>
+<tr class="separator:a3a027642513a5dd18b6f35a877734598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ef0e992380671c3a5c73b9565adaed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a42ef0e992380671c3a5c73b9565adaed">reload</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;tessControlContent=&quot;&quot;, const std::string &amp;tessEvalContent=&quot;&quot;)</td></tr>
+<tr class="separator:a42ef0e992380671c3a5c73b9565adaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b4f0a0964b3c65b0e7bdbc56f2379f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a92b4f0a0964b3c65b0e7bdbc56f2379f">validate</a> () const</td></tr>
 <tr class="separator:a92b4f0a0964b3c65b0e7bdbc56f2379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db7ac0736f058226e70290c917c0008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a9db7ac0736f058226e70290c917c0008">saveBinary</a> (const std::string &amp;outputPath) const</td></tr>
@@ -307,8 +307,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <div class="textblock"><p>Represents a group of shaders used for rendering. </p>
 <p>Internally responsible for handling uniforms locations, shaders reloading and values caching. Uniform sets are predefined: set 0 is for dynamic uniforms, set 1 for image-samplers, set 2 for static/per-frame uniform buffers. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab34de1ede8cf18d478b01aaee7f4841d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab34de1ede8cf18d478b01aaee7f4841d">&#9670;&nbsp;</a></span>Program() <span class="overload">[1/3]</span></h2>
+<a id="a3a027642513a5dd18b6f35a877734598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a027642513a5dd18b6f35a877734598">&#9670;&nbsp;</a></span>Program() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,12 +335,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>geometryContent</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>tessControlContent</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -361,13 +355,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
     <tr><td class="paramname">name</td><td>the program name for logging </td></tr>
     <tr><td class="paramname">vertexContent</td><td>the content of the vertex shader </td></tr>
     <tr><td class="paramname">fragmentContent</td><td>the content of the fragment shader </td></tr>
-    <tr><td class="paramname">geometryContent</td><td>the content of the geometry shader (can be empty) </td></tr>
     <tr><td class="paramname">tessControlContent</td><td>the content of the tessellation control shader (can be empty) </td></tr>
     <tr><td class="paramname">tessEvalContent</td><td>the content of the tessellation evaluation shader (can be empty) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Remove geometry shader. </dd></dl>
 
 </div>
 </div>
@@ -1029,8 +1021,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a9fa11c3dd3c41ebff710bb58295bd127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fa11c3dd3c41ebff710bb58295bd127">&#9670;&nbsp;</a></span>reload()</h2>
+<a id="a42ef0e992380671c3a5c73b9565adaed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ef0e992380671c3a5c73b9565adaed">&#9670;&nbsp;</a></span>reload()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1046,12 +1038,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fragmentContent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>geometryContent</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1076,13 +1062,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   <table class="params">
     <tr><td class="paramname">vertexContent</td><td>the content of the vertex shader </td></tr>
     <tr><td class="paramname">fragmentContent</td><td>the content of the fragment shader </td></tr>
-    <tr><td class="paramname">geometryContent</td><td>the content of the geometry shader (can be empty) </td></tr>
     <tr><td class="paramname">tessControlContent</td><td>the content of the tessellation control shader (can be empty) </td></tr>
     <tr><td class="paramname">tessEvalContent</td><td>the content of the tessellation evaluation shader (can be empty) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Remove geometry shader. </dd></dl>
 
 </div>
 </div>

@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c230df98ae0ed07fb0c967c6cf2885a"><td class="memItemLeft" align="right" valign="top">static glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frustum.html#a9c230df98ae0ed07fb0c967c6cf2885a">perspective</a> (float fov, float ratio, float near, float far)</td></tr>
 <tr class="separator:a9c230df98ae0ed07fb0c967c6cf2885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58160c208bddc18f7f12d1e393a71fcd"><td class="memItemLeft" align="right" valign="top">static glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frustum.html#a58160c208bddc18f7f12d1e393a71fcd">ortho</a> (float left, float right, float bottom, float top, float near, float far)</td></tr>
+<tr class="separator:a58160c208bddc18f7f12d1e393a71fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -219,7 +221,79 @@ std::array&lt; glm::vec3, 8 &gt;&#160;</td><td class="memItemRight" valign="bott
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the bounding box intersects the frustum. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Implement frustum corner checks to weed out more false positives. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Implement frustum corner checks to weed out more false positives. </dd></dl>
+
+</div>
+</div>
+<a id="a58160c208bddc18f7f12d1e393a71fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58160c208bddc18f7f12d1e393a71fcd">&#9670;&nbsp;</a></span>ortho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat4 Frustum::ortho </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>bottom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>far</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate an orthographic projection matrix, correctly oriented for the rendering API. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>left plane distance from the center </td></tr>
+    <tr><td class="paramname">right</td><td>right plane distance from the center </td></tr>
+    <tr><td class="paramname">bottom</td><td>bottom plane distance from the center </td></tr>
+    <tr><td class="paramname">top</td><td>top plane distance from the center </td></tr>
+    <tr><td class="paramname">near</td><td>the near plane distance </td></tr>
+    <tr><td class="paramname">far</td><td>the far plane distance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the projection matrix </dd></dl>
 
 </div>
 </div>
@@ -268,7 +342,7 @@ std::array&lt; glm::vec3, 8 &gt;&#160;</td><td class="memItemRight" valign="bott
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Generate a perspective matrix, correctly oriented for the rendering API. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Generate a perspective projection matrix, correctly oriented for the rendering API. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fov</td><td>vertical field of view in radians </td></tr>
     <tr><td class="paramname">ratio</td><td>aspect ratio </td></tr>

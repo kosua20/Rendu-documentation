@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -218,6 +218,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </li>
 <li>_backbuffer
 : <a class="el" href="class_framebuffer.html#a28b89b077da32b16c7430b1e2e0d5c76">Framebuffer</a>
+</li>
+<li>_backgroundMaterial
+: <a class="el" href="class_scene.html#a0948cea2c5c272cc291ee992d3bf3b75">Scene</a>
 </li>
 <li>_backgroundProgram
 : <a class="el" href="class_game_menu_renderer.html#aea0e534750cf51a42b16d1d6d829ac00">GameMenuRenderer</a>
@@ -989,10 +992,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 : <a class="el" href="class_font.html#af14eecfd437a039bfe41e1d93791822a">Font</a>
 </li>
 <li>_masked
-: <a class="el" href="class_object.html#ad02ef2726779806fcb176e3e4156a656">Object</a>
+: <a class="el" href="class_material.html#ad180c7f30e54a7cbcc02b5f587fd6020">Material</a>
 </li>
 <li>_material
-: <a class="el" href="class_object.html#aa87ac38368246581d03c8c8df531b2ed">Object</a>
+: <a class="el" href="class_material.html#a8f679bd6c9e37ebc8f89d9b294f91bd3">Material</a>
+, <a class="el" href="class_object.html#af6fd473d8f37759830508db35e647c41">Object</a>
+</li>
+<li>_materialName
+: <a class="el" href="class_object.html#acef243efc19c72cf7a4cc9d14a4708af">Object</a>
 </li>
 <li>_maxCount
 : <a class="el" href="class_culler.html#a19d1364d17e8293722cc4a80605df66f">Culler</a>
@@ -1094,6 +1101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 , <a class="el" href="class_controller.html#affe2eb5088c204f81416fa933c65f206">Controller</a>
 , <a class="el" href="class_framebuffer.html#ad69214625eedb808b890407dea00802c">Framebuffer</a>
 , <a class="el" href="class_gaussian_blur.html#a66ea710e39077bf12f062c763dc3b247">GaussianBlur</a>
+, <a class="el" href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">Material</a>
 , <a class="el" href="class_mesh.html#a556913beae21d0427bd8353815cf439e">Mesh</a>
 , <a class="el" href="class_program.html#a7a0977b7441fc3c0915f41519bf199e1">Program</a>
 , <a class="el" href="class_renderer.html#a32e42f5c4cc62ed22b18729860fcd47b">Renderer</a>
@@ -1153,6 +1161,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>_parallaxProgram
 : <a class="el" href="class_deferred_renderer.html#a7ed3ea90ee2c4ca825c1ebf6324793ca">DeferredRenderer</a>
 , <a class="el" href="class_forward_renderer.html#a99887c1b36c8cd029688486ea7737512">ForwardRenderer</a>
+</li>
+<li>_parameters
+: <a class="el" href="class_material.html#afbd86a8543247521d59757c7abc094ab">Material</a>
 </li>
 <li>_passthrough
 : <a class="el" href="class_filtering_app.html#a1409f10b4ac0c2fbbafffb2b5ee0064c">FilteringApp</a>
@@ -1677,7 +1688,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 : <a class="el" href="class_ambient_quad.html#a1c16ccf782e1e9ceed8bf0a75fc3683f">AmbientQuad</a>
 , <a class="el" href="class_debug_viewer.html#ae7115418d68bd4e820c2e870fa55bbd5">DebugViewer</a>
 , <a class="el" href="class_deferred_light.html#a4046feb55a61d792645c9c1d937c793a">DeferredLight</a>
-, <a class="el" href="class_object.html#a433c923e4af916a0055072a217fd044f">Object</a>
+, <a class="el" href="class_material.html#a799a8a71b03bded0a1f80695c6fe4f0c">Material</a>
 , <a class="el" href="class_program.html#a74eb543a2371e22fb53021cf66e82534">Program</a>
 , <a class="el" href="class_resources.html#a0d76c353fb0ff22807b91e8448e9f548">Resources</a>
 , <a class="el" href="class_shader_editor.html#ae260129c2d488d033fc78d7ad0a7d14d">ShaderEditor</a>
@@ -1722,7 +1733,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 : <a class="el" href="class_raycaster.html#accb386bd6092ed6071574b0c5b369051">Raycaster</a>
 </li>
 <li>_twoSided
-: <a class="el" href="class_object.html#a11405dbba0db9f76f2f3fde4ce3209b6">Object</a>
+: <a class="el" href="class_material.html#abe0772756ad90544d2bffa9a6b033c87">Material</a>
 </li>
 <li>_type
 : <a class="el" href="class_g_p_u_query.html#a1f1d794cedc6c98baec0725bbc4bf772">GPUQuery</a>

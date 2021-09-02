@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -158,10 +158,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gadd8ebdbac4b049f67dfda5e749dac9f2"><td class="memItemLeft" align="right" valign="top"><a id="gadd8ebdbac4b049f67dfda5e749dac9f2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#gadd8ebdbac4b049f67dfda5e749dac9f2">checkGPUError</a>()</td></tr>
-<tr class="memdesc:gadd8ebdbac4b049f67dfda5e749dac9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro is used to check for <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> errors with access to the file and line number where the error is detected. <br /></td></tr>
-<tr class="separator:gadd8ebdbac4b049f67dfda5e749dac9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9328577d7419a56c6e67cdba05606649"><td class="memItemLeft" align="right" valign="top"><a id="ga9328577d7419a56c6e67cdba05606649"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#ga9328577d7419a56c6e67cdba05606649">VK_RETURN_CHECK</a>(F,  L)&#160;&#160;&#160;(F);</td></tr>
+<tr class="memdesc:ga9328577d7419a56c6e67cdba05606649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro used to check the return code of Vulkan calls. <br /></td></tr>
+<tr class="separator:ga9328577d7419a56c6e67cdba05606649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fe29cb9fa4a1fe5073bad6fb75d496f"><td class="memItemLeft" align="right" valign="top"><a id="ga6fe29cb9fa4a1fe5073bad6fb75d496f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___graphics.html#ga6fe29cb9fa4a1fe5073bad6fb75d496f">VK_RET</a>(F)&#160;&#160;&#160;<a class="el" href="group___graphics.html#ga9328577d7419a56c6e67cdba05606649">VK_RETURN_CHECK</a>((F), __LINE__)</td></tr>
+<tr class="memdesc:ga6fe29cb9fa4a1fe5073bad6fb75d496f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro used to check the return code of Vulkan calls. <br /></td></tr>
+<tr class="separator:ga6fe29cb9fa4a1fe5073bad6fb75d496f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

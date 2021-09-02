@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -127,8 +127,6 @@ Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:acf8c3848ec644a6e3a1d19db7ff3392f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#acf8c3848ec644a6e3a1d19db7ff3392f">setup</a> (uint32_t width, uint32_t height)</td></tr>
 <tr class="separator:acf8c3848ec644a6e3a1d19db7ff3392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b38db961d0e88c4c4a54a59fc736e4"><td class="memItemLeft" align="right" valign="top">VkRenderPass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a64b38db961d0e88c4c4a54a59fc736e4">createMainRenderpass</a> (const VkFormat &amp;depth, const VkFormat &amp;color)</td></tr>
-<tr class="separator:a64b38db961d0e88c4c4a54a59fc736e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b8b75cca50a12f6f962d5b01ed75101"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a8b8b75cca50a12f6f962d5b01ed75101">finishFrame</a> ()</td></tr>
 <tr class="separator:a8b8b75cca50a12f6f962d5b01ed75101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e8d3570ca1357b61dfc959043b62cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a15e8d3570ca1357b61dfc959043b62cc">clean</a> ()</td></tr>
@@ -291,51 +289,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of backbuffers handled by the swapchain. </dd></dl>
-
-</div>
-</div>
-<a id="a64b38db961d0e88c4c4a54a59fc736e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64b38db961d0e88c4c4a54a59fc736e4">&#9670;&nbsp;</a></span>createMainRenderpass()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">VkRenderPass Swapchain::createMainRenderpass </td>
-          <td>(</td>
-          <td class="paramtype">const VkFormat &amp;&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const VkFormat &amp;&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create the render pass for the swapchain backbuffer </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>the depth attachment format </td></tr>
-    <tr><td class="paramname">color</td><td>the color attachment format </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the newly created render pass </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Cleanup </dd></dl>
 
 </div>
 </div>

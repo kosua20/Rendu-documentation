@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -153,6 +153,10 @@ Public Attributes</h2></td></tr>
 std::vector&lt; <a class="el" href="class_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ab492b7d67ad48a8c3ec4e1db1ad8772a">objects</a></td></tr>
 <tr class="memdesc:ab492b7d67ad48a8c3ec4e1db1ad8772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The objects in the scene. <br /></td></tr>
 <tr class="separator:ab492b7d67ad48a8c3ec4e1db1ad8772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f18f407d40c5c8ec8d2bac15417dc20"><td class="memItemLeft" align="right" valign="top"><a id="a6f18f407d40c5c8ec8d2bac15417dc20"></a>
+std::vector&lt; <a class="el" href="class_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a6f18f407d40c5c8ec8d2bac15417dc20">materials</a></td></tr>
+<tr class="memdesc:a6f18f407d40c5c8ec8d2bac15417dc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The materials in the scene. <br /></td></tr>
+<tr class="separator:a6f18f407d40c5c8ec8d2bac15417dc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc070003e3f35147692a64229ef2c9d3"><td class="memItemLeft" align="right" valign="top"><a id="acc070003e3f35147692a64229ef2c9d3"></a>
 std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_light.html">Light</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#acc070003e3f35147692a64229ef2c9d3">lights</a></td></tr>
 <tr class="memdesc:acc070003e3f35147692a64229ef2c9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lights present in the scene. <br /></td></tr>
@@ -161,13 +165,9 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_light.html">Light<
 <a class="el" href="class_scene.html#a1d24bd5fd3c2aa5cc3a93913e7a2f24f">Background</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1aa586d9c8af9a90e794ed990dc3dbbf">backgroundMode</a> = <a class="el" href="class_scene.html#a1d24bd5fd3c2aa5cc3a93913e7a2f24fa04bd834032febb3fda8c6936ee140949">Background::COLOR</a></td></tr>
 <tr class="memdesc:a1aa586d9c8af9a90e794ed990dc3dbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background mode (see enum). <br /></td></tr>
 <tr class="separator:a1aa586d9c8af9a90e794ed990dc3dbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a721beac7111afb6d8538af2c83fdbbfb"><td class="memItemLeft" align="right" valign="top"><a id="a721beac7111afb6d8538af2c83fdbbfb"></a>
-glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a721beac7111afb6d8538af2c83fdbbfb">backgroundColor</a> = glm::vec3(0.0f)</td></tr>
-<tr class="memdesc:a721beac7111afb6d8538af2c83fdbbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color to use if the background mode is COLOR. <br /></td></tr>
-<tr class="separator:a721beac7111afb6d8538af2c83fdbbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e4ae6640964bbf379157beaad5a25a"><td class="memItemLeft" align="right" valign="top"><a id="a34e4ae6640964bbf379157beaad5a25a"></a>
 std::unique_ptr&lt; <a class="el" href="class_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a34e4ae6640964bbf379157beaad5a25a">background</a></td></tr>
-<tr class="memdesc:a34e4ae6640964bbf379157beaad5a25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background object, containing the geometry and optional textures to use. <br /></td></tr>
+<tr class="memdesc:a34e4ae6640964bbf379157beaad5a25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background object, containing the geometry to use. <br /></td></tr>
 <tr class="separator:a34e4ae6640964bbf379157beaad5a25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5c42f8232fa8ff133180226e8575e1"><td class="memItemLeft" align="right" valign="top"><a id="acc5c42f8232fa8ff133180226e8575e1"></a>
 <a class="el" href="class_light_probe.html">LightProbe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#acc5c42f8232fa8ff133180226e8575e1">environment</a></td></tr>
@@ -178,6 +178,8 @@ std::unique_ptr&lt; <a class="el" href="class_object.html">Object</a> &gt;&#160;
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ac4c6bf20f4a191b3cb6cb22d40c42432"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ac4c6bf20f4a191b3cb6cb22d40c42432">loadObject</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
 <tr class="separator:ac4c6bf20f4a191b3cb6cb22d40c42432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0789198c33b0b7a18396abd2082dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aef0789198c33b0b7a18396abd2082dce">loadMaterial</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
+<tr class="separator:aef0789198c33b0b7a18396abd2082dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04e784bdc9267cf8e06cc76174b39f6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a04e784bdc9267cf8e06cc76174b39f6b">loadLight</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
 <tr class="separator:a04e784bdc9267cf8e06cc76174b39f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae82791bde3a8c0befe52cda445e0198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aae82791bde3a8c0befe52cda445e0198">loadCamera</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
@@ -193,6 +195,10 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a0948cea2c5c272cc291ee992d3bf3b75"><td class="memItemLeft" align="right" valign="top"><a id="a0948cea2c5c272cc291ee992d3bf3b75"></a>
+<a class="el" href="class_material.html">Material</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a0948cea2c5c272cc291ee992d3bf3b75">_backgroundMaterial</a></td></tr>
+<tr class="memdesc:a0948cea2c5c272cc291ee992d3bf3b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background material, containing the optional textures to use. <br /></td></tr>
+<tr class="separator:a0948cea2c5c272cc291ee992d3bf3b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b2164678daf30ec3b0862a1ea2d0e0"><td class="memItemLeft" align="right" valign="top"><a id="a00b2164678daf30ec3b0862a1ea2d0e0"></a>
 <a class="el" href="class_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a00b2164678daf30ec3b0862a1ea2d0e0">_camera</a></td></tr>
 <tr class="memdesc:a00b2164678daf30ec3b0862a1ea2d0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial viewpoint on the scene. <br /></td></tr>
@@ -598,6 +604,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <table class="params">
     <tr><td class="paramname">params</td><td>the point light parameters </td></tr>
     <tr><td class="paramname">options</td><td>data loading and storage options (unused) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef0789198c33b0b7a18396abd2082dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0789198c33b0b7a18396abd2082dce">&#9670;&nbsp;</a></span>loadMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::loadMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Load a material in the scene from its serialized representation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>the material parameters </td></tr>
+    <tr><td class="paramname">options</td><td>data loading and storage options </td></tr>
   </table>
   </dd>
 </dl>

@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -119,12 +119,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a8a56ac43e1ce10637ab81ab35a7b0d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a421aca01fc32f217b6922621d48c3043"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a421aca01fc32f217b6922621d48c3043">setupWindow</a> (<a class="el" href="class_window.html">Window</a> *window)</td></tr>
 <tr class="separator:a421aca01fc32f217b6922621d48c3043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a56ae7b51750c27204280fa5e31e0be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a7a56ae7b51750c27204280fa5e31e0be">createProgram</a> (<a class="el" href="class_program.html">Program</a> &amp;program, const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;geometryContent, const std::string &amp;tessControlContent, const std::string &amp;tessEvalContent, const std::string &amp;debugInfos)</td></tr>
-<tr class="separator:a7a56ae7b51750c27204280fa5e31e0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5947051d33e959e5ab512b5d767b716c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a5947051d33e959e5ab512b5d767b716c">createProgram</a> (<a class="el" href="class_program.html">Program</a> &amp;program, const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;tessControlContent, const std::string &amp;tessEvalContent, const std::string &amp;debugInfos)</td></tr>
+<tr class="separator:a5947051d33e959e5ab512b5d767b716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda20e3f61922e2160cf4c877484070e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#adda20e3f61922e2160cf4c877484070e">bindProgram</a> (const <a class="el" href="class_program.html">Program</a> &amp;program)</td></tr>
 <tr class="separator:adda20e3f61922e2160cf4c877484070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b6bcd18459de3bfe1ca960512a979b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a52b6bcd18459de3bfe1ca960512a979b">bindFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, size_t layer, size_t mip)</td></tr>
-<tr class="separator:a52b6bcd18459de3bfe1ca960512a979b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f5c9088d84042c6600a58557efe6b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a06f5c9088d84042c6600a58557efe6b8">bindFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer, uint mip)</td></tr>
+<tr class="separator:a06f5c9088d84042c6600a58557efe6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f55786124fbeed043c02417a4b661e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a95f55786124fbeed043c02417a4b661e">saveFramebuffer</a> (<a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, const std::string &amp;path, <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a> options)</td></tr>
 <tr class="separator:a95f55786124fbeed043c02417a4b661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a365cc759c000508e4eb176cf02ad9fed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a365cc759c000508e4eb176cf02ad9fed">setupTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture, const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;descriptor, bool drawable)</td></tr>
@@ -280,12 +280,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a2420518f1639a43d38fd830ce4de7d3e">Swapchain</a></td></tr>
 <tr class="memdesc:a2420518f1639a43d38fd830ce4de7d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to framebuffer cleanup. <br /></td></tr>
 <tr class="separator:a2420518f1639a43d38fd830ce4de7d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6e79faddcf860d9ddab95307145e2f"><td class="memItemLeft" align="right" valign="top"><a id="a3c6e79faddcf860d9ddab95307145e2f"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a3c6e79faddcf860d9ddab95307145e2f">PipelineCache</a></td></tr>
+<tr class="memdesc:a3c6e79faddcf860d9ddab95307145e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to metrics. <br /></td></tr>
+<tr class="separator:a3c6e79faddcf860d9ddab95307145e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provide utility functions to communicate with the driver and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a52b6bcd18459de3bfe1ca960512a979b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52b6bcd18459de3bfe1ca960512a979b">&#9670;&nbsp;</a></span>bindFramebuffer()</h2>
+<a id="a06f5c9088d84042c6600a58557efe6b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f5c9088d84042c6600a58557efe6b8">&#9670;&nbsp;</a></span>bindFramebuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,13 +306,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>layer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>mip</em>&#160;</td>
         </tr>
         <tr>
@@ -960,8 +964,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a7a56ae7b51750c27204280fa5e31e0be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a56ae7b51750c27204280fa5e31e0be">&#9670;&nbsp;</a></span>createProgram()</h2>
+<a id="a5947051d33e959e5ab512b5d767b716c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5947051d33e959e5ab512b5d767b716c">&#9670;&nbsp;</a></span>createProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -986,12 +990,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fragmentContent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>geometryContent</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1028,7 +1026,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
     <tr><td class="paramname">program</td><td>the program to populate </td></tr>
     <tr><td class="paramname">vertexContent</td><td>the vertex shader string </td></tr>
     <tr><td class="paramname">fragmentContent</td><td>the fragment shader string </td></tr>
-    <tr><td class="paramname">geometryContent</td><td>the optional geometry shader string </td></tr>
     <tr><td class="paramname">tessControlContent</td><td>the optional tesselation control shader string </td></tr>
     <tr><td class="paramname">tessEvalContent</td><td>the optional tesselation evaluation shader string </td></tr>
     <tr><td class="paramname">debugInfos</td><td>the name of the program, or any custom debug infos that will be logged. </td></tr>

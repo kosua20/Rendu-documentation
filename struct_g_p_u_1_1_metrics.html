@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_g_p_u_1_1_metrics-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,56 +106,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 
 <p><code>#include &lt;<a class="el" href="_g_p_u_8hpp_source.html">GPU.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6c988bd66d23ab785794821028c53893"><td class="memItemLeft" align="right" valign="top"><a id="a6c988bd66d23ab785794821028c53893"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a6c988bd66d23ab785794821028c53893">resetPerFrameMetrics</a> ()</td></tr>
+<tr class="memdesc:a6c988bd66d23ab785794821028c53893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset metrics that are measured over one frame. <br /></td></tr>
+<tr class="separator:a6c988bd66d23ab785794821028c53893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa96cf047941c53ed55d5da57153ae8e6"><td class="memItemLeft" align="right" valign="top"><a id="aa96cf047941c53ed55d5da57153ae8e6"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#aa96cf047941c53ed55d5da57153ae8e6">drawCalls</a> = 0</td></tr>
-<tr class="memdesc:aa96cf047941c53ed55d5da57153ae8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mesh.html" title="Represents a geometric mesh composed of vertices, other attributes and triangles.">Mesh</a> draw call. <br /></td></tr>
-<tr class="separator:aa96cf047941c53ed55d5da57153ae8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb84d82b257389b58c73770753bacbb"><td class="memItemLeft" align="right" valign="top"><a id="a7cb84d82b257389b58c73770753bacbb"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a7cb84d82b257389b58c73770753bacbb">quadCalls</a> = 0</td></tr>
-<tr class="memdesc:a7cb84d82b257389b58c73770753bacbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full screen quad. <br /></td></tr>
-<tr class="separator:a7cb84d82b257389b58c73770753bacbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e55f06373aa4a9836870db05871af7"><td class="memItemLeft" align="right" valign="top"><a id="a35e55f06373aa4a9836870db05871af7"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a35e55f06373aa4a9836870db05871af7">stateChanges</a> = 0</td></tr>
-<tr class="memdesc:a35e55f06373aa4a9836870db05871af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">State changes. <br /></td></tr>
-<tr class="separator:a35e55f06373aa4a9836870db05871af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a32fd4de232d0d8f8fc114ab2536dd2"><td class="memItemLeft" align="right" valign="top"><a id="a8a32fd4de232d0d8f8fc114ab2536dd2"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a8a32fd4de232d0d8f8fc114ab2536dd2">textureBindings</a> = 0</td></tr>
-<tr class="memdesc:a8a32fd4de232d0d8f8fc114ab2536dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of texture bindings. <br /></td></tr>
-<tr class="separator:a8a32fd4de232d0d8f8fc114ab2536dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e08e817a812d8531be68927d6e7eccc"><td class="memItemLeft" align="right" valign="top"><a id="a4e08e817a812d8531be68927d6e7eccc"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a4e08e817a812d8531be68927d6e7eccc">framebufferBindings</a> = 0</td></tr>
-<tr class="memdesc:a4e08e817a812d8531be68927d6e7eccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of framebuffer bindings. <br /></td></tr>
-<tr class="separator:a4e08e817a812d8531be68927d6e7eccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3ba2ea32bf5bbf8baed972cdd9e00c"><td class="memItemLeft" align="right" valign="top"><a id="a4c3ba2ea32bf5bbf8baed972cdd9e00c"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a4c3ba2ea32bf5bbf8baed972cdd9e00c">bufferBindings</a> = 0</td></tr>
-<tr class="memdesc:a4c3ba2ea32bf5bbf8baed972cdd9e00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of data buffer bindings. <br /></td></tr>
-<tr class="separator:a4c3ba2ea32bf5bbf8baed972cdd9e00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44bec16a84a4b89e97324b4f271fd05f"><td class="memItemLeft" align="right" valign="top"><a id="a44bec16a84a4b89e97324b4f271fd05f"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a44bec16a84a4b89e97324b4f271fd05f">vertexBindings</a> = 0</td></tr>
-<tr class="memdesc:a44bec16a84a4b89e97324b4f271fd05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertex array bindings. <br /></td></tr>
-<tr class="separator:a44bec16a84a4b89e97324b4f271fd05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31651ebe6851c796eb328bf9e0a17ada"><td class="memItemLeft" align="right" valign="top"><a id="a31651ebe6851c796eb328bf9e0a17ada"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a31651ebe6851c796eb328bf9e0a17ada">programBindings</a> = 0</td></tr>
-<tr class="memdesc:a31651ebe6851c796eb328bf9e0a17ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of shade program bindings. <br /></td></tr>
-<tr class="separator:a31651ebe6851c796eb328bf9e0a17ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2cdd8b7feb6abd82d92dd9e0fa254e"><td class="memItemLeft" align="right" valign="top"><a id="a1a2cdd8b7feb6abd82d92dd9e0fa254e"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a1a2cdd8b7feb6abd82d92dd9e0fa254e">clearAndBlits</a> = 0</td></tr>
-<tr class="memdesc:a1a2cdd8b7feb6abd82d92dd9e0fa254e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_framebuffer.html" title="Represent a rendering target, of any size, format and type, backed by a GPU framebuffer.">Framebuffer</a> clearing and blitting operations. <br /></td></tr>
-<tr class="separator:a1a2cdd8b7feb6abd82d92dd9e0fa254e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f54327b325ef5c02d1d7a30f476107"><td class="memItemLeft" align="right" valign="top"><a id="a49f54327b325ef5c02d1d7a30f476107"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a49f54327b325ef5c02d1d7a30f476107">uploads</a> = 0</td></tr>
-<tr class="memdesc:a49f54327b325ef5c02d1d7a30f476107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data upload to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. <br /></td></tr>
-<tr class="separator:a49f54327b325ef5c02d1d7a30f476107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131598b782f2a8691d37b816958b2ba6"><td class="memItemLeft" align="right" valign="top"><a id="a131598b782f2a8691d37b816958b2ba6"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a131598b782f2a8691d37b816958b2ba6">downloads</a> = 0</td></tr>
-<tr class="memdesc:a131598b782f2a8691d37b816958b2ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data download from the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. <br /></td></tr>
-<tr class="separator:a131598b782f2a8691d37b816958b2ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa36acc7bc6aecddf0dd428adb97e398d"><td class="memItemLeft" align="right" valign="top"><a id="aa36acc7bc6aecddf0dd428adb97e398d"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#aa36acc7bc6aecddf0dd428adb97e398d">uniforms</a> = 0</td></tr>
-<tr class="memdesc:aa36acc7bc6aecddf0dd428adb97e398d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform update. <br /></td></tr>
-<tr class="separator:aa36acc7bc6aecddf0dd428adb97e398d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1a61f4bc2ce71e4a187b47e9209222"><td class="memItemLeft" align="right" valign="top"><a id="acf1a61f4bc2ce71e4a187b47e9209222"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#acf1a61f4bc2ce71e4a187b47e9209222">uploads</a> = 0</td></tr>
+<tr class="memdesc:acf1a61f4bc2ce71e4a187b47e9209222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data upload to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. <br /></td></tr>
+<tr class="separator:acf1a61f4bc2ce71e4a187b47e9209222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134d113afcab228a4245cbe162e1f9f5"><td class="memItemLeft" align="right" valign="top"><a id="a134d113afcab228a4245cbe162e1f9f5"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a134d113afcab228a4245cbe162e1f9f5">downloads</a> = 0</td></tr>
+<tr class="memdesc:a134d113afcab228a4245cbe162e1f9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data download from the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. <br /></td></tr>
+<tr class="separator:a134d113afcab228a4245cbe162e1f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d2d24471589c2dd01f935859633f5c"><td class="memItemLeft" align="right" valign="top"><a id="a70d2d24471589c2dd01f935859633f5c"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a70d2d24471589c2dd01f935859633f5c">textures</a> = 0</td></tr>
+<tr class="memdesc:a70d2d24471589c2dd01f935859633f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Textures created. <br /></td></tr>
+<tr class="separator:a70d2d24471589c2dd01f935859633f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f90e04f57da5451919438f1843a7698"><td class="memItemLeft" align="right" valign="top"><a id="a2f90e04f57da5451919438f1843a7698"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a2f90e04f57da5451919438f1843a7698">buffers</a> = 0</td></tr>
+<tr class="memdesc:a2f90e04f57da5451919438f1843a7698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffers created. <br /></td></tr>
+<tr class="separator:a2f90e04f57da5451919438f1843a7698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cadb784d09f883c85bf08bdb966f33"><td class="memItemLeft" align="right" valign="top"><a id="a75cadb784d09f883c85bf08bdb966f33"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a75cadb784d09f883c85bf08bdb966f33">programs</a> = 0</td></tr>
+<tr class="memdesc:a75cadb784d09f883c85bf08bdb966f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs created. <br /></td></tr>
+<tr class="separator:a75cadb784d09f883c85bf08bdb966f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa3f6006e8d7643444fb85143ccb217"><td class="memItemLeft" align="right" valign="top"><a id="abfa3f6006e8d7643444fb85143ccb217"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#abfa3f6006e8d7643444fb85143ccb217">pipelines</a> = 0</td></tr>
+<tr class="memdesc:abfa3f6006e8d7643444fb85143ccb217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipelines created. <br /></td></tr>
+<tr class="separator:abfa3f6006e8d7643444fb85143ccb217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7cc10d60c3f04116819336a8190fc4c"><td class="memItemLeft" align="right" valign="top"><a id="ae7cc10d60c3f04116819336a8190fc4c"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#ae7cc10d60c3f04116819336a8190fc4c">drawCalls</a> = 0</td></tr>
+<tr class="memdesc:ae7cc10d60c3f04116819336a8190fc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mesh.html" title="Represents a geometric mesh composed of vertices, other attributes and triangles.">Mesh</a> draw call. <br /></td></tr>
+<tr class="separator:ae7cc10d60c3f04116819336a8190fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876fc7446b893c1152ccdad3df861c75"><td class="memItemLeft" align="right" valign="top"><a id="a876fc7446b893c1152ccdad3df861c75"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a876fc7446b893c1152ccdad3df861c75">quadCalls</a> = 0</td></tr>
+<tr class="memdesc:a876fc7446b893c1152ccdad3df861c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full screen quad. <br /></td></tr>
+<tr class="separator:a876fc7446b893c1152ccdad3df861c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6099040149199d83d17fc0fdbc2adc"><td class="memItemLeft" align="right" valign="top"><a id="abc6099040149199d83d17fc0fdbc2adc"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#abc6099040149199d83d17fc0fdbc2adc">pipelineBindings</a> = 0</td></tr>
+<tr class="memdesc:abc6099040149199d83d17fc0fdbc2adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of pipeline set operations. <br /></td></tr>
+<tr class="separator:abc6099040149199d83d17fc0fdbc2adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9c59fa6538a08c10b6ab91639b694c"><td class="memItemLeft" align="right" valign="top"><a id="aab9c59fa6538a08c10b6ab91639b694c"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#aab9c59fa6538a08c10b6ab91639b694c">renderPasses</a> = 0</td></tr>
+<tr class="memdesc:aab9c59fa6538a08c10b6ab91639b694c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of render passes. <br /></td></tr>
+<tr class="separator:aab9c59fa6538a08c10b6ab91639b694c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eaca9b6ec801e0dc37e03c66e023e46"><td class="memItemLeft" align="right" valign="top"><a id="a9eaca9b6ec801e0dc37e03c66e023e46"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a9eaca9b6ec801e0dc37e03c66e023e46">meshBindings</a> = 0</td></tr>
+<tr class="memdesc:a9eaca9b6ec801e0dc37e03c66e023e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of mesh bindings. <br /></td></tr>
+<tr class="separator:a9eaca9b6ec801e0dc37e03c66e023e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721996694ca68ee9de0eaf9291065a2f"><td class="memItemLeft" align="right" valign="top"><a id="a721996694ca68ee9de0eaf9291065a2f"></a>
+unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_1_1_metrics.html#a721996694ca68ee9de0eaf9291065a2f">blitCount</a> = 0</td></tr>
+<tr class="memdesc:a721996694ca68ee9de0eaf9291065a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_framebuffer.html" title="Represent a rendering target, of any size, format and type, backed by a GPU framebuffer.">Framebuffer</a> blitting operations. <br /></td></tr>
+<tr class="separator:a721996694ca68ee9de0eaf9291065a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal operation metrics. </p>

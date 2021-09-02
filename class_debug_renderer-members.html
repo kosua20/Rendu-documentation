@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
   <tr class="even"><td class="entry"><a class="el" href="class_renderer.html#a2b4447fce4864a7f658a520b71735ac2">createOutput</a>(uint width, uint height, const std::string &amp;name) const</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_renderer.html#a0ca9d39f6d8f84245e1d65b89ae4b371">createOutput</a>(TextureShape shape, uint width, uint height, uint depth, uint mips, const std::string &amp;name) const</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_debug_renderer.html#a6e3bda3b06b01b6f8e4257ef02cb435f">DebugRenderer</a>()</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_debug_renderer.html#aa18d17e9897072b77465183a85b2b21e">draw</a>(const Camera &amp;camera, Framebuffer &amp;framebuffer, size_t layer=0) override</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_debug_renderer.html#a97db56016fa9951624620052be8d0aed">draw</a>(const Camera &amp;camera, Framebuffer &amp;framebuffer, uint layer=0) override</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_debug_renderer.html#a7bcec3bc1fabea9a9eaabebd3bb77168">interface</a>() override</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_renderer.html#ad3a67410934db419e0f473f1a26c83ee">operator=</a>(const Renderer &amp;)=delete</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_renderer.html#acb6cae4362aa720ddd577f02918f9355">operator=</a>(Renderer &amp;&amp;)=delete</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
   <tr class="even"><td class="entry"><a class="el" href="class_renderer.html#a3a0349a345dc1683c047986b79949bd9">Renderer</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_renderer.html#a8c6e15f666cb188a936004add75e6c6b">Renderer</a>(const Renderer &amp;)=delete</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_renderer.html#aa43ae6237b8cbf52d217d37f9986237f">Renderer</a>(Renderer &amp;&amp;)=delete</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_renderer.html#ade00d55b9186cbc9b9fa5e5732f76c8b">resize</a>(unsigned int width, unsigned int height)</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_renderer.html#a4a1aa401fd746d07de77bd7880cfc670">resize</a>(uint width, uint height)</td><td class="entry"><a class="el" href="class_renderer.html">Renderer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_debug_renderer.html#a0a685704c70388ab844f2329614f92e1">setScene</a>(const std::shared_ptr&lt; Scene &gt; &amp;scene)</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_debug_renderer.html#abf00ad3ae6cbefb83dbdc37c935234cb">updateSceneMesh</a>()</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~DebugRenderer</b>() (defined in <a class="el" href="class_debug_renderer.html">DebugRenderer</a>)</td><td class="entry"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td><td class="entry"></td></tr>

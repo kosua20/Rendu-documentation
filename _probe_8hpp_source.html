@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_probe.html#a1732d34c1e5b02e12b7ec405d144190f">draw</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_probe.html#a8a88dc072dc4a562918b12807db619c6">convolveRadiance</a>(<span class="keywordtype">float</span> clamp, <span class="keywordtype">size_t</span> first, <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_probe.html#a83b9abe0b2172506e031b37d7b61487d">convolveRadiance</a>(<span class="keywordtype">float</span> clamp, uint first, uint count);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_probe.html#a6f9b129a7ddf15f810b38358a67bf768">estimateIrradiance</a>(<span class="keywordtype">float</span> clamp);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -165,8 +165,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <div class="ttc" id="aclass_probe_html_a6f9b129a7ddf15f810b38358a67bf768"><div class="ttname"><a href="class_probe.html#a6f9b129a7ddf15f810b38358a67bf768">Probe::estimateIrradiance</a></div><div class="ttdeci">void estimateIrradiance(float clamp)</div><div class="ttdef"><b>Definition:</b> Probe.cpp:66</div></div>
 <div class="ttc" id="aclass_probe_html_a7823436d27cab402bc7e8d6783b5a54c"><div class="ttname"><a href="class_probe.html#a7823436d27cab402bc7e8d6783b5a54c">Probe::operator=</a></div><div class="ttdeci">Probe &amp; operator=(const Probe &amp;)=delete</div></div>
 <div class="ttc" id="aclass_probe_html_a801cce22febac018fe14e4ae313c33f0"><div class="ttname"><a href="class_probe.html#a801cce22febac018fe14e4ae313c33f0">Probe::_position</a></div><div class="ttdeci">glm::vec3 _position</div><div class="ttdoc">The probe location.</div><div class="ttdef"><b>Definition:</b> Probe.hpp:109</div></div>
+<div class="ttc" id="aclass_probe_html_a83b9abe0b2172506e031b37d7b61487d"><div class="ttname"><a href="class_probe.html#a83b9abe0b2172506e031b37d7b61487d">Probe::convolveRadiance</a></div><div class="ttdeci">void convolveRadiance(float clamp, uint first, uint count)</div><div class="ttdef"><b>Definition:</b> Probe.cpp:35</div></div>
 <div class="ttc" id="aclass_probe_html_a866cf071fca531d4c0b3f0d8bfabe9e4"><div class="ttname"><a href="class_probe.html#a866cf071fca531d4c0b3f0d8bfabe9e4">Probe::Probe</a></div><div class="ttdeci">Probe(const Probe &amp;)=delete</div></div>
-<div class="ttc" id="aclass_probe_html_a8a88dc072dc4a562918b12807db619c6"><div class="ttname"><a href="class_probe.html#a8a88dc072dc4a562918b12807db619c6">Probe::convolveRadiance</a></div><div class="ttdeci">void convolveRadiance(float clamp, size_t first, size_t count)</div><div class="ttdef"><b>Definition:</b> Probe.cpp:35</div></div>
 <div class="ttc" id="aclass_probe_html_a8d8fdab26f0c37bc847a3f446b7dd376"><div class="ttname"><a href="class_probe.html#a8d8fdab26f0c37bc847a3f446b7dd376">Probe::position</a></div><div class="ttdeci">const glm::vec3 &amp; position() const</div><div class="ttdef"><b>Definition:</b> Probe.hpp:68</div></div>
 <div class="ttc" id="aclass_probe_html_a9230d69f2fb2f635a4fef3cedc88b26a"><div class="ttname"><a href="class_probe.html#a9230d69f2fb2f635a4fef3cedc88b26a">Probe::_shCoeffs</a></div><div class="ttdeci">std::shared_ptr&lt; UniformBuffer&lt; glm::vec4 &gt; &gt; _shCoeffs</div><div class="ttdoc">SH representation of the cubemap irradiance.</div><div class="ttdef"><b>Definition:</b> Probe.hpp:106</div></div>
 <div class="ttc" id="aclass_probe_html_aa023fafbebe29047832fa25c49917d5f"><div class="ttname"><a href="class_probe.html#aa023fafbebe29047832fa25c49917d5f">Probe::_cameras</a></div><div class="ttdeci">std::array&lt; Camera, 6 &gt; _cameras</div><div class="ttdoc">Camera for each face.</div><div class="ttdef"><b>Definition:</b> Probe.hpp:108</div></div>

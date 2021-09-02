@@ -29,7 +29,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rendu
    </div>
-   <div id="projectbrief">An OpenGL rendering engine for experimentations</div>
+   <div id="projectbrief">A lightweight rendering engine for experimentations</div>
   </td>
  </tr>
  </tbody>
@@ -102,42 +102,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Common.hpp&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;graphics/GPUObjects.hpp&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;volk/volk.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_query_allocator.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_query_allocator.html">QueryAllocator</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_query_allocator.html#a1613a07d478df40face8fdcc20297a55">init</a>(<a class="code" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">GPUQuery::Type</a> type, uint count);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    uint <a class="code" href="class_query_allocator.html#a6d6e13cca23a8f6c488d4fe82831269c">allocate</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_query_allocator.html#ae26fabb019bdc48e82947352bc0d6019">resetWritePool</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    VkQueryPool&amp; <a class="code" href="class_query_allocator.html#ab9e9907d130026aab685256a5091ca03">getWritePool</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    VkQueryPool&amp; <a class="code" href="class_query_allocator.html#a38ce9c452e2afa69231f048b2f941341">getReadPool</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_query_allocator.html#abc52df17078006318e536417f3ebc2e5">clean</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_query_allocator.html#a306eac1a14fad3d451d039cee9c88ac4">   42</a></span>&#160;    std::vector&lt;VkQueryPool&gt; <a class="code" href="class_query_allocator.html#a306eac1a14fad3d451d039cee9c88ac4">_pools</a>; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_query_allocator.html#a8fe075a006832b35aab83c3b1fef07fc">   43</a></span>&#160;    uint <a class="code" href="class_query_allocator.html#a8fe075a006832b35aab83c3b1fef07fc">_totalCount</a> = 0u; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_query_allocator.html#af7fd762e8f22250474236c70dcefaaf0">   44</a></span>&#160;    uint <a class="code" href="class_query_allocator.html#af7fd762e8f22250474236c70dcefaaf0">_currentCount</a> = 0u; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_query_allocator.html#a5e0483cef7ed2dffe925a746e044c341">   45</a></span>&#160;    uint <a class="code" href="class_query_allocator.html#a5e0483cef7ed2dffe925a746e044c341">_itemSize</a> = 1u; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="ttc" id="aclass_g_p_u_query_html_a2091234124d8f43dcdcec8e077dea0c7"><div class="ttname"><a href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">GPUQuery::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> GPUTypes.hpp:417</div></div>
-<div class="ttc" id="aclass_query_allocator_html"><div class="ttname"><a href="class_query_allocator.html">QueryAllocator</a></div><div class="ttdoc">Manages GPU queries allocation in a set of pools. Pools need to be buffered per frame so that we can ...</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:12</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_query_allocator.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_query_allocator.html">QueryAllocator</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_query_allocator.html#a1613a07d478df40face8fdcc20297a55">init</a>(<a class="code" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">GPUQuery::Type</a> type, uint count);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    uint <a class="code" href="class_query_allocator.html#a6d6e13cca23a8f6c488d4fe82831269c">allocate</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_query_allocator.html#ae26fabb019bdc48e82947352bc0d6019">resetWritePool</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    VkQueryPool&amp; <a class="code" href="class_query_allocator.html#ab9e9907d130026aab685256a5091ca03">getWritePool</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    VkQueryPool&amp; <a class="code" href="class_query_allocator.html#a38ce9c452e2afa69231f048b2f941341">getReadPool</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_query_allocator.html#abc52df17078006318e536417f3ebc2e5">clean</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_query_allocator.html#a306eac1a14fad3d451d039cee9c88ac4">   40</a></span>&#160;    std::vector&lt;VkQueryPool&gt; <a class="code" href="class_query_allocator.html#a306eac1a14fad3d451d039cee9c88ac4">_pools</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_query_allocator.html#a8fe075a006832b35aab83c3b1fef07fc">   41</a></span>&#160;    uint <a class="code" href="class_query_allocator.html#a8fe075a006832b35aab83c3b1fef07fc">_totalCount</a> = 0u; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_query_allocator.html#af7fd762e8f22250474236c70dcefaaf0">   42</a></span>&#160;    uint <a class="code" href="class_query_allocator.html#af7fd762e8f22250474236c70dcefaaf0">_currentCount</a> = 0u; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_query_allocator.html#a5e0483cef7ed2dffe925a746e044c341">   43</a></span>&#160;    uint <a class="code" href="class_query_allocator.html#a5e0483cef7ed2dffe925a746e044c341">_itemSize</a> = 1u; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="ttc" id="aclass_g_p_u_query_html_a2091234124d8f43dcdcec8e077dea0c7"><div class="ttname"><a href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">GPUQuery::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> GPUTypes.hpp:416</div></div>
+<div class="ttc" id="aclass_query_allocator_html"><div class="ttname"><a href="class_query_allocator.html">QueryAllocator</a></div><div class="ttdoc">Manages GPU queries allocation in a set of pools. Pools need to be buffered per frame so that we can ...</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:10</div></div>
 <div class="ttc" id="aclass_query_allocator_html_a1613a07d478df40face8fdcc20297a55"><div class="ttname"><a href="class_query_allocator.html#a1613a07d478df40face8fdcc20297a55">QueryAllocator::init</a></div><div class="ttdeci">void init(GPUQuery::Type type, uint count)</div><div class="ttdef"><b>Definition:</b> QueryAllocator.cpp:5</div></div>
-<div class="ttc" id="aclass_query_allocator_html_a306eac1a14fad3d451d039cee9c88ac4"><div class="ttname"><a href="class_query_allocator.html#a306eac1a14fad3d451d039cee9c88ac4">QueryAllocator::_pools</a></div><div class="ttdeci">std::vector&lt; VkQueryPool &gt; _pools</div><div class="ttdoc">Per-frame native query pools.</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:42</div></div>
+<div class="ttc" id="aclass_query_allocator_html_a306eac1a14fad3d451d039cee9c88ac4"><div class="ttname"><a href="class_query_allocator.html#a306eac1a14fad3d451d039cee9c88ac4">QueryAllocator::_pools</a></div><div class="ttdeci">std::vector&lt; VkQueryPool &gt; _pools</div><div class="ttdoc">Per-frame native query pools.</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:40</div></div>
 <div class="ttc" id="aclass_query_allocator_html_a38ce9c452e2afa69231f048b2f941341"><div class="ttname"><a href="class_query_allocator.html#a38ce9c452e2afa69231f048b2f941341">QueryAllocator::getReadPool</a></div><div class="ttdeci">VkQueryPool &amp; getReadPool()</div><div class="ttdef"><b>Definition:</b> QueryAllocator.cpp:62</div></div>
-<div class="ttc" id="aclass_query_allocator_html_a5e0483cef7ed2dffe925a746e044c341"><div class="ttname"><a href="class_query_allocator.html#a5e0483cef7ed2dffe925a746e044c341">QueryAllocator::_itemSize</a></div><div class="ttdeci">uint _itemSize</div><div class="ttdoc">Number of hardware queries used for the given query type (two for duration queries,...</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:45</div></div>
+<div class="ttc" id="aclass_query_allocator_html_a5e0483cef7ed2dffe925a746e044c341"><div class="ttname"><a href="class_query_allocator.html#a5e0483cef7ed2dffe925a746e044c341">QueryAllocator::_itemSize</a></div><div class="ttdeci">uint _itemSize</div><div class="ttdoc">Number of hardware queries used for the given query type (two for duration queries,...</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:43</div></div>
 <div class="ttc" id="aclass_query_allocator_html_a6d6e13cca23a8f6c488d4fe82831269c"><div class="ttname"><a href="class_query_allocator.html#a6d6e13cca23a8f6c488d4fe82831269c">QueryAllocator::allocate</a></div><div class="ttdeci">uint allocate()</div><div class="ttdef"><b>Definition:</b> QueryAllocator.cpp:35</div></div>
-<div class="ttc" id="aclass_query_allocator_html_a8fe075a006832b35aab83c3b1fef07fc"><div class="ttname"><a href="class_query_allocator.html#a8fe075a006832b35aab83c3b1fef07fc">QueryAllocator::_totalCount</a></div><div class="ttdeci">uint _totalCount</div><div class="ttdoc">Total size of each pool, in queries.</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:43</div></div>
+<div class="ttc" id="aclass_query_allocator_html_a8fe075a006832b35aab83c3b1fef07fc"><div class="ttname"><a href="class_query_allocator.html#a8fe075a006832b35aab83c3b1fef07fc">QueryAllocator::_totalCount</a></div><div class="ttdeci">uint _totalCount</div><div class="ttdoc">Total size of each pool, in queries.</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:41</div></div>
 <div class="ttc" id="aclass_query_allocator_html_ab9e9907d130026aab685256a5091ca03"><div class="ttname"><a href="class_query_allocator.html#ab9e9907d130026aab685256a5091ca03">QueryAllocator::getWritePool</a></div><div class="ttdeci">VkQueryPool &amp; getWritePool()</div><div class="ttdef"><b>Definition:</b> QueryAllocator.cpp:58</div></div>
 <div class="ttc" id="aclass_query_allocator_html_abc52df17078006318e536417f3ebc2e5"><div class="ttname"><a href="class_query_allocator.html#abc52df17078006318e536417f3ebc2e5">QueryAllocator::clean</a></div><div class="ttdeci">void clean()</div><div class="ttdef"><b>Definition:</b> QueryAllocator.cpp:45</div></div>
 <div class="ttc" id="aclass_query_allocator_html_ae26fabb019bdc48e82947352bc0d6019"><div class="ttname"><a href="class_query_allocator.html#ae26fabb019bdc48e82947352bc0d6019">QueryAllocator::resetWritePool</a></div><div class="ttdeci">void resetWritePool()</div><div class="ttdef"><b>Definition:</b> QueryAllocator.cpp:53</div></div>
-<div class="ttc" id="aclass_query_allocator_html_af7fd762e8f22250474236c70dcefaaf0"><div class="ttname"><a href="class_query_allocator.html#af7fd762e8f22250474236c70dcefaaf0">QueryAllocator::_currentCount</a></div><div class="ttdeci">uint _currentCount</div><div class="ttdoc">Current number of allocated queries.</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:44</div></div>
+<div class="ttc" id="aclass_query_allocator_html_af7fd762e8f22250474236c70dcefaaf0"><div class="ttname"><a href="class_query_allocator.html#af7fd762e8f22250474236c70dcefaaf0">QueryAllocator::_currentCount</a></div><div class="ttdeci">uint _currentCount</div><div class="ttdoc">Current number of allocated queries.</div><div class="ttdef"><b>Definition:</b> QueryAllocator.hpp:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
