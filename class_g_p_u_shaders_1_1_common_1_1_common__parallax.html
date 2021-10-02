@@ -108,16 +108,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53497625de2caafb162c7ed76a691fbe"><td class="memItemLeft" align="right" valign="top">vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#a53497625de2caafb162c7ed76a691fbe">parallax</a> (vec2 uv, vec3 vTangentDir, sampler2D depth, out vec2 positionShift)</td></tr>
-<tr class="separator:a53497625de2caafb162c7ed76a691fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae498055c2a204e542dc17640e7cc0c66"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#ae498055c2a204e542dc17640e7cc0c66">updateFragmentPosition</a> (vec2 localUV, vec2 positionShift, vec3 viewPos, mat4 proj, mat3 tbn, sampler2D depth)</td></tr>
-<tr class="separator:ae498055c2a204e542dc17640e7cc0c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a6677040ad72a6be1a0cae41dcafe1"><td class="memItemLeft" align="right" valign="top">vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#a21a6677040ad72a6be1a0cae41dcafe1">parallax</a> (vec2 uv, vec3 vTangentDir, texture2D depth, out vec2 positionShift)</td></tr>
+<tr class="separator:a21a6677040ad72a6be1a0cae41dcafe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43515c763c813313d817567327ee03d"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#af43515c763c813313d817567327ee03d">updateFragmentPosition</a> (vec2 localUV, vec2 positionShift, vec3 viewPos, mat4 proj, mat3 tbn, texture2D depth)</td></tr>
+<tr class="separator:af43515c763c813313d817567327ee03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_g_p_u_shaders_1_1_common.html" title="Contains shared shader code.">Common</a> parallax general shader. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a53497625de2caafb162c7ed76a691fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53497625de2caafb162c7ed76a691fbe">&#9670;&nbsp;</a></span>parallax()</h2>
+<a id="a21a6677040ad72a6be1a0cae41dcafe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a6677040ad72a6be1a0cae41dcafe1">&#9670;&nbsp;</a></span>parallax()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +141,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sampler2D&#160;</td>
+          <td class="paramtype">texture2D&#160;</td>
           <td class="paramname"><em>depth</em>, </td>
         </tr>
         <tr>
@@ -174,8 +175,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae498055c2a204e542dc17640e7cc0c66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae498055c2a204e542dc17640e7cc0c66">&#9670;&nbsp;</a></span>updateFragmentPosition()</h2>
+<a id="af43515c763c813313d817567327ee03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43515c763c813313d817567327ee03d">&#9670;&nbsp;</a></span>updateFragmentPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +217,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sampler2D&#160;</td>
+          <td class="paramtype">texture2D&#160;</td>
           <td class="paramname"><em>depth</em>&#160;</td>
         </tr>
         <tr>

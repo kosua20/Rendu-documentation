@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_descriptor_allocator_1_1_descriptor_pool.html">DescriptorPool</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_descriptor.html" title="Regroups format, type, filtering and wrapping informations for a color buffer.">Descriptor</a> pool management info.  <a href="struct_descriptor_allocator_1_1_descriptor_pool.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor pool management info.  <a href="struct_descriptor_allocator_1_1_descriptor_pool.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -128,8 +128,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad6fd97597767d3ae6186522e8fc41138"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_descriptor_allocator_1_1_descriptor_pool.html">DescriptorPool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_descriptor_allocator.html#ad6fd97597767d3ae6186522e8fc41138">createPool</a> (uint count)</td></tr>
-<tr class="separator:ad6fd97597767d3ae6186522e8fc41138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f0cf630c7279f9e84dae06e87833bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_descriptor_allocator_1_1_descriptor_pool.html">DescriptorPool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_descriptor_allocator.html#ad3f0cf630c7279f9e84dae06e87833bb">createPool</a> (uint count, bool combined)</td></tr>
+<tr class="separator:ad3f0cf630c7279f9e84dae06e87833bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -201,8 +201,8 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ad6fd97597767d3ae6186522e8fc41138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6fd97597767d3ae6186522e8fc41138">&#9670;&nbsp;</a></span>createPool()</h2>
+<a id="ad3f0cf630c7279f9e84dae06e87833bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f0cf630c7279f9e84dae06e87833bb">&#9670;&nbsp;</a></span>createPool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,8 +214,18 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="memname"><a class="el" href="struct_descriptor_allocator_1_1_descriptor_pool.html">DescriptorAllocator::DescriptorPool</a> DescriptorAllocator::createPool </td>
           <td>(</td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>count</em></td><td>)</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>combined</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -227,6 +237,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Create a descriptor pool containing count descriptors. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>the maximmum number of descriptors of each type to store in the poll </td></tr>
+    <tr><td class="paramname">combined</td><td>should images and samplers be represented by combined descriptors or separate sampled image/sampler descriptors. </td></tr>
   </table>
   </dd>
 </dl>

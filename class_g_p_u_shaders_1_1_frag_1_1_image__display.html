@@ -122,14 +122,10 @@ Public Attributes</h2></td></tr>
 in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a0ed0eb2fa7a7d7e464fe1d72c45b6115">uv</a></td></tr>
 <tr class="memdesc:a0ed0eb2fa7a7d7e464fe1d72c45b6115"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> coordinates. <br /></td></tr>
 <tr class="separator:a0ed0eb2fa7a7d7e464fe1d72c45b6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b81af9135cabf0ce3c01ae378d7a57"><td class="memItemLeft" align="right" valign="top"><a id="a98b81af9135cabf0ce3c01ae378d7a57"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a98b81af9135cabf0ce3c01ae378d7a57">screenTexture</a></td></tr>
-<tr class="memdesc:a98b81af9135cabf0ce3c01ae378d7a57"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> to output. <br /></td></tr>
-<tr class="separator:a98b81af9135cabf0ce3c01ae378d7a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef4ec6f6a1ef090a617a32a37c6243a"><td class="memItemLeft" align="right" valign="top"><a id="adef4ec6f6a1ef090a617a32a37c6243a"></a>
-uniform vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#adef4ec6f6a1ef090a617a32a37c6243a">channelsFilter</a></td></tr>
-<tr class="memdesc:adef4ec6f6a1ef090a617a32a37c6243a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which channels should be displayed. <br /></td></tr>
-<tr class="separator:adef4ec6f6a1ef090a617a32a37c6243a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5becd47988532238dbe184f03d1c0e23"><td class="memItemLeft" align="right" valign="top"><a id="a5becd47988532238dbe184f03d1c0e23"></a>
+uniform uniform vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a5becd47988532238dbe184f03d1c0e23">channelsFilter</a></td></tr>
+<tr class="memdesc:a5becd47988532238dbe184f03d1c0e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which channels should be displayed. <br /></td></tr>
+<tr class="separator:a5becd47988532238dbe184f03d1c0e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1aaacddb48954cb98447f647a16464"><td class="memItemLeft" align="right" valign="top"><a id="a8c1aaacddb48954cb98447f647a16464"></a>
 uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a8c1aaacddb48954cb98447f647a16464">exposure</a></td></tr>
 <tr class="memdesc:a8c1aaacddb48954cb98447f647a16464"><td class="mdescLeft">&#160;</td><td class="mdescRight">User selected exposure. <br /></td></tr>
@@ -138,6 +134,10 @@ uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 uniform bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a144abe3f91f4444bd7a8b61d097f818b">gammaOutput</a></td></tr>
 <tr class="memdesc:a144abe3f91f4444bd7a8b61d097f818b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should gamma correction be applied. <br /></td></tr>
 <tr class="separator:a144abe3f91f4444bd7a8b61d097f818b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243afcbcfdda0b5a89f1067443774d87"><td class="memItemLeft" align="right" valign="top"><a id="a243afcbcfdda0b5a89f1067443774d87"></a>
+uniform bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a243afcbcfdda0b5a89f1067443774d87">filtering</a></td></tr>
+<tr class="memdesc:a243afcbcfdda0b5a89f1067443774d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should linear interpolation be applied. <br /></td></tr>
+<tr class="separator:a243afcbcfdda0b5a89f1067443774d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ad4253b591bc0647ac23af6394f210"><td class="memItemLeft" align="right" valign="top"><a id="ae2ad4253b591bc0647ac23af6394f210"></a>
 uniform bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#ae2ad4253b591bc0647ac23af6394f210">isHDR</a></td></tr>
 <tr class="memdesc:ae2ad4253b591bc0647ac23af6394f210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the image an HDR one. <br /></td></tr>
@@ -149,6 +149,7 @@ out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> display fragment shader. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a214608270aefdf6aa320957d0c2ff1a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a214608270aefdf6aa320957d0c2ff1a6">&#9670;&nbsp;</a></span>gamma()</h2>

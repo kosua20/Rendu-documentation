@@ -95,6 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -112,13 +113,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_buffer_def.html">BufferDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer reflection information.  <a href="struct_program_1_1_buffer_def.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_buffer.html" title="General purpose GPU buffer, with different use types determining its memory type, visibility and acce...">Buffer</a> reflection information.  <a href="struct_program_1_1_buffer_def.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_dynamic_buffer_state.html">DynamicBufferState</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state for a dynamic uniform buffer.  <a href="struct_program_1_1_dynamic_buffer_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_sampler_def.html">SamplerDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image-sampler reflection information.  <a href="struct_program_1_1_sampler_def.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_image_def.html">ImageDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image-sampler reflection information.  <a href="struct_program_1_1_image_def.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_stage.html">Stage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-stage reflection information.  <a href="struct_program_1_1_stage.html#details">More...</a><br /></td></tr>
@@ -138,6 +139,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:ae207d83c4779d7c58e7d3c0dc161d487"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> { <a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487a6f49448c79d7d58c6e60cf7129b84d1c">GRAPHICS</a>
+, <a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487aac404d7ce6ca5862e9b8a2641fbafd90">COMPUTE</a>
+ }</td></tr>
+<tr class="separator:ae207d83c4779d7c58e7d3c0dc161d487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27e03c03592622f9f560f701106737a5"><td class="memItemLeft" align="right" valign="top"><a id="a27e03c03592622f9f560f701106737a5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a27e03c03592622f9f560f701106737a5">Uniforms</a> = std::unordered_map&lt; std::string, <a class="el" href="struct_program_1_1_uniform_def.html">UniformDef</a> &gt;</td></tr>
 <tr class="memdesc:a27e03c03592622f9f560f701106737a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of named uniforms. <br /></td></tr>
@@ -147,12 +152,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a027642513a5dd18b6f35a877734598"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a3a027642513a5dd18b6f35a877734598">Program</a> (const std::string &amp;<a class="el" href="class_program.html#a34a423e6a571f21a9d447b4598a5d905">name</a>, const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;tessControlContent=&quot;&quot;, const std::string &amp;tessEvalContent=&quot;&quot;)</td></tr>
 <tr class="separator:a3a027642513a5dd18b6f35a877734598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33635c7bd763b60b941dc193c328830a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a33635c7bd763b60b941dc193c328830a">Program</a> (const std::string &amp;<a class="el" href="class_program.html#a34a423e6a571f21a9d447b4598a5d905">name</a>, const std::string &amp;computeContent)</td></tr>
+<tr class="separator:a33635c7bd763b60b941dc193c328830a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ef0e992380671c3a5c73b9565adaed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a42ef0e992380671c3a5c73b9565adaed">reload</a> (const std::string &amp;vertexContent, const std::string &amp;fragmentContent, const std::string &amp;tessControlContent=&quot;&quot;, const std::string &amp;tessEvalContent=&quot;&quot;)</td></tr>
 <tr class="separator:a42ef0e992380671c3a5c73b9565adaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b4f0a0964b3c65b0e7bdbc56f2379f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a92b4f0a0964b3c65b0e7bdbc56f2379f">validate</a> () const</td></tr>
-<tr class="separator:a92b4f0a0964b3c65b0e7bdbc56f2379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db7ac0736f058226e70290c917c0008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a9db7ac0736f058226e70290c917c0008">saveBinary</a> (const std::string &amp;outputPath) const</td></tr>
-<tr class="separator:a9db7ac0736f058226e70290c917c0008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57af4f7ca270b9aead7575825cd87a12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a57af4f7ca270b9aead7575825cd87a12">reload</a> (const std::string &amp;computeContent)</td></tr>
+<tr class="separator:a57af4f7ca270b9aead7575825cd87a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a9851ce517f49b8ca34ae28a75f72d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ac3a9851ce517f49b8ca34ae28a75f72d">reloaded</a> () const</td></tr>
 <tr class="separator:ac3a9851ce517f49b8ca34ae28a75f72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f41008c2d38f5417e2524460703f466"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a0f41008c2d38f5417e2524460703f466">reloaded</a> (bool absorb)</td></tr>
@@ -163,14 +168,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9ea8bf33b0305ade5a80c1009c3f83a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdaffb38760f052680aa6709fb30d217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#afdaffb38760f052680aa6709fb30d217">buffer</a> (const <a class="el" href="class_uniform_buffer_base.html">UniformBufferBase</a> &amp;buffer, uint slot)</td></tr>
 <tr class="separator:afdaffb38760f052680aa6709fb30d217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a468b8b8ac4ff4b56fc023dc93ae0a521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a468b8b8ac4ff4b56fc023dc93ae0a521">texture</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, uint slot, uint mip=0xFFFF)</td></tr>
-<tr class="separator:a468b8b8ac4ff4b56fc023dc93ae0a521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168a78a97305e61aa1ab0bc9889b12bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a168a78a97305e61aa1ab0bc9889b12bc">texture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, uint slot, uint mip=0xFFFF)</td></tr>
-<tr class="separator:a168a78a97305e61aa1ab0bc9889b12bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c0da68932f8395ec425a74133730ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a01c0da68932f8395ec425a74133730ef">buffer</a> (const <a class="el" href="class_buffer.html">Buffer</a> &amp;buffer, uint slot)</td></tr>
+<tr class="separator:a01c0da68932f8395ec425a74133730ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fe9da836d430a150aba146d5ac29f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ab2fe9da836d430a150aba146d5ac29f4">texture</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, uint slot, uint mip=<a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a>)</td></tr>
+<tr class="separator:ab2fe9da836d430a150aba146d5ac29f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ea921e2f0fb614cc156f1487314446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a67ea921e2f0fb614cc156f1487314446">texture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, uint slot, uint mip=<a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a>)</td></tr>
+<tr class="separator:a67ea921e2f0fb614cc156f1487314446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21e34cbb829264c63b3ed36e45d7605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ab21e34cbb829264c63b3ed36e45d7605">textures</a> (const std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt; &amp;textures, size_t slot=0)</td></tr>
 <tr class="separator:ab21e34cbb829264c63b3ed36e45d7605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f9f22c5bc86c7b91b9715c61ddde9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ac2f9f22c5bc86c7b91b9715c61ddde9a">defaultTexture</a> (uint slot)</td></tr>
 <tr class="separator:ac2f9f22c5bc86c7b91b9715c61ddde9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f0bf4fc95945ecc902d770ad8a86f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a31f0bf4fc95945ecc902d770ad8a86f4">transitionResourcesTo</a> (<a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a> <a class="el" href="class_program.html#acaa51c107688b5462776405015076f70">type</a>)</td></tr>
+<tr class="separator:a31f0bf4fc95945ecc902d770ad8a86f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0347fbe4d1bb37f98a8ecf43cdcc95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a1e0347fbe4d1bb37f98a8ecf43cdcc95">update</a> ()</td></tr>
 <tr class="separator:a1e0347fbe4d1bb37f98a8ecf43cdcc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b31d845bcd97588912f26892ea99aff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a6b31d845bcd97588912f26892ea99aff">uniform</a> (const std::string &amp;<a class="el" href="class_program.html#a34a423e6a571f21a9d447b4598a5d905">name</a>, bool t)</td></tr>
@@ -225,21 +234,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad15f82e8a93836e7e2eb24946bc812ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34a423e6a571f21a9d447b4598a5d905"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a34a423e6a571f21a9d447b4598a5d905">name</a> () const</td></tr>
 <tr class="separator:a34a423e6a571f21a9d447b4598a5d905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa51c107688b5462776405015076f70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#acaa51c107688b5462776405015076f70">type</a> () const</td></tr>
+<tr class="separator:acaa51c107688b5462776405015076f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf9b99a78af511c1160efd8e6815476"><td class="memItemLeft" align="right" valign="top">const glm::uvec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a9bf9b99a78af511c1160efd8e6815476">size</a> () const</td></tr>
+<tr class="separator:a9bf9b99a78af511c1160efd8e6815476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7878b28673d0a4ad07b128000c6a158d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a7878b28673d0a4ad07b128000c6a158d">operator=</a> (const <a class="el" href="class_program.html">Program</a> &amp;)=delete</td></tr>
 <tr class="separator:a7878b28673d0a4ad07b128000c6a158d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce8292de7766a73713c19a47c0d498e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a7ce8292de7766a73713c19a47c0d498e">Program</a> (const <a class="el" href="class_program.html">Program</a> &amp;)=delete</td></tr>
 <tr class="separator:a7ce8292de7766a73713c19a47c0d498e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671b118904ee8ff3980a1d7aacd34912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a671b118904ee8ff3980a1d7aacd34912">operator=</a> (<a class="el" href="class_program.html">Program</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a671b118904ee8ff3980a1d7aacd34912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c8f3dc85e4d46dfd1b46a322fd2d15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ac6c8f3dc85e4d46dfd1b46a322fd2d15">operator=</a> (<a class="el" href="class_program.html">Program</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:ac6c8f3dc85e4d46dfd1b46a322fd2d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5fd72fc9c0a39f1037cb2dbb665a1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a7f5fd72fc9c0a39f1037cb2dbb665a1c">Program</a> (<a class="el" href="class_program.html">Program</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a7f5fd72fc9c0a39f1037cb2dbb665a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7845a4d36786d56d93d7275a69a2c115"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_program_1_1_state.html">State</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a7845a4d36786d56d93d7275a69a2c115">getState</a> () const</td></tr>
 <tr class="separator:a7845a4d36786d56d93d7275a69a2c115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ee83e9155887f6e5b353a55e59d59a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_program_1_1_stage.html">Stage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a64ee83e9155887f6e5b353a55e59d59a">stage</a> (<a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> type)</td></tr>
+<tr class="memitem:a64ee83e9155887f6e5b353a55e59d59a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_program_1_1_stage.html">Stage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a64ee83e9155887f6e5b353a55e59d59a">stage</a> (<a class="el" href="group___resources.html#ga4c5eb974d58c8e94fc312569207f065b">ShaderType</a> <a class="el" href="class_program.html#acaa51c107688b5462776405015076f70">type</a>)</td></tr>
 <tr class="separator:a64ee83e9155887f6e5b353a55e59d59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a162480118bd18b84973309c7e6ceac39"><td class="memItemLeft" align="right" valign="top">static uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">ALL_MIPS</a> = 0xFFFF</td></tr>
+<tr class="separator:a162480118bd18b84973309c7e6ceac39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a78831bdf56c0ea62d1789d08f2796be7"><td class="memItemLeft" align="right" valign="top"><a id="a78831bdf56c0ea62d1789d08f2796be7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a78831bdf56c0ea62d1789d08f2796be7">reflect</a> ()</td></tr>
+<tr class="memdesc:a78831bdf56c0ea62d1789d08f2796be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflect all uniforms/textures/storage buffers and images based on the shader content. <br /></td></tr>
+<tr class="separator:a78831bdf56c0ea62d1789d08f2796be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b11d2bf754ebb60bf3f14ab86c311e"><td class="memItemLeft" align="right" valign="top"><a id="af2b11d2bf754ebb60bf3f14ab86c311e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#af2b11d2bf754ebb60bf3f14ab86c311e">updateUniformMetric</a> () const</td></tr>
 <tr class="memdesc:af2b11d2bf754ebb60bf3f14ab86c311e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update internal metrics. <br /></td></tr>
@@ -273,20 +295,20 @@ std::unordered_map&lt; int, <a class="el" href="struct_program_1_1_dynamic_buffe
 <tr class="separator:a73b84a79f4e97e2a33c0ded61418d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74eb543a2371e22fb53021cf66e82534"><td class="memItemLeft" align="right" valign="top"><a id="a74eb543a2371e22fb53021cf66e82534"></a>
 std::unordered_map&lt; int, <a class="el" href="struct_program_1_1_texture_state.html">TextureState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a74eb543a2371e22fb53021cf66e82534">_textures</a></td></tr>
-<tr class="memdesc:a74eb543a2371e22fb53021cf66e82534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic image-sampler definitions (set 1). <br /></td></tr>
+<tr class="memdesc:a74eb543a2371e22fb53021cf66e82534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic image-sampler definitions (set 2). <br /></td></tr>
 <tr class="separator:a74eb543a2371e22fb53021cf66e82534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb3f43af0f118f8aa0b53755fae526d9"><td class="memItemLeft" align="right" valign="top"><a id="acb3f43af0f118f8aa0b53755fae526d9"></a>
 std::unordered_map&lt; int, <a class="el" href="struct_program_1_1_static_buffer_state.html">StaticBufferState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#acb3f43af0f118f8aa0b53755fae526d9">_staticBuffers</a></td></tr>
-<tr class="memdesc:acb3f43af0f118f8aa0b53755fae526d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static uniform buffer definitions (set 2). <br /></td></tr>
+<tr class="memdesc:acb3f43af0f118f8aa0b53755fae526d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static uniform buffer definitions (set 3). <br /></td></tr>
 <tr class="separator:acb3f43af0f118f8aa0b53755fae526d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2e33618d09c32508a4afa099f92ecf"><td class="memItemLeft" align="right" valign="top"><a id="afd2e33618d09c32508a4afa099f92ecf"></a>
-std::array&lt; bool, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#afd2e33618d09c32508a4afa099f92ecf">_dirtySets</a></td></tr>
-<tr class="memdesc:afd2e33618d09c32508a4afa099f92ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks which descriptor sets are dirty. <br /></td></tr>
-<tr class="separator:afd2e33618d09c32508a4afa099f92ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9156c482977452d38f92cfac2d6d9c44"><td class="memItemLeft" align="right" valign="top"><a id="a9156c482977452d38f92cfac2d6d9c44"></a>
-std::array&lt; <a class="el" href="struct_descriptor_set.html">DescriptorSet</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a9156c482977452d38f92cfac2d6d9c44">_currentSets</a></td></tr>
-<tr class="memdesc:a9156c482977452d38f92cfac2d6d9c44"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_descriptor.html" title="Regroups format, type, filtering and wrapping informations for a color buffer.">Descriptor</a> sets. <br /></td></tr>
-<tr class="separator:a9156c482977452d38f92cfac2d6d9c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bade49d686dd59c062e29ecb9ed897"><td class="memItemLeft" align="right" valign="top"><a id="a66bade49d686dd59c062e29ecb9ed897"></a>
+std::array&lt; bool, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a66bade49d686dd59c062e29ecb9ed897">_dirtySets</a></td></tr>
+<tr class="memdesc:a66bade49d686dd59c062e29ecb9ed897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks which descriptor sets are dirty. <br /></td></tr>
+<tr class="separator:a66bade49d686dd59c062e29ecb9ed897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb96e76291bda4691e9c8e74cab2e76"><td class="memItemLeft" align="right" valign="top"><a id="aacb96e76291bda4691e9c8e74cab2e76"></a>
+std::array&lt; <a class="el" href="struct_descriptor_set.html">DescriptorSet</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#aacb96e76291bda4691e9c8e74cab2e76">_currentSets</a></td></tr>
+<tr class="memdesc:aacb96e76291bda4691e9c8e74cab2e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor sets. <br /></td></tr>
+<tr class="separator:aacb96e76291bda4691e9c8e74cab2e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5574588665aa8ac8fdc03ba9fb009a"><td class="memItemLeft" align="right" valign="top"><a id="a0f5574588665aa8ac8fdc03ba9fb009a"></a>
 std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a0f5574588665aa8ac8fdc03ba9fb009a">_currentOffsets</a></td></tr>
 <tr class="memdesc:a0f5574588665aa8ac8fdc03ba9fb009a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets in the descriptor set for dynamic uniform buffers. <br /></td></tr>
@@ -295,6 +317,10 @@ std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ac0c4706ab07e05fa4b523762f117f965">_reloaded</a> = false</td></tr>
 <tr class="memdesc:ac0c4706ab07e05fa4b523762f117f965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the program been reloaded. <br /></td></tr>
 <tr class="separator:ac0c4706ab07e05fa4b523762f117f965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac8ba139504f0403e0ad56887e5f37a"><td class="memItemLeft" align="right" valign="top"><a id="a4ac8ba139504f0403e0ad56887e5f37a"></a>
+const <a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a4ac8ba139504f0403e0ad56887e5f37a">_type</a></td></tr>
+<tr class="memdesc:a4ac8ba139504f0403e0ad56887e5f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a compute shader. <br /></td></tr>
+<tr class="separator:a4ac8ba139504f0403e0ad56887e5f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -306,9 +332,39 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a group of shaders used for rendering. </p>
 <p>Internally responsible for handling uniforms locations, shaders reloading and values caching. Uniform sets are predefined: set 0 is for dynamic uniforms, set 1 for image-samplers, set 2 for static/per-frame uniform buffers. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae207d83c4779d7c58e7d3c0dc161d487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae207d83c4779d7c58e7d3c0dc161d487">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Type of program </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae207d83c4779d7c58e7d3c0dc161d487a6f49448c79d7d58c6e60cf7129b84d1c"></a>GRAPHICS&#160;</td><td class="fielddoc"><p>Graphics program for draw calls. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae207d83c4779d7c58e7d3c0dc161d487aac404d7ce6ca5862e9b8a2641fbafd90"></a>COMPUTE&#160;</td><td class="fielddoc"><p>Compute program for dispatch calls. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3a027642513a5dd18b6f35a877734598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a027642513a5dd18b6f35a877734598">&#9670;&nbsp;</a></span>Program() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a027642513a5dd18b6f35a877734598">&#9670;&nbsp;</a></span>Program() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +406,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load, compile and link shaders into a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> program. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Load, compile and link shaders into a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> graphics program. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the program name for logging </td></tr>
     <tr><td class="paramname">vertexContent</td><td>the content of the vertex shader </td></tr>
@@ -363,8 +419,43 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="a33635c7bd763b60b941dc193c328830a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33635c7bd763b60b941dc193c328830a">&#9670;&nbsp;</a></span>Program() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Program::Program </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>computeContent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load, compile and link shaders into a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> compute program. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the program name for logging </td></tr>
+    <tr><td class="paramname">computeContent</td><td>the content of the compute shader </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7ce8292de7766a73713c19a47c0d498e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce8292de7766a73713c19a47c0d498e">&#9670;&nbsp;</a></span>Program() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce8292de7766a73713c19a47c0d498e">&#9670;&nbsp;</a></span>Program() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,7 +482,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <a id="a7f5fd72fc9c0a39f1037cb2dbb665a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5fd72fc9c0a39f1037cb2dbb665a1c">&#9670;&nbsp;</a></span>Program() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5fd72fc9c0a39f1037cb2dbb665a1c">&#9670;&nbsp;</a></span>Program() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,8 +509,43 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a01c0da68932f8395ec425a74133730ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c0da68932f8395ec425a74133730ef">&#9670;&nbsp;</a></span>buffer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Program::buffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_buffer.html">Buffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bind a buffer to a given location. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>the buffer to bind </td></tr>
+    <tr><td class="paramname">slot</td><td>the location to bind to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afdaffb38760f052680aa6709fb30d217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdaffb38760f052680aa6709fb30d217">&#9670;&nbsp;</a></span>buffer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afdaffb38760f052680aa6709fb30d217">&#9670;&nbsp;</a></span>buffer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -994,8 +1120,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a671b118904ee8ff3980a1d7aacd34912"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671b118904ee8ff3980a1d7aacd34912">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="ac6c8f3dc85e4d46dfd1b46a322fd2d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c8f3dc85e4d46dfd1b46a322fd2d15">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1013,7 +1139,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1021,8 +1147,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="a57af4f7ca270b9aead7575825cd87a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57af4f7ca270b9aead7575825cd87a12">&#9670;&nbsp;</a></span>reload() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Program::reload </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>computeContent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load the program, compiling the shader and updating all uniform locations. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">computeContent</td><td>the content of the compute shader </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a42ef0e992380671c3a5c73b9565adaed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ef0e992380671c3a5c73b9565adaed">&#9670;&nbsp;</a></span>reload()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ef0e992380671c3a5c73b9565adaed">&#9670;&nbsp;</a></span>reload() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1180,28 +1330,21 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a9db7ac0736f058226e70290c917c0008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9db7ac0736f058226e70290c917c0008">&#9670;&nbsp;</a></span>saveBinary()</h2>
+<a id="a9bf9b99a78af511c1160efd8e6815476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf9b99a78af511c1160efd8e6815476">&#9670;&nbsp;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Program::saveBinary </td>
+          <td class="memname">const glm::uvec3 &amp; Program::size </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>outputPath</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Save the program to a compiled set of instructions on disk. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outputPath</td><td>the output path </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section warning"><dt>Warning</dt><dd>The export to binary is not supported by all GPUs and will silently fail. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the local group size for compute programs </dd></dl>
 
 </div>
 </div>
@@ -1238,8 +1381,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a168a78a97305e61aa1ab0bc9889b12bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a168a78a97305e61aa1ab0bc9889b12bc">&#9670;&nbsp;</a></span>texture() <span class="overload">[1/2]</span></h2>
+<a id="a67ea921e2f0fb614cc156f1487314446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ea921e2f0fb614cc156f1487314446">&#9670;&nbsp;</a></span>texture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1260,7 +1403,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>mip</em> = <code>0xFFFF</code>&#160;</td>
+          <td class="paramname"><em>mip</em> = <code><a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1280,8 +1423,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a468b8b8ac4ff4b56fc023dc93ae0a521"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a468b8b8ac4ff4b56fc023dc93ae0a521">&#9670;&nbsp;</a></span>texture() <span class="overload">[2/2]</span></h2>
+<a id="ab2fe9da836d430a150aba146d5ac29f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fe9da836d430a150aba146d5ac29f4">&#9670;&nbsp;</a></span>texture() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1302,7 +1445,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>mip</em> = <code>0xFFFF</code>&#160;</td>
+          <td class="paramname"><em>mip</em> = <code><a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1355,6 +1498,56 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Successive textures will be bound to locations slot+1, slot+2,... </dd></dl>
+
+</div>
+</div>
+<a id="a31f0bf4fc95945ecc902d770ad8a86f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f0bf4fc95945ecc902d770ad8a86f4">&#9670;&nbsp;</a></span>transitionResourcesTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Program::transitionResourcesTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ensure all currently set resources are in the proper layout/state and are synchronized for a given type of use (graphics or compute). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the type of use to prepare resources for </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acaa51c107688b5462776405015076f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa51c107688b5462776405015076f70">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a> Program::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>whether this is a graphics or compute program </dd></dl>
 
 </div>
 </div>
@@ -1818,7 +2011,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update internal data (descriptors,...) before a draw. </p>
+<p>Update internal data (descriptors,...) and bind them before a draw/dispatch. </p>
 
 </div>
 </div>
@@ -1840,21 +2033,27 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a92b4f0a0964b3c65b0e7bdbc56f2379f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92b4f0a0964b3c65b0e7bdbc56f2379f">&#9670;&nbsp;</a></span>validate()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a162480118bd18b84973309c7e6ceac39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162480118bd18b84973309c7e6ceac39">&#9670;&nbsp;</a></span>ALL_MIPS</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Program::validate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">uint Program::ALL_MIPS = 0xFFFF</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Perform full program validation and log the results. </p><dl class="section note"><dt>Note</dt><dd>Depending on the driver and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>, some performance hints can be output. </dd></dl>
+<p>Bind all mip levels of a texture </p>
 
 </div>
 </div>

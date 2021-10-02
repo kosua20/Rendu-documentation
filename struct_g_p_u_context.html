@@ -111,8 +111,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a610bd18bb6c87092fbb6d70ccd118034">nextFrame</a> ()</td></tr>
 <tr class="memdesc:a610bd18bb6c87092fbb6d70ccd118034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move to the next frame. <br /></td></tr>
 <tr class="separator:a610bd18bb6c87092fbb6d70ccd118034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388905a2a9c08f881f4ef1f530f16191"><td class="memItemLeft" align="right" valign="top">VkCommandBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a388905a2a9c08f881f4ef1f530f16191">getCurrentCommandBuffer</a> ()</td></tr>
-<tr class="separator:a388905a2a9c08f881f4ef1f530f16191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13e66a703ee0780ff46255538683ec6"><td class="memItemLeft" align="right" valign="top">VkCommandBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#ab13e66a703ee0780ff46255538683ec6">getRenderCommandBuffer</a> ()</td></tr>
+<tr class="separator:ab13e66a703ee0780ff46255538683ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff40d305939161fdb64406d3ce6092df"><td class="memItemLeft" align="right" valign="top">VkCommandBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#aff40d305939161fdb64406d3ce6092df">getUploadCommandBuffer</a> ()</td></tr>
+<tr class="separator:aff40d305939161fdb64406d3ce6092df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -140,10 +142,14 @@ VkSurfaceKHR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 VkCommandPool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a52cd1b94262b61644f128150dc2f4d90">commandPool</a> = VK_NULL_HANDLE</td></tr>
 <tr class="memdesc:a52cd1b94262b61644f128150dc2f4d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command pool for all frames. <br /></td></tr>
 <tr class="separator:a52cd1b94262b61644f128150dc2f4d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad895e0f1f0c4a5b7c5dc26cfefef07dc"><td class="memItemLeft" align="right" valign="top"><a id="ad895e0f1f0c4a5b7c5dc26cfefef07dc"></a>
-std::vector&lt; VkCommandBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#ad895e0f1f0c4a5b7c5dc26cfefef07dc">commandBuffers</a></td></tr>
-<tr class="memdesc:ad895e0f1f0c4a5b7c5dc26cfefef07dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-frame command buffers. <br /></td></tr>
-<tr class="separator:ad895e0f1f0c4a5b7c5dc26cfefef07dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b05cf35a3a235de97ea557899dc4978"><td class="memItemLeft" align="right" valign="top"><a id="a4b05cf35a3a235de97ea557899dc4978"></a>
+std::vector&lt; VkCommandBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a4b05cf35a3a235de97ea557899dc4978">renderCommandBuffers</a></td></tr>
+<tr class="memdesc:a4b05cf35a3a235de97ea557899dc4978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-frame command buffers. <br /></td></tr>
+<tr class="separator:a4b05cf35a3a235de97ea557899dc4978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0452cf1f77178d08ba34552f13b9e2"><td class="memItemLeft" align="right" valign="top"><a id="a2c0452cf1f77178d08ba34552f13b9e2"></a>
+std::vector&lt; VkCommandBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a2c0452cf1f77178d08ba34552f13b9e2">uploadCommandBuffers</a></td></tr>
+<tr class="memdesc:a2c0452cf1f77178d08ba34552f13b9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-frame command buffers. <br /></td></tr>
+<tr class="separator:a2c0452cf1f77178d08ba34552f13b9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e97467cb4f17236a38215d42aabe5a9"><td class="memItemLeft" align="right" valign="top"><a id="a7e97467cb4f17236a38215d42aabe5a9"></a>
 VkQueue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a7e97467cb4f17236a38215d42aabe5a9">graphicsQueue</a> = VK_NULL_HANDLE</td></tr>
 <tr class="memdesc:a7e97467cb4f17236a38215d42aabe5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics submission queue. <br /></td></tr>
@@ -154,7 +160,7 @@ VkQueue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <tr class="separator:a8ba8eb4ec5d1bfb9463ccd49ecb240f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdb38b76a531ff187c488775a8eacb6"><td class="memItemLeft" align="right" valign="top"><a id="a4bdb38b76a531ff187c488775a8eacb6"></a>
 <a class="el" href="class_descriptor_allocator.html">DescriptorAllocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a4bdb38b76a531ff187c488775a8eacb6">descriptorAllocator</a></td></tr>
-<tr class="memdesc:a4bdb38b76a531ff187c488775a8eacb6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_descriptor.html" title="Regroups format, type, filtering and wrapping informations for a color buffer.">Descriptor</a> sets common allocator. <br /></td></tr>
+<tr class="memdesc:a4bdb38b76a531ff187c488775a8eacb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor sets common allocator. <br /></td></tr>
 <tr class="separator:a4bdb38b76a531ff187c488775a8eacb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad62a44418b9f53a5d232929da6bad58e"><td class="memItemLeft" align="right" valign="top"><a id="ad62a44418b9f53a5d232929da6bad58e"></a>
 std::unordered_map&lt; <a class="el" href="class_g_p_u_query.html#a2091234124d8f43dcdcec8e077dea0c7">GPUQuery::Type</a>, <a class="el" href="class_query_allocator.html">QueryAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#ad62a44418b9f53a5d232929da6bad58e">queryAllocators</a></td></tr>
@@ -164,6 +170,10 @@ std::unordered_map&lt; <a class="el" href="class_g_p_u_query.html#a2091234124d8f
 <a class="el" href="class_pipeline_cache.html">PipelineCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a0f2b869bdeb1175802acdfc805376563">pipelineCache</a></td></tr>
 <tr class="memdesc:a0f2b869bdeb1175802acdfc805376563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipeline cache and creation. <br /></td></tr>
 <tr class="separator:a0f2b869bdeb1175802acdfc805376563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c78109b2485e5436cef5e7f6ba541eb"><td class="memItemLeft" align="right" valign="top"><a id="a9c78109b2485e5436cef5e7f6ba541eb"></a>
+<a class="el" href="class_sampler_library.html">SamplerLibrary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a9c78109b2485e5436cef5e7f6ba541eb">samplerLibrary</a></td></tr>
+<tr class="memdesc:a9c78109b2485e5436cef5e7f6ba541eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of static samplers shared by all programs. <br /></td></tr>
+<tr class="separator:a9c78109b2485e5436cef5e7f6ba541eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a569264567321cba5e6a9b59a828efdc1"><td class="memItemLeft" align="right" valign="top"><a id="a569264567321cba5e6a9b59a828efdc1"></a>
 std::deque&lt; <a class="el" href="struct_resource_to_delete.html">ResourceToDelete</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a569264567321cba5e6a9b59a828efdc1">resourcesToDelete</a></td></tr>
 <tr class="memdesc:a569264567321cba5e6a9b59a828efdc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of resources waiting for deletion. <br /></td></tr>
@@ -176,10 +186,14 @@ std::deque&lt; <a class="el" href="struct_async_texture_task.html">AsyncTextureT
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a60dacbeee7800cdfff1911a71417505c">tasksCount</a> = 0</td></tr>
 <tr class="memdesc:a60dacbeee7800cdfff1911a71417505c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of async tasks created. <br /></td></tr>
 <tr class="separator:a60dacbeee7800cdfff1911a71417505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b17c16447ee37ff6375b602b339f2f5"><td class="memItemLeft" align="right" valign="top"><a id="a6b17c16447ee37ff6375b602b339f2f5"></a>
-VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a6b17c16447ee37ff6375b602b339f2f5">pipeline</a> = VK_NULL_HANDLE</td></tr>
-<tr class="memdesc:a6b17c16447ee37ff6375b602b339f2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current pipeline. <br /></td></tr>
-<tr class="separator:a6b17c16447ee37ff6375b602b339f2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d838991fbbcdd8604925c384dccea1"><td class="memItemLeft" align="right" valign="top"><a id="a24d838991fbbcdd8604925c384dccea1"></a>
+VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a24d838991fbbcdd8604925c384dccea1">graphicsPipeline</a> = VK_NULL_HANDLE</td></tr>
+<tr class="memdesc:a24d838991fbbcdd8604925c384dccea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current graphics pipeline. <br /></td></tr>
+<tr class="separator:a24d838991fbbcdd8604925c384dccea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef2b431a70f7b3c99ba28b3a1b2f8c3"><td class="memItemLeft" align="right" valign="top"><a id="afef2b431a70f7b3c99ba28b3a1b2f8c3"></a>
+VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#afef2b431a70f7b3c99ba28b3a1b2f8c3">computePipeline</a> = VK_NULL_HANDLE</td></tr>
+<tr class="memdesc:afef2b431a70f7b3c99ba28b3a1b2f8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current compute pipeline. <br /></td></tr>
+<tr class="separator:afef2b431a70f7b3c99ba28b3a1b2f8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed952909102245ee1157d03f5158cf4"><td class="memItemLeft" align="right" valign="top"><a id="a4ed952909102245ee1157d03f5158cf4"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a4ed952909102245ee1157d03f5158cf4">graphicsId</a> = 0</td></tr>
 <tr class="memdesc:a4ed952909102245ee1157d03f5158cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics queue index. <br /></td></tr>
@@ -216,16 +230,16 @@ const uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#acdd7fbd734b9d151849ddaeabfa5c779">newRenderPass</a> = true</td></tr>
 <tr class="memdesc:acdd7fbd734b9d151849ddaeabfa5c779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has a render pass just started (pipeline needs to be re-bound). <br /></td></tr>
 <tr class="separator:acdd7fbd734b9d151849ddaeabfa5c779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fee70d97ff560c92d7c760e796c57dd"><td class="memItemLeft" align="right" valign="top"><a id="a4fee70d97ff560c92d7c760e796c57dd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a4fee70d97ff560c92d7c760e796c57dd">inRenderPass</a> = false</td></tr>
-<tr class="memdesc:a4fee70d97ff560c92d7c760e796c57dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are we currently in a render pass. <br /></td></tr>
-<tr class="separator:a4fee70d97ff560c92d7c760e796c57dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a4933f242f5897fe5c5668a10cb63d"><td class="memItemLeft" align="right" valign="top"><a id="a27a4933f242f5897fe5c5668a10cb63d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_context.html#a27a4933f242f5897fe5c5668a10cb63d">hadRenderPass</a> = false</td></tr>
+<tr class="memdesc:a27a4933f242f5897fe5c5668a10cb63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has a render pass just ended. <br /></td></tr>
+<tr class="separator:a27a4933f242f5897fe5c5668a10cb63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Global <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> context, storing all structures used for resource allocation and tracking, operations recording and rendering. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a388905a2a9c08f881f4ef1f530f16191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388905a2a9c08f881f4ef1f530f16191">&#9670;&nbsp;</a></span>getCurrentCommandBuffer()</h2>
+<a id="ab13e66a703ee0780ff46255538683ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13e66a703ee0780ff46255538683ec6">&#9670;&nbsp;</a></span>getRenderCommandBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +248,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VkCommandBuffer&amp; GPUContext::getCurrentCommandBuffer </td>
+          <td class="memname">VkCommandBuffer&amp; GPUContext::getRenderCommandBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the command buffer for the current frame. </dd></dl>
+
+</div>
+</div>
+<a id="aff40d305939161fdb64406d3ce6092df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff40d305939161fdb64406d3ce6092df">&#9670;&nbsp;</a></span>getUploadCommandBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkCommandBuffer&amp; GPUContext::getUploadCommandBuffer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['view_4188',['View',['../class_filtering_app.html#abf08916aa59abe9a54706ff9510008b9',1,'FilteringApp']]]
+  ['uniformfrequency_4056',['UniformFrequency',['../group___resources.html#ga38f3190fffc8f7baddd47b6a16c3ebd0',1,'GPUTypes.hpp']]]
 ];

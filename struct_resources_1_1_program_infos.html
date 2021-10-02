@@ -108,6 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a7e558dc2fb3028bedf48c41ee2c679"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_resources_1_1_program_infos.html#a6a7e558dc2fb3028bedf48c41ee2c679">ProgramInfos</a> (const std::string &amp;vertex, const std::string &amp;fragment, const std::string &amp;tessControl, const std::string &amp;tessEval)</td></tr>
 <tr class="separator:a6a7e558dc2fb3028bedf48c41ee2c679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac487f445af6bdd4c70d33f9a3c75e5e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_resources_1_1_program_infos.html#ac487f445af6bdd4c70d33f9a3c75e5e3">ProgramInfos</a> (const std::string &amp;compute)</td></tr>
+<tr class="separator:ac487f445af6bdd4c70d33f9a3c75e5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -127,12 +129,16 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_resources_1_1_program_infos.html#a61a34124ee6aa780a0feb3978b74f429">tessEvalName</a></td></tr>
 <tr class="memdesc:a61a34124ee6aa780a0feb3978b74f429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tessellation evaluation shader filename. <br /></td></tr>
 <tr class="separator:a61a34124ee6aa780a0feb3978b74f429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27aece80f0276cc8c92650f75820a0c"><td class="memItemLeft" align="right" valign="top"><a id="ad27aece80f0276cc8c92650f75820a0c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_resources_1_1_program_infos.html#ad27aece80f0276cc8c92650f75820a0c">computeName</a></td></tr>
+<tr class="memdesc:ad27aece80f0276cc8c92650f75820a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute shader filename. <br /></td></tr>
+<tr class="separator:ad27aece80f0276cc8c92650f75820a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Additional program information for reloading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6a7e558dc2fb3028bedf48c41ee2c679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a7e558dc2fb3028bedf48c41ee2c679">&#9670;&nbsp;</a></span>ProgramInfos()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7e558dc2fb3028bedf48c41ee2c679">&#9670;&nbsp;</a></span>ProgramInfos() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,6 +180,30 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
     <tr><td class="paramname">fragment</td><td>fragment shader name </td></tr>
     <tr><td class="paramname">tessControl</td><td>tessellation control shader name </td></tr>
     <tr><td class="paramname">tessEval</td><td>tessellation evaluation shader name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac487f445af6bdd4c70d33f9a3c75e5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac487f445af6bdd4c70d33f9a3c75e5e3">&#9670;&nbsp;</a></span>ProgramInfos() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Resources::ProgramInfos::ProgramInfos </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>compute</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Basic constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">compute</td><td>compute shader name </td></tr>
   </table>
   </dd>
 </dl>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrap_4189',['Wrap',['../group___resources.html#gaf2cec82467b12344e9120a0f60fa1c76',1,'GPUTypes.hpp']]]
+  ['view_4057',['View',['../class_filtering_app.html#abf08916aa59abe9a54706ff9510008b9',1,'FilteringApp']]]
 ];

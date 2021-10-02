@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aba28e7e9b66e52ca6dd9d12f2e5ac93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ef43acf84433bc5a8336974cd33443a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_atmosphere.html#a4ef43acf84433bc5a8336974cd33443a">miePhase</a> (float cosAngle, float gMie)</td></tr>
 <tr class="separator:a4ef43acf84433bc5a8336974cd33443a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59f97a159af15110e6d988504868a489"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_atmosphere.html#a59f97a159af15110e6d988504868a489">computeAtmosphereRadiance</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, sampler2D scatterTable, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a> params)</td></tr>
-<tr class="separator:a59f97a159af15110e6d988504868a489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80196b9ee1797d4d158af8abb660f69"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_atmosphere.html#ad80196b9ee1797d4d158af8abb660f69">computeAtmosphereRadiance</a> (vec3 rayOrigin, vec3 rayDir, vec3 sunDir, texture2D scatterTable, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html">AtmosphereParameters</a> params)</td></tr>
+<tr class="separator:ad80196b9ee1797d4d158af8abb660f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -129,10 +129,10 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_atmosphere.html" title="Atmosphere general shader.">Atmosphere</a> general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPUShaders::Common::Geometry</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPUShaders::Common::Geometry</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a59f97a159af15110e6d988504868a489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59f97a159af15110e6d988504868a489">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
+<a id="ad80196b9ee1797d4d158af8abb660f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80196b9ee1797d4d158af8abb660f69">&#9670;&nbsp;</a></span>computeAtmosphereRadiance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +161,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sampler2D&#160;</td>
+          <td class="paramtype">texture2D&#160;</td>
           <td class="paramname"><em>scatterTable</em>, </td>
         </tr>
         <tr>

@@ -141,10 +141,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 : <a class="el" href="struct_terrain_1_1_generation_settings.html#ad47f8332d3129cbffda161dd6c09b600">Terrain::GenerationSettings</a>
 </li>
 <li>fetchOffset
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_blur__gaussian.html#a5724cfa889335bb5a93433d2395e7b92">GPUShaders::Frag::Blur_gaussian</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_blur__gaussian.html#a3c648e248428b730beab2b441d49c31a">GPUShaders::Frag::Blur_gaussian</a>
 </li>
-<li>filteredSmaller
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_upscale.html#a94847f8e55395be970166baabb6f26c1">GPUShaders::Frag::Upscale</a>
+<li>filter
+: <a class="el" href="struct_sampler_library_1_1_sampler_settings.html#a6b80cf8aeb479463713f86f65ab3d87a">SamplerLibrary::SamplerSettings</a>
+</li>
+<li>filtering
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a243afcbcfdda0b5a89f1067443774d87">GPUShaders::Frag::Image_display</a>
 </li>
 <li>first
 : <a class="el" href="struct_controller_1_1_controller_button.html#adb08261442cf17419058447c7643e3ef">Controller::ControllerButton</a>
@@ -154,9 +157,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>flipAxis
 : <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_image__display.html#a984cd47f02c0b42b54474e125f447a27">GPUShaders::Vert::Image_display</a>
 </li>
-<li>foamMap
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ocean__island.html#a351dfab6a621b7a91f71c352d9b0ea8f">GPUShaders::Frag::Ocean_island</a>
-</li>
 <li>focusDist
 : <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_dof__coc.html#a7de9b0c2fe59b5a2ea1f58722179f5ec">GPUShaders::Frag::Dof_coc</a>
 , <a class="el" href="struct_post_process_stack_1_1_settings.html#ac8bce11a47f445081eb197da22b53682">PostProcessStack::Settings</a>
@@ -164,9 +164,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>focusScale
 : <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_dof__coc.html#aa4a169863303fc0375deea862a064999">GPUShaders::Frag::Dof_coc</a>
 , <a class="el" href="struct_post_process_stack_1_1_settings.html#a4c1ab24dba0361bf8eb329bb817d5aac">PostProcessStack::Settings</a>
-</li>
-<li>fontSdfTexture
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_font__sdf.html#a073b2816241365fa9543bce670cbdd3c">GPUShaders::Frag::Font_sdf</a>
 </li>
 <li>forceAspectRatio
 : <a class="el" href="class_rendering_config.html#ad82d9898427740cd9a970580d2b02608">RenderingConfig</a>
@@ -177,20 +174,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>fragColor
 : <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ambient__pbr.html#a4deed029aff2a0324ca7106fa4c0798d">GPUShaders::Frag::Ambient_pbr</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__debug.html#a846ea21daf14a8f8bbf5d7ec17c501d5">GPUShaders::Frag::Atmosphere_debug</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__forward.html#af4f0c9ce7fbe59f338e3b184178b62c3">GPUShaders::Frag::Atmosphere_forward</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__gbuffer.html#ad2f099289543319014946c344c02b151">GPUShaders::Frag::Atmosphere_gbuffer</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__island.html#adcf1ec065bbb896404585d5c709028bf">GPUShaders::Frag::Atmosphere_island</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__params.html#ae0258787045142793232d80ff418b563">GPUShaders::Frag::Atmosphere_params</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__forward.html#a8366be6617f6d03a3ad916788f1918c1">GPUShaders::Frag::Background_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__gbuffer.html#ac7a00ffd1bde10664231f14f6f6a176c">GPUShaders::Frag::Background_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__infinity.html#ab612dbd5a4fb43df009a708eb5904c5e">GPUShaders::Frag::Background_infinity</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#a415574add288940d6f96f83e4f554321">GPUShaders::Frag::Bilateral</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bloom.html#a0b7f08f86c083cad7c069e026fa9c82c">GPUShaders::Frag::Bloom</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_blur__dual__filter__down.html#a07fa06387ccbbb1e8884b9b7d77f0e89">GPUShaders::Frag::Blur_dual_filter_down</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_blur__dual__filter__up.html#afd96d9d778334aee6257fe00e213fa88">GPUShaders::Frag::Blur_dual_filter_up</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_blur__gaussian.html#aefe0ebb62446e1a4f6a613f2ab26af83">GPUShaders::Frag::Blur_gaussian</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_box__blur__2d.html#a340ee4a755934a0d8b830397f342b0b2">GPUShaders::Frag::Box_blur_2d</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_box__blur__2d__approx.html#a4525fdb46279303b64e92b1d47cbdb56">GPUShaders::Frag::Box_blur_2d_approx</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_box__blur__2d__array.html#a67177c00db35aad66e0f7eb23ee847ca">GPUShaders::Frag::Box_blur_2d_array</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_box__blur__2d__array__approx.html#acb21c7de389976950eead8108c022da8">GPUShaders::Frag::Box_blur_2d_array_approx</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_box__blur__cube.html#a04561d4070cbc2a1f0a31a9f6e295ca6">GPUShaders::Frag::Box_blur_cube</a>
@@ -202,69 +191,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_cubemap__convo.html#aa620611a180ce1efbcae5c3e82997b3b">GPUShaders::Frag::Cubemap_convo</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_debug__texture__display.html#a1a596206585f4ae9101b2d49789cfcbb">GPUShaders::Frag::Debug_texture_display</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_directional__light__pbr.html#a90630d26718e7ca4435d2bed4d1df0a9">GPUShaders::Frag::Directional_light_pbr</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_dof__composite.html#a0ca1bfd6bbb52484d93964b6b2fa8260">GPUShaders::Frag::Dof_composite</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_dof__gather.html#a97f7d50f4ff43b1c7c1beb0cb1d5e0e1">GPUShaders::Frag::Dof_gather</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_downscale.html#a94bf13e11f16234acbe5fc543e684b02">GPUShaders::Frag::Downscale</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_fill__boundary.html#ac3edd501117d17c4361e8879b3f7d298">GPUShaders::Frag::Fill_boundary</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_downscale.html#a5559e2e06f25015d1fad45ed74327021">GPUShaders::Frag::Downscale</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_fill__color.html#a774b7a982f6ee2c73e0d8ffd65ca3b6b">GPUShaders::Frag::Fill_color</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_fill__combine.html#a36b09c28bef22f44441829a56c777a99">GPUShaders::Frag::Fill_combine</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_filter.html#a168f48a9973cd5535e75d3d1332a7dbf">GPUShaders::Frag::Filter</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_font__sdf.html#a1862dd3969f25669546a08b4b10a9207">GPUShaders::Frag::Font_sdf</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_filter.html#a9d3b07af66adfd8e9f4270f0521a12eb">GPUShaders::Frag::Filter</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_font__sdf.html#aaffb7ae8b889e58ff337f87d76604775">GPUShaders::Frag::Font_sdf</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_fxaa.html#afee884b988d8e960e1b4f3398d084c9b">GPUShaders::Frag::Fxaa</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_game__composite.html#a613840f79c69ac9c037a7e61eb8c6c02">GPUShaders::Frag::Game_composite</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ground__island.html#a08bea2ff63800b1ba7e1f96322a56faa">GPUShaders::Frag::Ground_island</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_image__display.html#a8704e267f46839c5d9dfe0bd95a8b079">GPUShaders::Frag::Image_display</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_laplacian.html#ae191c6a2caf76a6416ed0cd39d35f742">GPUShaders::Frag::Laplacian</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_light__debug.html#a4be4478aff8c2104e2183f072efa175e">GPUShaders::Frag::Light_debug</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_light__shadow__linear__variance.html#a4844e6b8ab0a1490f3261f70fabc14c9">GPUShaders::Frag::Light_shadow_linear_variance</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_light__shadow__variance.html#adf959ccd8f76958e2b5836fcd007ada4">GPUShaders::Frag::Light_shadow_variance</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_menu__button.html#a3a3df6c5ef842bf066417e25eaf1854f">GPUShaders::Frag::Menu_button</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_menu__image.html#ad71d3f8175b3a25f7316ff33665eba64">GPUShaders::Frag::Menu_image</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__basic__color.html#ae378ee65f04a86efeb095f6a7de443ab">GPUShaders::Frag::Object_basic_color</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__basic__lit.html#a6053903c0d7fbe06df2ce8883ca7160e">GPUShaders::Frag::Object_basic_lit</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__basic__lit__texture.html#aec9f38cf425b065a415f82840bd38eaf">GPUShaders::Frag::Object_basic_lit_texture</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__basic__texture.html#a254dac1fd40d4485829bce198bdcdeae">GPUShaders::Frag::Object_basic_texture</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__emissive__forward.html#a4664d257b272708222f06aeff504b5c7">GPUShaders::Frag::Object_emissive_forward</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__emissive__gbuffer.html#ae3ef3f553ef22cd610a8196c3b3520af">GPUShaders::Frag::Object_emissive_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__forward.html#adbc4effe9e33f8b17d87f5d22d5f1ea8">GPUShaders::Frag::Object_forward</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html#a44402ea884a25f16700fe1bc9d7b557d">GPUShaders::Frag::Object_gbuffer</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html#a214e2bf6462731d4d6ca19005393b005">GPUShaders::Frag::Object_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a9ab10904875e24904a60ef208d6abe6b">GPUShaders::Frag::Object_parallax_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__gbuffer.html#a02b53da88e803d392ea346ae9aabae97">GPUShaders::Frag::Object_parallax_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__transparent__forward.html#ab95519806b10f26b99d310b6a72697fd">GPUShaders::Frag::Object_transparent_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ocean__island.html#ae857729a0974cae1fa3af104add71ac6">GPUShaders::Frag::Ocean_island</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ocean__underwater.html#ac7a8b6b69d7639e377bd80ffb69db1d1">GPUShaders::Frag::Ocean_underwater</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_passthrough.html#a5ec1487c48836747eb2e3619ca4e3d37">GPUShaders::Frag::Passthrough</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_passthrough__pixelperfect.html#a762abc704b1d13d2fcc256e6a3f69b42">GPUShaders::Frag::Passthrough_pixelperfect</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_passthrough__shift.html#aabafdc2aad929a3362b1935c4f63a185">GPUShaders::Frag::Passthrough_shift</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_point__light__pbr.html#a9afbc265f3b5b6460f6da2b89e8b29e9">GPUShaders::Frag::Point_light_pbr</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_probe__debug.html#acc014bf1f1c8d899c86566ecab739a36">GPUShaders::Frag::Probe_debug</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_scale__texture.html#a8635b24a4b7cb5d484eca1648774d095">GPUShaders::Frag::Scale_texture</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_shaderbench.html#a5bde7d25a5da0456913a51fde3ab8f10">GPUShaders::Frag::Shaderbench</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_sharpening.html#ac16fdcab2df2c34fb2a09a71c3bd61c4">GPUShaders::Frag::Sharpening</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_skybox__basic.html#a08038cf7ec02a6e959307035d425caa6">GPUShaders::Frag::Skybox_basic</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_skybox__forward.html#af7205a34f19fb15e07db3d66dd903630">GPUShaders::Frag::Skybox_forward</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_skybox__gbuffer.html#aa38c4f5f0adb6919f7ab2f89268ddac7">GPUShaders::Frag::Skybox_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_skybox__shcoeffs.html#ad494fdb0c049fcd4ab232ea61d831fa3">GPUShaders::Frag::Skybox_shcoeffs</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_spot__light__pbr.html#a009d6d7f98636d2490c41bd1c5e81572">GPUShaders::Frag::Spot_light_pbr</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#ad09d894d425277c169d420a956d0a4c6">GPUShaders::Frag::Ssao</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_tonemap.html#aa73c05f19605ca545e8f792b65f767b0">GPUShaders::Frag::Tonemap</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_upscale.html#aee6301326aad2369045ab7cadce558dc">GPUShaders::Frag::Upscale</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_water__copy.html#a4f8076eff7bf0014cde01d8c0851ff15">GPUShaders::Frag::Water_copy</a>
 </li>
 <li>fragCoords
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_color__seeds.html#ae51a3edb01de8e22774c4cfbd06e4d78">GPUShaders::Frag::Color_seeds</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html#a74b3f6bc12442da313f93bbb0df2a2f4">GPUShaders::Frag::Distance_seeds</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_extract__seeds.html#a3e4fe05bf8eac2f2c208b04f07557534">GPUShaders::Frag::Extract_seeds</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_flood__fill.html#a30cf901537a4a53b4623e873bc9ae5f4">GPUShaders::Frag::Flood_fill</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_flood__fill.html#a30cf901537a4a53b4623e873bc9ae5f4">GPUShaders::Frag::Flood_fill</a>
 </li>
 <li>fragEffects
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__gbuffer.html#a7afa9b41b239fedc4a737dd27ae2ca8d">GPUShaders::Frag::Atmosphere_gbuffer</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__gbuffer.html#ae5edaaadfccca12990191fe115c49204">GPUShaders::Frag::Background_gbuffer</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__gbuffer.html#ae5edaaadfccca12990191fe115c49204">GPUShaders::Frag::Background_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_light__debug.html#acb9e1c3489a53b47f9c51dc746a88183">GPUShaders::Frag::Light_debug</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__emissive__gbuffer.html#a007b801a3df7f9b9a35b77ff23451cad">GPUShaders::Frag::Object_emissive_gbuffer</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html#a21a5d76b29bbf64de5eb5d8dbd44df29">GPUShaders::Frag::Object_gbuffer</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html#a6869a1d87e0f8eb8991cf00425c40269">GPUShaders::Frag::Object_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__gbuffer.html#a0b28f3883fc59e345ea49cf91c0167c1">GPUShaders::Frag::Object_parallax_gbuffer</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_skybox__gbuffer.html#afd63ff2c7edc3b32bc756040b27ab2f7">GPUShaders::Frag::Skybox_gbuffer</a>
 </li>
 <li>fragId
 : <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_colored__object.html#a2af4b96c6fe4117e14973bfd81f47c4f">GPUShaders::Frag::Colored_object</a>
@@ -273,25 +238,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 : <a class="el" href="struct_resources_1_1_program_infos.html#a15300f398df4c848bfc1ce2b7cdd4f10">Resources::ProgramInfos</a>
 </li>
 <li>fragNormal
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__gbuffer.html#abdb208eb5dcdf8c97d26e725ac0d92e2">GPUShaders::Frag::Atmosphere_gbuffer</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__gbuffer.html#ad3707e898997f9325e2c547622c2f309">GPUShaders::Frag::Background_gbuffer</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_background__gbuffer.html#ad3707e898997f9325e2c547622c2f309">GPUShaders::Frag::Background_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_colored__object.html#abbec2323e6705fe73e996571b1177f5b">GPUShaders::Frag::Colored_object</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_light__debug.html#aaed26ef86a6056889e6eabc4819149d6">GPUShaders::Frag::Light_debug</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__emissive__gbuffer.html#adcd09acaf4b421af3fc06099a93bebad">GPUShaders::Frag::Object_emissive_gbuffer</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html#ae34ddfdcb67026b191c55f77c8f39766">GPUShaders::Frag::Object_gbuffer</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html#a54d116339abbfc7249a31d3fcaddb52c">GPUShaders::Frag::Object_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__gbuffer.html#a950bc3124e5010878ef511a88330e11d">GPUShaders::Frag::Object_parallax_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__prepass__forward.html#a5ed130da8292692de94f85ed33be9421">GPUShaders::Frag::Object_prepass_forward</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_skybox__gbuffer.html#a76044707e66ff998ac3ea7c956796f39">GPUShaders::Frag::Skybox_gbuffer</a>
-</li>
-<li>fragPos
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__island.html#a3ab2402aace1f6b58ec1fd76270cbcf8">GPUShaders::Frag::Atmosphere_island</a>
-</li>
-<li>fragPosUnused
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ocean__underwater.html#ace923c08225df1fa23559967b16b8f47">GPUShaders::Frag::Ocean_underwater</a>
 </li>
 <li>fragWorldPos
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ground__island.html#a35a5df79bd126b02edde9cbd01c210bc">GPUShaders::Frag::Ground_island</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ocean__island.html#aa261dd80813abc23311934af0f44d73b">GPUShaders::Frag::Ocean_island</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ocean__island.html#aa261dd80813abc23311934af0f44d73b">GPUShaders::Frag::Ocean_island</a>
 </li>
 <li>frame
 : <a class="el" href="struct_async_texture_task.html#a7482b2d82e41446cec2954bec32551e1">AsyncTextureTask</a>
@@ -309,9 +264,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </li>
 <li>frameIndex
 : <a class="el" href="struct_g_p_u_context.html#ac68d62d9b31c45a149c6313c178c9807">GPUContext</a>
-</li>
-<li>fullResSharp
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_dof__composite.html#a7fb7313d4900a21af22f7510dd6622de">GPUShaders::Frag::Dof_composite</a>
 </li>
 <li>fullscreen
 : <a class="el" href="class_rendering_config.html#af10fc789575c92d51d429d12c7df8858">RenderingConfig</a>

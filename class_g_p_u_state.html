@@ -118,8 +118,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a1c828a0ff236bf7eb5936c32069d76b6">GPUState</a> ()=default</td></tr>
 <tr class="memdesc:a1c828a0ff236bf7eb5936c32069d76b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:a1c828a0ff236bf7eb5936c32069d76b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a4d7de3689a34409c940ae8dbaa64e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ab5a4d7de3689a34409c940ae8dbaa64e">isEquivalent</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;other) const</td></tr>
-<tr class="separator:ab5a4d7de3689a34409c940ae8dbaa64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd3e980d1029a0fcdc72c588a24d917"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#aafd3e980d1029a0fcdc72c588a24d917">isGraphicsEquivalent</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;other) const</td></tr>
+<tr class="separator:aafd3e980d1029a0fcdc72c588a24d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f6e4ddb1611ff73ecd9fd2175c0b3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#ac5f6e4ddb1611ff73ecd9fd2175c0b3a">isComputeEquivalent</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;other) const</td></tr>
+<tr class="separator:ac5f6e4ddb1611ff73ecd9fd2175c0b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -219,10 +221,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a51f66ae59028620021ee55efdbb7aa8d">sentinel</a> = false</td></tr>
 <tr class="memdesc:a51f66ae59028620021ee55efdbb7aa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to delimit the parameters that can be directly compared in memory. <br /></td></tr>
 <tr class="separator:a51f66ae59028620021ee55efdbb7aa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4fc5a4f0f1b20d2e76aa2dc59142fd"><td class="memItemLeft" align="right" valign="top"><a id="a4f4fc5a4f0f1b20d2e76aa2dc59142fd"></a>
-<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a4f4fc5a4f0f1b20d2e76aa2dc59142fd">program</a> = nullptr</td></tr>
-<tr class="memdesc:a4f4fc5a4f0f1b20d2e76aa2dc59142fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current program. <br /></td></tr>
-<tr class="separator:a4f4fc5a4f0f1b20d2e76aa2dc59142fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37c9080c04c7474a0489b1381280d6d"><td class="memItemLeft" align="right" valign="top"><a id="af37c9080c04c7474a0489b1381280d6d"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#af37c9080c04c7474a0489b1381280d6d">graphicsProgram</a> = nullptr</td></tr>
+<tr class="memdesc:af37c9080c04c7474a0489b1381280d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current graphics program. <br /></td></tr>
+<tr class="separator:af37c9080c04c7474a0489b1381280d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f91c0c082f88db3ec298f1e39698a3"><td class="memItemLeft" align="right" valign="top"><a id="a45f91c0c082f88db3ec298f1e39698a3"></a>
 const <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a45f91c0c082f88db3ec298f1e39698a3">mesh</a> = nullptr</td></tr>
 <tr class="memdesc:a45f91c0c082f88db3ec298f1e39698a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current mesh. <br /></td></tr>
@@ -231,19 +233,23 @@ const <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> *&#160;</td><td cla
 <a class="el" href="struct_g_p_u_state_1_1_framebuffer_infos.html">FramebufferInfos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a70081b913e77b391fcaa1fc589d76e4a">pass</a></td></tr>
 <tr class="memdesc:a70081b913e77b391fcaa1fc589d76e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current framebuffer. <br /></td></tr>
 <tr class="separator:a70081b913e77b391fcaa1fc589d76e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c58bd0bcfe9bfdf923bf993b60c1f96"><td class="memItemLeft" align="right" valign="top"><a id="a5c58bd0bcfe9bfdf923bf993b60c1f96"></a>
+<a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_state.html#a5c58bd0bcfe9bfdf923bf993b60c1f96">computeProgram</a> = nullptr</td></tr>
+<tr class="memdesc:a5c58bd0bcfe9bfdf923bf993b60c1f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current compute program. <br /></td></tr>
+<tr class="separator:a5c58bd0bcfe9bfdf923bf993b60c1f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state ; not all API options are exposed, only these that can be toggled in Rendu. </p>
 <dl class="section note"><dt>Note</dt><dd>This is only provided as a read-only state. Modifying attributes won't affect the current <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab5a4d7de3689a34409c940ae8dbaa64e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5a4d7de3689a34409c940ae8dbaa64e">&#9670;&nbsp;</a></span>isEquivalent()</h2>
+<a id="ac5f6e4ddb1611ff73ecd9fd2175c0b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f6e4ddb1611ff73ecd9fd2175c0b3a">&#9670;&nbsp;</a></span>isComputeEquivalent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool GPUState::isEquivalent </td>
+          <td class="memname">bool GPUState::isComputeEquivalent </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -251,7 +257,32 @@ const <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> *&#160;</td><td cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test if this state is equivalent (in a Vulkan pipeline state sense) to another. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Test if this state is equivalent (in a Vulkan compute pipeline state sense) to another. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>the state to compare to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if they are compatible </dd></dl>
+
+</div>
+</div>
+<a id="aafd3e980d1029a0fcdc72c588a24d917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd3e980d1029a0fcdc72c588a24d917">&#9670;&nbsp;</a></span>isGraphicsEquivalent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPUState::isGraphicsEquivalent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test if this state is equivalent (in a Vulkan graphics pipeline state sense) to another. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>the state to compare to </td></tr>
   </table>

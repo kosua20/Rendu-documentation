@@ -112,16 +112,20 @@ Functions</h2></td></tr>
 <tr class="separator:a907fa0e4040eb701ef79bcc4ea04a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b1ce16276d05f971afbafae680d406b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a7b1ce16276d05f971afbafae680d406b">getQueueFamilies</a> (VkPhysicalDevice device, VkSurfaceKHR surface, int &amp;graphicsFamily, int &amp;presentFamily)</td></tr>
 <tr class="separator:a7b1ce16276d05f971afbafae680d406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3fd5b46c1344391d7c6b8d4f0a3525"><td class="memItemLeft" align="right" valign="top">VkFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#aaa3fd5b46c1344391d7c6b8d4f0a3525">findSupportedFormat</a> (const VkPhysicalDevice &amp;physicalDevice, const std::vector&lt; VkFormat &gt; &amp;candidates, VkImageTiling tiling, VkFormatFeatureFlags features)</td></tr>
-<tr class="separator:aaa3fd5b46c1344391d7c6b8d4f0a3525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26280df8135485627c3addb55e40fb58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a26280df8135485627c3addb55e40fb58">convertFormat</a> (const VkFormat &amp;format)</td></tr>
+<tr class="separator:a26280df8135485627c3addb55e40fb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9b5b75f7ee9573c9ebb6963a0d311a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a1b9b5b75f7ee9573c9ebb6963a0d311a">findSupportedFormat</a> (const VkPhysicalDevice &amp;physicalDevice, const std::vector&lt; VkFormat &gt; &amp;candidates, VkImageTiling tiling, VkFormatFeatureFlags features)</td></tr>
+<tr class="separator:a1b9b5b75f7ee9573c9ebb6963a0d311a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a98850effd068d93377ec9bf5a6a8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#ab4a98850effd068d93377ec9bf5a6a8f">typesFromShape</a> (const <a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> &amp;shape, VkImageType &amp;imgType, VkImageViewType &amp;viewType)</td></tr>
 <tr class="separator:ab4a98850effd068d93377ec9bf5a6a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fde9eb0cce4d6ecb2298065775fd6ad"><td class="memItemLeft" align="right" valign="top">VkCommandBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a4fde9eb0cce4d6ecb2298065775fd6ad">startOneTimeCommandBuffer</a> (<a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;context)</td></tr>
-<tr class="separator:a4fde9eb0cce4d6ecb2298065775fd6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c3d4c2eea08b118305d0394d7bcbf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a53c3d4c2eea08b118305d0394d7bcbf3">endOneTimeCommandBuffer</a> (VkCommandBuffer &amp;commandBuffer, <a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;context)</td></tr>
-<tr class="separator:a53c3d4c2eea08b118305d0394d7bcbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239715f9ef8df8b886bc801b0026732b"><td class="memItemLeft" align="right" valign="top">VkCommandBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a239715f9ef8df8b886bc801b0026732b">beginSyncOperations</a> (<a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;context)</td></tr>
+<tr class="separator:a239715f9ef8df8b886bc801b0026732b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c36e3af9e415bb7822bb6005ab9537e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a8c36e3af9e415bb7822bb6005ab9537e">endSyncOperations</a> (VkCommandBuffer &amp;commandBuffer, <a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;context)</td></tr>
+<tr class="separator:a8c36e3af9e415bb7822bb6005ab9537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3395bb2764402c04ef5345347af7a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#af3395bb2764402c04ef5345347af7a4e">imageLayoutBarrier</a> (VkCommandBuffer &amp;commandBuffer, <a class="el" href="class_g_p_u_texture.html">GPUTexture</a> &amp;texture, VkImageLayout newLayout, uint mipStart, uint mipCount, uint layerStart, uint layerCount)</td></tr>
 <tr class="separator:af3395bb2764402c04ef5345347af7a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac833815d6312fa20564547c6b5de401e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#ac833815d6312fa20564547c6b5de401e">mipLayoutBarrier</a> (VkCommandBuffer &amp;commandBuffer, const <a class="el" href="class_texture.html">Texture</a> &amp;texture, VkImageLayout newLayout, uint mip)</td></tr>
+<tr class="separator:ac833815d6312fa20564547c6b5de401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab27ce41d25fc4df515e3fbe44df6b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#acab27ce41d25fc4df515e3fbe44df6b3">textureLayoutBarrier</a> (VkCommandBuffer &amp;commandBuffer, const <a class="el" href="class_texture.html">Texture</a> &amp;texture, VkImageLayout newLayout)</td></tr>
 <tr class="separator:acab27ce41d25fc4df515e3fbe44df6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c0473e485a1556de17ff3ea2f861206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a6c0473e485a1556de17ff3ea2f861206">createCommandBuffers</a> (<a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;context, uint count)</td></tr>
@@ -130,18 +134,43 @@ Functions</h2></td></tr>
 <tr class="separator:adc5568bb495cf4f4eb7e11eb59e65f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74afca0f6d88bf40828f7f03215c53a6"><td class="memItemLeft" align="right" valign="top">VkSamplerAddressMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a74afca0f6d88bf40828f7f03215c53a6">getGPUWrapping</a> (<a class="el" href="group___resources.html#gaf2cec82467b12344e9120a0f60fa1c76">Wrap</a> mode)</td></tr>
 <tr class="separator:a74afca0f6d88bf40828f7f03215c53a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66f5ebb20d24e95c2bf081ea0aabc1d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a66f5ebb20d24e95c2bf081ea0aabc1d5">getGPUFilter</a> (<a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filtering, VkFilter &amp;imgFiltering, VkSamplerMipmapMode &amp;mipFiltering)</td></tr>
-<tr class="separator:a66f5ebb20d24e95c2bf081ea0aabc1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67008a6c525f9afeda673ba95acfd3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#af67008a6c525f9afeda673ba95acfd3b">getGPUFilters</a> (<a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filtering, VkFilter &amp;imgFiltering, VkSamplerMipmapMode &amp;mipFiltering)</td></tr>
+<tr class="separator:af67008a6c525f9afeda673ba95acfd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032e8dc03b099601c09cf45428e8724a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a032e8dc03b099601c09cf45428e8724a">getGPULayout</a> (<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> typedFormat, VkFormat &amp;format)</td></tr>
 <tr class="separator:a032e8dc03b099601c09cf45428e8724a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b5b85ab49e1c643a53d5731b9ad81f"><td class="memItemLeft" align="right" valign="top">glm::uvec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a85b5b85ab49e1c643a53d5731b9ad81f">copyTextureRegionToBuffer</a> (VkCommandBuffer &amp;commandBuffer, const <a class="el" href="class_texture.html">Texture</a> &amp;srcTexture, std::shared_ptr&lt; <a class="el" href="class_transfer_buffer.html">TransferBuffer</a> &gt; &amp;dstBuffer, uint mipStart, uint mipCount, uint layerStart, uint layerCount, const glm::uvec2 &amp;offset, const glm::uvec2 &amp;size)</td></tr>
-<tr class="separator:a85b5b85ab49e1c643a53d5731b9ad81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864a41e2bd051a75409b1132ae31ac1f"><td class="memItemLeft" align="right" valign="top">glm::uvec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a864a41e2bd051a75409b1132ae31ac1f">copyTextureRegionToBuffer</a> (VkCommandBuffer &amp;commandBuffer, const <a class="el" href="class_texture.html">Texture</a> &amp;srcTexture, std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a> &gt; &amp;dstBuffer, uint mipStart, uint mipCount, uint layerStart, uint layerCount, const glm::uvec2 &amp;offset, const glm::uvec2 &amp;size)</td></tr>
+<tr class="separator:a864a41e2bd051a75409b1132ae31ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accc804a14eef3c929c3e888c558450fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#accc804a14eef3c929c3e888c558450fe">blitTexture</a> (VkCommandBuffer &amp;commandBuffer, const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;dst, uint mipStartSrc, uint mipStartDst, uint mipCount, uint layerStartSrc, uint layerStartDst, uint layerCount, const glm::uvec2 &amp;srcBaseOffset, const glm::uvec2 &amp;srcBaseSize, const glm::uvec2 &amp;dstBaseOffset, const glm::uvec2 &amp;dstBaseSize, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:accc804a14eef3c929c3e888c558450fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility functions for the Vulkan backend. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a239715f9ef8df8b886bc801b0026732b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239715f9ef8df8b886bc801b0026732b">&#9670;&nbsp;</a></span>beginSyncOperations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkCommandBuffer VkUtils::beginSyncOperations </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start a one-shot command buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> internal context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly created command buffer </dd></dl>
+
+</div>
+</div>
 <a id="accc804a14eef3c929c3e888c558450fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accc804a14eef3c929c3e888c558450fe">&#9670;&nbsp;</a></span>blitTexture()</h2>
 
@@ -379,8 +408,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a85b5b85ab49e1c643a53d5731b9ad81f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b5b85ab49e1c643a53d5731b9ad81f">&#9670;&nbsp;</a></span>copyTextureRegionToBuffer()</h2>
+<a id="a26280df8135485627c3addb55e40fb58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26280df8135485627c3addb55e40fb58">&#9670;&nbsp;</a></span>convertFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> VkUtils::convertFormat </td>
+          <td>(</td>
+          <td class="paramtype">const VkFormat &amp;&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert Vulkan format to Rendu format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>Vulkan format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the Rendu format </dd></dl>
+
+</div>
+</div>
+<a id="a864a41e2bd051a75409b1132ae31ac1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864a41e2bd051a75409b1132ae31ac1f">&#9670;&nbsp;</a></span>copyTextureRegionToBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +454,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_transfer_buffer.html">TransferBuffer</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>dstBuffer</em>, </td>
         </tr>
         <tr>
@@ -500,14 +554,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a53c3d4c2eea08b118305d0394d7bcbf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53c3d4c2eea08b118305d0394d7bcbf3">&#9670;&nbsp;</a></span>endOneTimeCommandBuffer()</h2>
+<a id="a8c36e3af9e415bb7822bb6005ab9537e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c36e3af9e415bb7822bb6005ab9537e">&#9670;&nbsp;</a></span>endSyncOperations()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VkUtils::endOneTimeCommandBuffer </td>
+          <td class="memname">void VkUtils::endSyncOperations </td>
           <td>(</td>
           <td class="paramtype">VkCommandBuffer &amp;&#160;</td>
           <td class="paramname"><em>commandBuffer</em>, </td>
@@ -535,14 +589,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa3fd5b46c1344391d7c6b8d4f0a3525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa3fd5b46c1344391d7c6b8d4f0a3525">&#9670;&nbsp;</a></span>findSupportedFormat()</h2>
+<a id="a1b9b5b75f7ee9573c9ebb6963a0d311a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9b5b75f7ee9573c9ebb6963a0d311a">&#9670;&nbsp;</a></span>findSupportedFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkFormat VkUtils::findSupportedFormat </td>
+          <td class="memname"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> VkUtils::findSupportedFormat </td>
           <td>(</td>
           <td class="paramtype">const VkPhysicalDevice &amp;&#160;</td>
           <td class="paramname"><em>physicalDevice</em>, </td>
@@ -585,14 +639,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a66f5ebb20d24e95c2bf081ea0aabc1d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66f5ebb20d24e95c2bf081ea0aabc1d5">&#9670;&nbsp;</a></span>getGPUFilter()</h2>
+<a id="af67008a6c525f9afeda673ba95acfd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af67008a6c525f9afeda673ba95acfd3b">&#9670;&nbsp;</a></span>getGPUFilters()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VkUtils::getGPUFilter </td>
+          <td class="memname">void VkUtils::getGPUFilters </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a>&#160;</td>
           <td class="paramname"><em>filtering</em>, </td>
@@ -616,7 +670,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Convert a Rendu texture filter to an interpolation and mipmap Vulkan filterings. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Convert a Rendu texture filter to an interpolation and mip map Vulkan filterings. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filtering</td><td>the texture filtering </td></tr>
     <tr><td class="paramname">imgFiltering</td><td>will contain the corresponding Vulkan image filtering </td></tr>
@@ -833,28 +887,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fde9eb0cce4d6ecb2298065775fd6ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fde9eb0cce4d6ecb2298065775fd6ad">&#9670;&nbsp;</a></span>startOneTimeCommandBuffer()</h2>
+<a id="ac833815d6312fa20564547c6b5de401e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac833815d6312fa20564547c6b5de401e">&#9670;&nbsp;</a></span>mipLayoutBarrier()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkCommandBuffer VkUtils::startOneTimeCommandBuffer </td>
+          <td class="memname">void VkUtils::mipLayoutBarrier </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
+          <td class="paramtype">VkCommandBuffer &amp;&#160;</td>
+          <td class="paramname"><em>commandBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageLayout&#160;</td>
+          <td class="paramname"><em>newLayout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>mip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start a one-shot command buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Apply a layout transition barrier to a whole mip level. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> internal context </td></tr>
+    <tr><td class="paramname">commandBuffer</td><td>the command buffer to record the operation on </td></tr>
+    <tr><td class="paramname">texture</td><td>the texture to transition </td></tr>
+    <tr><td class="paramname">newLayout</td><td>the new layout to apply </td></tr>
+    <tr><td class="paramname">mip</td><td>the mip level to transition </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the newly created command buffer </dd></dl>
 
 </div>
 </div>

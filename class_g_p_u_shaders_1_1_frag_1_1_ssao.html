@@ -118,22 +118,10 @@ Public Attributes</h2></td></tr>
 in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#a01c6b510edaf0038d10c6b579dc6a84d">uv</a></td></tr>
 <tr class="memdesc:a01c6b510edaf0038d10c6b579dc6a84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
 <tr class="separator:a01c6b510edaf0038d10c6b579dc6a84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7b79b158978af58082a485cde775845"><td class="memItemLeft" align="right" valign="top"><a id="ac7b79b158978af58082a485cde775845"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#ac7b79b158978af58082a485cde775845">depthTexture</a></td></tr>
-<tr class="memdesc:ac7b79b158978af58082a485cde775845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth texture. <br /></td></tr>
-<tr class="separator:ac7b79b158978af58082a485cde775845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ea204451cd46545cd98ed0a6bbeb60"><td class="memItemLeft" align="right" valign="top"><a id="aa8ea204451cd46545cd98ed0a6bbeb60"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#aa8ea204451cd46545cd98ed0a6bbeb60">normalTexture</a></td></tr>
-<tr class="memdesc:aa8ea204451cd46545cd98ed0a6bbeb60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal texture, in [0,1]. <br /></td></tr>
-<tr class="separator:aa8ea204451cd46545cd98ed0a6bbeb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99b3f8a2452b54ebef93c8e96058b7ac"><td class="memItemLeft" align="right" valign="top"><a id="a99b3f8a2452b54ebef93c8e96058b7ac"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#a99b3f8a2452b54ebef93c8e96058b7ac">noiseTexture</a></td></tr>
-<tr class="memdesc:a99b3f8a2452b54ebef93c8e96058b7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">5x5 3-components noise texture with float precision. <br /></td></tr>
-<tr class="separator:a99b3f8a2452b54ebef93c8e96058b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a54e3a0f703dd85961ee9feb4dbc904"><td class="memItemLeft" align="right" valign="top"><a id="a2a54e3a0f703dd85961ee9feb4dbc904"></a>
-uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#a2a54e3a0f703dd85961ee9feb4dbc904">projectionMatrix</a></td></tr>
-<tr class="memdesc:a2a54e3a0f703dd85961ee9feb4dbc904"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera projection parameters. <br /></td></tr>
-<tr class="separator:a2a54e3a0f703dd85961ee9feb4dbc904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f895842e8a0f661ac4931c4e9e6b037"><td class="memItemLeft" align="right" valign="top"><a id="a0f895842e8a0f661ac4931c4e9e6b037"></a>
+uniform uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#a0f895842e8a0f661ac4931c4e9e6b037">projectionMatrix</a></td></tr>
+<tr class="memdesc:a0f895842e8a0f661ac4931c4e9e6b037"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera projection parameters. <br /></td></tr>
+<tr class="separator:a0f895842e8a0f661ac4931c4e9e6b037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c16d838bebe9a537104813603fdb92"><td class="memItemLeft" align="right" valign="top"><a id="ac2c16d838bebe9a537104813603fdb92"></a>
 uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html#ac2c16d838bebe9a537104813603fdb92">radius</a></td></tr>
 <tr class="memdesc:ac2c16d838bebe9a537104813603fdb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sampling radius. <br /></td></tr>
@@ -149,7 +137,7 @@ out float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_ssao.html" title="Ssao fragment shader.">Ssao</a> fragment shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa8eb3e5d76286502b23309dda0d64ca1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8eb3e5d76286502b23309dda0d64ca1">&#9670;&nbsp;</a></span>main()</h2>

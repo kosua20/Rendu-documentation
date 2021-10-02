@@ -122,22 +122,10 @@ Public Attributes</h2></td></tr>
 in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#a965d51a5527ae4dcd4897dea723c3091">uv</a></td></tr>
 <tr class="memdesc:a965d51a5527ae4dcd4897dea723c3091"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
 <tr class="separator:a965d51a5527ae4dcd4897dea723c3091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1acbab68731e3e60b4579812b9b7582"><td class="memItemLeft" align="right" valign="top"><a id="aa1acbab68731e3e60b4579812b9b7582"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#aa1acbab68731e3e60b4579812b9b7582">source</a></td></tr>
-<tr class="memdesc:aa1acbab68731e3e60b4579812b9b7582"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> to blur. <br /></td></tr>
-<tr class="separator:aa1acbab68731e3e60b4579812b9b7582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac05653a017c4c4e541b7580c567cd849"><td class="memItemLeft" align="right" valign="top"><a id="ac05653a017c4c4e541b7580c567cd849"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#ac05653a017c4c4e541b7580c567cd849">depth</a></td></tr>
-<tr class="memdesc:ac05653a017c4c4e541b7580c567cd849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth information. <br /></td></tr>
-<tr class="separator:ac05653a017c4c4e541b7580c567cd849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2138656cd3c29e98c8c1a09a06a659"><td class="memItemLeft" align="right" valign="top"><a id="a2c2138656cd3c29e98c8c1a09a06a659"></a>
-uniform sampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#a2c2138656cd3c29e98c8c1a09a06a659">normal</a></td></tr>
-<tr class="memdesc:a2c2138656cd3c29e98c8c1a09a06a659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal information. <br /></td></tr>
-<tr class="separator:a2c2138656cd3c29e98c8c1a09a06a659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb402ab428398b21a7005b279805225f"><td class="memItemLeft" align="right" valign="top"><a id="abb402ab428398b21a7005b279805225f"></a>
-uniform vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#abb402ab428398b21a7005b279805225f">invDstSize</a></td></tr>
-<tr class="memdesc:abb402ab428398b21a7005b279805225f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of the target resolution. <br /></td></tr>
-<tr class="separator:abb402ab428398b21a7005b279805225f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1dd83a66e53a29da8c474b954f335c"><td class="memItemLeft" align="right" valign="top"><a id="acc1dd83a66e53a29da8c474b954f335c"></a>
+uniform uniform vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#acc1dd83a66e53a29da8c474b954f335c">invDstSize</a></td></tr>
+<tr class="memdesc:acc1dd83a66e53a29da8c474b954f335c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of the target resolution. <br /></td></tr>
+<tr class="separator:acc1dd83a66e53a29da8c474b954f335c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5db9f280c63c13bf7cddd815ab17dd3"><td class="memItemLeft" align="right" valign="top"><a id="ad5db9f280c63c13bf7cddd815ab17dd3"></a>
 uniform vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html#ad5db9f280c63c13bf7cddd815ab17dd3">projParams</a></td></tr>
 <tr class="memdesc:ad5db9f280c63c13bf7cddd815ab17dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projection depth-related coefficients. <br /></td></tr>
@@ -165,7 +153,7 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_bilateral.html" title="Bilateral fragment shader.">Bilateral</a> fragment shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aae4daec7e0338ee6d26757f522f0829b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae4daec7e0338ee6d26757f522f0829b">&#9670;&nbsp;</a></span>computeWeight()</h2>

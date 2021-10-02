@@ -162,6 +162,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6e108069334e832818c0ff01ef184959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5479f826d09f24ff722bb42dadf518ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a5479f826d09f24ff722bb42dadf518ce">Mesh</a> (<a class="el" href="class_mesh.html">Mesh</a> &amp;&amp;)</td></tr>
 <tr class="separator:a5479f826d09f24ff722bb42dadf518ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efe4da1a4c0971cfb037bd70304c303"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a5efe4da1a4c0971cfb037bd70304c303">~Mesh</a> ()</td></tr>
+<tr class="separator:a5efe4da1a4c0971cfb037bd70304c303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871a5d2fb63e6c0f497c7678f46d989a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_buffer.html">Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a871a5d2fb63e6c0f497c7678f46d989a">vertexBuffer</a> ()</td></tr>
+<tr class="separator:a871a5d2fb63e6c0f497c7678f46d989a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be760456b15be4764dd451994c11c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_buffer.html">Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a6be760456b15be4764dd451994c11c1c">indexBuffer</a> ()</td></tr>
+<tr class="separator:a6be760456b15be4764dd451994c11c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -375,6 +381,32 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a id="a5efe4da1a4c0971cfb037bd70304c303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efe4da1a4c0971cfb037bd70304c303">&#9670;&nbsp;</a></span>~Mesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::~Mesh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a35964e73990850fba5ace8c0f85bf6eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35964e73990850fba5ace8c0f85bf6eb">&#9670;&nbsp;</a></span>clean()</h2>
@@ -523,6 +555,24 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 <p>Did the mesh contained texture coordinates initially. </p><dl class="section return"><dt>Returns</dt><dd>true if it did </dd></dl>
+
+</div>
+</div>
+<a id="a6be760456b15be4764dd451994c11c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be760456b15be4764dd451994c11c1c">&#9670;&nbsp;</a></span>indexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_buffer.html">Buffer</a> &amp; Mesh::indexBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> vertex buffer if it exists </dd></dl>
 
 </div>
 </div>
@@ -693,6 +743,24 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 <p>Send to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>
+
+</div>
+</div>
+<a id="a871a5d2fb63e6c0f497c7678f46d989a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871a5d2fb63e6c0f497c7678f46d989a">&#9670;&nbsp;</a></span>vertexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_buffer.html">Buffer</a> &amp; Mesh::vertexBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> vertex buffer if it exists </dd></dl>
 
 </div>
 </div>

@@ -141,8 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af8ce1087dbe57c2e2cf1af3b21302779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5119d42981f426da73f7c56d0ba1548b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_mesh.html">Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a5119d42981f426da73f7c56d0ba1548b">getMesh</a> (const std::string &amp;name, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
 <tr class="separator:a5119d42981f426da73f7c56d0ba1548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbe21300477d617f5c4b7b3798c171e1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#abbe21300477d617f5c4b7b3798c171e1">getTexture</a> (const std::string &amp;name, const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;descriptor, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options, const std::string &amp;refName=&quot;&quot;)</td></tr>
-<tr class="separator:abbe21300477d617f5c4b7b3798c171e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3646cc8e4dfa0b339f79ef8781628eb1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a3646cc8e4dfa0b339f79ef8781628eb1">getTexture</a> (const std::string &amp;name, const <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> &amp;format, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options, const std::string &amp;refName=&quot;&quot;)</td></tr>
+<tr class="separator:a3646cc8e4dfa0b339f79ef8781628eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799441fb3d432a1ba426fafa70c2e5cf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a799441fb3d432a1ba426fafa70c2e5cf">getTexture</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a799441fb3d432a1ba426fafa70c2e5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58a9d89f3b603e5ab175937580f87f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ac58a9d89f3b603e5ab175937580f87f2">getDefaultTexture</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape)</td></tr>
@@ -151,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b4af385de93bb3dbe42ae34bdaa2ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ba04529751b4c6affb28e0f96ce175"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#a38ba04529751b4c6affb28e0f96ce175">getProgram2D</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a38ba04529751b4c6affb28e0f96ce175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d74850cc401ec62c3dd837b055912e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aa6d74850cc401ec62c3dd837b055912e">getProgramCompute</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:aa6d74850cc401ec62c3dd837b055912e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade47f4489fcb4c702b62271f145ef1a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_font.html">Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#ade47f4489fcb4c702b62271f145ef1a1">getFont</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:ade47f4489fcb4c702b62271f145ef1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaf417d329b2bf27766662aef2e18038"><td class="memItemLeft" align="right" valign="top">const Data *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources.html#aeaf417d329b2bf27766662aef2e18038">getData</a> (const std::string &amp;filename)</td></tr>
@@ -755,6 +757,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="aa6d74850cc401ec62c3dd837b055912e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d74850cc401ec62c3dd837b055912e">&#9670;&nbsp;</a></span>getProgramCompute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_program.html">Program</a> * Resources::getProgramCompute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> program resource for compute. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the compute shader </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the program informations </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GPU::Vert::Passthrough </dd></dl>
+
+</div>
+</div>
 <a id="ab2aaed46f5a049f007a290b14af9fcb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2aaed46f5a049f007a290b14af9fcb1">&#9670;&nbsp;</a></span>getRawData()</h2>
 
@@ -910,8 +938,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="abbe21300477d617f5c4b7b3798c171e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbe21300477d617f5c4b7b3798c171e1">&#9670;&nbsp;</a></span>getTexture() <span class="overload">[2/2]</span></h2>
+<a id="a3646cc8e4dfa0b339f79ef8781628eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3646cc8e4dfa0b339f79ef8781628eb1">&#9670;&nbsp;</a></span>getTexture() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,8 +953,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_descriptor.html">Descriptor</a> &amp;&#160;</td>
-          <td class="paramname"><em>descriptor</em>, </td>
+          <td class="paramtype">const <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -950,7 +978,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p>Get a texture resource. Automatically handle custom mipmaps if present. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the texture base name </td></tr>
-    <tr><td class="paramname">descriptor</td><td>the texture layout to use </td></tr>
+    <tr><td class="paramname">format</td><td>the texture format to use </td></tr>
     <tr><td class="paramname">options</td><td>data loading and storage options </td></tr>
     <tr><td class="paramname">refName</td><td>the name to use for the texture in future calls </td></tr>
   </table>

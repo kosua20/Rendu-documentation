@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!--header-->
 <div class="contents">
 
-<p>Create and reuse <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> pipelines based on a given state.  
+<p>Create and reuse <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> pipelines based on a given state. This supports both graphics and compute pipelines.  
  <a href="class_pipeline_cache.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_pipeline_cache_8hpp_source.html">PipelineCache.hpp</a>&gt;</code></p>
@@ -121,8 +121,10 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8487f8c8fcbaa13129bf4de43e3a68e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#ae8487f8c8fcbaa13129bf4de43e3a68e">init</a> ()</td></tr>
 <tr class="separator:ae8487f8c8fcbaa13129bf4de43e3a68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb69ae08a21330942fced9e4047dff8"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#acdb69ae08a21330942fced9e4047dff8">getPipeline</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
-<tr class="separator:acdb69ae08a21330942fced9e4047dff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8e5f0360c480ff13c03df1e19b23b2"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#abe8e5f0360c480ff13c03df1e19b23b2">getGraphicsPipeline</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
+<tr class="separator:abe8e5f0360c480ff13c03df1e19b23b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d483476cb63e645297d136daa1fa89"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#af9d483476cb63e645297d136daa1fa89">getComputePipeline</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
+<tr class="separator:af9d483476cb63e645297d136daa1fa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af289dfd491f29ab5349322587cd4f79d"><td class="memItemLeft" align="right" valign="top"><a id="af289dfd491f29ab5349322587cd4f79d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#af289dfd491f29ab5349322587cd4f79d">freeOutdatedPipelines</a> ()</td></tr>
 <tr class="memdesc:af289dfd491f29ab5349322587cd4f79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy pipelines that are referencing outdated state and are not used anymore. <br /></td></tr>
@@ -136,24 +138,34 @@ Private Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#a356bbb5d4827cdce1068b7656faa23a7">ProgramPipelines</a> = std::unordered_multimap&lt; uint64_t, <a class="el" href="struct_pipeline_cache_1_1_entry.html">Entry</a> &gt;</td></tr>
 <tr class="memdesc:a356bbb5d4827cdce1068b7656faa23a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per program pipeline type. <br /></td></tr>
 <tr class="separator:a356bbb5d4827cdce1068b7656faa23a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a728cd0d86c39b47ab3e0e3c411a926d4"><td class="memItemLeft" align="right" valign="top"><a id="a728cd0d86c39b47ab3e0e3c411a926d4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#a728cd0d86c39b47ab3e0e3c411a926d4">Cache</a> = std::unordered_map&lt; const <a class="el" href="class_program.html">Program</a> *, <a class="el" href="class_pipeline_cache.html#a356bbb5d4827cdce1068b7656faa23a7">ProgramPipelines</a> &gt;</td></tr>
-<tr class="memdesc:a728cd0d86c39b47ab3e0e3c411a926d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete cache type. <br /></td></tr>
-<tr class="separator:a728cd0d86c39b47ab3e0e3c411a926d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3575b8b93e8381417293f307b316d8c1"><td class="memItemLeft" align="right" valign="top"><a id="a3575b8b93e8381417293f307b316d8c1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#a3575b8b93e8381417293f307b316d8c1">GraphicCache</a> = std::unordered_map&lt; const <a class="el" href="class_program.html">Program</a> *, <a class="el" href="class_pipeline_cache.html#a356bbb5d4827cdce1068b7656faa23a7">ProgramPipelines</a> &gt;</td></tr>
+<tr class="memdesc:a3575b8b93e8381417293f307b316d8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete cache type. <br /></td></tr>
+<tr class="separator:a3575b8b93e8381417293f307b316d8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1786ec81f2951c6e2795d9f666bba5a"><td class="memItemLeft" align="right" valign="top"><a id="ab1786ec81f2951c6e2795d9f666bba5a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#ab1786ec81f2951c6e2795d9f666bba5a">ComputeCache</a> = std::unordered_map&lt; const <a class="el" href="class_program.html">Program</a> *, VkPipeline &gt;</td></tr>
+<tr class="memdesc:ab1786ec81f2951c6e2795d9f666bba5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete cache type. <br /></td></tr>
+<tr class="separator:ab1786ec81f2951c6e2795d9f666bba5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aa0bf63092134c4737dea5263f804712c"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#aa0bf63092134c4737dea5263f804712c">createNewPipeline</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state, const uint64_t hash)</td></tr>
 <tr class="separator:aa0bf63092134c4737dea5263f804712c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa24ae0bdf26291d9ecdfe9d5f83ae31d"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#aa24ae0bdf26291d9ecdfe9d5f83ae31d">buildPipeline</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
-<tr class="separator:aa24ae0bdf26291d9ecdfe9d5f83ae31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13875daaf2fee3923c96f1981d422325"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#a13875daaf2fee3923c96f1981d422325">buildGraphicsPipeline</a> (const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;state)</td></tr>
+<tr class="separator:a13875daaf2fee3923c96f1981d422325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda551be630ca3c892f1aee8c6a21ac0"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#afda551be630ca3c892f1aee8c6a21ac0">buildComputePipeline</a> (<a class="el" href="class_program.html">Program</a> &amp;program)</td></tr>
+<tr class="separator:afda551be630ca3c892f1aee8c6a21ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a150838e85a51d6603e87d6eb61499682"><td class="memItemLeft" align="right" valign="top"><a id="a150838e85a51d6603e87d6eb61499682"></a>
-<a class="el" href="class_pipeline_cache.html#a728cd0d86c39b47ab3e0e3c411a926d4">Cache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#a150838e85a51d6603e87d6eb61499682">_pipelines</a></td></tr>
-<tr class="memdesc:a150838e85a51d6603e87d6eb61499682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipeline cache. <br /></td></tr>
-<tr class="separator:a150838e85a51d6603e87d6eb61499682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cdb71a62335faa56addc7ba51659872"><td class="memItemLeft" align="right" valign="top"><a id="a1cdb71a62335faa56addc7ba51659872"></a>
+<a class="el" href="class_pipeline_cache.html#a3575b8b93e8381417293f307b316d8c1">GraphicCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#a1cdb71a62335faa56addc7ba51659872">_graphicPipelines</a></td></tr>
+<tr class="memdesc:a1cdb71a62335faa56addc7ba51659872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics pipeline cache. <br /></td></tr>
+<tr class="separator:a1cdb71a62335faa56addc7ba51659872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ebc9ba1fee3c6e92e9638b85d2b5e6"><td class="memItemLeft" align="right" valign="top"><a id="ae1ebc9ba1fee3c6e92e9638b85d2b5e6"></a>
+<a class="el" href="class_pipeline_cache.html#ab1786ec81f2951c6e2795d9f666bba5a">ComputeCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#ae1ebc9ba1fee3c6e92e9638b85d2b5e6">_computePipelines</a></td></tr>
+<tr class="memdesc:ae1ebc9ba1fee3c6e92e9638b85d2b5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute pipeline cache. <br /></td></tr>
+<tr class="separator:ae1ebc9ba1fee3c6e92e9638b85d2b5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9acf58d491be575981122a9c2d7f5e5"><td class="memItemLeft" align="right" valign="top"><a id="ac9acf58d491be575981122a9c2d7f5e5"></a>
 VkPipelineCache&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pipeline_cache.html#ac9acf58d491be575981122a9c2d7f5e5">_vulkanCache</a> = VK_NULL_HANDLE</td></tr>
 <tr class="memdesc:ac9acf58d491be575981122a9c2d7f5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vulkan pipeline cache. <br /></td></tr>
@@ -164,11 +176,11 @@ std::deque&lt; <a class="el" href="struct_pipeline_cache_1_1_pipeline_to_delete.
 <tr class="separator:a37478c1442f4d79de61c1255960953eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Create and reuse <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> pipelines based on a given state. </p>
+<div class="textblock"><p>Create and reuse <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> pipelines based on a given state. This supports both graphics and compute pipelines. </p>
 <p>We use a two-levels cache, first sorting by <a class="el" href="class_program.html" title="Represents a group of shaders used for rendering.">Program</a> because each program only has one instance (and thus one pointer adress) that we can use directly to retrieve pipelines. Then we use a hash of the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state parameters to retrieve compatible pipelines, and compare mesh and framebuffer layouts manually as duplicates will be quite rare. (usually a program is used with a specific set of meshes and a fixed framebuffer). We could compare program layouts to share pipelines between similar programs, but it would be more complex. A Vulkan cache is also used internally, saved on disk and restored at loading. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa24ae0bdf26291d9ecdfe9d5f83ae31d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa24ae0bdf26291d9ecdfe9d5f83ae31d">&#9670;&nbsp;</a></span>buildPipeline()</h2>
+<a id="afda551be630ca3c892f1aee8c6a21ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda551be630ca3c892f1aee8c6a21ac0">&#9670;&nbsp;</a></span>buildComputePipeline()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +189,40 @@ std::deque&lt; <a class="el" href="struct_pipeline_cache_1_1_pipeline_to_delete.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VkPipeline PipelineCache::buildPipeline </td>
+          <td class="memname">VkPipeline PipelineCache::buildComputePipeline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_program.html">Program</a> &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Build a compute pipeline from a given compute program. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">program</td><td>the program to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly created pipeline </dd></dl>
+
+</div>
+</div>
+<a id="a13875daaf2fee3923c96f1981d422325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13875daaf2fee3923c96f1981d422325">&#9670;&nbsp;</a></span>buildGraphicsPipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipeline PipelineCache::buildGraphicsPipeline </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -190,7 +235,7 @@ std::deque&lt; <a class="el" href="struct_pipeline_cache_1_1_pipeline_to_delete.
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Build a pipeline from a given state. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Build a graphics pipeline from a given graphics state. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>the state to use </td></tr>
   </table>
@@ -262,14 +307,14 @@ std::deque&lt; <a class="el" href="struct_pipeline_cache_1_1_pipeline_to_delete.
 
 </div>
 </div>
-<a id="acdb69ae08a21330942fced9e4047dff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdb69ae08a21330942fced9e4047dff8">&#9670;&nbsp;</a></span>getPipeline()</h2>
+<a id="af9d483476cb63e645297d136daa1fa89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d483476cb63e645297d136daa1fa89">&#9670;&nbsp;</a></span>getComputePipeline()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkPipeline PipelineCache::getPipeline </td>
+          <td class="memname">VkPipeline PipelineCache::getComputePipeline </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -277,7 +322,32 @@ std::deque&lt; <a class="el" href="struct_pipeline_cache_1_1_pipeline_to_delete.
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieve a pipeline for a given <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> state, or create it if needed. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieve a pipeline for a given <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> compute state, or create it if needed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>the state to represent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding native pipeline </dd></dl>
+
+</div>
+</div>
+<a id="abe8e5f0360c480ff13c03df1e19b23b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8e5f0360c480ff13c03df1e19b23b2">&#9670;&nbsp;</a></span>getGraphicsPipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipeline PipelineCache::getGraphicsPipeline </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_p_u_state.html">GPUState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a pipeline for a given <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> graphics state, or create it if needed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>the state to represent </td></tr>
   </table>

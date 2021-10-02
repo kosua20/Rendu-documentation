@@ -118,21 +118,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad25ab401c15c8c3355e10b542c3761bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a813a753fcf639f909428d50aa809d0b8"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a813a753fcf639f909428d50aa809d0b8">ggx</a> (vec3 n, vec3 v, vec3 l, vec3 F0, float roughness)</td></tr>
 <tr class="separator:a813a753fcf639f909428d50aa809d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3ab87be77ea52f465a40469a6180c96"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#af3ab87be77ea52f465a40469a6180c96">radiance</a> (vec3 n, vec3 v, vec3 p, float roughness, samplerCube cubeMap, vec3 cubePos, vec3 cubeCenter, vec3 cubeExtent, vec2 cubeRotCosSin, float upLod)</td></tr>
-<tr class="separator:af3ab87be77ea52f465a40469a6180c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75920d44ddb9c727c78430cee9ff3679"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a75920d44ddb9c727c78430cee9ff3679">radiance</a> (vec3 n, vec3 v, vec3 p, float roughness, textureCube cubeMap, vec3 cubePos, vec3 cubeCenter, vec3 cubeExtent, vec2 cubeRotCosSin, float upLod)</td></tr>
+<tr class="separator:a75920d44ddb9c727c78430cee9ff3679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd01a51db914dfeb8a631894c619e1f"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aebd01a51db914dfeb8a631894c619e1f">applySH</a> (vec3 wn, vec4 coeffs[9])</td></tr>
 <tr class="separator:aebd01a51db914dfeb8a631894c619e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d144dfba7fdd4b82209e9c8b563a046"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a3d144dfba7fdd4b82209e9c8b563a046">approximateSpecularAO</a> (float diffuseAO, float NdotV, float roughness)</td></tr>
 <tr class="separator:a3d144dfba7fdd4b82209e9c8b563a046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa569f2726db62cd8d8bcf5c643f64236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aa569f2726db62cd8d8bcf5c643f64236">ambientBrdf</a> (vec3 baseColor, float metallic, float roughness, float NdotV, sampler2D brdfCoeffs, out vec3 diffuse, out vec3 specular)</td></tr>
-<tr class="separator:aa569f2726db62cd8d8bcf5c643f64236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa904ef6810dfc385c370d547d7a71b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aaa904ef6810dfc385c370d547d7a71b2">ambientBrdf</a> (vec3 baseColor, float metallic, float roughness, float NdotV, texture2D brdfCoeffs, out vec3 diffuse, out vec3 specular)</td></tr>
+<tr class="separator:aaa904ef6810dfc385c370d547d7a71b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_g_p_u_shaders_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPUShaders::Common::Geometry</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPUShaders::Common::Geometry</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa569f2726db62cd8d8bcf5c643f64236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa569f2726db62cd8d8bcf5c643f64236">&#9670;&nbsp;</a></span>ambientBrdf()</h2>
+<a id="aaa904ef6810dfc385c370d547d7a71b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa904ef6810dfc385c370d547d7a71b2">&#9670;&nbsp;</a></span>ambientBrdf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sampler2D&#160;</td>
+          <td class="paramtype">texture2D&#160;</td>
           <td class="paramname"><em>brdfCoeffs</em>, </td>
         </tr>
         <tr>
@@ -457,8 +457,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af3ab87be77ea52f465a40469a6180c96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3ab87be77ea52f465a40469a6180c96">&#9670;&nbsp;</a></span>radiance()</h2>
+<a id="a75920d44ddb9c727c78430cee9ff3679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75920d44ddb9c727c78430cee9ff3679">&#9670;&nbsp;</a></span>radiance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -493,7 +493,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">samplerCube&#160;</td>
+          <td class="paramtype">textureCube&#160;</td>
           <td class="paramname"><em>cubeMap</em>, </td>
         </tr>
         <tr>

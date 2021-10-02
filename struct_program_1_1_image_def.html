@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rendu: GPUShaders::Frag::Distance_seeds Class Reference</title>
+<title>Rendu: Program::ImageDef Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,73 +91,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_g_p_u_shaders.html">GPUShaders</a></li><li class="navelem"><a class="el" href="namespace_g_p_u_shaders_1_1_frag.html">Frag</a></li><li class="navelem"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html">Distance_seeds</a></li>  </ul>
+<li class="navelem"><a class="el" href="class_program.html">Program</a></li><li class="navelem"><a class="el" href="struct_program_1_1_image_def.html">ImageDef</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds-members.html">List of all members</a>  </div>
+<a href="struct_program_1_1_image_def-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GPUShaders::Frag::Distance_seeds Class Reference<div class="ingroups"><a class="el" href="group___shaders.html">Shaders</a></div></div>  </div>
+<div class="title">Program::ImageDef Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Distance seeds fragment shader.  
- <a href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html#details">More...</a></p>
+<p>Image-sampler reflection information.  
+ <a href="struct_program_1_1_image_def.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_program_8hpp_source.html">Program.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a5845efc7323c4ca170dd286643ebc4bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html#a5845efc7323c4ca170dd286643ebc4bf">main</a> ()</td></tr>
-<tr class="separator:a5845efc7323c4ca170dd286643ebc4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a01ce5c1df1800b40adb49f3735ad6861"><td class="memItemLeft" align="right" valign="top"><a id="a01ce5c1df1800b40adb49f3735ad6861"></a>
-in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html#a01ce5c1df1800b40adb49f3735ad6861">uv</a></td></tr>
-<tr class="memdesc:a01ce5c1df1800b40adb49f3735ad6861"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
-<tr class="separator:a01ce5c1df1800b40adb49f3735ad6861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4efc5230fc4387e0f0ec73de412a5bf6"><td class="memItemLeft" align="right" valign="top"><a id="a4efc5230fc4387e0f0ec73de412a5bf6"></a>
-uniform usampler2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html#a4efc5230fc4387e0f0ec73de412a5bf6">coordsTexture</a></td></tr>
-<tr class="memdesc:a4efc5230fc4387e0f0ec73de412a5bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seeds coordinates map. <br /></td></tr>
-<tr class="separator:a4efc5230fc4387e0f0ec73de412a5bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b3f6bc12442da313f93bbb0df2a2f4"><td class="memItemLeft" align="right" valign="top"><a id="a74b3f6bc12442da313f93bbb0df2a2f4"></a>
-out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_distance__seeds.html#a74b3f6bc12442da313f93bbb0df2a2f4">fragCoords</a></td></tr>
-<tr class="memdesc:a74b3f6bc12442da313f93bbb0df2a2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance. <br /></td></tr>
-<tr class="separator:a74b3f6bc12442da313f93bbb0df2a2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2210432c2e18f13ce44917dc635f07de"><td class="memItemLeft" align="right" valign="top"><a id="a2210432c2e18f13ce44917dc635f07de"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_image_def.html#a2210432c2e18f13ce44917dc635f07de">name</a></td></tr>
+<tr class="memdesc:a2210432c2e18f13ce44917dc635f07de"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> name. <br /></td></tr>
+<tr class="separator:a2210432c2e18f13ce44917dc635f07de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28c05cc85320e1e4f3a029d309fa549"><td class="memItemLeft" align="right" valign="top"><a id="ac28c05cc85320e1e4f3a029d309fa549"></a>
+<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_image_def.html#ac28c05cc85320e1e4f3a029d309fa549">shape</a></td></tr>
+<tr class="memdesc:ac28c05cc85320e1e4f3a029d309fa549"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> shape. <br /></td></tr>
+<tr class="separator:ac28c05cc85320e1e4f3a029d309fa549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a4d0c3e52463c49f1856a3bbba5fc"><td class="memItemLeft" align="right" valign="top"><a id="ab35a4d0c3e52463c49f1856a3bbba5fc"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_image_def.html#ab35a4d0c3e52463c49f1856a3bbba5fc">binding</a></td></tr>
+<tr class="memdesc:ab35a4d0c3e52463c49f1856a3bbba5fc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> binding location. <br /></td></tr>
+<tr class="separator:ab35a4d0c3e52463c49f1856a3bbba5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec273ce3c9b8eabca36bd92a576385b"><td class="memItemLeft" align="right" valign="top"><a id="a1ec273ce3c9b8eabca36bd92a576385b"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_image_def.html#a1ec273ce3c9b8eabca36bd92a576385b">set</a></td></tr>
+<tr class="memdesc:a1ec273ce3c9b8eabca36bd92a576385b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_image.html" title="Represents an image composed of pixels with values in [0,1]. Provide image loading/saving utilities,...">Image</a> binding set. <br /></td></tr>
+<tr class="separator:a1ec273ce3c9b8eabca36bd92a576385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17ead7d340e35cd705762365dd5c47b"><td class="memItemLeft" align="right" valign="top"><a id="ac17ead7d340e35cd705762365dd5c47b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_image_def.html#ac17ead7d340e35cd705762365dd5c47b">storage</a></td></tr>
+<tr class="memdesc:ac17ead7d340e35cd705762365dd5c47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a storage image. <br /></td></tr>
+<tr class="separator:ac17ead7d340e35cd705762365dd5c47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Distance seeds fragment shader. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5845efc7323c4ca170dd286643ebc4bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5845efc7323c4ca170dd286643ebc4bf">&#9670;&nbsp;</a></span>main()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPUShaders::Frag::Distance_seeds::main </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>For each pixel, fetch the closest seed coordinates, and output the normalized euclidean distance with the current point. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>resources/common/shaders/screens/floodfill/distance-seeds.frag</li>
+<div class="textblock"><p>Image-sampler reflection information. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/engine/graphics/<a class="el" href="_program_8hpp_source.html">Program.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
