@@ -109,8 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9066bba3668bd73298977e0d7dcd04a"><td class="memItemLeft" align="right" valign="top">vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_brdf__sampler.html#ab9066bba3668bd73298977e0d7dcd04a">ggx</a> (float NdotV, float roughness)</td></tr>
-<tr class="separator:ab9066bba3668bd73298977e0d7dcd04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793a7c151959a28919a2f7fd971c4be7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_brdf__sampler.html#a793a7c151959a28919a2f7fd971c4be7">ggx</a> (float NdotV, float roughness)</td></tr>
+<tr class="separator:a793a7c151959a28919a2f7fd971c4be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841db2bd267da11007c27e983324074c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_brdf__sampler.html#a841db2bd267da11007c27e983324074c">main</a> ()</td></tr>
 <tr class="separator:a841db2bd267da11007c27e983324074c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,17 +120,17 @@ Public Attributes</h2></td></tr>
 in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_brdf__sampler.html#a5713bac92eb296c60c90f5be142b2c01">uv</a></td></tr>
 <tr class="memdesc:a5713bac92eb296c60c90f5be142b2c01"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> coordinates. <br /></td></tr>
 <tr class="separator:a5713bac92eb296c60c90f5be142b2c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad237e23cd3f2d5ffe49942b5efa2414"><td class="memItemLeft" align="right" valign="top"><a id="aad237e23cd3f2d5ffe49942b5efa2414"></a>
-out vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_brdf__sampler.html#aad237e23cd3f2d5ffe49942b5efa2414">fragColor</a></td></tr>
-<tr class="memdesc:aad237e23cd3f2d5ffe49942b5efa2414"><td class="mdescLeft">&#160;</td><td class="mdescRight">BRDF linear coefficients. <br /></td></tr>
-<tr class="separator:aad237e23cd3f2d5ffe49942b5efa2414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d84aef129ccfb4c461a338cc14cb7d"><td class="memItemLeft" align="right" valign="top"><a id="a08d84aef129ccfb4c461a338cc14cb7d"></a>
+out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_brdf__sampler.html#a08d84aef129ccfb4c461a338cc14cb7d">fragColor</a></td></tr>
+<tr class="memdesc:a08d84aef129ccfb4c461a338cc14cb7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">BRDF linear coefficients. <br /></td></tr>
+<tr class="separator:a08d84aef129ccfb4c461a338cc14cb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Brdf sampler fragment shader. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPUShaders::Common::Common_pbr</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab9066bba3668bd73298977e0d7dcd04a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9066bba3668bd73298977e0d7dcd04a">&#9670;&nbsp;</a></span>ggx()</h2>
+<a id="a793a7c151959a28919a2f7fd971c4be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793a7c151959a28919a2f7fd971c4be7">&#9670;&nbsp;</a></span>ggx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +139,7 @@ out vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec2 GPUShaders::Frag::Brdf_sampler::ggx </td>
+          <td class="memname">vec3 GPUShaders::Frag::Brdf_sampler::ggx </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>NdotV</em>, </td>

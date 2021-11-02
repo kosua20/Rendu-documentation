@@ -158,8 +158,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__basic__lit__texture.html#a2d50e2d3f53b3b6b76b64c3b8f333771">GPUShaders::Vert::Object_basic_lit_texture</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__basic__random.html#acb2e7a3138b4acda470f90f182438f66">GPUShaders::Vert::Object_basic_random</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__basic__texture.html#ab2782a9794031568c04444a5b8dd5cd0">GPUShaders::Vert::Object_basic_texture</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__emissive__forward.html#a88fa81668fe1c173955262a755c6ee5e">GPUShaders::Vert::Object_emissive_forward</a>
-, <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__emissive__gbuffer.html#a1155045432394168dee8227947d8ff6f">GPUShaders::Vert::Object_emissive_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__forward.html#a7829d811a1a034216a75ff4ddf0a051f">GPUShaders::Vert::Object_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__gbuffer.html#ae06acaf8477ffb866b1a2f2f18f0f123">GPUShaders::Vert::Object_gbuffer</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__parallax__forward.html#a66c9d08dc97a30d9cfb321c234f450e4">GPUShaders::Vert::Object_parallax_forward</a>
@@ -204,6 +202,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>valuesMap
 : <a class="el" href="class_obj_to_scene_config.html#a605d6f6fced1e6376bccd536c7b7cf62">ObjToSceneConfig</a>
 </li>
+<li>VAnisotropic()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a96b98da3f318d795ba6ceb8d00d989f0">GPUShaders::Common::Common_pbr</a>
+</li>
 <li>VarianceShadowMap2D()
 : <a class="el" href="class_variance_shadow_map2_d.html#a6b765c44dd97369f3c939c2db3163730">VarianceShadowMap2D</a>
 </li>
@@ -215,6 +216,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </li>
 <li>VarianceShadowMapCubeArray()
 : <a class="el" href="class_variance_shadow_map_cube_array.html#a6b2d155694ae088989eedf8523a22957">VarianceShadowMapCubeArray</a>
+</li>
+<li>vec4ToFloat()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html#a89a3ce82b84685bdad487d9b5646740b">GPUShaders::Common::Utils</a>
 </li>
 <li>Verbose()
 : <a class="el" href="class_log.html#a99c41370ebf0556933a13ffeb30fd6a0">Log</a>
@@ -243,7 +247,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </li>
 <li>view
 : <a class="el" href="class_g_p_u_texture.html#ae2655125d49a1e67a3fdf80152e9877d">GPUTexture</a>
-, <a class="el" href="struct_program_1_1_texture_state.html#ad2d1639df75d2efdd57c4dfdaf79480f">Program::TextureState</a>
 , <a class="el" href="struct_resource_to_delete.html#a1b51225390fdaec801b57db08f3606d8">ResourceToDelete</a>
 </li>
 <li>viewpoint()
@@ -252,18 +255,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>viewPos
 : <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_atmosphere__debug.html#af7385692aad037f0d8e4dacaf7a04f54">GPUShaders::Frag::Atmosphere_debug</a>
 </li>
+<li>views
+: <a class="el" href="struct_program_1_1_texture_state.html#a4a8ee4961d7e0901e92a43ec90f2d4dd">Program::TextureState</a>
+</li>
 <li>viewSpacePosition
-: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__forward.html#a461ebf22b0c53eb68e50e7ff525b0361">GPUShaders::Frag::Object_forward</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__anisotropic__forward.html#aa28bf39dcf71cf91895d366c62fe1162">GPUShaders::Frag::Object_anisotropic_forward</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__clearcoat__forward.html#ac39a0cb77e6f222862b9c701d568f815">GPUShaders::Frag::Object_clearcoat_forward</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__emissive__forward.html#ad567bce224961d3279fef6017c0a03e9">GPUShaders::Frag::Object_emissive_forward</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__forward.html#a461ebf22b0c53eb68e50e7ff525b0361">GPUShaders::Frag::Object_forward</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__iridescent__forward.html#ae99d8209d783c4c52b3837a71d78bac5">GPUShaders::Frag::Object_iridescent_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#adf8bc3f64ed1a8145fe64a19be01c35b">GPUShaders::Frag::Object_parallax_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__gbuffer.html#a5e5e5211e1de03cf576b01582c3beb46">GPUShaders::Frag::Object_parallax_gbuffer</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__sheen__forward.html#a5fd2ad01a82baa8208795d149e99c216">GPUShaders::Frag::Object_sheen_forward</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__subsurface__forward.html#ac59049b38e3b6d7f19c66d68752e575c">GPUShaders::Frag::Object_subsurface_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__transparent__forward.html#a8ff15db30ffcfbbd0b9e653fbd6c88be">GPUShaders::Frag::Object_transparent_forward</a>
+, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__transparent__irid__forward.html#a8d3843f1d96b22e348a10007c79fb4a9">GPUShaders::Frag::Object_transparent_irid_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__forward.html#ab828a9605f253dae1df8dbaed8f48472">GPUShaders::Vert::Object_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__parallax__forward.html#a836cf3a673f7541920a7e9d304cf322c">GPUShaders::Vert::Object_parallax_forward</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__parallax__gbuffer.html#abb6e844da82c3a4a0ac3b2401c15fc12">GPUShaders::Vert::Object_parallax_gbuffer</a>
 </li>
 <li>viewToLight
 : <a class="el" href="struct_forward_light_1_1_g_p_u_light.html#a943b56ad444e56482bd3166ec8e007bf">ForwardLight::GPULight</a>
-, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html#a55aceddaaebd9c355066f2e7192dea9d">GPUShaders::Common::Forward_lights::GPULight</a>
+, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html#a477dbc2c337ecfba2760b98f48964583">GPUShaders::Common::Common_pbr::Light</a>
+, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html#a3e75f9617c8e1db5ee2f6c2135e88a30">GPUShaders::Common::Forward_lights::GPUPackedLight</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_directional__light__pbr.html#a80e26b2a1a14990401fb20dd43e94243">GPUShaders::Frag::Directional_light_pbr</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_point__light__pbr.html#af2870b1d9738f136dcb1a342cb83101e">GPUShaders::Frag::Point_light_pbr</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_spot__light__pbr.html#ab3f34b6b9773cf47584cbf653c937bef">GPUShaders::Frag::Spot_light_pbr</a>
@@ -277,10 +291,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>visuId()
 : <a class="el" href="class_painting_tool.html#a3330a96b20f7cc1a357d68843abb8796">PaintingTool</a>
 </li>
+<li>VKelemen()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a8cffc796bca191b144d2a8e124f26db7">GPUShaders::Common::Common_pbr</a>
+</li>
 <li>vn
 : <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__basic__lit.html#aaba7bbfe382b1380987f81946406ef2b">GPUShaders::Frag::Object_basic_lit</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__basic__lit.html#a56315103439ebc2f34687f998d599a52">GPUShaders::Vert::Object_basic_lit</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_vert_1_1_object__basic__lit__texture.html#a1d0076ee1db021931b4c9b811a80e61c">GPUShaders::Vert::Object_basic_lit_texture</a>
+</li>
+<li>VNeubelt()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a6dadd9e64f7f0ecc930f3ec8a267a28b">GPUShaders::Common::Common_pbr</a>
 </li>
 <li>vp()
 : <a class="el" href="class_light.html#a6abd01e5a32c177e826b00e0fc1cdd16">Light</a>

@@ -109,21 +109,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html">GPULight</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a light in the forward renderer.  <a href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a light in the forward renderer.  <a href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_probe.html">GPUPackedProbe</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent an environment probe.  <a href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_probe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a404fabdbfcaf3b6ecdff0a4781bd1c7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#a404fabdbfcaf3b6ecdff0a4781bd1c7a">applyLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html">GPULight</a> light, vec3 viewSpacePos, textureCubeArray smapCube, texture2DArray smap2D, out vec3 l, out float shadowing)</td></tr>
-<tr class="separator:a404fabdbfcaf3b6ecdff0a4781bd1c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fe785bc620b0c7af48b43b0f8d8bf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_probe.html">Probe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#a77fe785bc620b0c7af48b43b0f8d8bf6">unpackProbe</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_probe.html">GPUPackedProbe</a> srcProbe)</td></tr>
+<tr class="separator:a77fe785bc620b0c7af48b43b0f8d8bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6a490cdfcf01c280d20e49e8965f72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_light.html">Light</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#aad6a490cdfcf01c280d20e49e8965f72">unpackLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a> srcLight)</td></tr>
+<tr class="separator:aad6a490cdfcf01c280d20e49e8965f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd51a5ff7da863ceff406256e84e12f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#adcd51a5ff7da863ceff406256e84e12f">applyLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a> gpuLight, vec3 viewSpacePos, textureCubeArray smapCube, texture2DArray smap2D, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:adcd51a5ff7da863ceff406256e84e12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Forward lights general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_shadow__maps.html" title="Shadow maps general shader.">GPUShaders::Common::Shadow_maps</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_shadow__maps.html" title="Shadow maps general shader.">GPUShaders::Common::Shadow_maps</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPUShaders::Common::Common_pbr</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a404fabdbfcaf3b6ecdff0a4781bd1c7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a404fabdbfcaf3b6ecdff0a4781bd1c7a">&#9670;&nbsp;</a></span>applyLight()</h2>
+<a id="adcd51a5ff7da863ceff406256e84e12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd51a5ff7da863ceff406256e84e12f">&#9670;&nbsp;</a></span>applyLight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,8 +141,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool GPUShaders::Common::Forward_lights::applyLight </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html">GPULight</a>&#160;</td>
-          <td class="paramname"><em>light</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a>&#160;</td>
+          <td class="paramname"><em>gpuLight</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -181,7 +188,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Compute a light contribution for a given point in forward shading. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">light</td><td>the light information </td></tr>
+    <tr><td class="paramname">gpuLight</td><td>the light packed information </td></tr>
     <tr><td class="paramname">viewSpacePos</td><td>the point position in view space </td></tr>
     <tr><td class="paramname">smapCube</td><td>the cube shadow maps </td></tr>
     <tr><td class="paramname">smap2D</td><td>the 2D shadow maps </td></tr>
@@ -191,6 +198,72 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the light contributes to the point shading </dd></dl>
+
+</div>
+</div>
+<a id="aad6a490cdfcf01c280d20e49e8965f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6a490cdfcf01c280d20e49e8965f72">&#9670;&nbsp;</a></span>unpackLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light.html">Light</a> GPUShaders::Common::Forward_lights::unpackLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a>&#160;</td>
+          <td class="paramname"><em>srcLight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a forward renderer packed light to the generic shader representation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcLight</td><td>the packed light </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the populated light </dd></dl>
+
+</div>
+</div>
+<a id="a77fe785bc620b0c7af48b43b0f8d8bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fe785bc620b0c7af48b43b0f8d8bf6">&#9670;&nbsp;</a></span>unpackProbe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_probe.html">Probe</a> GPUShaders::Common::Forward_lights::unpackProbe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_probe.html">GPUPackedProbe</a>&#160;</td>
+          <td class="paramname"><em>srcProbe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a forward renderer packed probe to the generic shader representation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcProbe</td><td>the packed probe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the populated probe </dd></dl>
 
 </div>
 </div>

@@ -112,9 +112,16 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2eadb9e625a03b991e6ee4951424be34f4e">None</a> = 0
 , <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea06b8b95dd5b929ae95fb9c9d67cf2d47">Regular</a>
 , <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea6358339737472c86f4e151e746f6eea0">Parallax</a>
-, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea72e445136b581cd5bfd9ae6613340f74">Emissive</a>
+, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea1199aa698a7117608d0c9bc3f51dfc20">Clearcoat</a>
 , <br />
-&#160;&#160;<a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2eacf95ed4653354dece56bbb50a0bf09a3">Transparent</a>
+&#160;&#160;<a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea84576e6358411d0f5b09c9b33c053374">Anisotropic</a>
+, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea5b260c883c27366ab298bc5f22483b3c">Sheen</a>
+, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea5416771c631a80426fd90a3cd551f546">Iridescent</a>
+, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea21de4ca2b205c9c9d0634a41a8b81e01">Subsurface</a>
+, <br />
+&#160;&#160;<a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea72e445136b581cd5bfd9ae6613340f74">Emissive</a>
+, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2eacf95ed4653354dece56bbb50a0bf09a3">Transparent</a>
+, <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea20afa96dd07e8707abc8adc7a9799939">TransparentIrid</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a9fe49c739fb787db483a4fe055b50c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of shading/effects.  <a href="class_material.html#a9fe49c739fb787db483a4fe055b50c2e">More...</a><br /></td></tr>
@@ -209,9 +216,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea6358339737472c86f4e151e746f6eea0"></a>Parallax&#160;</td><td class="fielddoc"><p>PBR with parallax mapping. </p>
 <dl class="section see"><dt>See also</dt><dd>GPU::Vert::Object_parallax_gbuffer, GPU::Frag::Object_parallax_gbuffer </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea72e445136b581cd5bfd9ae6613340f74"></a>Emissive&#160;</td><td class="fielddoc"><p>Emissive objects (no shading, pure emitter) </p>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea1199aa698a7117608d0c9bc3f51dfc20"></a>Clearcoat&#160;</td><td class="fielddoc"><p>PBR shading with an additional clear coat specular layer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea84576e6358411d0f5b09c9b33c053374"></a>Anisotropic&#160;</td><td class="fielddoc"><p>PBR shading with an anisotropic BRDF. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea5b260c883c27366ab298bc5f22483b3c"></a>Sheen&#160;</td><td class="fielddoc"><p>PBR shading with a sheen BRDF. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea5416771c631a80426fd90a3cd551f546"></a>Iridescent&#160;</td><td class="fielddoc"><p>PBR shading with iridescent Fresnel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea21de4ca2b205c9c9d0634a41a8b81e01"></a>Subsurface&#160;</td><td class="fielddoc"><p>PBR shading with subsurface scattering. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea72e445136b581cd5bfd9ae6613340f74"></a>Emissive&#160;</td><td class="fielddoc"><p>Emissive objects (no diffuse shading). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2eacf95ed4653354dece56bbb50a0bf09a3"></a>Transparent&#160;</td><td class="fielddoc"><p>Transparent object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea20afa96dd07e8707abc8adc7a9799939"></a>TransparentIrid&#160;</td><td class="fielddoc"><p>Transparent object with iridescent Fresnel. </p>
 </td></tr>
 </table>
 

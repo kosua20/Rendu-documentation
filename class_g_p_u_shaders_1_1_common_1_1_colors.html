@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95390447ec3c6acb562e476168c45590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb9262d380537ecc6e35dd7b3d20e87"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_colors.html#a3bb9262d380537ecc6e35dd7b3d20e87">hsvToRgb</a> (vec3 hsv)</td></tr>
 <tr class="separator:a3bb9262d380537ecc6e35dd7b3d20e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee72175dede85339ea1e6aa3c4a8777"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_colors.html#aeee72175dede85339ea1e6aa3c4a8777">xyzToRgb</a> (vec3 xyz)</td></tr>
+<tr class="separator:aeee72175dede85339ea1e6aa3c4a8777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68feac030c240936a5947b5b59e8e50"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_colors.html#ab68feac030c240936a5947b5b59e8e50">rgb2luma</a> (vec3 rgb)</td></tr>
 <tr class="separator:ab68feac030c240936a5947b5b59e8e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -250,6 +252,39 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a corresponding RGB color. </dd></dl>
+
+</div>
+</div>
+<a id="aeee72175dede85339ea1e6aa3c4a8777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee72175dede85339ea1e6aa3c4a8777">&#9670;&nbsp;</a></span>xyzToRgb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Colors::xyzToRgb </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>xyz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a XYZ value (CIE 1931 RGB color space with neutral E illuminant) to a RGB value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xyz</td><td>the XYZ color to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the RGB triplet </dd></dl>
 
 </div>
 </div>

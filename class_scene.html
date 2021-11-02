@@ -169,10 +169,10 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_light.html">Light<
 std::unique_ptr&lt; <a class="el" href="class_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a34e4ae6640964bbf379157beaad5a25a">background</a></td></tr>
 <tr class="memdesc:a34e4ae6640964bbf379157beaad5a25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background object, containing the geometry to use. <br /></td></tr>
 <tr class="separator:a34e4ae6640964bbf379157beaad5a25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc5c42f8232fa8ff133180226e8575e1"><td class="memItemLeft" align="right" valign="top"><a id="acc5c42f8232fa8ff133180226e8575e1"></a>
-<a class="el" href="class_light_probe.html">LightProbe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#acc5c42f8232fa8ff133180226e8575e1">environment</a></td></tr>
-<tr class="memdesc:acc5c42f8232fa8ff133180226e8575e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflection probe. <br /></td></tr>
-<tr class="separator:acc5c42f8232fa8ff133180226e8575e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7f1c08a6ffe70258f65fb40bc5f96a"><td class="memItemLeft" align="right" valign="top"><a id="a1c7f1c08a6ffe70258f65fb40bc5f96a"></a>
+std::vector&lt; <a class="el" href="class_light_probe.html">LightProbe</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1c7f1c08a6ffe70258f65fb40bc5f96a">probes</a></td></tr>
+<tr class="memdesc:a1c7f1c08a6ffe70258f65fb40bc5f96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflection probes. <br /></td></tr>
+<tr class="separator:a1c7f1c08a6ffe70258f65fb40bc5f96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -190,8 +190,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a5608d5df478947fc06ecb2ff5e6523f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af07df160cf79432f4637c23bf83f0c8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#af07df160cf79432f4637c23bf83f0c8c">loadScene</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
 <tr class="separator:af07df160cf79432f4637c23bf83f0c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d001285074df11eaa60c1a8d449f708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a7d001285074df11eaa60c1a8d449f708">computeBoundingBox</a> (bool onlyShadowCasters=false)</td></tr>
-<tr class="separator:a7d001285074df11eaa60c1a8d449f708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f1a465b758170b1398de1c8a6c1b19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a23f1a465b758170b1398de1c8a6c1b19">computeBoundingBoxes</a> (<a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;globalBox, <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;casterBox)</td></tr>
+<tr class="separator:a23f1a465b758170b1398de1c8a6c1b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -405,8 +405,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a7d001285074df11eaa60c1a8d449f708"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d001285074df11eaa60c1a8d449f708">&#9670;&nbsp;</a></span>computeBoundingBox()</h2>
+<a id="a23f1a465b758170b1398de1c8a6c1b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f1a465b758170b1398de1c8a6c1b19">&#9670;&nbsp;</a></span>computeBoundingBoxes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,11 +415,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_bounding_box.html">BoundingBox</a> Scene::computeBoundingBox </td>
+          <td class="memname">void Scene::computeBoundingBoxes </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>onlyShadowCasters</em> = <code>false</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>globalBox</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>casterBox</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -428,13 +438,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the bounding box of the scene, optionaly excluding objects that do not cast shadows. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Compute the bounding box of the scene, including and excluding objects that do not cast shadows. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">onlyShadowCasters</td><td>denote if only objects that are allowed to cast shadows should be taken into account </td></tr>
+    <tr><td class="paramname">globalBox</td><td>the bounding box encompassing all objects in the scene </td></tr>
+    <tr><td class="paramname">casterBox</td><td>the bounding box encompassing shadow casting objects only </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the scene bounding box </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>

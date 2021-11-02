@@ -154,7 +154,8 @@ Features</h1>
 <li><a class="el" href="class_input.html" title="The input manager is responsible for updating the internal input states (keyboard,...">Input</a> management with controllers support.</li>
 <li>3D rendering, including per-fragment shading, normal maps, parallax mapping.</li>
 <li>Lights: omni/spots/directional lights, batched variance shadow mapping for all lights.</li>
-<li>Environment lighting, using cubemaps updated in real-time with optional parallax correction, preconvolved irradiance maps and spherical harmonics (also updated on the fly).</li>
+<li>Environment maps updated in real-time, preconvolved radiance maps and spherical harmonics irradiance decompositions (also updated on the fly).</li>
+<li>Local environment probes with optional local box parallax correction, area of effect and soft transitions.</li>
 <li>Linear lighting pipeline, with HDR, bloom, tonemapping and gamma correction.</li>
 <li>Depth of field with controllable focal plane and in-focus band.</li>
 <li>Screen space techniques: antialiasing (FXAA), ambient occlusion.</li>
@@ -170,7 +171,6 @@ Planned</h2>
 <p>I would like to add some additional features to Rendu in the near future, mainly to get a better grasp of some techniques and allow for more experimentations.</p>
 <ul>
 <li>Screen-space reflections and shadows (raymarching against the depth buffer).</li>
-<li>Local light probes with regions.</li>
 <li>Temporal Antialiasing with reprojection and clamping.</li>
 <li>Particle effects (updated on the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>).</li>
 <li>Volumetric effects, such as godrays and lit fog.</li>

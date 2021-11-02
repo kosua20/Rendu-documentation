@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_g_p_u_shaders_1_1_common_1_1_common__pbr-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -106,33 +107,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <p><a class="el" href="namespace_g_p_u_shaders_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader.  
  <a href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analytic light data. Some members might only be valid for some types of lights.  <a href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Environment probe data.  <a href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3fdf2d30a6db7d4a0c111619a067ffc"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ae3fdf2d30a6db7d4a0c111619a067ffc">F</a> (vec3 F0, float VdotH)</td></tr>
 <tr class="separator:ae3fdf2d30a6db7d4a0c111619a067ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90bb497bdf0b4e2c4cb0e1093004da7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ae90bb497bdf0b4e2c4cb0e1093004da7">iorToFresnel</a> (vec3 internalIOR, vec3 externalIOR)</td></tr>
+<tr class="separator:ae90bb497bdf0b4e2c4cb0e1093004da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110b52f691d08477d706a7ef9e843ee0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a110b52f691d08477d706a7ef9e843ee0">iorToFresnel</a> (float internalIOR, float externalIOR)</td></tr>
+<tr class="separator:a110b52f691d08477d706a7ef9e843ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5905c06ed53a00350e5a56982925ba"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a9c5905c06ed53a00350e5a56982925ba">fresnelToIor</a> (vec3 F0)</td></tr>
+<tr class="separator:a9c5905c06ed53a00350e5a56982925ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf91ef74c0c4f49586d4d44758e9fc96"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#abf91ef74c0c4f49586d4d44758e9fc96">iridescenceSensitivity</a> (float opd, float shift)</td></tr>
+<tr class="separator:abf91ef74c0c4f49586d4d44758e9fc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e61f6d418e1aae5da83e35bd756c49"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a28e61f6d418e1aae5da83e35bd756c49">iridescenceF0</a> (vec3 F0, float LdotH, float ior, float thickness, float externalIOR)</td></tr>
+<tr class="separator:a28e61f6d418e1aae5da83e35bd756c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97289383f1787d12ca6276793ad88a50"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a97289383f1787d12ca6276793ad88a50">D</a> (float NdotH, float alpha)</td></tr>
 <tr class="separator:a97289383f1787d12ca6276793ad88a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d5b4b09e21e12ef0fd822c24282302"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a49d5b4b09e21e12ef0fd822c24282302">DAnisotropic</a> (float NdotH, float TdotH, float BdotH, float alphaT, float alphaB)</td></tr>
+<tr class="separator:a49d5b4b09e21e12ef0fd822c24282302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1dacafa63faaf53e888358b84e0a6a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#afd1dacafa63faaf53e888358b84e0a6a">DCharlie</a> (float NdotH, float alpha)</td></tr>
+<tr class="separator:afd1dacafa63faaf53e888358b84e0a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12928aeecd6beb9c6f457ebf1119bfd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ac12928aeecd6beb9c6f457ebf1119bfd">V</a> (float NdotL, float NdotV, float alpha)</td></tr>
 <tr class="separator:ac12928aeecd6beb9c6f457ebf1119bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25ab401c15c8c3355e10b542c3761bd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ad25ab401c15c8c3355e10b542c3761bd">Vfast</a> (float NdotL, float NdotV, float alpha)</td></tr>
 <tr class="separator:ad25ab401c15c8c3355e10b542c3761bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813a753fcf639f909428d50aa809d0b8"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a813a753fcf639f909428d50aa809d0b8">ggx</a> (vec3 n, vec3 v, vec3 l, vec3 F0, float roughness)</td></tr>
-<tr class="separator:a813a753fcf639f909428d50aa809d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75920d44ddb9c727c78430cee9ff3679"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a75920d44ddb9c727c78430cee9ff3679">radiance</a> (vec3 n, vec3 v, vec3 p, float roughness, textureCube cubeMap, vec3 cubePos, vec3 cubeCenter, vec3 cubeExtent, vec2 cubeRotCosSin, float upLod)</td></tr>
-<tr class="separator:a75920d44ddb9c727c78430cee9ff3679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b98da3f318d795ba6ceb8d00d989f0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a96b98da3f318d795ba6ceb8d00d989f0">VAnisotropic</a> (float NdotL, float NdotV, float TdotV, float BdotV, float TdotL, float BdotL, float alphaT, float alphaB)</td></tr>
+<tr class="separator:a96b98da3f318d795ba6ceb8d00d989f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cffc796bca191b144d2a8e124f26db7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a8cffc796bca191b144d2a8e124f26db7">VKelemen</a> (float LdotH)</td></tr>
+<tr class="separator:a8cffc796bca191b144d2a8e124f26db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dadd9e64f7f0ecc930f3ec8a267a28b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a6dadd9e64f7f0ecc930f3ec8a267a28b">VNeubelt</a> (float NdotL, float NdotV)</td></tr>
+<tr class="separator:a6dadd9e64f7f0ecc930f3ec8a267a28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784cee2b0ef2bb4fba818ee9d7dc9a1a"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a784cee2b0ef2bb4fba818ee9d7dc9a1a">ggx</a> (vec3 n, vec3 v, vec3 l, vec3 h, vec3 F0, float roughness)</td></tr>
+<tr class="separator:a784cee2b0ef2bb4fba818ee9d7dc9a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab708da38401472ce73f68645297b7e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aeab708da38401472ce73f68645297b7e">ggxClearCoat</a> (vec3 n, vec3 v, vec3 l, vec3 h, float roughness, out float clearCoatFresnel)</td></tr>
+<tr class="separator:aeab708da38401472ce73f68645297b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c640f6a2b0ca0eccf145d46d0409d60"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a1c640f6a2b0ca0eccf145d46d0409d60">ggxAnisotropic</a> (vec3 n, vec3 v, vec3 l, vec3 h, vec3 F0, <a class="el" href="class_material.html">Material</a> material)</td></tr>
+<tr class="separator:a1c640f6a2b0ca0eccf145d46d0409d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6863920cf55342b8b1ecc9c55c5e8892"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a6863920cf55342b8b1ecc9c55c5e8892">ggxSheen</a> (vec3 n, vec3 v, vec3 l, vec3 h, <a class="el" href="class_material.html">Material</a> material)</td></tr>
+<tr class="separator:a6863920cf55342b8b1ecc9c55c5e8892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e3399e26a5d4434ff802bc2d4c6114"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ae6e3399e26a5d4434ff802bc2d4c6114">radiance</a> (vec3 r, vec3 p, float roughness, textureCube cubeMap, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a> probe)</td></tr>
+<tr class="separator:ae6e3399e26a5d4434ff802bc2d4c6114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed087afa48e5f61c708c7918c425e9a6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aed087afa48e5f61c708c7918c425e9a6">probeWeight</a> (vec3 p, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a> probe)</td></tr>
+<tr class="separator:aed087afa48e5f61c708c7918c425e9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd01a51db914dfeb8a631894c619e1f"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aebd01a51db914dfeb8a631894c619e1f">applySH</a> (vec3 wn, vec4 coeffs[9])</td></tr>
 <tr class="separator:aebd01a51db914dfeb8a631894c619e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d144dfba7fdd4b82209e9c8b563a046"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a3d144dfba7fdd4b82209e9c8b563a046">approximateSpecularAO</a> (float diffuseAO, float NdotV, float roughness)</td></tr>
 <tr class="separator:a3d144dfba7fdd4b82209e9c8b563a046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa904ef6810dfc385c370d547d7a71b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aaa904ef6810dfc385c370d547d7a71b2">ambientBrdf</a> (vec3 baseColor, float metallic, float roughness, float NdotV, texture2D brdfCoeffs, out vec3 diffuse, out vec3 specular)</td></tr>
-<tr class="separator:aaa904ef6810dfc385c370d547d7a71b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613dc163960933a0b6e33cd289906e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a613dc163960933a0b6e33cd289906e68">ambientLighting</a> (<a class="el" href="class_material.html">Material</a> material, vec3 worldP, vec3 viewV, mat4 inverseV, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a> probe, textureCube envmap, vec4 envSH[9], texture2D brdfLUT, out vec3 diffuse, out vec3 specular)</td></tr>
+<tr class="separator:a613dc163960933a0b6e33cd289906e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850a94e1702c5a46077f95c95da72941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a850a94e1702c5a46077f95c95da72941">directBrdf</a> (<a class="el" href="class_material.html">Material</a> material, vec3 n, vec3 v, vec3 l, out vec3 diffuse, out vec3 specular)</td></tr>
+<tr class="separator:a850a94e1702c5a46077f95c95da72941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0041971a9bfad8f7fbc1a7dcba422c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a8c0041971a9bfad8f7fbc1a7dcba422c">applyPointLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, textureCubeArray shadowMap, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:a8c0041971a9bfad8f7fbc1a7dcba422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a14852f939ec1fdcbe03ba84f5fc5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a1a14852f939ec1fdcbe03ba84f5fc5f0">applyDirectionalLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, texture2DArray shadowMap, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:a1a14852f939ec1fdcbe03ba84f5fc5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0930764bc1ccc609053b2e6690af68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a7f0930764bc1ccc609053b2e6690af68">applySpotLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, texture2DArray shadowMap, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:a7f0930764bc1ccc609053b2e6690af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_g_p_u_shaders_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPUShaders::Common::Geometry</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_utils.html" title="Utils general shader.">GPUShaders::Common::Utils</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_colors.html" title="Colors general shader.">GPUShaders::Common::Colors</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_geometry.html" title="Geometry general shader.">GPUShaders::Common::Geometry</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html" title="Materials general shader.">GPUShaders::Common::Materials</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_shadow__maps.html" title="Shadow maps general shader.">GPUShaders::Common::Shadow_maps</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaa904ef6810dfc385c370d547d7a71b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa904ef6810dfc385c370d547d7a71b2">&#9670;&nbsp;</a></span>ambientBrdf()</h2>
+<a id="a613dc163960933a0b6e33cd289906e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613dc163960933a0b6e33cd289906e68">&#9670;&nbsp;</a></span>ambientLighting()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,34 +187,52 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GPUShaders::Common::Common_pbr::ambientBrdf </td>
+          <td class="memname">void GPUShaders::Common::Common_pbr::ambientLighting </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_material.html">Material</a>&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>baseColor</em>, </td>
+          <td class="paramname"><em>worldP</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>metallic</em>, </td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>roughness</em>, </td>
+          <td class="paramtype">mat4&#160;</td>
+          <td class="paramname"><em>inverseV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>NdotV</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a>&#160;</td>
+          <td class="paramname"><em>probe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">textureCube&#160;</td>
+          <td class="paramname"><em>envmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec4&#160;</td>
+          <td class="paramname"><em>envSH</em>[9], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">texture2D&#160;</td>
-          <td class="paramname"><em>brdfCoeffs</em>, </td>
+          <td class="paramname"><em>brdfLUT</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,18 +258,151 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Evaluate the global lighting contirbution from the ambient environment. Implements a multi-scattering compensation step, as described in A Multiple-Scattering Microfacet Model for Real-Time Image-based Lighting, C. J. Fdez-Agüera, JCGT, 2019. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Evaluate the lighting contribution from an analytic light source. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">baseColor</td><td>the surface color/Fresnel coefficient for metals </td></tr>
-    <tr><td class="paramname">metallic</td><td>is the surface a metal or a dielectric </td></tr>
-    <tr><td class="paramname">roughness</td><td>the linear material roughness </td></tr>
-    <tr><td class="paramname">NdotV</td><td>visibility/normal angle </td></tr>
-    <tr><td class="paramname">brdfCoeffs</td><td>precomputed BRDF linearized coefficients lookup table </td></tr>
+    <tr><td class="paramname">material</td><td>the surface point material parameters </td></tr>
+    <tr><td class="paramname">worldP</td><td>the surface position (in world space) </td></tr>
+    <tr><td class="paramname">viewV</td><td>the outgoing view direction (in view space) </td></tr>
+    <tr><td class="paramname">inverseV</td><td>the transformation matrix from view to world space </td></tr>
+    <tr><td class="paramname">probe</td><td>the environment probe parameters </td></tr>
+    <tr><td class="paramname">envmap</td><td>the environment probe texture </td></tr>
+    <tr><td class="paramname">envSH</td><td>the environment probe irradiance coefficients </td></tr>
+    <tr><td class="paramname">brdfLUT</td><td>the preintegrated BRDF lookup table </td></tr>
     <tr><td class="paramname">diffuse</td><td>will contain the diffuse ambient contribution </td></tr>
     <tr><td class="paramname">specular</td><td>will contain the specular ambient contribution </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1a14852f939ec1fdcbe03ba84f5fc5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a14852f939ec1fdcbe03ba84f5fc5f0">&#9670;&nbsp;</a></span>applyDirectionalLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPUShaders::Common::Common_pbr::applyDirectionalLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a>&#160;</td>
+          <td class="paramname"><em>light</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">texture2DArray&#160;</td>
+          <td class="paramname"><em>shadowMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float&#160;</td>
+          <td class="paramname"><em>shadowing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute a directional light contribution for a given scene point. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">light</td><td>the light information </td></tr>
+    <tr><td class="paramname">viewSpacePos</td><td>the point position in view space </td></tr>
+    <tr><td class="paramname">shadowMap</td><td>the 2D shadow maps </td></tr>
+    <tr><td class="paramname">l</td><td>will contain the light direction for the point </td></tr>
+    <tr><td class="paramname">shadowing</td><td>will contain the shadowing factor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the light contributes to the point shading </dd></dl>
+
+</div>
+</div>
+<a id="a8c0041971a9bfad8f7fbc1a7dcba422c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0041971a9bfad8f7fbc1a7dcba422c">&#9670;&nbsp;</a></span>applyPointLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPUShaders::Common::Common_pbr::applyPointLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a>&#160;</td>
+          <td class="paramname"><em>light</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">textureCubeArray&#160;</td>
+          <td class="paramname"><em>shadowMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float&#160;</td>
+          <td class="paramname"><em>shadowing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute a point light contribution for a given scene point. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">light</td><td>the light information </td></tr>
+    <tr><td class="paramname">viewSpacePos</td><td>the point position in view space </td></tr>
+    <tr><td class="paramname">shadowMap</td><td>the cube shadow maps </td></tr>
+    <tr><td class="paramname">l</td><td>will contain the light direction for the point </td></tr>
+    <tr><td class="paramname">shadowing</td><td>will contain the shadowing factor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the light contributes to the point shading </dd></dl>
 
 </div>
 </div>
@@ -244,12 +441,77 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Evaluate the ambient irradiance (as SH coefficients) in a given direction. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wn</td><td>the direction (normalized) </td></tr>
+    <tr><td class="paramname">wn</td><td>the direction (normalized) in world space </td></tr>
     <tr><td class="paramname">coeffs</td><td>the SH coefficients </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the ambient irradiance </dd></dl>
+
+</div>
+</div>
+<a id="a7f0930764bc1ccc609053b2e6690af68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f0930764bc1ccc609053b2e6690af68">&#9670;&nbsp;</a></span>applySpotLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPUShaders::Common::Common_pbr::applySpotLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a>&#160;</td>
+          <td class="paramname"><em>light</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">texture2DArray&#160;</td>
+          <td class="paramname"><em>shadowMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float&#160;</td>
+          <td class="paramname"><em>shadowing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute a spot light contribution for a given scene point. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">light</td><td>the light information </td></tr>
+    <tr><td class="paramname">viewSpacePos</td><td>the point position in view space </td></tr>
+    <tr><td class="paramname">shadowMap</td><td>the 2D shadow maps </td></tr>
+    <tr><td class="paramname">l</td><td>will contain the light direction for the point </td></tr>
+    <tr><td class="paramname">shadowing</td><td>will contain the shadowing factor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the light contributes to the point shading </dd></dl>
 
 </div>
 </div>
@@ -348,6 +610,187 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a49d5b4b09e21e12ef0fd822c24282302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d5b4b09e21e12ef0fd822c24282302">&#9670;&nbsp;</a></span>DAnisotropic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::DAnisotropic </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>NdotH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>TdotH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>BdotH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alphaT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alphaB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Anisotropic GGX distribution term. Described by B. Burley in "Physically-Based Shading at Disney", 2012, (<a href="https://www.disneyanimation.com/publications/physically-based-shading-at-disney/">https://www.disneyanimation.com/publications/physically-based-shading-at-disney/</a>) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">NdotH</td><td>angle between the half and normal directions </td></tr>
+    <tr><td class="paramname">TdotH</td><td>angle between the half and tangent directions </td></tr>
+    <tr><td class="paramname">BdotH</td><td>angle between the half and bitangent directions </td></tr>
+    <tr><td class="paramname">alphaT</td><td>the roughness squared in the tangent direction </td></tr>
+    <tr><td class="paramname">alphaB</td><td>the roughness squared in the bitangent direction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the distribution term </dd></dl>
+
+</div>
+</div>
+<a id="afd1dacafa63faaf53e888358b84e0a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1dacafa63faaf53e888358b84e0a6a">&#9670;&nbsp;</a></span>DCharlie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::DCharlie </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>NdotH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sheen-specific "Charlie" distribution. Described by A.-C. Estevez and C. Kulla in "Production Friendly 
+Microfacet Sheen BRDF", 2017, (<a href="http://www.aconty.com/pdf/s2017_pbs_imageworks_sheen.pdf">http://www.aconty.com/pdf/s2017_pbs_imageworks_sheen.pdf</a>) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">NdotH</td><td>angle between the half and normal directions </td></tr>
+    <tr><td class="paramname">alpha</td><td>the roughness squared </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the distribution term </dd></dl>
+
+</div>
+</div>
+<a id="a850a94e1702c5a46077f95c95da72941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850a94e1702c5a46077f95c95da72941">&#9670;&nbsp;</a></span>directBrdf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPUShaders::Common::Common_pbr::directBrdf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_material.html">Material</a>&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out vec3&#160;</td>
+          <td class="paramname"><em>diffuse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out vec3&#160;</td>
+          <td class="paramname"><em>specular</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate the lighting contribution from an analytic light source. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">material</td><td>the surface point material parameters </td></tr>
+    <tr><td class="paramname">n</td><td>the surface normal (in view space) </td></tr>
+    <tr><td class="paramname">v</td><td>the outgoing view direction (in view space) </td></tr>
+    <tr><td class="paramname">l</td><td>the incoming light direction (in view space) </td></tr>
+    <tr><td class="paramname">diffuse</td><td>will contain the diffuse direct contribution </td></tr>
+    <tr><td class="paramname">specular</td><td>will contain the specular direct contribution </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae3fdf2d30a6db7d4a0c111619a067ffc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3fdf2d30a6db7d4a0c111619a067ffc">&#9670;&nbsp;</a></span>F()</h2>
 
@@ -392,8 +835,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a813a753fcf639f909428d50aa809d0b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a813a753fcf639f909428d50aa809d0b8">&#9670;&nbsp;</a></span>ggx()</h2>
+<a id="a9c5905c06ed53a00350e5a56982925ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5905c06ed53a00350e5a56982925ba">&#9670;&nbsp;</a></span>fresnelToIor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Common_pbr::fresnelToIor </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>F0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a Fresnel coefficient to an internal IOR, assuming the external medium is air (IOR 1.0) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">F0</td><td>the Fresnel coefficient </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the IOR </dd></dl>
+
+</div>
+</div>
+<a id="a784cee2b0ef2bb4fba818ee9d7dc9a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a784cee2b0ef2bb4fba818ee9d7dc9a1a">&#9670;&nbsp;</a></span>ggx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,6 +894,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -448,6 +930,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">n</td><td>the surface normal </td></tr>
     <tr><td class="paramname">v</td><td>the view direction </td></tr>
     <tr><td class="paramname">l</td><td>the light direction </td></tr>
+    <tr><td class="paramname">h</td><td>the half vector between the view and light </td></tr>
     <tr><td class="paramname">F0</td><td>the Fresnel coefficient </td></tr>
     <tr><td class="paramname">roughness</td><td>the surface roughness </td></tr>
   </table>
@@ -457,8 +940,458 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a75920d44ddb9c727c78430cee9ff3679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75920d44ddb9c727c78430cee9ff3679">&#9670;&nbsp;</a></span>radiance()</h2>
+<a id="a1c640f6a2b0ca0eccf145d46d0409d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c640f6a2b0ca0eccf145d46d0409d60">&#9670;&nbsp;</a></span>ggxAnisotropic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Common_pbr::ggxAnisotropic </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>F0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_material.html">Material</a>&#160;</td>
+          <td class="paramname"><em>material</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate the anisotropic GGX BRDF for a given normal, view direction, frame and material parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the surface normal </td></tr>
+    <tr><td class="paramname">v</td><td>the view direction </td></tr>
+    <tr><td class="paramname">l</td><td>the light direction </td></tr>
+    <tr><td class="paramname">h</td><td>the half vector between the view and light </td></tr>
+    <tr><td class="paramname">F0</td><td>the Fresnel coefficient </td></tr>
+    <tr><td class="paramname">material</td><td>the surface parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the BRDF value </dd></dl>
+
+</div>
+</div>
+<a id="aeab708da38401472ce73f68645297b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab708da38401472ce73f68645297b7e">&#9670;&nbsp;</a></span>ggxClearCoat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::ggxClearCoat </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>roughness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float&#160;</td>
+          <td class="paramname"><em>clearCoatFresnel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate a simplified GGX BRDF for a given normal, view direction and material parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the surface normal </td></tr>
+    <tr><td class="paramname">v</td><td>the view direction </td></tr>
+    <tr><td class="paramname">l</td><td>the light direction </td></tr>
+    <tr><td class="paramname">h</td><td>the half vector between the view and light </td></tr>
+    <tr><td class="paramname">roughness</td><td>the surface roughness </td></tr>
+    <tr><td class="paramname">clearCoatFresnel</td><td>will contain the value of the Fresnel coefficient </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the BRDF value </dd></dl>
+
+</div>
+</div>
+<a id="a6863920cf55342b8b1ecc9c55c5e8892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6863920cf55342b8b1ecc9c55c5e8892">&#9670;&nbsp;</a></span>ggxSheen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Common_pbr::ggxSheen </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_material.html">Material</a>&#160;</td>
+          <td class="paramname"><em>material</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sheen specific BRDF, with a constant Fresnel coefficient. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the surface normal </td></tr>
+    <tr><td class="paramname">v</td><td>the view direction </td></tr>
+    <tr><td class="paramname">l</td><td>the light direction </td></tr>
+    <tr><td class="paramname">h</td><td>the half vector between the view and light </td></tr>
+    <tr><td class="paramname">material</td><td>the surface parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the BRDF value </dd></dl>
+
+</div>
+</div>
+<a id="a110b52f691d08477d706a7ef9e843ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a110b52f691d08477d706a7ef9e843ee0">&#9670;&nbsp;</a></span>iorToFresnel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::iorToFresnel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>internalIOR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>externalIOR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Estimate the Fresnel coefficient at an interface based on the internal and external media IORs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">internalIOR</td><td>the internal IOR </td></tr>
+    <tr><td class="paramname">externalIOR</td><td>the external IOR </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding Fresnel coefficient </dd></dl>
+
+</div>
+</div>
+<a id="ae90bb497bdf0b4e2c4cb0e1093004da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90bb497bdf0b4e2c4cb0e1093004da7">&#9670;&nbsp;</a></span>iorToFresnel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Common_pbr::iorToFresnel </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>internalIOR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>externalIOR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Estimate the Fresnel coefficient at an interface based on the internal and external media IORs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">internalIOR</td><td>the internal IOR </td></tr>
+    <tr><td class="paramname">externalIOR</td><td>the external IOR </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding Fresnel coefficient </dd></dl>
+
+</div>
+</div>
+<a id="a28e61f6d418e1aae5da83e35bd756c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e61f6d418e1aae5da83e35bd756c49">&#9670;&nbsp;</a></span>iridescenceF0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Common_pbr::iridescenceF0 </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>F0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>LdotH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ior</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>thickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>externalIOR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate the new Fresnel coefficient generated by the interferences caused by a thin film on top of a dieletric or conductor. This approximation that accounts for multiple reflections inside the thin film while accounting for spectral variations has been described by L. Belcour and P. Barla in "A Practical Extension to Microfacet Theory for the Modeling of Varying Iridescence", 2017, (<a href="https://belcour.github.io/blog/research/publication/2017/05/01/brdf-thin-film.html">https://belcour.github.io/blog/research/publication/2017/05/01/brdf-thin-film.html</a>). Additional simplifications have been described by S. Lagarde and E. Golubev in "The Road toward Unified Rendering with Unity’s High Definition Render Pipeline", 2015, (<a href="http://advances.realtimerendering.com/s2018/index.htm#_9hypxp9ajqi">http://advances.realtimerendering.com/s2018/index.htm#_9hypxp9ajqi</a>). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">F0</td><td>the base surface Fresnel coefficient </td></tr>
+    <tr><td class="paramname">LdotH</td><td>the dot product between the light and the half vector </td></tr>
+    <tr><td class="paramname">ior</td><td>the thin film index of refraction </td></tr>
+    <tr><td class="paramname">thickness</td><td>the thin film thickness (in nm) </td></tr>
+    <tr><td class="paramname">externalIOR</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the updated Fresnel coefficient </dd></dl>
+
+</div>
+</div>
+<a id="abf91ef74c0c4f49586d4d44758e9fc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf91ef74c0c4f49586d4d44758e9fc96">&#9670;&nbsp;</a></span>iridescenceSensitivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 GPUShaders::Common::Common_pbr::iridescenceSensitivity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>opd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>shift</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Approximation of the Fourier transform of the sensitivity for iridescent materials, using four gaussian lobes. This encompasses the sensitivity resulting from all light paths with the input path difference and phase. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opd</td><td>optical path difference </td></tr>
+    <tr><td class="paramname">shift</td><td>phase of the signal </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the sensitivty in XYZ color space </dd></dl>
+
+</div>
+</div>
+<a id="aed087afa48e5f61c708c7918c425e9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed087afa48e5f61c708c7918c425e9a6">&#9670;&nbsp;</a></span>probeWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::probeWeight </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a>&#160;</td>
+          <td class="paramname"><em>probe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the contribution of a probe to a given point in the scene, based on the probe effect box size, position and fading settings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the position in the scene (world space) </td></tr>
+    <tr><td class="paramname">probe</td><td>the probe parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the contribution weight in [0,1] </dd></dl>
+
+</div>
+</div>
+<a id="ae6e3399e26a5d4434ff802bc2d4c6114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e3399e26a5d4434ff802bc2d4c6114">&#9670;&nbsp;</a></span>radiance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,13 +1403,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">vec3 GPUShaders::Common::Common_pbr::radiance </td>
           <td>(</td>
           <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -499,32 +1426,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>cubePos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>cubeCenter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec3&#160;</td>
-          <td class="paramname"><em>cubeExtent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec2&#160;</td>
-          <td class="paramname"><em>cubeRotCosSin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>upLod</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_probe.html">Probe</a>&#160;</td>
+          <td class="paramname"><em>probe</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -538,18 +1441,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the (pre-convolved) radiance for a given normal, view direction and material parameters. Directions are in world space. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Return the (pre-convolved) radiance for a given direction (in world space) and material parameters. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">n</td><td>the surface normal (world space) </td></tr>
-    <tr><td class="paramname">v</td><td>the view direction (world space) </td></tr>
-    <tr><td class="paramname">p</td><td>the surface position (world space) </td></tr>
+    <tr><td class="paramname">r</td><td>the direction to query (world space) </td></tr>
+    <tr><td class="paramname">p</td><td>the surface point (world space) </td></tr>
     <tr><td class="paramname">roughness</td><td>the surface roughness </td></tr>
     <tr><td class="paramname">cubeMap</td><td>the environment map texture </td></tr>
-    <tr><td class="paramname">cubePos</td><td>position of the cubemap </td></tr>
-    <tr><td class="paramname">cubeCenter</td><td>center of the parallax correction box </td></tr>
-    <tr><td class="paramname">cubeExtent</td><td>half size of the parallax correction box (infinity if &lt; 0.0) </td></tr>
-    <tr><td class="paramname">cubeRotCosSin</td><td>precomputed cos/sin of the parallax correction box orientation </td></tr>
-    <tr><td class="paramname">upLod</td><td>the maximal mip level to fetch </td></tr>
+    <tr><td class="paramname">probe</td><td>the probe parameters </td></tr>
   </table>
   </dd>
 </dl>
@@ -608,6 +1506,92 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a96b98da3f318d795ba6ceb8d00d989f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b98da3f318d795ba6ceb8d00d989f0">&#9670;&nbsp;</a></span>VAnisotropic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::VAnisotropic </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>NdotL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>NdotV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>TdotV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>BdotV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>TdotL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>BdotL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alphaT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alphaB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visibility term of the anisotropic GGX BRDF. Described by B. Burley in "Physically-Based Shading at Disney", 2012, (<a href="https://www.disneyanimation.com/publications/physically-based-shading-at-disney/">https://www.disneyanimation.com/publications/physically-based-shading-at-disney/</a>) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">NdotL</td><td>dot product of the light direction with the surface normal </td></tr>
+    <tr><td class="paramname">NdotV</td><td>dot product of the view direction with the surface normal </td></tr>
+    <tr><td class="paramname">TdotV</td><td>dot product of the tangent direction with the view direction </td></tr>
+    <tr><td class="paramname">BdotV</td><td>dot product of the bitangent direction with the view direction </td></tr>
+    <tr><td class="paramname">TdotL</td><td>dot product of the tangent direction with the light direction </td></tr>
+    <tr><td class="paramname">BdotL</td><td>dot product of the bitangent direction with the light direction </td></tr>
+    <tr><td class="paramname">alphaT</td><td>squared roughness in the tangent direction </td></tr>
+    <tr><td class="paramname">alphaB</td><td>squared roughness in the bitangent direction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of V </dd></dl>
+
+</div>
+</div>
 <a id="ad25ab401c15c8c3355e10b542c3761bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad25ab401c15c8c3355e10b542c3761bd">&#9670;&nbsp;</a></span>Vfast()</h2>
 
@@ -652,6 +1636,85 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">NdotL</td><td>dot product of the light direction with the surface normal </td></tr>
     <tr><td class="paramname">NdotV</td><td>dot product of the view direction with the surface normal </td></tr>
     <tr><td class="paramname">alpha</td><td>squared roughness </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of V </dd></dl>
+
+</div>
+</div>
+<a id="a8cffc796bca191b144d2a8e124f26db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cffc796bca191b144d2a8e124f26db7">&#9670;&nbsp;</a></span>VKelemen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::VKelemen </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>LdotH</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Simplified visibility term described by Kelemen in "A Microfacet Based Coupled Specular-Matte BRDF Model with Importance Sampling", 2001 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LdotH</td><td>dot product of the light direction and the half vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of V </dd></dl>
+
+</div>
+</div>
+<a id="a6dadd9e64f7f0ecc930f3ec8a267a28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dadd9e64f7f0ecc930f3ec8a267a28b">&#9670;&nbsp;</a></span>VNeubelt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GPUShaders::Common::Common_pbr::VNeubelt </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>NdotL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>NdotV</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sheen-specific visibility term. Described by D. Neubelt and M. Pettineo in "Crafting a Next-Gen 
+Material Pipeline for The Order: 1886", 2014, (<a href="https://www.gdcvault.com/play/1020162/Crafting-a-Next-Gen-Material">https://www.gdcvault.com/play/1020162/Crafting-a-Next-Gen-Material</a>) <br  />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">NdotL</td><td>dot product of the light direction with the surface normal </td></tr>
+    <tr><td class="paramname">NdotV</td><td>dot product of the view direction with the surface normal </td></tr>
   </table>
   </dd>
 </dl>

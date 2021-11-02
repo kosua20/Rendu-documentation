@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!--header-->
 <div class="contents">
 
-<p>Internal state for an image-sampler.  
+<p>Internal state for an image.  
  <a href="struct_program_1_1_texture_state.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -116,14 +116,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#aaadb169f816b39c481085088b30ca31a">shape</a> = <a class="el" href="group___resources.html#gga3fb1e3ce7a7253e364b016dd40f5efd6ac4d62b6dcca08e5caf06c01889282859">TextureShape::D2</a></td></tr>
 <tr class="memdesc:aaadb169f816b39c481085088b30ca31a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> shape. <br /></td></tr>
 <tr class="separator:aaadb169f816b39c481085088b30ca31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cf0cbb3306ddb69c6aef30600e6ea10"><td class="memItemLeft" align="right" valign="top"><a id="a1cf0cbb3306ddb69c6aef30600e6ea10"></a>
-const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#a1cf0cbb3306ddb69c6aef30600e6ea10">texture</a></td></tr>
-<tr class="memdesc:a1cf0cbb3306ddb69c6aef30600e6ea10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source texture. <br /></td></tr>
-<tr class="separator:a1cf0cbb3306ddb69c6aef30600e6ea10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d1639df75d2efdd57c4dfdaf79480f"><td class="memItemLeft" align="right" valign="top"><a id="ad2d1639df75d2efdd57c4dfdaf79480f"></a>
-VkImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#ad2d1639df75d2efdd57c4dfdaf79480f">view</a> = VK_NULL_HANDLE</td></tr>
-<tr class="memdesc:ad2d1639df75d2efdd57c4dfdaf79480f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> view. <br /></td></tr>
-<tr class="separator:ad2d1639df75d2efdd57c4dfdaf79480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed733467b7f40603821aebd3edbe2aa"><td class="memItemLeft" align="right" valign="top"><a id="a4ed733467b7f40603821aebd3edbe2aa"></a>
+std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#a4ed733467b7f40603821aebd3edbe2aa">textures</a> = { nullptr }</td></tr>
+<tr class="memdesc:a4ed733467b7f40603821aebd3edbe2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source texture. <br /></td></tr>
+<tr class="separator:a4ed733467b7f40603821aebd3edbe2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8ee4961d7e0901e92a43ec90f2d4dd"><td class="memItemLeft" align="right" valign="top"><a id="a4a8ee4961d7e0901e92a43ec90f2d4dd"></a>
+std::vector&lt; VkImageView &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#a4a8ee4961d7e0901e92a43ec90f2d4dd">views</a> = { VK_NULL_HANDLE }</td></tr>
+<tr class="memdesc:a4a8ee4961d7e0901e92a43ec90f2d4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> view. <br /></td></tr>
+<tr class="separator:a4a8ee4961d7e0901e92a43ec90f2d4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8e5f5cddeadb8092f3d793278a4b5e"><td class="memItemLeft" align="right" valign="top"><a id="a9d8e5f5cddeadb8092f3d793278a4b5e"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#a9d8e5f5cddeadb8092f3d793278a4b5e">count</a> = 1</td></tr>
+<tr class="memdesc:a9d8e5f5cddeadb8092f3d793278a4b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of images bound at this slot.. <br /></td></tr>
+<tr class="separator:a9d8e5f5cddeadb8092f3d793278a4b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad00a5d320cf8014a3bd8901558967203"><td class="memItemLeft" align="right" valign="top"><a id="ad00a5d320cf8014a3bd8901558967203"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html#ad00a5d320cf8014a3bd8901558967203">mip</a> = 0xFFFF</td></tr>
 <tr class="memdesc:ad00a5d320cf8014a3bd8901558967203"><td class="mdescLeft">&#160;</td><td class="mdescRight">The corresponding mip. <br /></td></tr>
@@ -134,7 +138,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="separator:a116df635e4f38c615c7b02cc1f0526d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Internal state for an image-sampler. </p>
+<div class="textblock"><p>Internal state for an image. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/engine/graphics/<a class="el" href="_program_8hpp_source.html">Program.hpp</a></li>
 </ul>

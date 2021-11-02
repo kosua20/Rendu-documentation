@@ -89,19 +89,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_g_p_u_shaders.html">GPUShaders</a></li><li class="navelem"><a class="el" href="namespace_g_p_u_shaders_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">Materials</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">AmbientQuad Member List</div>  </div>
+<div class="title">GPUShaders::Common::Materials Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="class_ambient_quad.html">AmbientQuad</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_ambient_quad.html#a34069306847fb0a346e35e344fde7d62">_program</a></td><td class="entry"><a class="el" href="class_ambient_quad.html">AmbientQuad</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ambient_quad.html#a1c16ccf782e1e9ceed8bf0a75fc3683f">_textures</a></td><td class="entry"><a class="el" href="class_ambient_quad.html">AmbientQuad</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ambient_quad.html#a17ed2c4a215567b12942225cb5af15ad">AmbientQuad</a>(const Texture *texAlbedo, const Texture *texNormals, const Texture *texEffects, const Texture *texDepth, const Texture *texSSAO)</td><td class="entry"><a class="el" href="class_ambient_quad.html">AmbientQuad</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ambient_quad.html#a263295b9c14e0fc453a49580fc0c93f0">draw</a>(const glm::mat4 &amp;viewMatrix, const glm::mat4 &amp;projectionMatrix, const LightProbe &amp;environment)</td><td class="entry"><a class="el" href="class_ambient_quad.html">AmbientQuad</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#a7ac9e72a93935f84ec0b24aad28a3641">decodeIridescence</a>(float ior, float thickness)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#ae53e1c249eb33cfc6f2313261747615e">decodeMaterial</a>(float raw)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#a16dfa214db3e4435202820a521b8d755">decodeMaterialFromGbuffer</a>(vec2 uv, texture2D gbuffer0, texture2D gbuffer1, texture2D gbuffer2)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#acfc20c1afe9cc8b26006586fc880773c">decodeMetalnessAndParameter</a>(float raw, out float metalness, out float parameter)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#ad69815d44c47604f79a49628ae2570e7">decodeRgbFrom10Plus2Bits</a>(vec2 packed)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#ac0ddf30abec495c459d5c9bba9c39927">encodeMaterial</a>(uint material)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#a4508545fb0b80580dea47ef4e0143598">encodeMetalnessAndParameter</a>(float metalness, float parameter)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#a076b0ef4da43645368eba0560b8946b3">encodeRgbOn10Plus2Bits</a>(vec3 rgb)</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#a0f958c35d916621304628313e0747872">initMaterial</a>()</td><td class="entry"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html">GPUShaders::Common::Materials</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->

@@ -112,18 +112,26 @@ Public Attributes</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#a582e200ec248d75553f7c3be99a63459">name</a></td></tr>
 <tr class="memdesc:a582e200ec248d75553f7c3be99a63459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name. <br /></td></tr>
 <tr class="separator:a582e200ec248d75553f7c3be99a63459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5289a288381ffd1dd12884a0187ac115"><td class="memItemLeft" align="right" valign="top"><a id="a5289a288381ffd1dd12884a0187ac115"></a>
-VkBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#a5289a288381ffd1dd12884a0187ac115">buffer</a> = VK_NULL_HANDLE</td></tr>
-<tr class="memdesc:a5289a288381ffd1dd12884a0187ac115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native buffer handle. <br /></td></tr>
-<tr class="separator:a5289a288381ffd1dd12884a0187ac115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee1e689bb5c3f2bbfc761d171118d444"><td class="memItemLeft" align="right" valign="top"><a id="aee1e689bb5c3f2bbfc761d171118d444"></a>
-uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#aee1e689bb5c3f2bbfc761d171118d444">offset</a> = 0</td></tr>
-<tr class="memdesc:aee1e689bb5c3f2bbfc761d171118d444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start offset in the buffer. <br /></td></tr>
-<tr class="separator:aee1e689bb5c3f2bbfc761d171118d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21d497a714a5bc3e6395d88b8ed99ac"><td class="memItemLeft" align="right" valign="top"><a id="ac21d497a714a5bc3e6395d88b8ed99ac"></a>
+std::vector&lt; VkBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#ac21d497a714a5bc3e6395d88b8ed99ac">buffers</a> = { VK_NULL_HANDLE}</td></tr>
+<tr class="memdesc:ac21d497a714a5bc3e6395d88b8ed99ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native buffer handle. <br /></td></tr>
+<tr class="separator:ac21d497a714a5bc3e6395d88b8ed99ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086c8932c04934d15ec57324926b47f5"><td class="memItemLeft" align="right" valign="top"><a id="a086c8932c04934d15ec57324926b47f5"></a>
+std::vector&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#a086c8932c04934d15ec57324926b47f5">offsets</a> = {0}</td></tr>
+<tr class="memdesc:a086c8932c04934d15ec57324926b47f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start offset in the buffer. <br /></td></tr>
+<tr class="separator:a086c8932c04934d15ec57324926b47f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c95ac3d5f0d7341559a5190d73ae869"><td class="memItemLeft" align="right" valign="top"><a id="a0c95ac3d5f0d7341559a5190d73ae869"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#a0c95ac3d5f0d7341559a5190d73ae869">size</a> = 0</td></tr>
 <tr class="memdesc:a0c95ac3d5f0d7341559a5190d73ae869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Region size in the buffer. <br /></td></tr>
 <tr class="separator:a0c95ac3d5f0d7341559a5190d73ae869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1078a486e1d62785f55c92abfbec12d9"><td class="memItemLeft" align="right" valign="top"><a id="a1078a486e1d62785f55c92abfbec12d9"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#a1078a486e1d62785f55c92abfbec12d9">count</a> = 1</td></tr>
+<tr class="memdesc:a1078a486e1d62785f55c92abfbec12d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of buffers bound at this slot. <br /></td></tr>
+<tr class="separator:a1078a486e1d62785f55c92abfbec12d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7042d685ff1fcd8654bfffb14d92e25"><td class="memItemLeft" align="right" valign="top"><a id="af7042d685ff1fcd8654bfffb14d92e25"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#af7042d685ff1fcd8654bfffb14d92e25">lastSet</a> = 0</td></tr>
+<tr class="memdesc:af7042d685ff1fcd8654bfffb14d92e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep track of one of the buffers that has been set (and is thus valid). <br /></td></tr>
+<tr class="separator:af7042d685ff1fcd8654bfffb14d92e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b0da6968fd2e415d93cb59e17d63d7"><td class="memItemLeft" align="right" valign="top"><a id="a90b0da6968fd2e415d93cb59e17d63d7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_static_buffer_state.html#a90b0da6968fd2e415d93cb59e17d63d7">storage</a> = false</td></tr>
 <tr class="memdesc:a90b0da6968fd2e415d93cb59e17d63d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the buffer used as storage. <br /></td></tr>

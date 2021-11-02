@@ -108,8 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1c2b0203eecf8e2002a54945458351f6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6">Type</a> : uint { <a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6a5b39c8b553c821e7cddc6da64b5bd2ee">DEFAULT</a>
-, <a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6afe6f99ef1ec99efbdc19a9786cf1facc">STATIC</a>
+<tr class="memitem:a1c2b0203eecf8e2002a54945458351f6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6">Type</a> : uint { <a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6afe6f99ef1ec99efbdc19a9786cf1facc">STATIC</a>
 , <a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6a0fcc90da4811c877ba9f9c12f7d60bc9">DYNAMIC</a>
  }</td></tr>
 <tr class="separator:a1c2b0203eecf8e2002a54945458351f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,12 +121,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a19d94142815dc37ca74ca94a58424d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21bbbbda596b06d9c7cfc91190147d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_key_values.html">KeyValues</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#ad21bbbbda596b06d9c7cfc91190147d3">encode</a> () const</td></tr>
 <tr class="separator:ad21bbbbda596b06d9c7cfc91190147d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71df5c98f8203ab4d808b0e56858fcb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a71df5c98f8203ab4d808b0e56858fcb5">registerEnvironment</a> (const <a class="el" href="class_texture.html">Texture</a> *envmap, const std::shared_ptr&lt; <a class="el" href="class_uniform_buffer.html">UniformBuffer</a>&lt; glm::vec4 &gt;&gt; &amp;<a class="el" href="class_light_probe.html#a456cb6fee9c1d6bf989d6083f5a7f91f">shCoeffs</a>)</td></tr>
-<tr class="separator:a71df5c98f8203ab4d808b0e56858fcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7da974771e1aac3805f51024af77731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#ad7da974771e1aac3805f51024af77731">registerEnvironment</a> (const <a class="el" href="class_texture.html">Texture</a> *envmap, const std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a> &gt; &amp;<a class="el" href="class_light_probe.html#a0a65da1e5325ddd59c6a502ad7335e8d">shCoeffs</a>)</td></tr>
+<tr class="separator:ad7da974771e1aac3805f51024af77731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68b95f5c5f6be900f2d25d8335a6ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#aa68b95f5c5f6be900f2d25d8335a6ad5">updateSize</a> (const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;_bbox)</td></tr>
+<tr class="separator:aa68b95f5c5f6be900f2d25d8335a6ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d1f79207e73407cad4239ad420638d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a89d1f79207e73407cad4239ad420638d">type</a> () const</td></tr>
 <tr class="separator:a89d1f79207e73407cad4239ad420638d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a563e7e6dee0c42c17c162d415c35caea"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a563e7e6dee0c42c17c162d415c35caea">position</a> () const</td></tr>
 <tr class="separator:a563e7e6dee0c42c17c162d415c35caea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad207fef5e89b1ff93f4d019a36f42589"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#ad207fef5e89b1ff93f4d019a36f42589">size</a> () const</td></tr>
+<tr class="separator:ad207fef5e89b1ff93f4d019a36f42589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8aaf5a1f913bb15f10ebdc51d1d3627"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#ab8aaf5a1f913bb15f10ebdc51d1d3627">fade</a> () const</td></tr>
+<tr class="separator:ab8aaf5a1f913bb15f10ebdc51d1d3627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4b909d07645fb0287c47735f73c7fa"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a8a4b909d07645fb0287c47735f73c7fa">extent</a> () const</td></tr>
 <tr class="separator:a8a4b909d07645fb0287c47735f73c7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bcd3237bf4ac31271be705bec6e817f"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a0bcd3237bf4ac31271be705bec6e817f">center</a> () const</td></tr>
@@ -138,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abeff13caa7fad560a675fdcaea0abe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00df30ed3f3e12382b3ae371b5674e51"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a00df30ed3f3e12382b3ae371b5674e51">map</a> () const</td></tr>
 <tr class="separator:a00df30ed3f3e12382b3ae371b5674e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456cb6fee9c1d6bf989d6083f5a7f91f"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="class_uniform_buffer.html">UniformBuffer</a>&lt; glm::vec4 &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a456cb6fee9c1d6bf989d6083f5a7f91f">shCoeffs</a> () const</td></tr>
-<tr class="separator:a456cb6fee9c1d6bf989d6083f5a7f91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a65da1e5325ddd59c6a502ad7335e8d"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a0a65da1e5325ddd59c6a502ad7335e8d">shCoeffs</a> () const</td></tr>
+<tr class="separator:a0a65da1e5325ddd59c6a502ad7335e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -147,18 +152,22 @@ Private Attributes</h2></td></tr>
 const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a01eb3dce2fa112f9e2c0b08a4f5c82c6">_envmap</a> = nullptr</td></tr>
 <tr class="memdesc:a01eb3dce2fa112f9e2c0b08a4f5c82c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The environment map. <br /></td></tr>
 <tr class="separator:a01eb3dce2fa112f9e2c0b08a4f5c82c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264b7d739120b3f2fb37f87082ed828e"><td class="memItemLeft" align="right" valign="top"><a id="a264b7d739120b3f2fb37f87082ed828e"></a>
-std::shared_ptr&lt; <a class="el" href="class_uniform_buffer.html">UniformBuffer</a>&lt; glm::vec4 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a264b7d739120b3f2fb37f87082ed828e">_shCoeffs</a></td></tr>
-<tr class="memdesc:a264b7d739120b3f2fb37f87082ed828e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The irradiance representation. <br /></td></tr>
-<tr class="separator:a264b7d739120b3f2fb37f87082ed828e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593c4676dfb400481b66afc88d67c166"><td class="memItemLeft" align="right" valign="top"><a id="a593c4676dfb400481b66afc88d67c166"></a>
+std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a593c4676dfb400481b66afc88d67c166">_shCoeffs</a></td></tr>
+<tr class="memdesc:a593c4676dfb400481b66afc88d67c166"><td class="mdescLeft">&#160;</td><td class="mdescRight">The irradiance representation. <br /></td></tr>
+<tr class="separator:a593c4676dfb400481b66afc88d67c166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eb105dd2b7fe3d033a1890b99707759"><td class="memItemLeft" align="right" valign="top"><a id="a5eb105dd2b7fe3d033a1890b99707759"></a>
-<a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a5eb105dd2b7fe3d033a1890b99707759">_type</a> = <a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6a5b39c8b553c821e7cddc6da64b5bd2ee">Type::DEFAULT</a></td></tr>
+<a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a5eb105dd2b7fe3d033a1890b99707759">_type</a> = <a class="el" href="class_light_probe.html#a1c2b0203eecf8e2002a54945458351f6a0fcc90da4811c877ba9f9c12f7d60bc9">Type::DYNAMIC</a></td></tr>
 <tr class="memdesc:a5eb105dd2b7fe3d033a1890b99707759"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of probe. <br /></td></tr>
 <tr class="separator:a5eb105dd2b7fe3d033a1890b99707759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a036cf8c147450c19821cd62d1a91d846"><td class="memItemLeft" align="right" valign="top"><a id="a036cf8c147450c19821cd62d1a91d846"></a>
 glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a036cf8c147450c19821cd62d1a91d846">_position</a> = glm::vec3(0.0f)</td></tr>
 <tr class="memdesc:a036cf8c147450c19821cd62d1a91d846"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probe location. <br /></td></tr>
 <tr class="separator:a036cf8c147450c19821cd62d1a91d846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51ff8d521d7d7cce062fe7b582f3639"><td class="memItemLeft" align="right" valign="top"><a id="af51ff8d521d7d7cce062fe7b582f3639"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#af51ff8d521d7d7cce062fe7b582f3639">_size</a> = glm::vec3(1e10f)</td></tr>
+<tr class="memdesc:af51ff8d521d7d7cce062fe7b582f3639"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probe area of effect. <br /></td></tr>
+<tr class="separator:af51ff8d521d7d7cce062fe7b582f3639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93cae450a934a72a455844a9bb8f3792"><td class="memItemLeft" align="right" valign="top"><a id="a93cae450a934a72a455844a9bb8f3792"></a>
 glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a93cae450a934a72a455844a9bb8f3792">_extent</a> = glm::vec3(-1.0f)</td></tr>
 <tr class="memdesc:a93cae450a934a72a455844a9bb8f3792"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probe parallax proxy extent. <br /></td></tr>
@@ -171,6 +180,10 @@ glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#a8a0e3d6e6a0ee6ba00336303ed0620eb">_rotCosSin</a> = glm::vec2(1.0f, 0.0f)</td></tr>
 <tr class="memdesc:a8a0e3d6e6a0ee6ba00336303ed0620eb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_probe.html" title="A probe can be used to capture the appareance of a scene at a given location as a 360° cubemap.">Probe</a> orientation trigonometric cached values. <br /></td></tr>
 <tr class="separator:a8a0e3d6e6a0ee6ba00336303ed0620eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af357c3d3efe71254335e14c6cf32a446"><td class="memItemLeft" align="right" valign="top"><a id="af357c3d3efe71254335e14c6cf32a446"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#af357c3d3efe71254335e14c6cf32a446">_fade</a> = 1e-8f</td></tr>
+<tr class="memdesc:af357c3d3efe71254335e14c6cf32a446"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probe effect fading margin around its area of effect. <br /></td></tr>
+<tr class="separator:af357c3d3efe71254335e14c6cf32a446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad55da9fe1453650e0ee3d5e9105bc892"><td class="memItemLeft" align="right" valign="top"><a id="ad55da9fe1453650e0ee3d5e9105bc892"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_probe.html#ad55da9fe1453650e0ee3d5e9105bc892">_rotation</a> = 0.0f</td></tr>
 <tr class="memdesc:ad55da9fe1453650e0ee3d5e9105bc892"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probe orientation around a vertical axis,. <br /></td></tr>
@@ -200,9 +213,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div><div class="memdoc">
 <p>The type of probe. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1c2b0203eecf8e2002a54945458351f6a5b39c8b553c821e7cddc6da64b5bd2ee"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Empty probe. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1c2b0203eecf8e2002a54945458351f6afe6f99ef1ec99efbdc19a9786cf1facc"></a>STATIC&#160;</td><td class="fielddoc"><p>Loaded from disk, never updated. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1c2b0203eecf8e2002a54945458351f6afe6f99ef1ec99efbdc19a9786cf1facc"></a>STATIC&#160;</td><td class="fielddoc"><p>Loaded from disk, never updated. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1c2b0203eecf8e2002a54945458351f6a0fcc90da4811c877ba9f9c12f7d60bc9"></a>DYNAMIC&#160;</td><td class="fielddoc"><p>Generated in engine. </p>
 </td></tr>
@@ -294,10 +305,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
    irradiance: shcoeffs_filename
 </pre><p> for a static environment map or </p><pre class="fragment">* probe:
    position: X,Y,Z
+   size: W,H,D
+   fade: distance
    center: X,Y,Z
    extent: W,H,D
    rotation: angle
-</pre><p> for a probe renderered on the fly at the given location. center, extent and rotation are used to define an oriented box used as a local scene proxy. If extent is negative, the environment is assumed to be at infinity. </p><dl class="params"><dt>Parameters</dt><dd>
+</pre><p> for a probe renderered on the fly at the given location. center, extent and rotation are used to define an oriented box used as a local scene proxy. If extent is negative, the environment is assumed to be at infinity. position, size, fade and rotation are used to define a box-shaped area of effect with soft edges. Both size and extent are half-sizes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>the parameters tuple </td></tr>
     <tr><td class="paramname">options</td><td>data loading and storage options </td></tr>
@@ -347,7 +360,33 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the probe parallax proxy extent (or -1 for probes at infinity) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the probe parallax proxy extent half size (or -1 for probes at infinity) </dd></dl>
+
+</div>
+</div>
+<a id="ab8aaf5a1f913bb15f10ebdc51d1d3627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8aaf5a1f913bb15f10ebdc51d1d3627">&#9670;&nbsp;</a></span>fade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LightProbe::fade </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the probe fading band width, at the edges of its area of effect </dd></dl>
 
 </div>
 </div>
@@ -403,8 +442,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a71df5c98f8203ab4d808b0e56858fcb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71df5c98f8203ab4d808b0e56858fcb5">&#9670;&nbsp;</a></span>registerEnvironment()</h2>
+<a id="ad7da974771e1aac3805f51024af77731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7da974771e1aac3805f51024af77731">&#9670;&nbsp;</a></span>registerEnvironment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +457,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_uniform_buffer.html">UniformBuffer</a>&lt; glm::vec4 &gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_buffer.html">Buffer</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>shCoeffs</em>&#160;</td>
         </tr>
         <tr>
@@ -490,8 +529,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a456cb6fee9c1d6bf989d6083f5a7f91f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a456cb6fee9c1d6bf989d6083f5a7f91f">&#9670;&nbsp;</a></span>shCoeffs()</h2>
+<a id="a0a65da1e5325ddd59c6a502ad7335e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a65da1e5325ddd59c6a502ad7335e8d">&#9670;&nbsp;</a></span>shCoeffs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,7 +539,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::shared_ptr&lt;<a class="el" href="class_uniform_buffer.html">UniformBuffer</a>&lt;glm::vec4&gt; &gt;&amp; LightProbe::shCoeffs </td>
+          <td class="memname">const std::shared_ptr&lt;<a class="el" href="class_buffer.html">Buffer</a>&gt;&amp; LightProbe::shCoeffs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -513,6 +552,32 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the irradiance coefficients buffer </dd></dl>
+
+</div>
+</div>
+<a id="ad207fef5e89b1ff93f4d019a36f42589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad207fef5e89b1ff93f4d019a36f42589">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const glm::vec3&amp; LightProbe::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the half size of the probe area of effect </dd></dl>
 
 </div>
 </div>
@@ -539,6 +604,30 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the type of probe </dd></dl>
+
+</div>
+</div>
+<a id="aa68b95f5c5f6be900f2d25d8335a6ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68b95f5c5f6be900f2d25d8335a6ad5">&#9670;&nbsp;</a></span>updateSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightProbe::updateSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>_bbox</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update the area of effect of the probe to ensure it's not bigger than the specified bounding box </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_bbox</td><td>the maximum size of the probe box </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

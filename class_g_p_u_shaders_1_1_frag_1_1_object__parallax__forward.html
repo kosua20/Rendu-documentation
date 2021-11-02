@@ -130,50 +130,38 @@ in vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 in vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a4f8f22adcc5a75ec6e0084a429944671">uv</a></td></tr>
 <tr class="memdesc:a4f8f22adcc5a75ec6e0084a429944671"><td class="mdescLeft">&#160;</td><td class="mdescRight">UV coordinates. <br /></td></tr>
 <tr class="separator:a4f8f22adcc5a75ec6e0084a429944671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0776ee2d973542aa00deaee733389f3"><td class="memItemLeft" align="right" valign="top"><a id="af0776ee2d973542aa00deaee733389f3"></a>
-uniform uniform uniform vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#af0776ee2d973542aa00deaee733389f3">shCoeffs</a> [9]</td></tr>
-<tr class="memdesc:af0776ee2d973542aa00deaee733389f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximation of the environment irradiance (UBO). <br /></td></tr>
-<tr class="separator:af0776ee2d973542aa00deaee733389f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054d3887a3df1c50d120e78dc9e974f4"><td class="memItemLeft" align="right" valign="top"><a id="a054d3887a3df1c50d120e78dc9e974f4"></a>
-uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a054d3887a3df1c50d120e78dc9e974f4">inverseV</a></td></tr>
-<tr class="memdesc:a054d3887a3df1c50d120e78dc9e974f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view to world transformation matrix. <br /></td></tr>
-<tr class="separator:a054d3887a3df1c50d120e78dc9e974f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913ded71ffa77df7f4f0b4e39888ce00"><td class="memItemLeft" align="right" valign="top"><a id="a913ded71ffa77df7f4f0b4e39888ce00"></a>
+uniform uniform uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a913ded71ffa77df7f4f0b4e39888ce00">inverseV</a></td></tr>
+<tr class="memdesc:a913ded71ffa77df7f4f0b4e39888ce00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view to world transformation matrix. <br /></td></tr>
+<tr class="separator:a913ded71ffa77df7f4f0b4e39888ce00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a762295d0c5af82827c11f56a8dd5b4d3"><td class="memItemLeft" align="right" valign="top"><a id="a762295d0c5af82827c11f56a8dd5b4d3"></a>
 uniform mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a762295d0c5af82827c11f56a8dd5b4d3">p</a></td></tr>
 <tr class="memdesc:a762295d0c5af82827c11f56a8dd5b4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projection matrix. <br /></td></tr>
 <tr class="separator:a762295d0c5af82827c11f56a8dd5b4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a104891113df39e47776587d83479e"><td class="memItemLeft" align="right" valign="top"><a id="ac8a104891113df39e47776587d83479e"></a>
-uniform vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#ac8a104891113df39e47776587d83479e">cubemapPos</a></td></tr>
-<tr class="memdesc:ac8a104891113df39e47776587d83479e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cubemap location. <br /></td></tr>
-<tr class="separator:ac8a104891113df39e47776587d83479e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cc3b3373732f3c685f9c83469deea5"><td class="memItemLeft" align="right" valign="top"><a id="ab0cc3b3373732f3c685f9c83469deea5"></a>
-uniform vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#ab0cc3b3373732f3c685f9c83469deea5">cubemapCenter</a></td></tr>
-<tr class="memdesc:ab0cc3b3373732f3c685f9c83469deea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cubemap parallax box center. <br /></td></tr>
-<tr class="separator:ab0cc3b3373732f3c685f9c83469deea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6832ab3f9472c1d45131d85a4e4927d7"><td class="memItemLeft" align="right" valign="top"><a id="a6832ab3f9472c1d45131d85a4e4927d7"></a>
-uniform vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a6832ab3f9472c1d45131d85a4e4927d7">cubemapExtent</a></td></tr>
-<tr class="memdesc:a6832ab3f9472c1d45131d85a4e4927d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cubemap parallax box half size. <br /></td></tr>
-<tr class="separator:a6832ab3f9472c1d45131d85a4e4927d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a246fa85f3a95df4b12b4827d9174c"><td class="memItemLeft" align="right" valign="top"><a id="ae3a246fa85f3a95df4b12b4827d9174c"></a>
-uniform vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#ae3a246fa85f3a95df4b12b4827d9174c">cubemapCosSin</a></td></tr>
-<tr class="memdesc:ae3a246fa85f3a95df4b12b4827d9174c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cubemap parallax box orientation (precomputed cos/sin). <br /></td></tr>
-<tr class="separator:ae3a246fa85f3a95df4b12b4827d9174c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdde293052e0d4f296353a4891a8027"><td class="memItemLeft" align="right" valign="top"><a id="abfdde293052e0d4f296353a4891a8027"></a>
 uniform vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#abfdde293052e0d4f296353a4891a8027">invScreenSize</a></td></tr>
 <tr class="memdesc:abfdde293052e0d4f296353a4891a8027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination size. <br /></td></tr>
 <tr class="separator:abfdde293052e0d4f296353a4891a8027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3ad23cbd6809d8e5d8bbf95017af37"><td class="memItemLeft" align="right" valign="top"><a id="a8d3ad23cbd6809d8e5d8bbf95017af37"></a>
-uniform float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a8d3ad23cbd6809d8e5d8bbf95017af37">maxLod</a></td></tr>
-<tr class="memdesc:a8d3ad23cbd6809d8e5d8bbf95017af37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mip level count for background map. <br /></td></tr>
-<tr class="separator:a8d3ad23cbd6809d8e5d8bbf95017af37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade38c6721e0d31fa8df1398e8b0ce8c"><td class="memItemLeft" align="right" valign="top"><a id="aade38c6721e0d31fa8df1398e8b0ce8c"></a>
 uniform int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#aade38c6721e0d31fa8df1398e8b0ce8c">lightsCount</a></td></tr>
 <tr class="memdesc:aade38c6721e0d31fa8df1398e8b0ce8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active lights. <br /></td></tr>
 <tr class="separator:aade38c6721e0d31fa8df1398e8b0ce8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6e6b4a8757d121baa24e913aead8f7"><td class="memItemLeft" align="right" valign="top"><a id="a3e6e6b4a8757d121baa24e913aead8f7"></a>
-uniform GPULight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a3e6e6b4a8757d121baa24e913aead8f7">lights</a> [MAX_LIGHTS_COUNT]</td></tr>
-<tr class="memdesc:a3e6e6b4a8757d121baa24e913aead8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the lights in a continuous buffer (UBO). <br /></td></tr>
-<tr class="separator:a3e6e6b4a8757d121baa24e913aead8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0b02a77b7021cda3e85b80af2aa9b3"><td class="memItemLeft" align="right" valign="top"><a id="a4c0b02a77b7021cda3e85b80af2aa9b3"></a>
+uniform int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a4c0b02a77b7021cda3e85b80af2aa9b3">probesCount</a></td></tr>
+<tr class="memdesc:a4c0b02a77b7021cda3e85b80af2aa9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active envmaps. <br /></td></tr>
+<tr class="separator:a4c0b02a77b7021cda3e85b80af2aa9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f8ce1b16e53a5dca4469c59e927e0d"><td class="memItemLeft" align="right" valign="top"><a id="af5f8ce1b16e53a5dca4469c59e927e0d"></a>
+uniform GPUPackedLight&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#af5f8ce1b16e53a5dca4469c59e927e0d">lights</a> [MAX_LIGHTS_COUNT]</td></tr>
+<tr class="memdesc:af5f8ce1b16e53a5dca4469c59e927e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the lights in a continuous buffer (UBO). <br /></td></tr>
+<tr class="separator:af5f8ce1b16e53a5dca4469c59e927e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ef9cdc966630256048b6cc1c97165b"><td class="memItemLeft" align="right" valign="top"><a id="a46ef9cdc966630256048b6cc1c97165b"></a>
+uniform GPUPackedProbe&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a46ef9cdc966630256048b6cc1c97165b">probes</a> [MAX_PROBES_COUNT]</td></tr>
+<tr class="memdesc:a46ef9cdc966630256048b6cc1c97165b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the probes in a continuous buffer (UBO). <br /></td></tr>
+<tr class="separator:a46ef9cdc966630256048b6cc1c97165b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd48f469931bb1187b9adb823741f67"><td class="memItemLeft" align="right" valign="top"><a id="a8fd48f469931bb1187b9adb823741f67"></a>
+uniform vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a8fd48f469931bb1187b9adb823741f67">coeffs</a> [9]</td></tr>
+<tr class="memdesc:a8fd48f469931bb1187b9adb823741f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH approximations of the environment probes irradiance (UBO). <br /></td></tr>
+<tr class="separator:a8fd48f469931bb1187b9adb823741f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab10904875e24904a60ef208d6abe6b"><td class="memItemLeft" align="right" valign="top"><a id="a9ab10904875e24904a60ef208d6abe6b"></a>
 out vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__forward.html#a9ab10904875e24904a60ef208d6abe6b">fragColor</a></td></tr>
 <tr class="memdesc:a9ab10904875e24904a60ef208d6abe6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ambient contribution. <br /></td></tr>

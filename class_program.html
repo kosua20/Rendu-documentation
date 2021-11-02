@@ -131,7 +131,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state for a static (external) uniform buffer.  <a href="struct_program_1_1_static_buffer_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_texture_state.html">TextureState</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state for an image-sampler.  <a href="struct_program_1_1_texture_state.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state for an image.  <a href="struct_program_1_1_texture_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_program_1_1_uniform_def.html">UniformDef</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform reflection information.  <a href="struct_program_1_1_uniform_def.html#details">More...</a><br /></td></tr>
@@ -170,10 +170,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdaffb38760f052680aa6709fb30d217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c0da68932f8395ec425a74133730ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a01c0da68932f8395ec425a74133730ef">buffer</a> (const <a class="el" href="class_buffer.html">Buffer</a> &amp;buffer, uint slot)</td></tr>
 <tr class="separator:a01c0da68932f8395ec425a74133730ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7865d319127aad47e75483faa06e816"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#af7865d319127aad47e75483faa06e816">bufferArray</a> (const std::vector&lt; const <a class="el" href="class_buffer.html">Buffer</a> * &gt; &amp;buffers, uint slot)</td></tr>
+<tr class="separator:af7865d319127aad47e75483faa06e816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2fe9da836d430a150aba146d5ac29f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ab2fe9da836d430a150aba146d5ac29f4">texture</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, uint slot, uint mip=<a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a>)</td></tr>
 <tr class="separator:ab2fe9da836d430a150aba146d5ac29f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67ea921e2f0fb614cc156f1487314446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a67ea921e2f0fb614cc156f1487314446">texture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, uint slot, uint mip=<a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a>)</td></tr>
 <tr class="separator:a67ea921e2f0fb614cc156f1487314446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b997ae6c30a7c173894603e5c476022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a0b997ae6c30a7c173894603e5c476022">textureArray</a> (const std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt; &amp;<a class="el" href="class_program.html#ab21e34cbb829264c63b3ed36e45d7605">textures</a>, uint slot, uint mip=<a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a>)</td></tr>
+<tr class="separator:a0b997ae6c30a7c173894603e5c476022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21e34cbb829264c63b3ed36e45d7605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ab21e34cbb829264c63b3ed36e45d7605">textures</a> (const std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt; &amp;textures, size_t slot=0)</td></tr>
 <tr class="separator:ab21e34cbb829264c63b3ed36e45d7605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f9f22c5bc86c7b91b9715c61ddde9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ac2f9f22c5bc86c7b91b9715c61ddde9a">defaultTexture</a> (uint slot)</td></tr>
@@ -572,6 +576,41 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p>Bind a buffer to a given location. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>the buffer to bind </td></tr>
+    <tr><td class="paramname">slot</td><td>the location to bind to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7865d319127aad47e75483faa06e816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7865d319127aad47e75483faa06e816">&#9670;&nbsp;</a></span>bufferArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Program::bufferArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="class_buffer.html">Buffer</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bind a set of buffers to a given location. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffers</td><td>the buffers to bind </td></tr>
     <tr><td class="paramname">slot</td><td>the location to bind to </td></tr>
   </table>
   </dd>
@@ -1459,6 +1498,48 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
     <tr><td class="paramname">texture</td><td>the texture to bind </td></tr>
     <tr><td class="paramname">slot</td><td>the location to bind to </td></tr>
     <tr><td class="paramname">mip</td><td>the mip of the texture to bind (or all mips if left at its default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0b997ae6c30a7c173894603e5c476022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b997ae6c30a7c173894603e5c476022">&#9670;&nbsp;</a></span>textureArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Program::textureArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>textures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>mip</em> = <code><a class="el" href="class_program.html#a162480118bd18b84973309c7e6ceac39">Program::ALL_MIPS</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bind a set of textures to a given location. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textures</td><td>the textures to bind </td></tr>
+    <tr><td class="paramname">slot</td><td>the location to bind to </td></tr>
+    <tr><td class="paramname">mip</td><td>the mip of the textures to bind (or all mips if left at its default value) </td></tr>
   </table>
   </dd>
 </dl>

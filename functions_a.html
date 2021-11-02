@@ -196,15 +196,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <li>alphaTexturePath
 : <a class="el" href="struct_composite_obj_1_1_material.html#ae568b3c5c078f359b4cc6cb5769e8f4b">CompositeObj::Material</a>
 </li>
-<li>ambientBrdf()
-: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aaa904ef6810dfc385c370d547d7a71b2">GPUShaders::Common::Common_pbr</a>
-</li>
-<li>AmbientQuad()
-: <a class="el" href="class_ambient_quad.html#a17ed2c4a215567b12942225cb5af15ad">AmbientQuad</a>
+<li>ambientLighting()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a613dc163960933a0b6e33cd289906e68">GPUShaders::Common::Common_pbr</a>
 </li>
 <li>angles
 : <a class="el" href="struct_forward_light_1_1_g_p_u_light.html#a51096a702e782e151949dd9de01db5b0">ForwardLight::GPULight</a>
-, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_light.html#ab9459b517b2994d585b4ff657d592406">GPUShaders::Common::Forward_lights::GPULight</a>
+, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html#a26cd47b4b598365d24d37052e95386ba">GPUShaders::Common::Common_pbr::Light</a>
+, <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html#ac0fb0589356a29f7252013c81b49b08a">GPUShaders::Common::Forward_lights::GPUPackedLight</a>
 , <a class="el" href="class_spot_light.html#a00a247f5a2ee1cebe44445b07a374fae">SpotLight</a>
 </li>
 <li>angleTrig
@@ -219,30 +217,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 , <a class="el" href="class_scene.html#a4710975da15a4fdf8951ee844a720b90">Scene</a>
 </li>
 <li>Animation()
-: <a class="el" href="class_animation.html#abdacd115f038ebd967bf3d073aee82e5">Animation</a>
+: <a class="el" href="class_animation.html#a9eda75883c9e3c29d12fd225d8c0073d">Animation</a>
+</li>
+<li>Anisotropic
+: <a class="el" href="class_material.html#a9fe49c739fb787db483a4fe055b50c2ea84576e6358411d0f5b09c9b33c053374">Material</a>
 </li>
 <li>anisotropy
-: <a class="el" href="struct_sampler_library_1_1_sampler_settings.html#a26934e093979122be45247500882c5d8">SamplerLibrary::SamplerSettings</a>
+: <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_materials_1_1_material.html#af28fca580c9a23988dc4986595415c33">GPUShaders::Common::Materials::Material</a>
+, <a class="el" href="struct_sampler_library_1_1_sampler_settings.html#a26934e093979122be45247500882c5d8">SamplerLibrary::SamplerSettings</a>
+</li>
+<li>ao
+: <a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_materials_1_1_material.html#ac4c5632d527d04fcd68b929acade2965">GPUShaders::Common::Materials::Material</a>
 </li>
 <li>appendIfNeeded()
 : <a class="el" href="class_log.html#aa8ac2a0a438a073598a0fa5cfe2d88bf">Log</a>
 </li>
 <li>Application()
-: <a class="el" href="class_application.html#ae228579dfbd951742d935cc727b94a9e">Application</a>
+: <a class="el" href="class_application.html#afaeec66a8591b6d88049b260133d13fc">Application</a>
 </li>
 <li>apply()
 : <a class="el" href="class_animation.html#a89c70e11d9f73e2b8f2cd8bbe573ac7f">Animation</a>
-, <a class="el" href="class_back_and_forth.html#a164c4fc486da5873288fc377ccd25ca7">BackAndForth</a>
+, <a class="el" href="class_back_and_forth.html#a7323d341c384cf1f08bc74524ddc3e9d">BackAndForth</a>
 , <a class="el" href="class_camera.html#afc0737d735399af76d0b88178867cecb">Camera</a>
 , <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_tonemap.html#a3a120a1542197487641cf10db28cfd66">GPUShaders::Frag::Tonemap</a>
 , <a class="el" href="class_rotation.html#a7f9e53b289e8a1ee336284986c417480">Rotation</a>
 , <a class="el" href="struct_terrain_1_1_erosion_settings.html#a559a063672949c20910265b937bb0dac">Terrain::ErosionSettings</a>
 </li>
+<li>applyDirectionalLight()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a1a14852f939ec1fdcbe03ba84f5fc5f0">GPUShaders::Common::Common_pbr</a>
+</li>
 <li>applyLight()
-: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#a404fabdbfcaf3b6ecdff0a4781bd1c7a">GPUShaders::Common::Forward_lights</a>
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#adcd51a5ff7da863ceff406256e84e12f">GPUShaders::Common::Forward_lights</a>
+</li>
+<li>applyPointLight()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a8c0041971a9bfad8f7fbc1a7dcba422c">GPUShaders::Common::Common_pbr</a>
 </li>
 <li>applySH()
 : <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#aebd01a51db914dfeb8a631894c619e1f">GPUShaders::Common::Common_pbr</a>
+</li>
+<li>applySpotLight()
+: <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a7f0930764bc1ccc609053b2e6690af68">GPUShaders::Common::Common_pbr</a>
 </li>
 <li>approximateSpecularAO()
 : <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a3d144dfba7fdd4b82209e9c8b563a046">GPUShaders::Common::Common_pbr</a>
