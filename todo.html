@@ -89,8 +89,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Member <a class="el" href="class_forward_renderer.html#a923dbfa6c06a3ca84750864075943bb3">ForwardRenderer::draw</a>  (const <a class="el" href="class_camera.html" title="This class represents a camera as used in real-time rendering APIs. It provides a view and projection...">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html" title="Represent a rendering target, of any size, format and type, backed by a GPU framebuffer.">Framebuffer</a> &amp;framebuffer, uint layer=0) override</dt>
+<dd><a class="anchor" id="_todo000001"></a>Currently there is no mechanism to "unregister" a texture for each shader using it, when deleting the texture. The texture could keep a record of all programs it has been used in. Or we could look at all programs when deleting. Or in <a class="el" href="class_p_b_r_demo.html" title="PBR rendering demonstration and interactions.">PBRDemo</a> we reset the textures when setting a scene.  </dd>
 <dt>Member <a class="el" href="class_frustum.html#acf5f98285d80bfa191524d9441d8f8c6">Frustum::intersects</a>  (const <a class="el" href="class_bounding_box.html" title="Represent the smallest axis-aligne box containing a given object or region of space.">BoundingBox</a> &amp;box) const</dt>
-<dd><a class="anchor" id="_todo000001"></a>Implement frustum corner checks to weed out more false positives. </dd>
+<dd><a class="anchor" id="_todo000003"></a>Implement frustum corner checks to weed out more false positives.  </dd>
+<dt>Member <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#aa3ad93f1fb9c88374a7a1f4cf7bdaba6">GPUShaders::Common::Common_parallax::updateFragmentPosition</a>  (float shiftDistance, vec3 viewPos, mat4 proj)</dt>
+<dd><a class="anchor" id="_todo000004"></a>Depth output is sometimes incorrect.  </dd>
+<dt>Member <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_materials.html#a16dfa214db3e4435202820a521b8d755">GPUShaders::Common::Materials::decodeMaterialFromGbuffer</a>  (vec2 uv, texture2D gbuffer0, texture2D gbuffer1, texture2D gbuffer2)</dt>
+<dd><a class="anchor" id="_todo000005"></a>There is a precision issue when decoding from the Gbuffer instead of an inline value.  </dd>
+<dt>Member <a class="el" href="class_program.html#a1e0347fbe4d1bb37f98a8ecf43cdcc95">Program::update</a>  ()</dt>
+<dd><a class="anchor" id="_todo000002"></a>Should we use the real buffer current offset here, if an update happened under the hood more than once per frame? </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

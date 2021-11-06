@@ -193,6 +193,65 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represent a surface material, including textures describing the surface parameters. </p>
+<p>Different predefined materials can be used, with predefined parameters stored in ordered textures.</p>
+<p><b>Regular:</b> GGX material, dielectric or conductor.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, metalness, ambient occlusion (RGB8)</li>
+</ul>
+<p><b>Parallax:</b> GGX material with parallax occlusion mapping.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, metalness, ambient occlusion (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Depth (R8)</li>
+</ul>
+<p><b>Clearcoat:</b> GGX material with an additional dielectric transparent layer overlayed top.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, metalness, ambient occlusion (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Clear coat strength, clear coat roughness (RG8)</li>
+</ul>
+<p><b>Anisotropic:</b> GGX material with anisotropic specular behavior.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, metalness, ambient occlusion (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Anisotropy direction (2D unit vector), anisotropy strength (scaled to [-1,1] parameterization) (RGB8)</li>
+</ul>
+<p><b>Sheen:</b> Cloth-like material, assumed to be a dielectric.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, sheen strength, ambient occlusion (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Sheen color, sheen roughness (RGBA8)</li>
+</ul>
+<p><b>Iridescent:</b> GGX material with thin-film interferences on the surface.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, metalness, ambient occlusion (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Thin film refraction index (scaled to [1.2,2.4]), thin film thickness (scaled to [300nm,800nm]) (RG8)</li>
+</ul>
+<p><b>Subsurface:</b> Dieletric GGX material with subsurface scattering/transmission.</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, alpha cutout (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, metalness, ambient occlusion, thickness (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Subsurface color, subsurface roughness (RGBA8)</li>
+</ul>
+<p><b>Emissive:</b> light emitting material, assume to be optionally covered by a transparent dielectric</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Emissive color, alpha cutout (RGBA32)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness (R8)</li>
+</ul>
+<p><b>Transparent:</b> transparent object with a dieletric surface</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, opacity (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, unused, ambient occlusion (RGB8)</li>
+</ul>
+<p><b>TransparentIrid:</b> transparent object with a dieletric surface and thin film interferences</p><ul>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 0: Albedo, opacity (RGBA8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 1: Normal map (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 2: Roughness, unused, ambient occlusion (RGB8)</li>
+<li><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> 3: Thin film refraction index (scaled to [1.2,2.4]), thin film thickness (scaled to [300nm,800nm]) (RG8)</li>
+</ul>
+<p><b>None:</b> any parameters can be specified depending on the shader used in the renderer code. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a9fe49c739fb787db483a4fe055b50c2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fe49c739fb787db483a4fe055b50c2e">&#9670;&nbsp;</a></span>Type</h2>
@@ -211,10 +270,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2eadb9e625a03b991e6ee4951424be34f4e"></a>None&#160;</td><td class="fielddoc"><p>Any type of shading. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea06b8b95dd5b929ae95fb9c9d67cf2d47"></a>Regular&#160;</td><td class="fielddoc"><p>PBR shading. </p>
-<dl class="section see"><dt>See also</dt><dd>GPU::Vert::Object_gbuffer, GPU::Frag::Object_gbuffer </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea6358339737472c86f4e151e746f6eea0"></a>Parallax&#160;</td><td class="fielddoc"><p>PBR with parallax mapping. </p>
-<dl class="section see"><dt>See also</dt><dd>GPU::Vert::Object_parallax_gbuffer, GPU::Frag::Object_parallax_gbuffer </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a9fe49c739fb787db483a4fe055b50c2ea1199aa698a7117608d0c9bc3f51dfc20"></a>Clearcoat&#160;</td><td class="fielddoc"><p>PBR shading with an additional clear coat specular layer. </p>
 </td></tr>

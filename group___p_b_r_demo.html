@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <p>Real-time rendering using GGX BRDF, image-based lighting, AO, tonemapped HDR, antialiasing. </p>
-<p>Two renderers can be used: a forward renderer where objects are directly shaded and the resulting colors stored, and deffered, where all scene informations (albedo, normals, material ID, roughness) are rendered to a G-Buffer before being used to render each light contribution using simple geometric proxies. The scene is rendered using the GGX BRDF model. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_deferred_renderer.html" title="Performs deferred rendering of a scene.">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html" title="A renderer that shade each object as it is drawn in the scene directly.">ForwardRenderer</a> </dd></dl>
+<p>Two renderers can be used: a forward renderer where objects are directly shaded and the resulting colors stored, and deferred, where all scene information (such as albedo, normals, material ID, roughness,...) is rendered to a G-Buffer before being used to render each light and ambient probe contribution using simple geometric proxies. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_deferred_renderer.html" title="Performs deferred rendering of a scene.">DeferredRenderer</a>, <a class="el" href="class_forward_renderer.html" title="A renderer that shade each object as it is drawn in the scene directly.">ForwardRenderer</a>, <a class="el" href="class_material.html" title="Represent a surface material, including textures describing the surface parameters.">Material</a> </dd></dl>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -102,10 +102,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide debuggging visualization for most scene elements.  <a href="class_debug_renderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html">DeferredLight</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a light onto the lighting buffer. By processing all lights, the final lighting is accumulated in the buffer.  <a href="class_deferred_light.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a light onto the lighting buffer using a geometric proxy (cone, sphere, screenquad). By processing all lights, the final lighting is accumulated in the buffer.  <a href="class_deferred_light.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_probe.html">DeferredProbe</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a probe onto the lighting buffer.  <a href="class_deferred_probe.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a probe onto the lighting buffer by rendering a box. The probe contribution weight is accumulated in the alpha channel.  <a href="class_deferred_probe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html">DeferredRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs deferred rendering of a scene.  <a href="class_deferred_renderer.html#details">More...</a><br /></td></tr>

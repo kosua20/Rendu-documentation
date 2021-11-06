@@ -108,17 +108,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a21a6677040ad72a6be1a0cae41dcafe1"><td class="memItemLeft" align="right" valign="top">vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#a21a6677040ad72a6be1a0cae41dcafe1">parallax</a> (vec2 uv, vec3 vTangentDir, texture2D depth, out vec2 positionShift)</td></tr>
-<tr class="separator:a21a6677040ad72a6be1a0cae41dcafe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43515c763c813313d817567327ee03d"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#af43515c763c813313d817567327ee03d">updateFragmentPosition</a> (vec2 localUV, vec2 positionShift, vec3 viewPos, mat4 proj, mat3 tbn, texture2D depth)</td></tr>
-<tr class="separator:af43515c763c813313d817567327ee03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d35b35fdd19a3d4831215ffec5ce094"><td class="memItemLeft" align="right" valign="top">vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#a2d35b35fdd19a3d4831215ffec5ce094">parallax</a> (vec2 uv, vec3 vTangentDir, texture2D depth, out float shiftDistance)</td></tr>
+<tr class="separator:a2d35b35fdd19a3d4831215ffec5ce094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ad93f1fb9c88374a7a1f4cf7bdaba6"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__parallax.html#aa3ad93f1fb9c88374a7a1f4cf7bdaba6">updateFragmentPosition</a> (float shiftDistance, vec3 viewPos, mat4 proj)</td></tr>
+<tr class="separator:aa3ad93f1fb9c88374a7a1f4cf7bdaba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_g_p_u_shaders_1_1_common.html" title="Contains shared shader code.">Common</a> parallax general shader. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_samplers.html" title="Samplers general shader.">GPUShaders::Common::Samplers</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a21a6677040ad72a6be1a0cae41dcafe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21a6677040ad72a6be1a0cae41dcafe1">&#9670;&nbsp;</a></span>parallax()</h2>
+<a id="a2d35b35fdd19a3d4831215ffec5ce094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d35b35fdd19a3d4831215ffec5ce094">&#9670;&nbsp;</a></span>parallax()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,8 +147,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">out vec2&#160;</td>
-          <td class="paramname"><em>positionShift</em>&#160;</td>
+          <td class="paramtype">out float&#160;</td>
+          <td class="paramname"><em>shiftDistance</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">uv</td><td>the initial texture coordinates </td></tr>
     <tr><td class="paramname">vTangentDir</td><td>the view direction in tangent space </td></tr>
     <tr><td class="paramname">depth</td><td>the heightmap </td></tr>
-    <tr><td class="paramname">positionShift</td><td>will contain the final position shift </td></tr>
+    <tr><td class="paramname">shiftDistance</td><td>will contain the final shift along the view direction </td></tr>
   </table>
   </dd>
 </dl>
@@ -175,8 +175,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af43515c763c813313d817567327ee03d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af43515c763c813313d817567327ee03d">&#9670;&nbsp;</a></span>updateFragmentPosition()</h2>
+<a id="aa3ad93f1fb9c88374a7a1f4cf7bdaba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ad93f1fb9c88374a7a1f4cf7bdaba6">&#9670;&nbsp;</a></span>updateFragmentPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,14 +187,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">vec3 GPUShaders::Common::Common_parallax::updateFragmentPosition </td>
           <td>(</td>
-          <td class="paramtype">vec2&#160;</td>
-          <td class="paramname"><em>localUV</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec2&#160;</td>
-          <td class="paramname"><em>positionShift</em>, </td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>shiftDistance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -206,19 +200,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">mat4&#160;</td>
-          <td class="paramname"><em>proj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">mat3&#160;</td>
-          <td class="paramname"><em>tbn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">texture2D&#160;</td>
-          <td class="paramname"><em>depth</em>&#160;</td>
+          <td class="paramname"><em>proj</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -234,16 +216,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Compute the new view space position of the parallax-mapped fragment and update its depth in the depth buffer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">localUV</td><td>the final computed UV </td></tr>
-    <tr><td class="paramname">positionShift</td><td>the shift in the tangent plane </td></tr>
+    <tr><td class="paramname">shiftDistance</td><td>the shift along the view direction </td></tr>
     <tr><td class="paramname">viewPos</td><td>the initial view space fragment position </td></tr>
     <tr><td class="paramname">proj</td><td>the projection matrix </td></tr>
-    <tr><td class="paramname">tbn</td><td>the tangent space to view space matrix </td></tr>
-    <tr><td class="paramname">depth</td><td>the heightmap used for parallax mapping </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the updated position </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Depth output is sometimes incorrect. </dd></dl>
 
 </div>
 </div>

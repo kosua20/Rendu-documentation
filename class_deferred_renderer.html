@@ -272,7 +272,83 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Performs deferred rendering of a scene. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_deferred_light.html" title="Apply a light onto the lighting buffer. By processing all lights, the final lighting is accumulated i...">DeferredLight</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_deferred_light.html" title="Apply a light onto the lighting buffer using a geometric proxy (cone, sphere, screenquad)....">DeferredLight</a>, <a class="el" href="class_deferred_probe.html" title="Apply a probe onto the lighting buffer by rendering a box. The probe contribution weight is accumulat...">DeferredProbe</a>, <a class="el" href="class_material.html" title="Represent a surface material, including textures describing the surface parameters.">Material</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPUShaders::Common::Common_pbr</a></dd></dl>
+<p>Objects material information is renderer in a framebuffer, packing the various parameters as efficiently as possible in a fixed number of texture channels. As many components as possible are reused between materials, and the precision of some parameters is lowered. See the <a class="el" href="class_material.html" title="Represent a surface material, including textures describing the surface parameters.">Material</a> class documentation for all parameter details.</p>
+<p><b>Shared section:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0: RGBA8   </td><td class="markdownTableBodyCenter" colspan="3">Albedo/reflectance/emissive color   </td><td class="markdownTableBodyCenter"><a class="el" href="class_material.html" title="Represent a surface material, including textures describing the surface parameters.">Material</a> ID    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2">Normal octahedral XY   </td><td class="markdownTableBodyCenter" colspan="2"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter" colspan="4"></td></tr>
+</table>
+<p><b>Standard (&amp; Parallax):</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter" colspan="2"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter">Metalness(5)   </td><td class="markdownTableBodyCenter">Ambient occlusion   </td><td class="markdownTableBodyCenter"></td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__gbuffer.html" title="Object gbuffer fragment shader.">GPUShaders::Frag::Object_gbuffer</a>, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__parallax__gbuffer.html" title="Object parallax gbuffer fragment shader.">GPUShaders::Frag::Object_parallax_gbuffer</a></dd></dl>
+<p><b>Clearcoat:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter" colspan="2"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter">Metal(5) Coating(3)   </td><td class="markdownTableBodyCenter">Ambient occlusion   </td><td class="markdownTableBodyCenter">Coat roughness   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__clearcoat__gbuffer.html" title="Object clearcoat gbuffer fragment shader.">GPUShaders::Frag::Object_clearcoat_gbuffer</a></dd></dl>
+<p><b>Anisotropic:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter">Anisotropy angle   </td><td class="markdownTableBodyCenter">Anisotropy signs    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter">Metalness(5)   </td><td class="markdownTableBodyCenter">Ambient occlusion   </td><td class="markdownTableBodyCenter">Anisotropy   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__anisotropic__gbuffer.html" title="Object anisotropic gbuffer fragment shader.">GPUShaders::Frag::Object_anisotropic_gbuffer</a></dd></dl>
+<p><b>Sheen:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter" colspan="2">Sheen color (3*4)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter">Sheeness(5)   </td><td class="markdownTableBodyCenter">Ambient occlusion   </td><td class="markdownTableBodyCenter">Sheen roughness   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__sheen__gbuffer.html" title="Object sheen gbuffer fragment shader.">GPUShaders::Frag::Object_sheen_gbuffer</a></dd></dl>
+<p><b>Iridescent:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter">Index of refraction   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter">Metalness(5)   </td><td class="markdownTableBodyCenter">Ambient occlusion   </td><td class="markdownTableBodyCenter">Thickness   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__iridescent__gbuffer.html" title="Object iridescent gbuffer fragment shader.">GPUShaders::Frag::Object_iridescent_gbuffer</a></dd></dl>
+<p><b>Subsurface:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter" colspan="2">Subsurface color (3*4)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter">Subsurf rough(5)   </td><td class="markdownTableBodyCenter">Ambient occlusion   </td><td class="markdownTableBodyCenter">Thickness   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__subsurface__gbuffer.html" title="Object subsurface gbuffer fragment shader.">GPUShaders::Frag::Object_subsurface_gbuffer</a></dd></dl>
+<p><b>Emissive:</b> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadCenter">_______Red‏‏‎_______   </th><th class="markdownTableHeadCenter">______Green______   </th><th class="markdownTableHeadCenter">_______Blue______   </th><th class="markdownTableHeadCenter">______Alpha______    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">1: RGB10A2   </td><td class="markdownTableBodyCenter" colspan="2"></td><td class="markdownTableBodyCenter">Roughness   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">2: RGBA8   </td><td class="markdownTableBodyCenter" colspan="4">Emissive intensity   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__emissive__gbuffer.html" title="Object emissive gbuffer fragment shader.">GPUShaders::Frag::Object_emissive_gbuffer</a></dd></dl>
+<p>The G-buffer is then read by each light, rendered as a geometric proxy onto the scene depth buffer and writing its lighting contribution to a lighting buffer. Ambient probes are processed similarly. Direct and ambient lighting are finally merged to generate the final image.</p>
+<p>Transparent objects are rendered in a forward pass. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__transparent__forward.html" title="Object transparent forward fragment shader.">GPUShaders::Frag::Object_transparent_forward</a>, <a class="el" href="class_g_p_u_shaders_1_1_frag_1_1_object__transparent__irid__forward.html" title="Object transparent irid forward fragment shader.">GPUShaders::Frag::Object_transparent_irid_forward</a> </dd></dl>
 </div>
 <p>Inherits <a class="el" href="class_renderer.html">Renderer</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
