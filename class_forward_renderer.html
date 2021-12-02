@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c31e14a5d7484c717a1e01482a310ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a8c31e14a5d7484c717a1e01482a310ae">ForwardRenderer</a> (const glm::vec2 &amp;resolution, <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode, bool ssao, const std::string &amp;name)</td></tr>
-<tr class="separator:a8c31e14a5d7484c717a1e01482a310ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b64a9d4fac46f4a07fbe45725eafe47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a8b64a9d4fac46f4a07fbe45725eafe47">ForwardRenderer</a> (const glm::vec2 &amp;resolution, bool ssao, const std::string &amp;name)</td></tr>
+<tr class="separator:a8b64a9d4fac46f4a07fbe45725eafe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1038bb99dd8e5edc235f382a241be2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#ae1038bb99dd8e5edc235f382a241be2e">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
 <tr class="separator:ae1038bb99dd8e5edc235f382a241be2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a923dbfa6c06a3ca84750864075943bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a923dbfa6c06a3ca84750864075943bb3">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer=0) override</td></tr>
@@ -239,10 +239,6 @@ std::unique_ptr&lt; <a class="el" href="class_culler.html">Culler</a> &gt;&#160;
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a363c0ef5d18189a6e005c918cadc0bd3">_applySSAO</a> = true</td></tr>
 <tr class="memdesc:a363c0ef5d18189a6e005c918cadc0bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen space ambient occlusion. <br /></td></tr>
 <tr class="separator:a363c0ef5d18189a6e005c918cadc0bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec9582200a5993aa792d71512f29d63"><td class="memItemLeft" align="right" valign="top"><a id="a9ec9582200a5993aa792d71512f29d63"></a>
-<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_renderer.html#a9ec9582200a5993aa792d71512f29d63">_shadowMode</a> = <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde">ShadowMode::VARIANCE</a></td></tr>
-<tr class="memdesc:a9ec9582200a5993aa792d71512f29d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow mapping technique to use. <br /></td></tr>
-<tr class="separator:a9ec9582200a5993aa792d71512f29d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -264,8 +260,8 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 </div>
 <p>Inherits <a class="el" href="class_renderer.html">Renderer</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8c31e14a5d7484c717a1e01482a310ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c31e14a5d7484c717a1e01482a310ae">&#9670;&nbsp;</a></span>ForwardRenderer()</h2>
+<a id="a8b64a9d4fac46f4a07fbe45725eafe47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b64a9d4fac46f4a07fbe45725eafe47">&#9670;&nbsp;</a></span>ForwardRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,12 +274,6 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
           <td>(</td>
           <td class="paramtype">const glm::vec2 &amp;&#160;</td>
           <td class="paramname"><em>resolution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -312,7 +302,6 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 <p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resolution</td><td>the initial rendering resolution </td></tr>
-    <tr><td class="paramname">mode</td><td>the shadow rendering algorithm </td></tr>
     <tr><td class="paramname">ssao</td><td>should screen space ambient occlusion be computed </td></tr>
     <tr><td class="paramname">name</td><td>the debug name </td></tr>
   </table>
@@ -371,7 +360,7 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
   </table>
   </dd>
 </dl>
-<p>This is because after a change of scene shadow maps and probes are reset, but the conditional setup of textures on the program means that descriptors can still reference the deleted textures. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Currently there is no mechanism to "unregister" a texture for each shader using it, when deleting the texture. The texture could keep a record of all programs it has been used in. Or we could look at all programs when deleting. Or in <a class="el" href="class_p_b_r_demo.html" title="PBR rendering demonstration and interactions.">PBRDemo</a> we reset the textures when setting a scene. </dd></dl>
+<p>This is because after a change of scene shadow maps and probes are reset, but the conditional setup of textures on the program means that descriptors can still reference the deleted textures. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Currently there is no mechanism to "unregister" a texture for each shader using it, when deleting the texture. The texture could keep a record of all programs it has been used in. Or we could look at all programs when deleting. Or in <a class="el" href="class_p_b_r_demo.html" title="PBR rendering demonstration and interactions.">PBRDemo</a> we reset the textures when setting a scene. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_renderer.html#a01f6ced386f3b974d939693fdc1f9c71">Renderer</a>.</p>
 

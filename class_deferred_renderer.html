@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec14a979c18b3711361e382174bfd794"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#aec14a979c18b3711361e382174bfd794">DeferredRenderer</a> (const glm::vec2 &amp;resolution, <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode, bool ssao, const std::string &amp;name)</td></tr>
-<tr class="separator:aec14a979c18b3711361e382174bfd794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d060c9f40bc71f5aa4adae5de120f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a06d060c9f40bc71f5aa4adae5de120f4">DeferredRenderer</a> (const glm::vec2 &amp;resolution, bool ssao, const std::string &amp;name)</td></tr>
+<tr class="separator:a06d060c9f40bc71f5aa4adae5de120f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d85b987d0d1c4ed44091df02c0e4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a31d85b987d0d1c4ed44091df02c0e4fa">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
 <tr class="separator:a31d85b987d0d1c4ed44091df02c0e4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adafdf64ab21bec286b5663adbc12a019"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#adafdf64ab21bec286b5663adbc12a019">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer=0) override</td></tr>
@@ -253,10 +253,6 @@ std::unique_ptr&lt; <a class="el" href="class_culler.html">Culler</a> &gt;&#160;
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a5d3dfc08aefaf0c2ce6c7b9796bf1f41">_applySSAO</a> = true</td></tr>
 <tr class="memdesc:a5d3dfc08aefaf0c2ce6c7b9796bf1f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen space ambient occlusion. <br /></td></tr>
 <tr class="separator:a5d3dfc08aefaf0c2ce6c7b9796bf1f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef9d0a40d129404132c23dfbac003e6"><td class="memItemLeft" align="right" valign="top"><a id="a8ef9d0a40d129404132c23dfbac003e6"></a>
-<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_renderer.html#a8ef9d0a40d129404132c23dfbac003e6">_shadowMode</a> = <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde">ShadowMode::VARIANCE</a></td></tr>
-<tr class="memdesc:a8ef9d0a40d129404132c23dfbac003e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow mapping technique to use. <br /></td></tr>
-<tr class="separator:a8ef9d0a40d129404132c23dfbac003e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -352,8 +348,8 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 </div>
 <p>Inherits <a class="el" href="class_renderer.html">Renderer</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aec14a979c18b3711361e382174bfd794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec14a979c18b3711361e382174bfd794">&#9670;&nbsp;</a></span>DeferredRenderer()</h2>
+<a id="a06d060c9f40bc71f5aa4adae5de120f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d060c9f40bc71f5aa4adae5de120f4">&#9670;&nbsp;</a></span>DeferredRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,12 +362,6 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
           <td>(</td>
           <td class="paramtype">const glm::vec2 &amp;&#160;</td>
           <td class="paramname"><em>resolution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -400,7 +390,6 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 <p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resolution</td><td>the initial rendering resolution </td></tr>
-    <tr><td class="paramname">mode</td><td>the shadow rendering algorithm </td></tr>
     <tr><td class="paramname">ssao</td><td>should screen space ambient occlusion be computed </td></tr>
     <tr><td class="paramname">name</td><td>the debug name </td></tr>
   </table>

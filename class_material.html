@@ -149,8 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6a02eb21f546d38694a452813f4dd43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab858033c9ac4efcffbb80fa3d5862418"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material.html#ab858033c9ac4efcffbb80fa3d5862418">name</a> () const</td></tr>
 <tr class="separator:ab858033c9ac4efcffbb80fa3d5862418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563737fda1112228123e97062aa9b761"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material.html#a563737fda1112228123e97062aa9b761">decode</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
-<tr class="separator:a563737fda1112228123e97062aa9b761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac93db13fefe51c03a7b9649cd9edf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material.html#a3ac93db13fefe51c03a7b9649cd9edf2">decode</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params, <a class="el" href="group___resources.html#gaa9f7226fdc21094a152870ec1872f744">Storage</a> options)</td></tr>
+<tr class="separator:a3ac93db13fefe51c03a7b9649cd9edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade1edfe52243cac4345e21d6a5543008"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_key_values.html">KeyValues</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material.html#ade1edfe52243cac4345e21d6a5543008">encode</a> () const</td></tr>
 <tr class="separator:ade1edfe52243cac4345e21d6a5543008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255ba20d0325e6b78ff68ac739df40de"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_material.html#a255ba20d0325e6b78ff68ac739df40de">~Material</a> ()=default</td></tr>
@@ -473,17 +473,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a563737fda1112228123e97062aa9b761"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a563737fda1112228123e97062aa9b761">&#9670;&nbsp;</a></span>decode()</h2>
+<a id="a3ac93db13fefe51c03a7b9649cd9edf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac93db13fefe51c03a7b9649cd9edf2">&#9670;&nbsp;</a></span>decode()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Material::decode </td>
+          <td class="memname">bool Material::decode </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -500,11 +497,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Setup a material parameters from a list of key-value tuples. The following keywords will be searched for: </p><pre class="fragment">type: materialtype
 twosided: bool
@@ -522,6 +514,8 @@ parameters:
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>decoding status <br  />
+ </dd></dl>
 
 </div>
 </div>

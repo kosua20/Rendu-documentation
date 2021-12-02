@@ -104,7 +104,7 @@ Applications</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="http://kosua20.github.io/Rendu-documentation/group___p_b_r_demo.html">Physically based rendering</a>   </td><td class="markdownTableBodyNone"><img src="pbrdemo.png" alt="" class="inline" title="PBR demo preview"/> Real-time rendering of a scene with 'physically-based' materials (GGX BRDF introduced in <em>Microfacet Models for Refraction through Rough Surfaces</em>, Walter et al., 2007), using deferred or forward rendering, real-time lighting environment and shadows update, and an HDR pipeline with bloom, depth of field and ambient occlusion.    </td></tr>
+<td class="markdownTableBodyNone"><a href="http://kosua20.github.io/Rendu-documentation/group___p_b_r_demo.html">Physically based rendering</a>   </td><td class="markdownTableBodyNone"><img src="pbrdemo.png" alt="" class="inline" title="PBR demo preview"/> Real-time rendering of a scene with 'physically-based' materials (GGX BRDF introduced in <em>Microfacet Models for Refraction through Rough Surfaces</em>, Walter et al., 2007, with support for anisotropy, clearcoat, subsurface...), using deferred or forward rendering, real-time lighting environment and shadows update, and an HDR pipeline with bloom, depth of field and ambient occlusion.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="http://kosua20.github.io/Rendu-documentation/group___pathtracer_demo.html">Path Tracer</a>   </td><td class="markdownTableBodyNone"><img src="pathtracer.png" alt="" class="inline" title="Path tracer preview"/> Offline unidirectional path tracing for textured materials using Lambert+GGX BRDF with importance sampling. Supports stratified sampling, jittering, next event estimation, environment lighting contribution, emissive objects. Relies on a raycaster with a BVH for fast intersection queries against triangular meshes. Comes with an interactive viewer where the BVH levels can be displayed, and the camera placed for rendering.    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -152,7 +152,8 @@ Features</h1>
 <li><a class="el" href="class_resources.html" title="The Resources manager is responsible for all resources loading and setup.">Resources</a> handling and packing.</li>
 <li>Shader validation at compilation time, with automatic location handling.</li>
 <li><a class="el" href="class_input.html" title="The input manager is responsible for updating the internal input states (keyboard,...">Input</a> management with controllers support.</li>
-<li>3D rendering, including per-fragment shading, normal maps, parallax mapping.</li>
+<li>3D rendering, including per-fragment shading, normal maps, parallax occlusion mapping.</li>
+<li>Complex materials based on the GGX BRDF, with support for anisotropy, clear coat, sheen, subsurface scattering, transparency, iridescence, emissive surfaces</li>
 <li>Lights: omni/spots/directional lights, batched variance shadow mapping for all lights.</li>
 <li>Environment maps updated in real-time, preconvolved radiance maps and spherical harmonics irradiance decompositions (also updated on the fly).</li>
 <li>Local environment probes with optional local box parallax correction, area of effect and soft transitions.</li>

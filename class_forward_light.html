@@ -119,8 +119,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a61bcfe75d7a68d5ae3e920cd1e3beeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b3cee874fbac5e88fb0fa82a5e7f2e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#a2b3cee874fbac5e88fb0fa82a5e7f2e7">updateCameraInfos</a> (const glm::mat4 &amp;viewMatrix, const glm::mat4 &amp;projMatrix)</td></tr>
 <tr class="separator:a2b3cee874fbac5e88fb0fa82a5e7f2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a778c37ac32b4f5fc4a78d65d21d72b0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#a778c37ac32b4f5fc4a78d65d21d72b0d">updateShadowMapInfos</a> (<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode, float bias)</td></tr>
-<tr class="separator:a778c37ac32b4f5fc4a78d65d21d72b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9867bf3f81bf6591f94b40e627b791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#a5f9867bf3f81bf6591f94b40e627b791">draw</a> (const <a class="el" href="class_spot_light.html">SpotLight</a> *light) override</td></tr>
 <tr class="separator:a5f9867bf3f81bf6591f94b40e627b791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5d4860d6f68911b46d55ab15faa5196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#ab5d4860d6f68911b46d55ab15faa5196">draw</a> (const <a class="el" href="class_point_light.html">PointLight</a> *light) override</td></tr>
@@ -160,14 +158,6 @@ glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#adf2913eebb6b989467bce353263a11e9">_invView</a> = glm::mat4(1.0f)</td></tr>
 <tr class="memdesc:adf2913eebb6b989467bce353263a11e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached inverse view matrix. <br /></td></tr>
 <tr class="separator:adf2913eebb6b989467bce353263a11e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a2bbd05811af15da530292c9fb59e0"><td class="memItemLeft" align="right" valign="top"><a id="aa2a2bbd05811af15da530292c9fb59e0"></a>
-<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#aa2a2bbd05811af15da530292c9fb59e0">_shadowMode</a> = <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ae4ac03f6c9f00665644e868dd1fb9f1e">ShadowMode::BASIC</a></td></tr>
-<tr class="memdesc:aa2a2bbd05811af15da530292c9fb59e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow mapping techique. <br /></td></tr>
-<tr class="separator:aa2a2bbd05811af15da530292c9fb59e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08df85951870429c18b07b094896e3a3"><td class="memItemLeft" align="right" valign="top"><a id="a08df85951870429c18b07b094896e3a3"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#a08df85951870429c18b07b094896e3a3">_shadowBias</a> = 0.0f</td></tr>
-<tr class="memdesc:a08df85951870429c18b07b094896e3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow depth bias. <br /></td></tr>
-<tr class="separator:a08df85951870429c18b07b094896e3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52780d65a268bdf2df90b03ca323b175"><td class="memItemLeft" align="right" valign="top"><a id="a52780d65a268bdf2df90b03ca323b175"></a>
 std::vector&lt; const <a class="el" href="class_texture.html">Texture</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward_light.html#a52780d65a268bdf2df90b03ca323b175">_shadowMaps</a></td></tr>
 <tr class="memdesc:a52780d65a268bdf2df90b03ca323b175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow maps list. <br /></td></tr>
@@ -427,41 +417,6 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class=
   <table class="params">
     <tr><td class="paramname">viewMatrix</td><td>the camera view matrix </td></tr>
     <tr><td class="paramname">projMatrix</td><td>the camera projection matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a778c37ac32b4f5fc4a78d65d21d72b0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a778c37ac32b4f5fc4a78d65d21d72b0d">&#9670;&nbsp;</a></span>updateShadowMapInfos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ForwardLight::updateShadowMapInfos </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>bias</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the current shadowmap settings. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mode</td><td>the technique to use </td></tr>
-    <tr><td class="paramname">bias</td><td>shadow map depth bias </td></tr>
   </table>
   </dd>
 </dl>

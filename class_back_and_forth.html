@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a164c4fc486da5873288fc377ccd25ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7323d341c384cf1f08bc74524ddc3e9d"><td class="memItemLeft" align="right" valign="top">glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_back_and_forth.html#a7323d341c384cf1f08bc74524ddc3e9d">apply</a> (const glm::vec4 &amp;v, double fullTime, double frameTime) override</td></tr>
 <tr class="separator:a7323d341c384cf1f08bc74524ddc3e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadfc3bd5db9d810e6cba39d10b20e542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_back_and_forth.html#aadfc3bd5db9d810e6cba39d10b20e542">decode</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params)</td></tr>
-<tr class="separator:aadfc3bd5db9d810e6cba39d10b20e542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f5a0677efff7d5e8c3d9281f002b0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_back_and_forth.html#a88f5a0677efff7d5e8c3d9281f002b0c">decode</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params)</td></tr>
+<tr class="separator:a88f5a0677efff7d5e8c3d9281f002b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70df444d1877af298a378db70eab09d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_key_values.html">KeyValues</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_back_and_forth.html#a70df444d1877af298a378db70eab09d9">encode</a> () const override</td></tr>
 <tr class="separator:a70df444d1877af298a378db70eab09d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_animation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_animation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_animation.html">Animation</a></td></tr>
@@ -164,8 +164,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4c294d8ee848291f5da25a7d6360601f inherit pro_methods_class_animation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdacd115f038ebd967bf3d073aee82e5 inherit pro_methods_class_animation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animation.html#abdacd115f038ebd967bf3d073aee82e5">Animation</a> (<a class="el" href="class_animation.html#aab91ed238f585aa0fd149d1c392ab121">Frame</a> frame, float speed)</td></tr>
 <tr class="separator:abdacd115f038ebd967bf3d073aee82e5 inherit pro_methods_class_animation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a793d4b6aaf8ad72f5e1bc368a0d2c17a inherit pro_methods_class_animation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animation.html#a793d4b6aaf8ad72f5e1bc368a0d2c17a">decodeBase</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params)</td></tr>
-<tr class="separator:a793d4b6aaf8ad72f5e1bc368a0d2c17a inherit pro_methods_class_animation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e53e051aa8f7bed7f15f2cecf2abd9a inherit pro_methods_class_animation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animation.html#a0e53e051aa8f7bed7f15f2cecf2abd9a">decodeBase</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params)</td></tr>
+<tr class="separator:a0e53e051aa8f7bed7f15f2cecf2abd9a inherit pro_methods_class_animation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_animation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_animation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_animation.html">Animation</a></td></tr>
 <tr class="memitem:acdfc50c3f47f828f00b3d6763c2c809a inherit pro_attribs_class_animation"><td class="memItemLeft" align="right" valign="top"><a id="acdfc50c3f47f828f00b3d6763c2c809a"></a>
 <a class="el" href="class_animation.html#aab91ed238f585aa0fd149d1c392ab121">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animation.html#acdfc50c3f47f828f00b3d6763c2c809a">_frame</a> = <a class="el" href="class_animation.html#aab91ed238f585aa0fd149d1c392ab121a5289492cf082446ca4a6eec9f72f1ec3">Frame::WORLD</a></td></tr>
@@ -363,14 +363,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="aadfc3bd5db9d810e6cba39d10b20e542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadfc3bd5db9d810e6cba39d10b20e542">&#9670;&nbsp;</a></span>decode()</h2>
+<a id="a88f5a0677efff7d5e8c3d9281f002b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f5a0677efff7d5e8c3d9281f002b0c">&#9670;&nbsp;</a></span>decode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BackAndForth::decode </td>
+          <td class="memname">bool BackAndForth::decode </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
@@ -385,6 +385,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>decoding status <br  />
+ </dd></dl>
 
 </div>
 </div>

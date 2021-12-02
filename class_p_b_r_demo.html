@@ -155,6 +155,8 @@ Private Types</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a62f3d22d2264902050080fd103f24e27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a62f3d22d2264902050080fd103f24e27">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene)</td></tr>
 <tr class="separator:a62f3d22d2264902050080fd103f24e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cc4e797a5d0e56084cba2f4ed0a4f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a49cc4e797a5d0e56084cba2f4ed0a4f9">createShadowMaps</a> (<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode)</td></tr>
+<tr class="separator:a49cc4e797a5d0e56084cba2f4ed0a4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2772ccfdb096e5469c2e39a4c628d580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a2772ccfdb096e5469c2e39a4c628d580">updateMaps</a> ()</td></tr>
 <tr class="separator:a2772ccfdb096e5469c2e39a4c628d580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -240,6 +242,10 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <a class="el" href="class_p_b_r_demo.html#a14428f2ddc07cb31891eeaaad23c90bb">RendererMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a611d6e0d95209b0eb87e00d81884b403">_mode</a> = RendererMode::DEFERRED</td></tr>
 <tr class="memdesc:a611d6e0d95209b0eb87e00d81884b403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active renderer. <br /></td></tr>
 <tr class="separator:a611d6e0d95209b0eb87e00d81884b403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c22391bca4c58631d5c3749f45bdab"><td class="memItemLeft" align="right" valign="top"><a id="a68c22391bca4c58631d5c3749f45bdab"></a>
+<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a68c22391bca4c58631d5c3749f45bdab">_shadowMode</a> = <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde">ShadowMode::VARIANCE</a></td></tr>
+<tr class="memdesc:a68c22391bca4c58631d5c3749f45bdab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shadow rendering technique. <br /></td></tr>
+<tr class="separator:a68c22391bca4c58631d5c3749f45bdab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bc240b7c45d15fe934e9ca0737dbbf2"><td class="memItemLeft" align="right" valign="top"><a id="a8bc240b7c45d15fe934e9ca0737dbbf2"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_b_r_demo.html#a8bc240b7c45d15fe934e9ca0737dbbf2">_currentScene</a> = 0</td></tr>
 <tr class="memdesc:a8bc240b7c45d15fe934e9ca0737dbbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected scene. <br /></td></tr>
@@ -343,6 +349,38 @@ std::unique_ptr&lt; <a class="el" href="class_debug_viewer.html">DebugViewer</a>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a49cc4e797a5d0e56084cba2f4ed0a4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cc4e797a5d0e56084cba2f4ed0a4f9">&#9670;&nbsp;</a></span>createShadowMaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PBRDemo::createShadowMaps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create shadow maps for the current scene, for a given mode. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>the shadow type to prepare for when creating the shadow maps </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a939c2c5b149e2956e7a3a781eca99d51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a939c2c5b149e2956e7a3a781eca99d51">&#9670;&nbsp;</a></span>draw()</h2>
 

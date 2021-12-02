@@ -111,8 +111,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a755b4548b2e283772bf071dce27dc645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad549240818ed335d036c7c851eaeeec4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#ad549240818ed335d036c7c851eaeeec4">updateCameraInfos</a> (const glm::mat4 &amp;viewMatrix, const glm::mat4 &amp;projMatrix)</td></tr>
 <tr class="separator:ad549240818ed335d036c7c851eaeeec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f154d401ecded8bdd993ef59b2d720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#a94f154d401ecded8bdd993ef59b2d720">updateShadowMapInfos</a> (<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode, float bias)</td></tr>
-<tr class="separator:a94f154d401ecded8bdd993ef59b2d720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b385b6a5118978b9c63470c7cfefff4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#a9b385b6a5118978b9c63470c7cfefff4">draw</a> (const <a class="el" href="class_spot_light.html">SpotLight</a> *light) override</td></tr>
 <tr class="separator:a9b385b6a5118978b9c63470c7cfefff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25bc9b5624f9d6480ee081f351a3d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#aa25bc9b5624f9d6480ee081f351a3d51">draw</a> (const <a class="el" href="class_point_light.html">PointLight</a> *light) override</td></tr>
@@ -154,14 +152,6 @@ glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#a92c0dcb49343c31a80cd97151c80ac66">_proj</a> = glm::mat4(1.0f)</td></tr>
 <tr class="memdesc:a92c0dcb49343c31a80cd97151c80ac66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached camera projection matrix. <br /></td></tr>
 <tr class="separator:a92c0dcb49343c31a80cd97151c80ac66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ba490d87e6ba622230bff2e30b70c0"><td class="memItemLeft" align="right" valign="top"><a id="a38ba490d87e6ba622230bff2e30b70c0"></a>
-<a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#a38ba490d87e6ba622230bff2e30b70c0">_shadowMode</a> = <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ae4ac03f6c9f00665644e868dd1fb9f1e">ShadowMode::BASIC</a></td></tr>
-<tr class="memdesc:a38ba490d87e6ba622230bff2e30b70c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow mapping techique. <br /></td></tr>
-<tr class="separator:a38ba490d87e6ba622230bff2e30b70c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8098feba10f980eca12bca64f6fe4c"><td class="memItemLeft" align="right" valign="top"><a id="a8e8098feba10f980eca12bca64f6fe4c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deferred_light.html#a8e8098feba10f980eca12bca64f6fe4c">_shadowBias</a> = 0.0f</td></tr>
-<tr class="memdesc:a8e8098feba10f980eca12bca64f6fe4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow depth bias. <br /></td></tr>
-<tr class="separator:a8e8098feba10f980eca12bca64f6fe4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Apply a light onto the lighting buffer using a geometric proxy (cone, sphere, screenquad). By processing all lights, the final lighting is accumulated in the buffer. </p>
@@ -358,41 +348,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   <table class="params">
     <tr><td class="paramname">viewMatrix</td><td>the camera view matrix </td></tr>
     <tr><td class="paramname">projMatrix</td><td>the camera projection matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a94f154d401ecded8bdd993ef59b2d720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94f154d401ecded8bdd993ef59b2d720">&#9670;&nbsp;</a></span>updateShadowMapInfos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DeferredLight::updateShadowMapInfos </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>bias</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the current shadowmap settings. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mode</td><td>the technique to use </td></tr>
-    <tr><td class="paramname">bias</td><td>shadow map depth bias </td></tr>
   </table>
   </dd>
 </dl>

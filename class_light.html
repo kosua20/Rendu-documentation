@@ -139,8 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81e19df0c30d2908887566fc194390b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b44c81fe9a468df975c60ad20cf96b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_shadow_map_1_1_region.html">ShadowMap::Region</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#a9b44c81fe9a468df975c60ad20cf96b7">shadowMap</a> () const</td></tr>
 <tr class="separator:a9b44c81fe9a468df975c60ad20cf96b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a50d671fb71f94a1768f94825dfb53e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#a9a50d671fb71f94a1768f94825dfb53e">registerShadowMap</a> (const <a class="el" href="class_texture.html">Texture</a> *map, size_t layer=0, const glm::vec2 &amp;minUV=glm::vec2(0.0f), const glm::vec2 &amp;maxUV=glm::vec2(1.0f))</td></tr>
-<tr class="separator:a9a50d671fb71f94a1768f94825dfb53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae672a4ea1217f409dc3026cb192c9043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#ae672a4ea1217f409dc3026cb192c9043">registerShadowMap</a> (const <a class="el" href="class_texture.html">Texture</a> *map, <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode, size_t layer=0, const glm::vec2 &amp;minUV=glm::vec2(0.0f), const glm::vec2 &amp;maxUV=glm::vec2(1.0f))</td></tr>
+<tr class="separator:ae672a4ea1217f409dc3026cb192c9043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc55bf93ac7fcd9f1f07161e700d77b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#a7dc55bf93ac7fcd9f1f07161e700d77b">animated</a> () const</td></tr>
 <tr class="separator:a7dc55bf93ac7fcd9f1f07161e700d77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e3209d4b97d0bbbd614ded5e1213d9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#ae3e3209d4b97d0bbbd614ded5e1213d9">~Light</a> ()=default</td></tr>
@@ -161,8 +161,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab57de670c01b19263287f187ff6773c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#ab57de670c01b19263287f187ff6773c1">decodeBase</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params)</td></tr>
-<tr class="separator:ab57de670c01b19263287f187ff6773c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b76c045b2dcfef8c265cc8151b318b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light.html#a94b76c045b2dcfef8c265cc8151b318b">decodeBase</a> (const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;params)</td></tr>
+<tr class="separator:a94b76c045b2dcfef8c265cc8151b318b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -440,8 +440,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ab57de670c01b19263287f187ff6773c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab57de670c01b19263287f187ff6773c1">&#9670;&nbsp;</a></span>decodeBase()</h2>
+<a id="a94b76c045b2dcfef8c265cc8151b318b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b76c045b2dcfef8c265cc8151b318b">&#9670;&nbsp;</a></span>decodeBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,7 +450,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Light::decodeBase </td>
+          <td class="memname">bool Light::decodeBase </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_key_values.html">KeyValues</a> &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
@@ -475,6 +475,7 @@ animations:
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>decoding status </dd></dl>
 
 </div>
 </div>
@@ -647,8 +648,8 @@ animations:
 
 </div>
 </div>
-<a id="a9a50d671fb71f94a1768f94825dfb53e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a50d671fb71f94a1768f94825dfb53e">&#9670;&nbsp;</a></span>registerShadowMap()</h2>
+<a id="ae672a4ea1217f409dc3026cb192c9043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae672a4ea1217f409dc3026cb192c9043">&#9670;&nbsp;</a></span>registerShadowMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,6 +662,12 @@ animations:
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
           <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -695,6 +702,7 @@ animations:
 <p>Set the light shadow map (either 2D or cube depending on the light type). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">map</td><td>the shadow map texture </td></tr>
+    <tr><td class="paramname">mode</td><td>the type of shadow map </td></tr>
     <tr><td class="paramname">layer</td><td>the texture layer containing the map </td></tr>
     <tr><td class="paramname">minUV</td><td>bottom-left corner of map region in the texture </td></tr>
     <tr><td class="paramname">maxUV</td><td>upper-right corner of map region in the texture </td></tr>
