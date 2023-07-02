@@ -143,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac9d78900ed6a0eb8d380741470bbe025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac685461547ab4e5dbfd333365b6cdf86"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#ac685461547ab4e5dbfd333365b6cdf86">map</a> () const</td></tr>
 <tr class="separator:ac685461547ab4e5dbfd333365b6cdf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af965764a6edfdfbcc52133a50fa0fff5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#af965764a6edfdfbcc52133a50fa0fff5">shadowMap</a> () const</td></tr>
-<tr class="separator:af965764a6edfdfbcc52133a50fa0fff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f0f69d6aa9cdb44ba02e66337d7fcd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a97f0f69d6aa9cdb44ba02e66337d7fcd">shadowMap</a> () const</td></tr>
+<tr class="separator:a97f0f69d6aa9cdb44ba02e66337d7fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4859c39ef0c8c6591834a6f4ac0815b4"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="struct_terrain_1_1_cell.html">Cell</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a4859c39ef0c8c6591834a6f4ac0815b4">cells</a> () const</td></tr>
 <tr class="separator:a4859c39ef0c8c6591834a6f4ac0815b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,10 +173,10 @@ std::vector&lt; <a class="el" href="struct_terrain_1_1_cell.html">Cell</a> &gt;&
 <a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_mapLowRes</b> = <a class="el" href="class_texture.html">Texture</a>(&quot;Terrain low-res&quot;)</td></tr>
 <tr class="memdesc:a917244f04e88881fd8817d7f03f266a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low resolution min-height terrain map. <br /></td></tr>
 <tr class="separator:a917244f04e88881fd8817d7f03f266a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920f3ce37ccb888dd5940a89ad50bceb"><td class="memItemLeft" align="right" valign="top"><a id="a920f3ce37ccb888dd5940a89ad50bceb" name="a920f3ce37ccb888dd5940a89ad50bceb"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_shadowBuffer</b></td></tr>
-<tr class="memdesc:a920f3ce37ccb888dd5940a89ad50bceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map generation framebuffer. <br /></td></tr>
-<tr class="separator:a920f3ce37ccb888dd5940a89ad50bceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b63dc2c0bce06933bb3158631d6f30f"><td class="memItemLeft" align="right" valign="top"><a id="a6b63dc2c0bce06933bb3158631d6f30f" name="a6b63dc2c0bce06933bb3158631d6f30f"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_shadowMap</b></td></tr>
+<tr class="memdesc:a6b63dc2c0bce06933bb3158631d6f30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map generation texture. <br /></td></tr>
+<tr class="separator:a6b63dc2c0bce06933bb3158631d6f30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d12e85072c1ae09bd6732edf2851bfb"><td class="memItemLeft" align="right" valign="top"><a id="a6d12e85072c1ae09bd6732edf2851bfb" name="a6d12e85072c1ae09bd6732edf2851bfb"></a>
 <a class="el" href="class_gaussian_blur.html">GaussianBlur</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_gaussBlur</b></td></tr>
 <tr class="memdesc:a6d12e85072c1ae09bd6732edf2851bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gaussian blur. <br /></td></tr>
@@ -481,8 +481,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>_meshSize</b> = 0.0f
 
 </div>
 </div>
-<a id="af965764a6edfdfbcc52133a50fa0fff5" name="af965764a6edfdfbcc52133a50fa0fff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af965764a6edfdfbcc52133a50fa0fff5">&#9670;&#160;</a></span>shadowMap()</h2>
+<a id="a97f0f69d6aa9cdb44ba02e66337d7fcd" name="a97f0f69d6aa9cdb44ba02e66337d7fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f0f69d6aa9cdb44ba02e66337d7fcd">&#9670;&#160;</a></span>shadowMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -491,7 +491,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>_meshSize</b> = 0.0f
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_texture.html">Texture</a> * Terrain::shadowMap </td>
+          <td class="memname">const <a class="el" href="class_texture.html">Texture</a> &amp; Terrain::shadowMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

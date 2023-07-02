@@ -7,7 +7,7 @@ var searchData=
   ['linear_5flinear_4',['LINEAR_LINEAR',['../group___resources.html#gga215dd3a110b19ba0cf42bcf30ef589b5a4efe1867144bfaabd20855d80619895a',1,'GPUTypes.hpp']]],
   ['linear_5fnearest_5',['LINEAR_NEAREST',['../group___resources.html#gga215dd3a110b19ba0cf42bcf30ef589b5aea900ba8219b4246303461ec5b529a9d',1,'GPUTypes.hpp']]],
   ['list_6',['LIST',['../class_codable.html#a19f5878bd6f3f9814702cc4f1afe14bfa298cb25408234de02baf2085803a464a',1,'Codable']]],
-  ['load_7',['LOAD',['../class_framebuffer.html#a8f78c315932c915b70eac7f418291a36a615d2885ef7576cedd9aafbb2578f028',1,'Framebuffer']]],
+  ['load_7',['LOAD',['../struct_load.html#adaedb451fed830f4a5fccccbad630ca5a615d2885ef7576cedd9aafbb2578f028',1,'Load']]],
   ['load_8',['Load',['../class_system.html#a6264fc8774c87b04f209b309df982f98af19dbf2edb3a0bd74b0524d960ff21eb',1,'System']]],
   ['low_9',['LOW',['../class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3bea41bc94cbd8eebea13ce0491b2ac11b88',1,'SSAO']]]
 ];

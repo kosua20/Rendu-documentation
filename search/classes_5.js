@@ -14,8 +14,6 @@ var searchData=
   ['forwardlight_11',['ForwardLight',['../class_forward_light.html',1,'']]],
   ['forwardprobe_12',['ForwardProbe',['../class_forward_probe.html',1,'']]],
   ['forwardrenderer_13',['ForwardRenderer',['../class_forward_renderer.html',1,'']]],
-  ['framebuffer_14',['Framebuffer',['../class_framebuffer.html',1,'']]],
-  ['framebufferinfos_15',['FramebufferInfos',['../struct_debug_viewer_1_1_framebuffer_infos.html',1,'DebugViewer::FramebufferInfos'],['../struct_g_p_u_state_1_1_framebuffer_infos.html',1,'GPUState::FramebufferInfos']]],
-  ['frustum_16',['Frustum',['../class_frustum.html',1,'']]],
-  ['fxaa_17',['Fxaa',['../class_g_p_u_shaders_1_1_frag_1_1_fxaa.html',1,'GPUShaders::Frag']]]
+  ['frustum_14',['Frustum',['../class_frustum.html',1,'']]],
+  ['fxaa_15',['Fxaa',['../class_g_p_u_shaders_1_1_frag_1_1_fxaa.html',1,'GPUShaders::Frag']]]
 ];

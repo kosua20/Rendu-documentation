@@ -9,7 +9,8 @@ var searchData=
   ['region_6',['Region',['../struct_shadow_map_1_1_region.html',1,'ShadowMap']]],
   ['renderer_7',['Renderer',['../class_renderer.html',1,'']]],
   ['renderingconfig_8',['RenderingConfig',['../class_rendering_config.html',1,'']]],
-  ['resources_9',['Resources',['../class_resources.html',1,'']]],
-  ['resourcetodelete_10',['ResourceToDelete',['../struct_resource_to_delete.html',1,'']]],
-  ['rotation_11',['Rotation',['../class_rotation.html',1,'']]]
+  ['renderpass_9',['RenderPass',['../struct_g_p_u_state_1_1_render_pass.html',1,'GPUState']]],
+  ['resources_10',['Resources',['../class_resources.html',1,'']]],
+  ['resourcetodelete_11',['ResourceToDelete',['../struct_resource_to_delete.html',1,'']]],
+  ['rotation_12',['Rotation',['../class_rotation.html',1,'']]]
 ];

@@ -110,12 +110,12 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a36f58b3ae584ca465d859616e1902098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a36f58b3ae584ca465d859616e1902098">LaplacianIntegrator</a> (unsigned int width, unsigned int height, unsigned int downscaling)</td></tr>
-<tr class="separator:a36f58b3ae584ca465d859616e1902098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9059aab70d51fc3385f2e3a8e0d35c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a7b9059aab70d51fc3385f2e3a8e0d35c">process</a> (const <a class="el" href="class_texture.html">Texture</a> *<a class="el" href="class_laplacian_integrator.html#a7b75319104d05ece1967e314eb051405">texture</a>)</td></tr>
-<tr class="separator:a7b9059aab70d51fc3385f2e3a8e0d35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30c52eaa61d09a4b410f396773640d39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a30c52eaa61d09a4b410f396773640d39">resize</a> (unsigned int width, unsigned int height)</td></tr>
-<tr class="separator:a30c52eaa61d09a4b410f396773640d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086fa909d6b2836c1208a8e9eb0d3b2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a086fa909d6b2836c1208a8e9eb0d3b2d">LaplacianIntegrator</a> (uint width, uint height, uint downscaling)</td></tr>
+<tr class="separator:a086fa909d6b2836c1208a8e9eb0d3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a7a8390c4c9e13e1a088b4849e4f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a59a7a8390c4c9e13e1a088b4849e4f4a">process</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;<a class="el" href="class_laplacian_integrator.html#a7b75319104d05ece1967e314eb051405">texture</a>)</td></tr>
+<tr class="separator:a59a7a8390c4c9e13e1a088b4849e4f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91786835d8ebc92b638dcda53e9e5df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a91786835d8ebc92b638dcda53e9e5df5">resize</a> (uint width, uint height)</td></tr>
+<tr class="separator:a91786835d8ebc92b638dcda53e9e5df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b75319104d05ece1967e314eb051405"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a7b75319104d05ece1967e314eb051405">texture</a> () const</td></tr>
 <tr class="separator:a7b75319104d05ece1967e314eb051405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03dfe7262978efdc85c7fb237ee98ae5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_laplacian_integrator.html#a03dfe7262978efdc85c7fb237ee98ae5">preprocId</a> () const</td></tr>
@@ -135,14 +135,14 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_composite</b></td></tr>
 <tr class="memdesc:a1f18a3825988fca9a20d9938294e8211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passthrough to output the result. <br /></td></tr>
 <tr class="separator:a1f18a3825988fca9a20d9938294e8211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53ee3c704af8ccc4b76c1f1c61b01df"><td class="memItemLeft" align="right" valign="top"><a id="ac53ee3c704af8ccc4b76c1f1c61b01df" name="ac53ee3c704af8ccc4b76c1f1c61b01df"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_preproc</b></td></tr>
-<tr class="memdesc:ac53ee3c704af8ccc4b76c1f1c61b01df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the computed laplacian field. <br /></td></tr>
-<tr class="separator:ac53ee3c704af8ccc4b76c1f1c61b01df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76eca5de2ffd4698c5f991efacf37f9"><td class="memItemLeft" align="right" valign="top"><a id="ad76eca5de2ffd4698c5f991efacf37f9" name="ad76eca5de2ffd4698c5f991efacf37f9"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_compo</b></td></tr>
-<tr class="memdesc:ad76eca5de2ffd4698c5f991efacf37f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the integrated result at input resolution. <br /></td></tr>
-<tr class="separator:ad76eca5de2ffd4698c5f991efacf37f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e877225ce80b124eb731527577ab5d6"><td class="memItemLeft" align="right" valign="top"><a id="a9e877225ce80b124eb731527577ab5d6" name="a9e877225ce80b124eb731527577ab5d6"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_preproc</b></td></tr>
+<tr class="memdesc:a9e877225ce80b124eb731527577ab5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the computed laplacian field. <br /></td></tr>
+<tr class="separator:a9e877225ce80b124eb731527577ab5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca942a49be367c3fc94e46f196fb765"><td class="memItemLeft" align="right" valign="top"><a id="afca942a49be367c3fc94e46f196fb765" name="afca942a49be367c3fc94e46f196fb765"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_compo</b></td></tr>
+<tr class="memdesc:afca942a49be367c3fc94e46f196fb765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the integrated result at input resolution. <br /></td></tr>
+<tr class="separator:afca942a49be367c3fc94e46f196fb765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad28969dadfda5afd6b73008897d6ae6a"><td class="memItemLeft" align="right" valign="top"><a id="ad28969dadfda5afd6b73008897d6ae6a" name="ad28969dadfda5afd6b73008897d6ae6a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
 <tr class="memdesc:ad28969dadfda5afd6b73008897d6ae6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The downscaling factor. <br /></td></tr>
@@ -151,8 +151,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Compute the laplacian field of a RGB image before reconstructing the initial image through integration, using a filter as described in Convolution Pyramids, Farbman et al., 2011. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a36f58b3ae584ca465d859616e1902098" name="a36f58b3ae584ca465d859616e1902098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f58b3ae584ca465d859616e1902098">&#9670;&#160;</a></span>LaplacianIntegrator()</h2>
+<a id="a086fa909d6b2836c1208a8e9eb0d3b2d" name="a086fa909d6b2836c1208a8e9eb0d3b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086fa909d6b2836c1208a8e9eb0d3b2d">&#9670;&#160;</a></span>LaplacianIntegrator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,19 +160,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
         <tr>
           <td class="memname">LaplacianIntegrator::LaplacianIntegrator </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>downscaling</em>&#160;</td>
         </tr>
         <tr>
@@ -220,8 +220,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
 
 </div>
 </div>
-<a id="a7b9059aab70d51fc3385f2e3a8e0d35c" name="a7b9059aab70d51fc3385f2e3a8e0d35c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b9059aab70d51fc3385f2e3a8e0d35c">&#9670;&#160;</a></span>process()</h2>
+<a id="a59a7a8390c4c9e13e1a088b4849e4f4a" name="a59a7a8390c4c9e13e1a088b4849e4f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a7a8390c4c9e13e1a088b4849e4f4a">&#9670;&#160;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +229,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
         <tr>
           <td class="memname">void LaplacianIntegrator::process </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>texture</em></td><td>)</td>
           <td></td>
         </tr>
@@ -244,8 +244,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
 
 </div>
 </div>
-<a id="a30c52eaa61d09a4b410f396773640d39" name="a30c52eaa61d09a4b410f396773640d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30c52eaa61d09a4b410f396773640d39">&#9670;&#160;</a></span>resize()</h2>
+<a id="a91786835d8ebc92b638dcda53e9e5df5" name="a91786835d8ebc92b638dcda53e9e5df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91786835d8ebc92b638dcda53e9e5df5">&#9670;&#160;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,13 +253,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_scale</b></td></tr>
         <tr>
           <td class="memname">void LaplacianIntegrator::resize </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>

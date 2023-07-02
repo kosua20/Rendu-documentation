@@ -125,15 +125,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a77fe785bc620b0c7af48b43b0f8d8bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad6a490cdfcf01c280d20e49e8965f72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_light.html">Light</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#aad6a490cdfcf01c280d20e49e8965f72">unpackLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a> srcLight)</td></tr>
 <tr class="separator:aad6a490cdfcf01c280d20e49e8965f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd51a5ff7da863ceff406256e84e12f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#adcd51a5ff7da863ceff406256e84e12f">applyLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a> gpuLight, vec3 viewSpacePos, textureCubeArray smapCube, texture2DArray smap2D, out vec3 l, out float shadowing)</td></tr>
-<tr class="separator:adcd51a5ff7da863ceff406256e84e12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8143fee3c67874ed77a905f91aea8789"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_forward__lights.html#a8143fee3c67874ed77a905f91aea8789">applyLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_forward__lights_1_1_g_p_u_packed_light.html">GPUPackedLight</a> gpuLight, vec3 viewSpacePos, vec3 viewSpaceN, textureCubeArray smapCube, texture2DArray smap2D, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:a8143fee3c67874ed77a905f91aea8789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Forward lights general shader. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_constants.html" title="Constants general shader.">GPUShaders::Common::Constants</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_shadow__maps.html" title="Shadow maps general shader.">GPUShaders::Common::Shadow_maps</a>, <a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html" title="Common pbr general shader.">GPUShaders::Common::Common_pbr</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adcd51a5ff7da863ceff406256e84e12f" name="adcd51a5ff7da863ceff406256e84e12f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcd51a5ff7da863ceff406256e84e12f">&#9670;&#160;</a></span>applyLight()</h2>
+<a id="a8143fee3c67874ed77a905f91aea8789" name="a8143fee3c67874ed77a905f91aea8789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8143fee3c67874ed77a905f91aea8789">&#9670;&#160;</a></span>applyLight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,6 +152,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpaceN</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -193,6 +199,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">gpuLight</td><td>the light packed information </td></tr>
     <tr><td class="paramname">viewSpacePos</td><td>the point position in view space </td></tr>
+    <tr><td class="paramname">viewSpaceN</td><td>the surface normal in view space </td></tr>
     <tr><td class="paramname">smapCube</td><td>the cube shadow maps </td></tr>
     <tr><td class="paramname">smap2D</td><td>the 2D shadow maps </td></tr>
     <tr><td class="paramname">l</td><td>will contain the light direction for the point </td></tr>

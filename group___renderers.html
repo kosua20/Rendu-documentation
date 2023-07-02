@@ -107,7 +107,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize lights as colored wireframe objects.  <a href="class_debug_light_renderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html">DebugViewer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide helper GUI to display the content of texture and framebuffer attachments. This can be useful to validate the content rendered to a specific texture zhen debugging.  <a href="class_debug_viewer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide helper GUI to display the content of textures and mesh infos. This can be useful to validate the content rendered to a specific texture when debugging.  <a href="class_debug_viewer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_renderer.html">LightRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base structure of a per-light specialized renderer.  <a href="class_light_renderer.html#details">More...</a><br /></td></tr>
@@ -144,7 +144,8 @@ Classes</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga65701f2d152bdafa62b2d8bdfcc245d5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> : int { <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ab50339a10e1de285ac99d4c3990b8693">ShadowMode::NONE</a> = 0
 , <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ae4ac03f6c9f00665644e868dd1fb9f1e">ShadowMode::BASIC</a> = 1
-, <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde">ShadowMode::VARIANCE</a> = 2
+, <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5a0a4faf97013814ceb7f7afe1205a516b">ShadowMode::PCF</a> = 2
+, <a class="el" href="group___renderers.html#gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde">ShadowMode::VARIANCE</a> = 3
  }</td></tr>
 <tr class="memdesc:ga65701f2d152bdafa62b2d8bdfcc245d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available shadow mapping techniques.  <a href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">More...</a><br /></td></tr>
 <tr class="separator:ga65701f2d152bdafa62b2d8bdfcc245d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +176,8 @@ Enumerations</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga65701f2d152bdafa62b2d8bdfcc245d5ab50339a10e1de285ac99d4c3990b8693" name="gga65701f2d152bdafa62b2d8bdfcc245d5ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"><p >No shadows. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga65701f2d152bdafa62b2d8bdfcc245d5ae4ac03f6c9f00665644e868dd1fb9f1e" name="gga65701f2d152bdafa62b2d8bdfcc245d5ae4ac03f6c9f00665644e868dd1fb9f1e"></a>BASIC&#160;</td><td class="fielddoc"><p >Basic depth test mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65701f2d152bdafa62b2d8bdfcc245d5a0a4faf97013814ceb7f7afe1205a516b" name="gga65701f2d152bdafa62b2d8bdfcc245d5a0a4faf97013814ceb7f7afe1205a516b"></a>PCF&#160;</td><td class="fielddoc"><p >Basic depth test mode. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde" name="gga65701f2d152bdafa62b2d8bdfcc245d5ace18bb9a2b22515d0cd36bca6b998bde"></a>VARIANCE&#160;</td><td class="fielddoc"><p >Variance shadow map. </p>
 </td></tr>

@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -109,6 +110,11 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 
 <p><code>#include &lt;<a class="el" href="_g_p_u_objects_8hpp_source.html">GPUObjects.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_texture_1_1_mip_views.html">MipViews</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6923cf3876a0ecdfbd6dea64daed8af1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_texture.html#a6923cf3876a0ecdfbd6dea64daed8af1">GPUTexture</a> (const <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> &amp;layoutFormat)</td></tr>
@@ -153,10 +159,10 @@ VkImage&#160;</td><td class="memItemRight" valign="bottom"><b>image</b> = VK_NUL
 VkImageView&#160;</td><td class="memItemRight" valign="bottom"><b>view</b> = VK_NULL_HANDLE</td></tr>
 <tr class="memdesc:ae2655125d49a1e67a3fdf80152e9877d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native main image view (all mips). <br /></td></tr>
 <tr class="separator:ae2655125d49a1e67a3fdf80152e9877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce100b465486f024d3e79158e258680"><td class="memItemLeft" align="right" valign="top"><a id="a9ce100b465486f024d3e79158e258680" name="a9ce100b465486f024d3e79158e258680"></a>
-std::vector&lt; VkImageView &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>levelViews</b></td></tr>
-<tr class="memdesc:a9ce100b465486f024d3e79158e258680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-mip image views. <br /></td></tr>
-<tr class="separator:a9ce100b465486f024d3e79158e258680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de1edde62da3c02a8a846ca9ace164b"><td class="memItemLeft" align="right" valign="top"><a id="a4de1edde62da3c02a8a846ca9ace164b" name="a4de1edde62da3c02a8a846ca9ace164b"></a>
+std::vector&lt; <a class="el" href="struct_g_p_u_texture_1_1_mip_views.html">MipViews</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>views</b></td></tr>
+<tr class="memdesc:a4de1edde62da3c02a8a846ca9ace164b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-mip image views. <br /></td></tr>
+<tr class="separator:a4de1edde62da3c02a8a846ca9ace164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa519faa02de15747824dcd59f9d3cf57"><td class="memItemLeft" align="right" valign="top"><a id="aa519faa02de15747824dcd59f9d3cf57" name="aa519faa02de15747824dcd59f9d3cf57"></a>
 VmaAllocation&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> = VK_NULL_HANDLE</td></tr>
 <tr class="memdesc:aa519faa02de15747824dcd59f9d3cf57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal allocation. <br /></td></tr>
@@ -181,10 +187,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>owned</b> = true</td></tr>
 <tr class="memdesc:abdeb00275683055ac5b7e0333da292a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do we own our Vulkan data (not the case for swapchain images). <br /></td></tr>
 <tr class="separator:abdeb00275683055ac5b7e0333da292a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18908fce182a9b74743c9e97410b185"><td class="memItemLeft" align="right" valign="top"><a id="ab18908fce182a9b74743c9e97410b185" name="ab18908fce182a9b74743c9e97410b185"></a>
-const <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>typedFormat</b></td></tr>
-<tr class="memdesc:ab18908fce182a9b74743c9e97410b185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layout used. <br /></td></tr>
-<tr class="separator:ab18908fce182a9b74743c9e97410b185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Store a texture data on the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>. </p>

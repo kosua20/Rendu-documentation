@@ -123,8 +123,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab68059241569a962856c7cde977528e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5848dea9c4317e57363760ed0c052ea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a5848dea9c4317e57363760ed0c052ea7">~Swapchain</a> ()</td></tr>
 <tr class="separator:a5848dea9c4317e57363760ed0c052ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6522c3b67cd6cd28bf55b6f0d95c6adf"><td class="memItemLeft" align="right" valign="top">VkRenderPass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a6522c3b67cd6cd28bf55b6f0d95c6adf">getRenderPass</a> ()</td></tr>
-<tr class="separator:a6522c3b67cd6cd28bf55b6f0d95c6adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef511d96e05ea2a10a6da4bac505372a"><td class="memItemLeft" align="right" valign="top"><a id="aef511d96e05ea2a10a6da4bac505372a" name="aef511d96e05ea2a10a6da4bac505372a"></a>
+<a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> ()</td></tr>
+<tr class="separator:aef511d96e05ea2a10a6da4bac505372a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356dc6004652e13fe0bba386eeb184e5"><td class="memItemLeft" align="right" valign="top"><a id="a356dc6004652e13fe0bba386eeb184e5" name="a356dc6004652e13fe0bba386eeb184e5"></a>
+<a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>depth</b> ()</td></tr>
+<tr class="separator:a356dc6004652e13fe0bba386eeb184e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af522ecf141c6b9a4fb951439dc435c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#af522ecf141c6b9a4fb951439dc435c65">getFormats</a> (VkFormat &amp;color, VkFormat &amp;depth, VkFormat &amp;stencil)</td></tr>
+<tr class="separator:af522ecf141c6b9a4fb951439dc435c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -145,14 +151,18 @@ Private Attributes</h2></td></tr>
 VkSwapchainKHR&#160;</td><td class="memItemRight" valign="bottom"><b>_swapchain</b> = VK_NULL_HANDLE</td></tr>
 <tr class="memdesc:a3ac1c0efdcd60f3a527112298012456a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native handle. <br /></td></tr>
 <tr class="separator:a3ac1c0efdcd60f3a527112298012456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e97a7576421fe75aa2b30b130feb84"><td class="memItemLeft" align="right" valign="top"><a id="af5e97a7576421fe75aa2b30b130feb84" name="af5e97a7576421fe75aa2b30b130feb84"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_framebuffers</b></td></tr>
-<tr class="memdesc:af5e97a7576421fe75aa2b30b130feb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backbuffers. <br /></td></tr>
-<tr class="separator:af5e97a7576421fe75aa2b30b130feb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94f24757cc8fc9196c68a02ff1c1ec0"><td class="memItemLeft" align="right" valign="top"><a id="af94f24757cc8fc9196c68a02ff1c1ec0" name="af94f24757cc8fc9196c68a02ff1c1ec0"></a>
+std::vector&lt; <a class="el" href="class_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_colors</b></td></tr>
+<tr class="memdesc:af94f24757cc8fc9196c68a02ff1c1ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backbuffers. <br /></td></tr>
+<tr class="separator:af94f24757cc8fc9196c68a02ff1c1ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95819741d04d72b4d25c7ea36911c5b"><td class="memItemLeft" align="right" valign="top"><a id="ac95819741d04d72b4d25c7ea36911c5b" name="ac95819741d04d72b4d25c7ea36911c5b"></a>
 <a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_depth</b></td></tr>
 <tr class="memdesc:ac95819741d04d72b4d25c7ea36911c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared depth texture. <br /></td></tr>
 <tr class="separator:ac95819741d04d72b4d25c7ea36911c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f7b45db6bfd7b02a97cadf26c1ed22"><td class="memItemLeft" align="right" valign="top"><a id="ac7f7b45db6bfd7b02a97cadf26c1ed22" name="ac7f7b45db6bfd7b02a97cadf26c1ed22"></a>
+<a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_backbuffer</b> = nullptr</td></tr>
+<tr class="memdesc:ac7f7b45db6bfd7b02a97cadf26c1ed22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current backbuffer. <br /></td></tr>
+<tr class="separator:ac7f7b45db6bfd7b02a97cadf26c1ed22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1bfbf13773225c32b0b23d4acc77b8"><td class="memItemLeft" align="right" valign="top"><a id="a8f1bfbf13773225c32b0b23d4acc77b8" name="a8f1bfbf13773225c32b0b23d4acc77b8"></a>
 std::vector&lt; VkSemaphore &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_imagesAvailable</b></td></tr>
 <tr class="memdesc:a8f1bfbf13773225c32b0b23d4acc77b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphores signaling when swapchain images are available for a new frame. <br /></td></tr>
@@ -321,21 +331,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_frameStarted</b> = f
 
 </div>
 </div>
-<a id="a6522c3b67cd6cd28bf55b6f0d95c6adf" name="a6522c3b67cd6cd28bf55b6f0d95c6adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6522c3b67cd6cd28bf55b6f0d95c6adf">&#9670;&#160;</a></span>getRenderPass()</h2>
+<a id="af522ecf141c6b9a4fb951439dc435c65" name="af522ecf141c6b9a4fb951439dc435c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af522ecf141c6b9a4fb951439dc435c65">&#9670;&#160;</a></span>getFormats()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkRenderPass Swapchain::getRenderPass </td>
+          <td class="memname">void Swapchain::getFormats </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">VkFormat &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">VkFormat &amp;&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkFormat &amp;&#160;</td>
+          <td class="paramname"><em>stencil</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a renderpass compatible with the swapchain backbuffer. </dd></dl>
+<p ><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the formats used by the swapchain backbuffer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>will contain the color format </td></tr>
+    <tr><td class="paramname">depth</td><td>will contain the depth format </td></tr>
+    <tr><td class="paramname">stencil</td><td>will contain the stencil format </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

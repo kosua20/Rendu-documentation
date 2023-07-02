@@ -169,12 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a613dc163960933a0b6e33cd289906e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a850a94e1702c5a46077f95c95da72941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a850a94e1702c5a46077f95c95da72941">directBrdf</a> (<a class="el" href="class_material.html">Material</a> material, vec3 n, vec3 v, vec3 l, out vec3 diffuse, out vec3 specular)</td></tr>
 <tr class="separator:a850a94e1702c5a46077f95c95da72941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c0041971a9bfad8f7fbc1a7dcba422c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a8c0041971a9bfad8f7fbc1a7dcba422c">applyPointLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, textureCubeArray shadowMap, out vec3 l, out float shadowing)</td></tr>
-<tr class="separator:a8c0041971a9bfad8f7fbc1a7dcba422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a14852f939ec1fdcbe03ba84f5fc5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a1a14852f939ec1fdcbe03ba84f5fc5f0">applyDirectionalLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, texture2DArray shadowMap, out vec3 l, out float shadowing)</td></tr>
-<tr class="separator:a1a14852f939ec1fdcbe03ba84f5fc5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0930764bc1ccc609053b2e6690af68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a7f0930764bc1ccc609053b2e6690af68">applySpotLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, texture2DArray shadowMap, out vec3 l, out float shadowing)</td></tr>
-<tr class="separator:a7f0930764bc1ccc609053b2e6690af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c8de519c9c1af53ee514b2d6069266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a11c8de519c9c1af53ee514b2d6069266">applyPointLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, vec3 viewSpaceN, textureCubeArray shadowMap, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:a11c8de519c9c1af53ee514b2d6069266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79add225e1f3514d2ae29959cf486dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ad79add225e1f3514d2ae29959cf486dd">applyDirectionalLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, vec3 viewSpaceN, texture2DArray shadowMap, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:ad79add225e1f3514d2ae29959cf486dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d22b943d9bf5cc424f2d3a37b4d9a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#ac8d22b943d9bf5cc424f2d3a37b4d9a5">applySpotLight</a> (<a class="el" href="struct_g_p_u_shaders_1_1_common_1_1_common__pbr_1_1_light.html">Light</a> light, vec3 viewSpacePos, vec3 viewSpaceN, texture2DArray shadowMap, out vec3 l, out float shadowing)</td></tr>
+<tr class="separator:ac8d22b943d9bf5cc424f2d3a37b4d9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="namespace_g_p_u_shaders_1_1_common.html" title="Contains shared shader code.">Common</a> pbr general shader. </p>
@@ -279,8 +279,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a14852f939ec1fdcbe03ba84f5fc5f0" name="a1a14852f939ec1fdcbe03ba84f5fc5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a14852f939ec1fdcbe03ba84f5fc5f0">&#9670;&#160;</a></span>applyDirectionalLight()</h2>
+<a id="ad79add225e1f3514d2ae29959cf486dd" name="ad79add225e1f3514d2ae29959cf486dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79add225e1f3514d2ae29959cf486dd">&#9670;&#160;</a></span>applyDirectionalLight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,6 +299,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpaceN</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -344,8 +350,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c0041971a9bfad8f7fbc1a7dcba422c" name="a8c0041971a9bfad8f7fbc1a7dcba422c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c0041971a9bfad8f7fbc1a7dcba422c">&#9670;&#160;</a></span>applyPointLight()</h2>
+<a id="a11c8de519c9c1af53ee514b2d6069266" name="a11c8de519c9c1af53ee514b2d6069266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c8de519c9c1af53ee514b2d6069266">&#9670;&#160;</a></span>applyPointLight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,6 +370,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpaceN</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -453,8 +465,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f0930764bc1ccc609053b2e6690af68" name="a7f0930764bc1ccc609053b2e6690af68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f0930764bc1ccc609053b2e6690af68">&#9670;&#160;</a></span>applySpotLight()</h2>
+<a id="ac8d22b943d9bf5cc424f2d3a37b4d9a5" name="ac8d22b943d9bf5cc424f2d3a37b4d9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d22b943d9bf5cc424f2d3a37b4d9a5">&#9670;&#160;</a></span>applySpotLight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,6 +485,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">vec3&#160;</td>
           <td class="paramname"><em>viewSpacePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>viewSpaceN</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

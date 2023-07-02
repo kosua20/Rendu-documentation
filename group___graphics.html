@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <p >Contain items and functions interacting with the graphics API. </p>
-<p >This module provides wrapper around <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> primitives, such as framebuffers, textures, meshes and shader programs. Utilities are also provided to render screen quads, alter the rendering state and populate/save <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> data. The interface is currently based on the Vulkan API. </p>
+<p >This module provides wrapper around <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> primitives, such as textures, meshes and shader programs. Utilities are also provided to render screen quads, alter the rendering state and populate/save <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> data. The interface is currently based on the Vulkan API. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -110,9 +110,6 @@ Namespaces</h2></td></tr>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_descriptor_allocator.html">DescriptorAllocator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage descriptor set allocations by creating and reusing internal descriptor pools.  <a href="class_descriptor_allocator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_framebuffer.html">Framebuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a rendering target, of any size, format and type, backed by a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> framebuffer.  <a href="class_framebuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html">GPU</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide utility functions to communicate with the driver and <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a>.  <a href="class_g_p_u.html#details">More...</a><br /></td></tr>
@@ -155,9 +152,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sampler_library.html">SamplerLibrary</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage all samplers for <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> textures. Samplers are shared between all shader programs, and directly specified in the shaders based on use. All samplers are stored in a unique, shared descriptor set appended to all other sets (set #3).  <a href="class_sampler_library.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_quad.html">ScreenQuad</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper used to draw a fullscreen quad for texture processing.  <a href="class_screen_quad.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_compiler.html">ShaderCompiler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relies on glslang to compile GLSL shaders to SPIR-V and generate reflection data.  <a href="class_shader_compiler.html#details">More...</a><br /></td></tr>

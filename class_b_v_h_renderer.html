@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf2ab3cc84ffa3a609cc335637e7c6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad1c0dd09e59e1e4fc2cd0b00c59013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_v_h_renderer.html#a3ad1c0dd09e59e1e4fc2cd0b00c59013">setScene</a> (const std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;scene, const <a class="el" href="class_raycaster.html">Raycaster</a> &amp;raycaster)</td></tr>
 <tr class="separator:a3ad1c0dd09e59e1e4fc2cd0b00c59013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677b6dc9a7a45218998d9e049e319e4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_v_h_renderer.html#a677b6dc9a7a45218998d9e049e319e4f">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer=0) override</td></tr>
-<tr class="separator:a677b6dc9a7a45218998d9e049e319e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce41071f68a64d36897a9c9a3c98cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_v_h_renderer.html#a9ce41071f68a64d36897a9c9a3c98cf0">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_texture.html">Texture</a> *dstColor, <a class="el" href="class_texture.html">Texture</a> *dstDepth, uint layer=0) override</td></tr>
+<tr class="separator:a9ce41071f68a64d36897a9c9a3c98cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0befa8a28a0ed5d14d5ea2e58e86a778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_v_h_renderer.html#a0befa8a28a0ed5d14d5ea2e58e86a778">~BVHRenderer</a> () override</td></tr>
 <tr class="separator:a0befa8a28a0ed5d14d5ea2e58e86a778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a420df01d8f56584e21637d107815a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_v_h_renderer.html#a14a420df01d8f56584e21637d107815a">castRay</a> (const glm::vec3 &amp;position, const glm::vec3 &amp;direction)</td></tr>
@@ -131,16 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_renderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_renderer.html">Renderer</a></td></tr>
 <tr class="memitem:a3a0349a345dc1683c047986b79949bd9 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a3a0349a345dc1683c047986b79949bd9">Renderer</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a3a0349a345dc1683c047986b79949bd9 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01f6ced386f3b974d939693fdc1f9c71 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a01f6ced386f3b974d939693fdc1f9c71">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer=0)</td></tr>
-<tr class="separator:a01f6ced386f3b974d939693fdc1f9c71 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7e8fe1384a4b7660cd113ee9694188 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#aae7e8fe1384a4b7660cd113ee9694188">draw</a> (const <a class="el" href="class_camera.html">Camera</a> &amp;camera, <a class="el" href="class_texture.html">Texture</a> *dstColor, <a class="el" href="class_texture.html">Texture</a> *dstDepth, uint layer=0)</td></tr>
+<tr class="separator:aae7e8fe1384a4b7660cd113ee9694188 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a1aa401fd746d07de77bd7880cfc670 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a4a1aa401fd746d07de77bd7880cfc670">resize</a> (uint width, uint height)</td></tr>
 <tr class="separator:a4a1aa401fd746d07de77bd7880cfc670 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292491f31d71c939e4a097493068c4c1 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a292491f31d71c939e4a097493068c4c1">interface</a> ()</td></tr>
 <tr class="separator:a292491f31d71c939e4a097493068c4c1 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b4447fce4864a7f658a520b71735ac2 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a2b4447fce4864a7f658a520b71735ac2">createOutput</a> (uint width, uint height, const std::string &amp;name) const</td></tr>
-<tr class="separator:a2b4447fce4864a7f658a520b71735ac2 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca9d39f6d8f84245e1d65b89ae4b371 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a0ca9d39f6d8f84245e1d65b89ae4b371">createOutput</a> (<a class="el" href="group___resources.html#ga3fb1e3ce7a7253e364b016dd40f5efd6">TextureShape</a> shape, uint width, uint height, uint depth, uint mips, const std::string &amp;name) const</td></tr>
-<tr class="separator:a0ca9d39f6d8f84245e1d65b89ae4b371 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2012f269f157754034e7b5475a8927 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#add2012f269f157754034e7b5475a8927">~Renderer</a> ()=default</td></tr>
 <tr class="separator:add2012f269f157754034e7b5475a8927 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6e15f666cb188a936004add75e6c6b inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a8c6e15f666cb188a936004add75e6c6b">Renderer</a> (const <a class="el" href="class_renderer.html">Renderer</a> &amp;)=delete</td></tr>
@@ -151,6 +147,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa43ae6237b8cbf52d217d37f9986237f inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b7dd21c55dc9a867bd1d00fd043490 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer.html">Renderer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae4b7dd21c55dc9a867bd1d00fd043490">operator=</a> (<a class="el" href="class_renderer.html">Renderer</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:ae4b7dd21c55dc9a867bd1d00fd043490 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff8f5d113330ed70e22061a36e654ca inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a0ff8f5d113330ed70e22061a36e654ca" name="a0ff8f5d113330ed70e22061a36e654ca"></a>
+<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputColorFormat</b> () const</td></tr>
+<tr class="separator:a0ff8f5d113330ed70e22061a36e654ca inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1412b16356cc73ec1017cc095387cdc8 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a1412b16356cc73ec1017cc095387cdc8" name="a1412b16356cc73ec1017cc095387cdc8"></a>
+<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputDepthFormat</b> () const</td></tr>
+<tr class="separator:a1412b16356cc73ec1017cc095387cdc8 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -198,10 +200,14 @@ Additional Inherited Members</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
 <tr class="memdesc:a32e42f5c4cc62ed22b18729860fcd47b inherit pro_attribs_class_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug name. <br /></td></tr>
 <tr class="separator:a32e42f5c4cc62ed22b18729860fcd47b inherit pro_attribs_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2136bb38d95185c243ac6ddfb0eff86f inherit pro_attribs_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a2136bb38d95185c243ac6ddfb0eff86f" name="a2136bb38d95185c243ac6ddfb0eff86f"></a>
-std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_preferredFormat</b></td></tr>
-<tr class="memdesc:a2136bb38d95185c243ac6ddfb0eff86f inherit pro_attribs_class_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred output format for a given renderer. <br /></td></tr>
-<tr class="separator:a2136bb38d95185c243ac6ddfb0eff86f inherit pro_attribs_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e8eeb13be389952da6649d9d38667d inherit pro_attribs_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a04e8eeb13be389952da6649d9d38667d" name="a04e8eeb13be389952da6649d9d38667d"></a>
+<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_colorFormat</b> = Layout::NONE</td></tr>
+<tr class="memdesc:a04e8eeb13be389952da6649d9d38667d inherit pro_attribs_class_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred output format for a given renderer. <br /></td></tr>
+<tr class="separator:a04e8eeb13be389952da6649d9d38667d inherit pro_attribs_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfca7e622643a91034134160e33346f inherit pro_attribs_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="aecfca7e622643a91034134160e33346f" name="aecfca7e622643a91034134160e33346f"></a>
+<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_depthFormat</b> = Layout::NONE</td></tr>
+<tr class="memdesc:aecfca7e622643a91034134160e33346f inherit pro_attribs_class_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred output format for a given renderer. <br /></td></tr>
+<tr class="separator:aecfca7e622643a91034134160e33346f inherit pro_attribs_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_renderer.html" title="Base structure of a renderer.">Renderer</a> coupled with a basic diffuse path tracer. The user can move the camera anywhere and trigger a path-traced rendering. Can also display the raycaster acceleration structure. </p>
@@ -314,8 +320,8 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 
 </div>
 </div>
-<a id="a677b6dc9a7a45218998d9e049e319e4f" name="a677b6dc9a7a45218998d9e049e319e4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a677b6dc9a7a45218998d9e049e319e4f">&#9670;&#160;</a></span>draw()</h2>
+<a id="a9ce41071f68a64d36897a9c9a3c98cf0" name="a9ce41071f68a64d36897a9c9a3c98cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce41071f68a64d36897a9c9a3c98cf0">&#9670;&#160;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,8 +338,14 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>, </td>
+          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>dstColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>dstDepth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -358,13 +370,13 @@ std::vector&lt; <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe0
 <p >Draw from a given viewpoint. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">camera</td><td>the rendering viewpoint </td></tr>
-    <tr><td class="paramname">framebuffer</td><td>the destination target </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination textures </td></tr>
     <tr><td class="paramname">layer</td><td>the layer to write to in the target  </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_renderer.html#a01f6ced386f3b974d939693fdc1f9c71">Renderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_renderer.html#aae7e8fe1384a4b7660cd113ee9694188">Renderer</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@ var searchData=
   ['boxups_27',['boxUps',['../class_library.html#a053b8e2030e36a31f545add2182e021f',1,'Library']]],
   ['boxvps_28',['boxVPs',['../class_library.html#a459035c7f33e386ad6cc38c873ac3ec6',1,'Library']]],
   ['boxvs_29',['boxVs',['../class_library.html#a35a3751862a5e3563ec8a26ccc2be6d6',1,'Library']]],
-  ['buffer_30',['buffer',['../struct_resource_to_delete.html#af39757fab4e3838f7f7c670560165cbc',1,'ResourceToDelete::buffer()'],['../class_g_p_u_buffer.html#ae6e2f78a5c1bc6cb09991ee05f263643',1,'GPUBuffer::buffer()'],['../struct_program_1_1_dynamic_buffer_state.html#a2361261a7c73bc7e313734bfb48e3860',1,'Program::DynamicBufferState::buffer()'],['../struct_debug_viewer_1_1_framebuffer_infos.html#a7c4b4cd83039789b60f287b7c19a8c2b',1,'DebugViewer::FramebufferInfos::buffer()']]],
+  ['buffer_30',['buffer',['../struct_resource_to_delete.html#af39757fab4e3838f7f7c670560165cbc',1,'ResourceToDelete::buffer()'],['../class_g_p_u_buffer.html#ae6e2f78a5c1bc6cb09991ee05f263643',1,'GPUBuffer::buffer()'],['../struct_program_1_1_dynamic_buffer_state.html#a2361261a7c73bc7e313734bfb48e3860',1,'Program::DynamicBufferState::buffer()']]],
   ['buffers_31',['buffers',['../struct_g_p_u_1_1_metrics.html#a2f90e04f57da5451919438f1843a7698',1,'GPU::Metrics::buffers()'],['../struct_g_p_u_mesh_1_1_state.html#ae8c9ca3e791a6fdbd2059de470f8b38e',1,'GPUMesh::State::buffers()'],['../struct_program_1_1_stage.html#a70f32a4f0fdeef684071041ae8b5f750',1,'Program::Stage::buffers()'],['../struct_program_1_1_static_buffer_state.html#ac21d497a714a5bc3e6395d88b8ed99ac',1,'Program::StaticBufferState::buffers()']]],
   ['buttons_32',['buttons',['../class_game_menu.html#aa71a50182cfe6433c0f7548f3ac762ab',1,'GameMenu']]]
 ];

@@ -111,8 +111,8 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_state_1_1_framebuffer_infos.html">FramebufferInfos</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current framebuffer information.  <a href="struct_g_p_u_state_1_1_framebuffer_infos.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_u_state_1_1_render_pass.html">RenderPass</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current rendering pass information.  <a href="struct_g_p_u_state_1_1_render_pass.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -232,10 +232,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>sentinel</b> = false<
 const <a class="el" href="class_g_p_u_mesh.html">GPUMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> = nullptr</td></tr>
 <tr class="memdesc:a45f91c0c082f88db3ec298f1e39698a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current mesh. <br /></td></tr>
 <tr class="separator:a45f91c0c082f88db3ec298f1e39698a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70081b913e77b391fcaa1fc589d76e4a"><td class="memItemLeft" align="right" valign="top"><a id="a70081b913e77b391fcaa1fc589d76e4a" name="a70081b913e77b391fcaa1fc589d76e4a"></a>
-<a class="el" href="struct_g_p_u_state_1_1_framebuffer_infos.html">FramebufferInfos</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pass</b></td></tr>
-<tr class="memdesc:a70081b913e77b391fcaa1fc589d76e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current framebuffer. <br /></td></tr>
-<tr class="separator:a70081b913e77b391fcaa1fc589d76e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0275b76b3501ee18d5e84fc26e34ec"><td class="memItemLeft" align="right" valign="top"><a id="a3b0275b76b3501ee18d5e84fc26e34ec" name="a3b0275b76b3501ee18d5e84fc26e34ec"></a>
+<a class="el" href="struct_g_p_u_state_1_1_render_pass.html">RenderPass</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pass</b></td></tr>
+<tr class="memdesc:a3b0275b76b3501ee18d5e84fc26e34ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current attachments. <br /></td></tr>
+<tr class="separator:a3b0275b76b3501ee18d5e84fc26e34ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5563d4b9e696daf9b93dabfd377b66e6"><td class="memItemLeft" align="right" valign="top"><a id="a5563d4b9e696daf9b93dabfd377b66e6" name="a5563d4b9e696daf9b93dabfd377b66e6"></a>
+std::array&lt; const <a class="el" href="class_texture.html">Texture</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colors</b> = {nullptr, nullptr, nullptr, nullptr}</td></tr>
+<tr class="separator:a5563d4b9e696daf9b93dabfd377b66e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ff02425222dd91efc2228d283bb930"><td class="memItemLeft" align="right" valign="top"><a id="ad3ff02425222dd91efc2228d283bb930" name="ad3ff02425222dd91efc2228d283bb930"></a>
+const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>depthStencil</b> {nullptr}</td></tr>
+<tr class="separator:ad3ff02425222dd91efc2228d283bb930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c58bd0bcfe9bfdf923bf993b60c1f96"><td class="memItemLeft" align="right" valign="top"><a id="a5c58bd0bcfe9bfdf923bf993b60c1f96" name="a5c58bd0bcfe9bfdf923bf993b60c1f96"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>computeProgram</b> = nullptr</td></tr>
 <tr class="memdesc:a5c58bd0bcfe9bfdf923bf993b60c1f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current compute program. <br /></td></tr>

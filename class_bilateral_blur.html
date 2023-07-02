@@ -113,28 +113,24 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a750d46c718bd72685fbc8f174ddf302a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a750d46c718bd72685fbc8f174ddf302a">BilateralBlur</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a750d46c718bd72685fbc8f174ddf302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951cccd08126554ebe77798d46b5c89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a951cccd08126554ebe77798d46b5c89a">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> *texture, const <a class="el" href="class_texture.html">Texture</a> *depthTex, const <a class="el" href="class_texture.html">Texture</a> *normalTex, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer)</td></tr>
-<tr class="separator:a951cccd08126554ebe77798d46b5c89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce43e5b6927ab6c229fab79503fa188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a3ce43e5b6927ab6c229fab79503fa188">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;depthTex, const <a class="el" href="class_texture.html">Texture</a> &amp;normalTex, <a class="el" href="class_texture.html">Texture</a> &amp;dst)</td></tr>
+<tr class="separator:a3ce43e5b6927ab6c229fab79503fa188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a6dc19518e6afe9b99abf56476747cac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a6dc19518e6afe9b99abf56476747cac4">resize</a> (unsigned int width, unsigned int height) const</td></tr>
-<tr class="separator:a6dc19518e6afe9b99abf56476747cac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5538fd2499333a0a2bb20c033ea491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bilateral_blur.html#a6f5538fd2499333a0a2bb20c033ea491">resize</a> (uint width, uint height)</td></tr>
+<tr class="separator:a6f5538fd2499333a0a2bb20c033ea491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab9ab1d2b0a3e203517a2fe3d909cfeb4"><td class="memItemLeft" align="right" valign="top"><a id="ab9ab1d2b0a3e203517a2fe3d909cfeb4" name="ab9ab1d2b0a3e203517a2fe3d909cfeb4"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_intermediate</b></td></tr>
-<tr class="memdesc:ab9ab1d2b0a3e203517a2fe3d909cfeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate framebuffer. <br /></td></tr>
-<tr class="separator:ab9ab1d2b0a3e203517a2fe3d909cfeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b9ad7fdc9b8b319eb2359e5ee746dd"><td class="memItemLeft" align="right" valign="top"><a id="ae5b9ad7fdc9b8b319eb2359e5ee746dd" name="ae5b9ad7fdc9b8b319eb2359e5ee746dd"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_intermediate</b></td></tr>
+<tr class="memdesc:ae5b9ad7fdc9b8b319eb2359e5ee746dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate texture. <br /></td></tr>
+<tr class="separator:ae5b9ad7fdc9b8b319eb2359e5ee746dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0411b2667ff9c51ca23866d2a03225d"><td class="memItemLeft" align="right" valign="top"><a id="ab0411b2667ff9c51ca23866d2a03225d" name="ab0411b2667ff9c51ca23866d2a03225d"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_filter</b></td></tr>
 <tr class="memdesc:ab0411b2667ff9c51ca23866d2a03225d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bilateral hader. <br /></td></tr>
 <tr class="separator:ab0411b2667ff9c51ca23866d2a03225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae51239eef4a77d50a84d8d8a24738184"><td class="memItemLeft" align="right" valign="top"><a id="ae51239eef4a77d50a84d8d8a24738184" name="ae51239eef4a77d50a84d8d8a24738184"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
-<tr class="memdesc:ae51239eef4a77d50a84d8d8a24738184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug name. <br /></td></tr>
-<tr class="separator:ae51239eef4a77d50a84d8d8a24738184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Apply an approximate bilateral blur to a texture. This can be used to blur while preserving edges, or even to upscale and blur a small texture. The approximate implementation in Rendu is based on the one demonstrated in G3D (McGuire M., Mara M., Majercik Z., <a href="http://casual-effects.com/g3d">http://casual-effects.com/g3d</a>, 2017), and relies on a separable Gaussian blur with adjusted weights and an extra step distance. </p>
@@ -164,8 +160,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a951cccd08126554ebe77798d46b5c89a" name="a951cccd08126554ebe77798d46b5c89a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a951cccd08126554ebe77798d46b5c89a">&#9670;&#160;</a></span>process()</h2>
+<a id="a3ce43e5b6927ab6c229fab79503fa188" name="a3ce43e5b6927ab6c229fab79503fa188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce43e5b6927ab6c229fab79503fa188">&#9670;&#160;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,26 +175,26 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>depthTex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>normalTex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,22 +203,22 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Apply the bilateral blur to a texture and write the result in a framebuffer. </p><dl class="section note"><dt>Note</dt><dd>It is possible to use the same texture as input and output. </dd></dl>
+<p >Apply the bilateral blur to a texture and write the result in a texture. </p><dl class="section note"><dt>Note</dt><dd>It is possible to use the same texture as input and output. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">projection</td><td>the camera projection matrix </td></tr>
-    <tr><td class="paramname">texture</td><td>the texture to blur/upscale </td></tr>
+    <tr><td class="paramname">src</td><td>the texture to blur/upscale </td></tr>
     <tr><td class="paramname">depthTex</td><td>the depth texture </td></tr>
     <tr><td class="paramname">normalTex</td><td>the view-space normal texture </td></tr>
-    <tr><td class="paramname">framebuffer</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a6dc19518e6afe9b99abf56476747cac4" name="a6dc19518e6afe9b99abf56476747cac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dc19518e6afe9b99abf56476747cac4">&#9670;&#160;</a></span>resize()</h2>
+<a id="a6f5538fd2499333a0a2bb20c033ea491" name="a6f5538fd2499333a0a2bb20c033ea491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f5538fd2499333a0a2bb20c033ea491">&#9670;&#160;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,19 +229,19 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td>
         <tr>
           <td class="memname">void BilateralBlur::resize </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

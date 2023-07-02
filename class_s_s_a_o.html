@@ -121,10 +121,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3420c41d16766399278ee2aa54796973"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a3420c41d16766399278ee2aa54796973">SSAO</a> (uint width, uint height, uint downscale, float <a class="el" href="class_s_s_a_o.html#a834b90c1e0a1b1fe7cc3ab1fb0413948">radius</a>, const std::string &amp;name)</td></tr>
 <tr class="separator:a3420c41d16766399278ee2aa54796973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43f1226659e2f0dd9cb820be397b54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#ac43f1226659e2f0dd9cb820be397b54a">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> *depthTex, const <a class="el" href="class_texture.html">Texture</a> *normalTex)</td></tr>
-<tr class="separator:ac43f1226659e2f0dd9cb820be397b54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4a64c9cb9b1151dd97bbf871605b48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#aff4a64c9cb9b1151dd97bbf871605b48">resize</a> (uint width, uint height) const</td></tr>
-<tr class="separator:aff4a64c9cb9b1151dd97bbf871605b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf14a8684ff91aac9548918850d6ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a0bf14a8684ff91aac9548918850d6ec9">process</a> (const glm::mat4 &amp;projection, const <a class="el" href="class_texture.html">Texture</a> &amp;depthTex, const <a class="el" href="class_texture.html">Texture</a> &amp;normalTex)</td></tr>
+<tr class="separator:a0bf14a8684ff91aac9548918850d6ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f8be2a12906dad52f20d980cc3d0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#ad5f8be2a12906dad52f20d980cc3d0b8">resize</a> (uint width, uint height)</td></tr>
+<tr class="separator:ad5f8be2a12906dad52f20d980cc3d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a904d27f81f24f8ac29ca84aa85ed64e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#a904d27f81f24f8ac29ca84aa85ed64e1">clear</a> () const</td></tr>
 <tr class="separator:a904d27f81f24f8ac29ca84aa85ed64e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca8c7015b1da0943f20d6cd026ca0aa4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_s_a_o.html#aca8c7015b1da0943f20d6cd026ca0aa4">texture</a> () const</td></tr>
@@ -136,14 +136,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa64fb0e86c4b86a83f749ce9b1c0f5da"><td class="memItemLeft" align="right" valign="top"><a id="aa64fb0e86c4b86a83f749ce9b1c0f5da" name="aa64fb0e86c4b86a83f749ce9b1c0f5da"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_ssaoFramebuffer</b></td></tr>
-<tr class="memdesc:aa64fb0e86c4b86a83f749ce9b1c0f5da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> framebuffer. <br /></td></tr>
-<tr class="separator:aa64fb0e86c4b86a83f749ce9b1c0f5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac3c506b988476931aac853bb60bdc7"><td class="memItemLeft" align="right" valign="top"><a id="a6ac3c506b988476931aac853bb60bdc7" name="a6ac3c506b988476931aac853bb60bdc7"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_finalFramebuffer</b></td></tr>
-<tr class="memdesc:a6ac3c506b988476931aac853bb60bdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> framebuffer. <br /></td></tr>
-<tr class="separator:a6ac3c506b988476931aac853bb60bdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd5b91fb04fef5771fb2dfff73e1e26"><td class="memItemLeft" align="right" valign="top"><a id="aafd5b91fb04fef5771fb2dfff73e1e26" name="aafd5b91fb04fef5771fb2dfff73e1e26"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_ssaoTexture</b></td></tr>
+<tr class="memdesc:aafd5b91fb04fef5771fb2dfff73e1e26"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> texture. <br /></td></tr>
+<tr class="separator:aafd5b91fb04fef5771fb2dfff73e1e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb5905e34cfdc0e9f8fa001cb312205"><td class="memItemLeft" align="right" valign="top"><a id="a1eb5905e34cfdc0e9f8fa001cb312205" name="a1eb5905e34cfdc0e9f8fa001cb312205"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_finalTexture</b></td></tr>
+<tr class="memdesc:a1eb5905e34cfdc0e9f8fa001cb312205"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_s_s_a_o.html" title="Computes screen space ambient occlusion from a depth and view-space normal buffer (brought to [0,...">SSAO</a> texture. <br /></td></tr>
+<tr class="separator:a1eb5905e34cfdc0e9f8fa001cb312205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46824de11068e2d750256e15e40bb63a"><td class="memItemLeft" align="right" valign="top"><a id="a46824de11068e2d750256e15e40bb63a" name="a46824de11068e2d750256e15e40bb63a"></a>
 <a class="el" href="class_bilateral_blur.html">BilateralBlur</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_highBlur</b></td></tr>
 <tr class="memdesc:a46824de11068e2d750256e15e40bb63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">High quality blur. <br /></td></tr>
@@ -284,12 +284,12 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Clear the final framebuffer texture. </p>
+<p >Clear the final texture. </p>
 
 </div>
 </div>
-<a id="ac43f1226659e2f0dd9cb820be397b54a" name="ac43f1226659e2f0dd9cb820be397b54a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac43f1226659e2f0dd9cb820be397b54a">&#9670;&#160;</a></span>process()</h2>
+<a id="a0bf14a8684ff91aac9548918850d6ec9" name="a0bf14a8684ff91aac9548918850d6ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf14a8684ff91aac9548918850d6ec9">&#9670;&#160;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,13 +303,13 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>depthTex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>normalTex</em>&#160;</td>
         </tr>
         <tr>
@@ -366,8 +366,8 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
 
 </div>
 </div>
-<a id="aff4a64c9cb9b1151dd97bbf871605b48" name="aff4a64c9cb9b1151dd97bbf871605b48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff4a64c9cb9b1151dd97bbf871605b48">&#9670;&#160;</a></span>resize()</h2>
+<a id="ad5f8be2a12906dad52f20d980cc3d0b8" name="ad5f8be2a12906dad52f20d980cc3d0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f8be2a12906dad52f20d980cc3d0b8">&#9670;&#160;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,7 +387,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

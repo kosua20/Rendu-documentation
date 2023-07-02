@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1767464838bcb73b48f541e4f19b507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ad280f800669f92f5b6ca7575635b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_painting_tool.html#a2ad280f800669f92f5b6ca7575635b90">update</a> ()</td></tr>
 <tr class="separator:a2ad280f800669f92f5b6ca7575635b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b460278c326311ffacc55ded729f389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_painting_tool.html#a8b460278c326311ffacc55ded729f389">resize</a> (unsigned int width, unsigned int height) const</td></tr>
-<tr class="separator:a8b460278c326311ffacc55ded729f389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb36263061f9d4c402c261c7b1c58946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_painting_tool.html#acb36263061f9d4c402c261c7b1c58946">resize</a> (uint width, uint height)</td></tr>
+<tr class="separator:acb36263061f9d4c402c261c7b1c58946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d04aec8ada151233d7809d7b2b9f9f4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_painting_tool.html#a1d04aec8ada151233d7809d7b2b9f9f4">texture</a> () const</td></tr>
 <tr class="separator:a1d04aec8ada151233d7809d7b2b9f9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6925ac5e47dfef929e9f5a88022cc044"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_painting_tool.html#a6925ac5e47dfef929e9f5a88022cc044">visuId</a> () const</td></tr>
@@ -141,14 +141,14 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0baec59e2072f9237b0652784748e064"><td class="memItemLeft" align="right" valign="top"><a id="a0baec59e2072f9237b0652784748e064" name="a0baec59e2072f9237b0652784748e064"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_canvas</b></td></tr>
-<tr class="memdesc:a0baec59e2072f9237b0652784748e064"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> rendering buffer. <br /></td></tr>
-<tr class="separator:a0baec59e2072f9237b0652784748e064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54052fbe93362bfc754188b578cd8e97"><td class="memItemLeft" align="right" valign="top"><a id="a54052fbe93362bfc754188b578cd8e97" name="a54052fbe93362bfc754188b578cd8e97"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_visu</b></td></tr>
-<tr class="memdesc:a54052fbe93362bfc754188b578cd8e97"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> rendering buffer. <br /></td></tr>
-<tr class="separator:a54052fbe93362bfc754188b578cd8e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf2aa6904e38a2c45fa4cfc4b2de4ca"><td class="memItemLeft" align="right" valign="top"><a id="a8bf2aa6904e38a2c45fa4cfc4b2de4ca" name="a8bf2aa6904e38a2c45fa4cfc4b2de4ca"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_canvas</b></td></tr>
+<tr class="memdesc:a8bf2aa6904e38a2c45fa4cfc4b2de4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> rendering buffer. <br /></td></tr>
+<tr class="separator:a8bf2aa6904e38a2c45fa4cfc4b2de4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4fb8a6177c1327db2211de6671914d"><td class="memItemLeft" align="right" valign="top"><a id="aea4fb8a6177c1327db2211de6671914d" name="aea4fb8a6177c1327db2211de6671914d"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_visu</b></td></tr>
+<tr class="memdesc:aea4fb8a6177c1327db2211de6671914d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html" title="Represents a 3D environment composed of objects, a background and additional environment lighting inf...">Scene</a> rendering buffer. <br /></td></tr>
+<tr class="separator:aea4fb8a6177c1327db2211de6671914d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac51b6ebdf38297ae12da82da2193af0"><td class="memItemLeft" align="right" valign="top"><a id="aac51b6ebdf38297ae12da82da2193af0" name="aac51b6ebdf38297ae12da82da2193af0"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_brushShader</b></td></tr>
 <tr class="memdesc:aac51b6ebdf38297ae12da82da2193af0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_program.html" title="Represents a group of shaders used for rendering.">Program</a> for the brush and its outline. <br /></td></tr>
@@ -189,6 +189,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_shouldClear</b> = tr
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_shouldDraw</b> = false</td></tr>
 <tr class="memdesc:adf0e235ea9a6fb0b139c110ad5cd421f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the brush to the canvas at the next frame. <br /></td></tr>
 <tr class="separator:adf0e235ea9a6fb0b139c110ad5cd421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31331a9567b3d914163610162debbaae"><td class="memItemLeft" align="right" valign="top"><a id="a31331a9567b3d914163610162debbaae" name="a31331a9567b3d914163610162debbaae"></a>
+GPUAsyncTask&#160;</td><td class="memItemRight" valign="bottom"><b>_readbackTask</b> = 0</td></tr>
+<tr class="memdesc:a31331a9567b3d914163610162debbaae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for color picker task. <br /></td></tr>
+<tr class="separator:a31331a9567b3d914163610162debbaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Utility presenting a canvas to the user, along with a brush tool to paint on it using different shapes. </p>
@@ -247,8 +251,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_shouldDraw</b> = fal
 
 </div>
 </div>
-<a id="a8b460278c326311ffacc55ded729f389" name="a8b460278c326311ffacc55ded729f389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b460278c326311ffacc55ded729f389">&#9670;&#160;</a></span>resize()</h2>
+<a id="acb36263061f9d4c402c261c7b1c58946" name="acb36263061f9d4c402c261c7b1c58946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb36263061f9d4c402c261c7b1c58946">&#9670;&#160;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,19 +260,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_shouldDraw</b> = fal
         <tr>
           <td class="memname">void PaintingTool::resize </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

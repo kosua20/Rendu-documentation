@@ -128,12 +128,28 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a58c629cd429a9233f4fe66a44178c3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda20e3f61922e2160cf4c877484070e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#adda20e3f61922e2160cf4c877484070e">bindProgram</a> (const <a class="el" href="class_program.html">Program</a> &amp;program)</td></tr>
 <tr class="separator:adda20e3f61922e2160cf4c877484070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f5c9088d84042c6600a58557efe6b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a06f5c9088d84042c6600a58557efe6b8">bindFramebuffer</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, uint layer, uint mip)</td></tr>
-<tr class="separator:a06f5c9088d84042c6600a58557efe6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f55786124fbeed043c02417a4b661e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a95f55786124fbeed043c02417a4b661e">saveFramebuffer</a> (<a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, const std::string &amp;path, <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a> options)</td></tr>
-<tr class="separator:a95f55786124fbeed043c02417a4b661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86b17b440605f028155c41d8b00ac7d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a86b17b440605f028155c41d8b00ac7d3">setupTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture, const <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> &amp;format, bool drawable)</td></tr>
-<tr class="separator:a86b17b440605f028155c41d8b00ac7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c519a8e98d9f571a02d34da7412538c"><td class="memItemLeft" align="right" valign="top"><a id="a3c519a8e98d9f571a02d34da7412538c" name="a3c519a8e98d9f571a02d34da7412538c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (const <a class="el" href="struct_load.html">Load</a> &amp;colorOp, const <a class="el" href="struct_load.html">Load</a> &amp;depthOp, const <a class="el" href="struct_load.html">Load</a> &amp;stencilOp, const <a class="el" href="class_texture.html">Texture</a> *depthStencil, const <a class="el" href="class_texture.html">Texture</a> *color0=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color1=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color2=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color3=nullptr)</td></tr>
+<tr class="separator:a3c519a8e98d9f571a02d34da7412538c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76fdce23f1e75f4c37662b35c71e5d50"><td class="memItemLeft" align="right" valign="top"><a id="a76fdce23f1e75f4c37662b35c71e5d50" name="a76fdce23f1e75f4c37662b35c71e5d50"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (const <a class="el" href="struct_load.html">Load</a> &amp;colorOp, const <a class="el" href="class_texture.html">Texture</a> *color0, const <a class="el" href="class_texture.html">Texture</a> *color1=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color2=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color3=nullptr)</td></tr>
+<tr class="separator:a76fdce23f1e75f4c37662b35c71e5d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfd677903042dc6166b3e3a89871e5a"><td class="memItemLeft" align="right" valign="top"><a id="a7dfd677903042dc6166b3e3a89871e5a" name="a7dfd677903042dc6166b3e3a89871e5a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (const <a class="el" href="struct_load.html">Load</a> &amp;depthOp, const <a class="el" href="struct_load.html">Load</a> &amp;stencilOp, const <a class="el" href="class_texture.html">Texture</a> *depthStencil)</td></tr>
+<tr class="separator:a7dfd677903042dc6166b3e3a89871e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3522ec8408338be5f7bd40c0cadf26ce"><td class="memItemLeft" align="right" valign="top"><a id="a3522ec8408338be5f7bd40c0cadf26ce" name="a3522ec8408338be5f7bd40c0cadf26ce"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (uint layer, uint mip, const <a class="el" href="struct_load.html">Load</a> &amp;colorOp, const <a class="el" href="struct_load.html">Load</a> &amp;depthOp, const <a class="el" href="struct_load.html">Load</a> &amp;stencilOp, const <a class="el" href="class_texture.html">Texture</a> *depthStencil, const <a class="el" href="class_texture.html">Texture</a> *color0=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color1=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color2=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color3=nullptr)</td></tr>
+<tr class="separator:a3522ec8408338be5f7bd40c0cadf26ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37296cb6731a3c6d01821b0089cc5f53"><td class="memItemLeft" align="right" valign="top"><a id="a37296cb6731a3c6d01821b0089cc5f53" name="a37296cb6731a3c6d01821b0089cc5f53"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (uint layer, uint mip, const <a class="el" href="struct_load.html">Load</a> &amp;colorOp, const <a class="el" href="class_texture.html">Texture</a> *color0, const <a class="el" href="class_texture.html">Texture</a> *color1=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color2=nullptr, const <a class="el" href="class_texture.html">Texture</a> *color3=nullptr)</td></tr>
+<tr class="separator:a37296cb6731a3c6d01821b0089cc5f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96df1c1bd9f49c930794847ec1539833"><td class="memItemLeft" align="right" valign="top"><a id="a96df1c1bd9f49c930794847ec1539833" name="a96df1c1bd9f49c930794847ec1539833"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (uint layer, uint mip, const <a class="el" href="struct_load.html">Load</a> &amp;depthOp, const <a class="el" href="struct_load.html">Load</a> &amp;stencilOp, const <a class="el" href="class_texture.html">Texture</a> *depthStencil)</td></tr>
+<tr class="separator:a96df1c1bd9f49c930794847ec1539833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a4aa4db8d57d2dffbd6dea1e98daf0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a22a4aa4db8d57d2dffbd6dea1e98daf0">saveTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture, const std::string &amp;path, <a class="el" href="class_image.html#ad53308e297b5608dd19370fe4b471e86">Image::Save</a> options)</td></tr>
+<tr class="separator:a22a4aa4db8d57d2dffbd6dea1e98daf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab083af86286039a43cb7f4f90cf9b9ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ab083af86286039a43cb7f4f90cf9b9ba">setupTexture</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture)</td></tr>
+<tr class="separator:ab083af86286039a43cb7f4f90cf9b9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6553eeb0245d8a9a1b84ee9fc34d68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#aaf6553eeb0245d8a9a1b84ee9fc34d68">uploadTexture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture)</td></tr>
 <tr class="separator:aaf6553eeb0245d8a9a1b84ee9fc34d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1693fcd5137754eb1daa46f1a1697ca0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a1693fcd5137754eb1daa46f1a1697ca0">downloadTextureSync</a> (<a class="el" href="class_texture.html">Texture</a> &amp;texture)</td></tr>
@@ -146,6 +162,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a7789b2e8bb707721dcb4dfadacd5c5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a845c3526c52de52baaee0043b79583"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a4a845c3526c52de52baaee0043b79583">generateMipMaps</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture)</td></tr>
 <tr class="separator:a4a845c3526c52de52baaee0043b79583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d2d61b8c8962a78706e69230e2c944"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#aa1d2d61b8c8962a78706e69230e2c944">clearTexture</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, const glm::vec4 &amp;color)</td></tr>
+<tr class="separator:aa1d2d61b8c8962a78706e69230e2c944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9787f1d777c95aeaed5ab6c00dc47b65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a9787f1d777c95aeaed5ab6c00dc47b65">clearDepth</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;texture, float depth)</td></tr>
+<tr class="separator:a9787f1d777c95aeaed5ab6c00dc47b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1ea36646fa124c359b1b33418cd96d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a1f1ea36646fa124c359b1b33418cd96d">setupBuffer</a> (<a class="el" href="class_buffer.html">Buffer</a> &amp;buffer)</td></tr>
 <tr class="separator:a1f1ea36646fa124c359b1b33418cd96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4076c96f326f25b0d696df065b2d801"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ae4076c96f326f25b0d696df065b2d801">uploadBuffer</a> (const <a class="el" href="class_buffer.html">Buffer</a> &amp;buffer, size_t size, uchar *data, size_t offset=0)</td></tr>
@@ -174,6 +194,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa705d7ca79de77073cad45a3b54fb8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08047f234f0d156203f307749645b20d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a08047f234f0d156203f307749645b20d">setViewport</a> (int x, int y, int w, int h)</td></tr>
 <tr class="separator:a08047f234f0d156203f307749645b20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a0c69b23aefc56c7d3ee9a10327436"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a92a0c69b23aefc56c7d3ee9a10327436">setViewport</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;tex)</td></tr>
+<tr class="separator:a92a0c69b23aefc56c7d3ee9a10327436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3a02f13f94abb3e6a3d7581846b9bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#abe3a02f13f94abb3e6a3d7581846b9bd">setDepthState</a> (bool test)</td></tr>
 <tr class="separator:abe3a02f13f94abb3e6a3d7581846b9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5b9a4b47058e88042fc225b1701fce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#aeb5b9a4b47058e88042fc225b1701fce">setDepthState</a> (bool test, <a class="el" href="group___resources.html#gaa01a212fe7f4cf214d72c4483d59b4da">TestFunction</a> function, bool write)</td></tr>
@@ -198,18 +220,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a67bb8bd1da9c6401b2530a79aa1b0152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a724d635fb5115a692f287715b138bb6f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="struct_g_p_u_1_1_metrics.html">Metrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a724d635fb5115a692f287715b138bb6f">getMetrics</a> ()</td></tr>
 <tr class="separator:a724d635fb5115a692f287715b138bb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fb9f53c9b740fbbc2dfe7039d7a0d7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a48fb9f53c9b740fbbc2dfe7039d7a0d7">blitDepth</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst)</td></tr>
-<tr class="separator:a48fb9f53c9b740fbbc2dfe7039d7a0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc8364332d12f327a95b27b9ef481c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a1fc8364332d12f327a95b27b9ef481c2">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
-<tr class="separator:a1fc8364332d12f327a95b27b9ef481c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3396ede3acbf866909f5eb9ef8dd591"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ae3396ede3acbf866909f5eb9ef8dd591">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, size_t lSrc, size_t lDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
-<tr class="separator:ae3396ede3acbf866909f5eb9ef8dd591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9bfdb14256a9d5656fb38ee9d7f97a1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ac9bfdb14256a9d5656fb38ee9d7f97a1">blit</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;src, const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, size_t lSrc, size_t lDst, size_t mipSrc, size_t mipDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
-<tr class="separator:ac9bfdb14256a9d5656fb38ee9d7f97a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74436b8a680131438f10623e149b0a88"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a74436b8a680131438f10623e149b0a88">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_texture.html">Texture</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
-<tr class="separator:a74436b8a680131438f10623e149b0a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f215e319cd07b508325642c3a0403f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a08f215e319cd07b508325642c3a0403f">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
-<tr class="separator:a08f215e319cd07b508325642c3a0403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c5f0a2de5cdfa00e16cc9f4aa649b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ad9c5f0a2de5cdfa00e16cc9f4aa649b6">blitDepth</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;dst)</td></tr>
+<tr class="separator:ad9c5f0a2de5cdfa00e16cc9f4aa649b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8724d8f5c1632e50c11be5a805dd37d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#af8724d8f5c1632e50c11be5a805dd37d">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;dst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
+<tr class="separator:af8724d8f5c1632e50c11be5a805dd37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e69e1347fa12604ee61b42c8cf414a7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a9e69e1347fa12604ee61b42c8cf414a7">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;dst, size_t lSrc, size_t lDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
+<tr class="separator:a9e69e1347fa12604ee61b42c8cf414a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c042b547302e1526504a36f0222c76"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ac7c042b547302e1526504a36f0222c76">blit</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;dst, size_t lSrc, size_t lDst, size_t mipSrc, size_t mipDst, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
+<tr class="separator:ac7c042b547302e1526504a36f0222c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5706f158f73dceeee566d29162ee72"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_g_p_u_context.html">GPUContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a8f5706f158f73dceeee566d29162ee72">getInternal</a> ()</td></tr>
 <tr class="separator:a8f5706f158f73dceeee566d29162ee72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b7b36139126d626625f26838faab4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ab2b7b36139126d626625f26838faab4e">cleanup</a> ()</td></tr>
@@ -217,12 +235,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a30b069c91ef413cad701df70003cbd44"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a30b069c91ef413cad701df70003cbd44">bindAttachments</a> (uint layer, uint mip, const <a class="el" href="struct_load.html">Load</a> &amp;colorOp, const <a class="el" href="struct_load.html">Load</a> &amp;depthOp, const <a class="el" href="struct_load.html">Load</a> &amp;stencilOp, const <a class="el" href="class_texture.html">Texture</a> *depthStencil, const <a class="el" href="class_texture.html">Texture</a> *color0, const <a class="el" href="class_texture.html">Texture</a> *color1, const <a class="el" href="class_texture.html">Texture</a> *color2, const <a class="el" href="class_texture.html">Texture</a> *color3)</td></tr>
+<tr class="separator:a30b069c91ef413cad701df70003cbd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43bb388698ab445409cee5aa66a7f777"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a43bb388698ab445409cee5aa66a7f777">bindGraphicsPipelineIfNeeded</a> ()</td></tr>
 <tr class="separator:a43bb388698ab445409cee5aa66a7f777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1db5798e4d079f97d5df59f33f59906"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#ad1db5798e4d079f97d5df59f33f59906">bindComputePipelineIfNeeded</a> ()</td></tr>
 <tr class="separator:ad1db5798e4d079f97d5df59f33f59906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18fd48651cd028537c81f06d2f62bdb8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a18fd48651cd028537c81f06d2f62bdb8">unbindFramebufferIfNeeded</a> ()</td></tr>
-<tr class="separator:a18fd48651cd028537c81f06d2f62bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fb7dca035763f0fe0f642d13eafa7e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a96fb7dca035763f0fe0f642d13eafa7e">endRenderingIfNeeded</a> ()</td></tr>
+<tr class="separator:a96fb7dca035763f0fe0f642d13eafa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63ae2e8e886b7ecf4587c470d9bbf6cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a63ae2e8e886b7ecf4587c470d9bbf6cf">beginFrameCommandBuffers</a> ()</td></tr>
 <tr class="separator:a63ae2e8e886b7ecf4587c470d9bbf6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699ddaffce27b42d1525df15b9f6a99f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a699ddaffce27b42d1525df15b9f6a99f">submitFrameCommandBuffers</a> ()</td></tr>
@@ -233,8 +253,6 @@ Static Private Member Functions</h2></td></tr>
 <tr class="separator:ad0481175370fdeb87e74d8a3f6ae5583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfae060fe06049c19dd954cbecbc46c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#aacfae060fe06049c19dd954cbecbc46c">clean</a> (<a class="el" href="class_g_p_u_buffer.html">GPUBuffer</a> &amp;buffer)</td></tr>
 <tr class="separator:aacfae060fe06049c19dd954cbecbc46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb94655035439c7206dd3eb1e84d823f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#aeb94655035439c7206dd3eb1e84d823f">clean</a> (<a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer, bool deleteRenderPasses)</td></tr>
-<tr class="separator:aeb94655035439c7206dd3eb1e84d823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb3150c0dc84c936f11c6f78fa59819a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#adb3150c0dc84c936f11c6f78fa59819a">clean</a> (<a class="el" href="class_program.html">Program</a> &amp;program)</td></tr>
 <tr class="separator:adb3150c0dc84c936f11c6f78fa59819a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ccfda40477f712871862e7c9f5f5f2e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a9ccfda40477f712871862e7c9f5f5f2e">processDestructionRequests</a> ()</td></tr>
@@ -279,17 +297,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a80c70b528d2e39343a66789ec43abfde">GPUMesh</a></td></tr>
 <tr class="memdesc:a80c70b528d2e39343a66789ec43abfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to deletion notifier for cached state update. <br /></td></tr>
 <tr class="separator:a80c70b528d2e39343a66789ec43abfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88df80064068d454e05a22e38842d1d2"><td class="memItemLeft" align="right" valign="top"><a id="a88df80064068d454e05a22e38842d1d2" name="a88df80064068d454e05a22e38842d1d2"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a88df80064068d454e05a22e38842d1d2">Framebuffer</a></td></tr>
-<tr class="memdesc:a88df80064068d454e05a22e38842d1d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to deletion notifier for cached state update. <br /></td></tr>
-<tr class="separator:a88df80064068d454e05a22e38842d1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0432bf4ab621f4098afac914ccb5371e"><td class="memItemLeft" align="right" valign="top"><a id="a0432bf4ab621f4098afac914ccb5371e" name="a0432bf4ab621f4098afac914ccb5371e"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a0432bf4ab621f4098afac914ccb5371e">Program</a></td></tr>
 <tr class="memdesc:a0432bf4ab621f4098afac914ccb5371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to metrics. <br /></td></tr>
 <tr class="separator:a0432bf4ab621f4098afac914ccb5371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2420518f1639a43d38fd830ce4de7d3e"><td class="memItemLeft" align="right" valign="top"><a id="a2420518f1639a43d38fd830ce4de7d3e" name="a2420518f1639a43d38fd830ce4de7d3e"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a2420518f1639a43d38fd830ce4de7d3e">Swapchain</a></td></tr>
-<tr class="memdesc:a2420518f1639a43d38fd830ce4de7d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to framebuffer cleanup. <br /></td></tr>
+<tr class="memdesc:a2420518f1639a43d38fd830ce4de7d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to command buffers. <br /></td></tr>
 <tr class="separator:a2420518f1639a43d38fd830ce4de7d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c6e79faddcf860d9ddab95307145e2f"><td class="memItemLeft" align="right" valign="top"><a id="a3c6e79faddcf860d9ddab95307145e2f" name="a3c6e79faddcf860d9ddab95307145e2f"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_u.html#a3c6e79faddcf860d9ddab95307145e2f">PipelineCache</a></td></tr>
@@ -325,6 +339,105 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="a30b069c91ef413cad701df70003cbd44" name="a30b069c91ef413cad701df70003cbd44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b069c91ef413cad701df70003cbd44">&#9670;&#160;</a></span>bindAttachments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::bindAttachments </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>mip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_load.html">Load</a> &amp;&#160;</td>
+          <td class="paramname"><em>colorOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_load.html">Load</a> &amp;&#160;</td>
+          <td class="paramname"><em>depthOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_load.html">Load</a> &amp;&#160;</td>
+          <td class="paramname"><em>stencilOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>depthStencil</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>color0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>color1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>color2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>color3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Bind textures as a draw destination. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>the texture layer to bind </td></tr>
+    <tr><td class="paramname">mip</td><td>the mip level to bind </td></tr>
+    <tr><td class="paramname">colorOp</td><td>the operation to perform on the color attachments </td></tr>
+    <tr><td class="paramname">depthOp</td><td>the operation to perform on the depth attachment </td></tr>
+    <tr><td class="paramname">stencilOp</td><td>the operation to perform on the stencil attachment </td></tr>
+    <tr><td class="paramname">depthStencil</td><td>the depth/stencil attachment </td></tr>
+    <tr><td class="paramname">color0</td><td>the first color attachment </td></tr>
+    <tr><td class="paramname">color1</td><td>the second color attachment </td></tr>
+    <tr><td class="paramname">color2</td><td>the third color attachment </td></tr>
+    <tr><td class="paramname">color3</td><td>the fourth color attachment </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad1db5798e4d079f97d5df59f33f59906" name="ad1db5798e4d079f97d5df59f33f59906"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1db5798e4d079f97d5df59f33f59906">&#9670;&#160;</a></span>bindComputePipelineIfNeeded()</h2>
 
@@ -348,56 +461,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table>
 </div><div class="memdoc">
 <p >If the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> compute state has changed, retrieve and bind the pipeline corresponding to the new state. </p>
-
-</div>
-</div>
-<a id="a06f5c9088d84042c6600a58557efe6b8" name="a06f5c9088d84042c6600a58557efe6b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f5c9088d84042c6600a58557efe6b8">&#9670;&#160;</a></span>bindFramebuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPU::bindFramebuffer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>layer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>mip</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Bind a framebuffer as a draw destination. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">framebuffer</td><td>the framebuffer to bind as draw destination </td></tr>
-    <tr><td class="paramname">layer</td><td>the layer to bind </td></tr>
-    <tr><td class="paramname">mip</td><td>the mip level to bind </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -459,8 +522,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a1fc8364332d12f327a95b27b9ef481c2" name="a1fc8364332d12f327a95b27b9ef481c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fc8364332d12f327a95b27b9ef481c2">&#9670;&#160;</a></span>blit() <span class="overload">[1/5]</span></h2>
+<a id="af8724d8f5c1632e50c11be5a805dd37d" name="af8724d8f5c1632e50c11be5a805dd37d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8724d8f5c1632e50c11be5a805dd37d">&#9670;&#160;</a></span>blit() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,13 +534,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void GPU::blit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -498,20 +561,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Blit the content of a framebuffer into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Blit the content of a texture into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">src</td><td>the source texture </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
     <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>Only the first color attachment will be blit. </dd></dl>
 
 </div>
 </div>
-<a id="ae3396ede3acbf866909f5eb9ef8dd591" name="ae3396ede3acbf866909f5eb9ef8dd591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3396ede3acbf866909f5eb9ef8dd591">&#9670;&#160;</a></span>blit() <span class="overload">[2/5]</span></h2>
+<a id="a9e69e1347fa12604ee61b42c8cf414a7" name="a9e69e1347fa12604ee61b42c8cf414a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e69e1347fa12604ee61b42c8cf414a7">&#9670;&#160;</a></span>blit() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,13 +584,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void GPU::blit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -561,10 +623,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Blit the content of a framebuffer into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Blit the content of a texture into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">src</td><td>the source texture </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
     <tr><td class="paramname">lSrc</td><td>the src layer to copy </td></tr>
     <tr><td class="paramname">lDst</td><td>the dst layer to copy to </td></tr>
     <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
@@ -574,8 +636,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="ac9bfdb14256a9d5656fb38ee9d7f97a1" name="ac9bfdb14256a9d5656fb38ee9d7f97a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9bfdb14256a9d5656fb38ee9d7f97a1">&#9670;&#160;</a></span>blit() <span class="overload">[3/5]</span></h2>
+<a id="ac7c042b547302e1526504a36f0222c76" name="ac7c042b547302e1526504a36f0222c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c042b547302e1526504a36f0222c76">&#9670;&#160;</a></span>blit() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,13 +648,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void GPU::blit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -637,10 +699,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Blit the content of a framebuffer into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Blit the content of a texture into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">src</td><td>the source texture </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
     <tr><td class="paramname">lSrc</td><td>the src layer to copy </td></tr>
     <tr><td class="paramname">lDst</td><td>the dst layer to copy to </td></tr>
     <tr><td class="paramname">mipSrc</td><td>the src mip level to copy </td></tr>
@@ -652,109 +714,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a08f215e319cd07b508325642c3a0403f" name="a08f215e319cd07b508325642c3a0403f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08f215e319cd07b508325642c3a0403f">&#9670;&#160;</a></span>blit() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPU::blit </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a>&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Blit the content of a texture into a framebuffer first attachment, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">src</td><td>the source texture </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
-    <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This can be used to easily blit a color attachment that is not the first one. </dd></dl>
-
-</div>
-</div>
-<a id="a74436b8a680131438f10623e149b0a88" name="a74436b8a680131438f10623e149b0a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74436b8a680131438f10623e149b0a88">&#9670;&#160;</a></span>blit() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPU::blit </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a>&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Blit the content of a texture into another one, resizing the content accordingly. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">src</td><td>the source texture </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
-    <tr><td class="paramname">filter</td><td>the filtering to use for resizing </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a48fb9f53c9b740fbbc2dfe7039d7a0d7" name="a48fb9f53c9b740fbbc2dfe7039d7a0d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48fb9f53c9b740fbbc2dfe7039d7a0d7">&#9670;&#160;</a></span>blitDepth()</h2>
+<a id="ad9c5f0a2de5cdfa00e16cc9f4aa649b6" name="ad9c5f0a2de5cdfa00e16cc9f4aa649b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c5f0a2de5cdfa00e16cc9f4aa649b6">&#9670;&#160;</a></span>blitDepth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -765,13 +726,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void GPU::blitDepth </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>dst</em>&#160;</td>
         </tr>
         <tr>
@@ -786,15 +747,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Blit the content of a depthbuffer into another one. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Blit the content of a depth texture into another one. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src</td><td>the source framebuffer </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">src</td><td>the source texture </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Depth is necessarily filtered using nearest neighbour. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This treat the current depth buffer setup as a 2D texture. </dd></dl>
 
 </div>
 </div>
@@ -830,51 +790,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="aeb94655035439c7206dd3eb1e84d823f" name="aeb94655035439c7206dd3eb1e84d823f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb94655035439c7206dd3eb1e84d823f">&#9670;&#160;</a></span>clean() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPU::clean </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deleteRenderPasses</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Clean a framebuffer <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">framebuffer</td><td>the object to delete </td></tr>
-    <tr><td class="paramname">deleteRenderPasses</td><td>should the render passes be deleted (we can skip it for swapchains) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aacfae060fe06049c19dd954cbecbc46c" name="aacfae060fe06049c19dd954cbecbc46c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacfae060fe06049c19dd954cbecbc46c">&#9670;&#160;</a></span>clean() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacfae060fe06049c19dd954cbecbc46c">&#9670;&#160;</a></span>clean() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -906,7 +823,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <a id="ad0481175370fdeb87e74d8a3f6ae5583" name="ad0481175370fdeb87e74d8a3f6ae5583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0481175370fdeb87e74d8a3f6ae5583">&#9670;&#160;</a></span>clean() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0481175370fdeb87e74d8a3f6ae5583">&#9670;&#160;</a></span>clean() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -938,7 +855,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <a id="a55c32c98bff824a4054ac15eccb4ad51" name="a55c32c98bff824a4054ac15eccb4ad51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c32c98bff824a4054ac15eccb4ad51">&#9670;&#160;</a></span>clean() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c32c98bff824a4054ac15eccb4ad51">&#9670;&#160;</a></span>clean() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -970,7 +887,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <a id="adb3150c0dc84c936f11c6f78fa59819a" name="adb3150c0dc84c936f11c6f78fa59819a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb3150c0dc84c936f11c6f78fa59819a">&#9670;&#160;</a></span>clean() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3150c0dc84c936f11c6f78fa59819a">&#9670;&#160;</a></span>clean() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1024,6 +941,92 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table>
 </div><div class="memdoc">
 <p >Clean all created <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> structures. </p>
+
+</div>
+</div>
+<a id="a9787f1d777c95aeaed5ab6c00dc47b65" name="a9787f1d777c95aeaed5ab6c00dc47b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9787f1d777c95aeaed5ab6c00dc47b65">&#9670;&#160;</a></span>clearDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::clearDepth </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Clear a depth texture with a given depth. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to clear/ </td></tr>
+    <tr><td class="paramname">depth</td><td>the depth to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1d2d61b8c8962a78706e69230e2c944" name="aa1d2d61b8c8962a78706e69230e2c944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d2d61b8c8962a78706e69230e2c944">&#9670;&#160;</a></span>clearTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::clearTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Clear a texture content with a given color. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to clear </td></tr>
+    <tr><td class="paramname">color</td><td>the color to use </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1511,7 +1514,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Draw a fullscreen quad. </p>
+<p >Helper used to draw a fullscreen quad for texture processing.</p>
+<p >Instead of story two-triangles geometry, it uses a single triangle covering the whole screen. For instance: </p><pre class="fragment"> 2: (-1,3),(0,2)
+     *
+     | \
+     |   \
+     |     \
+     |       \
+     |         \
+     *-----------*  1: (3,-1), (2,0)
+ 0: (-1,-1), (0,0)</pre><dl class="section see"><dt>See also</dt><dd>GPU::Vert::Passthrough </dd>
+<dd>
+GPU::Frag::Passthrough, GPU::Frag::Passthrough_pixelperfect </dd></dl>
 
 </div>
 </div>
@@ -1555,6 +1569,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a96fb7dca035763f0fe0f642d13eafa7e" name="a96fb7dca035763f0fe0f642d13eafa7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96fb7dca035763f0fe0f642d13eafa7e">&#9670;&#160;</a></span>endRenderingIfNeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::endRenderingIfNeeded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >End the current render pass if one is started. </p>
 
 </div>
 </div>
@@ -1835,8 +1875,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a95f55786124fbeed043c02417a4b661e" name="a95f55786124fbeed043c02417a4b661e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95f55786124fbeed043c02417a4b661e">&#9670;&#160;</a></span>saveFramebuffer()</h2>
+<a id="a22a4aa4db8d57d2dffbd6dea1e98daf0" name="a22a4aa4db8d57d2dffbd6dea1e98daf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a4aa4db8d57d2dffbd6dea1e98daf0">&#9670;&#160;</a></span>saveTexture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1845,10 +1885,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GPU::saveFramebuffer </td>
+          <td class="memname">void GPU::saveTexture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>, </td>
+          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1874,16 +1914,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Save a given framebuffer content to the disk. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Save a given texture content to the disk. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">framebuffer</td><td>the framebuffer to save </td></tr>
+    <tr><td class="paramname">texture</td><td>the texture to save </td></tr>
     <tr><td class="paramname">path</td><td>the output image path </td></tr>
-    <tr><td class="paramname">options</td><td>the modifications to apply when saving </td></tr>
+    <tr><td class="paramname">options</td><td>output options (flip,...) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The output image extension will be automatically added based on the framebuffer type and format. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Export of small size float framebuffers can create artifacts. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The output image extension will be automatically added based on the texture type and format. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Export of small size float texture can create artifacts. </dd></dl>
 
 </div>
 </div>
@@ -2435,8 +2475,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a86b17b440605f028155c41d8b00ac7d3" name="a86b17b440605f028155c41d8b00ac7d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86b17b440605f028155c41d8b00ac7d3">&#9670;&#160;</a></span>setupTexture()</h2>
+<a id="ab083af86286039a43cb7f4f90cf9b9ba" name="ab083af86286039a43cb7f4f90cf9b9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab083af86286039a43cb7f4f90cf9b9ba">&#9670;&#160;</a></span>setupTexture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2448,24 +2488,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
           <td class="memname">void GPU::setupTexture </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a> &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>drawable</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2477,8 +2501,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p >Create a <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> texture with a given layout and allocate it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">texture</td><td>the texture to setup on the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> </td></tr>
-    <tr><td class="paramname">format</td><td>format information </td></tr>
-    <tr><td class="paramname">drawable</td><td>will the texture be used as an attachment </td></tr>
   </table>
   </dd>
 </dl>
@@ -2518,8 +2540,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="a92a0c69b23aefc56c7d3ee9a10327436" name="a92a0c69b23aefc56c7d3ee9a10327436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a0c69b23aefc56c7d3ee9a10327436">&#9670;&#160;</a></span>setViewport() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPU::setViewport </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>tex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Set the current viewport based on a texture dimensions. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>the texture to use the dimensions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a08047f234f0d156203f307749645b20d" name="a08047f234f0d156203f307749645b20d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08047f234f0d156203f307749645b20d">&#9670;&#160;</a></span>setViewport()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a08047f234f0d156203f307749645b20d">&#9670;&#160;</a></span>setViewport() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2624,32 +2678,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table>
 </div><div class="memdoc">
 <p ><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> supported extensions. </p><dl class="section return"><dt>Returns</dt><dd>a list of extensions names </dd></dl>
-
-</div>
-</div>
-<a id="a18fd48651cd028537c81f06d2f62bdb8" name="a18fd48651cd028537c81f06d2f62bdb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18fd48651cd028537c81f06d2f62bdb8">&#9670;&#160;</a></span>unbindFramebufferIfNeeded()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPU::unbindFramebufferIfNeeded </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >End the current render pass if one is started. </p>
 
 </div>
 </div>

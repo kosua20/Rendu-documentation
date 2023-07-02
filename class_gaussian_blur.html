@@ -113,13 +113,13 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a29654561f3b3e8c11010437e756c49bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#a29654561f3b3e8c11010437e756c49bd">GaussianBlur</a> (uint radius, uint downscale, const std::string &amp;name)</td></tr>
 <tr class="separator:a29654561f3b3e8c11010437e756c49bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af863f7251b4956dfa970bbcbacc65cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#af863f7251b4956dfa970bbcbacc65cd6">process</a> (const <a class="el" href="class_texture.html">Texture</a> *texture, <a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;framebuffer)</td></tr>
-<tr class="separator:af863f7251b4956dfa970bbcbacc65cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b08fc4232e9b9e06891d06db5c90f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#ae5b08fc4232e9b9e06891d06db5c90f0">process</a> (const <a class="el" href="class_texture.html">Texture</a> &amp;src, <a class="el" href="class_texture.html">Texture</a> &amp;dst)</td></tr>
+<tr class="separator:ae5b08fc4232e9b9e06891d06db5c90f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7154bf4b715d01be810054794478eb68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#a7154bf4b715d01be810054794478eb68">resize</a> (unsigned int width, unsigned int height)</td></tr>
-<tr class="separator:a7154bf4b715d01be810054794478eb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5cff28d63645cb265f3292e3762e5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gaussian_blur.html#afd5cff28d63645cb265f3292e3762e5d">resize</a> (uint width, uint height)</td></tr>
+<tr class="separator:afd5cff28d63645cb265f3292e3762e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -135,14 +135,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_passthrough</b></td></tr>
 <tr class="memdesc:aae6327ba81a747ddab1138dcb8fe81f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The copy program. <br /></td></tr>
 <tr class="separator:aae6327ba81a747ddab1138dcb8fe81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6cb3eec89f9f551fdcc73b3e3474d61"><td class="memItemLeft" align="right" valign="top"><a id="aa6cb3eec89f9f551fdcc73b3e3474d61" name="aa6cb3eec89f9f551fdcc73b3e3474d61"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_frameBuffers</b></td></tr>
-<tr class="memdesc:aa6cb3eec89f9f551fdcc73b3e3474d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downscaled pyramid framebuffers. <br /></td></tr>
-<tr class="separator:aa6cb3eec89f9f551fdcc73b3e3474d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ea710e39077bf12f062c763dc3b247"><td class="memItemLeft" align="right" valign="top"><a id="a66ea710e39077bf12f062c763dc3b247" name="a66ea710e39077bf12f062c763dc3b247"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
-<tr class="memdesc:a66ea710e39077bf12f062c763dc3b247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug name. <br /></td></tr>
-<tr class="separator:a66ea710e39077bf12f062c763dc3b247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39311c1c51579cf3a06f438fe6004eed"><td class="memItemLeft" align="right" valign="top"><a id="a39311c1c51579cf3a06f438fe6004eed" name="a39311c1c51579cf3a06f438fe6004eed"></a>
+std::vector&lt; <a class="el" href="class_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_levels</b></td></tr>
+<tr class="memdesc:a39311c1c51579cf3a06f438fe6004eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downscaled pyramid textures. <br /></td></tr>
+<tr class="separator:a39311c1c51579cf3a06f438fe6004eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8510268d4eeb4cda4eb8f62a9ff57d5b"><td class="memItemLeft" align="right" valign="top"><a id="a8510268d4eeb4cda4eb8f62a9ff57d5b" name="a8510268d4eeb4cda4eb8f62a9ff57d5b"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</td></tr>
 <tr class="memdesc:a8510268d4eeb4cda4eb8f62a9ff57d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial downscaling factor. <br /></td></tr>
@@ -187,7 +183,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
 <p >Constructor. The depth of the gaussian pyramid will determine the strength of the blur, and the computational cost. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">radius</td><td>the number of levels in the downscaling pyramid </td></tr>
-    <tr><td class="paramname">downscale</td><td>work at a lower resolution than the target framebuffer </td></tr>
+    <tr><td class="paramname">downscale</td><td>work at a lower resolution than the target texture </td></tr>
     <tr><td class="paramname">name</td><td>debug name for internal buffers </td></tr>
   </table>
   </dd>
@@ -196,8 +192,8 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af863f7251b4956dfa970bbcbacc65cd6" name="af863f7251b4956dfa970bbcbacc65cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af863f7251b4956dfa970bbcbacc65cd6">&#9670;&#160;</a></span>process()</h2>
+<a id="ae5b08fc4232e9b9e06891d06db5c90f0" name="ae5b08fc4232e9b9e06891d06db5c90f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b08fc4232e9b9e06891d06db5c90f0">&#9670;&#160;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,14 +201,14 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
         <tr>
           <td class="memname">void GaussianBlur::process </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
+          <td class="paramtype">const <a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_framebuffer.html">Framebuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>framebuffer</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -224,16 +220,16 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
 <p >Apply the blurring process to a given texture. </p><dl class="section note"><dt>Note</dt><dd>It is possible to use the same texture as input and output. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">texture</td><td>the ID of the texture to process </td></tr>
-    <tr><td class="paramname">framebuffer</td><td>the destination framebuffer </td></tr>
+    <tr><td class="paramname">src</td><td>the ID of the texture to process </td></tr>
+    <tr><td class="paramname">dst</td><td>the destination texture </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a7154bf4b715d01be810054794478eb68" name="a7154bf4b715d01be810054794478eb68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7154bf4b715d01be810054794478eb68">&#9670;&#160;</a></span>resize()</h2>
+<a id="afd5cff28d63645cb265f3292e3762e5d" name="afd5cff28d63645cb265f3292e3762e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5cff28d63645cb265f3292e3762e5d">&#9670;&#160;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,13 +240,13 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_downscale</b> = 1</t
         <tr>
           <td class="memname">void GaussianBlur::resize </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>

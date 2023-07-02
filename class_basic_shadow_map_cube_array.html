@@ -110,8 +110,8 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe1139f81c5b256b44d6ff6dfee67a69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_basic_shadow_map_cube_array.html#afe1139f81c5b256b44d6ff6dfee67a69">BasicShadowMapCubeArray</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_point_light.html">PointLight</a> &gt; &gt; &amp;lights, int side)</td></tr>
-<tr class="separator:afe1139f81c5b256b44d6ff6dfee67a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa126f1d52219083dafd543c574c1ce32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_basic_shadow_map_cube_array.html#aa126f1d52219083dafd543c574c1ce32">BasicShadowMapCubeArray</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_point_light.html">PointLight</a> &gt; &gt; &amp;lights, int side, <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode)</td></tr>
+<tr class="separator:aa126f1d52219083dafd543c574c1ce32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393487ee22b2ae9c0772116dbd967184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_basic_shadow_map_cube_array.html#a393487ee22b2ae9c0772116dbd967184">draw</a> (const <a class="el" href="class_scene.html">Scene</a> &amp;scene) override</td></tr>
 <tr class="memdesc:a393487ee22b2ae9c0772116dbd967184"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
   <a href="class_basic_shadow_map_cube_array.html#a393487ee22b2ae9c0772116dbd967184">More...</a><br /></td></tr>
@@ -142,18 +142,18 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_point_light.html">
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_program</b></td></tr>
 <tr class="memdesc:a68f3f38cc91be3605648ff2a1fb335f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow program. <br /></td></tr>
 <tr class="separator:a68f3f38cc91be3605648ff2a1fb335f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f2a31d42c6dfa2a9d886aa885db106b"><td class="memItemLeft" align="right" valign="top"><a id="a7f2a31d42c6dfa2a9d886aa885db106b" name="a7f2a31d42c6dfa2a9d886aa885db106b"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
-<tr class="memdesc:a7f2a31d42c6dfa2a9d886aa885db106b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map result. <br /></td></tr>
-<tr class="separator:a7f2a31d42c6dfa2a9d886aa885db106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0f3c5e664342d4bb394fe9abd00088"><td class="memItemLeft" align="right" valign="top"><a id="a9d0f3c5e664342d4bb394fe9abd00088" name="a9d0f3c5e664342d4bb394fe9abd00088"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
+<tr class="memdesc:a9d0f3c5e664342d4bb394fe9abd00088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map result. <br /></td></tr>
+<tr class="separator:a9d0f3c5e664342d4bb394fe9abd00088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A cube shadow map array, can be used for point lights. Each face of the map is updated sequentially. The shadow map will register itself with the associated lights. </p>
 </div>
 <p>Inherits <a class="el" href="class_shadow_map.html">ShadowMap</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afe1139f81c5b256b44d6ff6dfee67a69" name="afe1139f81c5b256b44d6ff6dfee67a69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe1139f81c5b256b44d6ff6dfee67a69">&#9670;&#160;</a></span>BasicShadowMapCubeArray()</h2>
+<a id="aa126f1d52219083dafd543c574c1ce32" name="aa126f1d52219083dafd543c574c1ce32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa126f1d52219083dafd543c574c1ce32">&#9670;&#160;</a></span>BasicShadowMapCubeArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +171,13 @@ std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>side</em>&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

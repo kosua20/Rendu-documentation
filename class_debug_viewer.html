@@ -107,15 +107,13 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div><!--header-->
 <div class="contents">
 
-<p>Provide helper GUI to display the content of texture and framebuffer attachments. This can be useful to validate the content rendered to a specific texture zhen debugging.  
+<p>Provide helper GUI to display the content of textures and mesh infos. This can be useful to validate the content rendered to a specific texture when debugging.  
  <a href="class_debug_viewer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_debug_viewer_8hpp_source.html">DebugViewer.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_framebuffer_infos.html">FramebufferInfos</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_mesh_infos.html">MeshInfos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a></td></tr>
@@ -129,16 +127,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af581d71d9b8177c8b6e7e559a6b7e27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6280b03f6e27af19ef36dd852bba97dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a6280b03f6e27af19ef36dd852bba97dd">track</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a6280b03f6e27af19ef36dd852bba97dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0428c2e5b78a302ee9f7f4590bbdea92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0428c2e5b78a302ee9f7f4590bbdea92">track</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
-<tr class="separator:a0428c2e5b78a302ee9f7f4590bbdea92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38941ce3c5f01f2e83bc8075ee584479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a38941ce3c5f01f2e83bc8075ee584479">track</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:a38941ce3c5f01f2e83bc8075ee584479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d268c19bb06be46038ecf2d8b0e44f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a53d268c19bb06be46038ecf2d8b0e44f">trackState</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a53d268c19bb06be46038ecf2d8b0e44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137c3f270615c93c69a500799f1897c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a137c3f270615c93c69a500799f1897c3">untrack</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a137c3f270615c93c69a500799f1897c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae7077a46c665a7a5c3ec19fa87813bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aae7077a46c665a7a5c3ec19fa87813bd">untrack</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
-<tr class="separator:aae7077a46c665a7a5c3ec19fa87813bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3360fa7df52a27f661d283e0182041c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#ac3360fa7df52a27f661d283e0182041c">untrack</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:ac3360fa7df52a27f661d283e0182041c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042e03f3b34263a9271a8006d305c7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a042e03f3b34263a9271a8006d305c7c0">interface</a> ()</td></tr>
@@ -160,16 +154,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad482e66ab04020fd4b84846bded1b835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28a2e0141004e77b144822c8d4bf51c3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a28a2e0141004e77b144822c8d4bf51c3">trackDefault</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a28a2e0141004e77b144822c8d4bf51c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad85a869490784240e3889b9c89fff0c0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#ad85a869490784240e3889b9c89fff0c0">trackDefault</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
-<tr class="separator:ad85a869490784240e3889b9c89fff0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa304417d32c3ef238a16653ccaa8a987"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#aa304417d32c3ef238a16653ccaa8a987">trackDefault</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:aa304417d32c3ef238a16653ccaa8a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0417a111203cdc7a83f3eb7adb3d1414"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0417a111203cdc7a83f3eb7adb3d1414">trackStateDefault</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a0417a111203cdc7a83f3eb7adb3d1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331dcffa6dc7f92bb8e06c54ad258a9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a331dcffa6dc7f92bb8e06c54ad258a9d">untrackDefault</a> (const <a class="el" href="class_texture.html">Texture</a> *tex)</td></tr>
 <tr class="separator:a331dcffa6dc7f92bb8e06c54ad258a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbf1f0f76b626e84be2260d8552ff4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a3fbf1f0f76b626e84be2260d8552ff4f">untrackDefault</a> (const <a class="el" href="class_framebuffer.html">Framebuffer</a> *buffer)</td></tr>
-<tr class="separator:a3fbf1f0f76b626e84be2260d8552ff4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83abffe7695e757753ada2d30d40b21b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a83abffe7695e757753ada2d30d40b21b">untrackDefault</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:a83abffe7695e757753ada2d30d40b21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -194,10 +184,10 @@ Private Attributes</h2></td></tr>
 std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_texture_infos.html">TextureInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_textures</b></td></tr>
 <tr class="memdesc:ae7115418d68bd4e820c2e870fa55bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered textures. <br /></td></tr>
 <tr class="separator:ae7115418d68bd4e820c2e870fa55bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788033984daba6be95983b1cd5817b19"><td class="memItemLeft" align="right" valign="top"><a id="a788033984daba6be95983b1cd5817b19" name="a788033984daba6be95983b1cd5817b19"></a>
-std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_framebuffer_infos.html">FramebufferInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_framebuffers</b></td></tr>
-<tr class="memdesc:a788033984daba6be95983b1cd5817b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered framebuffers. <br /></td></tr>
-<tr class="separator:a788033984daba6be95983b1cd5817b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1805f12badf936f01d67a01d7817df1"><td class="memItemLeft" align="right" valign="top"><a id="af1805f12badf936f01d67a01d7817df1" name="af1805f12badf936f01d67a01d7817df1"></a>
+std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_texture_infos.html">TextureInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_drawables</b></td></tr>
+<tr class="memdesc:af1805f12badf936f01d67a01d7817df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered drawable textures. <br /></td></tr>
+<tr class="separator:af1805f12badf936f01d67a01d7817df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebef870f741d7f1eea1dffd61e0f28a3"><td class="memItemLeft" align="right" valign="top"><a id="aebef870f741d7f1eea1dffd61e0f28a3" name="aebef870f741d7f1eea1dffd61e0f28a3"></a>
 std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_mesh_infos.html">MeshInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_meshes</b></td></tr>
 <tr class="memdesc:aebef870f741d7f1eea1dffd61e0f28a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered meshes. <br /></td></tr>
@@ -214,10 +204,10 @@ std::unordered_map&lt; std::string, <a class="el" href="struct_debug_viewer_1_1_
 uint&#160;</td><td class="memItemRight" valign="bottom"><b>_textureId</b> = 0</td></tr>
 <tr class="memdesc:ae7ccb15a937ec3a1f751794bf2e80b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default texture name counter. <br /></td></tr>
 <tr class="separator:ae7ccb15a937ec3a1f751794bf2e80b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fad84c255d7609edcdfbb6ae2c91716"><td class="memItemLeft" align="right" valign="top"><a id="a3fad84c255d7609edcdfbb6ae2c91716" name="a3fad84c255d7609edcdfbb6ae2c91716"></a>
-uint&#160;</td><td class="memItemRight" valign="bottom"><b>_bufferId</b> = 0</td></tr>
-<tr class="memdesc:a3fad84c255d7609edcdfbb6ae2c91716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default framebuffer name counter. <br /></td></tr>
-<tr class="separator:a3fad84c255d7609edcdfbb6ae2c91716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87b60f80eff624bc339646c5565cfb9"><td class="memItemLeft" align="right" valign="top"><a id="ab87b60f80eff624bc339646c5565cfb9" name="ab87b60f80eff624bc339646c5565cfb9"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><b>_drawableId</b> = 0</td></tr>
+<tr class="memdesc:ab87b60f80eff624bc339646c5565cfb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default drawable name counter. <br /></td></tr>
+<tr class="separator:ab87b60f80eff624bc339646c5565cfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8473aa43be61de3fa1d803aec7775d2"><td class="memItemLeft" align="right" valign="top"><a id="af8473aa43be61de3fa1d803aec7775d2" name="af8473aa43be61de3fa1d803aec7775d2"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><b>_meshId</b> = 0</td></tr>
 <tr class="memdesc:af8473aa43be61de3fa1d803aec7775d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default mesh name counter. <br /></td></tr>
@@ -235,7 +225,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 <tr class="separator:a6968d19a7ac97db51f62d6fd46977c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Provide helper GUI to display the content of texture and framebuffer attachments. This can be useful to validate the content rendered to a specific texture zhen debugging. </p>
+<div class="textblock"><p >Provide helper GUI to display the content of textures and mesh infos. This can be useful to validate the content rendered to a specific texture when debugging. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af581d71d9b8177c8b6e7e559a6b7e27e" name="af581d71d9b8177c8b6e7e559a6b7e27e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af581d71d9b8177c8b6e7e559a6b7e27e">&#9670;&#160;</a></span>DebugViewer() <span class="overload">[1/3]</span></h2>
@@ -647,32 +637,8 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 
 </div>
 </div>
-<a id="a0428c2e5b78a302ee9f7f4590bbdea92" name="a0428c2e5b78a302ee9f7f4590bbdea92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0428c2e5b78a302ee9f7f4590bbdea92">&#9670;&#160;</a></span>track() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DebugViewer::track </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Register a framebuffer for debug. All attachment textures will be visible. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>the framebuffer to monitor </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a38941ce3c5f01f2e83bc8075ee584479" name="a38941ce3c5f01f2e83bc8075ee584479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38941ce3c5f01f2e83bc8075ee584479">&#9670;&#160;</a></span>track() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38941ce3c5f01f2e83bc8075ee584479">&#9670;&#160;</a></span>track() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,7 +662,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </div>
 </div>
 <a id="a6280b03f6e27af19ef36dd852bba97dd" name="a6280b03f6e27af19ef36dd852bba97dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6280b03f6e27af19ef36dd852bba97dd">&#9670;&#160;</a></span>track() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6280b03f6e27af19ef36dd852bba97dd">&#9670;&#160;</a></span>track() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,40 +685,8 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 
 </div>
 </div>
-<a id="ad85a869490784240e3889b9c89fff0c0" name="ad85a869490784240e3889b9c89fff0c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad85a869490784240e3889b9c89fff0c0">&#9670;&#160;</a></span>trackDefault() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DebugViewer::trackDefault </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Register a framebuffer for debug. All attachment textures will be visible. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>the framebuffer to monitor </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa304417d32c3ef238a16653ccaa8a987" name="aa304417d32c3ef238a16653ccaa8a987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa304417d32c3ef238a16653ccaa8a987">&#9670;&#160;</a></span>trackDefault() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa304417d32c3ef238a16653ccaa8a987">&#9670;&#160;</a></span>trackDefault() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,7 +718,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </div>
 </div>
 <a id="a28a2e0141004e77b144822c8d4bf51c3" name="a28a2e0141004e77b144822c8d4bf51c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28a2e0141004e77b144822c8d4bf51c3">&#9670;&#160;</a></span>trackDefault() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a2e0141004e77b144822c8d4bf51c3">&#9670;&#160;</a></span>trackDefault() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -871,32 +805,8 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 
 </div>
 </div>
-<a id="aae7077a46c665a7a5c3ec19fa87813bd" name="aae7077a46c665a7a5c3ec19fa87813bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae7077a46c665a7a5c3ec19fa87813bd">&#9670;&#160;</a></span>untrack() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DebugViewer::untrack </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Stop monitoring a framebuffer. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>the framebuffer to stop tracking </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ac3360fa7df52a27f661d283e0182041c" name="ac3360fa7df52a27f661d283e0182041c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3360fa7df52a27f661d283e0182041c">&#9670;&#160;</a></span>untrack() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3360fa7df52a27f661d283e0182041c">&#9670;&#160;</a></span>untrack() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -920,7 +830,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </div>
 </div>
 <a id="a137c3f270615c93c69a500799f1897c3" name="a137c3f270615c93c69a500799f1897c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a137c3f270615c93c69a500799f1897c3">&#9670;&#160;</a></span>untrack() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a137c3f270615c93c69a500799f1897c3">&#9670;&#160;</a></span>untrack() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -943,40 +853,8 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 
 </div>
 </div>
-<a id="a3fbf1f0f76b626e84be2260d8552ff4f" name="a3fbf1f0f76b626e84be2260d8552ff4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fbf1f0f76b626e84be2260d8552ff4f">&#9670;&#160;</a></span>untrackDefault() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DebugViewer::untrackDefault </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_framebuffer.html">Framebuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Stop monitoring a framebuffer. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>the framebuffer to stop tracking </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a83abffe7695e757753ada2d30d40b21b" name="a83abffe7695e757753ada2d30d40b21b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83abffe7695e757753ada2d30d40b21b">&#9670;&#160;</a></span>untrackDefault() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83abffe7695e757753ada2d30d40b21b">&#9670;&#160;</a></span>untrackDefault() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1008,7 +886,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </div>
 </div>
 <a id="a331dcffa6dc7f92bb8e06c54ad258a9d" name="a331dcffa6dc7f92bb8e06c54ad258a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a331dcffa6dc7f92bb8e06c54ad258a9d">&#9670;&#160;</a></span>untrackDefault() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a331dcffa6dc7f92bb8e06c54ad258a9d">&#9670;&#160;</a></span>untrackDefault() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

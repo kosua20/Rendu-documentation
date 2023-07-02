@@ -6,7 +6,7 @@ var searchData=
   ['decr_3',['DECR',['../group___resources.html#gga54a0249f5262587373e2da1a252a3f02ac121b991572aba8a5789d08d7e9cf76e',1,'GPUTypes.hpp']]],
   ['decrwrap_4',['DECRWRAP',['../group___resources.html#gga54a0249f5262587373e2da1a252a3f02a7cfc5491ad9a0495fabfe294001e37da',1,'GPUTypes.hpp']]],
   ['directory_5',['Directory',['../class_system.html#a6264fc8774c87b04f209b309df982f98ae73cda510e8bb947f7e61089e5581494',1,'System']]],
-  ['dontcare_6',['DONTCARE',['../class_framebuffer.html#a8f78c315932c915b70eac7f418291a36ad660888667d720bbcc7a06314586e2a2',1,'Framebuffer']]],
+  ['dontcare_6',['DONTCARE',['../struct_load.html#adaedb451fed830f4a5fccccbad630ca5ad660888667d720bbcc7a06314586e2a2',1,'Load']]],
   ['draw_5ffaces_7',['DRAW_FACES',['../class_probe.html#a22d90dfe40aa3741877428790979c7d1af50b9955bc4f3f9a4e2b8e138bb164aa',1,'Probe']]],
   ['dst_5falpha_8',['DST_ALPHA',['../group___resources.html#gga093fb90ad4f9c612554bcb681b0367d0a59b7e4d8d77a6fc488bfad5dfb160ecc',1,'GPUTypes.hpp']]],
   ['dst_5fcolor_9',['DST_COLOR',['../group___resources.html#gga093fb90ad4f9c612554bcb681b0367d0a220e8b21c17d3d0f297244647d60df59',1,'GPUTypes.hpp']]],

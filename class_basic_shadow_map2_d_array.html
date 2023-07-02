@@ -110,8 +110,8 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae982b5351756b866d7d2d93fe724a23c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_basic_shadow_map2_d_array.html#ae982b5351756b866d7d2d93fe724a23c">BasicShadowMap2DArray</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_light.html">Light</a> &gt; &gt; &amp;lights, const glm::vec2 &amp;resolution)</td></tr>
-<tr class="separator:ae982b5351756b866d7d2d93fe724a23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8a488a14dc19d3996f466b073e795f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_basic_shadow_map2_d_array.html#a5e8a488a14dc19d3996f466b073e795f">BasicShadowMap2DArray</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_light.html">Light</a> &gt; &gt; &amp;lights, const glm::vec2 &amp;resolution, <a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a> mode)</td></tr>
+<tr class="separator:a5e8a488a14dc19d3996f466b073e795f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3164715e7161513c459c2c7034972193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_basic_shadow_map2_d_array.html#a3164715e7161513c459c2c7034972193">draw</a> (const <a class="el" href="class_scene.html">Scene</a> &amp;scene) override</td></tr>
 <tr class="memdesc:a3164715e7161513c459c2c7034972193"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
   <a href="class_basic_shadow_map2_d_array.html#a3164715e7161513c459c2c7034972193">More...</a><br /></td></tr>
@@ -142,18 +142,18 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_light.html">Light<
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_program</b></td></tr>
 <tr class="memdesc:a8f8b45cb52978524b91e4013a7e01114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow program. <br /></td></tr>
 <tr class="separator:a8f8b45cb52978524b91e4013a7e01114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5199e76699896778748e624efa0a7ca"><td class="memItemLeft" align="right" valign="top"><a id="ae5199e76699896778748e624efa0a7ca" name="ae5199e76699896778748e624efa0a7ca"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
-<tr class="memdesc:ae5199e76699896778748e624efa0a7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map result. <br /></td></tr>
-<tr class="separator:ae5199e76699896778748e624efa0a7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99dd682cac14030e70e1ae531db60edd"><td class="memItemLeft" align="right" valign="top"><a id="a99dd682cac14030e70e1ae531db60edd" name="a99dd682cac14030e70e1ae531db60edd"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
+<tr class="memdesc:a99dd682cac14030e70e1ae531db60edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map result. <br /></td></tr>
+<tr class="separator:a99dd682cac14030e70e1ae531db60edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A 2D shadow map array, can be used for directional and spot lights. The shadow map will register itself with the associated lights. </p>
 </div>
 <p>Inherits <a class="el" href="class_shadow_map.html">ShadowMap</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae982b5351756b866d7d2d93fe724a23c" name="ae982b5351756b866d7d2d93fe724a23c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae982b5351756b866d7d2d93fe724a23c">&#9670;&#160;</a></span>BasicShadowMap2DArray()</h2>
+<a id="a5e8a488a14dc19d3996f466b073e795f" name="a5e8a488a14dc19d3996f466b073e795f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8a488a14dc19d3996f466b073e795f">&#9670;&#160;</a></span>BasicShadowMap2DArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +171,13 @@ std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const glm::vec2 &amp;&#160;</td>
-          <td class="paramname"><em>resolution</em>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___renderers.html#ga65701f2d152bdafa62b2d8bdfcc245d5">ShadowMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

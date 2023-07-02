@@ -114,10 +114,8 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8f622db61fee2b095e961c0d548c330"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae8f622db61fee2b095e961c0d548c330">Game</a> (<a class="el" href="class_game_config.html">GameConfig</a> &amp;config)</td></tr>
 <tr class="separator:ae8f622db61fee2b095e961c0d548c330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d54497ce3a66f6dd45eacfdccc8d0bd"><td class="memItemLeft" align="right" valign="top"><a id="a6d54497ce3a66f6dd45eacfdccc8d0bd" name="a6d54497ce3a66f6dd45eacfdccc8d0bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()</td></tr>
-<tr class="memdesc:a6d54497ce3a66f6dd45eacfdccc8d0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the game. <br /></td></tr>
-<tr class="separator:a6d54497ce3a66f6dd45eacfdccc8d0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3566399a516d4c4d31cb0c6dbddfb0b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a3566399a516d4c4d31cb0c6dbddfb0b4">draw</a> (<a class="el" href="class_window.html">Window</a> &amp;window)</td></tr>
+<tr class="separator:a3566399a516d4c4d31cb0c6dbddfb0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc95a6fb41e591cd4ad1c5f76acb9d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_window.html#a23db6c08edfd162f98d7ce8a3257e4a6">Window::Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a7fc95a6fb41e591cd4ad1c5f76acb9d5">update</a> ()</td></tr>
 <tr class="separator:a7fc95a6fb41e591cd4ad1c5f76acb9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec3b4c1678d210078342f5e8467d5cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aec3b4c1678d210078342f5e8467d5cdd">physics</a> (double frameTime)</td></tr>
@@ -182,14 +180,14 @@ std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;
 std::unique_ptr&lt; <a class="el" href="class_gaussian_blur.html">GaussianBlur</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_bgBlur</b></td></tr>
 <tr class="memdesc:a49d353d230d80cc48551909da4031c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blurring pass for the paused/dead menus background. <br /></td></tr>
 <tr class="separator:a49d353d230d80cc48551909da4031c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b5aefadcb28661ccf82cac94537c4c"><td class="memItemLeft" align="right" valign="top"><a id="a84b5aefadcb28661ccf82cac94537c4c" name="a84b5aefadcb28661ccf82cac94537c4c"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_gameFramebuffer</b></td></tr>
-<tr class="memdesc:a84b5aefadcb28661ccf82cac94537c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game.html" title="Handles communication between the different game components (renderers, player, menus) and the player...">Game</a> scene framebuffer. <br /></td></tr>
-<tr class="separator:a84b5aefadcb28661ccf82cac94537c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a663144112a296c97e4280c241b7c5573"><td class="memItemLeft" align="right" valign="top"><a id="a663144112a296c97e4280c241b7c5573" name="a663144112a296c97e4280c241b7c5573"></a>
-std::unique_ptr&lt; <a class="el" href="class_framebuffer.html">Framebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_bgBlurBuffer</b></td></tr>
-<tr class="memdesc:a663144112a296c97e4280c241b7c5573"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game.html" title="Handles communication between the different game components (renderers, player, menus) and the player...">Game</a> scene framebuffer. <br /></td></tr>
-<tr class="separator:a663144112a296c97e4280c241b7c5573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078f79f9dec05e86e44dfddb753eb772"><td class="memItemLeft" align="right" valign="top"><a id="a078f79f9dec05e86e44dfddb753eb772" name="a078f79f9dec05e86e44dfddb753eb772"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_gameResult</b></td></tr>
+<tr class="memdesc:a078f79f9dec05e86e44dfddb753eb772"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game.html" title="Handles communication between the different game components (renderers, player, menus) and the player...">Game</a> scene texture. <br /></td></tr>
+<tr class="separator:a078f79f9dec05e86e44dfddb753eb772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34ec4b7b00d47ab5f5b779ec0b6e780"><td class="memItemLeft" align="right" valign="top"><a id="ae34ec4b7b00d47ab5f5b779ec0b6e780" name="ae34ec4b7b00d47ab5f5b779ec0b6e780"></a>
+<a class="el" href="class_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_bgBlurTexture</b></td></tr>
+<tr class="memdesc:ae34ec4b7b00d47ab5f5b779ec0b6e780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blurred game scene texture. <br /></td></tr>
+<tr class="separator:ae34ec4b7b00d47ab5f5b779ec0b6e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7198f2b0e854e300b706c258e141ae27"><td class="memItemLeft" align="right" valign="top"><a id="a7198f2b0e854e300b706c258e141ae27" name="a7198f2b0e854e300b706c258e141ae27"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_finalProgram</b></td></tr>
 <tr class="memdesc:a7198f2b0e854e300b706c258e141ae27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final upscaling program. <br /></td></tr>
@@ -247,6 +245,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_overrideTime</b> = f
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3566399a516d4c4d31cb0c6dbddfb0b4" name="a3566399a516d4c4d31cb0c6dbddfb0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3566399a516d4c4d31cb0c6dbddfb0b4">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_window.html">Window</a> &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Draw the game. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the destination window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acb9fda53ce24a02612ee1c5c9dde1003" name="acb9fda53ce24a02612ee1c5c9dde1003"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb9fda53ce24a02612ee1c5c9dde1003">&#9670;&#160;</a></span>handleButton()</h2>
 
