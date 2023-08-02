@@ -114,6 +114,10 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_marker_category_infos.html">MarkerCategoryInfos</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_marker_infos.html">MarkerInfos</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_mesh_infos.html">MeshInfos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a></td></tr>
@@ -135,6 +139,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a137c3f270615c93c69a500799f1897c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3360fa7df52a27f661d283e0182041c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#ac3360fa7df52a27f661d283e0182041c">untrack</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:ac3360fa7df52a27f661d283e0182041c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c0006441de5eb7ea798b96f23fa975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#ad4c0006441de5eb7ea798b96f23fa975">pushMarker</a> (const std::string &amp;category, const std::string &amp;label, const glm::vec4 &amp;color)</td></tr>
+<tr class="separator:ad4c0006441de5eb7ea798b96f23fa975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08cd33596354e8a4f35bc123ae4dabe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a08cd33596354e8a4f35bc123ae4dabe8">insertMarker</a> (const std::string &amp;category, const std::string &amp;label, const glm::vec4 &amp;color)</td></tr>
+<tr class="separator:a08cd33596354e8a4f35bc123ae4dabe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdeb9cd1555f033ec6b7e598c0d5780b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#afdeb9cd1555f033ec6b7e598c0d5780b">popMarker</a> (const std::string &amp;category)</td></tr>
+<tr class="separator:afdeb9cd1555f033ec6b7e598c0d5780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d10efd6708640a226628f178b46ca19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0d10efd6708640a226628f178b46ca19">nextFrame</a> ()</td></tr>
+<tr class="separator:a0d10efd6708640a226628f178b46ca19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042e03f3b34263a9271a8006d305c7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a042e03f3b34263a9271a8006d305c7c0">interface</a> ()</td></tr>
 <tr class="separator:a042e03f3b34263a9271a8006d305c7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d7e844677e36a8f2ab1cec6e231f1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#ab4d7e844677e36a8f2ab1cec6e231f1e">~DebugViewer</a> ()=default</td></tr>
@@ -162,11 +174,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a331dcffa6dc7f92bb8e06c54ad258a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83abffe7695e757753ada2d30d40b21b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a83abffe7695e757753ada2d30d40b21b">untrackDefault</a> (const <a class="el" href="class_mesh.html">Mesh</a> *mesh)</td></tr>
 <tr class="separator:a83abffe7695e757753ada2d30d40b21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cb196a369460f806421c8542e9e9ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a24cb196a369460f806421c8542e9e9ae">pushMarkerDefault</a> (const std::string &amp;category, const std::string &amp;label, const glm::vec4 &amp;color)</td></tr>
+<tr class="separator:a24cb196a369460f806421c8542e9e9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152d81c87cedaa5d3f8bb29bb6a7f378"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a152d81c87cedaa5d3f8bb29bb6a7f378">insertMarkerDefault</a> (const std::string &amp;category, const std::string &amp;label, const glm::vec4 &amp;color)</td></tr>
+<tr class="separator:a152d81c87cedaa5d3f8bb29bb6a7f378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af2f888a61fa1ee736a78190b2e6abb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a1af2f888a61fa1ee736a78190b2e6abb">popMarkerDefault</a> (const std::string &amp;category)</td></tr>
+<tr class="separator:a1af2f888a61fa1ee736a78190b2e6abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a0d53d51ceea6d5c052f53d9772c12834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a0d53d51ceea6d5c052f53d9772c12834">displayMetrics</a> ()</td></tr>
 <tr class="separator:a0d53d51ceea6d5c052f53d9772c12834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717fe02c3b4950c3e6c0d48538240a9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a717fe02c3b4950c3e6c0d48538240a9a">displayMarker</a> (const <a class="el" href="struct_debug_viewer_1_1_marker_infos.html">MarkerInfos</a> &amp;marker)</td></tr>
+<tr class="separator:a717fe02c3b4950c3e6c0d48538240a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ba45b865d473e851dfef62ba9a6e89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#af5ba45b865d473e851dfef62ba9a6e89">displayMarkers</a> (const std::string &amp;name, <a class="el" href="struct_debug_viewer_1_1_marker_category_infos.html">MarkerCategoryInfos</a> &amp;category)</td></tr>
+<tr class="separator:af5ba45b865d473e851dfef62ba9a6e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3daf28f109b780a4a740115cb224082f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a3daf28f109b780a4a740115cb224082f">displayState</a> (const std::string &amp;name, <a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &amp;infos)</td></tr>
 <tr class="separator:a3daf28f109b780a4a740115cb224082f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64064f4a660f7d6e1a4a1553a3d2c0e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_viewer.html#a64064f4a660f7d6e1a4a1553a3d2c0e6">displayMesh</a> (<a class="el" href="struct_debug_viewer_1_1_mesh_infos.html">MeshInfos</a> &amp;mesh)</td></tr>
@@ -196,10 +218,18 @@ std::vector&lt; <a class="el" href="struct_debug_viewer_1_1_mesh_infos.html">Mes
 std::unordered_map&lt; std::string, <a class="el" href="struct_debug_viewer_1_1_state_infos.html">StateInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_states</b></td></tr>
 <tr class="memdesc:aa1e12bdea3ef15df14129c2ca35ab046"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> states currently tracked. <br /></td></tr>
 <tr class="separator:aa1e12bdea3ef15df14129c2ca35ab046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48636e94e8efb4a99fc4c89374a405bd"><td class="memItemLeft" align="right" valign="top"><a id="a48636e94e8efb4a99fc4c89374a405bd" name="a48636e94e8efb4a99fc4c89374a405bd"></a>
+std::unordered_map&lt; std::string, <a class="el" href="struct_debug_viewer_1_1_marker_category_infos.html">MarkerCategoryInfos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_markers</b></td></tr>
+<tr class="memdesc:a48636e94e8efb4a99fc4c89374a405bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registered markers. <br /></td></tr>
+<tr class="separator:a48636e94e8efb4a99fc4c89374a405bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a159a5d0894d65e98dc746198eaaa9a64"><td class="memItemLeft" align="right" valign="top"><a id="a159a5d0894d65e98dc746198eaaa9a64" name="a159a5d0894d65e98dc746198eaaa9a64"></a>
 <a class="el" href="class_program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_texDisplay</b></td></tr>
 <tr class="memdesc:a159a5d0894d65e98dc746198eaaa9a64"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_texture.html" title="Represents a texture containing one or more images, stored on the CPU and/or GPU.">Texture</a> display shader. <br /></td></tr>
 <tr class="separator:a159a5d0894d65e98dc746198eaaa9a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744f0c10709833db3cddd01412802861"><td class="memItemLeft" align="right" valign="top"><a id="a744f0c10709833db3cddd01412802861" name="a744f0c10709833db3cddd01412802861"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>_frameCounter</b> = 0</td></tr>
+<tr class="memdesc:a744f0c10709833db3cddd01412802861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame counter. <br /></td></tr>
+<tr class="separator:a744f0c10709833db3cddd01412802861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ccb15a937ec3a1f751794bf2e80b45"><td class="memItemLeft" align="right" valign="top"><a id="ae7ccb15a937ec3a1f751794bf2e80b45" name="ae7ccb15a937ec3a1f751794bf2e80b45"></a>
 uint&#160;</td><td class="memItemRight" valign="bottom"><b>_textureId</b> = 0</td></tr>
 <tr class="memdesc:ae7ccb15a937ec3a1f751794bf2e80b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default texture name counter. <br /></td></tr>
@@ -216,6 +246,10 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>_meshId</b> = 0</td><
 uint&#160;</td><td class="memItemRight" valign="bottom"><b>_winId</b> = 0</td></tr>
 <tr class="memdesc:aaa6ab6fdcc2a5a416723a8eb5840d257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal window counter. <br /></td></tr>
 <tr class="separator:aaa6ab6fdcc2a5a416723a8eb5840d257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfce0405e56d833008e441d6c266d7bd"><td class="memItemLeft" align="right" valign="top"><a id="adfce0405e56d833008e441d6c266d7bd" name="adfce0405e56d833008e441d6c266d7bd"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><b>_markerId</b> = 0</td></tr>
+<tr class="memdesc:adfce0405e56d833008e441d6c266d7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal marker counter. <br /></td></tr>
+<tr class="separator:adfce0405e56d833008e441d6c266d7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -249,12 +283,7 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">silent</td><td>if true, don't register or display anything. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Constructor. </p>
 
 </div>
 </div>
@@ -339,6 +368,81 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a717fe02c3b4950c3e6c0d48538240a9a" name="a717fe02c3b4950c3e6c0d48538240a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717fe02c3b4950c3e6c0d48538240a9a">&#9670;&#160;</a></span>displayMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::displayMarker </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_debug_viewer_1_1_marker_infos.html">MarkerInfos</a> &amp;&#160;</td>
+          <td class="paramname"><em>marker</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Display <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> marker and its children </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">marker</td><td>the marker to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5ba45b865d473e851dfef62ba9a6e89" name="af5ba45b865d473e851dfef62ba9a6e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ba45b865d473e851dfef62ba9a6e89">&#9670;&#160;</a></span>displayMarkers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::displayMarkers </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_debug_viewer_1_1_marker_category_infos.html">MarkerCategoryInfos</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Display a hierarchy of <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> markers </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the category </td></tr>
+    <tr><td class="paramname">category</td><td>the category of markers to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a64064f4a660f7d6e1a4a1553a3d2c0e6" name="a64064f4a660f7d6e1a4a1553a3d2c0e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64064f4a660f7d6e1a4a1553a3d2c0e6">&#9670;&#160;</a></span>displayMesh()</h2>
 
@@ -483,6 +587,98 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 
 </div>
 </div>
+<a id="a08cd33596354e8a4f35bc123ae4dabe8" name="a08cd33596354e8a4f35bc123ae4dabe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08cd33596354e8a4f35bc123ae4dabe8">&#9670;&#160;</a></span>insertMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::insertMarker </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Register a punctual marker </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the marker category </td></tr>
+    <tr><td class="paramname">label</td><td>the marker name </td></tr>
+    <tr><td class="paramname">color</td><td>the marker color </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a152d81c87cedaa5d3f8bb29bb6a7f378" name="a152d81c87cedaa5d3f8bb29bb6a7f378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152d81c87cedaa5d3f8bb29bb6a7f378">&#9670;&#160;</a></span>insertMarkerDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::insertMarkerDefault </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Register a punctual marker </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the marker category </td></tr>
+    <tr><td class="paramname">label</td><td>the marker name </td></tr>
+    <tr><td class="paramname">color</td><td>the marker color </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a042e03f3b34263a9271a8006d305c7c0" name="a042e03f3b34263a9271a8006d305c7c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a042e03f3b34263a9271a8006d305c7c0">&#9670;&#160;</a></span>interface()</h2>
 
@@ -498,6 +694,24 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
       </table>
 </div><div class="memdoc">
 <p >Display interface and monitored data. </p>
+
+</div>
+</div>
+<a id="a0d10efd6708640a226628f178b46ca19" name="a0d10efd6708640a226628f178b46ca19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d10efd6708640a226628f178b46ca19">&#9670;&#160;</a></span>nextFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::nextFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Move to the next frame </p>
 
 </div>
 </div>
@@ -552,6 +766,154 @@ static <a class="el" href="class_debug_viewer.html">DebugViewer</a> *&#160;</td>
 </table>
 </div><div class="memdoc">
 <p >Move assignment. </p><dl class="section return"><dt>Returns</dt><dd>a reference to the object assigned to </dd></dl>
+
+</div>
+</div>
+<a id="afdeb9cd1555f033ec6b7e598c0d5780b" name="afdeb9cd1555f033ec6b7e598c0d5780b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdeb9cd1555f033ec6b7e598c0d5780b">&#9670;&#160;</a></span>popMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::popMarker </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Notify of the end of a scoped marker </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the category to which the marker belonged </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1af2f888a61fa1ee736a78190b2e6abb" name="a1af2f888a61fa1ee736a78190b2e6abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af2f888a61fa1ee736a78190b2e6abb">&#9670;&#160;</a></span>popMarkerDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::popMarkerDefault </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Notify of the end of a scoped marker </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the category to which the marker belonged </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4c0006441de5eb7ea798b96f23fa975" name="ad4c0006441de5eb7ea798b96f23fa975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c0006441de5eb7ea798b96f23fa975">&#9670;&#160;</a></span>pushMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::pushMarker </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Register a scoped marker </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the marker category </td></tr>
+    <tr><td class="paramname">label</td><td>the marker name </td></tr>
+    <tr><td class="paramname">color</td><td>the marker color </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24cb196a369460f806421c8542e9e9ae" name="a24cb196a369460f806421c8542e9e9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cb196a369460f806421c8542e9e9ae">&#9670;&#160;</a></span>pushMarkerDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugViewer::pushMarkerDefault </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec4 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Register a scoped marker </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the marker category </td></tr>
+    <tr><td class="paramname">label</td><td>the marker name </td></tr>
+    <tr><td class="paramname">color</td><td>the marker color </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

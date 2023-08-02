@@ -15,7 +15,7 @@ var searchData=
   ['menulabel_12',['MenuLabel',['../class_menu_label.html#a9d2410ee0e7104fa91aa9b1e76c441e9',1,'MenuLabel']]],
   ['menutoggle_13',['MenuToggle',['../class_menu_toggle.html#aa9ab49bd9f473e37071b0be65d18ab31',1,'MenuToggle']]],
   ['merge_14',['merge',['../class_bounding_box.html#a2c95d9b0c6a7122cabfe19ae51e2d4cd',1,'BoundingBox::merge(const BoundingBox &amp;box)'],['../class_bounding_box.html#a0c8440d92d0640fea684bf556b34f9be',1,'BoundingBox::merge(const glm::vec3 &amp;point)']]],
-  ['mesh_15',['Mesh',['../class_mesh.html#a5479f826d09f24ff722bb42dadf518ce',1,'Mesh::Mesh(Mesh &amp;&amp;)'],['../class_mesh.html#aa200b9e345e84f759c60c97d1ea97059',1,'Mesh::Mesh(const std::string &amp;name)'],['../class_mesh.html#a6d3aa861bcfdabaf582dd67738479529',1,'Mesh::Mesh(std::istream &amp;in, Load mode, const std::string &amp;name)'],['../class_mesh.html#adecf9ab32fac64e846ad6b7753e8996b',1,'Mesh::Mesh(const Mesh &amp;)=delete']]],
+  ['mesh_15',['Mesh',['../class_mesh.html#a5479f826d09f24ff722bb42dadf518ce',1,'Mesh::Mesh(Mesh &amp;&amp;)'],['../class_mesh.html#aa200b9e345e84f759c60c97d1ea97059',1,'Mesh::Mesh(const std::string &amp;name)'],['../class_mesh.html#a21ee74a0cb1d6c7b0e236f0cceed8431',1,'Mesh::Mesh(std::istream &amp;in, Mesh::Load mode, const std::string &amp;name)'],['../class_mesh.html#adecf9ab32fac64e846ad6b7753e8996b',1,'Mesh::Mesh(const Mesh &amp;)=delete']]],
   ['mesh_16',['mesh',['../class_object.html#a7f91fcc2021211d165d85e538784be37',1,'Object']]],
   ['meshsize_17',['meshSize',['../class_terrain.html#ac9d78900ed6a0eb8d380741470bbe025',1,'Terrain']]],
   ['metrics_18',['metrics',['../class_mesh.html#a16bd489a3cf69098ce702acb2d4987f3',1,'Mesh']]],

@@ -136,11 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa43ae6237b8cbf52d217d37f9986237f inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b7dd21c55dc9a867bd1d00fd043490 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer.html">Renderer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae4b7dd21c55dc9a867bd1d00fd043490">operator=</a> (<a class="el" href="class_renderer.html">Renderer</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:ae4b7dd21c55dc9a867bd1d00fd043490 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff8f5d113330ed70e22061a36e654ca inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a0ff8f5d113330ed70e22061a36e654ca" name="a0ff8f5d113330ed70e22061a36e654ca"></a>
-<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputColorFormat</b> () const</td></tr>
+<tr class="memitem:a0ff8f5d113330ed70e22061a36e654ca inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a0ff8f5d113330ed70e22061a36e654ca">outputColorFormat</a> () const</td></tr>
 <tr class="separator:a0ff8f5d113330ed70e22061a36e654ca inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1412b16356cc73ec1017cc095387cdc8 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a1412b16356cc73ec1017cc095387cdc8" name="a1412b16356cc73ec1017cc095387cdc8"></a>
-<a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputDepthFormat</b> () const</td></tr>
+<tr class="memitem:a1412b16356cc73ec1017cc095387cdc8 inherit pub_methods_class_renderer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___resources.html#ga9db33ebfe0dbf694fe056e626988b728">Layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a1412b16356cc73ec1017cc095387cdc8">outputDepthFormat</a> () const</td></tr>
 <tr class="separator:a1412b16356cc73ec1017cc095387cdc8 inherit pub_methods_class_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -273,7 +271,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td>
 <p >Draw from a given viewpoint. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">camera</td><td>the rendering viewpoint </td></tr>
-    <tr><td class="paramname">dst</td><td>the destination textures </td></tr>
+    <tr><td class="paramname">dstColor</td><td>the destination color texture (optional, see outputColorFormat) </td></tr>
+    <tr><td class="paramname">dstDepth</td><td>the destination depth texture (optional, see outputDepthFormat) </td></tr>
     <tr><td class="paramname">layer</td><td>the layer to write to in the target  </td></tr>
   </table>
   </dd>

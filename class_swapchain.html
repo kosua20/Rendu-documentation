@@ -123,13 +123,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab68059241569a962856c7cde977528e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5848dea9c4317e57363760ed0c052ea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a5848dea9c4317e57363760ed0c052ea7">~Swapchain</a> ()</td></tr>
 <tr class="separator:a5848dea9c4317e57363760ed0c052ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef511d96e05ea2a10a6da4bac505372a"><td class="memItemLeft" align="right" valign="top"><a id="aef511d96e05ea2a10a6da4bac505372a" name="aef511d96e05ea2a10a6da4bac505372a"></a>
-<a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> ()</td></tr>
+<tr class="memitem:aef511d96e05ea2a10a6da4bac505372a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#aef511d96e05ea2a10a6da4bac505372a">color</a> ()</td></tr>
 <tr class="separator:aef511d96e05ea2a10a6da4bac505372a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a356dc6004652e13fe0bba386eeb184e5"><td class="memItemLeft" align="right" valign="top"><a id="a356dc6004652e13fe0bba386eeb184e5" name="a356dc6004652e13fe0bba386eeb184e5"></a>
-<a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>depth</b> ()</td></tr>
+<tr class="memitem:a356dc6004652e13fe0bba386eeb184e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#a356dc6004652e13fe0bba386eeb184e5">depth</a> ()</td></tr>
 <tr class="separator:a356dc6004652e13fe0bba386eeb184e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af522ecf141c6b9a4fb951439dc435c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#af522ecf141c6b9a4fb951439dc435c65">getFormats</a> (VkFormat &amp;color, VkFormat &amp;depth, VkFormat &amp;stencil)</td></tr>
+<tr class="memitem:af522ecf141c6b9a4fb951439dc435c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swapchain.html#af522ecf141c6b9a4fb951439dc435c65">getFormats</a> (VkFormat &amp;<a class="el" href="class_swapchain.html#aef511d96e05ea2a10a6da4bac505372a">color</a>, VkFormat &amp;<a class="el" href="class_swapchain.html#a356dc6004652e13fe0bba386eeb184e5">depth</a>, VkFormat &amp;stencil)</td></tr>
 <tr class="separator:af522ecf141c6b9a4fb951439dc435c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -279,6 +277,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_frameStarted</b> = f
 
 </div>
 </div>
+<a id="aef511d96e05ea2a10a6da4bac505372a" name="aef511d96e05ea2a10a6da4bac505372a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef511d96e05ea2a10a6da4bac505372a">&#9670;&#160;</a></span>color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_texture.html">Texture</a> &amp; Swapchain::color </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the swapchain color texture </dd></dl>
+
+</div>
+</div>
 <a id="a31aa76c5de5156313d884e6e453234f2" name="a31aa76c5de5156313d884e6e453234f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31aa76c5de5156313d884e6e453234f2">&#9670;&#160;</a></span>count()</h2>
 
@@ -302,6 +326,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_frameStarted</b> = f
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of backbuffers handled by the swapchain. </dd></dl>
+
+</div>
+</div>
+<a id="a356dc6004652e13fe0bba386eeb184e5" name="a356dc6004652e13fe0bba386eeb184e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356dc6004652e13fe0bba386eeb184e5">&#9670;&#160;</a></span>depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_texture.html">Texture</a> &amp; Swapchain::depth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the swapchain depth texture </dd></dl>
 
 </div>
 </div>

@@ -10,11 +10,12 @@ var searchData=
   ['widen_7',['widen',['../class_system.html#a21f2a6c7f6896ca3e0fce0d47d6b2704',1,'System']]],
   ['width_8',['width',['../class_image.html#aaa2cc744ff3969ac6cb63ca05a40e5f6',1,'Image::width()'],['../class_texture.html#a652ce77f6ee4f566606e7479c49b46a2',1,'Texture::width()'],['../class_convolution_pyramid.html#af06e84b4d06212473532a881f914c37d',1,'ConvolutionPyramid::width()']]],
   ['widthratio_9',['widthRatio',['../class_g_p_u_shaders_1_1_vert_1_1_image__display.html#af077bc24341c6fb48ce381fc74cb8603',1,'GPUShaders::Vert::Image_display']]],
-  ['window_10',['Window',['../class_window.html',1,'Window'],['../class_window.html#a2ab0651c103c184420629c76344e4a20',1,'Window::Window(Window &amp;&amp;)=delete'],['../class_window.html#ac877b031e11ba0b517a8b1db3c315175',1,'Window::Window(const Window &amp;)=delete'],['../class_window.html#aee42a2fdbdab8e53d4e4e5238e736723',1,'Window::Window(const std::string &amp;name, RenderingConfig &amp;config, bool escapeQuit=true, bool hidden=false)']]],
+  ['window_10',['Window',['../class_window.html',1,'']]],
   ['window_11',['window',['../class_application.html#ad1f2a1047651802471d0656407737bbf',1,'Application']]],
-  ['windowframe_12',['windowFrame',['../class_rendering_config.html#af68ed64a5a2877cc6721eb63088579b5',1,'RenderingConfig']]],
-  ['world_13',['WORLD',['../class_animation.html#aab91ed238f585aa0fd149d1c392ab121a5289492cf082446ca4a6eec9f72f1ec3',1,'Animation']]],
-  ['worldpos_14',['worldPos',['../class_g_p_u_shaders_1_1_frag_1_1_light__shadow__linear__basic.html#a359d78fc102ba90b25a97c9be757e14d',1,'GPUShaders::Frag::Light_shadow_linear_basic::worldPos()'],['../class_g_p_u_shaders_1_1_frag_1_1_light__shadow__linear__variance.html#a528f733ac7309f78ea2e88cb640df215',1,'GPUShaders::Frag::Light_shadow_linear_variance::worldPos()'],['../class_g_p_u_shaders_1_1_vert_1_1_light__shadow__linear__vertex.html#af2b95081c6126e3df057ad427076408c',1,'GPUShaders::Vert::Light_shadow_linear_vertex::worldPos()']]],
-  ['wrap_15',['Wrap',['../group___resources.html#gaf2cec82467b12344e9120a0f60fa1c76',1,'GPUTypes.hpp']]],
-  ['wrapping_16',['wrapping',['../struct_sampler_library_1_1_sampler_settings.html#a54068b0eae35dc2c51003bed115bb65f',1,'SamplerLibrary::SamplerSettings']]]
+  ['window_12',['Window',['../class_window.html#a2ab0651c103c184420629c76344e4a20',1,'Window::Window(Window &amp;&amp;)=delete'],['../class_window.html#ac877b031e11ba0b517a8b1db3c315175',1,'Window::Window(const Window &amp;)=delete'],['../class_window.html#aee42a2fdbdab8e53d4e4e5238e736723',1,'Window::Window(const std::string &amp;name, RenderingConfig &amp;config, bool escapeQuit=true, bool hidden=false)']]],
+  ['windowframe_13',['windowFrame',['../class_rendering_config.html#af68ed64a5a2877cc6721eb63088579b5',1,'RenderingConfig']]],
+  ['world_14',['WORLD',['../class_animation.html#aab91ed238f585aa0fd149d1c392ab121a5289492cf082446ca4a6eec9f72f1ec3',1,'Animation']]],
+  ['worldpos_15',['worldPos',['../class_g_p_u_shaders_1_1_frag_1_1_light__shadow__linear__basic.html#a359d78fc102ba90b25a97c9be757e14d',1,'GPUShaders::Frag::Light_shadow_linear_basic::worldPos()'],['../class_g_p_u_shaders_1_1_frag_1_1_light__shadow__linear__variance.html#a528f733ac7309f78ea2e88cb640df215',1,'GPUShaders::Frag::Light_shadow_linear_variance::worldPos()'],['../class_g_p_u_shaders_1_1_vert_1_1_light__shadow__linear__vertex.html#af2b95081c6126e3df057ad427076408c',1,'GPUShaders::Vert::Light_shadow_linear_vertex::worldPos()']]],
+  ['wrap_16',['Wrap',['../group___resources.html#gaf2cec82467b12344e9120a0f60fa1c76',1,'GPUTypes.hpp']]],
+  ['wrapping_17',['wrapping',['../struct_sampler_library_1_1_sampler_settings.html#a54068b0eae35dc2c51003bed115bb65f',1,'SamplerLibrary::SamplerSettings']]]
 ];

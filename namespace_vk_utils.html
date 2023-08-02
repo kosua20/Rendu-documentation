@@ -109,8 +109,8 @@ Functions</h2></td></tr>
 <tr class="separator:af534408f347045f94db4464896f77d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30776b4f97f98e59d4d0989cb4044cbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a30776b4f97f98e59d4d0989cb4044cbc">checkExtensionsSupport</a> (const std::vector&lt; const char * &gt; &amp;requestedExtensions)</td></tr>
 <tr class="separator:a30776b4f97f98e59d4d0989cb4044cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593df936afb9a254d8767fdba0fb6b9b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a593df936afb9a254d8767fdba0fb6b9b">getRequiredInstanceExtensions</a> (bool enableValidationLayers, bool enablePortability)</td></tr>
-<tr class="separator:a593df936afb9a254d8767fdba0fb6b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2812ec68e9a6af32d6d7c5ebb452b402"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a2812ec68e9a6af32d6d7c5ebb452b402">getRequiredInstanceExtensions</a> (bool enableDebugMarkers, bool enablePortability)</td></tr>
+<tr class="separator:a2812ec68e9a6af32d6d7c5ebb452b402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a907fa0e4040eb701ef79bcc4ea04a539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a907fa0e4040eb701ef79bcc4ea04a539">checkDeviceExtensionsSupport</a> (VkPhysicalDevice device, const std::vector&lt; const char * &gt; &amp;requestedExtensions, bool &amp;hasPortability)</td></tr>
 <tr class="separator:a907fa0e4040eb701ef79bcc4ea04a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b1ce16276d05f971afbafae680d406b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#a7b1ce16276d05f971afbafae680d406b">getQueueFamilies</a> (VkPhysicalDevice device, VkSurfaceKHR surface, int &amp;graphicsFamily, int &amp;presentFamily)</td></tr>
@@ -145,6 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:a864a41e2bd051a75409b1132ae31ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accc804a14eef3c929c3e888c558450fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#accc804a14eef3c929c3e888c558450fe">blitTexture</a> (VkCommandBuffer &amp;commandBuffer, const <a class="el" href="class_texture.html">Texture</a> &amp;src, const <a class="el" href="class_texture.html">Texture</a> &amp;dst, uint mipStartSrc, uint mipStartDst, uint mipCount, uint layerStartSrc, uint layerStartDst, uint layerCount, const glm::uvec2 &amp;srcBaseOffset, const glm::uvec2 &amp;srcBaseSize, const glm::uvec2 &amp;dstBaseOffset, const glm::uvec2 &amp;dstBaseSize, <a class="el" href="group___resources.html#ga215dd3a110b19ba0cf42bcf30ef589b5">Filter</a> filter)</td></tr>
 <tr class="separator:accc804a14eef3c929c3e888c558450fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ff7dfd243b946efd5ee403f8368505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vk_utils.html#aa7ff7dfd243b946efd5ee403f8368505">setDebugName</a> (<a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;context, VkObjectType type, uint64_t handle, const char *format,...)</td></tr>
+<tr class="separator:aa7ff7dfd243b946efd5ee403f8368505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Utility functions for the Vulkan backend. </p>
@@ -795,8 +797,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a593df936afb9a254d8767fdba0fb6b9b" name="a593df936afb9a254d8767fdba0fb6b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a593df936afb9a254d8767fdba0fb6b9b">&#9670;&#160;</a></span>getRequiredInstanceExtensions()</h2>
+<a id="a2812ec68e9a6af32d6d7c5ebb452b402" name="a2812ec68e9a6af32d6d7c5ebb452b402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2812ec68e9a6af32d6d7c5ebb452b402">&#9670;&#160;</a></span>getRequiredInstanceExtensions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -805,7 +807,7 @@ Functions</h2></td></tr>
           <td class="memname">std::vector&lt; const char * &gt; VkUtils::getRequiredInstanceExtensions </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enableValidationLayers</em>, </td>
+          <td class="paramname"><em>enableDebugMarkers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -822,7 +824,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p ><a class="el" href="class_query.html" title="Perform CPU duration measurement between two time points.">Query</a> the instance extensions required by the system (swapchain, debug layers,...) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enableValidationLayers</td><td>should validation layer extensions be included </td></tr>
+    <tr><td class="paramname">enableDebugMarkers</td><td>should debug marker extension be included </td></tr>
     <tr><td class="paramname">enablePortability</td><td>should portability extension be included </td></tr>
   </table>
   </dd>
@@ -944,6 +946,62 @@ Functions</h2></td></tr>
     <tr><td class="paramname">texture</td><td>the texture to transition </td></tr>
     <tr><td class="paramname">newLayout</td><td>the new layout to apply </td></tr>
     <tr><td class="paramname">mip</td><td>the mip level to transition </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7ff7dfd243b946efd5ee403f8368505" name="aa7ff7dfd243b946efd5ee403f8368505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ff7dfd243b946efd5ee403f8368505">&#9670;&#160;</a></span>setDebugName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VkUtils::setDebugName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_p_u_context.html">GPUContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkObjectType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Associate a debug name to a Vulkan object for validation layers and captures. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the <a class="el" href="class_g_p_u.html" title="Provide utility functions to communicate with the driver and GPU.">GPU</a> context </td></tr>
+    <tr><td class="paramname">type</td><td>the type of the object </td></tr>
+    <tr><td class="paramname">handle</td><td>the handle to the object, casted as a raw integer </td></tr>
+    <tr><td class="paramname">format</td><td>name string format </td></tr>
+    <tr><td class="paramname">...</td><td>name string arguments </td></tr>
   </table>
   </dd>
 </dl>
