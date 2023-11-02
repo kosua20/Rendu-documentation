@@ -26,6 +26,6 @@ var searchData=
   ['freezecamera_23',['freezeCamera',['../class_camera_app.html#a279ea14cfbd4ffaf56bf458de1b29616',1,'CameraApp']]],
   ['fresneltoior_24',['fresnelToIor',['../class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a9c5905c06ed53a00350e5a56982925ba',1,'GPUShaders::Common::Common_pbr']]],
   ['fresnelwater_25',['fresnelWater',['../class_g_p_u_shaders_1_1_frag_1_1_ocean__island.html#afdec25fc237de0105540dc198686e45a',1,'GPUShaders::Frag::Ocean_island']]],
-  ['frustum_26',['frustum',['../class_camera.html#ad5fe6e1d3960ab92605b40546800c07b',1,'Camera']]],
-  ['frustum_27',['Frustum',['../class_frustum.html#a6aaf355f487c10d79faa9c49b0cd8d6d',1,'Frustum']]]
+  ['frustum_26',['Frustum',['../class_frustum.html#a6aaf355f487c10d79faa9c49b0cd8d6d',1,'Frustum']]],
+  ['frustum_27',['frustum',['../class_camera.html#ad5fe6e1d3960ab92605b40546800c07b',1,'Camera']]]
 ];

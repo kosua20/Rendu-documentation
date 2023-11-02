@@ -6,8 +6,8 @@ var searchData=
   ['range_3',['range',['../class_b_v_h_renderer.html#ad06d7ecee07f7080ff94289a1d0b0073',1,'BVHRenderer']]],
   ['ratio_4',['ratio',['../class_camera.html#a96e87214a83a0f2a9ff647901e2fffda',1,'Camera::ratio(float ratio)'],['../class_camera.html#a7fe84d89e0b3a5cbb02779ba7461eede',1,'Camera::ratio() const']]],
   ['ray_5',['Ray',['../struct_ray.html#a8ff8ef844bdf5261d1c6a4189acd6f26',1,'Ray']]],
-  ['raycaster_6',['raycaster',['../class_path_tracer.html#a84351f7442937aed817b7dc8f5b4da01',1,'PathTracer']]],
-  ['raycaster_7',['Raycaster',['../class_raycaster.html#a045cfc94d8d4bc40fb938cb130e52dad',1,'Raycaster::Raycaster()=default'],['../class_raycaster.html#ac639d1215a3cbba8bf7840565f4a53ce',1,'Raycaster::Raycaster(const Raycaster &amp;)=delete'],['../class_raycaster.html#a06b87eb3a71e9a38301c51cf568ebfaf',1,'Raycaster::Raycaster(Raycaster &amp;&amp;)=delete']]],
+  ['raycaster_6',['Raycaster',['../class_raycaster.html#a045cfc94d8d4bc40fb938cb130e52dad',1,'Raycaster::Raycaster()=default'],['../class_raycaster.html#ac639d1215a3cbba8bf7840565f4a53ce',1,'Raycaster::Raycaster(const Raycaster &amp;)=delete'],['../class_raycaster.html#a06b87eb3a71e9a38301c51cf568ebfaf',1,'Raycaster::Raycaster(Raycaster &amp;&amp;)=delete']]],
+  ['raycaster_7',['raycaster',['../class_path_tracer.html#a84351f7442937aed817b7dc8f5b4da01',1,'PathTracer']]],
   ['raycastervisualisation_8',['RaycasterVisualisation',['../class_raycaster_visualisation.html#a829acba725d525dcefec68bf31ed09d9',1,'RaycasterVisualisation']]],
   ['rayleighphase_9',['rayleighPhase',['../class_g_p_u_shaders_1_1_common_1_1_atmosphere.html#aba28e7e9b66e52ca6dd9d12f2e5ac93c',1,'GPUShaders::Common::Atmosphere::rayleighPhase()'],['../class_material_sky.html#a6902b2f841481a63c7c9658a314fb337',1,'MaterialSky::rayleighPhase()']]],
   ['raymarch_10',['raymarch',['../class_g_p_u_shaders_1_1_frag_1_1_shaderbench.html#ae330973f48842292bda196a21300c8ab',1,'GPUShaders::Frag::Shaderbench']]],
@@ -52,7 +52,7 @@ var searchData=
   ['rgbn_49',['rgbn',['../class_image.html#a2af9fd95ddbbb88f5e11325d9a552431',1,'Image']]],
   ['rgbtohsv_50',['rgbToHsv',['../class_g_p_u_shaders_1_1_common_1_1_colors.html#a95390447ec3c6acb562e476168c45590',1,'GPUShaders::Common::Colors']]],
   ['rotatey_51',['rotateY',['../class_g_p_u_shaders_1_1_common_1_1_geometry.html#a5de799d87575b91ef94c502f509a05e1',1,'GPUShaders::Common::Geometry']]],
-  ['rotation_52',['Rotation',['../class_rotation.html#a4c4a21cf1b9a7af223c21fd4c9d2f1de',1,'Rotation::Rotation()=default'],['../class_rotation.html#a5eda2d2860ac74a84bb022ef031c8780',1,'Rotation::Rotation(const glm::vec3 &amp;axis, float speed, Frame frame)']]],
-  ['rotation_53',['rotation',['../class_light_probe.html#aa1bcb9725826a5aa03b45028dd349671',1,'LightProbe']]],
+  ['rotation_52',['rotation',['../class_light_probe.html#aa1bcb9725826a5aa03b45028dd349671',1,'LightProbe']]],
+  ['rotation_53',['Rotation',['../class_rotation.html#a4c4a21cf1b9a7af223c21fd4c9d2f1de',1,'Rotation::Rotation()=default'],['../class_rotation.html#a5eda2d2860ac74a84bb022ef031c8780',1,'Rotation::Rotation(const glm::vec3 &amp;axis, float speed, Frame frame)']]],
   ['rotationcossin_54',['rotationCosSin',['../class_light_probe.html#a5776e7bd96b4acfb8aaaf2ef02d5201c',1,'LightProbe']]]
 ];

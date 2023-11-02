@@ -22,5 +22,6 @@ var searchData=
   ['loadstringfromexternalfile_19',['loadStringFromExternalFile',['../class_resources.html#a9a11d9cbff92fce2ab1bfc95a64eddb6',1,'Resources']]],
   ['localmt19937_20',['LocalMT19937',['../struct_random_1_1_local_m_t19937.html#af1f5c3719100ec84ada1168aa25a9569',1,'Random::LocalMT19937']]],
   ['lodcorner_21',['lodCorner',['../class_g_p_u_shaders_1_1_tess_control_1_1_ocean__island.html#a129c44527eab076ea90540f724dba104',1,'GPUShaders::TessControl::Ocean_island']]],
-  ['log_22',['Log',['../class_log.html#af6071a60aa52b6c1b511f99b4bc1b8fe',1,'Log::Log()'],['../class_log.html#acb9520812f36aa5f6e59fba5fb6315de',1,'Log::Log(const std::string &amp;filePath, bool logToStdin, bool verbose=false)']]]
+  ['log_22',['Log',['../class_log.html#af6071a60aa52b6c1b511f99b4bc1b8fe',1,'Log::Log()'],['../class_log.html#acb9520812f36aa5f6e59fba5fb6315de',1,'Log::Log(const std::string &amp;filePath, bool logToStdin, bool verbose=false)']]],
+  ['lowercase_23',['lowercase',['../class_text_utilities.html#acf3b82149adad145b327ed41c684e766',1,'TextUtilities']]]
 ];
