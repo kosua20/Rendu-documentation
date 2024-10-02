@@ -26,8 +26,9 @@ var searchData=
   ['heightmie_23',['heightMie',['../struct_sky_1_1_atmosphere_parameters.html#a1635d66f1d010eadc778fc299f97d2d2',1,'Sky::AtmosphereParameters::heightMie()'],['../struct_g_p_u_shaders_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html#a084a35df797512042482d600cace725d',1,'GPUShaders::Common::Atmosphere::AtmosphereParameters::heightMie()']]],
   ['heightrayleigh_24',['heightRayleigh',['../struct_sky_1_1_atmosphere_parameters.html#acd3f56c341194fd9ea35d9403d72eb8a',1,'Sky::AtmosphereParameters::heightRayleigh()'],['../struct_g_p_u_shaders_1_1_common_1_1_atmosphere_1_1_atmosphere_parameters.html#a76d023af000c18f48253fb34a9973517',1,'GPUShaders::Common::Atmosphere::AtmosphereParameters::heightRayleigh()']]],
   ['high_25',['HIGH',['../class_s_s_a_o.html#a22b441e6d1ceb79a2535212f19d9d3beab89de3b4b81c4facfac906edf29aec8c',1,'SSAO']]],
-  ['hit_26',['hit',['../struct_raycaster_1_1_hit.html#a3a034607ecd472875b66c87c3fd768fe',1,'Raycaster::Hit']]],
-  ['hit_27',['Hit',['../struct_raycaster_1_1_hit.html#ad956f6ddddc99c4376c93352394c6f6e',1,'Raycaster::Hit::Hit()'],['../struct_raycaster_1_1_hit.html#ac1c9ae8c42ac702e5a52508974d581aa',1,'Raycaster::Hit::Hit(float distance, float uu, float vv, unsigned long lid, unsigned long mid)'],['../struct_raycaster_1_1_hit.html',1,'Raycaster::Hit']]],
-  ['horizontal_28',['HORIZONTAL',['../class_shader_editor.html#ada7e9082e2da193931d0e37c258842b2a86e5d0d8407ce71f7e2004ef3949894e',1,'ShaderEditor']]],
-  ['hsvtorgb_29',['hsvToRgb',['../class_g_p_u_shaders_1_1_common_1_1_colors.html#a3bb9262d380537ecc6e35dd7b3d20e87',1,'GPUShaders::Common::Colors']]]
+  ['hit_26',['Hit',['../struct_raycaster_1_1_hit.html#ad956f6ddddc99c4376c93352394c6f6e',1,'Raycaster::Hit::Hit()'],['../struct_raycaster_1_1_hit.html#ac1c9ae8c42ac702e5a52508974d581aa',1,'Raycaster::Hit::Hit(float distance, float uu, float vv, unsigned long lid, unsigned long mid)']]],
+  ['hit_27',['hit',['../struct_raycaster_1_1_hit.html#a3a034607ecd472875b66c87c3fd768fe',1,'Raycaster::Hit']]],
+  ['hit_28',['Hit',['../struct_raycaster_1_1_hit.html',1,'Raycaster']]],
+  ['horizontal_29',['HORIZONTAL',['../class_shader_editor.html#ada7e9082e2da193931d0e37c258842b2a86e5d0d8407ce71f7e2004ef3949894e',1,'ShaderEditor']]],
+  ['hsvtorgb_30',['hsvToRgb',['../class_g_p_u_shaders_1_1_common_1_1_colors.html#a3bb9262d380537ecc6e35dd7b3d20e87',1,'GPUShaders::Common::Colors']]]
 ];

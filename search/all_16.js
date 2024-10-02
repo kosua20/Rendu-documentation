@@ -45,6 +45,6 @@ var searchData=
   ['vneubelt_42',['VNeubelt',['../class_g_p_u_shaders_1_1_common_1_1_common__pbr.html#a6dadd9e64f7f0ecc930f3ec8a267a28b',1,'GPUShaders::Common::Common_pbr']]],
   ['vp_43',['vp',['../class_light.html#a036f3cea4eac7f554cd5145b55e3d68a',1,'Light']]],
   ['vpfaces_44',['vpFaces',['../class_point_light.html#a7fd2b3852f91e5eb30df3c0acb614375',1,'PointLight']]],
-  ['vsync_45',['Vsync',['../class_window.html#a23db6c08edfd162f98d7ce8a3257e4a6a41e20f49b7679de30f241279dc2e7c48',1,'Window']]],
-  ['vsync_46',['vsync',['../class_rendering_config.html#a74c8a0c618bef7d9c93903ec496643fe',1,'RenderingConfig']]]
+  ['vsync_45',['vsync',['../class_rendering_config.html#a74c8a0c618bef7d9c93903ec496643fe',1,'RenderingConfig']]],
+  ['vsync_46',['Vsync',['../class_window.html#a23db6c08edfd162f98d7ce8a3257e4a6a41e20f49b7679de30f241279dc2e7c48',1,'Window']]]
 ];
